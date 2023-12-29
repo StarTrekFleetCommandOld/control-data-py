@@ -1,0 +1,690 @@
+{
+  "$id": "http://example.com/example.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "The root schema",
+  "description": "A schema for hostiles in STFC.",
+  "required": [
+    "hostile_name",
+    "level",
+    "rarity",
+    "ship_class",
+    "description",
+    "systems",
+    "rewards",
+    "head_stats",
+    "stats",
+    "utility",
+    "weapons"
+  ],
+  "type": "object",
+  "additionalProperties": true,
+  "default": {},
+  "examples": [
+    {
+      "description": "This hostile patrols...",
+      "group": "borg",
+      "head_stats": {
+        "attack": 30000,
+        "defense": 10000,
+        "health": 40000
+      },
+      "hostile_name": "Borg Tactical Probe",
+      "level": 30,
+      "rarity": "common",
+      "rewards": [
+        {
+          "type": "inert nanoprobe",
+          "value": 1148
+        }
+      ],
+      "ship_class": "battleship",
+      "stats": {
+        "attack": {
+          "accuracy": 71402,
+          "armor_pierce": 82997,
+          "crit_chance": 0.1,
+          "crit_damage": 1.5,
+          "damage_per_round": 1594000,
+          "shield_pierce": 68351
+        },
+        "defense": {
+          "armor": 267000,
+          "dodge": 356000,
+          "shield_deflect": 305100
+        },
+        "health": {
+          "hull_health": 40371000,
+          "shield_health": 20185000
+        }
+      },
+      "systems": [
+        {
+          "$ref": "reference to system file"
+        }
+      ],
+      "utility": [
+        {
+          "impulse_speed": 90
+        }
+      ],
+      "weapons": [
+        {
+          "firing_pattern": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "quantity": 2,
+          "weapon_stats": {
+            "accuracy": 71402,
+            "armor_pierce": 82997,
+            "crit_chance": 0.1,
+            "crit_damage": 1.5,
+            "damage_per_round": 1594000,
+            "max_damage": 246700,
+            "min_damage": 201900,
+            "shield_pierce": 68351
+          },
+          "weapon_type": "energy"
+        }
+      ]
+    }
+  ],
+  "properties": {
+    "description": {
+      "$id": "#/properties/description",
+      "title": "The description schema",
+      "description": "The description of the hostile type.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "This hostile patrols..."
+      ]
+    },
+    "group": {
+      "$id": "#/properties/group",
+      "title": "The group schema",
+      "description": "(Optional) To which group the hostile belongs.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "borg"
+      ]
+    },
+    "head_stats": {
+      "$id": "#/properties/head_stats",
+      "title": "The head stats schema",
+      "description": "All hostile main stats.",
+      "required": [
+        "attack",
+        "defense",
+        "health"
+      ],
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "properties": {
+        "attack": {
+          "$id": "#/properties/head_stats/attack",
+          "title": "The main attack schema",
+          "description": "The total main attack stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            30000
+          ]
+        },
+        "defense": {
+          "$id": "#/properties/head_stats/defense",
+          "title": "The main defense schema",
+          "description": "The total main defense stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            10000
+          ]
+        },
+        "health": {
+          "$id": "#/properties/head_stats/health",
+          "title": "The main health schema",
+          "description": "The total main health stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            40000
+          ]
+        }
+      }
+    },
+    "hostile_name": {
+      "$id": "#/properties/hostile_name",
+      "title": "The hostile_name schema",
+      "description": "Name of the hostile type.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Borg Tactical Probe"
+      ]
+    },
+    "level": {
+      "$id": "#/properties/level",
+      "title": "The level schema",
+      "description": "The level of the hostile.",
+      "type": "integer",
+      "default": 0,
+      "examples": [
+        30
+      ]
+    },
+    "rarity": {
+      "$id": "#/properties/rarity",
+      "title": "The rarity schema",
+      "description": "The rarity of the hostile.",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic"
+      ],
+      "examples": [
+        "common"
+      ]
+    },
+    "rewards": {
+      "$id": "#/properties/rewards",
+      "title": "The rewards schema",
+      "description": "List of all rewards gained by destroying the hostile.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/rewards/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/rewards/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "Single hostile reward instance.",
+            "required": [
+              "type",
+              "value"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "type": {
+                "$id": "#/properties/rewards/items/anyOf/0/properties/type",
+                "title": "The type schema",
+                "description": "Type of reward gained by destroying the hostile.",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "inert nanoprobe"
+                ]
+              },
+              "value": {
+                "$id": "#/properties/rewards/items/anyOf/0/properties/value",
+                "title": "The value schema",
+                "description": "The amount of this reward gained.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  1148
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "ship_class": {
+      "$id": "#/properties/ship_class",
+      "title": "The ship_class schema",
+      "description": "The ship class of the hostile.",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "explorer",
+        "interceptor",
+        "battleship",
+        "survey"
+      ],
+      "examples": [
+        "battleship"
+      ]
+    },
+    "stats": {
+      "$id": "#/properties/stats",
+      "title": "The stats schema",
+      "description": "Total ship stats of the hostile.",
+      "required": [
+        "attack",
+        "defense",
+        "health"
+      ],
+      "type": "object",
+      "additionalProperties": false,
+      "default": {},
+      "properties": {
+        "attack": {
+          "$id": "#/properties/stats/properties/attack",
+          "title": "The attack schema",
+          "description": "All average attack stats of this hostile.",
+          "required": [
+            "damage_per_round",
+            "armor_pierce",
+            "shield_pierce",
+            "accuracy",
+            "crit_chance",
+            "crit_damage"
+          ],
+          "type": "object",
+          "additionalProperties": true,
+          "default": {},
+          "properties": {
+            "accuracy": {
+              "$id": "#/properties/stats/properties/attack/properties/accuracy",
+              "title": "The accuracy schema",
+              "description": "Average accuracy stats for this hostile.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                71402
+              ]
+            },
+            "armor_pierce": {
+              "$id": "#/properties/stats/properties/attack/properties/armor_pierce",
+              "title": "The armor_pierce schema",
+              "description": "Average armor piercing stats for this hostile.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                82997
+              ]
+            },
+            "crit_change": {
+              "$id": "#/properties/stats/properties/attack/properties/crit_chance",
+              "title": "The crit_chance schema",
+              "description": "Average critical chance stats for this hostile in percentage.",
+              "type": "number",
+              "default": 0.0,
+              "examples": [
+                0.1
+              ]
+            },
+            "crit_damage": {
+              "$id": "#/properties/stats/properties/attack/properties/crit_damage",
+              "title": "The crit_damage schema",
+              "description": "Average critical damage stats for this hostile in percentage.",
+              "type": "number",
+              "default": 0.0,
+              "examples": [
+                1.5
+              ]
+            },
+            "damage_per_round": {
+              "$id": "#/properties/stats/properties/attack/properties/damage_per_round",
+              "title": "The damage_per_round schema",
+              "description": "Average damage per round stats for this hostile.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                1594000
+              ]
+            },
+            "shield_pierce": {
+              "$id": "#/properties/stats/properties/attack/properties/shield_pierce",
+              "title": "The shield_pierce schema",
+              "description": "Average shield piercing stats for this hostile.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                68351
+              ]
+            }
+          }
+        },
+        "defense": {
+          "$id": "#/properties/stats/properties/defense",
+          "title": "The defense schema",
+          "description": "All average defense stats of this hostile.",
+          "required": [
+            "armor",
+            "shield_deflect",
+            "dodge"
+          ],
+          "type": "object",
+          "additionalProperties": true,
+          "default": {},
+          "properties": {
+            "armor": {
+              "$id": "#/properties/stats/properties/defense/properties/armor",
+              "title": "The armor schema",
+              "description": "Average armor stats for this hostile.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                267000
+              ]
+            },
+            "dodge": {
+              "$id": "#/properties/stats/properties/defense/properties/dodge",
+              "title": "The dodge schema",
+              "description": "Average dodging stats for this hostile.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                356000
+              ]
+            },
+            "shield_deflect": {
+              "$id": "#/properties/stats/properties/defense/properties/shield_deflect",
+              "title": "The shield_deflect schema",
+              "description": "Average shield deflection stats for this hostile.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                305100
+              ]
+            }
+          }
+        },
+        "health": {
+          "$id": "#/properties/stats/properties/health",
+          "title": "The health schema",
+          "description": "All average health stats of this hostile.",
+          "required": [
+            "shield_health",
+            "hull_health"
+          ],
+          "type": "object",
+          "additionalProperties": true,
+          "default": {},
+          "properties": {
+            "hull_health": {
+              "$id": "#/properties/stats/properties/health/properties/hull_health",
+              "title": "The hull_health schema",
+              "description": "Average hull health stats for this hostile.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                40371000
+              ]
+            },
+            "shield_health": {
+              "$id": "#/properties/stats/properties/health/properties/shield_health",
+              "title": "The shield_health schema",
+              "description": "Average shield health stats for this hostile.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                20185000
+              ]
+            }
+          }
+        }
+      }
+    },
+    "systems": {
+      "$id": "#/properties/systems",
+      "title": "The systems schema",
+      "description": "List of all systems harboring these hostiles.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/systems/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/systems/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "Single system instance.",
+            "required": [
+              "$ref"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "$ref": {
+                "$id": "#/properties/systems/items/anyOf/0/properties/%24ref",
+                "title": "The $ref schema",
+                "description": "Reference to the system file.",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "reference to system file"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "utility": {
+      "$id": "#/properties/utility",
+      "title": "The utility schema",
+      "description": "All important utilities of this hostile.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/utility/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/utility/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "Single utilities instance.",
+            "required": [
+              "impulse_speed"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "impulse_speed": {
+                "$id": "#/properties/utility/items/anyOf/0/properties/impulse_speed",
+                "title": "The impulse_speed schema",
+                "description": "The impulse speed of the hostile.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  90
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "weapons": {
+      "$id": "#/properties/weapons",
+      "title": "The weapons schema",
+      "description": "List of all grouped hostile weapons. Grouped by same stats.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/weapons/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/weapons/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "Single hostile weapon instance.",
+            "required": [
+              "weapon_type",
+              "quantity",
+              "firing_pattern"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "firing_pattern": {
+                "$id": "#/properties/weapons/items/anyOf/0/properties/firing_pattern",
+                "title": "The firing_pattern schema",
+                "description": "The weapon firing pattern.",
+                "type": "array",
+                "additionalItems": true,
+                "default": [],
+                "items": {
+                  "$id": "#/properties/weapons/items/anyOf/0/properties/firing_pattern/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/weapons/items/anyOf/0/properties/firing_pattern/items/anyOf/0",
+                      "title": "The first anyOf schema",
+                      "description": "Single firing instance. Number of shots per round.",
+                      "type": "integer",
+                      "default": 0,
+                      "examples": [
+                        1
+                      ]
+                    }
+                  ]
+                }
+              },
+              "quantity": {
+                "$id": "#/properties/weapons/items/anyOf/0/properties/quantity",
+                "title": "The quantity schema",
+                "description": "The number of weapons with same stats.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  2
+                ]
+              },
+              "weapon_stats": {
+                "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats",
+                "title": "The weapon_stats schema",
+                "description": "All weapon specific stats.",
+                "required": [
+                  "damage_per_round",
+                  "armor_pierce",
+                  "shield_pierce",
+                  "accuracy",
+                  "crit_chance",
+                  "crit_damage",
+                  "min_damage",
+                  "max_damage"
+                ],
+                "type": "object",
+                "additionalProperties": true,
+                "default": {},
+                "properties": {
+                  "accuracy": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/accuracy",
+                    "title": "The accuracy schema",
+                    "description": "The accuracy of this weapon.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      71402
+                    ]
+                  },
+                  "armor_pierce": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/armor_pierce",
+                    "title": "The armor_pierce schema",
+                    "description": "The armor piercing of this weapon.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      82997
+                    ]
+                  },
+                  "crit_chance": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/crit_chance",
+                    "title": "The crit_chance schema",
+                    "description": "The critical chance of this weapon in percentage.",
+                    "type": "number",
+                    "default": 0.0,
+                    "examples": [
+                      0.1
+                    ]
+                  },
+                  "crit_damage": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/crit_damage",
+                    "title": "The crit_damage schema",
+                    "description": "The critical damage of this weapon in percentage.",
+                    "type": "number",
+                    "default": 0.0,
+                    "examples": [
+                      1.5
+                    ]
+                  },
+                  "damage_per_round": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/damage_per_round",
+                    "title": "The damage_per_round schema",
+                    "description": "The damage per round of this weapon.",
+                    "type": "number",
+                    "default": 0,
+                    "examples": [
+                      1594000
+                    ]
+                  },
+                  "max_damage": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/max_damage",
+                    "title": "The max_damage schema",
+                    "description": "The maximum amount of damage the weapon causes.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      246700
+                    ]
+                  },
+                  "min_damage": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/min_damage",
+                    "title": "The min_damage schema",
+                    "description": "The minimum amount of damage the weapon causes.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      201900
+                    ]
+                  },
+                  "shield_pierce": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/shield_pierce",
+                    "title": "The shield_pierce schema",
+                    "description": "The shield piercing of this weapon.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      68351
+                    ]
+                  }
+                }
+              },
+              "weapon_type": {
+                "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_type",
+                "title": "The weapon_type schema",
+                "description": "The type of weapon.",
+                "type": "string",
+                "default": "",
+                "enum": [
+                  "energy",
+                  "kinetic"
+                ],
+                "examples": [
+                  "energy"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

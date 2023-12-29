@@ -1,0 +1,432 @@
+{
+  "$id": "http://example.com/example.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "The root schema",
+  "description": "A schema for systems in STFC",
+  "required": [
+    "name",
+    "connected_systems",
+    "faction",
+    "level",
+    "scopely_id",
+    "system_space",
+    "system_type",
+    "warp"
+  ],
+  "type": "object",
+  "additionalProperties": true,
+  "default": {},
+  "examples": [
+    {
+      "name": "P'Jem",
+      "capture_nodes": 0,
+      "connected_systems": [
+        {
+          "$ref": "systems/aiti_33"
+        },
+        {
+          "$ref": "systems/andoria_34"
+        },
+        {
+          "$ref": "systems/doska_27"
+        },
+        {
+          "$ref": "systems/losti_28"
+        },
+        {
+          "$ref": "systems/noakyn_30"
+        },
+        {
+          "$ref": "systems/spira_27"
+        },
+        {
+          "$ref": "systems/tau_ceti_34"
+        }
+      ],
+      "faction": "federation",
+      "hub_details": {
+        "hub_number": 5,
+        "hub_size": 5
+      },
+      "level": 29,
+      "mining": [
+        {
+          "type": "gas",
+          "amount": 24,
+          "grade": 3,
+          "mining_per_hour": 300,
+          "size": 18000
+        }
+      ],
+      "planets": [
+        "Bexeiug",
+        "Fanux",
+        "P'Jem",
+        "Puqaxuo",
+        "Xeuuair",
+        "Zizub"
+      ],
+      "scopely_id": 468245102,
+      "system_space": "normal",
+      "system_type": "hub",
+      "warp": 20
+    }
+  ],
+  "properties": {
+    "name": {
+      "$id": "#/properties/name",
+      "title": "The name schema",
+      "description": "The system name",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "P'Jem"
+      ]
+    },
+    "capture_nodes": {
+      "$id": "#/properties/capture_nodes",
+      "title": "The capture_nodes schema",
+      "description": "The number of capture nodes present in this system",
+      "type": "integer",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "connected_systems": {
+      "$id": "#/properties/connected_systems",
+      "title": "The connected_systems schema",
+      "description": "Other systems this system is connected to",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "examples": [
+        [
+          {
+            "$ref": "systems/aiti_33"
+          },
+          {
+            "$ref": "systems/andoria_34"
+          }
+        ]
+      ],
+      "items": {
+        "$id": "#/properties/connected_systems/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/connected_systems/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "The reference to a connected system",
+            "required": [
+              "$ref"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "examples": [
+              {
+                "$ref": "systems/aiti_33"
+              }
+            ],
+            "properties": {
+              "$ref": {
+                "$id": "#/properties/connected_systems/items/anyOf/0/properties/%24ref",
+                "title": "The $ref schema",
+                "description": "The reference to a system name in the form systems/<system_name>_<system_level>",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "systems/aiti_33"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "faction": {
+      "$id": "#/properties/faction",
+      "title": "The faction schema",
+      "description": "The faction this system belongs to",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "federation"
+      ]
+    },
+    "hub_details": {
+      "$id": "#/properties/hub_details",
+      "title": "The hub_details schema",
+      "description": "Details about the hubs in this system.",
+      "required": [
+        "hub_number",
+        "hub_size"
+      ],
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "examples": [
+        {
+          "hub_number": 5,
+          "hub_size": 5
+        }
+      ],
+      "properties": {
+        "hub_number": {
+          "$id": "#/properties/hub_details/properties/hub_number",
+          "title": "The hub_number schema",
+          "description": "The number of hubs present in this system",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            5
+          ]
+        },
+        "hub_size": {
+          "$id": "#/properties/hub_details/properties/hub_size",
+          "title": "The hub_size schema",
+          "description": "The size of each hub.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            5
+          ]
+        }
+      }
+    },
+    "level": {
+      "$id": "#/properties/level",
+      "title": "The level schema",
+      "description": "The system level",
+      "type": "integer",
+      "default": 1,
+      "examples": [
+        29
+      ]
+    },
+    "mining": {
+      "$id": "#/properties/mining",
+      "title": "The mining schema",
+      "description": "Details about the mines present in this system",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "examples": [
+        [
+          {
+            "type": "gas",
+            "amount": 24,
+            "grade": 3,
+            "mining_per_hour": 300,
+            "size": 18000
+          }
+        ]
+      ],
+      "items": {
+        "$id": "#/properties/mining/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/mining/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "For each type of mine present",
+            "required": [
+              "type",
+              "amount",
+              "mining_per_hour",
+              "size"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "examples": [
+              {
+                "type": "gas",
+                "amount": 24,
+                "grade": 3,
+                "mining_per_hour": 300,
+                "size": 18000
+              }
+            ],
+            "properties": {
+              "type": {
+                "$id": "#/properties/mining/items/anyOf/0/properties/type",
+                "title": "Type of resource gained",
+                "description": "An explanation about the purpose of this instance.",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "gas"
+                ]
+              },
+              "amount": {
+                "$id": "#/properties/mining/items/anyOf/0/properties/amount",
+                "title": "The amount schema",
+                "description": "Number of mines present",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  24
+                ]
+              },
+              "grade": {
+                "$id": "#/properties/mining/items/anyOf/0/properties/grade",
+                "title": "The grade schema",
+                "description": "The grade of raw materials in the mines",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  3
+                ]
+              },
+              "mining_per_hour": {
+                "$id": "#/properties/mining/items/anyOf/0/properties/mining_per_hour",
+                "title": "The mining_per_hour schema",
+                "description": "Speed of the mining",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  300
+                ]
+              },
+              "size": {
+                "$id": "#/properties/mining/items/anyOf/0/properties/size",
+                "title": "The size schema",
+                "description": "The size of a full mine",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  18000
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "planets": {
+      "$id": "#/properties/planets",
+      "title": "The planets schema",
+      "description": "Planets present in this system",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "examples": [
+        [
+          "Bexeiug",
+          "Fanux"
+        ]
+      ],
+      "items": {
+        "$id": "#/properties/planets/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/planets/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Bexeiug",
+              "Fanux"
+            ]
+          }
+        ]
+      }
+    },
+    "scopely_id": {
+      "$id": "#/properties/scopely_id",
+      "title": "The scopely_id schema",
+      "description": "In-Game numeric reference to this system",
+      "type": "integer",
+      "default": 0,
+      "examples": [
+        468245102
+      ]
+    },
+    "system_space": {
+      "$id": "#/properties/system_space",
+      "title": "The system_space schema",
+      "description": "The type of space this system can belong to",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "normal",
+        "origin",
+        "deep",
+        "dark"
+      ],
+      "examples": [
+        "normal"
+      ]
+    },
+    "system_type": {
+      "$id": "#/properties/system_type",
+      "title": "The system_type schema",
+      "description": "Hub systems interconnect multiple systems, terminal have only one warp path",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "hub",
+        "terminal",
+        "route"
+      ],
+      "examples": [
+        "hub"
+      ]
+    },
+    "token_info": {
+      "$id": "#/properties/token_info",
+      "title": "The token_info schema",
+      "description": "Detailed information about the token needed.",
+      "required": [
+        "token_type",
+        "token_amount"
+      ],
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "properties": {
+        "token_amount": {
+          "$id": "#/properties/token_info/properties/token_amount",
+          "title": "The token_amount schema",
+          "description": "Amount of tokens needed for accessing this system.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "token_type": {
+          "$id": "#/properties/token_info/properties/token_type",
+          "title": "The token_type schema",
+          "description": "The name of the token needed",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Very rare token for very expensive things"
+          ]
+        }
+      }
+    },
+    "token_needed": {
+      "$id": "#/properties/token_needed",
+      "title": "The token_needed schema",
+      "description": "Is a token needed for accessing this system.",
+      "type": "boolean",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "warp": {
+      "$id": "#/properties/warp",
+      "title": "The warp schema",
+      "description": "Warp needed from a lvl1 system",
+      "type": "integer",
+      "default": 0,
+      "examples": [
+        20
+      ]
+    }
+  }
+}
