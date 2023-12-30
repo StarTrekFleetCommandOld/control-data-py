@@ -1,20 +1,17 @@
 {
+  "hostile_name": "Borg Tactical Probe",
   "description": "",
   "group": "borg",
+  "level": 42,
+  "rarity": "common",
   "head_stats": {
     "attack": 12735395,
     "defense": 8587200,
     "health": 75415100
   },
-  "hostile_name": "Borg Tactical Probe",
-  "level": 42,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "inert nanoprobe",
-      "max_value": 19251,
-      "min_value": 19251,
-      "value": 19251
+      "$ref": "systems/frirab_42"
     }
   ],
   "ship_class": "battleship",
@@ -37,16 +34,6 @@
       "shield_health": 75813200
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/frirab_42"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 48
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -171,6 +158,19 @@
         "shield_pierce": 526110
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "inert nanoprobe",
+      "max_value": 19251,
+      "min_value": 19251,
+      "value": 19251
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 48
     }
   ]
 }

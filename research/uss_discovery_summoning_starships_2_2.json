@@ -1,11 +1,16 @@
 {
+  "research_name": "USS Discovery Summoning",
   "description": "Unlocks the Summoning ability for the USS Discovery.",
-  "img_url": "./assets/uss_discovery_summoning_starships_2_2.png",
+  "location": {
+    "column": 2,
+    "row": 2,
+    "tree": "starships"
+  },
   "levels": [
     {
-      "increased_power": 19000,
       "level": 1,
-      "required_by": [],
+      "research_time": 2376360,
+      "increased_power": 19000,
       "requirements": [
         {
           "name": "Cultivated Mycelium Jump Efficiency",
@@ -20,13 +25,20 @@
           "level": 30
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 16300000
+          }
+        ],
         "materials": [
           {
             "type": "gas",
+            "value": 695,
             "grade": 3,
-            "rarity": "uncommon",
-            "value": 695
+            "rarity": "uncommon"
           }
         ],
         "others": [
@@ -34,21 +46,9 @@
             "type": "spore drive component",
             "value": 5410
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 16300000
-          }
         ]
-      },
-      "research_time": 2376360
+      }
     }
   ],
-  "location": {
-    "column": 2,
-    "row": 2,
-    "tree": "starships"
-  },
-  "research_name": "USS Discovery Summoning"
+  "img_url": "./assets/uss_discovery_summoning_starships_2_2.png"
 }

@@ -1,15 +1,28 @@
 {
+  "hostile_name": "Hirogen Hunter",
   "description": "",
   "group": "neutral",
+  "level": 46,
+  "rarity": "common",
   "head_stats": {
     "attack": 4589226,
     "defense": 1902930,
     "health": 6370300
   },
-  "hostile_name": "Hirogen Hunter",
-  "level": 46,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/new_talax_45"
+    },
+    {
+      "$ref": "systems/valla_terna_45"
+    },
+    {
+      "$ref": "systems/kraydin_vori_48"
+    },
+    {
+      "$ref": "systems/ramar_45"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 7432018
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/new_talax_45"
-    },
-    {
-      "$ref": "systems/valla_terna_45"
-    },
-    {
-      "$ref": "systems/kraydin_vori_48"
-    },
-    {
-      "$ref": "systems/ramar_45"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -80,6 +74,12 @@
         "shield_pierce": 164656
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

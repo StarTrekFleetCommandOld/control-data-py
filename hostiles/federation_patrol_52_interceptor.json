@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 52,
+  "rarity": "common",
   "head_stats": {
     "attack": 4813002,
     "defense": 2771105,
     "health": 9987743
   },
-  "hostile_name": "Federation Patrol",
-  "level": 52,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/rylan_50"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 10463350
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/rylan_50"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 95715
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

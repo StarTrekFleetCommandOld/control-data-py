@@ -1,14 +1,84 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 27,
+  "rarity": "common",
   "head_stats": {
     "attack": 38971,
     "defense": 34000,
     "health": 17410
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 27,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/argandu_29"
+    },
+    {
+      "$ref": "systems/rator_29"
+    },
+    {
+      "$ref": "systems/strezhi_26"
+    },
+    {
+      "$ref": "systems/qualor_25"
+    },
+    {
+      "$ref": "systems/vendus_a_27"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 6300,
+      "armor_pierce": 1200,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 25621,
+      "shield_pierce": 1400
+    },
+    "defense": {
+      "armor": 1400,
+      "dodge": 1200,
+      "shield_deflect": 4200
+    },
+    "health": {
+      "hull_health": 19660,
+      "shield_health": 15160
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 6300,
+        "armor_pierce": 1200,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 8540,
+        "max_damage": 8169,
+        "min_damage": 6684,
+        "shield_pierce": 1400
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "tritanium",
@@ -41,79 +111,9 @@
       "value": 33
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 6300,
-      "armor_pierce": 1200,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 25621,
-      "shield_pierce": 1400
-    },
-    "defense": {
-      "armor": 1400,
-      "dodge": 1200,
-      "shield_deflect": 4200
-    },
-    "health": {
-      "hull_health": 19660,
-      "shield_health": 15160
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/argandu_29"
-    },
-    {
-      "$ref": "systems/rator_29"
-    },
-    {
-      "$ref": "systems/strezhi_26"
-    },
-    {
-      "$ref": "systems/qualor_25"
-    },
-    {
-      "$ref": "systems/vendus_a_27"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 20
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 6300,
-        "armor_pierce": 1200,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 8540,
-        "max_damage": 8169,
-        "min_damage": 6684,
-        "shield_pierce": 1400
-      },
-      "weapon_type": "energy"
     }
   ]
 }

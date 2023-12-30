@@ -1,20 +1,17 @@
 {
+  "hostile_name": "Reckless Bandit",
   "description": "",
   "group": "neutral",
+  "level": 25,
+  "rarity": "common",
   "head_stats": {
     "attack": 17926,
     "defense": 18750,
     "health": 7680
   },
-  "hostile_name": "Reckless Bandit",
-  "level": 25,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 981,
-      "min_value": 981,
-      "value": 981
+      "$ref": "systems/talmir_86_26"
     }
   ],
   "ship_class": "interceptor",
@@ -37,16 +34,6 @@
       "shield_health": 7680
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/talmir_86_26"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -109,6 +96,19 @@
         "shield_pierce": 625
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 981,
+      "min_value": 981,
+      "value": 981
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

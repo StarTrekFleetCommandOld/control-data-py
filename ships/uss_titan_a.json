@@ -1,41 +1,53 @@
 {
+  "ship_name": "USS TITAN-A",
   "description": "The USS Titan-A is a Neo-Constitution ship whose retro design is inspired by older Constitution Class vessels. The NCC-80102-A was launched in 2396 and first captained by Liam Shaw. Captain Riker subsequently took command of the vessel after he and Admiral Picard boarded under the guise of a routine inspection. This vessel is equipped with cutting-edge propulsion technology, and its overpowered impulse engines mean that the Titan-A has the largest sub-light power-to-geometry ratio in Starfleet.",
+  "ship_class": "explorer",
+  "grade": 4,
+  "faction": "neutral",
+  "rarity": "epic",
   "blueprints": {
     "cost": 0,
     "quantity": 100
-  },
-  "faction": "neutral",
-  "grade": 4,
-  "img_url": "./assets/uss_titan_a.png",
-  "rarity": "epic",
-  "requirements": [
-    {
-      "name": "Shipyard",
-      "level": 37
-    }
-  ],
-  "scrap_info": {
-    "scrappable": false
   },
   "ship_ability": {
     "title": "Under Titan's Aegis",
     "description": "{value} alliance ships affected when Fortification or Maximum Fortification is activated (prioritizes strongest ships and alliance members without the ability.)",
     "percentage": false
   },
-  "ship_class": "explorer",
-  "ship_name": "USS TITAN-A",
+  "scrap_info": {
+    "scrappable": false
+  },
+  "requirements": [
+    {
+      "name": "Shipyard",
+      "level": 37
+    }
+  ],
   "tiers": [
     {
+      "tier": 1,
       "build_time": 2980800,
+      "repair_time": 84000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 11188,
               "armor_pierce": 1283,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 8996,
+              "min_damage": 7497,
+              "shield_pierce": 1711,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -46,64 +58,64 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 8996,
-              "min_damage": 7497,
-              "shield_pierce": 1711,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 11188,
               "armor_pierce": 1283,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 8996,
               "min_damage": 7497,
               "shield_pierce": 1711,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 11188,
               "armor_pierce": 1283,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 13192,
+              "min_damage": 10993,
+              "shield_pierce": 1711,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 0,
@@ -114,118 +126,80 @@
                 0,
                 0,
                 2
-              ],
-              "max_damage": 13192,
-              "min_damage": 10993,
-              "shield_pierce": 1711,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "armor_info": {
               "armor": 507,
               "hull_health": 48808
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
+          "img_url": "./assets/component_warp_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "warp_info": {
               "warp_distance": 50,
               "warp_speed": 4.3
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Shields",
+          "img_url": "./assets/component_shield.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "shield_info": {
               "shield_deflection": 5077,
               "shield_health": 118624
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
+          "img_url": "./assets/component_impulse_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "impulse_info": {
               "dodge": 507,
               "impulse_speed": 110
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 750
-          },
-          {
-            "type": "gas",
-            "grade": 3,
-            "rarity": "common",
-            "value": 3160
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 42625000
-          },
-          {
-            "type": "dilithium",
-            "value": 2363000
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 2.0,
@@ -258,50 +232,65 @@
           "ship_xp": 29000
         }
       ],
-      "repair_time": 84000,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 42625000
+          },
+          {
+            "type": "dilithium",
+            "value": 2363000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 750,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "gas",
+            "value": 3160,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 480000,
+      "repair_time": 96000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 11412,
-              "armor_pierce": 1309,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 9268,
-              "min_damage": 7723,
-              "shield_pierce": 1745,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 113000000
+              },
+              {
+                "type": "dilithium",
+                "value": 983000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 85,
                 "grade": 3,
-                "rarity": "common",
-                "value": 85
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 340,
                 "grade": 3,
-                "rarity": "common",
-                "value": 340
+                "rarity": "common"
               }
             ],
             "others": [
@@ -313,20 +302,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 3800
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 113000000
-              },
-              {
-                "type": "dilithium",
-                "value": 983000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -336,46 +313,58 @@
               "type": "dilithium",
               "value": 5250
             }
-          ]
-        },
-        {
-          "name": "Phaser Cannons",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 11412,
               "armor_pierce": 1309,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 9268,
               "min_damage": 7723,
               "shield_pierce": 1745,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 106000000
+              },
+              {
+                "type": "dilithium",
+                "value": 917000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 80,
                 "grade": 3,
-                "rarity": "common",
-                "value": 80
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 320,
                 "grade": 3,
-                "rarity": "common",
-                "value": 320
+                "rarity": "common"
               }
             ],
             "others": [
@@ -387,20 +376,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 3500
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 106000000
-              },
-              {
-                "type": "dilithium",
-                "value": 917000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -410,16 +387,91 @@
               "type": "dilithium",
               "value": 4900
             }
-          ]
-        },
-        {
-          "name": "Quantum Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 11412,
               "armor_pierce": 1309,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 9268,
+              "min_damage": 7723,
+              "shield_pierce": 1745,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 106000000
+              },
+              {
+                "type": "dilithium",
+                "value": 917000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 80,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 320,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 30
+              },
+              {
+                "type": "USS Titan-A Parts",
+                "value": 3500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 507500
+            },
+            {
+              "type": "dilithium",
+              "value": 4900
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 11412,
+              "armor_pierce": 1309,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 13590,
+              "min_damage": 11325,
+              "shield_pierce": 1745,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 0,
@@ -430,83 +482,37 @@
                 0,
                 0,
                 2
-              ],
-              "max_damage": 13590,
-              "min_damage": 11325,
-              "shield_pierce": 1745,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 80
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 320
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 30
-              },
-              {
-                "type": "USS Titan-A Parts",
-                "value": 3500
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 106000000
-              },
-              {
-                "type": "dilithium",
-                "value": 917000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 507500
-            },
-            {
-              "type": "dilithium",
-              "value": 4900
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 517,
-              "hull_health": 49784
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 98000000
+              },
+              {
+                "type": "dilithium",
+                "value": 852000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 75,
                 "grade": 3,
-                "rarity": "common",
-                "value": 75
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 295,
                 "grade": 3,
-                "rarity": "common",
-                "value": 295
+                "rarity": "common"
               }
             ],
             "others": [
@@ -518,20 +524,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 3200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 98000000
-              },
-              {
-                "type": "dilithium",
-                "value": 852000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -541,29 +535,41 @@
               "type": "dilithium",
               "value": 4550
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 517,
+              "hull_health": 49784
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 55,
-              "warp_speed": 4.4
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 121000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1048000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 90,
                 "grade": 3,
-                "rarity": "common",
-                "value": 90
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 365,
                 "grade": 3,
-                "rarity": "common",
-                "value": 365
+                "rarity": "common"
               }
             ],
             "others": [
@@ -575,20 +581,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 4000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 121000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1048000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -598,29 +592,41 @@
               "type": "dilithium",
               "value": 5600
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 55,
+              "warp_speed": 4.4
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 5179,
-              "shield_health": 120996
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 113000000
+              },
+              {
+                "type": "dilithium",
+                "value": 983000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 85,
                 "grade": 3,
-                "rarity": "common",
-                "value": 85
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 340,
                 "grade": 3,
-                "rarity": "common",
-                "value": 340
+                "rarity": "common"
               }
             ],
             "others": [
@@ -632,20 +638,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 3800
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 113000000
-              },
-              {
-                "type": "dilithium",
-                "value": 983000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -655,29 +649,41 @@
               "type": "dilithium",
               "value": 5250
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 5179,
+              "shield_health": 120996
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 517,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 98000000
+              },
+              {
+                "type": "dilithium",
+                "value": 852000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 75,
                 "grade": 3,
-                "rarity": "common",
-                "value": 75
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 295,
                 "grade": 3,
-                "rarity": "common",
-                "value": 295
+                "rarity": "common"
               }
             ],
             "others": [
@@ -689,20 +695,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 3200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 98000000
-              },
-              {
-                "type": "dilithium",
-                "value": 852000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -712,7 +706,14 @@
               "type": "dilithium",
               "value": 4550
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 517,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -746,51 +747,39 @@
           "level": 10,
           "ship_xp": 130000
         }
-      ],
-      "repair_time": 96000,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 960000,
+      "repair_time": 108000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 11754,
-              "armor_pierce": 1348,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 9642,
-              "min_damage": 8034,
-              "shield_pierce": 1797,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 215000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1500000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 60,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 60
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 170,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 170
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -802,20 +791,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 6300
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 215000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1500000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -825,46 +802,58 @@
               "type": "dilithium",
               "value": 5850
             }
-          ]
-        },
-        {
-          "name": "Phaser Cannons",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 11754,
               "armor_pierce": 1348,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 9642,
               "min_damage": 8034,
               "shield_pierce": 1797,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 201000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1400000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 55,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 55
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 160,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 160
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -876,20 +865,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 5800
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 201000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1400000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -899,46 +876,58 @@
               "type": "dilithium",
               "value": 5460
             }
-          ]
-        },
-        {
-          "name": "Quantum Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 11754,
               "armor_pierce": 1348,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 14138,
-              "min_damage": 11781,
+              "max_damage": 9642,
+              "min_damage": 8034,
               "shield_pierce": 1797,
-              "weapon_type": "kinetic"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 201000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1400000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 55,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 55
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 160,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 160
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -950,20 +939,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 5900
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 201000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1400000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -973,29 +950,58 @@
               "type": "dilithium",
               "value": 5460
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 11754,
+              "armor_pierce": 1348,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 14138,
+              "min_damage": 11781,
+              "shield_pierce": 1797,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 533,
-              "hull_health": 51278
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 186000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1300000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 275,
                 "grade": 3,
-                "rarity": "common",
-                "value": 275
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 1110,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1110
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1007,20 +1013,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 5500
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 186000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1300000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1030,29 +1024,41 @@
               "type": "dilithium",
               "value": 5070
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 533,
+              "hull_health": 51278
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 60,
-              "warp_speed": 4.5
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 229000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1600000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 340,
                 "grade": 3,
-                "rarity": "common",
-                "value": 340
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 1365,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1365
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1064,20 +1070,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 6700
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 229000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1600000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1087,29 +1081,41 @@
               "type": "dilithium",
               "value": 6240
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 60,
+              "warp_speed": 4.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 5334,
-              "shield_health": 124626
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 215000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1500000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 315,
                 "grade": 3,
-                "rarity": "common",
-                "value": 315
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 1280,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1280
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1121,20 +1127,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 6300
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 215000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1500000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1144,29 +1138,41 @@
               "type": "dilithium",
               "value": 5850
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 5334,
+              "shield_health": 124626
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 533,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 186000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1300000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 275,
                 "grade": 3,
-                "rarity": "common",
-                "value": 275
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 1110,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1110
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1178,20 +1184,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 5500
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 186000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1300000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1201,7 +1195,14 @@
               "type": "dilithium",
               "value": 5070
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 533,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1235,51 +1236,39 @@
           "level": 15,
           "ship_xp": 318000
         }
-      ],
-      "repair_time": 108000,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 1600000,
+      "repair_time": 126000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 12224,
-              "armor_pierce": 1402,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 10128,
-              "min_damage": 8439,
-              "shield_pierce": 1869,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 693000000
+              },
+              {
+                "type": "dilithium",
+                "value": 4300000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2865,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2865
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 880,
                 "grade": 4,
-                "rarity": "common",
-                "value": 880
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1291,20 +1280,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 11900
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 693000000
-              },
-              {
-                "type": "dilithium",
-                "value": 4300000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1314,46 +1291,58 @@
               "type": "dilithium",
               "value": 540750
             }
-          ]
-        },
-        {
-          "name": "Phaser Cannons",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 12224,
               "armor_pierce": 1402,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 10128,
               "min_damage": 8439,
               "shield_pierce": 1869,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 647000000
+              },
+              {
+                "type": "dilithium",
+                "value": 4000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2675,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2675
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 820,
                 "grade": 4,
-                "rarity": "common",
-                "value": 820
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1365,20 +1354,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 11100
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 647000000
-              },
-              {
-                "type": "dilithium",
-                "value": 4000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1388,16 +1365,91 @@
               "type": "dilithium",
               "value": 504700
             }
-          ]
-        },
-        {
-          "name": "Quantum Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 12224,
               "armor_pierce": 1402,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 10128,
+              "min_damage": 8439,
+              "shield_pierce": 1869,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 647000000
+              },
+              {
+                "type": "dilithium",
+                "value": 4000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 2675,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 820,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Common Explorer Parts",
+                "value": 1130
+              },
+              {
+                "type": "USS Titan-A Parts",
+                "value": 11100
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3136840
+            },
+            {
+              "type": "dilithium",
+              "value": 504700
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 12224,
+              "armor_pierce": 1402,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 14851,
+              "min_damage": 12375,
+              "shield_pierce": 1869,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 0,
@@ -1408,83 +1460,37 @@
                 0,
                 0,
                 2
-              ],
-              "max_damage": 14851,
-              "min_damage": 12375,
-              "shield_pierce": 1869,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "common",
-                "value": 2675
-              },
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "common",
-                "value": 820
-              }
-            ],
-            "others": [
-              {
-                "type": "4\u2605 Common Explorer Parts",
-                "value": 1130
-              },
-              {
-                "type": "USS Titan-A Parts",
-                "value": 11100
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 647000000
-              },
-              {
-                "type": "dilithium",
-                "value": 4000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 3136840
-            },
-            {
-              "type": "dilithium",
-              "value": 504700
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 554,
-              "hull_health": 53329
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 601000000
+              },
+              {
+                "type": "dilithium",
+                "value": 3800000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2480,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2480
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 760,
                 "grade": 4,
-                "rarity": "common",
-                "value": 760
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1496,20 +1502,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 10300
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 601000000
-              },
-              {
-                "type": "dilithium",
-                "value": 3800000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1519,29 +1513,41 @@
               "type": "dilithium",
               "value": 468650
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 554,
+              "hull_health": 53329
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 80,
-              "warp_speed": 4.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 739000000
+              },
+              {
+                "type": "dilithium",
+                "value": 4600000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3055,
                 "grade": 4,
-                "rarity": "common",
-                "value": 3055
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 940,
                 "grade": 4,
-                "rarity": "common",
-                "value": 940
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1553,20 +1559,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 12700
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 739000000
-              },
-              {
-                "type": "dilithium",
-                "value": 4600000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1576,29 +1570,41 @@
               "type": "dilithium",
               "value": 576800
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 80,
+              "warp_speed": 4.6
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 5547,
-              "shield_health": 129611
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 693000000
+              },
+              {
+                "type": "dilithium",
+                "value": 4300000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2865,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2865
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 880,
                 "grade": 4,
-                "rarity": "common",
-                "value": 880
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1610,20 +1616,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 11800
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 693000000
-              },
-              {
-                "type": "dilithium",
-                "value": 4300000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1633,29 +1627,41 @@
               "type": "dilithium",
               "value": 540750
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 5547,
+              "shield_health": 129611
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 554,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 601000000
+              },
+              {
+                "type": "dilithium",
+                "value": 3800000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2480,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2480
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 760,
                 "grade": 4,
-                "rarity": "common",
-                "value": 760
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1667,20 +1673,8 @@
                 "type": "Uncommon USS Titan-A Parts",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 601000000
-              },
-              {
-                "type": "dilithium",
-                "value": 3800000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1690,7 +1684,14 @@
               "type": "dilithium",
               "value": 468650
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 554,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1724,51 +1725,39 @@
           "level": 20,
           "ship_xp": 628000
         }
-      ],
-      "repair_time": 126000,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 2400000,
+      "repair_time": 138000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 13446,
-              "armor_pierce": 1542,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 11252,
-              "min_damage": 9376,
-              "shield_pierce": 2056,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1301000000
+              },
+              {
+                "type": "dilithium",
+                "value": 11300000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4750,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4750
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1470,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1470
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1780,20 +1769,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 18200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1301000000
-              },
-              {
-                "type": "dilithium",
-                "value": 11300000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1803,46 +1780,58 @@
               "type": "dilithium",
               "value": 800100
             }
-          ]
-        },
-        {
-          "name": "Phaser Cannons",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 13446,
               "armor_pierce": 1542,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 11252,
               "min_damage": 9376,
               "shield_pierce": 2056,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1214000000
+              },
+              {
+                "type": "dilithium",
+                "value": 10500000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4435,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4435
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1375,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1375
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1854,20 +1843,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 17000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1214000000
-              },
-              {
-                "type": "dilithium",
-                "value": 10500000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1877,16 +1854,91 @@
               "type": "dilithium",
               "value": 746760
             }
-          ]
-        },
-        {
-          "name": "Quantum Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 13446,
               "armor_pierce": 1542,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 11252,
+              "min_damage": 9376,
+              "shield_pierce": 2056,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1214000000
+              },
+              {
+                "type": "dilithium",
+                "value": 10500000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 4435,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 1375,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Common Explorer Parts",
+                "value": 2220
+              },
+              {
+                "type": "USS Titan-A Parts",
+                "value": 17000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 5614840
+            },
+            {
+              "type": "dilithium",
+              "value": 746760
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 13446,
+              "armor_pierce": 1542,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 16499,
+              "min_damage": 13749,
+              "shield_pierce": 2056,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 0,
@@ -1897,83 +1949,37 @@
                 0,
                 0,
                 2
-              ],
-              "max_damage": 16499,
-              "min_damage": 13749,
-              "shield_pierce": 2056,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "common",
-                "value": 4435
-              },
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1375
-              }
-            ],
-            "others": [
-              {
-                "type": "4\u2605 Common Explorer Parts",
-                "value": 2220
-              },
-              {
-                "type": "USS Titan-A Parts",
-                "value": 17000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1214000000
-              },
-              {
-                "type": "dilithium",
-                "value": 10500000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 5614840
-            },
-            {
-              "type": "dilithium",
-              "value": 746760
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 609,
-              "hull_health": 58662
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1128000000
+              },
+              {
+                "type": "dilithium",
+                "value": 9800000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4115,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4115
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1275,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1275
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1985,20 +1991,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 15600
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1128000000
-              },
-              {
-                "type": "dilithium",
-                "value": 9800000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2008,29 +2002,41 @@
               "type": "dilithium",
               "value": 693420
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 609,
+              "hull_health": 58662
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 90,
-              "warp_speed": 4.7
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1388000000
+              },
+              {
+                "type": "dilithium",
+                "value": 12000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 5070,
                 "grade": 4,
-                "rarity": "common",
-                "value": 5070
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1570,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1570
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2042,20 +2048,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 19400
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1388000000
-              },
-              {
-                "type": "dilithium",
-                "value": 12000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2065,29 +2059,41 @@
               "type": "dilithium",
               "value": 853440
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 90,
+              "warp_speed": 4.7
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 6102,
-              "shield_health": 142572
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1301000000
+              },
+              {
+                "type": "dilithium",
+                "value": 11300000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4750,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4750
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1470,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1470
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2099,20 +2105,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 18200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1301000000
-              },
-              {
-                "type": "dilithium",
-                "value": 11300000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2122,29 +2116,41 @@
               "type": "dilithium",
               "value": 800100
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 6102,
+              "shield_health": 142572
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 609,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1128000000
+              },
+              {
+                "type": "dilithium",
+                "value": 9800000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4115,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4115
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1275,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1275
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2156,20 +2162,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 15700
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1128000000
-              },
-              {
-                "type": "dilithium",
-                "value": 9800000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2179,7 +2173,14 @@
               "type": "dilithium",
               "value": 693420
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 609,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2213,51 +2214,39 @@
           "level": 25,
           "ship_xp": 1083000
         }
-      ],
-      "repair_time": 138000,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 3200000,
+      "repair_time": 156000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 14791,
-              "armor_pierce": 1696,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 12501,
-              "min_damage": 10417,
-              "shield_pierce": 2262,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3500000000
+              },
+              {
+                "type": "dilithium",
+                "value": 32100000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2470,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2470
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 5250,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 5250
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2269,20 +2258,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 28100
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3500000000
-              },
-              {
-                "type": "dilithium",
-                "value": 32100000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2292,46 +2269,58 @@
               "type": "dilithium",
               "value": 2026050
             }
-          ]
-        },
-        {
-          "name": "Phaser Cannons",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 14791,
               "armor_pierce": 1696,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 12501,
               "min_damage": 10417,
               "shield_pierce": 2262,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3200000000
+              },
+              {
+                "type": "dilithium",
+                "value": 29900000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2305,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2305
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 4900,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4900
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2343,20 +2332,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 26200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3200000000
-              },
-              {
-                "type": "dilithium",
-                "value": 29900000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2366,46 +2343,58 @@
               "type": "dilithium",
               "value": 1890980
             }
-          ]
-        },
-        {
-          "name": "Quantum Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 14791,
               "armor_pierce": 1696,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 18330,
-              "min_damage": 15275,
+              "max_damage": 12501,
+              "min_damage": 10417,
               "shield_pierce": 2262,
-              "weapon_type": "kinetic"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3200000000
+              },
+              {
+                "type": "dilithium",
+                "value": 29900000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2305,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2305
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 4900,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4900
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2417,20 +2406,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 26200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3200000000
-              },
-              {
-                "type": "dilithium",
-                "value": 29900000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2440,29 +2417,58 @@
               "type": "dilithium",
               "value": 1890980
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 14791,
+              "armor_pierce": 1696,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 18330,
+              "min_damage": 15275,
+              "shield_pierce": 2262,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 670,
-              "hull_health": 64528
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 27800000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 12350,
                 "grade": 4,
-                "rarity": "common",
-                "value": 12350
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 2140,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2140
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2474,20 +2480,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 24300
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 27800000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2497,29 +2491,41 @@
               "type": "dilithium",
               "value": 1755910
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 670,
+              "hull_health": 64528
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 95,
-              "warp_speed": 4.8
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3700000000
+              },
+              {
+                "type": "dilithium",
+                "value": 34200000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 15200,
                 "grade": 4,
-                "rarity": "common",
-                "value": 15200
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 2635,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2635
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2531,20 +2537,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 30000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3700000000
-              },
-              {
-                "type": "dilithium",
-                "value": 34200000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2554,29 +2548,41 @@
               "type": "dilithium",
               "value": 2161120
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 95,
+              "warp_speed": 4.8
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 6712,
-              "shield_health": 156829
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3500000000
+              },
+              {
+                "type": "dilithium",
+                "value": 32100000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 14250,
                 "grade": 4,
-                "rarity": "common",
-                "value": 14250
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 2470,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2470
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2588,20 +2594,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 28100
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3500000000
-              },
-              {
-                "type": "dilithium",
-                "value": 32100000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2611,29 +2605,41 @@
               "type": "dilithium",
               "value": 2026050
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 6712,
+              "shield_health": 156829
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 670,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 27800000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 12350,
                 "grade": 4,
-                "rarity": "common",
-                "value": 12350
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 2140,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2140
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2645,20 +2651,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 24300
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 27800000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2668,7 +2662,14 @@
               "type": "dilithium",
               "value": 1755910
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 670,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2702,51 +2703,39 @@
           "level": 30,
           "ship_xp": 1640000
         }
-      ],
-      "repair_time": 156000,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 4000000,
+      "repair_time": 174000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 16418,
-              "armor_pierce": 1883,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 14015,
-              "min_damage": 11678,
-              "shield_pierce": 2511,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8400000000
+              },
+              {
+                "type": "dilithium",
+                "value": 71700000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2430,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2430
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 5990,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 5990
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2758,20 +2747,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 41200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8400000000
-              },
-              {
-                "type": "dilithium",
-                "value": 71700000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2781,46 +2758,58 @@
               "type": "dilithium",
               "value": 3062700
             }
-          ]
-        },
-        {
-          "name": "Phaser Cannons",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 16418,
               "armor_pierce": 1883,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 14015,
               "min_damage": 11678,
               "shield_pierce": 2511,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7900000000
+              },
+              {
+                "type": "dilithium",
+                "value": 66900000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2270,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2270
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 5590,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 5590
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2832,20 +2821,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 38500
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 7900000000
-              },
-              {
-                "type": "dilithium",
-                "value": 66900000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2855,46 +2832,58 @@
               "type": "dilithium",
               "value": 2858520
             }
-          ]
-        },
-        {
-          "name": "Quantum Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 16418,
               "armor_pierce": 1883,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 20550,
-              "min_damage": 17125,
+              "max_damage": 14015,
+              "min_damage": 11678,
               "shield_pierce": 2511,
-              "weapon_type": "kinetic"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7900000000
+              },
+              {
+                "type": "dilithium",
+                "value": 66900000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2270,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2270
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 5590,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 5590
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2906,20 +2895,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 38500
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 7900000000
-              },
-              {
-                "type": "dilithium",
-                "value": 66900000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2929,29 +2906,58 @@
               "type": "dilithium",
               "value": 2858520
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 16418,
+              "armor_pierce": 1883,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 20550,
+              "min_damage": 17125,
+              "shield_pierce": 2511,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 743,
-              "hull_health": 71626
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7300000000
+              },
+              {
+                "type": "dilithium",
+                "value": 62100000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 25850,
                 "grade": 4,
-                "rarity": "common",
-                "value": 25850
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 5730,
                 "grade": 4,
-                "rarity": "common",
-                "value": 5730
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2963,20 +2969,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 35800
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 7300000000
-              },
-              {
-                "type": "dilithium",
-                "value": 62100000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2986,29 +2980,41 @@
               "type": "dilithium",
               "value": 2654340
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 743,
+              "hull_health": 71626
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 100,
-              "warp_speed": 4.9
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 9000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 76500000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 31815,
                 "grade": 4,
-                "rarity": "common",
-                "value": 31815
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 7050,
                 "grade": 4,
-                "rarity": "common",
-                "value": 7050
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3020,20 +3026,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 44000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 9000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 76500000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3043,29 +3037,41 @@
               "type": "dilithium",
               "value": 3266880
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 100,
+              "warp_speed": 4.9
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 7450,
-              "shield_health": 174080
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8400000000
+              },
+              {
+                "type": "dilithium",
+                "value": 71700000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 6610,
                 "grade": 4,
-                "rarity": "common",
-                "value": 6610
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 5990,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 5990
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3077,20 +3083,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 41200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8400000000
-              },
-              {
-                "type": "dilithium",
-                "value": 71700000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3100,29 +3094,41 @@
               "type": "dilithium",
               "value": 3062700
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 7450,
+              "shield_health": 174080
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 744,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7300000000
+              },
+              {
+                "type": "dilithium",
+                "value": 62100000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 25850,
                 "grade": 4,
-                "rarity": "common",
-                "value": 25850
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 5730,
                 "grade": 4,
-                "rarity": "common",
-                "value": 5730
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3134,20 +3140,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 35800
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 7300000000
-              },
-              {
-                "type": "dilithium",
-                "value": 62100000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3157,7 +3151,14 @@
               "type": "dilithium",
               "value": 2654340
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 744,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3191,51 +3192,39 @@
           "level": 35,
           "ship_xp": 2433000
         }
-      ],
-      "repair_time": 174000,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 5200000,
+      "repair_time": 192000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 18470,
-              "armor_pierce": 2118,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 15925,
-              "min_damage": 13269,
-              "shield_pierce": 2825,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 18300000000
+              },
+              {
+                "type": "dilithium",
+                "value": 210000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3390,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 3390
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 2220,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2220
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3247,20 +3236,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 60000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 18300000000
-              },
-              {
-                "type": "dilithium",
-                "value": 210000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3270,46 +3247,58 @@
               "type": "dilithium",
               "value": 5211750
             }
-          ]
-        },
-        {
-          "name": "Phaser Cannons",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 18470,
               "armor_pierce": 2118,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 15925,
               "min_damage": 13269,
               "shield_pierce": 2825,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 17100000000
+              },
+              {
+                "type": "dilithium",
+                "value": 196000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3165,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 3165
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 2070,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2070
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3321,20 +3310,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 57000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 17100000000
-              },
-              {
-                "type": "dilithium",
-                "value": 196000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3344,16 +3321,91 @@
               "type": "dilithium",
               "value": 4864300
             }
-          ]
-        },
-        {
-          "name": "Quantum Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 18470,
               "armor_pierce": 2118,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 15925,
+              "min_damage": 13269,
+              "shield_pierce": 2825,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 17100000000
+              },
+              {
+                "type": "dilithium",
+                "value": 196000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 3165,
+                "grade": 4,
+                "rarity": "rare"
+              },
+              {
+                "type": "ore",
+                "value": 2070,
+                "grade": 4,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Uncommon Explorer Parts",
+                "value": 3490
+              },
+              {
+                "type": "USS Titan-A Parts",
+                "value": 57000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 49504840
+            },
+            {
+              "type": "dilithium",
+              "value": 4864300
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 18470,
+              "armor_pierce": 2118,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 23350,
+              "min_damage": 19458,
+              "shield_pierce": 2825,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 0,
@@ -3364,83 +3416,37 @@
                 0,
                 0,
                 2
-              ],
-              "max_damage": 23350,
-              "min_damage": 19458,
-              "shield_pierce": 2825,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 3165
-              },
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 2070
-              }
-            ],
-            "others": [
-              {
-                "type": "4\u2605 Uncommon Explorer Parts",
-                "value": 3490
-              },
-              {
-                "type": "USS Titan-A Parts",
-                "value": 57000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 17100000000
-              },
-              {
-                "type": "dilithium",
-                "value": 196000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 49504840
-            },
-            {
-              "type": "dilithium",
-              "value": 4864300
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 836,
-              "hull_health": 80579
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 15900000000
+              },
+              {
+                "type": "dilithium",
+                "value": 182000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1925,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1925
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 7920,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 7920
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3452,20 +3458,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 53000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 15900000000
-              },
-              {
-                "type": "dilithium",
-                "value": 182000000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3475,29 +3469,41 @@
               "type": "dilithium",
               "value": 4516850
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 836,
+              "hull_health": 80579
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 105,
-              "warp_speed": 5.0
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 19600000000
+              },
+              {
+                "type": "dilithium",
+                "value": 224000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 20935,
                 "grade": 4,
-                "rarity": "common",
-                "value": 20935
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 9750,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 9750
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3509,20 +3515,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 65000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 19600000000
-              },
-              {
-                "type": "dilithium",
-                "value": 224000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3532,29 +3526,41 @@
               "type": "dilithium",
               "value": 5559200
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 105,
+              "warp_speed": 5.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 8381,
-              "shield_health": 195840
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 18300000000
+              },
+              {
+                "type": "dilithium",
+                "value": 210000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2220,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2220
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 9140,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 9140
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3566,20 +3572,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 60000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 18300000000
-              },
-              {
-                "type": "dilithium",
-                "value": 210000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3589,29 +3583,41 @@
               "type": "dilithium",
               "value": 5211750
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 8381,
+              "shield_health": 195840
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 837,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 15900000000
+              },
+              {
+                "type": "dilithium",
+                "value": 182000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 17010,
                 "grade": 4,
-                "rarity": "common",
-                "value": 17010
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 7920,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 7920
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3623,20 +3629,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 53000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 15900000000
-              },
-              {
-                "type": "dilithium",
-                "value": 182000000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3646,7 +3640,14 @@
               "type": "dilithium",
               "value": 4516850
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 837,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3680,51 +3681,39 @@
           "level": 40,
           "ship_xp": 3445000
         }
-      ],
-      "repair_time": 192000,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 6400000,
+      "repair_time": 210000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 21241,
-              "armor_pierce": 2436,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 18497,
-              "min_damage": 15412,
-              "shield_pierce": 3249,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 32000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 370000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3755,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 3755
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 1530,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1530
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3736,20 +3725,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 95000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 32000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 370000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3759,46 +3736,58 @@
               "type": "dilithium",
               "value": 8038950
             }
-          ]
-        },
-        {
-          "name": "Phaser Cannons",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 21241,
               "armor_pierce": 2436,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 18497,
               "min_damage": 15412,
               "shield_pierce": 3249,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 30000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 345000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3505,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 3505
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 1430,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1430
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3810,20 +3799,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 88000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 30000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 345000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3833,16 +3810,91 @@
               "type": "dilithium",
               "value": 7503020
             }
-          ]
-        },
-        {
-          "name": "Quantum Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 21241,
               "armor_pierce": 2436,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 18497,
+              "min_damage": 15412,
+              "shield_pierce": 3249,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 30000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 345000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 3505,
+                "grade": 4,
+                "rarity": "rare"
+              },
+              {
+                "type": "ore",
+                "value": 1430,
+                "grade": 4,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Rare Explorer Parts",
+                "value": 1040
+              },
+              {
+                "type": "USS Titan-A Parts",
+                "value": 88000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 83006840
+            },
+            {
+              "type": "dilithium",
+              "value": 7503020
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 21241,
+              "armor_pierce": 2436,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 27121,
+              "min_damage": 22600,
+              "shield_pierce": 3249,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 0,
@@ -3853,83 +3905,37 @@
                 0,
                 0,
                 2
-              ],
-              "max_damage": 27121,
-              "min_damage": 22600,
-              "shield_pierce": 3249,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 3505
-              },
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1430
-              }
-            ],
-            "others": [
-              {
-                "type": "4\u2605 Rare Explorer Parts",
-                "value": 1040
-              },
-              {
-                "type": "USS Titan-A Parts",
-                "value": 88000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 30000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 345000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 83006840
-            },
-            {
-              "type": "dilithium",
-              "value": 7503020
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 961,
-              "hull_health": 92666
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 28000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 320000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 3565,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 3565
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 16030,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 16030
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3941,20 +3947,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 82000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 28000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 320000000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3964,29 +3958,41 @@
               "type": "dilithium",
               "value": 6967090
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 961,
+              "hull_health": 92666
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 110,
-              "warp_speed": 5.1
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 34000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 394000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 4390,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4390
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 19730,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 19730
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3998,20 +4004,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 100000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 34000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 394000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4021,29 +4015,41 @@
               "type": "dilithium",
               "value": 8574880
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 110,
+              "warp_speed": 5.1
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 9638,
-              "shield_health": 225216
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 32000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 370000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3755,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 3755
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 4115,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4115
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4055,20 +4061,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 95000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 32000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 370000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4078,29 +4072,41 @@
               "type": "dilithium",
               "value": 8038950
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 9638,
+              "shield_health": 225216
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 963,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 28000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 320000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 3565,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 3565
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 16030,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 16030
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4112,20 +4118,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 82000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 28000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 320000000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4135,7 +4129,14 @@
               "type": "dilithium",
               "value": 6967090
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 963,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4169,51 +4170,39 @@
           "level": 45,
           "ship_xp": 4543000
         }
-      ],
-      "repair_time": 210000,
-      "tier": 9
+      ]
     },
     {
+      "tier": 10,
       "build_time": 8000000,
+      "repair_time": 228000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 25064,
-              "armor_pierce": 2874,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 22045,
-              "min_damage": 18368,
-              "shield_pierce": 3834,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 93000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1317000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 12305,
                 "grade": 5,
-                "rarity": "common",
-                "value": 12305
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 3710,
                 "grade": 5,
-                "rarity": "common",
-                "value": 3710
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4225,20 +4214,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 130000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 93000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1317000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4248,46 +4225,58 @@
               "type": "dilithium",
               "value": 23219250
             }
-          ]
-        },
-        {
-          "name": "Phaser Cannons",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 25064,
               "armor_pierce": 2874,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 22045,
               "min_damage": 18368,
               "shield_pierce": 3834,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 87000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1229000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 11485,
                 "grade": 5,
-                "rarity": "common",
-                "value": 11485
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 3460,
                 "grade": 5,
-                "rarity": "common",
-                "value": 3460
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4299,20 +4288,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 121000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 87000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1229000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4322,16 +4299,91 @@
               "type": "dilithium",
               "value": 21671300
             }
-          ]
-        },
-        {
-          "name": "Quantum Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 25064,
               "armor_pierce": 2874,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 22045,
+              "min_damage": 18368,
+              "shield_pierce": 3834,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 87000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1229000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 11485,
+                "grade": 5,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 3460,
+                "grade": 5,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Explorer Parts",
+                "value": 2695
+              },
+              {
+                "type": "USS Titan-A Parts",
+                "value": 121000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 287126840
+            },
+            {
+              "type": "dilithium",
+              "value": 21671300
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 25064,
+              "armor_pierce": 2874,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 32323,
+              "min_damage": 26935,
+              "shield_pierce": 3834,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 0,
@@ -4342,83 +4394,37 @@
                 0,
                 0,
                 2
-              ],
-              "max_damage": 32323,
-              "min_damage": 26935,
-              "shield_pierce": 3834,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 11485
-              },
-              {
-                "type": "ore",
-                "grade": 5,
-                "rarity": "common",
-                "value": 3460
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Common Explorer Parts",
-                "value": 2695
-              },
-              {
-                "type": "USS Titan-A Parts",
-                "value": 121000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 87000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1229000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 287126840
-            },
-            {
-              "type": "dilithium",
-              "value": 21671300
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1134,
-              "hull_health": 109346
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 81000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1141000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 10665,
                 "grade": 5,
-                "rarity": "common",
-                "value": 10665
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 3215,
                 "grade": 5,
-                "rarity": "common",
-                "value": 3215
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4430,20 +4436,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 112000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 81000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1141000000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4453,29 +4447,41 @@
               "type": "dilithium",
               "value": 20123350
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1134,
+              "hull_health": 109346
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 120,
-              "warp_speed": 5.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 100000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1405000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 13125,
                 "grade": 5,
-                "rarity": "common",
-                "value": 13125
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 3955,
                 "grade": 5,
-                "rarity": "common",
-                "value": 3955
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4487,20 +4493,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 138000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 100000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1405000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4510,29 +4504,41 @@
               "type": "dilithium",
               "value": 24767200
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 120,
+              "warp_speed": 5.2
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 11373,
-              "shield_health": 265755
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 93000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1317000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 12305,
                 "grade": 5,
-                "rarity": "common",
-                "value": 12305
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 3710,
                 "grade": 5,
-                "rarity": "common",
-                "value": 3710
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4544,20 +4550,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 130000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 93000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1317000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4567,29 +4561,41 @@
               "type": "dilithium",
               "value": 23219250
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 11373,
+              "shield_health": 265755
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 1386,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 81000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1141000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 10665,
                 "grade": 5,
-                "rarity": "common",
-                "value": 10665
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 3215,
                 "grade": 5,
-                "rarity": "common",
-                "value": 3215
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4601,20 +4607,8 @@
                 "type": "Rare USS Titan-A Parts",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 81000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1141000000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4624,7 +4618,14 @@
               "type": "dilithium",
               "value": 20123350
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 1386,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4658,51 +4659,39 @@
           "level": 50,
           "ship_xp": 6040000
         }
-      ],
-      "repair_time": 228000,
-      "tier": 10
+      ]
     },
     {
+      "tier": 11,
       "build_time": 10400000,
+      "repair_time": 252000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 30077,
-              "armor_pierce": 3449,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 26719,
-              "min_damage": 22262,
-              "shield_pierce": 4601,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 225000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 2900000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1655,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 1655
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 5495,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 5495
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4714,20 +4703,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 194000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 225000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 2900000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4737,46 +4714,58 @@
               "type": "dilithium",
               "value": 40082250
             }
-          ]
-        },
-        {
-          "name": "Phaser Cannons",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 30077,
               "armor_pierce": 3449,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 26719,
               "min_damage": 22262,
               "shield_pierce": 4601,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 210000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 2710000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1545,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 1545
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 5125,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 5125
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4788,20 +4777,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 182000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 210000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 2710000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4811,16 +4788,91 @@
               "type": "dilithium",
               "value": 37410100
             }
-          ]
-        },
-        {
-          "name": "Quantum Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 30077,
               "armor_pierce": 3449,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 26719,
+              "min_damage": 22262,
+              "shield_pierce": 4601,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 210000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 2710000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 1545,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 5125,
+                "grade": 5,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Explorer Parts",
+                "value": 1515
+              },
+              {
+                "type": "USS Titan-A Parts",
+                "value": 182000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 574336840
+            },
+            {
+              "type": "dilithium",
+              "value": 37410100
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 30077,
+              "armor_pierce": 3449,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 39175,
+              "min_damage": 32645,
+              "shield_pierce": 4601,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 0,
@@ -4831,83 +4883,37 @@
                 0,
                 0,
                 2
-              ],
-              "max_damage": 39175,
-              "min_damage": 32645,
-              "shield_pierce": 4601,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 1545
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 5125
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Explorer Parts",
-                "value": 1515
-              },
-              {
-                "type": "USS Titan-A Parts",
-                "value": 182000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 210000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 2710000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 574336840
-            },
-            {
-              "type": "dilithium",
-              "value": 37410100
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1361,
-              "hull_health": 131215
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 195000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 2510000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1435,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 1435
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 4760,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 4760
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4919,20 +4925,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 168000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 195000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 2510000000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4942,29 +4936,41 @@
               "type": "dilithium",
               "value": 34737950
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1361,
+              "hull_health": 131215
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 140,
-              "warp_speed": 5.3
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 240000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 3090000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1765,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 1765
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 5860,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 5860
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4976,20 +4982,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 207000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 240000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 3090000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4999,29 +4993,41 @@
               "type": "dilithium",
               "value": 42754400
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 140,
+              "warp_speed": 5.3
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 13648,
-              "shield_health": 318906
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 225000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 2900000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1655,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 1655
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 5495,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 5495
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5033,20 +5039,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 194000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 225000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 2900000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5056,29 +5050,41 @@
               "type": "dilithium",
               "value": 40082250
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 13648,
+              "shield_health": 318906
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 1663,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 195000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 2510000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1435,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 1435
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 4760,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 4760
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5090,20 +5096,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 168000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 195000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 2510000000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5113,7 +5107,14 @@
               "type": "dilithium",
               "value": 34737950
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 1663,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -5147,51 +5148,39 @@
           "level": 55,
           "ship_xp": 7848000
         }
-      ],
-      "repair_time": 252000,
-      "tier": 11
+      ]
     },
     {
+      "tier": 12,
       "build_time": 14400000,
+      "repair_time": 276000,
       "components": [
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 38499,
-              "armor_pierce": 4415,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 34542,
-              "min_damage": 28780,
-              "shield_pierce": 5889,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 556000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 7200000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3425,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 3425
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 1390,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 1390
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5203,20 +5192,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 280000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 556000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 7200000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5226,46 +5203,58 @@
               "type": "dilithium",
               "value": 102088350
             }
-          ]
-        },
-        {
-          "name": "Phaser Cannons",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 38499,
               "armor_pierce": 4415,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 34542,
               "min_damage": 28780,
               "shield_pierce": 5889,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 519000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 6700000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3195,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 3195
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 1300,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 1300
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5277,20 +5266,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 260000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 519000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 6700000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5300,46 +5277,58 @@
               "type": "dilithium",
               "value": 95282460
             }
-          ]
-        },
-        {
-          "name": "Quantum Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 38499,
               "armor_pierce": 4415,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 50645,
-              "min_damage": 42203,
+              "max_damage": 34542,
+              "min_damage": 28780,
               "shield_pierce": 5889,
-              "weapon_type": "kinetic"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Quantum Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 519000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 6700000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3195,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 3195
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 1300,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 1300
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5351,20 +5340,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 261000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 519000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 6700000000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5374,29 +5351,58 @@
               "type": "dilithium",
               "value": 95282460
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 38499,
+              "armor_pierce": 4415,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 50645,
+              "min_damage": 42203,
+              "shield_pierce": 5889,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Tritanium Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1742,
-              "hull_health": 167955
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 482000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 6200000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 3470,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 3470
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 15620,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 15620
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5408,20 +5414,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 243000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 482000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 6200000000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5431,29 +5425,41 @@
               "type": "dilithium",
               "value": 88476570
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1742,
+              "hull_health": 167955
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 150,
-              "warp_speed": 5.4
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 593000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 7700000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 4270,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 4270
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 19225,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 19225
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5465,20 +5471,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 299000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 593000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 7700000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5488,29 +5482,41 @@
               "type": "dilithium",
               "value": 108894240
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 150,
+              "warp_speed": 5.4
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 17469,
-              "shield_health": 408199
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 556000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 7200000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3425,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 3425
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 4000,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 4000
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5522,20 +5528,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 280000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 556000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 7200000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5545,29 +5539,41 @@
               "type": "dilithium",
               "value": 102088350
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 17469,
+              "shield_health": 408199
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 2129,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 482000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 6200000000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 3470,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 3470
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 15620,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 15620
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5579,20 +5585,8 @@
                 "type": "USS Titan-A Parts",
                 "value": 243000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 482000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 6200000000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5602,7 +5596,14 @@
               "type": "dilithium",
               "value": 88476570
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 2129,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -5636,9 +5637,8 @@
           "level": 60,
           "ship_xp": 10000000
         }
-      ],
-      "repair_time": 276000,
-      "tier": 12
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/uss_titan_a.png"
 }

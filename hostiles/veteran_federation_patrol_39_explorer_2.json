@@ -1,14 +1,75 @@
 {
+  "hostile_name": "Veteran Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 1774881,
     "defense": 1856100,
     "health": 617880
   },
-  "hostile_name": "Veteran Federation Patrol",
-  "level": 39,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/lakeside_39"
+    },
+    {
+      "$ref": "systems/bolarus_39"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 397228,
+      "armor_pierce": 49654,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 1019437,
+      "shield_pierce": 56747
+    },
+    "defense": {
+      "armor": 56747,
+      "dodge": 49654,
+      "shield_deflect": 264819
+    },
+    "health": {
+      "hull_health": 505540,
+      "shield_health": 730220
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 397228,
+        "armor_pierce": 49654,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 339812,
+        "max_damage": 325038,
+        "min_damage": 265940,
+        "shield_pierce": 56747
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,70 +102,9 @@
       "value": 889
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 397228,
-      "armor_pierce": 49654,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 1019437,
-      "shield_pierce": 56747
-    },
-    "defense": {
-      "armor": 56747,
-      "dodge": 49654,
-      "shield_deflect": 264819
-    },
-    "health": {
-      "hull_health": 505540,
-      "shield_health": 730220
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/lakeside_39"
-    },
-    {
-      "$ref": "systems/bolarus_39"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 17
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 397228,
-        "armor_pierce": 49654,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 339812,
-        "max_damage": 325038,
-        "min_damage": 265940,
-        "shield_pierce": 56747
-      },
-      "weapon_type": "energy"
     }
   ]
 }

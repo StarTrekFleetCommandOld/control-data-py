@@ -1,14 +1,72 @@
 {
+  "hostile_name": "Veteran Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 792903,
     "defense": 857600,
     "health": 310840
   },
-  "hostile_name": "Veteran Klingon Patrol",
-  "level": 39,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/b_moth_39"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 170337,
+      "armor_pierce": 33121,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 450454,
+      "shield_pierce": 24841
+    },
+    "defense": {
+      "armor": 24841,
+      "dodge": 33121,
+      "shield_deflect": 113558
+    },
+    "health": {
+      "hull_health": 302440,
+      "shield_health": 319240
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 170337,
+        "armor_pierce": 33121,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 150151,
+        "max_damage": 143623,
+        "min_damage": 117510,
+        "shield_pierce": 24841
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,67 +99,9 @@
       "value": 0
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 170337,
-      "armor_pierce": 33121,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 450454,
-      "shield_pierce": 24841
-    },
-    "defense": {
-      "armor": 24841,
-      "dodge": 33121,
-      "shield_deflect": 113558
-    },
-    "health": {
-      "hull_health": 302440,
-      "shield_health": 319240
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/b_moth_39"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 17
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 170337,
-        "armor_pierce": 33121,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 150151,
-        "max_damage": 143623,
-        "min_damage": 117510,
-        "shield_pierce": 24841
-      },
-      "weapon_type": "energy"
     }
   ]
 }

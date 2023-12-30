@@ -1,44 +1,23 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 24,
+  "rarity": "common",
   "head_stats": {
     "attack": 18670,
     "defense": 19550,
     "health": 7850
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 24,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 942,
-      "min_value": 942,
-      "value": 942
+      "$ref": "systems/maranga_25"
     },
     {
-      "type": "tritanium",
-      "max_value": 78,
-      "min_value": 78,
-      "value": 78
+      "$ref": "systems/ias_26"
     },
     {
-      "type": "federation points",
-      "max_value": 12,
-      "min_value": 12,
-      "value": 12
-    },
-    {
-      "type": "romulan points",
-      "max_value": 6,
-      "min_value": 6,
-      "value": 6
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/vosak_24"
     }
   ],
   "ship_class": "battleship",
@@ -61,22 +40,6 @@
       "shield_health": 6730
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/maranga_25"
-    },
-    {
-      "$ref": "systems/ias_26"
-    },
-    {
-      "$ref": "systems/vosak_24"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -139,6 +102,43 @@
         "shield_pierce": 3623
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 942,
+      "min_value": 942,
+      "value": 942
+    },
+    {
+      "type": "tritanium",
+      "max_value": 78,
+      "min_value": 78,
+      "value": 78
+    },
+    {
+      "type": "federation points",
+      "max_value": 12,
+      "min_value": 12,
+      "value": 12
+    },
+    {
+      "type": "romulan points",
+      "max_value": 6,
+      "min_value": 6,
+      "value": 6
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

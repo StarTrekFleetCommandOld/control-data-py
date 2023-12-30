@@ -1,38 +1,29 @@
 {
+  "hostile_name": "Klingon Trader",
   "description": "",
   "group": "klingon",
+  "level": 41,
+  "rarity": "common",
   "head_stats": {
     "attack": 1158050,
     "defense": 1347415,
     "health": 2272836
   },
-  "hostile_name": "Klingon Trader",
-  "level": 41,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken survey parts",
-      "max_value": 166,
-      "min_value": 166,
-      "value": 166
+      "$ref": "systems/szov_43"
     },
     {
-      "type": "federation points",
-      "max_value": 4640,
-      "min_value": 4640,
-      "value": 4640
+      "$ref": "systems/dok_vos_41"
     },
     {
-      "type": "romulan points",
-      "max_value": 2320,
-      "min_value": 2320,
-      "value": 2320
+      "$ref": "systems/zlim_kach_40"
     },
     {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/ja_corash_40"
+    },
+    {
+      "$ref": "systems/inocula_43"
     }
   ],
   "ship_class": "survey",
@@ -55,28 +46,6 @@
       "shield_health": 2158919
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/szov_43"
-    },
-    {
-      "$ref": "systems/dok_vos_41"
-    },
-    {
-      "$ref": "systems/zlim_kach_40"
-    },
-    {
-      "$ref": "systems/ja_corash_40"
-    },
-    {
-      "$ref": "systems/inocula_43"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +77,37 @@
         "shield_pierce": 32729
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken survey parts",
+      "max_value": 166,
+      "min_value": 166,
+      "value": 166
+    },
+    {
+      "type": "federation points",
+      "max_value": 4640,
+      "min_value": 4640,
+      "value": 4640
+    },
+    {
+      "type": "romulan points",
+      "max_value": 2320,
+      "min_value": 2320,
+      "value": 2320
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

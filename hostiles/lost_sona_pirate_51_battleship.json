@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Lost Sona Pirate",
   "description": "",
   "group": "neutral",
+  "level": 51,
+  "rarity": "common",
   "head_stats": {
     "attack": 7766812,
     "defense": 2528995,
     "health": 11537887
   },
-  "hostile_name": "Lost Sona Pirate",
-  "level": 51,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 1453,
-      "min_value": 1453,
-      "value": 1453
+      "$ref": "systems/dijor_joh_50"
+    },
+    {
+      "$ref": "systems/aran_50"
+    },
+    {
+      "$ref": "systems/sakari_53"
+    },
+    {
+      "$ref": "systems/suvfa_53"
+    },
+    {
+      "$ref": "systems/neken_51"
+    },
+    {
+      "$ref": "systems/leichter_53"
     }
   ],
   "ship_class": "battleship",
@@ -37,31 +49,6 @@
       "shield_health": 9355006
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dijor_joh_50"
-    },
-    {
-      "$ref": "systems/aran_50"
-    },
-    {
-      "$ref": "systems/sakari_53"
-    },
-    {
-      "$ref": "systems/suvfa_53"
-    },
-    {
-      "$ref": "systems/neken_51"
-    },
-    {
-      "$ref": "systems/leichter_53"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 347637
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 1453,
+      "min_value": 1453,
+      "value": 1453
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

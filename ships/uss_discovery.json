@@ -1,75 +1,87 @@
 {
+  "ship_name": "USS DISCOVERY",
   "description": "\"All things can be understood once they are discovered; the point is to discover them.\"\nThis was the motto of the USS Discovery when it was launched into service. Officially designated a Crossfield class science vessel, the Discovery's facilities could accommodate 300 discrete scientific investigations at any one time.\nHowever, Discovery's mission statement would change drastically after the Battle at the Binary Stars in 2256. \nWith Starfleet stretched thin and the Klingons advancing toward Federation space, Discovery was pressed into service as a warship, one that would turn the tide of the conflict. The key to Discovery's military success was its unique spore drive, which allowed it to travel galactic distances in the blink of an eye.\nThis incredible technology made Discovery invaluable to Starfleet's war efforts and its captain was given virtually limitless resources and jurisdiction to fight the war as he saw fit. The USS Discovery, once a science vessel built for research and experimentation, had become the tip of the spear in a war for the fate of the Federation.",
+  "ship_class": "explorer",
+  "grade": 3,
+  "faction": "neutral",
+  "rarity": "rare",
   "blueprints": {
     "cost": 0,
     "quantity": 100
-  },
-  "faction": "neutral",
-  "grade": 3,
-  "img_url": "./assets/uss_discovery.png",
-  "rarity": "rare",
-  "requirements": [
-    {
-      "name": "Shipyard",
-      "level": 21
-    }
-  ],
-  "scrap_info": {
-    "scrappable": false
   },
   "ship_ability": {
     "title": "Mycelium Harvesting",
     "description": "The USS Discovery's Mycelium harvesting speed is increased by {value}.",
     "percentage": true
   },
-  "ship_class": "explorer",
-  "ship_name": "USS DISCOVERY",
+  "scrap_info": {
+    "scrappable": false
+  },
+  "requirements": [
+    {
+      "name": "Shipyard",
+      "level": 21
+    }
+  ],
   "tiers": [
     {
+      "tier": 1,
       "build_time": 540000,
+      "repair_time": 12612,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 554,
               "armor_pierce": 90,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
               "max_damage": 545,
               "min_damage": 455,
               "shield_pierce": 90,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
+          "quantity": 2
         },
         {
           "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 554,
               "armor_pierce": 90,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 1090,
+              "min_damage": 908,
+              "shield_pierce": 90,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -80,24 +92,20 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 1090,
-              "min_damage": 908,
-              "shield_pierce": 90,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 10000,
@@ -106,72 +114,44 @@
               "ship_increased_protected_cargo": 0
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Spore Drive",
+          "img_url": "./assets/component_spore_drive.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 90,
               "warp_distance": 20,
-              "warp_speed": 3.1
+              "warp_speed": 3.1,
+              "impulse_speed": 90
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_spore_drive.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Shield",
+          "img_url": "./assets/component_shield.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "shield_info": {
               "shield_deflection": 307,
               "shield_health": 1845
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [
-          {
-            "type": "gas",
-            "grade": 2,
-            "rarity": "common",
-            "value": 50
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 500000
-          },
-          {
-            "type": "dilithium",
-            "value": 20000
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 18.6,
@@ -204,58 +184,37 @@
           "ship_xp": 1700
         }
       ],
-      "repair_time": 12612,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 500000
+          },
+          {
+            "type": "dilithium",
+            "value": 20000
+          }
+        ],
+        "materials": [
+          {
+            "type": "gas",
+            "value": 50,
+            "grade": 2,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 59400,
+      "repair_time": 13332,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 720,
-              "armor_pierce": 117,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 708,
-              "min_damage": 591,
-              "shield_pierce": 117,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 10
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 25
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 170
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -265,10 +224,28 @@
                 "type": "dilithium",
                 "value": 19000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 10,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 25,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 170
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -278,16 +255,87 @@
               "type": "dilithium",
               "value": 225
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 720,
               "armor_pierce": 117,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 708,
+              "min_damage": 591,
+              "shield_pierce": 117,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1000000
+              },
+              {
+                "type": "dilithium",
+                "value": 26000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 15,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 30,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 230
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 9000
+            },
+            {
+              "type": "dilithium",
+              "value": 225
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 720,
+              "armor_pierce": 117,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 1416,
+              "min_damage": 1180,
+              "shield_pierce": 117,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -298,89 +346,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 1416,
-              "min_damage": 1180,
-              "shield_pierce": 117,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 15
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 30
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 230
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1000000
-              },
-              {
-                "type": "dilithium",
-                "value": 26000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 9000
-            },
-            {
-              "type": "dilithium",
-              "value": 225
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 2500,
-              "increased_protected_cargo": 800,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 100
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 15
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 40
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 15
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -390,10 +364,28 @@
                 "type": "dilithium",
                 "value": 32000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 15,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 40,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 15
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -403,30 +395,43 @@
               "type": "dilithium",
               "value": 225
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 2500,
+              "increased_protected_cargo": 800,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Spore Drive",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 21,
-              "warp_speed": 3.2
-            }
-          },
+          "img_url": "./assets/component_spore_drive.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1900000
+              },
+              {
+                "type": "dilithium",
+                "value": 48000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 20,
                 "grade": 3,
-                "rarity": "common",
-                "value": 20
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 55,
                 "grade": 3,
-                "rarity": "common",
-                "value": 55
+                "rarity": "common"
               }
             ],
             "others": [
@@ -438,20 +443,8 @@
                 "type": "Spore Drive Component",
                 "value": 430
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1900000
-              },
-              {
-                "type": "dilithium",
-                "value": 48000
-              }
             ]
           },
-          "img_url": "./assets/component_spore_drive.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -461,37 +454,20 @@
               "type": "dilithium",
               "value": 225
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 21,
+              "warp_speed": 3.2,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 398,
-              "shield_health": 2398
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 10
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 20
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 5
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -501,10 +477,28 @@
                 "type": "dilithium",
                 "value": 16000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 10,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 20,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 5
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -514,7 +508,14 @@
               "type": "dilithium",
               "value": 225
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 398,
+              "shield_health": 2398
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -548,59 +549,17 @@
           "level": 10,
           "ship_xp": 6000
         }
-      ],
-      "repair_time": 13332,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 118800,
+      "repair_time": 14700,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 935,
-              "armor_pierce": 152,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 920,
-              "min_damage": 767,
-              "shield_pierce": 152,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 15
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 35
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 260
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -610,10 +569,28 @@
                 "type": "dilithium",
                 "value": 36000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 15,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 35,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 260
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -623,16 +600,87 @@
               "type": "dilithium",
               "value": 310
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 935,
               "armor_pierce": 152,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 920,
+              "min_damage": 767,
+              "shield_pierce": 152,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1800000
+              },
+              {
+                "type": "dilithium",
+                "value": 48000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 20,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 45,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 350
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 11500
+            },
+            {
+              "type": "dilithium",
+              "value": 310
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 935,
+              "armor_pierce": 152,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 1839,
+              "min_damage": 1533,
+              "shield_pierce": 152,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -643,89 +691,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 1839,
-              "min_damage": 1533,
-              "shield_pierce": 152,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 20
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 45
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 350
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1800000
-              },
-              {
-                "type": "dilithium",
-                "value": 48000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 11500
-            },
-            {
-              "type": "dilithium",
-              "value": 310
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 2500,
-              "increased_protected_cargo": 800,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 100
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 20
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 55
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 20
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -735,10 +709,28 @@
                 "type": "dilithium",
                 "value": 60000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 20,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 55,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 20
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -748,30 +740,43 @@
               "type": "dilithium",
               "value": 310
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 2500,
+              "increased_protected_cargo": 800,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Spore Drive",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 22,
-              "warp_speed": 3.3
-            }
-          },
+          "img_url": "./assets/component_spore_drive.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3350000
+              },
+              {
+                "type": "dilithium",
+                "value": 90000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 30,
                 "grade": 3,
-                "rarity": "common",
-                "value": 30
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 80,
                 "grade": 3,
-                "rarity": "common",
-                "value": 80
+                "rarity": "common"
               }
             ],
             "others": [
@@ -783,20 +788,8 @@
                 "type": "Spore Drive Component",
                 "value": 655
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3350000
-              },
-              {
-                "type": "dilithium",
-                "value": 90000
-              }
             ]
           },
-          "img_url": "./assets/component_spore_drive.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -806,37 +799,20 @@
               "type": "dilithium",
               "value": 310
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 22,
+              "warp_speed": 3.3,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 517,
-              "shield_health": 3115
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 15
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 30
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 10
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -846,10 +822,28 @@
                 "type": "dilithium",
                 "value": 30000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 15,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 30,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 10
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -859,7 +853,14 @@
               "type": "dilithium",
               "value": 310
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 517,
+              "shield_health": 3115
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -893,59 +894,17 @@
           "level": 15,
           "ship_xp": 13500
         }
-      ],
-      "repair_time": 14700,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 198000,
+      "repair_time": 15978,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1215,
-              "armor_pierce": 197,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 1196,
-              "min_damage": 996,
-              "shield_pierce": 197,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 25
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 60
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 445
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -955,10 +914,28 @@
                 "type": "dilithium",
                 "value": 76000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 25,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 60,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 445
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -968,16 +945,87 @@
               "type": "dilithium",
               "value": 410
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1215,
               "armor_pierce": 197,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 1196,
+              "min_damage": 996,
+              "shield_pierce": 197,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3900000
+              },
+              {
+                "type": "dilithium",
+                "value": 102000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 30,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 75,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 590
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 15700
+            },
+            {
+              "type": "dilithium",
+              "value": 410
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1215,
+              "armor_pierce": 197,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 2391,
+              "min_damage": 1992,
+              "shield_pierce": 197,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -988,89 +1036,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 2391,
-              "min_damage": 1992,
-              "shield_pierce": 197,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 30
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 75
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 590
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3900000
-              },
-              {
-                "type": "dilithium",
-                "value": 102000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 15700
-            },
-            {
-              "type": "dilithium",
-              "value": 410
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 3000,
-              "increased_protected_cargo": 900,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 100
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 35
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 95
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 35
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1080,10 +1054,28 @@
                 "type": "dilithium",
                 "value": 127000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 35,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 95,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 35
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1093,30 +1085,43 @@
               "type": "dilithium",
               "value": 410
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 3000,
+              "increased_protected_cargo": 900,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Spore Drive",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 23,
-              "warp_speed": 3.4
-            }
-          },
+          "img_url": "./assets/component_spore_drive.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7300000
+              },
+              {
+                "type": "dilithium",
+                "value": 191000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 50,
                 "grade": 3,
-                "rarity": "common",
-                "value": 50
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 140,
                 "grade": 3,
-                "rarity": "common",
-                "value": 140
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1128,20 +1133,8 @@
                 "type": "Spore Drive Component",
                 "value": 1110
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 7300000
-              },
-              {
-                "type": "dilithium",
-                "value": 191000
-              }
             ]
           },
-          "img_url": "./assets/component_spore_drive.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1151,37 +1144,20 @@
               "type": "dilithium",
               "value": 410
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 23,
+              "warp_speed": 3.4,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 671,
-              "shield_health": 4050
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 20
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 50
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 20
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1191,10 +1167,28 @@
                 "type": "dilithium",
                 "value": 64000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 20,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 50,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 20
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1204,7 +1198,14 @@
               "type": "dilithium",
               "value": 410
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 671,
+              "shield_health": 4050
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1238,65 +1239,17 @@
           "level": 20,
           "ship_xp": 25000
         }
-      ],
-      "repair_time": 15978,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 297000,
+      "repair_time": 18192,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1602,
-              "armor_pierce": 259,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 1577,
-              "min_damage": 1314,
-              "shield_pierce": 259,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 30
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 45
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 300
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 900
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1306,10 +1259,34 @@
                 "type": "dilithium",
                 "value": 175000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 30,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 45,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 300,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 900
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1319,16 +1296,93 @@
               "type": "dilithium",
               "value": 525
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1602,
               "armor_pierce": 259,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 1577,
+              "min_damage": 1314,
+              "shield_pierce": 259,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 17900000
+              },
+              {
+                "type": "dilithium",
+                "value": 233000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 30,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 55,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 395,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 1200
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 40300
+            },
+            {
+              "type": "dilithium",
+              "value": 525
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1602,
+              "armor_pierce": 259,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 3154,
+              "min_damage": 2628,
+              "shield_pierce": 259,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -1339,101 +1393,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 3154,
-              "min_damage": 2628,
-              "shield_pierce": 259,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 30
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 55
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 395
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 1200
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 17900000
-              },
-              {
-                "type": "dilithium",
-                "value": 233000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 40300
-            },
-            {
-              "type": "dilithium",
-              "value": 525
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 3000,
-              "increased_protected_cargo": 900,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 100
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 290
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 35
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 70
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 75
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1443,10 +1411,34 @@
                 "type": "dilithium",
                 "value": 291000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 290,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 35,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 70,
+                "grade": 3,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 75
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1456,30 +1448,43 @@
               "type": "dilithium",
               "value": 525
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 3000,
+              "increased_protected_cargo": 900,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Spore Drive",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 24,
-              "warp_speed": 3.5
-            }
-          },
+          "img_url": "./assets/component_spore_drive.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 33600000
+              },
+              {
+                "type": "dilithium",
+                "value": 437000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 45,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 45
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 95,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 95
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1491,20 +1496,8 @@
                 "type": "Spore Drive Component",
                 "value": 2250
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 33600000
-              },
-              {
-                "type": "dilithium",
-                "value": 437000
-              }
             ]
           },
-          "img_url": "./assets/component_spore_drive.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1514,37 +1507,20 @@
               "type": "dilithium",
               "value": 525
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 24,
+              "warp_speed": 3.5,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 885,
-              "shield_health": 5343
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 145
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 250
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 40
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1554,10 +1530,28 @@
                 "type": "dilithium",
                 "value": 146000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 145,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 250,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 40
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1567,7 +1561,14 @@
               "type": "dilithium",
               "value": 525
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 885,
+              "shield_health": 5343
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1601,65 +1602,17 @@
           "level": 25,
           "ship_xp": 42000
         }
-      ],
-      "repair_time": 18192,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 396000,
+      "repair_time": 20802,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 2329,
-              "armor_pierce": 376,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 2293,
-              "min_damage": 1911,
-              "shield_pierce": 376,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 35
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 65
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 445
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 1350
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1669,10 +1622,34 @@
                 "type": "dilithium",
                 "value": 278000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 35,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 65,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 445,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 1350
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1682,16 +1659,93 @@
               "type": "dilithium",
               "value": 565
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2329,
               "armor_pierce": 376,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 2293,
+              "min_damage": 1911,
+              "shield_pierce": 376,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 28550000
+              },
+              {
+                "type": "dilithium",
+                "value": 371000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 40,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 80,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 590,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 1800
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 43400
+            },
+            {
+              "type": "dilithium",
+              "value": 565
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 2329,
+              "armor_pierce": 376,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 4586,
+              "min_damage": 3822,
+              "shield_pierce": 376,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -1702,101 +1756,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 4586,
-              "min_damage": 3822,
-              "shield_pierce": 376,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 40
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 80
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 590
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 1800
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 28550000
-              },
-              {
-                "type": "dilithium",
-                "value": 371000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 43400
-            },
-            {
-              "type": "dilithium",
-              "value": 565
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 4000,
-              "increased_protected_cargo": 1100,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 100
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 430
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 45
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 95
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 120
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1806,10 +1774,34 @@
                 "type": "dilithium",
                 "value": 464000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 430,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 45,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 95,
+                "grade": 3,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 120
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1819,30 +1811,43 @@
               "type": "dilithium",
               "value": 565
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 4000,
+              "increased_protected_cargo": 1100,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Spore Drive",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 25,
-              "warp_speed": 3.6
-            }
-          },
+          "img_url": "./assets/component_spore_drive.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 53550000
+              },
+              {
+                "type": "dilithium",
+                "value": 696000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 60,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 60
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 140,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 140
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1854,20 +1859,8 @@
                 "type": "Spore Drive Component",
                 "value": 3375
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 53550000
-              },
-              {
-                "type": "dilithium",
-                "value": 696000
-              }
             ]
           },
-          "img_url": "./assets/component_spore_drive.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1877,37 +1870,20 @@
               "type": "dilithium",
               "value": 565
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 25,
+              "warp_speed": 3.6,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1286,
-              "shield_health": 7770
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 220
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 370
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 60
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1917,10 +1893,28 @@
                 "type": "dilithium",
                 "value": 232000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 220,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 370,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 60
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1930,7 +1924,14 @@
               "type": "dilithium",
               "value": 565
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1286,
+              "shield_health": 7770
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1964,65 +1965,17 @@
           "level": 30,
           "ship_xp": 69000
         }
-      ],
-      "repair_time": 20802,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 495000,
+      "repair_time": 23916,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 3631,
-              "armor_pierce": 585,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 3575,
-              "min_damage": 2979,
-              "shield_pierce": 585,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 35
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 65
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 675
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 1025
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2032,10 +1985,34 @@
                 "type": "dilithium",
                 "value": 406000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 35,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 65,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 675,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 1025
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2045,16 +2022,93 @@
               "type": "dilithium",
               "value": 800
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 3631,
               "armor_pierce": 585,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 3575,
+              "min_damage": 2979,
+              "shield_pierce": 585,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 41950000
+              },
+              {
+                "type": "dilithium",
+                "value": 541000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 40,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 80,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 900,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 1365
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 64800
+            },
+            {
+              "type": "dilithium",
+              "value": 800
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 3631,
+              "armor_pierce": 585,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 7150,
+              "min_damage": 5959,
+              "shield_pierce": 585,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2065,101 +2119,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 7150,
-              "min_damage": 5959,
-              "shield_pierce": 585,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 40
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 80
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 900
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 1365
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 41950000
-              },
-              {
-                "type": "dilithium",
-                "value": 541000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 64800
-            },
-            {
-              "type": "dilithium",
-              "value": 800
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 5000,
-              "increased_protected_cargo": 1300,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 100
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 525
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 50
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 95
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 1705
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2169,10 +2137,34 @@
                 "type": "dilithium",
                 "value": 676000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 525,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 50,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 95,
+                "grade": 3,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 1705
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2182,30 +2174,43 @@
               "type": "dilithium",
               "value": 800
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 5000,
+              "increased_protected_cargo": 1300,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Spore Drive",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 26,
-              "warp_speed": 3.7
-            }
-          },
+          "img_url": "./assets/component_spore_drive.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 78650000
+              },
+              {
+                "type": "dilithium",
+                "value": 1014000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 65,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 65
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 140,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 140
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2217,20 +2222,8 @@
                 "type": "Spore Drive Component",
                 "value": 2560
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 78650000
-              },
-              {
-                "type": "dilithium",
-                "value": 1014000
-              }
             ]
           },
-          "img_url": "./assets/component_spore_drive.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2240,29 +2233,42 @@
               "type": "dilithium",
               "value": 800
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 26,
+              "warp_speed": 3.7,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2005,
-              "shield_health": 12114
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 26200000
+              },
+              {
+                "type": "dilithium",
+                "value": 338000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 265,
                 "grade": 3,
-                "rarity": "common",
-                "value": 265
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 55,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 55
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2274,20 +2280,8 @@
                 "type": "Spore Drive Component",
                 "value": 855
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 26200000
-              },
-              {
-                "type": "dilithium",
-                "value": 338000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2297,7 +2291,14 @@
               "type": "dilithium",
               "value": 800
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2005,
+              "shield_health": 12114
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2331,65 +2332,17 @@
           "level": 35,
           "ship_xp": 100000
         }
-      ],
-      "repair_time": 23916,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 643500,
+      "repair_time": 27606,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 4624,
-              "armor_pierce": 745,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 4553,
-              "min_damage": 3794,
-              "shield_pierce": 745,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 50
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 845
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 25
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 1135
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2399,10 +2352,34 @@
                 "type": "dilithium",
                 "value": 552000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 50,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 845,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 25,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 1135
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2412,16 +2389,93 @@
               "type": "dilithium",
               "value": 945
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 4624,
               "armor_pierce": 745,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 4553,
+              "min_damage": 3794,
+              "shield_pierce": 745,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 63800000
+              },
+              {
+                "type": "dilithium",
+                "value": 736000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 60,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 1125,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 30,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 1515
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 89000
+            },
+            {
+              "type": "dilithium",
+              "value": 945
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 4624,
+              "armor_pierce": 745,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 9106,
+              "min_damage": 7589,
+              "shield_pierce": 745,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2432,101 +2486,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 9106,
-              "min_damage": 7589,
-              "shield_pierce": 745,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 60
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 1125
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 30
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 1515
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 63800000
-              },
-              {
-                "type": "dilithium",
-                "value": 736000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 89000
-            },
-            {
-              "type": "dilithium",
-              "value": 945
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 6000,
-              "increased_protected_cargo": 1500,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 100
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 655
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 75
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 35
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 1895
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2536,10 +2504,34 @@
                 "type": "dilithium",
                 "value": 920000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 655,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 75,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 35,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 1895
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2549,30 +2541,43 @@
               "type": "dilithium",
               "value": 945
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 6000,
+              "increased_protected_cargo": 1500,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Spore Drive",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 28,
-              "warp_speed": 3.8
-            }
-          },
+          "img_url": "./assets/component_spore_drive.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 119600000
+              },
+              {
+                "type": "dilithium",
+                "value": 1380000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 130,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 130
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 45,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 45
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2584,20 +2589,8 @@
                 "type": "Spore Drive Component",
                 "value": 2840
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 119600000
-              },
-              {
-                "type": "dilithium",
-                "value": 1380000
-              }
             ]
           },
-          "img_url": "./assets/component_spore_drive.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2607,29 +2600,42 @@
               "type": "dilithium",
               "value": 945
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 28,
+              "warp_speed": 3.8,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2553,
-              "shield_health": 15429
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 39850000
+              },
+              {
+                "type": "dilithium",
+                "value": 460000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 330,
                 "grade": 3,
-                "rarity": "common",
-                "value": 330
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 500,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 500
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2641,20 +2647,8 @@
                 "type": "Spore Drive Component",
                 "value": 945
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 39850000
-              },
-              {
-                "type": "dilithium",
-                "value": 460000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2664,7 +2658,14 @@
               "type": "dilithium",
               "value": 945
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2553,
+              "shield_health": 15429
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2698,65 +2699,17 @@
           "level": 40,
           "ship_xp": 140000
         }
-      ],
-      "repair_time": 27606,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 792000,
+      "repair_time": 32142,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 5405,
-              "armor_pierce": 870,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 5322,
-              "min_damage": 4435,
-              "shield_pierce": 870,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 65
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 1285
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 35
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 1415
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2766,10 +2719,34 @@
                 "type": "dilithium",
                 "value": 940000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 65,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 1285,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 35,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 1415
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2779,16 +2756,93 @@
               "type": "dilithium",
               "value": 1290
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 5405,
               "armor_pierce": 870,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 5322,
+              "min_damage": 4435,
+              "shield_pierce": 870,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 132800000
+              },
+              {
+                "type": "dilithium",
+                "value": 1254000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 80,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 1715,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 45,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 1885
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 155000
+            },
+            {
+              "type": "dilithium",
+              "value": 1290
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 5405,
+              "armor_pierce": 870,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 10645,
+              "min_damage": 8871,
+              "shield_pierce": 870,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2799,101 +2853,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 10645,
-              "min_damage": 8871,
-              "shield_pierce": 870,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 80
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 1715
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 45
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 1885
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 132800000
-              },
-              {
-                "type": "dilithium",
-                "value": 1254000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 155000
-            },
-            {
-              "type": "dilithium",
-              "value": 1290
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 6000,
-              "increased_protected_cargo": 1500,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 100
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 1000
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 95
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 50
-              }
-            ],
-            "others": [
-              {
-                "type": "Spore Drive Component",
-                "value": 2355
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2903,10 +2871,34 @@
                 "type": "dilithium",
                 "value": 1567000
               }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 1000,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 95,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 50,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Spore Drive Component",
+                "value": 2355
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2916,30 +2908,43 @@
               "type": "dilithium",
               "value": 1290
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 6000,
+              "increased_protected_cargo": 1500,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Spore Drive",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 30,
-              "warp_speed": 3.9
-            }
-          },
+          "img_url": "./assets/component_spore_drive.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 249050000
+              },
+              {
+                "type": "dilithium",
+                "value": 2351000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 155,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 155
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 70,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 70
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2951,20 +2956,8 @@
                 "type": "Spore Drive Component",
                 "value": 3535
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 249050000
-              },
-              {
-                "type": "dilithium",
-                "value": 2351000
-              }
             ]
           },
-          "img_url": "./assets/component_spore_drive.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2974,29 +2967,42 @@
               "type": "dilithium",
               "value": 1290
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 30,
+              "warp_speed": 3.9,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2984,
-              "shield_health": 18037
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 83000000
+              },
+              {
+                "type": "dilithium",
+                "value": 784000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 500,
                 "grade": 3,
-                "rarity": "common",
-                "value": 500
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 705,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 705
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3008,20 +3014,8 @@
                 "type": "Spore Drive Component",
                 "value": 1180
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 83000000
-              },
-              {
-                "type": "dilithium",
-                "value": 784000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3031,7 +3025,14 @@
               "type": "dilithium",
               "value": 1290
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2984,
+              "shield_health": 18037
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3065,9 +3066,8 @@
           "level": 45,
           "ship_xp": 200000
         }
-      ],
-      "repair_time": 32142,
-      "tier": 9
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/uss_discovery.png"
 }

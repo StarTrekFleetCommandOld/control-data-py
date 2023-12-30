@@ -1,26 +1,26 @@
 {
-  "description": "",
   "armada_name": "Exchange Vault",
+  "description": "",
   "group": "eclipse",
+  "level": 40,
+  "rarity": "rare",
   "head_stats": {
     "attack": 5633021,
     "defense": 3000000,
     "health": 144932936
   },
-  "level": 40,
-  "rarity": "rare",
-  "rewards": [
+  "systems": [
     {
-      "type": "Uncommon Exchange Vault Loot",
-      "max_value": 2542,
-      "min_value": 2542,
-      "value": 2542
+      "$ref": "systems/crawford_40"
     },
     {
-      "type": "Rare Exchange Vault Loot",
-      "max_value": 2476,
-      "min_value": 2476,
-      "value": 2476
+      "$ref": "systems/laramie_40"
+    },
+    {
+      "$ref": "systems/cheyenne_40"
+    },
+    {
+      "$ref": "systems/lindstrom_40"
     }
   ],
   "stats": {
@@ -42,20 +42,6 @@
       "shield_health": 117136435
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/crawford_40"
-    },
-    {
-      "$ref": "systems/laramie_40"
-    },
-    {
-      "$ref": "systems/cheyenne_40"
-    },
-    {
-      "$ref": "systems/lindstrom_40"
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -106,6 +92,20 @@
         "shield_pierce": 400000
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "Uncommon Exchange Vault Loot",
+      "max_value": 2542,
+      "min_value": 2542,
+      "value": 2542
+    },
+    {
+      "type": "Rare Exchange Vault Loot",
+      "max_value": 2476,
+      "min_value": 2476,
+      "value": 2476
     }
   ]
 }

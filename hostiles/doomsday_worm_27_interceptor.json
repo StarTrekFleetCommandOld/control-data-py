@@ -1,26 +1,23 @@
 {
+  "hostile_name": "Doomsday Worm",
   "description": "",
   "group": "neutral",
+  "level": 27,
+  "rarity": "common",
   "head_stats": {
     "attack": 52280,
     "defense": 52500,
     "health": 26400
   },
-  "hostile_name": "Doomsday Worm",
-  "level": 27,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1243,
-      "min_value": 1243,
-      "value": 1243
+      "$ref": "systems/villo_27"
     },
     {
-      "type": "tritanium",
-      "max_value": 95,
-      "min_value": 95,
-      "value": 95
+      "$ref": "systems/piya_27"
+    },
+    {
+      "$ref": "systems/elya_27"
     }
   ],
   "ship_class": "interceptor",
@@ -43,22 +40,6 @@
       "shield_health": 26400
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/villo_27"
-    },
-    {
-      "$ref": "systems/piya_27"
-    },
-    {
-      "$ref": "systems/elya_27"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +102,25 @@
         "shield_pierce": 1750
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1243,
+      "min_value": 1243,
+      "value": 1243
+    },
+    {
+      "type": "tritanium",
+      "max_value": 95,
+      "min_value": 95,
+      "value": 95
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

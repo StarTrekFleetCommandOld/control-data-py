@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Suliban Bounty Hunter",
   "description": "",
   "group": "neutral",
+  "level": 23,
+  "rarity": "common",
   "head_stats": {
     "attack": 14271,
     "defense": 16130,
     "health": 6660
   },
-  "hostile_name": "Suliban Bounty Hunter",
-  "level": 23,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/tera_lara_24"
+    },
+    {
+      "$ref": "systems/lydan_22"
+    },
+    {
+      "$ref": "systems/raddan_22"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 6840
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/tera_lara_24"
-    },
-    {
-      "$ref": "systems/lydan_22"
-    },
-    {
-      "$ref": "systems/raddan_22"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -77,6 +71,12 @@
         "shield_pierce": 538
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

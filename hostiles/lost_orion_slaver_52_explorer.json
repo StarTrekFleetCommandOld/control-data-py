@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Lost Orion Slaver",
   "description": "",
   "group": "neutral",
+  "level": 52,
+  "rarity": "common",
   "head_stats": {
     "attack": 11840611,
     "defense": 4711225,
     "health": 15739963
   },
-  "hostile_name": "Lost Orion Slaver",
-  "level": 52,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 1599,
-      "min_value": 1599,
-      "value": 1599
+      "$ref": "systems/dijor_joh_50"
+    },
+    {
+      "$ref": "systems/aran_50"
+    },
+    {
+      "$ref": "systems/sakari_53"
+    },
+    {
+      "$ref": "systems/suvfa_53"
+    },
+    {
+      "$ref": "systems/neken_51"
+    },
+    {
+      "$ref": "systems/leichter_53"
     }
   ],
   "ship_class": "explorer",
@@ -37,31 +49,6 @@
       "shield_health": 18363296
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dijor_joh_50"
-    },
-    {
-      "$ref": "systems/aran_50"
-    },
-    {
-      "$ref": "systems/sakari_53"
-    },
-    {
-      "$ref": "systems/suvfa_53"
-    },
-    {
-      "$ref": "systems/neken_51"
-    },
-    {
-      "$ref": "systems/leichter_53"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 304655
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 1599,
+      "min_value": 1599,
+      "value": 1599
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

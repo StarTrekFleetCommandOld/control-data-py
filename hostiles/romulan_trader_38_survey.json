@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Romulan Trader",
   "description": "",
   "group": "romulan",
+  "level": 38,
+  "rarity": "common",
   "head_stats": {
     "attack": 210118,
     "defense": 471225,
     "health": 230100
   },
-  "hostile_name": "Romulan Trader",
-  "level": 38,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/iapedes_36"
+    }
+  ],
   "ship_class": "survey",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 230100
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/iapedes_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 9
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -71,6 +65,12 @@
         "shield_pierce": 25132
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 9
     }
   ]
 }

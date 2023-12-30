@@ -1,15 +1,16 @@
 {
+  "research_name": "Prime Cardassian Loot",
   "description": "Increases the amount of Cardassian Loot and Superior Cardassian Loot earned",
-  "img_url": "./assets/prime_cardassian_loot_starbase_3_20.png",
+  "location": {
+    "column": 20,
+    "row": 3,
+    "tree": "starbase"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 1.0
-      },
-      "increased_power": 92000,
       "level": 1,
-      "required_by": [],
+      "research_time": 8948880,
+      "increased_power": 92000,
       "requirements": [
         {
           "name": "R&D Department",
@@ -20,28 +21,27 @@
           "level": 1
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 115900000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "prime medal",
             "value": 1000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 115900000
-          }
         ]
       },
-      "research_time": 8948880
+      "bonus": {
+        "percentage": true,
+        "value": 1.0
+      }
     }
   ],
-  "location": {
-    "column": 20,
-    "row": 3,
-    "tree": "starbase"
-  },
-  "research_name": "Prime Cardassian Loot"
+  "img_url": "./assets/prime_cardassian_loot_starbase_3_20.png"
 }

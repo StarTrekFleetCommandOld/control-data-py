@@ -1,38 +1,26 @@
 {
+  "hostile_name": "Romulan Trader",
   "description": "",
   "group": "romulan",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1043435,
     "defense": 1224925,
     "health": 1970593
   },
-  "hostile_name": "Romulan Trader",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken survey parts",
-      "max_value": 129,
-      "min_value": 129,
-      "value": 129
+      "$ref": "systems/yvnys_40"
     },
     {
-      "type": "federation points",
-      "max_value": 2240,
-      "min_value": 2240,
-      "value": 2240
+      "$ref": "systems/delmas_42"
     },
     {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/vola_41"
     },
     {
-      "type": "klingon points",
-      "max_value": 4480,
-      "min_value": 4480,
-      "value": 4480
+      "$ref": "systems/rowla_40"
     }
   ],
   "ship_class": "survey",
@@ -55,25 +43,6 @@
       "shield_health": 1773551
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/yvnys_40"
-    },
-    {
-      "$ref": "systems/delmas_42"
-    },
-    {
-      "$ref": "systems/vola_41"
-    },
-    {
-      "$ref": "systems/rowla_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +74,37 @@
         "shield_pierce": 30683
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken survey parts",
+      "max_value": 129,
+      "min_value": 129,
+      "value": 129
+    },
+    {
+      "type": "federation points",
+      "max_value": 2240,
+      "min_value": 2240,
+      "value": 2240
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 4480,
+      "min_value": 4480,
+      "value": 4480
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

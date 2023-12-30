@@ -1,15 +1,25 @@
 {
+  "hostile_name": "KSG Border Patrol",
   "description": "",
   "group": "klingon",
+  "level": 52,
+  "rarity": "common",
   "head_stats": {
     "attack": 11810553,
     "defense": 4528110,
     "health": 15650530
   },
-  "hostile_name": "KSG Border Patrol",
-  "level": 52,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/lycrus_52"
+    },
+    {
+      "$ref": "systems/zameda_53"
+    },
+    {
+      "$ref": "systems/tin_jib_50"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 17528599
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/lycrus_52"
-    },
-    {
-      "$ref": "systems/zameda_53"
-    },
-    {
-      "$ref": "systems/tin_jib_50"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +102,12 @@
         "shield_pierce": 304655
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

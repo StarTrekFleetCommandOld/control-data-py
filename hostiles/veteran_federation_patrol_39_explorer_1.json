@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Veteran Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 892743,
     "defense": 928575,
     "health": 305365
   },
-  "hostile_name": "Veteran Federation Patrol",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/riktor_38"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 360890
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/riktor_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -71,6 +65,12 @@
         "shield_pierce": 28390
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Lost Andorian Bounty Hunter",
   "description": "",
   "group": "neutral",
+  "level": 32,
+  "rarity": "common",
   "head_stats": {
     "attack": 154413,
     "defense": 161905,
     "health": 51925
   },
-  "hostile_name": "Lost Andorian Bounty Hunter",
-  "level": 32,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 6028,
-      "min_value": 6028,
-      "value": 6028
+      "$ref": "systems/miranil_33"
+    },
+    {
+      "$ref": "systems/kalak_30"
+    },
+    {
+      "$ref": "systems/antaria_33"
+    },
+    {
+      "$ref": "systems/ba_neth_32"
     }
   ],
   "ship_class": "battleship",
@@ -37,25 +43,6 @@
       "shield_health": 36770
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/miranil_33"
-    },
-    {
-      "$ref": "systems/kalak_30"
-    },
-    {
-      "$ref": "systems/antaria_33"
-    },
-    {
-      "$ref": "systems/ba_neth_32"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -118,6 +105,19 @@
         "shield_pierce": 34650
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 6028,
+      "min_value": 6028,
+      "value": 6028
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

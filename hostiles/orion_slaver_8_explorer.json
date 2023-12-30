@@ -1,41 +1,13 @@
 {
+  "hostile_name": "Orion Slaver",
   "description": "",
   "group": "neutral",
+  "level": 8,
+  "rarity": "common",
   "head_stats": {
     "attack": 341,
     "defense": 415,
     "health": 215
-  },
-  "hostile_name": "Orion Slaver",
-  "level": 8,
-  "rarity": "common",
-  "rewards": [
-    {
-      "type": "parsteel",
-      "max_value": 238,
-      "min_value": 238,
-      "value": 238
-    }
-  ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 83,
-      "armor_pierce": 14,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 230,
-      "shield_pierce": 14
-    },
-    "defense": {
-      "armor": 14,
-      "dodge": 14,
-      "shield_deflect": 55
-    },
-    "health": {
-      "hull_health": 210,
-      "shield_health": 220
-    }
   },
   "systems": [
     {
@@ -135,11 +107,26 @@
       "$ref": "systems/iaswo_6"
     }
   ],
-  "utility": [
-    {
-      "impulse_speed": 14
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 83,
+      "armor_pierce": 14,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 230,
+      "shield_pierce": 14
+    },
+    "defense": {
+      "armor": 14,
+      "dodge": 14,
+      "shield_deflect": 55
+    },
+    "health": {
+      "hull_health": 210,
+      "shield_health": 220
     }
-  ],
+  },
   "weapons": [
     {
       "firing_pattern": [
@@ -171,6 +158,19 @@
         "shield_pierce": 14
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 238,
+      "min_value": 238,
+      "value": 238
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

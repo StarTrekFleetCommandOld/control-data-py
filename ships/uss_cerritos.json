@@ -1,41 +1,53 @@
 {
+  "ship_name": "USS CERRITOS",
   "description": "Throughout the history of the Starfleet, there have been a handful of ships, staffed with heroes and legends, that changed the course of history. Vessels that forsook life and limb, that braved unimaginable danger to safeguard the Federation and its people.\nThe Cerritos is not one of those ships.\nA California class vessel, the USS Cerritos was designed to serve as a support vessel for the more durable ships in the fleet. Its lightweight hull, top of the line impulse engines and consignment of Type 6A Shuttlecraft make it ideal for scientific and diplomatic missions. For this reason, and many more that won\u2019t be mentioned here, the Cerritos has found itself in a nice little rut as a Second Contact vessel.\nHowever, recent events have made it abundantly clear that the crew of the Cerritos has more heart than many gave them credit for. Some would even say that this underestimated ship could be considered one of the finest vessels in Starfleet history...\nBut they would most likely be wrong.",
+  "ship_class": "explorer",
+  "grade": 4,
+  "faction": "neutral",
+  "rarity": "epic",
   "blueprints": {
     "cost": 0,
     "quantity": 100
-  },
-  "faction": "neutral",
-  "grade": 4,
-  "img_url": "./assets/uss_cerritos.png",
-  "rarity": "epic",
-  "requirements": [
-    {
-      "name": "Shipyard",
-      "level": 36
-    }
-  ],
-  "scrap_info": {
-    "scrappable": false
   },
   "ship_ability": {
     "title": "Keep It Together",
     "description": "When the USS Cerritos supports another ship, increase the support duration by {value} seconds. \n\nSupported ships gain significant combat bonuses based on the completed Cerritos research of the recipient.",
     "percentage": false
   },
-  "ship_class": "explorer",
-  "ship_name": "USS CERRITOS",
+  "scrap_info": {
+    "scrappable": false
+  },
+  "requirements": [
+    {
+      "name": "Shipyard",
+      "level": 36
+    }
+  ],
   "tiers": [
     {
+      "tier": 1,
       "build_time": 2980800,
+      "repair_time": 84000,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 14000,
               "armor_pierce": 2141,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 11145,
+              "min_damage": 9288,
+              "shield_pierce": 1606,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -46,30 +58,30 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 11145,
-              "min_damage": 9288,
-              "shield_pierce": 1606,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
+          "quantity": 2
         },
         {
           "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 14000,
               "armor_pierce": 2141,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 16344,
+              "min_damage": 13620,
+              "shield_pierce": 1606,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -80,112 +92,80 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 16344,
-              "min_damage": 13620,
-              "shield_pierce": 1606,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "armor_info": {
               "armor": 666,
               "hull_health": 32052
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
+          "img_url": "./assets/component_warp_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "warp_info": {
               "warp_distance": 48,
               "warp_speed": 4.1
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Shield",
+          "img_url": "./assets/component_shield.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "shield_info": {
               "shield_deflection": 6667,
               "shield_health": 77900
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "impulse_info": {
               "dodge": 666,
               "impulse_speed": 85
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [
-          {
-            "type": "gas",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1400
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 13650000
-          },
-          {
-            "type": "dilithium",
-            "value": 1575000
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 5.0,
@@ -218,20 +198,92 @@
           "ship_xp": 29000
         }
       ],
-      "repair_time": 84000,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 13650000
+          },
+          {
+            "type": "dilithium",
+            "value": 1575000
+          }
+        ],
+        "materials": [
+          {
+            "type": "gas",
+            "value": 1400,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 480000,
+      "repair_time": 90000,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 53645000
+              },
+              {
+                "type": "dilithium",
+                "value": 928000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 215,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 445,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Cerritos Parts",
+                "value": 2925
+              },
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 45
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 32100
+            },
+            {
+              "type": "dilithium",
+              "value": 6090
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 14140,
               "armor_pierce": 2164,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 11256,
+              "min_damage": 9381,
+              "shield_pierce": 1623,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -242,26 +294,37 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 11256,
-              "min_damage": 9381,
-              "shield_pierce": 1623,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 53645000
+              },
+              {
+                "type": "dilithium",
+                "value": 928000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 215,
                 "grade": 3,
-                "rarity": "common",
-                "value": 215
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 445,
                 "grade": 3,
-                "rarity": "common",
-                "value": 445
+                "rarity": "common"
               }
             ],
             "others": [
@@ -273,20 +336,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 45
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 53645000
-              },
-              {
-                "type": "dilithium",
-                "value": 928000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -296,16 +347,17 @@
               "type": "dilithium",
               "value": 6090
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 14140,
               "armor_pierce": 2164,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 16507,
+              "min_damage": 13756,
+              "shield_pierce": 1623,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -316,83 +368,37 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 16507,
-              "min_damage": 13756,
-              "shield_pierce": 1623,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 215
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 445
-              }
-            ],
-            "others": [
-              {
-                "type": "Cerritos Parts",
-                "value": 2925
-              },
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 45
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 53645000
-              },
-              {
-                "type": "dilithium",
-                "value": 928000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 32100
-            },
-            {
-              "type": "dilithium",
-              "value": 6090
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 680,
-              "hull_health": 43512
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 35763000
+              },
+              {
+                "type": "dilithium",
+                "value": 619000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 140,
                 "grade": 3,
-                "rarity": "common",
-                "value": 140
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 300,
                 "grade": 3,
-                "rarity": "common",
-                "value": 300
+                "rarity": "common"
               }
             ],
             "others": [
@@ -404,20 +410,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 30
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 35763000
-              },
-              {
-                "type": "dilithium",
-                "value": 619000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -427,29 +421,41 @@
               "type": "dilithium",
               "value": 4060
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 680,
+              "hull_health": 43512
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 52,
-              "warp_speed": 4.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 71526000
+              },
+              {
+                "type": "dilithium",
+                "value": 1238000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 285,
                 "grade": 3,
-                "rarity": "common",
-                "value": 285
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 595,
                 "grade": 3,
-                "rarity": "common",
-                "value": 595
+                "rarity": "common"
               }
             ],
             "others": [
@@ -461,20 +467,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 55
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 71526000
-              },
-              {
-                "type": "dilithium",
-                "value": 1238000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -484,29 +478,41 @@
               "type": "dilithium",
               "value": 8120
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 52,
+              "warp_speed": 4.2
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 6800,
-              "shield_health": 82233
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 53645000
+              },
+              {
+                "type": "dilithium",
+                "value": 928000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 215,
                 "grade": 3,
-                "rarity": "common",
-                "value": 215
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 445,
                 "grade": 3,
-                "rarity": "common",
-                "value": 445
+                "rarity": "common"
               }
             ],
             "others": [
@@ -518,20 +524,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 45
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 53645000
-              },
-              {
-                "type": "dilithium",
-                "value": 928000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -541,29 +535,41 @@
               "type": "dilithium",
               "value": 6090
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 6800,
+              "shield_health": 82233
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 680,
-              "impulse_speed": 85
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 35763000
+              },
+              {
+                "type": "dilithium",
+                "value": 619000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 140,
                 "grade": 3,
-                "rarity": "common",
-                "value": 140
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 300,
                 "grade": 3,
-                "rarity": "common",
-                "value": 300
+                "rarity": "common"
               }
             ],
             "others": [
@@ -575,20 +581,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 30
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 35763000
-              },
-              {
-                "type": "dilithium",
-                "value": 619000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -598,7 +592,14 @@
               "type": "dilithium",
               "value": 4060
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 680,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -632,21 +633,72 @@
           "level": 10,
           "ship_xp": 130000
         }
-      ],
-      "repair_time": 90000,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 960000,
+      "repair_time": 96000,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 109058000
+              },
+              {
+                "type": "dilithium",
+                "value": 2456000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 80,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 170,
+                "grade": 3,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "Cerritos Parts",
+                "value": 5815
+              },
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 75
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 59850
+            },
+            {
+              "type": "dilithium",
+              "value": 15000
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 14423,
               "armor_pierce": 2203,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 11482,
+              "min_damage": 9568,
+              "shield_pierce": 1653,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -657,26 +709,37 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 11482,
-              "min_damage": 9568,
-              "shield_pierce": 1653,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 109058000
+              },
+              {
+                "type": "dilithium",
+                "value": 2456000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 80,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 80
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 170,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 170
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -688,20 +751,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 75
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 109058000
-              },
-              {
-                "type": "dilithium",
-                "value": 2456000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -711,16 +762,17 @@
               "type": "dilithium",
               "value": 15000
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 14423,
               "armor_pierce": 2203,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 16837,
+              "min_damage": 14031,
+              "shield_pierce": 1653,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -731,83 +783,37 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 16837,
-              "min_damage": 14031,
-              "shield_pierce": 1653,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 80
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 170
-              }
-            ],
-            "others": [
-              {
-                "type": "Cerritos Parts",
-                "value": 5815
-              },
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 75
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 109058000
-              },
-              {
-                "type": "dilithium",
-                "value": 2456000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 59850
-            },
-            {
-              "type": "dilithium",
-              "value": 15000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 707,
-              "hull_health": 56711
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 72705000
+              },
+              {
+                "type": "dilithium",
+                "value": 1638000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 720,
                 "grade": 3,
-                "rarity": "common",
-                "value": 720
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 1510,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1510
+                "rarity": "common"
               }
             ],
             "others": [
@@ -819,20 +825,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 50
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 72705000
-              },
-              {
-                "type": "dilithium",
-                "value": 1638000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -842,29 +836,41 @@
               "type": "dilithium",
               "value": 10000
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 707,
+              "hull_health": 56711
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 56,
-              "warp_speed": 4.3
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 145410000
+              },
+              {
+                "type": "dilithium",
+                "value": 3275000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 110,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 110
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 225,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 225
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -876,20 +882,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 100
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 145410000
-              },
-              {
-                "type": "dilithium",
-                "value": 3275000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -899,29 +893,41 @@
               "type": "dilithium",
               "value": 20000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 56,
+              "warp_speed": 4.3
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 7072,
-              "shield_health": 85255
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 109058000
+              },
+              {
+                "type": "dilithium",
+                "value": 2456000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1080,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1080
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 2270,
                 "grade": 3,
-                "rarity": "common",
-                "value": 2270
+                "rarity": "common"
               }
             ],
             "others": [
@@ -933,20 +939,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 75
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 109058000
-              },
-              {
-                "type": "dilithium",
-                "value": 2456000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -956,29 +950,41 @@
               "type": "dilithium",
               "value": 15000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 7072,
+              "shield_health": 85255
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 707,
-              "impulse_speed": 85
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 72705000
+              },
+              {
+                "type": "dilithium",
+                "value": 1638000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 720,
                 "grade": 3,
-                "rarity": "common",
-                "value": 720
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 1510,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1510
+                "rarity": "common"
               }
             ],
             "others": [
@@ -990,20 +996,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 50
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 72705000
-              },
-              {
-                "type": "dilithium",
-                "value": 1638000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1013,7 +1007,14 @@
               "type": "dilithium",
               "value": 10000
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 707,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1047,21 +1048,72 @@
           "level": 15,
           "ship_xp": 318000
         }
-      ],
-      "repair_time": 96000,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 1600000,
+      "repair_time": 102000,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 141858000
+              },
+              {
+                "type": "dilithium",
+                "value": 3195000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 145,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 90,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Cerritos Parts",
+                "value": 8325
+              },
+              {
+                "type": "3\u2605 Explorer Parts",
+                "value": 95
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 67350
+            },
+            {
+              "type": "dilithium",
+              "value": 25590
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 15577,
               "armor_pierce": 2302,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 12285,
+              "min_damage": 10238,
+              "shield_pierce": 1727,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -1072,26 +1124,37 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 12285,
-              "min_damage": 10238,
-              "shield_pierce": 1727,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 141858000
+              },
+              {
+                "type": "dilithium",
+                "value": 3195000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 145,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 145
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 90,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 90
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -1103,20 +1166,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 95
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 141858000
-              },
-              {
-                "type": "dilithium",
-                "value": 3195000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1126,16 +1177,17 @@
               "type": "dilithium",
               "value": 25590
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 15577,
               "armor_pierce": 2302,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 18016,
+              "min_damage": 15013,
+              "shield_pierce": 1727,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -1146,83 +1198,37 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 18016,
-              "min_damage": 15013,
-              "shield_pierce": 1727,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 145
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 90
-              }
-            ],
-            "others": [
-              {
-                "type": "Cerritos Parts",
-                "value": 8325
-              },
-              {
-                "type": "3\u2605 Explorer Parts",
-                "value": 95
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 141858000
-              },
-              {
-                "type": "dilithium",
-                "value": 3195000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 67350
-            },
-            {
-              "type": "dilithium",
-              "value": 25590
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 763,
-              "hull_health": 72727
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 94572000
+              },
+              {
+                "type": "dilithium",
+                "value": 2130000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 885,
                 "grade": 3,
-                "rarity": "common",
-                "value": 885
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 260,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 260
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1234,20 +1240,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 65
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 94572000
-              },
-              {
-                "type": "dilithium",
-                "value": 2130000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1257,29 +1251,41 @@
               "type": "dilithium",
               "value": 17060
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 763,
+              "hull_health": 72727
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 60,
-              "warp_speed": 4.4
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 189144000
+              },
+              {
+                "type": "dilithium",
+                "value": 4260000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 111,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 111
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 120,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 120
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -1291,20 +1297,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 125
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 189144000
-              },
-              {
-                "type": "dilithium",
-                "value": 4260000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1314,29 +1308,41 @@
               "type": "dilithium",
               "value": 34120
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 60,
+              "warp_speed": 4.4
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 7638,
-              "shield_health": 91400
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 141858000
+              },
+              {
+                "type": "dilithium",
+                "value": 3195000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1325,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1325
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 390,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 390
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1348,20 +1354,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 95
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 141858000
-              },
-              {
-                "type": "dilithium",
-                "value": 3195000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1371,29 +1365,41 @@
               "type": "dilithium",
               "value": 25590
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 7638,
+              "shield_health": 91400
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 763,
-              "impulse_speed": 85
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 94572000
+              },
+              {
+                "type": "dilithium",
+                "value": 2130000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 885,
                 "grade": 3,
-                "rarity": "common",
-                "value": 885
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 260,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 260
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1405,20 +1411,8 @@
                 "type": "3\u2605 Explorer Parts",
                 "value": 65
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 94572000
-              },
-              {
-                "type": "dilithium",
-                "value": 2130000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1428,7 +1422,14 @@
               "type": "dilithium",
               "value": 17060
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 763,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1462,21 +1463,72 @@
           "level": 20,
           "ship_xp": 628000
         }
-      ],
-      "repair_time": 102000,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 2400000,
+      "repair_time": 114000,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 236247000
+              },
+              {
+                "type": "dilithium",
+                "value": 5651000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1985,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 925,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Cerritos Parts",
+                "value": 11680
+              },
+              {
+                "type": "4\u2605 Common Explorer Parts",
+                "value": 4540
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 446550
+            },
+            {
+              "type": "dilithium",
+              "value": 106560
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 19901,
               "armor_pierce": 2313,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 14332,
+              "min_damage": 11943,
+              "shield_pierce": 2644,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -1487,26 +1539,37 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 14332,
-              "min_damage": 11943,
-              "shield_pierce": 2644,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 236247000
+              },
+              {
+                "type": "dilithium",
+                "value": 5651000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1985,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1985
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 925,
                 "grade": 4,
-                "rarity": "common",
-                "value": 925
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1518,20 +1581,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 4540
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 236247000
-              },
-              {
-                "type": "dilithium",
-                "value": 5651000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1541,16 +1592,17 @@
               "type": "dilithium",
               "value": 106560
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 19901,
               "armor_pierce": 3007,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 18600,
+              "min_damage": 15500,
+              "shield_pierce": 3437,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -1561,83 +1613,37 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 18600,
-              "min_damage": 15500,
-              "shield_pierce": 3437,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1985
-              },
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "common",
-                "value": 925
-              }
-            ],
-            "others": [
-              {
-                "type": "Cerritos Parts",
-                "value": 11680
-              },
-              {
-                "type": "4\u2605 Common Explorer Parts",
-                "value": 4540
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 236247000
-              },
-              {
-                "type": "dilithium",
-                "value": 5651000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 446550
-            },
-            {
-              "type": "dilithium",
-              "value": 106560
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 798,
-              "hull_health": 81070
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 157498000
+              },
+              {
+                "type": "dilithium",
+                "value": 3767000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1325,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1325
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 615,
                 "grade": 4,
-                "rarity": "common",
-                "value": 615
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1649,20 +1655,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 3030
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 157498000
-              },
-              {
-                "type": "dilithium",
-                "value": 3767000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1672,29 +1666,41 @@
               "type": "dilithium",
               "value": 71040
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 798,
+              "hull_health": 81070
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 70,
-              "warp_speed": 4.5
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 314997000
+              },
+              {
+                "type": "dilithium",
+                "value": 7535000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2650,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2650
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1235,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1235
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1706,20 +1712,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 6420
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 314997000
-              },
-              {
-                "type": "dilithium",
-                "value": 7535000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1729,29 +1723,41 @@
               "type": "dilithium",
               "value": 142080
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 70,
+              "warp_speed": 4.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 7986,
-              "shield_health": 133313
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 236247000
+              },
+              {
+                "type": "dilithium",
+                "value": 5651000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1985,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1985
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 925,
                 "grade": 4,
-                "rarity": "common",
-                "value": 925
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1763,20 +1769,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 4540
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 236247000
-              },
-              {
-                "type": "dilithium",
-                "value": 5651000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1786,29 +1780,41 @@
               "type": "dilithium",
               "value": 106560
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 7986,
+              "shield_health": 133313
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 798,
-              "impulse_speed": 85
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 157498000
+              },
+              {
+                "type": "dilithium",
+                "value": 3767000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1325,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1325
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 615,
                 "grade": 4,
-                "rarity": "common",
-                "value": 615
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1820,20 +1826,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 3030
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 157498000
-              },
-              {
-                "type": "dilithium",
-                "value": 3767000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1843,7 +1837,14 @@
               "type": "dilithium",
               "value": 71040
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 798,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1877,21 +1878,72 @@
           "level": 25,
           "ship_xp": 1083000
         }
-      ],
-      "repair_time": 114000,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 3200000,
+      "repair_time": 126000,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 434042000
+              },
+              {
+                "type": "dilithium",
+                "value": 11021000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 3455,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 1265,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Cerritos Parts",
+                "value": 16050
+              },
+              {
+                "type": "4\u2605 Common Explorer Parts",
+                "value": 5235
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 628500
+            },
+            {
+              "type": "dilithium",
+              "value": 127935
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 20497,
               "armor_pierce": 2337,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 14475,
+              "min_damage": 12062,
+              "shield_pierce": 2672,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -1902,26 +1954,37 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 14475,
-              "min_damage": 12062,
-              "shield_pierce": 2672,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 434042000
+              },
+              {
+                "type": "dilithium",
+                "value": 11021000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3455,
                 "grade": 4,
-                "rarity": "common",
-                "value": 3455
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1265,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1265
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1933,20 +1996,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 5235
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 434042000
-              },
-              {
-                "type": "dilithium",
-                "value": 11021000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1956,16 +2007,17 @@
               "type": "dilithium",
               "value": 127935
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 20100,
               "armor_pierce": 3039,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 18786,
+              "min_damage": 15655,
+              "shield_pierce": 3473,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -1976,83 +2028,37 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 18786,
-              "min_damage": 15655,
-              "shield_pierce": 3473,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "common",
-                "value": 3455
-              },
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1265
-              }
-            ],
-            "others": [
-              {
-                "type": "Cerritos Parts",
-                "value": 16050
-              },
-              {
-                "type": "4\u2605 Common Explorer Parts",
-                "value": 5235
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 434042000
-              },
-              {
-                "type": "dilithium",
-                "value": 11021000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 628500
-            },
-            {
-              "type": "dilithium",
-              "value": 127935
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 814,
-              "hull_health": 92354
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 289362000
+              },
+              {
+                "type": "dilithium",
+                "value": 7347000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2305,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2305
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 845,
                 "grade": 4,
-                "rarity": "common",
-                "value": 845
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2064,20 +2070,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 3490
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 289362000
-              },
-              {
-                "type": "dilithium",
-                "value": 7347000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2087,29 +2081,41 @@
               "type": "dilithium",
               "value": 85290
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 814,
+              "hull_health": 92354
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 85,
-              "warp_speed": 4.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 578723000
+              },
+              {
+                "type": "dilithium",
+                "value": 14694000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1690,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1690
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 10145,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 10145
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2121,20 +2127,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 7395
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 578723000
-              },
-              {
-                "type": "dilithium",
-                "value": 14694000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2144,29 +2138,41 @@
               "type": "dilithium",
               "value": 170580
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 85,
+              "warp_speed": 4.6
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 8145,
-              "shield_health": 139388
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 434042000
+              },
+              {
+                "type": "dilithium",
+                "value": 11021000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3455,
                 "grade": 4,
-                "rarity": "common",
-                "value": 3455
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1265,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1265
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2178,20 +2184,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 5235
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 434042000
-              },
-              {
-                "type": "dilithium",
-                "value": 11021000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2201,29 +2195,41 @@
               "type": "dilithium",
               "value": 127935
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 8145,
+              "shield_health": 139388
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 814,
-              "impulse_speed": 85
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 289362000
+              },
+              {
+                "type": "dilithium",
+                "value": 7347000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2305,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2305
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 845,
                 "grade": 4,
-                "rarity": "common",
-                "value": 845
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2235,20 +2241,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 3490
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 289362000
-              },
-              {
-                "type": "dilithium",
-                "value": 7347000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2258,7 +2252,14 @@
               "type": "dilithium",
               "value": 85290
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 814,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2292,21 +2293,72 @@
           "level": 30,
           "ship_xp": 1640000
         }
-      ],
-      "repair_time": 126000,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 4000000,
+      "repair_time": 132000,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 697993000
+              },
+              {
+                "type": "dilithium",
+                "value": 24149000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 2130,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 3175,
+                "grade": 4,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "Cerritos Parts",
+                "value": 21600
+              },
+              {
+                "type": "4\u2605 Common Explorer Parts",
+                "value": 6075
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1152900
+            },
+            {
+              "type": "dilithium",
+              "value": 202620
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 20502,
               "armor_pierce": 2376,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 14765,
+              "min_damage": 12304,
+              "shield_pierce": 2716,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -2317,26 +2369,37 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 14765,
-              "min_damage": 12304,
-              "shield_pierce": 2716,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 697993000
+              },
+              {
+                "type": "dilithium",
+                "value": 24149000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2130,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2130
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 3175,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 3175
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2348,20 +2411,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 6075
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 697993000
-              },
-              {
-                "type": "dilithium",
-                "value": 24149000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2371,16 +2422,17 @@
               "type": "dilithium",
               "value": 202620
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 20502,
               "armor_pierce": 3089,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 19162,
+              "min_damage": 15968,
+              "shield_pierce": 3531,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -2391,83 +2443,37 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 19162,
-              "min_damage": 15968,
-              "shield_pierce": 3531,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "common",
-                "value": 2130
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 3175
-              }
-            ],
-            "others": [
-              {
-                "type": "Cerritos Parts",
-                "value": 21600
-              },
-              {
-                "type": "4\u2605 Common Explorer Parts",
-                "value": 6075
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 697993000
-              },
-              {
-                "type": "dilithium",
-                "value": 24149000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1152900
-            },
-            {
-              "type": "dilithium",
-              "value": 202620
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 847,
-              "hull_health": 106281
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 465329000
+              },
+              {
+                "type": "dilithium",
+                "value": 16099000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 7145,
                 "grade": 4,
-                "rarity": "common",
-                "value": 7145
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1420,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1420
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2479,20 +2485,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 4050
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 465329000
-              },
-              {
-                "type": "dilithium",
-                "value": 16099000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2502,29 +2496,41 @@
               "type": "dilithium",
               "value": 135080
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 847,
+              "hull_health": 106281
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 100,
-              "warp_speed": 4.7
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 930658000
+              },
+              {
+                "type": "dilithium",
+                "value": 32198000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 6245,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 6245
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 4230,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4230
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2536,20 +2542,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 8585
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 930658000
-              },
-              {
-                "type": "dilithium",
-                "value": 32198000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2559,29 +2553,41 @@
               "type": "dilithium",
               "value": 270160
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 100,
+              "warp_speed": 4.7
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 8471,
-              "shield_health": 154957
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 697993000
+              },
+              {
+                "type": "dilithium",
+                "value": 24149000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 10720,
                 "grade": 4,
-                "rarity": "common",
-                "value": 10720
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 2130,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2130
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2593,20 +2599,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 6075
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 697993000
-              },
-              {
-                "type": "dilithium",
-                "value": 24149000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2616,29 +2610,41 @@
               "type": "dilithium",
               "value": 202620
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 8471,
+              "shield_health": 154957
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 847,
-              "impulse_speed": 85
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 465329000
+              },
+              {
+                "type": "dilithium",
+                "value": 16099000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 7145,
                 "grade": 4,
-                "rarity": "common",
-                "value": 7145
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1420,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1420
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2650,20 +2656,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 4050
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 465329000
-              },
-              {
-                "type": "dilithium",
-                "value": 16099000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2673,7 +2667,14 @@
               "type": "dilithium",
               "value": 135080
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 847,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2707,21 +2708,72 @@
           "level": 35,
           "ship_xp": 2433000
         }
-      ],
-      "repair_time": 132000,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 5200000,
+      "repair_time": 138000,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1116282000
+              },
+              {
+                "type": "dilithium",
+                "value": 41364000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 1365,
+                "grade": 4,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 3000,
+                "grade": 4,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "Cerritos Parts",
+                "value": 28875
+              },
+              {
+                "type": "4\u2605 Uncommon Explorer Parts",
+                "value": 2220
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1796250
+            },
+            {
+              "type": "dilithium",
+              "value": 277230
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 22142,
               "armor_pierce": 2465,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 15946,
+              "min_damage": 13288,
+              "shield_pierce": 2817,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -2732,26 +2784,37 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 15946,
-              "min_damage": 13288,
-              "shield_pierce": 2817,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1116282000
+              },
+              {
+                "type": "dilithium",
+                "value": 41364000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1365,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1365
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 3000,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 3000
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2763,20 +2826,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 2220
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1116282000
-              },
-              {
-                "type": "dilithium",
-                "value": 41364000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2786,16 +2837,17 @@
               "type": "dilithium",
               "value": 277230
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 22142,
               "armor_pierce": 3204,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 20695,
+              "min_damage": 17246,
+              "shield_pierce": 3662,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -2806,83 +2858,37 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 20695,
-              "min_damage": 17246,
-              "shield_pierce": 3662,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 1365
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 3000
-              }
-            ],
-            "others": [
-              {
-                "type": "Cerritos Parts",
-                "value": 28875
-              },
-              {
-                "type": "4\u2605 Uncommon Explorer Parts",
-                "value": 2220
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1116282000
-              },
-              {
-                "type": "dilithium",
-                "value": 41364000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1796250
-            },
-            {
-              "type": "dilithium",
-              "value": 277230
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 931,
-              "hull_health": 124044
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 744188000
+              },
+              {
+                "type": "dilithium",
+                "value": 27576000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 910,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 910
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 2000,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2000
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2894,20 +2900,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 10370
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 744188000
-              },
-              {
-                "type": "dilithium",
-                "value": 27576000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2917,29 +2911,41 @@
               "type": "dilithium",
               "value": 184820
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 931,
+              "hull_health": 124044
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 115,
-              "warp_speed": 4.8
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1488377000
+              },
+              {
+                "type": "dilithium",
+                "value": 55152000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1825,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1825
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 4000,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4000
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2951,20 +2957,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 2960
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1488377000
-              },
-              {
-                "type": "dilithium",
-                "value": 55152000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2974,29 +2968,41 @@
               "type": "dilithium",
               "value": 369640
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 115,
+              "warp_speed": 4.8
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 9318,
-              "shield_health": 174942
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1116282000
+              },
+              {
+                "type": "dilithium",
+                "value": 41364000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1365,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1365
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 3000,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 3000
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3008,20 +3014,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 15555
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1116282000
-              },
-              {
-                "type": "dilithium",
-                "value": 41364000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3031,29 +3025,41 @@
               "type": "dilithium",
               "value": 277230
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 9318,
+              "shield_health": 174942
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 931,
-              "impulse_speed": 85
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 744188000
+              },
+              {
+                "type": "dilithium",
+                "value": 27576000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 32730,
                 "grade": 4,
-                "rarity": "common",
-                "value": 32730
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 14920,
                 "grade": 4,
-                "rarity": "common",
-                "value": 14920
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3065,20 +3071,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 10370
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 744188000
-              },
-              {
-                "type": "dilithium",
-                "value": 27576000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3088,7 +3082,14 @@
               "type": "dilithium",
               "value": 184820
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 931,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3122,21 +3123,72 @@
           "level": 40,
           "ship_xp": 3445000
         }
-      ],
-      "repair_time": 138000,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 6400000,
+      "repair_time": 150000,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2364337000
+              },
+              {
+                "type": "dilithium",
+                "value": 80116000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 2360,
+                "grade": 4,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 4430,
+                "grade": 4,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "Cerritos Parts",
+                "value": 38155
+              },
+              {
+                "type": "4\u2605 Uncommon Explorer Parts",
+                "value": 1790
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4171200
+            },
+            {
+              "type": "dilithium",
+              "value": 470370
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 24485,
               "armor_pierce": 2548,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 17788,
+              "min_damage": 14823,
+              "shield_pierce": 2913,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -3147,26 +3199,37 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 17788,
-              "min_damage": 14823,
-              "shield_pierce": 2913,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2364337000
+              },
+              {
+                "type": "dilithium",
+                "value": 80116000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2360,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2360
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 4430,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4430
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3178,20 +3241,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 1790
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2364337000
-              },
-              {
-                "type": "dilithium",
-                "value": 80116000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3201,16 +3252,17 @@
               "type": "dilithium",
               "value": 470370
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 24485,
               "armor_pierce": 3313,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 23085,
+              "min_damage": 19237,
+              "shield_pierce": 3786,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -3221,83 +3273,37 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 23085,
-              "min_damage": 19237,
-              "shield_pierce": 3786,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 2360
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 4430
-              }
-            ],
-            "others": [
-              {
-                "type": "Cerritos Parts",
-                "value": 38155
-              },
-              {
-                "type": "4\u2605 Uncommon Explorer Parts",
-                "value": 1790
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2364337000
-              },
-              {
-                "type": "dilithium",
-                "value": 80116000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 4171200
-            },
-            {
-              "type": "dilithium",
-              "value": 470370
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1030,
-              "hull_health": 136968
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1576225000
+              },
+              {
+                "type": "dilithium",
+                "value": 53411000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1575,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1575
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 2950,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2950
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3309,20 +3315,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 1195
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1576225000
-              },
-              {
-                "type": "dilithium",
-                "value": 53411000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3332,29 +3326,41 @@
               "type": "dilithium",
               "value": 313580
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1030,
+              "hull_health": 136968
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 130,
-              "warp_speed": 4.9
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3152449000
+              },
+              {
+                "type": "dilithium",
+                "value": 106821000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4345,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 4345
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 1215,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1215
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3366,20 +3372,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 2390
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3152449000
-              },
-              {
-                "type": "dilithium",
-                "value": 106821000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3389,29 +3383,41 @@
               "type": "dilithium",
               "value": 627160
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 130,
+              "warp_speed": 4.9
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 10304,
-              "shield_health": 194388
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2364337000
+              },
+              {
+                "type": "dilithium",
+                "value": 80116000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2360,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2360
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 4430,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4430
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3423,20 +3429,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 1790
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2364337000
-              },
-              {
-                "type": "dilithium",
-                "value": 80116000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3446,29 +3440,41 @@
               "type": "dilithium",
               "value": 470370
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 10304,
+              "shield_health": 194388
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 1030,
-              "impulse_speed": 85
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1576225000
+              },
+              {
+                "type": "dilithium",
+                "value": 53411000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 20035,
                 "grade": 4,
-                "rarity": "common",
-                "value": 20035
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 2950,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2950
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3480,20 +3486,8 @@
                 "type": "4\u2605 Common Explorer Parts",
                 "value": 40560
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1576225000
-              },
-              {
-                "type": "dilithium",
-                "value": 53411000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3503,7 +3497,14 @@
               "type": "dilithium",
               "value": 313580
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 1030,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3537,21 +3538,72 @@
           "level": 45,
           "ship_xp": 4543000
         }
-      ],
-      "repair_time": 150000,
-      "tier": 9
+      ]
     },
     {
+      "tier": 10,
       "build_time": 8000000,
+      "repair_time": 171120,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5040488000
+              },
+              {
+                "type": "dilithium",
+                "value": 149113000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1300,
+                "grade": 4,
+                "rarity": "rare"
+              },
+              {
+                "type": "ore",
+                "value": 2660,
+                "grade": 4,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "Cerritos Parts",
+                "value": 49950
+              },
+              {
+                "type": "4\u2605 Uncommon Explorer Parts",
+                "value": 2235
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 9365850
+            },
+            {
+              "type": "dilithium",
+              "value": 705990
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 26353,
               "armor_pierce": 2548,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 18815,
+              "min_damage": 15679,
+              "shield_pierce": 2912,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -3562,26 +3614,37 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 18815,
-              "min_damage": 15679,
-              "shield_pierce": 2912,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5040488000
+              },
+              {
+                "type": "dilithium",
+                "value": 149113000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1300,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1300
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 2660,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2660
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3593,20 +3656,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 2235
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5040488000
-              },
-              {
-                "type": "dilithium",
-                "value": 149113000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3616,16 +3667,17 @@
               "type": "dilithium",
               "value": 705990
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 26353,
               "armor_pierce": 3312,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 24418,
+              "min_damage": 20348,
+              "shield_pierce": 3785,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -3636,83 +3688,37 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 24418,
-              "min_damage": 20348,
-              "shield_pierce": 3785,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1300
-              },
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 2660
-              }
-            ],
-            "others": [
-              {
-                "type": "Cerritos Parts",
-                "value": 49950
-              },
-              {
-                "type": "4\u2605 Uncommon Explorer Parts",
-                "value": 2235
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5040488000
-              },
-              {
-                "type": "dilithium",
-                "value": 149113000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 9365850
-            },
-            {
-              "type": "dilithium",
-              "value": 705990
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1092,
-              "hull_health": 142666
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3360326000
+              },
+              {
+                "type": "dilithium",
+                "value": 99409000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1775,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1775
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 8750,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 8750
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3724,20 +3730,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 1490
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3360326000
-              },
-              {
-                "type": "dilithium",
-                "value": 99409000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3747,29 +3741,41 @@
               "type": "dilithium",
               "value": 470660
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1092,
+              "hull_health": 142666
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 140,
-              "warp_speed": 5.0
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6720651000
+              },
+              {
+                "type": "dilithium",
+                "value": 198817000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1735,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1735
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 1569,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1569
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3781,20 +3787,8 @@
                 "type": "4\u2605 Rare Explorer Parts",
                 "value": 1675
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 6720651000
-              },
-              {
-                "type": "dilithium",
-                "value": 198817000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3804,29 +3798,41 @@
               "type": "dilithium",
               "value": 941320
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 140,
+              "warp_speed": 5.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 10919,
-              "shield_health": 200000
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5040488000
+              },
+              {
+                "type": "dilithium",
+                "value": 149113000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2660,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2660
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 13125,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 13125
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3838,20 +3844,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 2235
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5040488000
-              },
-              {
-                "type": "dilithium",
-                "value": 149113000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3861,29 +3855,41 @@
               "type": "dilithium",
               "value": 705990
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 10919,
+              "shield_health": 200000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 1092,
-              "impulse_speed": 85
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3360326000
+              },
+              {
+                "type": "dilithium",
+                "value": 99409000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1775,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1775
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 8750,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 8750
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3895,20 +3901,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 1490
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3360326000
-              },
-              {
-                "type": "dilithium",
-                "value": 99409000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3918,7 +3912,14 @@
               "type": "dilithium",
               "value": 470660
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 1092,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3952,21 +3953,72 @@
           "level": 50,
           "ship_xp": 6040000
         }
-      ],
-      "repair_time": 171120,
-      "tier": 10
+      ]
     },
     {
+      "tier": 11,
       "build_time": 10400000,
+      "repair_time": 192000,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8783338000
+              },
+              {
+                "type": "dilithium",
+                "value": 343304000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 2395,
+                "grade": 4,
+                "rarity": "rare"
+              },
+              {
+                "type": "ore",
+                "value": 1115,
+                "grade": 4,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Cerritos Parts",
+                "value": 64840
+              },
+              {
+                "type": "4\u2605 Rare Explorer Parts",
+                "value": 425
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 17438850
+            },
+            {
+              "type": "dilithium",
+              "value": 1214475
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 30042,
               "armor_pierce": 2694,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 20696,
+              "min_damage": 17247,
+              "shield_pierce": 3079,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -3977,26 +4029,37 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 20696,
-              "min_damage": 17247,
-              "shield_pierce": 3079,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8783338000
+              },
+              {
+                "type": "dilithium",
+                "value": 343304000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2395,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 2395
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 1115,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1115
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -4008,20 +4071,8 @@
                 "type": "4\u2605 Rare Explorer Parts",
                 "value": 425
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8783338000
-              },
-              {
-                "type": "dilithium",
-                "value": 343304000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4031,16 +4082,17 @@
               "type": "dilithium",
               "value": 1214475
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 30042,
               "armor_pierce": 3502,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 26860,
+              "min_damage": 22383,
+              "shield_pierce": 4002,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -4051,83 +4103,37 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 26860,
-              "min_damage": 22383,
-              "shield_pierce": 4002,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 2395
-              },
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1115
-              }
-            ],
-            "others": [
-              {
-                "type": "Cerritos Parts",
-                "value": 64840
-              },
-              {
-                "type": "4\u2605 Rare Explorer Parts",
-                "value": 425
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8783338000
-              },
-              {
-                "type": "dilithium",
-                "value": 343304000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 17438850
-            },
-            {
-              "type": "dilithium",
-              "value": 1214475
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1242,
-              "hull_health": 154984
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5855559000
+              },
+              {
+                "type": "dilithium",
+                "value": 228870000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 3300,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 3300
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 11130,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 11130
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4139,20 +4145,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 3740
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5855559000
-              },
-              {
-                "type": "dilithium",
-                "value": 228870000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4162,29 +4156,41 @@
               "type": "dilithium",
               "value": 809650
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1242,
+              "hull_health": 154984
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 150,
-              "warp_speed": 5.1
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 11711118000
+              },
+              {
+                "type": "dilithium",
+                "value": 457739000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 6595,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 6595
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 1270,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 1270
+                "rarity": "epic"
               }
             ],
             "others": [
@@ -4196,20 +4202,8 @@
                 "type": "4\u2605 Rare Explorer Parts",
                 "value": 565
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 11711118000
-              },
-              {
-                "type": "dilithium",
-                "value": 457739000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4219,29 +4213,41 @@
               "type": "dilithium",
               "value": 1619300
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 150,
+              "warp_speed": 5.1
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 12426,
-              "shield_health": 214187
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8783338000
+              },
+              {
+                "type": "dilithium",
+                "value": 343304000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 4945,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4945
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 16695,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 16695
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4253,20 +4259,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 5615
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8783338000
-              },
-              {
-                "type": "dilithium",
-                "value": 343304000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4276,29 +4270,41 @@
               "type": "dilithium",
               "value": 1214475
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 12426,
+              "shield_health": 214187
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 1242,
-              "impulse_speed": 85
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5855559000
+              },
+              {
+                "type": "dilithium",
+                "value": 228870000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 3300,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 3300
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 11130,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 11130
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4310,20 +4316,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 3740
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5855559000
-              },
-              {
-                "type": "dilithium",
-                "value": 228870000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4333,7 +4327,14 @@
               "type": "dilithium",
               "value": 809650
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 1242,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4367,21 +4368,72 @@
           "level": 55,
           "ship_xp": 7848000
         }
-      ],
-      "repair_time": 192000,
-      "tier": 11
+      ]
     },
     {
+      "tier": 12,
       "build_time": 14400000,
+      "repair_time": 216000,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 12583233000
+              },
+              {
+                "type": "dilithium",
+                "value": 479134000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 1355,
+                "grade": 4,
+                "rarity": "rare"
+              },
+              {
+                "type": "gas",
+                "value": 355,
+                "grade": 4,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "Cerritos Parts",
+                "value": 83740
+              },
+              {
+                "type": "4\u2605 Rare Explorer Parts",
+                "value": 460
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 24303900
+            },
+            {
+              "type": "dilithium",
+              "value": 1385565
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 32517,
               "armor_pierce": 2743,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 22008,
+              "min_damage": 18340,
+              "shield_pierce": 3134,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -4392,26 +4444,37 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 22008,
-              "min_damage": 18340,
-              "shield_pierce": 3134,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 12583233000
+              },
+              {
+                "type": "dilithium",
+                "value": 479134000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1355,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1355
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 355,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 355
+                "rarity": "epic"
               }
             ],
             "others": [
@@ -4423,20 +4486,8 @@
                 "type": "4\u2605 Rare Explorer Parts",
                 "value": 460
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 12583233000
-              },
-              {
-                "type": "dilithium",
-                "value": 479134000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4446,16 +4497,17 @@
               "type": "dilithium",
               "value": 1385565
             }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 32517,
               "armor_pierce": 3565,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 28563,
+              "min_damage": 23802,
+              "shield_pierce": 4074,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 2,
@@ -4466,83 +4518,37 @@
                 0,
                 2,
                 0
-              ],
-              "max_damage": 28563,
-              "min_damage": 23802,
-              "shield_pierce": 4074,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1355
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 355
-              }
-            ],
-            "others": [
-              {
-                "type": "Cerritos Parts",
-                "value": 83740
-              },
-              {
-                "type": "4\u2605 Rare Explorer Parts",
-                "value": 460
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 12583233000
-              },
-              {
-                "type": "dilithium",
-                "value": 479134000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 24303900
-            },
-            {
-              "type": "dilithium",
-              "value": 1385565
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1333,
-              "hull_health": 162889
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8388822000
+              },
+              {
+                "type": "dilithium",
+                "value": 319423000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2485,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 2485
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 4005,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4005
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4554,20 +4560,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 4060
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8388822000
-              },
-              {
-                "type": "dilithium",
-                "value": 319423000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4577,29 +4571,41 @@
               "type": "dilithium",
               "value": 923710
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1333,
+              "hull_health": 162889
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 160,
-              "warp_speed": 5.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 16777643000
+              },
+              {
+                "type": "dilithium",
+                "value": 638845000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 8010,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 8010
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 475,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 475
+                "rarity": "epic"
               }
             ],
             "others": [
@@ -4611,20 +4617,8 @@
                 "type": "4\u2605 Rare Explorer Parts",
                 "value": 615
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 16777643000
-              },
-              {
-                "type": "dilithium",
-                "value": 638845000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4634,29 +4628,41 @@
               "type": "dilithium",
               "value": 1847420
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 160,
+              "warp_speed": 5.2
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 13338,
-              "shield_health": 222657
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 12583233000
+              },
+              {
+                "type": "dilithium",
+                "value": 479134000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3730,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 3730
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 6005,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 6005
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4668,20 +4674,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 6090
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 12583233000
-              },
-              {
-                "type": "dilithium",
-                "value": 479134000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4691,29 +4685,41 @@
               "type": "dilithium",
               "value": 1385565
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 13338,
+              "shield_health": 222657
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 1333,
-              "impulse_speed": 85
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8388822000
+              },
+              {
+                "type": "dilithium",
+                "value": 319423000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2485,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 2485
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 4005,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4005
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4725,20 +4731,8 @@
                 "type": "4\u2605 Uncommon Explorer Parts",
                 "value": 4060
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8388822000
-              },
-              {
-                "type": "dilithium",
-                "value": 319423000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4748,7 +4742,14 @@
               "type": "dilithium",
               "value": 923710
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 1333,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4782,9 +4783,8 @@
           "level": 60,
           "ship_xp": 10000000
         }
-      ],
-      "repair_time": 216000,
-      "tier": 12
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/uss_cerritos.png"
 }

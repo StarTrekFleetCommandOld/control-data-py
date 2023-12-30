@@ -1,14 +1,81 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 23,
+  "rarity": "common",
   "head_stats": {
     "attack": 15992,
     "defense": 19485,
     "health": 7660
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 23,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/woxoxit_22"
+    },
+    {
+      "$ref": "systems/godui_23"
+    },
+    {
+      "$ref": "systems/loaiy_25"
+    },
+    {
+      "$ref": "systems/narendra_25"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 3870,
+      "armor_pierce": 753,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 8211,
+      "shield_pierce": 564
+    },
+    "defense": {
+      "armor": 564,
+      "dodge": 753,
+      "shield_deflect": 2580
+    },
+    "health": {
+      "hull_health": 7450,
+      "shield_health": 7870
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 3870,
+        "armor_pierce": 753,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 2737,
+        "max_damage": 2618,
+        "min_damage": 2142,
+        "shield_pierce": 564
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,76 +108,9 @@
       "value": 0
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 3870,
-      "armor_pierce": 753,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 8211,
-      "shield_pierce": 564
-    },
-    "defense": {
-      "armor": 564,
-      "dodge": 753,
-      "shield_deflect": 2580
-    },
-    "health": {
-      "hull_health": 7450,
-      "shield_health": 7870
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/woxoxit_22"
-    },
-    {
-      "$ref": "systems/godui_23"
-    },
-    {
-      "$ref": "systems/loaiy_25"
-    },
-    {
-      "$ref": "systems/narendra_25"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 20
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 3870,
-        "armor_pierce": 753,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 2737,
-        "max_damage": 2618,
-        "min_damage": 2142,
-        "shield_pierce": 564
-      },
-      "weapon_type": "energy"
     }
   ]
 }

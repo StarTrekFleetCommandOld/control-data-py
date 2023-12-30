@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Hirogen Hunter",
   "description": "",
   "group": "neutral",
+  "level": 52,
+  "rarity": "common",
   "head_stats": {
     "attack": 30871515,
     "defense": 12283375,
     "health": 41038126
   },
-  "hostile_name": "Hirogen Hunter",
-  "level": 52,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 2001,
-      "min_value": 2001,
-      "value": 2001
+      "$ref": "systems/dijor_joh_50"
+    },
+    {
+      "$ref": "systems/aran_50"
+    },
+    {
+      "$ref": "systems/sakari_53"
+    },
+    {
+      "$ref": "systems/suvfa_53"
+    },
+    {
+      "$ref": "systems/neken_51"
+    },
+    {
+      "$ref": "systems/leichter_53"
     }
   ],
   "ship_class": "explorer",
@@ -37,31 +49,6 @@
       "shield_health": 47877829
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dijor_joh_50"
-    },
-    {
-      "$ref": "systems/aran_50"
-    },
-    {
-      "$ref": "systems/sakari_53"
-    },
-    {
-      "$ref": "systems/suvfa_53"
-    },
-    {
-      "$ref": "systems/neken_51"
-    },
-    {
-      "$ref": "systems/leichter_53"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 794315
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 2001,
+      "min_value": 2001,
+      "value": 2001
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

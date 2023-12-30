@@ -1,20 +1,23 @@
 {
-  "description": "",
   "armada_name": "Exchange Bank",
+  "description": "",
   "group": "eclipse",
+  "level": 29,
+  "rarity": "uncommon",
   "head_stats": {
     "attack": 87256,
     "defense": 409095,
     "health": 4429081
   },
-  "level": 29,
-  "rarity": "uncommon",
-  "rewards": [
+  "systems": [
     {
-      "type": "Uncommon Exchange Vault Loot",
-      "max_value": 398,
-      "min_value": 398,
-      "value": 398
+      "$ref": "systems/exchange_beta_30"
+    },
+    {
+      "$ref": "systems/exchange_central_28"
+    },
+    {
+      "$ref": "systems/exchange_alpha_29"
     }
   ],
   "stats": {
@@ -36,17 +39,6 @@
       "shield_health": 4125720
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/exchange_beta_30"
-    },
-    {
-      "$ref": "systems/exchange_central_28"
-    },
-    {
-      "$ref": "systems/exchange_alpha_29"
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -97,6 +89,14 @@
         "shield_pierce": 5000
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "Uncommon Exchange Vault Loot",
+      "max_value": 398,
+      "min_value": 398,
+      "value": 398
     }
   ]
 }

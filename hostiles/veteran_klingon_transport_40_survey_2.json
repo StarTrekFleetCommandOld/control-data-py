@@ -1,14 +1,72 @@
 {
+  "hostile_name": "Veteran Klingon Transport",
   "description": "",
   "group": "klingon",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 763936,
     "defense": 1760760,
     "health": 927480
   },
-  "hostile_name": "Veteran Klingon Transport",
-  "level": 40,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/balduk_39"
+    }
+  ],
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 93907,
+      "armor_pierce": 93907,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 623075,
+      "shield_pierce": 93907
+    },
+    "defense": {
+      "armor": 117384,
+      "dodge": 117384,
+      "shield_deflect": 117384
+    },
+    "health": {
+      "hull_health": 927480,
+      "shield_health": 927480
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 93907,
+        "armor_pierce": 93907,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 623075,
+        "max_damage": 595985,
+        "min_damage": 487624,
+        "shield_pierce": 93907
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,67 +99,9 @@
       "value": 0
     }
   ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 93907,
-      "armor_pierce": 93907,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 623075,
-      "shield_pierce": 93907
-    },
-    "defense": {
-      "armor": 117384,
-      "dodge": 117384,
-      "shield_deflect": 117384
-    },
-    "health": {
-      "hull_health": 927480,
-      "shield_health": 927480
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/balduk_39"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 9
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 93907,
-        "armor_pierce": 93907,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 623075,
-        "max_damage": 595985,
-        "min_damage": 487624,
-        "shield_pierce": 93907
-      },
-      "weapon_type": "energy"
     }
   ]
 }

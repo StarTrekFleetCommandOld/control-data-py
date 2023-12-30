@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Lost Nausicaan Outlaw",
   "description": "",
   "group": "neutral",
+  "level": 28,
+  "rarity": "common",
   "head_stats": {
     "attack": 51795,
     "defense": 53970,
     "health": 22080
   },
-  "hostile_name": "Lost Nausicaan Outlaw",
-  "level": 28,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 11301,
-      "min_value": 11301,
-      "value": 11301
+      "$ref": "systems/eviloy_29"
+    },
+    {
+      "$ref": "systems/uxal_26"
+    },
+    {
+      "$ref": "systems/kalak_30"
     }
   ],
   "ship_class": "interceptor",
@@ -37,22 +40,6 @@
       "shield_health": 22080
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/eviloy_29"
-    },
-    {
-      "$ref": "systems/uxal_26"
-    },
-    {
-      "$ref": "systems/kalak_30"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 1444
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 11301,
+      "min_value": 11301,
+      "value": 11301
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

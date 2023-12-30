@@ -1,20 +1,17 @@
 {
+  "hostile_name": "Swarm Cluster",
   "description": "",
   "group": "swarm",
+  "level": 45,
+  "rarity": "common",
   "head_stats": {
     "attack": 2990551,
     "defense": 3607995,
     "health": 18038036
   },
-  "hostile_name": "Swarm Cluster",
-  "level": 45,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "frequency modulator mk. ii",
-      "max_value": 151,
-      "min_value": 151,
-      "value": 151
+      "$ref": "systems/vugef_45"
     }
   ],
   "ship_class": "interceptor",
@@ -37,16 +34,6 @@
       "shield_health": 0
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/vugef_45"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -140,6 +127,19 @@
         "shield_pierce": 103070
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "frequency modulator mk. ii",
+      "max_value": 151,
+      "min_value": 151,
+      "value": 151
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

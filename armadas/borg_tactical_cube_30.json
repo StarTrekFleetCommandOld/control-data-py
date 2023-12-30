@@ -1,20 +1,26 @@
 {
-  "description": "",
   "armada_name": "Borg Tactical Cube",
+  "description": "",
   "group": "borg",
+  "level": 30,
+  "rarity": "rare",
   "head_stats": {
     "attack": 947489,
     "defense": 202880,
     "health": 47414762
   },
-  "level": 30,
-  "rarity": "rare",
-  "rewards": [
+  "systems": [
     {
-      "type": "Active Nanoprobe",
-      "max_value": 1280,
-      "min_value": 1280,
-      "value": 1280
+      "$ref": "systems/udarian_30"
+    },
+    {
+      "$ref": "systems/razgara_30"
+    },
+    {
+      "$ref": "systems/olaria_30"
+    },
+    {
+      "$ref": "systems/feilji_30"
     }
   ],
   "stats": {
@@ -36,20 +42,6 @@
       "shield_health": 47414761
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/udarian_30"
-    },
-    {
-      "$ref": "systems/razgara_30"
-    },
-    {
-      "$ref": "systems/olaria_30"
-    },
-    {
-      "$ref": "systems/feilji_30"
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -150,6 +142,14 @@
         "shield_pierce": 58500
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "Active Nanoprobe",
+      "max_value": 1280,
+      "min_value": 1280,
+      "value": 1280
     }
   ]
 }

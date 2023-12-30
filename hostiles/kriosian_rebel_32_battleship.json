@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Kriosian Rebel",
   "description": "",
   "group": "neutral",
+  "level": 32,
+  "rarity": "common",
   "head_stats": {
     "attack": 129969,
     "defense": 123750,
     "health": 45150
   },
-  "hostile_name": "Kriosian Rebel",
-  "level": 32,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 118,
-      "min_value": 118,
-      "value": 118
+      "$ref": "systems/may_lang_31"
+    },
+    {
+      "$ref": "systems/aesir_34"
+    },
+    {
+      "$ref": "systems/eeli_33"
+    },
+    {
+      "$ref": "systems/izanagi_32"
+    },
+    {
+      "$ref": "systems/neethia_30"
+    },
+    {
+      "$ref": "systems/lipig_31"
     }
   ],
   "ship_class": "battleship",
@@ -37,31 +49,6 @@
       "shield_health": 38700
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/may_lang_31"
-    },
-    {
-      "$ref": "systems/aesir_34"
-    },
-    {
-      "$ref": "systems/eeli_33"
-    },
-    {
-      "$ref": "systems/izanagi_32"
-    },
-    {
-      "$ref": "systems/neethia_30"
-    },
-    {
-      "$ref": "systems/lipig_31"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 24750
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 118,
+      "min_value": 118,
+      "value": 118
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Jem'Hadar Fighter",
   "description": "",
   "group": "dominion",
+  "level": 45,
+  "rarity": "common",
   "head_stats": {
     "attack": 1562656,
     "defense": 1833865,
     "health": 1935979
   },
-  "hostile_name": "Jem'Hadar Fighter",
-  "level": 45,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "antimatter units",
-      "max_value": 303,
-      "min_value": 303,
-      "value": 303
+      "$ref": "systems/parada_43"
+    },
+    {
+      "$ref": "systems/clohma_46"
+    },
+    {
+      "$ref": "systems/callinon_43"
+    },
+    {
+      "$ref": "systems/sagra_45"
+    },
+    {
+      "$ref": "systems/koteli_43"
+    },
+    {
+      "$ref": "systems/kurill_44"
     }
   ],
   "ship_class": "interceptor",
@@ -37,31 +49,6 @@
       "shield_health": 1935979
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/parada_43"
-    },
-    {
-      "$ref": "systems/clohma_46"
-    },
-    {
-      "$ref": "systems/callinon_43"
-    },
-    {
-      "$ref": "systems/sagra_45"
-    },
-    {
-      "$ref": "systems/koteli_43"
-    },
-    {
-      "$ref": "systems/kurill_44"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -93,6 +80,19 @@
         "shield_pierce": 44225
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "antimatter units",
+      "max_value": 303,
+      "min_value": 303,
+      "value": 303
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

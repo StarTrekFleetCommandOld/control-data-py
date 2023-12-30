@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Gorn Marauder",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1001818,
     "defense": 558065,
     "health": 1753286
   },
-  "hostile_name": "Gorn Marauder",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/nibiq_38"
+    },
+    {
+      "$ref": "systems/kuvrak_38"
+    },
+    {
+      "$ref": "systems/trill_39"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 1753286
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/nibiq_38"
-    },
-    {
-      "$ref": "systems/kuvrak_38"
-    },
-    {
-      "$ref": "systems/trill_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +102,12 @@
         "shield_pierce": 17614
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

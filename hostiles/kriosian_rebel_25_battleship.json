@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Kriosian Rebel",
   "description": "",
   "group": "neutral",
+  "level": 25,
+  "rarity": "common",
   "head_stats": {
     "attack": 17313,
     "defense": 18750,
     "health": 8400
   },
-  "hostile_name": "Kriosian Rebel",
-  "level": 25,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/lainey_27"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 7200
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/lainey_27"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 3750
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

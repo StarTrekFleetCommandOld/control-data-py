@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Fearless Bandits",
   "description": "",
   "group": "neutral",
+  "level": 26,
+  "rarity": "common",
   "head_stats": {
     "attack": 21757,
     "defense": 22500,
     "health": 10500
   },
-  "hostile_name": "Fearless Bandits",
-  "level": 26,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 89,
-      "min_value": 89,
-      "value": 89
+      "$ref": "systems/talmir_86_26"
+    },
+    {
+      "$ref": "systems/pasadoran_26"
+    },
+    {
+      "$ref": "systems/alhazar_26"
     }
   ],
   "ship_class": "battleship",
@@ -37,22 +40,6 @@
       "shield_health": 9000
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/talmir_86_26"
-    },
-    {
-      "$ref": "systems/pasadoran_26"
-    },
-    {
-      "$ref": "systems/alhazar_26"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 4500
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 89,
+      "min_value": 89,
+      "value": 89
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

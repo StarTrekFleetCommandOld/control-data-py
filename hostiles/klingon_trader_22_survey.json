@@ -1,65 +1,13 @@
 {
+  "hostile_name": "Klingon Trader",
   "description": "",
   "group": "klingon",
+  "level": 22,
+  "rarity": "common",
   "head_stats": {
     "attack": 5982,
     "defense": 16125,
     "health": 8640
-  },
-  "hostile_name": "Klingon Trader",
-  "level": 22,
-  "rarity": "common",
-  "rewards": [
-    {
-      "type": "parsteel",
-      "max_value": 868,
-      "min_value": 868,
-      "value": 868
-    },
-    {
-      "type": "tritanium",
-      "max_value": 75,
-      "min_value": 75,
-      "value": 75
-    },
-    {
-      "type": "federation points",
-      "max_value": 14,
-      "min_value": 14,
-      "value": 14
-    },
-    {
-      "type": "romulan points",
-      "max_value": 6,
-      "min_value": 6,
-      "value": 6
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    }
-  ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 860,
-      "armor_pierce": 860,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 4692,
-      "shield_pierce": 860
-    },
-    "defense": {
-      "armor": 1075,
-      "dodge": 1075,
-      "shield_deflect": 1075
-    },
-    "health": {
-      "hull_health": 8640,
-      "shield_health": 8640
-    }
   },
   "systems": [
     {
@@ -96,11 +44,26 @@
       "$ref": "systems/vosak_24"
     }
   ],
-  "utility": [
-    {
-      "impulse_speed": 10
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 860,
+      "armor_pierce": 860,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 4692,
+      "shield_pierce": 860
+    },
+    "defense": {
+      "armor": 1075,
+      "dodge": 1075,
+      "shield_deflect": 1075
+    },
+    "health": {
+      "hull_health": 8640,
+      "shield_health": 8640
     }
-  ],
+  },
   "weapons": [
     {
       "firing_pattern": [
@@ -132,6 +95,43 @@
         "shield_pierce": 860
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 868,
+      "min_value": 868,
+      "value": 868
+    },
+    {
+      "type": "tritanium",
+      "max_value": 75,
+      "min_value": 75,
+      "value": 75
+    },
+    {
+      "type": "federation points",
+      "max_value": 14,
+      "min_value": 14,
+      "value": 14
+    },
+    {
+      "type": "romulan points",
+      "max_value": 6,
+      "min_value": 6,
+      "value": 6
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

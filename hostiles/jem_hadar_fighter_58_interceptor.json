@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Jem'Hadar Fighter",
   "description": "",
   "group": "dominion",
+  "level": 58,
+  "rarity": "common",
   "head_stats": {
     "attack": 66085611,
     "defense": 40105430,
     "health": 142092942
   },
-  "hostile_name": "Jem'Hadar Fighter",
-  "level": 58,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "antimatter units",
-      "max_value": 3174,
-      "min_value": 3174,
-      "value": 3174
+      "$ref": "systems/dal_vor_59"
+    },
+    {
+      "$ref": "systems/vefeeq_57"
+    },
+    {
+      "$ref": "systems/altero_60"
+    },
+    {
+      "$ref": "systems/lysis_60"
     }
   ],
   "ship_class": "interceptor",
@@ -37,25 +43,6 @@
       "shield_health": 135326605
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dal_vor_59"
-    },
-    {
-      "$ref": "systems/vefeeq_57"
-    },
-    {
-      "$ref": "systems/altero_60"
-    },
-    {
-      "$ref": "systems/lysis_60"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -118,6 +105,19 @@
         "shield_pierce": 1072008
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "antimatter units",
+      "max_value": 3174,
+      "min_value": 3174,
+      "value": 3174
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

@@ -1,43 +1,43 @@
 {
+  "research_name": "Prime Swarm Refinery",
   "description": "Increases the amount of Parsteel, Tritanium and Dilithium received in the Swarm Refinery by 500%",
-  "img_url": "./assets/prime_swarm_refinery_starships_1_7.png",
+  "location": {
+    "column": 7,
+    "row": 1,
+    "tree": "starships"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 5.0
-      },
-      "increased_power": 1700,
       "level": 1,
-      "required_by": [],
+      "research_time": 56340,
+      "increased_power": 1700,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 17
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 3950
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "swarm prime particle",
             "value": 1000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 3950
-          }
         ]
       },
-      "research_time": 56340
+      "bonus": {
+        "percentage": true,
+        "value": 5.0
+      }
     }
   ],
-  "location": {
-    "column": 7,
-    "row": 1,
-    "tree": "starships"
-  },
-  "research_name": "Prime Swarm Refinery"
+  "img_url": "./assets/prime_swarm_refinery_starships_1_7.png"
 }

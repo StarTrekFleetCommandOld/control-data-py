@@ -1,14 +1,75 @@
 {
+  "hostile_name": "Federation Trader",
   "description": "",
   "group": "federation",
+  "level": 29,
+  "rarity": "common",
   "head_stats": {
     "attack": 25740,
     "defense": 63000,
     "health": 41760
   },
-  "hostile_name": "Federation Trader",
-  "level": 29,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/noakyn_30"
+    },
+    {
+      "$ref": "systems/doska_27"
+    }
+  ],
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 3360,
+      "armor_pierce": 3360,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 20700,
+      "shield_pierce": 3360
+    },
+    "defense": {
+      "armor": 4200,
+      "dodge": 4200,
+      "shield_deflect": 4200
+    },
+    "health": {
+      "hull_health": 41760,
+      "shield_health": 41760
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 3360,
+        "armor_pierce": 3360,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 20700,
+        "max_damage": 19800,
+        "min_damage": 16200,
+        "shield_pierce": 3360
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,70 +102,9 @@
       "value": 62
     }
   ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 3360,
-      "armor_pierce": 3360,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 20700,
-      "shield_pierce": 3360
-    },
-    "defense": {
-      "armor": 4200,
-      "dodge": 4200,
-      "shield_deflect": 4200
-    },
-    "health": {
-      "hull_health": 41760,
-      "shield_health": 41760
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/noakyn_30"
-    },
-    {
-      "$ref": "systems/doska_27"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 10
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 3360,
-        "armor_pierce": 3360,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 20700,
-        "max_damage": 19800,
-        "min_damage": 16200,
-        "shield_pierce": 3360
-      },
-      "weapon_type": "energy"
     }
   ]
 }

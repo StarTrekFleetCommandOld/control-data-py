@@ -1,26 +1,23 @@
 {
+  "hostile_name": "Doomsday Worm",
   "description": "",
   "group": "neutral",
+  "level": 46,
+  "rarity": "common",
   "head_stats": {
     "attack": 3929263,
     "defense": 1791065,
     "health": 5954405
   },
-  "hostile_name": "Doomsday Worm",
-  "level": 46,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 3458,
-      "min_value": 3458,
-      "value": 3458
+      "$ref": "systems/zin_45_46"
     },
     {
-      "type": "tritanium",
-      "max_value": 220,
-      "min_value": 220,
-      "value": 220
+      "$ref": "systems/kendi_46"
+    },
+    {
+      "$ref": "systems/hollin_44"
     }
   ],
   "ship_class": "interceptor",
@@ -43,22 +40,6 @@
       "shield_health": 5954405
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/zin_45_46"
-    },
-    {
-      "$ref": "systems/kendi_46"
-    },
-    {
-      "$ref": "systems/hollin_44"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +102,25 @@
         "shield_pierce": 59878
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 3458,
+      "min_value": 3458,
+      "value": 3458
+    },
+    {
+      "type": "tritanium",
+      "max_value": 220,
+      "min_value": 220,
+      "value": 220
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Hirogen Hunter",
   "description": "",
   "group": "neutral",
+  "level": 57,
+  "rarity": "common",
   "head_stats": {
     "attack": 84717223,
     "defense": 53221305,
     "health": 180996927
   },
-  "hostile_name": "Hirogen Hunter",
-  "level": 57,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/jettas_55"
+    },
+    {
+      "$ref": "systems/burdow_55"
+    },
+    {
+      "$ref": "systems/tak_tak_58"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 180996927
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/jettas_55"
-    },
-    {
-      "$ref": "systems/burdow_55"
-    },
-    {
-      "$ref": "systems/tak_tak_58"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +102,12 @@
         "shield_pierce": 1300500
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

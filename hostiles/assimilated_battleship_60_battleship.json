@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Assimilated Battleship",
   "description": "",
   "group": "assimilated",
+  "level": 60,
+  "rarity": "common",
   "head_stats": {
     "attack": 171311893,
     "defense": 41333730,
     "health": 168575496
   },
-  "hostile_name": "Assimilated Battleship",
-  "level": 60,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken battleship parts",
-      "max_value": 1910,
-      "min_value": 1910,
-      "value": 1910
+      "$ref": "systems/inisfal_58"
+    },
+    {
+      "$ref": "systems/ma_vak_59"
     }
   ],
   "ship_class": "battleship",
@@ -37,19 +37,6 @@
       "shield_health": 144491984
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/inisfal_58"
-    },
-    {
-      "$ref": "systems/ma_vak_59"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 7663564
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken battleship parts",
+      "max_value": 1910,
+      "min_value": 1910,
+      "value": 1910
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

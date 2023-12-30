@@ -1,38 +1,29 @@
 {
+  "hostile_name": "Klingon Trader",
   "description": "",
   "group": "klingon",
+  "level": 48,
+  "rarity": "common",
   "head_stats": {
     "attack": 2402201,
     "defense": 2625745,
     "health": 6281325
   },
-  "hostile_name": "Klingon Trader",
-  "level": 48,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken survey parts",
-      "max_value": 732,
-      "min_value": 732,
-      "value": 732
+      "$ref": "systems/wuk_vek_48"
     },
     {
-      "type": "federation points",
-      "max_value": 6720,
-      "min_value": 6720,
-      "value": 6720
+      "$ref": "systems/lu_kash_46"
     },
     {
-      "type": "romulan points",
-      "max_value": 3360,
-      "min_value": 3360,
-      "value": 3360
+      "$ref": "systems/ch_kmulk_47"
     },
     {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/dohrmas_46"
+    },
+    {
+      "$ref": "systems/tej_lukk_50"
     }
   ],
   "ship_class": "survey",
@@ -55,28 +46,6 @@
       "shield_health": 6076587
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/wuk_vek_48"
-    },
-    {
-      "$ref": "systems/lu_kash_46"
-    },
-    {
-      "$ref": "systems/ch_kmulk_47"
-    },
-    {
-      "$ref": "systems/dohrmas_46"
-    },
-    {
-      "$ref": "systems/tej_lukk_50"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +77,37 @@
         "shield_pierce": 72355
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken survey parts",
+      "max_value": 732,
+      "min_value": 732,
+      "value": 732
+    },
+    {
+      "type": "federation points",
+      "max_value": 6720,
+      "min_value": 6720,
+      "value": 6720
+    },
+    {
+      "type": "romulan points",
+      "max_value": 3360,
+      "min_value": 3360,
+      "value": 3360
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

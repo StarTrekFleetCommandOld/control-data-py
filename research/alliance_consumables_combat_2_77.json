@@ -1,11 +1,16 @@
 {
+  "research_name": "Alliance Consumables",
   "description": "Adds Alliance Consumables as a chance bonus reward from the 5\u21f5 Premium Exocomp Pack.",
-  "img_url": "./assets/alliance_consumables_combat_2_77.png",
+  "location": {
+    "column": 77,
+    "row": 2,
+    "tree": "combat"
+  },
   "levels": [
     {
-      "increased_power": 255000,
       "level": 1,
-      "required_by": [],
+      "research_time": 452601900,
+      "increased_power": 255000,
       "requirements": [
         {
           "name": "5\u2605 Interceptor Susceptibility",
@@ -24,30 +29,25 @@
           "level": 51
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [
-          {
-            "type": "gas",
-            "grade": 5,
-            "rarity": "common",
-            "value": 50000
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 201839000000
           }
-        ]
-      },
-      "research_time": 452601900
+        ],
+        "materials": [
+          {
+            "type": "gas",
+            "value": 50000,
+            "grade": 5,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      }
     }
   ],
-  "location": {
-    "column": 77,
-    "row": 2,
-    "tree": "combat"
-  },
-  "research_name": "Alliance Consumables"
+  "img_url": "./assets/alliance_consumables_combat_2_77.png"
 }

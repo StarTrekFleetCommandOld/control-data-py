@@ -1,11 +1,16 @@
 {
+  "research_name": "Territory Challenger",
   "description": "Grants Challenger Token I and II at levels 1 and 2, which unlock Avatars in the Territory Store.",
-  "img_url": "./assets/territory_challenger_territory_2_11.png",
+  "location": {
+    "column": 11,
+    "row": 2,
+    "tree": "territory"
+  },
   "levels": [
     {
-      "increased_power": 9500,
       "level": 1,
-      "required_by": [],
+      "research_time": 741000,
+      "increased_power": 9500,
       "requirements": [
         {
           "name": "Battleship Shields",
@@ -24,22 +29,22 @@
           "level": 30
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 134000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "iso-emulsion",
             "value": 1600
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 134000
-          }
         ]
       },
-      "research_time": 741000,
       "rewards": [
         {
           "type": "Challenger Token I",
@@ -48,9 +53,9 @@
       ]
     },
     {
-      "increased_power": 14500,
       "level": 2,
-      "required_by": [],
+      "research_time": 14125380,
+      "increased_power": 14500,
       "requirements": [
         {
           "name": "Battleship Shields",
@@ -69,22 +74,22 @@
           "level": 40
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 10400000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "iso-emulsion",
             "value": 66600
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 10400000
-          }
         ]
       },
-      "research_time": 14125380,
       "rewards": [
         {
           "type": "Challenger Token II",
@@ -93,10 +98,5 @@
       ]
     }
   ],
-  "location": {
-    "column": 11,
-    "row": 2,
-    "tree": "territory"
-  },
-  "research_name": "Territory Challenger"
+  "img_url": "./assets/territory_challenger_territory_2_11.png"
 }

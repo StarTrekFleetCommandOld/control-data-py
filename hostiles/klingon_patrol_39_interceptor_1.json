@@ -1,38 +1,17 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 338703,
     "defense": 506100,
     "health": 1600826
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 94,
-      "min_value": 94,
-      "value": 94
-    },
-    {
-      "type": "federation points",
-      "max_value": 2160,
-      "min_value": 2160,
-      "value": 2160
-    },
-    {
-      "type": "romulan points",
-      "max_value": 1080,
-      "min_value": 1080,
-      "value": 1080
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/zlim_kach_40"
     }
   ],
   "ship_class": "interceptor",
@@ -55,16 +34,6 @@
       "shield_health": 1600826
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/zlim_kach_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -127,6 +96,37 @@
         "shield_pierce": 15317
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 94,
+      "min_value": 94,
+      "value": 94
+    },
+    {
+      "type": "federation points",
+      "max_value": 2160,
+      "min_value": 2160,
+      "value": 2160
+    },
+    {
+      "type": "romulan points",
+      "max_value": 1080,
+      "min_value": 1080,
+      "value": 1080
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

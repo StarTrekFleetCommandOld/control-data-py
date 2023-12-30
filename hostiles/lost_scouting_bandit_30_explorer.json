@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Lost Scouting Bandit",
   "description": "",
   "group": "neutral",
+  "level": 30,
+  "rarity": "common",
   "head_stats": {
     "attack": 74948,
     "defense": 82425,
     "health": 36365
   },
-  "hostile_name": "Lost Scouting Bandit",
-  "level": 30,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 7466,
-      "min_value": 7466,
-      "value": 7466
+      "$ref": "systems/eviloy_29"
+    },
+    {
+      "$ref": "systems/kalak_30"
+    },
+    {
+      "$ref": "systems/ba_neth_32"
     }
   ],
   "ship_class": "explorer",
@@ -37,22 +40,6 @@
       "shield_health": 42980
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/eviloy_29"
-    },
-    {
-      "$ref": "systems/kalak_30"
-    },
-    {
-      "$ref": "systems/ba_neth_32"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 20
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -84,6 +71,19 @@
         "shield_pierce": 2520
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 7466,
+      "min_value": 7466,
+      "value": 7466
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 20
     }
   ]
 }

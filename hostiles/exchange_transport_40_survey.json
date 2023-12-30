@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Exchange Transport",
   "description": "",
   "group": "eclipse",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1369188,
     "defense": 2700000,
     "health": 8969962
   },
-  "hostile_name": "Exchange Transport",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "eclipse security codes",
-      "max_value": 1594,
-      "min_value": 1594,
-      "value": 1594
+      "$ref": "systems/laramie_40"
+    },
+    {
+      "$ref": "systems/cheyenne_40"
+    },
+    {
+      "$ref": "systems/lindstrom_40"
+    },
+    {
+      "$ref": "systems/penumbra_40"
+    },
+    {
+      "$ref": "systems/mige_38"
+    },
+    {
+      "$ref": "systems/crawford_40"
     }
   ],
   "ship_class": "survey",
@@ -37,31 +49,6 @@
       "shield_health": 6747057
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/laramie_40"
-    },
-    {
-      "$ref": "systems/cheyenne_40"
-    },
-    {
-      "$ref": "systems/lindstrom_40"
-    },
-    {
-      "$ref": "systems/penumbra_40"
-    },
-    {
-      "$ref": "systems/mige_38"
-    },
-    {
-      "$ref": "systems/crawford_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 18
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 382000
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "eclipse security codes",
+      "max_value": 1594,
+      "min_value": 1594,
+      "value": 1594
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 18
     }
   ]
 }

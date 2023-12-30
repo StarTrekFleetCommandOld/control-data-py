@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Benzar Smuggler",
   "description": "",
   "group": "neutral",
+  "level": 30,
+  "rarity": "common",
   "head_stats": {
     "attack": 62000,
     "defense": 63000,
     "health": 30450
   },
-  "hostile_name": "Benzar Smuggler",
-  "level": 30,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 112,
-      "min_value": 112,
-      "value": 112
+      "$ref": "systems/oppidum_pulvis_29"
+    },
+    {
+      "$ref": "systems/iezat_29"
+    },
+    {
+      "$ref": "systems/oppidum_frumenti_30"
     }
   ],
   "ship_class": "battleship",
@@ -37,22 +40,6 @@
       "shield_health": 26100
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/oppidum_pulvis_29"
-    },
-    {
-      "$ref": "systems/iezat_29"
-    },
-    {
-      "$ref": "systems/oppidum_frumenti_30"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 12600
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 112,
+      "min_value": 112,
+      "value": 112
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

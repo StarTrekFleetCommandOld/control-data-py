@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Separatist \u21d5",
   "description": "",
   "group": "neutral",
+  "level": 26,
+  "rarity": "common",
   "head_stats": {
     "attack": 89925,
     "defense": 441565,
     "health": 1850000
   },
-  "hostile_name": "Separatist \u21d5",
-  "level": 26,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/urthak_26"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 200000
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/urthak_26"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 2700
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

@@ -1,44 +1,23 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 34,
+  "rarity": "common",
   "head_stats": {
     "attack": 220690,
     "defense": 230595,
     "health": 69430
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 34,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 465,
-      "min_value": 465,
-      "value": 465
+      "$ref": "systems/aerimea_35"
     },
     {
-      "type": "dilithium",
-      "max_value": 38,
-      "min_value": 38,
-      "value": 38
+      "$ref": "systems/kaisu_33"
     },
     {
-      "type": "federation points",
-      "max_value": 116,
-      "min_value": 116,
-      "value": 116
-    },
-    {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "klingon points",
-      "max_value": 231,
-      "min_value": 231,
-      "value": 231
+      "$ref": "systems/iapedes_36"
     }
   ],
   "ship_class": "battleship",
@@ -61,22 +40,6 @@
       "shield_health": 49160
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/aerimea_35"
-    },
-    {
-      "$ref": "systems/kaisu_33"
-    },
-    {
-      "$ref": "systems/iapedes_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -139,6 +102,43 @@
         "shield_pierce": 49350
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 465,
+      "min_value": 465,
+      "value": 465
+    },
+    {
+      "type": "dilithium",
+      "max_value": 38,
+      "min_value": 38,
+      "value": 38
+    },
+    {
+      "type": "federation points",
+      "max_value": 116,
+      "min_value": 116,
+      "value": 116
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 231,
+      "min_value": 231,
+      "value": 231
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

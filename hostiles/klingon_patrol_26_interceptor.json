@@ -1,44 +1,29 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 26,
+  "rarity": "common",
   "head_stats": {
     "attack": 27650,
     "defense": 29440,
     "health": 11040
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 26,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1169,
-      "min_value": 1169,
-      "value": 1169
+      "$ref": "systems/hoeven_27"
     },
     {
-      "type": "tritanium",
-      "max_value": 82,
-      "min_value": 82,
-      "value": 82
+      "$ref": "systems/maranga_25"
     },
     {
-      "type": "federation points",
-      "max_value": 23,
-      "min_value": 23,
-      "value": 23
+      "$ref": "systems/loiat_24"
     },
     {
-      "type": "romulan points",
-      "max_value": 12,
-      "min_value": 12,
-      "value": 12
+      "$ref": "systems/yadow_25"
     },
     {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/laija_25"
     }
   ],
   "ship_class": "interceptor",
@@ -61,28 +46,6 @@
       "shield_health": 11040
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/hoeven_27"
-    },
-    {
-      "$ref": "systems/maranga_25"
-    },
-    {
-      "$ref": "systems/loiat_24"
-    },
-    {
-      "$ref": "systems/yadow_25"
-    },
-    {
-      "$ref": "systems/laija_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -145,6 +108,43 @@
         "shield_pierce": 788
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1169,
+      "min_value": 1169,
+      "value": 1169
+    },
+    {
+      "type": "tritanium",
+      "max_value": 82,
+      "min_value": 82,
+      "value": 82
+    },
+    {
+      "type": "federation points",
+      "max_value": 23,
+      "min_value": 23,
+      "value": 23
+    },
+    {
+      "type": "romulan points",
+      "max_value": 12,
+      "min_value": 12,
+      "value": 12
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

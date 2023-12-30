@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Swarm Cluster",
   "description": "",
   "group": "swarm",
+  "level": 50,
+  "rarity": "common",
   "head_stats": {
     "attack": 10127552,
     "defense": 11675495,
     "health": 131250000
   },
-  "hostile_name": "Swarm Cluster",
-  "level": 50,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/beilum_50"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 0
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/beilum_50"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -133,6 +127,12 @@
         "shield_pierce": 347753
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

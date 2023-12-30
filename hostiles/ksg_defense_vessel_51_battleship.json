@@ -1,38 +1,23 @@
 {
+  "hostile_name": "KSG Defense Vessel",
   "description": "",
   "group": "klingon",
+  "level": 51,
+  "rarity": "common",
   "head_stats": {
     "attack": 7753216,
     "defense": 2423925,
     "health": 11459926
   },
-  "hostile_name": "KSG Defense Vessel",
-  "level": 51,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken battleship parts",
-      "max_value": 157,
-      "min_value": 157,
-      "value": 157
+      "$ref": "systems/seretos_53"
     },
     {
-      "type": "federation points",
-      "max_value": 14640,
-      "min_value": 14640,
-      "value": 14640
+      "$ref": "systems/tlhuhwi_50"
     },
     {
-      "type": "romulan points",
-      "max_value": 7320,
-      "min_value": 7320,
-      "value": 7320
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/tugh_li_wov_52"
     }
   ],
   "ship_class": "battleship",
@@ -55,22 +40,6 @@
       "shield_health": 9822756
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/seretos_53"
-    },
-    {
-      "$ref": "systems/tlhuhwi_50"
-    },
-    {
-      "$ref": "systems/tugh_li_wov_52"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -133,6 +102,37 @@
         "shield_pierce": 331083
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken battleship parts",
+      "max_value": 157,
+      "min_value": 157,
+      "value": 157
+    },
+    {
+      "type": "federation points",
+      "max_value": 14640,
+      "min_value": 14640,
+      "value": 14640
+    },
+    {
+      "type": "romulan points",
+      "max_value": 7320,
+      "min_value": 7320,
+      "value": 7320
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Fearless Bandits",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1067799,
     "defense": 423115,
     "health": 2051192
   },
-  "hostile_name": "Fearless Bandits",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 130,
-      "min_value": 130,
-      "value": 130
+      "$ref": "systems/yreva_41"
+    },
+    {
+      "$ref": "systems/tovla_40"
+    },
+    {
+      "$ref": "systems/new_vulcan_42"
+    },
+    {
+      "$ref": "systems/stradania_42"
+    },
+    {
+      "$ref": "systems/hsp_g_40"
+    },
+    {
+      "$ref": "systems/singularity_apex_41"
     }
   ],
   "ship_class": "battleship",
@@ -37,31 +49,6 @@
       "shield_health": 1758165
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/yreva_41"
-    },
-    {
-      "$ref": "systems/tovla_40"
-    },
-    {
-      "$ref": "systems/new_vulcan_42"
-    },
-    {
-      "$ref": "systems/stradania_42"
-    },
-    {
-      "$ref": "systems/hsp_g_40"
-    },
-    {
-      "$ref": "systems/singularity_apex_41"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 76208
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 130,
+      "min_value": 130,
+      "value": 130
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

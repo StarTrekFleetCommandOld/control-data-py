@@ -1,11 +1,16 @@
 {
+  "research_name": "Unlock Foundry",
   "description": "Unlocks the Foundry building.",
-  "img_url": "./assets/unlock_foundry_station_3_18.png",
+  "location": {
+    "column": 18,
+    "row": 3,
+    "tree": "station"
+  },
   "levels": [
     {
-      "increased_power": 18500,
       "level": 1,
-      "required_by": [],
+      "research_time": 430860,
+      "increased_power": 18500,
       "requirements": [
         {
           "name": "Pure Dilithium",
@@ -16,16 +21,8 @@
           "level": 23
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 50
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -35,15 +32,18 @@
             "type": "dilithium",
             "value": 116000
           }
-        ]
-      },
-      "research_time": 430860
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 50,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      }
     }
   ],
-  "location": {
-    "column": 18,
-    "row": 3,
-    "tree": "station"
-  },
-  "research_name": "Unlock Foundry"
+  "img_url": "./assets/unlock_foundry_station_3_18.png"
 }

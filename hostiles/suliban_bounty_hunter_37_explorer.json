@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Suliban Bounty Hunter",
   "description": "",
   "group": "neutral",
+  "level": 37,
+  "rarity": "common",
   "head_stats": {
     "attack": 318596,
     "defense": 313165,
     "health": 115915
   },
-  "hostile_name": "Suliban Bounty Hunter",
-  "level": 37,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/ilmatar_35"
+    },
+    {
+      "$ref": "systems/yarda_36"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 119050
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ilmatar_35"
-    },
-    {
-      "$ref": "systems/yarda_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -74,6 +68,12 @@
         "shield_pierce": 10439
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

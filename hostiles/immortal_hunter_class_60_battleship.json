@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Immortal Hunter Class",
   "description": "",
   "group": "romulan",
+  "level": 60,
+  "rarity": "common",
   "head_stats": {
     "attack": 307731380,
     "defense": 100202075,
     "health": 457146314
   },
-  "hostile_name": "Immortal Hunter Class",
-  "level": 60,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/dairuum_58"
+    },
+    {
+      "$ref": "systems/solis_omega_59"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 370657683
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dairuum_58"
-    },
-    {
-      "$ref": "systems/solis_omega_59"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +99,12 @@
         "shield_pierce": 13773842
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

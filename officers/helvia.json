@@ -1,7 +1,11 @@
 {
-  "description": "Helvia's expertise in parsteel refinement has made a good career for her, but her general antipathy towards the maneuvering and politicking inherent in the Romulan Merchant Marine has prevented her from rising particularly high. She's actually quite comfortable with this; she'd rather have satisfying work than a fancy title.",
+  "officer_name": "Helvia",
+  "description": "",
+  "class": "command",
+  "group": "surveyors & miners",
+  "faction": "romulan",
+  "rarity": "common",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Parsteel Miner",
       "bonus": "Helvia increases the Mining Rate of the ship by {value} when mining Parsteel.",
@@ -12,18 +16,20 @@
       "name": "Gold Rush",
       "bonus": "As long as the Cargo of the ship is empty, Helvia increases its Warp speed by {value}.",
       "percentage": true
-    }
+    },
+    "below_decks_ability": null
   },
-  "class": "command",
-  "faction": "romulan",
-  "group": "surveyors & miners",
-  "img_url": "./assets/helvia.png",
-  "officer_name": "Helvia",
+  "synergy": {
+    "command": 0.2,
+    "engineering": 0.3,
+    "science": 0.3
+  },
+  "traits": [],
   "ranks": [
     {
+      "rank_id": 1,
       "name": "ENSIGN I",
       "officer_ability_value": 0.25,
-      "rank_id": 1,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -33,9 +39,9 @@
       }
     },
     {
+      "rank_id": 2,
       "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.5,
-      "rank_id": 2,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -45,9 +51,9 @@
       }
     },
     {
+      "rank_id": 3,
       "name": "LIEUTENANT III",
       "officer_ability_value": 0.75,
-      "rank_id": 3,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -57,9 +63,9 @@
       }
     },
     {
+      "rank_id": 4,
       "name": "LT. COMMANDER IV",
       "officer_ability_value": 1.0,
-      "rank_id": 4,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -69,9 +75,9 @@
       }
     },
     {
+      "rank_id": 5,
       "name": "COMMANDER V",
       "officer_ability_value": 1.25,
-      "rank_id": 5,
       "requirements": {
         "badges": 0,
         "credits": 1050,
@@ -81,11 +87,5 @@
       }
     }
   ],
-  "rarity": "common",
-  "synergy": {
-    "command": 0.2,
-    "engineering": 0.3,
-    "science": 0.3
-  },
-  "traits": []
+  "img_url": "./assets/helvia.png"
 }

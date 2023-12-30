@@ -1,7 +1,11 @@
 {
-  "description": "'Grim' Vartoq is the sort of warrior his fellow Klingons respect but don't like to be around. Incessantly somber and spiritual, Vartoq honors his fallen foes with shouts to warn the dead and battlefield rites. He rarely partakes in bloodwine, only sings in dirges, and seems to take no joy in earning honor, just the grim satisfaction in a job well done.",
+  "officer_name": "Vartoq",
+  "description": "",
+  "class": "command",
+  "group": "glory in the kill",
+  "faction": "klingon",
+  "rarity": "common",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Interceptor Specialist",
       "bonus": "When inside an Interceptor, Vartoq increases the Weapon Damage against players by {value}.",
@@ -12,18 +16,20 @@
       "name": "Kinetic Boost",
       "bonus": "If the opponent is a player, Vartoq increases the damage made by the Kinetic Weapons of the ship by {value}.",
       "percentage": true
-    }
+    },
+    "below_decks_ability": null
   },
-  "class": "command",
-  "faction": "klingon",
-  "group": "glory in the kill",
-  "img_url": "./assets/vartoq.png",
-  "officer_name": "Vartoq",
+  "synergy": {
+    "command": 0.05,
+    "engineering": 0.1,
+    "science": 0.1
+  },
+  "traits": [],
   "ranks": [
     {
+      "rank_id": 1,
       "name": "ENSIGN I",
       "officer_ability_value": 0.05,
-      "rank_id": 1,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -33,9 +39,9 @@
       }
     },
     {
+      "rank_id": 2,
       "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.07,
-      "rank_id": 2,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -45,9 +51,9 @@
       }
     },
     {
+      "rank_id": 3,
       "name": "LIEUTENANT III",
       "officer_ability_value": 0.1,
-      "rank_id": 3,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -57,9 +63,9 @@
       }
     },
     {
+      "rank_id": 4,
       "name": "LT. COMMANDER IV",
       "officer_ability_value": 0.15,
-      "rank_id": 4,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -69,9 +75,9 @@
       }
     },
     {
+      "rank_id": 5,
       "name": "COMMANDER V",
       "officer_ability_value": 0.2,
-      "rank_id": 5,
       "requirements": {
         "badges": 0,
         "credits": 1150,
@@ -81,11 +87,5 @@
       }
     }
   ],
-  "rarity": "common",
-  "synergy": {
-    "command": 0.05,
-    "engineering": 0.1,
-    "science": 0.1
-  },
-  "traits": []
+  "img_url": "./assets/vartoq.png"
 }

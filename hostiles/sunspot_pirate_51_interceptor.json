@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Sunspot Pirate",
   "description": "",
   "group": "neutral",
+  "level": 51,
+  "rarity": "common",
   "head_stats": {
     "attack": 8785578,
     "defense": 2445645,
     "health": 9026063
   },
-  "hostile_name": "Sunspot Pirate",
-  "level": 51,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken interceptor parts",
-      "max_value": 155,
-      "min_value": 155,
-      "value": 155
+      "$ref": "systems/merius_53"
+    },
+    {
+      "$ref": "systems/erendari_50"
+    },
+    {
+      "$ref": "systems/sosain_52"
+    },
+    {
+      "$ref": "systems/dela_51"
+    },
+    {
+      "$ref": "systems/callicoat_51"
+    },
+    {
+      "$ref": "systems/eady_52"
     }
   ],
   "ship_class": "interceptor",
@@ -37,31 +49,6 @@
       "shield_health": 9026063
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/merius_53"
-    },
-    {
-      "$ref": "systems/erendari_50"
-    },
-    {
-      "$ref": "systems/sosain_52"
-    },
-    {
-      "$ref": "systems/dela_51"
-    },
-    {
-      "$ref": "systems/callicoat_51"
-    },
-    {
-      "$ref": "systems/eady_52"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 90952
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken interceptor parts",
+      "max_value": 155,
+      "min_value": 155,
+      "value": 155
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

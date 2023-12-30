@@ -1,26 +1,23 @@
 {
+  "hostile_name": "Doomsday Worm",
   "description": "",
   "group": "neutral",
+  "level": 38,
+  "rarity": "common",
   "head_stats": {
     "attack": 1067799,
     "defense": 423115,
     "health": 2051192
   },
-  "hostile_name": "Doomsday Worm",
-  "level": 38,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 501,
-      "min_value": 501,
-      "value": 501
+      "$ref": "systems/mal_tahn_38"
     },
     {
-      "type": "dilithium",
-      "max_value": 46,
-      "min_value": 46,
-      "value": 46
+      "$ref": "systems/nya_tuum_36"
+    },
+    {
+      "$ref": "systems/doka_40"
     }
   ],
   "ship_class": "battleship",
@@ -43,22 +40,6 @@
       "shield_health": 1758165
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/mal_tahn_38"
-    },
-    {
-      "$ref": "systems/nya_tuum_36"
-    },
-    {
-      "$ref": "systems/doka_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +102,25 @@
         "shield_pierce": 76208
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 501,
+      "min_value": 501,
+      "value": 501
+    },
+    {
+      "type": "dilithium",
+      "max_value": 46,
+      "min_value": 46,
+      "value": 46
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

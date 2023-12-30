@@ -1,15 +1,16 @@
 {
+  "research_name": "Prime Alliance Fist",
   "description": "Increases base damage during an Assault",
-  "img_url": "./assets/prime_alliance_fist_starbase_2_21.png",
+  "location": {
+    "column": 21,
+    "row": 2,
+    "tree": "starbase"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 2.0
-      },
-      "increased_power": 21000,
       "level": 1,
-      "required_by": [],
+      "research_time": 225000,
+      "increased_power": 21000,
       "requirements": [
         {
           "name": "R&D Department",
@@ -20,28 +21,27 @@
           "level": 1
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 5000000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "prime medal",
             "value": 500
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 5000000
-          }
         ]
       },
-      "research_time": 225000
+      "bonus": {
+        "percentage": true,
+        "value": 2.0
+      }
     }
   ],
-  "location": {
-    "column": 21,
-    "row": 2,
-    "tree": "starbase"
-  },
-  "research_name": "Prime Alliance Fist"
+  "img_url": "./assets/prime_alliance_fist_starbase_2_21.png"
 }

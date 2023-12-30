@@ -1,43 +1,43 @@
 {
+  "research_name": "Prime Capture Node Damage",
   "description": "Increases base damage while occupying a Capture Node.",
-  "img_url": "./assets/prime_capture_node_damage_territory_3_12.png",
+  "location": {
+    "column": 12,
+    "row": 3,
+    "tree": "territory"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 1.5
-      },
-      "increased_power": 117000,
       "level": 1,
-      "required_by": [],
+      "research_time": 6500100,
+      "increased_power": 117000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 35
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 555500000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "prime particle",
             "value": 1000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 555500000
-          }
         ]
       },
-      "research_time": 6500100
+      "bonus": {
+        "percentage": true,
+        "value": 1.5
+      }
     }
   ],
-  "location": {
-    "column": 12,
-    "row": 3,
-    "tree": "territory"
-  },
-  "research_name": "Prime Capture Node Damage"
+  "img_url": "./assets/prime_capture_node_damage_territory_3_12.png"
 }

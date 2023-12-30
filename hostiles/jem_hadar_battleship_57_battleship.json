@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Jem'Hadar Battleship",
   "description": "",
   "group": "dominion",
+  "level": 57,
+  "rarity": "common",
   "head_stats": {
     "attack": 76572844,
     "defense": 23975910,
     "health": 113404654
   },
-  "hostile_name": "Jem'Hadar Battleship",
-  "level": 57,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "antimatter units",
-      "max_value": 3079,
-      "min_value": 3079,
-      "value": 3079
+      "$ref": "systems/dal_vor_59"
+    },
+    {
+      "$ref": "systems/hox_55"
+    },
+    {
+      "$ref": "systems/idraan_55"
+    },
+    {
+      "$ref": "systems/aszunso_55"
+    },
+    {
+      "$ref": "systems/vefeeq_57"
     }
   ],
   "ship_class": "battleship",
@@ -37,28 +46,6 @@
       "shield_health": 97203615
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dal_vor_59"
-    },
-    {
-      "$ref": "systems/hox_55"
-    },
-    {
-      "$ref": "systems/idraan_55"
-    },
-    {
-      "$ref": "systems/aszunso_55"
-    },
-    {
-      "$ref": "systems/vefeeq_57"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +108,19 @@
         "shield_pierce": 3180892
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "antimatter units",
+      "max_value": 3079,
+      "min_value": 3079,
+      "value": 3079
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

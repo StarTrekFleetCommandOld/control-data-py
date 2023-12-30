@@ -1,44 +1,17 @@
 {
+  "hostile_name": "Romulan Scout \u2605",
   "description": "",
   "group": "romulan",
+  "level": 32,
+  "rarity": "common",
   "head_stats": {
     "attack": 97153,
     "defense": 99690,
     "health": 37800
   },
-  "hostile_name": "Romulan Scout \u2605",
-  "level": 32,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1477,
-      "min_value": 1477,
-      "value": 1477
-    },
-    {
-      "type": "tritanium",
-      "max_value": 107,
-      "min_value": 107,
-      "value": 107
-    },
-    {
-      "type": "federation points",
-      "max_value": 213,
-      "min_value": 213,
-      "value": 213
-    },
-    {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "klingon points",
-      "max_value": 426,
-      "min_value": 426,
-      "value": 426
+      "$ref": "systems/unroth_32"
     }
   ],
   "ship_class": "interceptor",
@@ -61,16 +34,6 @@
       "shield_health": 31920
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/unroth_32"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 80
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -133,6 +96,43 @@
         "shield_pierce": 3850
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1477,
+      "min_value": 1477,
+      "value": 1477
+    },
+    {
+      "type": "tritanium",
+      "max_value": 107,
+      "min_value": 107,
+      "value": 107
+    },
+    {
+      "type": "federation points",
+      "max_value": 213,
+      "min_value": 213,
+      "value": 213
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 426,
+      "min_value": 426,
+      "value": 426
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 80
     }
   ]
 }

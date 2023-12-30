@@ -1,15 +1,31 @@
 {
+  "hostile_name": "Lost Pakled Thief",
   "description": "",
   "group": "neutral",
+  "level": 31,
+  "rarity": "common",
   "head_stats": {
     "attack": 97905,
     "defense": 107940,
     "health": 42265
   },
-  "hostile_name": "Lost Pakled Thief",
-  "level": 31,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/miranil_33"
+    },
+    {
+      "$ref": "systems/eviloy_29"
+    },
+    {
+      "$ref": "systems/kalak_30"
+    },
+    {
+      "$ref": "systems/antaria_33"
+    },
+    {
+      "$ref": "systems/ba_neth_32"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,28 +46,6 @@
       "shield_health": 29930
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/miranil_33"
-    },
-    {
-      "$ref": "systems/eviloy_29"
-    },
-    {
-      "$ref": "systems/kalak_30"
-    },
-    {
-      "$ref": "systems/antaria_33"
-    },
-    {
-      "$ref": "systems/ba_neth_32"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -114,6 +108,12 @@
         "shield_pierce": 23100
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

@@ -1,15 +1,28 @@
 {
+  "hostile_name": "Osaarian Pariah",
   "description": "",
   "group": "neutral",
+  "level": 27,
+  "rarity": "common",
   "head_stats": {
     "attack": 28560,
     "defense": 30000,
     "health": 15540
   },
-  "hostile_name": "Osaarian Pariah",
-  "level": 27,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/xerxes_29"
+    },
+    {
+      "$ref": "systems/oppidum_pulvis_29"
+    },
+    {
+      "$ref": "systems/panak_27"
+    },
+    {
+      "$ref": "systems/narendra_25"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 15960
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/xerxes_29"
-    },
-    {
-      "$ref": "systems/oppidum_pulvis_29"
-    },
-    {
-      "$ref": "systems/panak_27"
-    },
-    {
-      "$ref": "systems/narendra_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -80,6 +74,12 @@
         "shield_pierce": 1000
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

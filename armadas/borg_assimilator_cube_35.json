@@ -1,20 +1,20 @@
 {
-  "description": "",
   "armada_name": "Borg Assimilator Cube",
+  "description": "",
   "group": "borg",
+  "level": 35,
+  "rarity": "epic",
   "head_stats": {
     "attack": 2455526,
     "defense": 294180,
     "health": 60058698
   },
-  "level": 35,
-  "rarity": "epic",
-  "rewards": [
+  "systems": [
     {
-      "type": "Active Nanoprobe",
-      "max_value": 4500,
-      "min_value": 4500,
-      "value": 4500
+      "$ref": "systems/waji_ku_35"
+    },
+    {
+      "$ref": "systems/xent_kra_35"
     }
   ],
   "stats": {
@@ -36,14 +36,6 @@
       "shield_health": 60058697
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/waji_ku_35"
-    },
-    {
-      "$ref": "systems/xent_kra_35"
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -144,6 +136,14 @@
         "shield_pierce": 146250
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "Active Nanoprobe",
+      "max_value": 4500,
+      "min_value": 4500,
+      "value": 4500
     }
   ]
 }

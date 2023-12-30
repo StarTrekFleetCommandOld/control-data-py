@@ -1,32 +1,32 @@
 {
-  "description": "Build in order to gain access to the Holodeck to purchase missions from previous arcs",
   "building_name": "HOLODECK",
+  "description": "Build in order to gain access to the Holodeck to purchase missions from previous arcs",
   "levels": [
     {
+      "level": 1,
+      "build_time": 180,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 15
+        }
+      ],
       "build_costs": {
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 800
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "holographic diode",
             "value": 1
           }
-        ],
-        "resources": [
-          {
-            "type": "parsteel",
-            "value": 800
-          }
         ]
-      },
-      "build_time": 180,
-      "increased_power": 0,
-      "level": 1,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 15
-        }
-      ]
+      }
     }
   ]
 }

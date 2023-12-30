@@ -1,42 +1,54 @@
 {
+  "ship_name": "FERENGI D'VOR",
   "description": "As war between the galaxy\u2019s major factions looms over the horizon, many are left wondering about who will come out on top? What state will our galaxy be in when it ends? Then there are those enterprising few who look past these petty concerns and into profit. For those crafty minds, there is no more suitable vessel than the Ferengi D\u2019Vor. Developed by the renowned Urata Manufacturing as a way to cheat the Latinum exchange, the D\u2019Vor comes mounted with a Dx100 mining laser, configured specifically for the extraction of raw latinum. No other vessel in existence can gather the precious material as efficiently, a testament to the engineering prowess and latinum lust of its creators. In a time of war and strife, nothing will generate profit like the D\u2019Vor. After all, war is good for business.",
+  "ship_class": "survey",
+  "grade": 3,
+  "faction": "neutral",
+  "rarity": "epic",
   "blueprints": {
     "cost": 0,
     "quantity": 120
-  },
-  "faction": "neutral",
-  "grade": 3,
-  "img_url": "./assets/ferengi_d_vor.png",
-  "rarity": "epic",
-  "requirements": [
-    {
-      "name": "Shipyard",
-      "level": 23
-    }
-  ],
-  "scrap_info": {
-    "required_scrapyard_level": 35,
-    "scrappable": true
   },
   "ship_ability": {
     "title": "Latinum Mining",
     "description": "The Mining Bonus from the Mining Laser is increased by {value} when mining Raw Latinum.",
     "percentage": true
   },
-  "ship_class": "survey",
-  "ship_name": "FERENGI D'VOR",
+  "scrap_info": {
+    "scrappable": true,
+    "required_scrapyard_level": 35
+  },
+  "requirements": [
+    {
+      "name": "Shipyard",
+      "level": 23
+    }
+  ],
   "tiers": [
     {
+      "tier": 1,
       "build_time": 684000,
+      "repair_time": 5208,
       "components": [
         {
           "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 79,
               "armor_pierce": 79,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 296,
+              "min_damage": 242,
+              "shield_pierce": 79,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -47,40 +59,36 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 296,
-              "min_damage": 242,
-              "shield_pierce": 79,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
+          "img_url": "./assets/component_mining_laser.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "mining_laser_info": {
               "mining_bonus": 0.6
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 32625,
@@ -89,87 +97,68 @@
               "ship_increased_protected_cargo": 0
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
+          "img_url": "./assets/component_warp_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "warp_info": {
               "warp_distance": 18,
               "warp_speed": 1.9
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Shields",
+          "img_url": "./assets/component_shield.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "shield_info": {
               "shield_deflection": 45,
               "shield_health": 770
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "impulse_info": {
               "dodge": 45,
               "impulse_speed": 90
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 320000
-          },
-          {
-            "type": "dilithium",
-            "value": 11250
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 120.0,
           "additional_officer_slot": false,
           "level": 1,
+          "ship_xp": 0,
           "scrap_details": {
+            "scrap_time": 76860,
             "rewards": [
               {
                 "type": "tritanium",
@@ -179,16 +168,16 @@
                 "type": "dilithium",
                 "value": 2250
               }
-            ],
-            "scrap_time": 76860
-          },
-          "ship_xp": 0
+            ]
+          }
         },
         {
           "ability_bonus": 121.25,
           "additional_officer_slot": false,
           "level": 2,
+          "ship_xp": 800,
           "scrap_details": {
+            "scrap_time": 78000,
             "rewards": [
               {
                 "type": "tritanium",
@@ -202,16 +191,16 @@
                 "type": "ship xp",
                 "value": 32
               }
-            ],
-            "scrap_time": 78000
-          },
-          "ship_xp": 800
+            ]
+          }
         },
         {
           "ability_bonus": 122.5,
           "additional_officer_slot": false,
           "level": 3,
+          "ship_xp": 1000,
           "scrap_details": {
+            "scrap_time": 79260,
             "rewards": [
               {
                 "type": "tritanium",
@@ -225,16 +214,16 @@
                 "type": "ship xp",
                 "value": 72
               }
-            ],
-            "scrap_time": 79260
-          },
-          "ship_xp": 1000
+            ]
+          }
         },
         {
           "ability_bonus": 123.75,
           "additional_officer_slot": false,
           "level": 4,
+          "ship_xp": 1400,
           "scrap_details": {
+            "scrap_time": 80460,
             "rewards": [
               {
                 "type": "tritanium",
@@ -248,16 +237,16 @@
                 "type": "ship xp",
                 "value": 128
               }
-            ],
-            "scrap_time": 80460
-          },
-          "ship_xp": 1400
+            ]
+          }
         },
         {
           "ability_bonus": 125.0,
           "additional_officer_slot": true,
           "level": 5,
+          "ship_xp": 1700,
           "scrap_details": {
+            "scrap_time": 81720,
             "rewards": [
               {
                 "type": "tritanium",
@@ -271,26 +260,72 @@
                 "type": "ship xp",
                 "value": 196
               }
-            ],
-            "scrap_time": 81720
-          },
-          "ship_xp": 1700
+            ]
+          }
         }
       ],
-      "repair_time": 5208,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 320000
+          },
+          {
+            "type": "dilithium",
+            "value": 11250
+          }
+        ],
+        "materials": [],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 4860,
+      "repair_time": 5208,
       "components": [
         {
           "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 129000
+              },
+              {
+                "type": "dilithium",
+                "value": 1150
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 50
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 447
+            },
+            {
+              "type": "dilithium",
+              "value": 38
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 83,
               "armor_pierce": 83,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 313,
+              "min_damage": 256,
+              "shield_pierce": 83,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -301,60 +336,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 313,
-              "min_damage": 256,
-              "shield_pierce": 83,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 50
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 129000
-              },
-              {
-                "type": "dilithium",
-                "value": 1150
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 447
-            },
-            {
-              "type": "dilithium",
-              "value": 38
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 0.7
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 270
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -364,10 +354,15 @@
                 "type": "dilithium",
                 "value": 5750
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 270
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -377,26 +372,18 @@
               "type": "dilithium",
               "value": 95
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 0.7
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 1094,
-              "increased_protected_cargo": 345,
-              "ship_increased_cargo": 6500,
-              "ship_increased_protected_cargo": 200
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 190
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -406,74 +393,81 @@
                 "type": "dilithium",
                 "value": 1150
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 190
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 894
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 1094,
+              "increased_protected_cargo": 345,
+              "ship_increased_cargo": 6500,
+              "ship_increased_protected_cargo": 200
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 18,
-              "warp_speed": 2.1
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 2300
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 270
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 2300
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 57
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 18,
+              "warp_speed": 2.1
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 48,
-              "shield_health": 814
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 103000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 110
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 103000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -483,24 +477,19 @@
               "type": "dilithium",
               "value": 76
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 48,
+              "shield_health": 814
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 48,
-              "impulse_speed": 90
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 110
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -510,10 +499,15 @@
                 "type": "dilithium",
                 "value": 1700
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 110
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -523,7 +517,14 @@
               "type": "dilithium",
               "value": 38
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 48,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -531,7 +532,9 @@
           "ability_bonus": 126.88,
           "additional_officer_slot": false,
           "level": 6,
+          "ship_xp": 2400,
           "scrap_details": {
+            "scrap_time": 82980,
             "rewards": [
               {
                 "type": "tritanium",
@@ -545,16 +548,16 @@
                 "type": "ship xp",
                 "value": 274
               }
-            ],
-            "scrap_time": 82980
-          },
-          "ship_xp": 2400
+            ]
+          }
         },
         {
           "ability_bonus": 128.76,
           "additional_officer_slot": false,
           "level": 7,
+          "ship_xp": 2900,
           "scrap_details": {
+            "scrap_time": 84240,
             "rewards": [
               {
                 "type": "tritanium",
@@ -568,16 +571,16 @@
                 "type": "ship xp",
                 "value": 383
               }
-            ],
-            "scrap_time": 84240
-          },
-          "ship_xp": 2900
+            ]
+          }
         },
         {
           "ability_bonus": 130.64,
           "additional_officer_slot": false,
           "level": 8,
+          "ship_xp": 3900,
           "scrap_details": {
+            "scrap_time": 85560,
             "rewards": [
               {
                 "type": "tritanium",
@@ -591,16 +594,16 @@
                 "type": "ship xp",
                 "value": 529
               }
-            ],
-            "scrap_time": 85560
-          },
-          "ship_xp": 3900
+            ]
+          }
         },
         {
           "ability_bonus": 132.52,
           "additional_officer_slot": false,
           "level": 9,
+          "ship_xp": 4600,
           "scrap_details": {
+            "scrap_time": 86940,
             "rewards": [
               {
                 "type": "tritanium",
@@ -614,16 +617,16 @@
                 "type": "ship xp",
                 "value": 701
               }
-            ],
-            "scrap_time": 86940
-          },
-          "ship_xp": 4600
+            ]
+          }
         },
         {
           "ability_bonus": 134.4,
           "additional_officer_slot": true,
           "level": 10,
+          "ship_xp": 6000,
           "scrap_details": {
+            "scrap_time": 88200,
             "rewards": [
               {
                 "type": "tritanium",
@@ -637,26 +640,58 @@
                 "type": "ship xp",
                 "value": 926
               }
-            ],
-            "scrap_time": 88200
-          },
-          "ship_xp": 6000
+            ]
+          }
         }
-      ],
-      "repair_time": 5208,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 9720,
+      "repair_time": 5580,
       "components": [
         {
           "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 245000
+              },
+              {
+                "type": "dilithium",
+                "value": 2600
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 110
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 695
+            },
+            {
+              "type": "dilithium",
+              "value": 61
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 91,
               "armor_pierce": 91,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 341,
+              "min_damage": 279,
+              "shield_pierce": 91,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -667,60 +702,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 341,
-              "min_damage": 279,
-              "shield_pierce": 91,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 110
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 245000
-              },
-              {
-                "type": "dilithium",
-                "value": 2600
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 695
-            },
-            {
-              "type": "dilithium",
-              "value": 61
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 0.8
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 520
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -730,10 +720,15 @@
                 "type": "dilithium",
                 "value": 12750
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 520
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -743,26 +738,18 @@
               "type": "dilithium",
               "value": 152
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 0.8
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 1406,
-              "increased_protected_cargo": 300,
-              "ship_increased_cargo": 6500,
-              "ship_increased_protected_cargo": 200
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 390
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -772,74 +759,81 @@
                 "type": "dilithium",
                 "value": 2600
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 390
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 1390
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 1406,
+              "increased_protected_cargo": 300,
+              "ship_increased_cargo": 6500,
+              "ship_increased_protected_cargo": 200
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 18,
-              "warp_speed": 2.3
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 5250
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 540
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 5250
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 91
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 18,
+              "warp_speed": 2.3
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 52,
-              "shield_health": 888
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 196000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 220
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 196000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -849,24 +843,19 @@
               "type": "dilithium",
               "value": 122
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 52,
+              "shield_health": 888
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 52,
-              "impulse_speed": 90
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 220
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -876,10 +865,15 @@
                 "type": "dilithium",
                 "value": 3900
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 220
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -889,7 +883,14 @@
               "type": "dilithium",
               "value": 61
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 52,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -897,7 +898,9 @@
           "ability_bonus": 135.32,
           "additional_officer_slot": false,
           "level": 11,
+          "ship_xp": 7000,
           "scrap_details": {
+            "scrap_time": 89580,
             "rewards": [
               {
                 "type": "tritanium",
@@ -911,16 +914,16 @@
                 "type": "ship xp",
                 "value": 1110
               }
-            ],
-            "scrap_time": 89580
-          },
-          "ship_xp": 7000
+            ]
+          }
         },
         {
           "ability_bonus": 136.24,
           "additional_officer_slot": false,
           "level": 12,
+          "ship_xp": 8500,
           "scrap_details": {
+            "scrap_time": 91020,
             "rewards": [
               {
                 "type": "tritanium",
@@ -934,16 +937,16 @@
                 "type": "ship xp",
                 "value": 1407
               }
-            ],
-            "scrap_time": 91020
-          },
-          "ship_xp": 8500
+            ]
+          }
         },
         {
           "ability_bonus": 137.16,
           "additional_officer_slot": false,
           "level": 13,
+          "ship_xp": 9500,
           "scrap_details": {
+            "scrap_time": 92400,
             "rewards": [
               {
                 "type": "tritanium",
@@ -957,16 +960,16 @@
                 "type": "ship xp",
                 "value": 1740
               }
-            ],
-            "scrap_time": 92400
-          },
-          "ship_xp": 9500
+            ]
+          }
         },
         {
           "ability_bonus": 138.08,
           "additional_officer_slot": false,
           "level": 14,
+          "ship_xp": 11000,
           "scrap_details": {
+            "scrap_time": 93900,
             "rewards": [
               {
                 "type": "tritanium",
@@ -980,16 +983,16 @@
                 "type": "ship xp",
                 "value": 2125
               }
-            ],
-            "scrap_time": 93900
-          },
-          "ship_xp": 11000
+            ]
+          }
         },
         {
           "ability_bonus": 139.0,
           "additional_officer_slot": true,
           "level": 15,
+          "ship_xp": 13500,
           "scrap_details": {
+            "scrap_time": 95340,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1003,26 +1006,58 @@
                 "type": "ship xp",
                 "value": 2597
               }
-            ],
-            "scrap_time": 95340
-          },
-          "ship_xp": 13500
+            ]
+          }
         }
-      ],
-      "repair_time": 5580,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 16200,
+      "repair_time": 6528,
       "components": [
         {
           "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 410000
+              },
+              {
+                "type": "dilithium",
+                "value": 5500
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 160
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1017
+            },
+            {
+              "type": "dilithium",
+              "value": 91
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 111,
               "armor_pierce": 111,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 416,
+              "min_damage": 341,
+              "shield_pierce": 111,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -1033,60 +1068,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 416,
-              "min_damage": 341,
-              "shield_pierce": 111,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 160
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 410000
-              },
-              {
-                "type": "dilithium",
-                "value": 5500
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1017
-            },
-            {
-              "type": "dilithium",
-              "value": 91
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 0.9
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 810
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1096,10 +1086,15 @@
                 "type": "dilithium",
                 "value": 27000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 810
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1109,26 +1104,18 @@
               "type": "dilithium",
               "value": 228
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 0.9
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 621,
-              "increased_protected_cargo": 157,
-              "ship_increased_cargo": 6500,
-              "ship_increased_protected_cargo": 200
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 580
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1138,74 +1125,81 @@
                 "type": "dilithium",
                 "value": 5500
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 580
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 2035
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 621,
+              "increased_protected_cargo": 157,
+              "ship_increased_cargo": 6500,
+              "ship_increased_protected_cargo": 200
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 18,
-              "warp_speed": 2.5
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 11000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 810
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 11000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 137
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 18,
+              "warp_speed": 2.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 64,
-              "shield_health": 1082
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 325000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 320
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 325000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1215,24 +1209,19 @@
               "type": "dilithium",
               "value": 182
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 64,
+              "shield_health": 1082
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 64,
-              "impulse_speed": 90
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 320
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1242,10 +1231,15 @@
                 "type": "dilithium",
                 "value": 8250
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 320
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1255,7 +1249,14 @@
               "type": "dilithium",
               "value": 91
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 64,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1263,7 +1264,9 @@
           "ability_bonus": 139.62,
           "additional_officer_slot": false,
           "level": 16,
+          "ship_xp": 15000,
           "scrap_details": {
+            "scrap_time": 96840,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1277,16 +1280,16 @@
                 "type": "ship xp",
                 "value": 2899
               }
-            ],
-            "scrap_time": 96840
-          },
-          "ship_xp": 15000
+            ]
+          }
         },
         {
           "ability_bonus": 140.24,
           "additional_officer_slot": false,
           "level": 17,
+          "ship_xp": 17500,
           "scrap_details": {
+            "scrap_time": 98280,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1300,16 +1303,16 @@
                 "type": "ship xp",
                 "value": 3468
               }
-            ],
-            "scrap_time": 98280
-          },
-          "ship_xp": 17500
+            ]
+          }
         },
         {
           "ability_bonus": 140.86,
           "additional_officer_slot": false,
           "level": 18,
+          "ship_xp": 19500,
           "scrap_details": {
+            "scrap_time": 99780,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1323,16 +1326,16 @@
                 "type": "ship xp",
                 "value": 4102
               }
-            ],
-            "scrap_time": 99780
-          },
-          "ship_xp": 19500
+            ]
+          }
         },
         {
           "ability_bonus": 141.48,
           "additional_officer_slot": false,
           "level": 19,
+          "ship_xp": 23000,
           "scrap_details": {
+            "scrap_time": 101340,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1346,16 +1349,16 @@
                 "type": "ship xp",
                 "value": 4849
               }
-            ],
-            "scrap_time": 101340
-          },
-          "ship_xp": 23000
+            ]
+          }
         },
         {
           "ability_bonus": 142.1,
           "additional_officer_slot": false,
           "level": 20,
+          "ship_xp": 25000,
           "scrap_details": {
+            "scrap_time": 102900,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1369,26 +1372,58 @@
                 "type": "ship xp",
                 "value": 5662
               }
-            ],
-            "scrap_time": 102900
-          },
-          "ship_xp": 25000
+            ]
+          }
         }
-      ],
-      "repair_time": 6528,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 24300,
+      "repair_time": 7446,
       "components": [
         {
           "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 720000
+              },
+              {
+                "type": "dilithium",
+                "value": 10250
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 220
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1483
+            },
+            {
+              "type": "dilithium",
+              "value": 136
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 161,
               "armor_pierce": 161,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 603,
+              "min_damage": 493,
+              "shield_pierce": 161,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -1399,60 +1434,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 603,
-              "min_damage": 493,
-              "shield_pierce": 161,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 220
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 720000
-              },
-              {
-                "type": "dilithium",
-                "value": 10250
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1483
-            },
-            {
-              "type": "dilithium",
-              "value": 136
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 1.0
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 1070
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1462,10 +1452,15 @@
                 "type": "dilithium",
                 "value": 51500
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 1070
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1475,26 +1470,18 @@
               "type": "dilithium",
               "value": 339
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 1.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 11111,
-              "increased_protected_cargo": 47,
-              "ship_increased_cargo": 6500,
-              "ship_increased_protected_cargo": 200
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 770
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1504,74 +1491,81 @@
                 "type": "dilithium",
                 "value": 10250
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 770
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 2965
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 11111,
+              "increased_protected_cargo": 47,
+              "ship_increased_cargo": 6500,
+              "ship_increased_protected_cargo": 200
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 19,
-              "warp_speed": 2.7
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 20500
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 1080
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 20500
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 204
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 19,
+              "warp_speed": 2.7
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 92,
-              "shield_health": 1565
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 580000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 430
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 580000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1581,24 +1575,19 @@
               "type": "dilithium",
               "value": 272
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 92,
+              "shield_health": 1565
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 92,
-              "impulse_speed": 90
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 430
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1608,10 +1597,15 @@
                 "type": "dilithium",
                 "value": 15500
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 430
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1621,7 +1615,14 @@
               "type": "dilithium",
               "value": 136
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 92,
+              "impulse_speed": 90
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1629,7 +1630,9 @@
           "ability_bonus": 145.68,
           "additional_officer_slot": false,
           "level": 21,
+          "ship_xp": 29000,
           "scrap_details": {
+            "scrap_time": 104460,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1643,16 +1646,16 @@
                 "type": "ship xp",
                 "value": 6096
               }
-            ],
-            "scrap_time": 104460
-          },
-          "ship_xp": 29000
+            ]
+          }
         },
         {
           "ability_bonus": 149.26,
           "additional_officer_slot": false,
           "level": 22,
+          "ship_xp": 31500,
           "scrap_details": {
+            "scrap_time": 106140,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1666,16 +1669,16 @@
                 "type": "ship xp",
                 "value": 7041
               }
-            ],
-            "scrap_time": 106140
-          },
-          "ship_xp": 31500
+            ]
+          }
         },
         {
           "ability_bonus": 152.84,
           "additional_officer_slot": false,
           "level": 23,
+          "ship_xp": 36000,
           "scrap_details": {
+            "scrap_time": 107820,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1689,16 +1692,16 @@
                 "type": "ship xp",
                 "value": 8121
               }
-            ],
-            "scrap_time": 107820
-          },
-          "ship_xp": 36000
+            ]
+          }
         },
         {
           "ability_bonus": 156.42,
           "additional_officer_slot": false,
           "level": 24,
+          "ship_xp": 39000,
           "scrap_details": {
+            "scrap_time": 109440,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1712,16 +1715,16 @@
                 "type": "ship xp",
                 "value": 9291
               }
-            ],
-            "scrap_time": 109440
-          },
-          "ship_xp": 39000
+            ]
+          }
         },
         {
           "ability_bonus": 160.0,
           "additional_officer_slot": false,
           "level": 25,
+          "ship_xp": 42000,
           "scrap_details": {
+            "scrap_time": 111180,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1735,26 +1738,58 @@
                 "type": "ship xp",
                 "value": 10551
               }
-            ],
-            "scrap_time": 111180
-          },
-          "ship_xp": 42000
+            ]
+          }
         }
-      ],
-      "repair_time": 7446,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 32400,
+      "repair_time": 9006,
       "components": [
         {
           "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1450000
+              },
+              {
+                "type": "dilithium",
+                "value": 23000
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 1500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1844
+            },
+            {
+              "type": "dilithium",
+              "value": 170
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 268,
               "armor_pierce": 268,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 1009,
+              "min_damage": 825,
+              "shield_pierce": 268,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -1765,60 +1800,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 1009,
-              "min_damage": 825,
-              "shield_pierce": 268,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 1500
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1450000
-              },
-              {
-                "type": "dilithium",
-                "value": 23000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1844
-            },
-            {
-              "type": "dilithium",
-              "value": 170
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 1.1
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 7600
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1828,10 +1818,15 @@
                 "type": "dilithium",
                 "value": 114000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 7600
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1841,26 +1836,18 @@
               "type": "dilithium",
               "value": 425
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 1.1
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 1327,
-              "increased_protected_cargo": 37,
-              "ship_increased_cargo": 6500,
-              "ship_increased_protected_cargo": 200
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 5400
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1870,74 +1857,81 @@
                 "type": "dilithium",
                 "value": 23000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 5400
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 3687
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 1327,
+              "increased_protected_cargo": 37,
+              "ship_increased_cargo": 6500,
+              "ship_increased_protected_cargo": 200
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 24,
-              "warp_speed": 2.9
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 45500
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 7500
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 45500
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 255
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 24,
+              "warp_speed": 2.9
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 155,
-              "shield_health": 2615
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1150000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 3000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1150000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1947,24 +1941,19 @@
               "type": "dilithium",
               "value": 340
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 155,
+              "shield_health": 2615
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 155,
-              "impulse_speed": 98
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 3000
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1974,10 +1963,15 @@
                 "type": "dilithium",
                 "value": 34000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 3000
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1987,7 +1981,14 @@
               "type": "dilithium",
               "value": 170
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 155,
+              "impulse_speed": 98
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1995,7 +1996,9 @@
           "ability_bonus": 160.4,
           "additional_officer_slot": false,
           "level": 26,
+          "ship_xp": 47000,
           "scrap_details": {
+            "scrap_time": 112860,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2013,16 +2016,16 @@
                 "type": "ship xp",
                 "value": 10964
               }
-            ],
-            "scrap_time": 112860
-          },
-          "ship_xp": 47000
+            ]
+          }
         },
         {
           "ability_bonus": 160.8,
           "additional_officer_slot": false,
           "level": 27,
+          "ship_xp": 51000,
           "scrap_details": {
+            "scrap_time": 114660,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2040,16 +2043,16 @@
                 "type": "ship xp",
                 "value": 12367
               }
-            ],
-            "scrap_time": 114660
-          },
-          "ship_xp": 51000
+            ]
+          }
         },
         {
           "ability_bonus": 161.2,
           "additional_officer_slot": false,
           "level": 28,
+          "ship_xp": 57000,
           "scrap_details": {
+            "scrap_time": 116460,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2067,16 +2070,16 @@
                 "type": "ship xp",
                 "value": 13934
               }
-            ],
-            "scrap_time": 116460
-          },
-          "ship_xp": 57000
+            ]
+          }
         },
         {
           "ability_bonus": 161.6,
           "additional_officer_slot": false,
           "level": 29,
+          "ship_xp": 61000,
           "scrap_details": {
+            "scrap_time": 118260,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2094,16 +2097,16 @@
                 "type": "ship xp",
                 "value": 15612
               }
-            ],
-            "scrap_time": 118260
-          },
-          "ship_xp": 61000
+            ]
+          }
         },
         {
           "ability_bonus": 162.0,
           "additional_officer_slot": true,
           "level": 30,
+          "ship_xp": 69000,
           "scrap_details": {
+            "scrap_time": 120000,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2121,26 +2124,58 @@
                 "type": "ship xp",
                 "value": 17509
               }
-            ],
-            "scrap_time": 120000
-          },
-          "ship_xp": 69000
+            ]
+          }
         }
-      ],
-      "repair_time": 9006,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 40500,
+      "repair_time": 10500,
       "components": [
         {
           "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3200000
+              },
+              {
+                "type": "dilithium",
+                "value": 53500
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 2300
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 2428
+            },
+            {
+              "type": "dilithium",
+              "value": 229
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 447,
               "armor_pierce": 447,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 1682,
+              "min_damage": 1376,
+              "shield_pierce": 447,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2151,60 +2186,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 1682,
-              "min_damage": 1376,
-              "shield_pierce": 447,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 2300
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3200000
-              },
-              {
-                "type": "dilithium",
-                "value": 53500
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 2428
-            },
-            {
-              "type": "dilithium",
-              "value": 229
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 1.2
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 11300
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2214,10 +2204,15 @@
                 "type": "dilithium",
                 "value": 265000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 11300
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2227,26 +2222,18 @@
               "type": "dilithium",
               "value": 572
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 1.2
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 13011,
-              "increased_protected_cargo": 810,
-              "ship_increased_cargo": 6500,
-              "ship_increased_protected_cargo": 200
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 8100
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2256,74 +2243,81 @@
                 "type": "dilithium",
                 "value": 53500
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 8100
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 4856
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 13011,
+              "increased_protected_cargo": 810,
+              "ship_increased_cargo": 6500,
+              "ship_increased_protected_cargo": 200
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 26,
-              "warp_speed": 3.1
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 107000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 11300
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 107000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 343
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 26,
+              "warp_speed": 3.1
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 258,
-              "shield_health": 4358
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2550000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 4500
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2550000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2333,24 +2327,19 @@
               "type": "dilithium",
               "value": 457
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 258,
+              "shield_health": 4358
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 258,
-              "impulse_speed": 98
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 4500
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2360,10 +2349,15 @@
                 "type": "dilithium",
                 "value": 80000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 4500
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2373,7 +2367,14 @@
               "type": "dilithium",
               "value": 229
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 258,
+              "impulse_speed": 98
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2381,7 +2382,9 @@
           "ability_bonus": 162.32,
           "additional_officer_slot": false,
           "level": 31,
+          "ship_xp": 72000,
           "scrap_details": {
+            "scrap_time": 121920,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2399,16 +2402,16 @@
                 "type": "ship xp",
                 "value": 17718
               }
-            ],
-            "scrap_time": 121920
-          },
-          "ship_xp": 72000
+            ]
+          }
         },
         {
           "ability_bonus": 162.64,
           "additional_officer_slot": false,
           "level": 32,
+          "ship_xp": 81000,
           "scrap_details": {
+            "scrap_time": 123780,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2426,16 +2429,16 @@
                 "type": "ship xp",
                 "value": 19743
               }
-            ],
-            "scrap_time": 123780
-          },
-          "ship_xp": 81000
+            ]
+          }
         },
         {
           "ability_bonus": 162.96,
           "additional_officer_slot": false,
           "level": 33,
+          "ship_xp": 86000,
           "scrap_details": {
+            "scrap_time": 125700,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2453,16 +2456,16 @@
                 "type": "ship xp",
                 "value": 21893
               }
-            ],
-            "scrap_time": 125700
-          },
-          "ship_xp": 86000
+            ]
+          }
         },
         {
           "ability_bonus": 163.28,
           "additional_officer_slot": false,
           "level": 34,
+          "ship_xp": 95000,
           "scrap_details": {
+            "scrap_time": 127680,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2480,16 +2483,16 @@
                 "type": "ship xp",
                 "value": 24268
               }
-            ],
-            "scrap_time": 127680
-          },
-          "ship_xp": 95000
+            ]
+          }
         },
         {
           "ability_bonus": 163.6,
           "additional_officer_slot": false,
           "level": 35,
+          "ship_xp": 100000,
           "scrap_details": {
+            "scrap_time": 129660,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2507,26 +2510,58 @@
                 "type": "ship xp",
                 "value": 26768
               }
-            ],
-            "scrap_time": 129660
-          },
-          "ship_xp": 100000
+            ]
+          }
         }
-      ],
-      "repair_time": 10500,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 52650,
+      "repair_time": 17574,
       "components": [
         {
           "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6900000
+              },
+              {
+                "type": "dilithium",
+                "value": 118000
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 9100
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4994
+            },
+            {
+              "type": "dilithium",
+              "value": 463
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 643,
               "armor_pierce": 643,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 2421,
+              "min_damage": 1981,
+              "shield_pierce": 643,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2537,60 +2572,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 2421,
-              "min_damage": 1981,
-              "shield_pierce": 643,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 9100
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 6900000
-              },
-              {
-                "type": "dilithium",
-                "value": 118000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 4994
-            },
-            {
-              "type": "dilithium",
-              "value": 463
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 1.3
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 45700
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2600,10 +2590,15 @@
                 "type": "dilithium",
                 "value": 590000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 45700
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2613,26 +2608,18 @@
               "type": "dilithium",
               "value": 1158
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 1.3
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 31847,
-              "increased_protected_cargo": 727,
-              "ship_increased_cargo": 6500,
-              "ship_increased_protected_cargo": 200
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 32900
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2642,74 +2629,81 @@
                 "type": "dilithium",
                 "value": 118000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 32900
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 9989
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 31847,
+              "increased_protected_cargo": 727,
+              "ship_increased_cargo": 6500,
+              "ship_increased_protected_cargo": 200
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 33,
-              "warp_speed": 3.3
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 235000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 45700
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 235000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 695
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 33,
+              "warp_speed": 3.3
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 372,
-              "shield_health": 6269
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5500000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 18300
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5500000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2719,24 +2713,19 @@
               "type": "dilithium",
               "value": 926
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 372,
+              "shield_health": 6269
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 372,
-              "impulse_speed": 105
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 18300
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2746,10 +2735,15 @@
                 "type": "dilithium",
                 "value": 177000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 18300
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2759,7 +2753,14 @@
               "type": "dilithium",
               "value": 463
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 372,
+              "impulse_speed": 105
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2767,7 +2768,9 @@
           "ability_bonus": 163.92,
           "additional_officer_slot": false,
           "level": 36,
+          "ship_xp": 105000,
           "scrap_details": {
+            "scrap_time": 131700,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2785,16 +2788,16 @@
                 "type": "ship xp",
                 "value": 26453
               }
-            ],
-            "scrap_time": 131700
-          },
-          "ship_xp": 105000
+            ]
+          }
         },
         {
           "ability_bonus": 164.24,
           "additional_officer_slot": false,
           "level": 37,
+          "ship_xp": 116000,
           "scrap_details": {
+            "scrap_time": 133680,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2812,16 +2815,16 @@
                 "type": "ship xp",
                 "value": 29063
               }
-            ],
-            "scrap_time": 133680
-          },
-          "ship_xp": 116000
+            ]
+          }
         },
         {
           "ability_bonus": 164.56,
           "additional_officer_slot": false,
           "level": 38,
+          "ship_xp": 122000,
           "scrap_details": {
+            "scrap_time": 135780,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2839,16 +2842,16 @@
                 "type": "ship xp",
                 "value": 31808
               }
-            ],
-            "scrap_time": 135780
-          },
-          "ship_xp": 122000
+            ]
+          }
         },
         {
           "ability_bonus": 164.88,
           "additional_officer_slot": false,
           "level": 39,
+          "ship_xp": 134000,
           "scrap_details": {
+            "scrap_time": 137880,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2866,16 +2869,16 @@
                 "type": "ship xp",
                 "value": 34823
               }
-            ],
-            "scrap_time": 137880
-          },
-          "ship_xp": 134000
+            ]
+          }
         },
         {
           "ability_bonus": 165.2,
           "additional_officer_slot": false,
           "level": 40,
+          "ship_xp": 140000,
           "scrap_details": {
+            "scrap_time": 140100,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2893,26 +2896,58 @@
                 "type": "ship xp",
                 "value": 37973
               }
-            ],
-            "scrap_time": 140100
-          },
-          "ship_xp": 140000
+            ]
+          }
         }
-      ],
-      "repair_time": 17574,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 64800,
+      "repair_time": 22326,
       "components": [
         {
           "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 9850000
+              },
+              {
+                "type": "dilithium",
+                "value": 175000
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 13700
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 7173
+            },
+            {
+              "type": "dilithium",
+              "value": 685
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 897,
               "armor_pierce": 897,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 3376,
+              "min_damage": 2762,
+              "shield_pierce": 897,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2923,60 +2958,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 3376,
-              "min_damage": 2762,
-              "shield_pierce": 897,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 13700
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 9850000
-              },
-              {
-                "type": "dilithium",
-                "value": 175000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 7173
-            },
-            {
-              "type": "dilithium",
-              "value": 685
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 1.4
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 68600
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2986,10 +2976,15 @@
                 "type": "dilithium",
                 "value": 870000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 68600
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2999,26 +2994,18 @@
               "type": "dilithium",
               "value": 1711
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 1.4
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 42458,
-              "increased_protected_cargo": 2022,
-              "ship_increased_cargo": 6500,
-              "ship_increased_protected_cargo": 200
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 49400
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3028,74 +3015,81 @@
                 "type": "dilithium",
                 "value": 175000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 49400
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 14347
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 42458,
+              "increased_protected_cargo": 2022,
+              "ship_increased_cargo": 6500,
+              "ship_increased_protected_cargo": 200
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 40,
-              "warp_speed": 3.5
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 350000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 68500
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 350000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 1026
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 40,
+              "warp_speed": 3.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 519,
-              "shield_health": 8740
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7850000
+              }
+            ],
             "materials": [],
             "others": [
               {
                 "type": "D'Vor Parts",
                 "value": 27400
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 7850000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3105,24 +3099,19 @@
               "type": "dilithium",
               "value": 1369
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 519,
+              "shield_health": 8740
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 519,
-              "impulse_speed": 105
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Parts",
-                "value": 27400
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3132,10 +3121,15 @@
                 "type": "dilithium",
                 "value": 260000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Parts",
+                "value": 27400
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3145,7 +3139,14 @@
               "type": "dilithium",
               "value": 685
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 519,
+              "impulse_speed": 105
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3153,7 +3154,9 @@
           "ability_bonus": 167.16,
           "additional_officer_slot": false,
           "level": 41,
+          "ship_xp": 154000,
           "scrap_details": {
+            "scrap_time": 142200,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3171,16 +3174,16 @@
                 "type": "ship xp",
                 "value": 36834
               }
-            ],
-            "scrap_time": 142200
-          },
-          "ship_xp": 154000
+            ]
+          }
         },
         {
           "ability_bonus": 169.12,
           "additional_officer_slot": false,
           "level": 42,
+          "ship_xp": 161000,
           "scrap_details": {
+            "scrap_time": 144360,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3198,16 +3201,16 @@
                 "type": "ship xp",
                 "value": 40054
               }
-            ],
-            "scrap_time": 144360
-          },
-          "ship_xp": 161000
+            ]
+          }
         },
         {
           "ability_bonus": 171.08,
           "additional_officer_slot": false,
           "level": 43,
+          "ship_xp": 176000,
           "scrap_details": {
+            "scrap_time": 146700,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3225,16 +3228,16 @@
                 "type": "ship xp",
                 "value": 43574
               }
-            ],
-            "scrap_time": 146700
-          },
-          "ship_xp": 176000
+            ]
+          }
         },
         {
           "ability_bonus": 173.04,
           "additional_officer_slot": false,
           "level": 44,
+          "ship_xp": 183000,
           "scrap_details": {
+            "scrap_time": 148920,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3252,16 +3255,16 @@
                 "type": "ship xp",
                 "value": 47234
               }
-            ],
-            "scrap_time": 148920
-          },
-          "ship_xp": 183000
+            ]
+          }
         },
         {
           "ability_bonus": 175.0,
           "additional_officer_slot": true,
           "level": 45,
+          "ship_xp": 200000,
           "scrap_details": {
+            "scrap_time": 151200,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3279,14 +3282,11 @@
                 "type": "ship xp",
                 "value": 51234
               }
-            ],
-            "scrap_time": 151200
-          },
-          "ship_xp": 200000
+            ]
+          }
         }
-      ],
-      "repair_time": 22326,
-      "tier": 9
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/ferengi_d_vor.png"
 }

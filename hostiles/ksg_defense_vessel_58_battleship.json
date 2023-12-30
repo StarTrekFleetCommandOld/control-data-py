@@ -1,38 +1,23 @@
 {
+  "hostile_name": "KSG Defense Vessel",
   "description": "",
   "group": "klingon",
+  "level": 58,
+  "rarity": "common",
   "head_stats": {
     "attack": 87829015,
     "defense": 27458395,
     "health": 129818881
   },
-  "hostile_name": "KSG Defense Vessel",
-  "level": 58,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken battleship parts",
-      "max_value": 1083,
-      "min_value": 1083,
-      "value": 1083
+      "$ref": "systems/atlhe_58"
     },
     {
-      "type": "federation points",
-      "max_value": 58880,
-      "min_value": 58880,
-      "value": 58880
+      "$ref": "systems/astertna_59"
     },
     {
-      "type": "romulan points",
-      "max_value": 29440,
-      "min_value": 29440,
-      "value": 29440
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/juh_maqoch_57"
     }
   ],
   "ship_class": "battleship",
@@ -55,22 +40,6 @@
       "shield_health": 111272899
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/atlhe_58"
-    },
-    {
-      "$ref": "systems/astertna_59"
-    },
-    {
-      "$ref": "systems/juh_maqoch_57"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -133,6 +102,37 @@
         "shield_pierce": 3750534
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken battleship parts",
+      "max_value": 1083,
+      "min_value": 1083,
+      "value": 1083
+    },
+    {
+      "type": "federation points",
+      "max_value": 58880,
+      "min_value": 58880,
+      "value": 58880
+    },
+    {
+      "type": "romulan points",
+      "max_value": 29440,
+      "min_value": 29440,
+      "value": 29440
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

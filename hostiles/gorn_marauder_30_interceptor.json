@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Gorn Marauder",
   "description": "",
   "group": "neutral",
+  "level": 30,
+  "rarity": "common",
   "head_stats": {
     "attack": 48200,
     "defense": 63000,
     "health": 27840
   },
-  "hostile_name": "Gorn Marauder",
-  "level": 30,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1364,
-      "min_value": 1364,
-      "value": 1364
+      "$ref": "systems/niawillen_28"
+    },
+    {
+      "$ref": "systems/oppidum_frumenti_30"
+    },
+    {
+      "$ref": "systems/losti_28"
+    },
+    {
+      "$ref": "systems/willenia_28"
+    },
+    {
+      "$ref": "systems/koltiska_28"
     }
   ],
   "ship_class": "interceptor",
@@ -37,28 +46,6 @@
       "shield_health": 27840
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/niawillen_28"
-    },
-    {
-      "$ref": "systems/oppidum_frumenti_30"
-    },
-    {
-      "$ref": "systems/losti_28"
-    },
-    {
-      "$ref": "systems/willenia_28"
-    },
-    {
-      "$ref": "systems/koltiska_28"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +108,19 @@
         "shield_pierce": 2100
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1364,
+      "min_value": 1364,
+      "value": 1364
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

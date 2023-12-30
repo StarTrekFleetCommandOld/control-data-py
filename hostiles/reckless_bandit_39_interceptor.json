@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Reckless Bandit",
   "description": "",
   "group": "neutral",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 325858,
     "defense": 485275,
     "health": 1524597
   },
-  "hostile_name": "Reckless Bandit",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 103,
-      "min_value": 103,
-      "value": 103
+      "$ref": "systems/whitehead_40"
+    },
+    {
+      "$ref": "systems/mina_40"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 1524597
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/whitehead_40"
-    },
-    {
-      "$ref": "systems/mina_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 15317
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 103,
+      "min_value": 103,
+      "value": 103
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

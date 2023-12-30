@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Hirogen Hunter",
   "description": "",
   "group": "neutral",
+  "level": 46,
+  "rarity": "common",
   "head_stats": {
     "attack": 4394056,
     "defense": 1531870,
     "health": 7117218
   },
-  "hostile_name": "Hirogen Hunter",
-  "level": 46,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 560,
-      "min_value": 560,
-      "value": 560
+      "$ref": "systems/new_talax_45"
+    },
+    {
+      "$ref": "systems/valla_terna_45"
+    },
+    {
+      "$ref": "systems/kraydin_vori_48"
+    },
+    {
+      "$ref": "systems/ramar_45"
     }
   ],
   "ship_class": "battleship",
@@ -37,25 +43,6 @@
       "shield_health": 5770700
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/new_talax_45"
-    },
-    {
-      "$ref": "systems/valla_terna_45"
-    },
-    {
-      "$ref": "systems/kraydin_vori_48"
-    },
-    {
-      "$ref": "systems/ramar_45"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -118,6 +105,19 @@
         "shield_pierce": 279910
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 560,
+      "min_value": 560,
+      "value": 560
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

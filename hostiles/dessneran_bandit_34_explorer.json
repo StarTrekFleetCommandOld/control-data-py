@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Dessneran Bandit",
   "description": "",
   "group": "neutral",
+  "level": 34,
+  "rarity": "common",
   "head_stats": {
     "attack": 178601,
     "defense": 176250,
     "health": 63825
   },
-  "hostile_name": "Dessneran Bandit",
-  "level": 34,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 440,
-      "min_value": 440,
-      "value": 440
+      "$ref": "systems/azati_34"
+    },
+    {
+      "$ref": "systems/januu_33"
+    },
+    {
+      "$ref": "systems/izanagi_32"
+    },
+    {
+      "$ref": "systems/vanir_36"
     }
   ],
   "ship_class": "explorer",
@@ -37,25 +43,6 @@
       "shield_health": 65550
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/azati_34"
-    },
-    {
-      "$ref": "systems/januu_33"
-    },
-    {
-      "$ref": "systems/izanagi_32"
-    },
-    {
-      "$ref": "systems/vanir_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -87,6 +74,19 @@
         "shield_pierce": 5875
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 440,
+      "min_value": 440,
+      "value": 440
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

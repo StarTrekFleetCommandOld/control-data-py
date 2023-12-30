@@ -1,15 +1,31 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 45,
+  "rarity": "common",
   "head_stats": {
     "attack": 2861223,
     "defense": 1022950,
     "health": 5023525
   },
-  "hostile_name": "Federation Patrol",
-  "level": 45,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/kildare_43"
+    },
+    {
+      "$ref": "systems/leebyrn_46"
+    },
+    {
+      "$ref": "systems/st_9417_45"
+    },
+    {
+      "$ref": "systems/holles_43"
+    },
+    {
+      "$ref": "systems/ertalwu_47"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,28 +46,6 @@
       "shield_health": 4541811
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/kildare_43"
-    },
-    {
-      "$ref": "systems/leebyrn_46"
-    },
-    {
-      "$ref": "systems/st_9417_45"
-    },
-    {
-      "$ref": "systems/holles_43"
-    },
-    {
-      "$ref": "systems/ertalwu_47"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -114,6 +108,12 @@
         "shield_pierce": 184754
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

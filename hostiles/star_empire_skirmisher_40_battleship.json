@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Star Empire Skirmisher",
   "description": "",
   "group": "romulan",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1114362,
     "defense": 442170,
     "health": 2168403
   },
-  "hostile_name": "Star Empire Skirmisher",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 121,
-      "min_value": 121,
-      "value": 121
+      "$ref": "systems/hro_lug_40"
+    },
+    {
+      "$ref": "systems/hig_qar_38"
+    },
+    {
+      "$ref": "systems/alarek_42"
     }
   ],
   "ship_class": "battleship",
@@ -37,22 +40,6 @@
       "shield_health": 1758165
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/hro_lug_40"
-    },
-    {
-      "$ref": "systems/hig_qar_38"
-    },
-    {
-      "$ref": "systems/alarek_42"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 80014
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 121,
+      "min_value": 121,
+      "value": 121
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

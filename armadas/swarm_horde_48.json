@@ -1,20 +1,23 @@
 {
-  "description": "",
   "armada_name": "Swarm Horde",
+  "description": "",
   "group": "swarm",
+  "level": 48,
+  "rarity": "rare",
   "head_stats": {
     "attack": 30053194,
     "defense": 10233720,
     "health": 1000000000
   },
-  "level": 48,
-  "rarity": "rare",
-  "rewards": [
+  "systems": [
     {
-      "type": "Swarm Advanced Biotics",
-      "max_value": 80,
-      "min_value": 80,
-      "value": 80
+      "$ref": "systems/raxo_49"
+    },
+    {
+      "$ref": "systems/widis_48"
+    },
+    {
+      "$ref": "systems/beilum_50"
     }
   ],
   "stats": {
@@ -36,17 +39,6 @@
       "shield_health": 0
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/raxo_49"
-    },
-    {
-      "$ref": "systems/widis_48"
-    },
-    {
-      "$ref": "systems/beilum_50"
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -122,6 +114,14 @@
         "shield_pierce": 21318
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "Swarm Advanced Biotics",
+      "max_value": 80,
+      "min_value": 80,
+      "value": 80
     }
   ]
 }

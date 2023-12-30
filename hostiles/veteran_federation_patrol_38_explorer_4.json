@@ -1,14 +1,75 @@
 {
+  "hostile_name": "Veteran Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 38,
+  "rarity": "common",
   "head_stats": {
     "attack": 892743,
     "defense": 928575,
     "health": 305365
   },
-  "hostile_name": "Veteran Federation Patrol",
-  "level": 38,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/altair_39"
+    },
+    {
+      "$ref": "systems/arcturus_39"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 198727,
+      "armor_pierce": 24841,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 514806,
+      "shield_pierce": 28390
+    },
+    "defense": {
+      "armor": 28390,
+      "dodge": 24841,
+      "shield_deflect": 132484
+    },
+    "health": {
+      "hull_health": 249840,
+      "shield_health": 360890
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 198727,
+        "armor_pierce": 24841,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 171601,
+        "max_damage": 164141,
+        "min_damage": 134297,
+        "shield_pierce": 28390
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,70 +102,9 @@
       "value": 468
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 198727,
-      "armor_pierce": 24841,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 514806,
-      "shield_pierce": 28390
-    },
-    "defense": {
-      "armor": 28390,
-      "dodge": 24841,
-      "shield_deflect": 132484
-    },
-    "health": {
-      "hull_health": 249840,
-      "shield_health": 360890
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/altair_39"
-    },
-    {
-      "$ref": "systems/arcturus_39"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 17
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 198727,
-        "armor_pierce": 24841,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 171601,
-        "max_damage": 164141,
-        "min_damage": 134297,
-        "shield_pierce": 28390
-      },
-      "weapon_type": "energy"
     }
   ]
 }

@@ -1,38 +1,23 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 47,
+  "rarity": "common",
   "head_stats": {
     "attack": 3980966,
     "defense": 1624470,
     "health": 5628829
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 47,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 628,
-      "min_value": 628,
-      "value": 628
+      "$ref": "systems/muhg_48"
     },
     {
-      "type": "federation points",
-      "max_value": 3200,
-      "min_value": 3200,
-      "value": 3200
+      "$ref": "systems/rixos_45"
     },
     {
-      "type": "romulan points",
-      "max_value": 1600,
-      "min_value": 1600,
-      "value": 1600
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/dohrmas_46"
     }
   ],
   "ship_class": "explorer",
@@ -55,22 +40,6 @@
       "shield_health": 6304290
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/muhg_48"
-    },
-    {
-      "$ref": "systems/rixos_45"
-    },
-    {
-      "$ref": "systems/dohrmas_46"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +71,37 @@
         "shield_pierce": 146436
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 628,
+      "min_value": 628,
+      "value": 628
+    },
+    {
+      "type": "federation points",
+      "max_value": 3200,
+      "min_value": 3200,
+      "value": 3200
+    },
+    {
+      "type": "romulan points",
+      "max_value": 1600,
+      "min_value": 1600,
+      "value": 1600
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

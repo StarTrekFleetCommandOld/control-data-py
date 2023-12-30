@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 34,
+  "rarity": "common",
   "head_stats": {
     "attack": 197341,
     "defense": 199750,
     "health": 71500
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 34,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/unroth_32"
+    },
+    {
+      "$ref": "systems/nelvana_32"
+    },
+    {
+      "$ref": "systems/alpha_onias_36"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 62270
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/unroth_32"
-    },
-    {
-      "$ref": "systems/nelvana_32"
-    },
-    {
-      "$ref": "systems/alpha_onias_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 20
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -77,6 +71,12 @@
         "shield_pierce": 8225
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 20
     }
   ]
 }

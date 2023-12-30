@@ -1,26 +1,26 @@
 {
+  "hostile_name": "Assimilated Ship",
   "description": "",
   "group": "assimilated",
+  "level": 49,
+  "rarity": "common",
   "head_stats": {
     "attack": 5052001,
     "defense": 2053885,
     "health": 6788333
   },
-  "hostile_name": "Assimilated Ship",
-  "level": 49,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 957,
-      "min_value": 957,
-      "value": 957
+      "$ref": "systems/beta_sector_50"
     },
     {
-      "type": "pattern disruptor",
-      "max_value": 10,
-      "min_value": 10,
-      "value": 10
+      "$ref": "systems/weima_49"
+    },
+    {
+      "$ref": "systems/rek_sgar_49"
+    },
+    {
+      "$ref": "systems/corsen_49"
     }
   ],
   "ship_class": "explorer",
@@ -43,25 +43,6 @@
       "shield_health": 7602935
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/beta_sector_50"
-    },
-    {
-      "$ref": "systems/weima_49"
-    },
-    {
-      "$ref": "systems/rek_sgar_49"
-    },
-    {
-      "$ref": "systems/corsen_49"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -93,6 +74,25 @@
         "shield_pierce": 185143
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 957,
+      "min_value": 957,
+      "value": 957
+    },
+    {
+      "type": "pattern disruptor",
+      "max_value": 10,
+      "min_value": 10,
+      "value": 10
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

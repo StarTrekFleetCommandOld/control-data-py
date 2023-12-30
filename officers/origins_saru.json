@@ -1,7 +1,11 @@
 {
-  "description": "Lieutenant Saru was born to a life of constant fear. His people, the Kelpiens, are a prey species on their home planet of Kaminar. No strangers to death, the Kelpiens have evolved to sense the presence of danger, a trait which has brought Saru no shortage of success... and pain.\nSaru did not share his people's apathy toward their place in the ecosystem. He resented being prey and sought to find a way out. Utilizing some broken alien technology, he managed to send a message out to the void, hoping that someone would hear it. Someone did.\nCaptain Philippa Georgiou of the USS Shenzhou was impressed by Saru's ingenuity and his bravery. So impressed that she broke several Starfleet laws and offered him a place on her crew.\nSaru has spent the years since tirelessly working to earn the respect of his peers. He has risen through the ranks of Starfleet and was even assigned to the Shenzhou bridge as its Science Officer.",
+  "officer_name": "Origins Saru",
+  "description": "",
+  "class": "science",
+  "group": "discovery origins",
+  "faction": "federation",
+  "rarity": "common",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Vigilant",
       "bonus": "Origins Saru increases the Defense of all the Officers on the ship by {value}.",
@@ -12,18 +16,20 @@
       "name": "Prey Instinct",
       "bonus": "Origins Saru increases the Hull Health of the ship by {value}.",
       "percentage": true
-    }
+    },
+    "below_decks_ability": null
   },
-  "class": "science",
-  "faction": "federation",
-  "group": "discovery origins",
-  "img_url": "./assets/origins_saru.png",
-  "officer_name": "Origins Saru",
+  "synergy": {
+    "command": 5.0,
+    "engineering": 5.0,
+    "science": 2.0
+  },
+  "traits": [],
   "ranks": [
     {
+      "rank_id": 1,
       "name": "ENSIGN I",
       "officer_ability_value": 0.05,
-      "rank_id": 1,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -33,9 +39,9 @@
       }
     },
     {
+      "rank_id": 2,
       "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.07,
-      "rank_id": 2,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -45,9 +51,9 @@
       }
     },
     {
+      "rank_id": 3,
       "name": "LIEUTENANT III",
       "officer_ability_value": 0.1,
-      "rank_id": 3,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -57,9 +63,9 @@
       }
     },
     {
+      "rank_id": 4,
       "name": "LT. COMMANDER IV",
       "officer_ability_value": 0.12,
-      "rank_id": 4,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -69,9 +75,9 @@
       }
     },
     {
+      "rank_id": 5,
       "name": "COMMANDER V",
       "officer_ability_value": 0.15,
-      "rank_id": 5,
       "requirements": {
         "badges": 0,
         "credits": 1000,
@@ -81,11 +87,5 @@
       }
     }
   ],
-  "rarity": "common",
-  "synergy": {
-    "command": 5.0,
-    "engineering": 5.0,
-    "science": 2.0
-  },
-  "traits": []
+  "img_url": "./assets/origins_saru.png"
 }

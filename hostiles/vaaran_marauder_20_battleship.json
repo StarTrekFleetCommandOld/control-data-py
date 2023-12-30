@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Vaaran Marauder",
   "description": "",
   "group": "neutral",
+  "level": 20,
+  "rarity": "common",
   "head_stats": {
     "attack": 7619,
     "defense": 7120,
     "health": 3360
   },
-  "hostile_name": "Vaaran Marauder",
-  "level": 20,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/lydan_22"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 2880
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/lydan_22"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 1425
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

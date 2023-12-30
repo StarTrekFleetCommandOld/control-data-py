@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Benzar Smuggler",
   "description": "",
   "group": "neutral",
+  "level": 24,
+  "rarity": "common",
   "head_stats": {
     "attack": 15977,
     "defense": 17250,
     "health": 6825
   },
-  "hostile_name": "Benzar Smuggler",
-  "level": 24,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 79,
-      "min_value": 79,
-      "value": 79
+      "$ref": "systems/k_amia_24"
+    },
+    {
+      "$ref": "systems/nabok_22"
+    },
+    {
+      "$ref": "systems/nasturta_26"
+    },
+    {
+      "$ref": "systems/s_mtharz_25"
     }
   ],
   "ship_class": "battleship",
@@ -37,25 +43,6 @@
       "shield_health": 5850
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/k_amia_24"
-    },
-    {
-      "$ref": "systems/nabok_22"
-    },
-    {
-      "$ref": "systems/nasturta_26"
-    },
-    {
-      "$ref": "systems/s_mtharz_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -118,6 +105,19 @@
         "shield_pierce": 3450
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 79,
+      "min_value": 79,
+      "value": 79
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

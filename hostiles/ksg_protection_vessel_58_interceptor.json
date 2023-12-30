@@ -1,15 +1,28 @@
 {
+  "hostile_name": "KSG Protection Vessel",
   "description": "",
   "group": "klingon",
+  "level": 58,
+  "rarity": "common",
   "head_stats": {
     "attack": 134120318,
     "defense": 84257465,
     "health": 286545818
   },
-  "hostile_name": "KSG Protection Vessel",
-  "level": 58,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/atlhe_58"
+    },
+    {
+      "$ref": "systems/ovelya_59"
+    },
+    {
+      "$ref": "systems/kur_than_56"
+    },
+    {
+      "$ref": "systems/juh_maqoch_57"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 286545818
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/atlhe_58"
-    },
-    {
-      "$ref": "systems/ovelya_59"
-    },
-    {
-      "$ref": "systems/kur_than_56"
-    },
-    {
-      "$ref": "systems/juh_maqoch_57"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -111,6 +105,12 @@
         "shield_pierce": 2058890
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

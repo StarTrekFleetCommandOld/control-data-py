@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Federation Transport",
   "description": "",
   "group": "federation",
+  "level": 42,
+  "rarity": "common",
   "head_stats": {
     "attack": 1285261,
     "defense": 1482165,
     "health": 2622062
   },
-  "hostile_name": "Federation Transport",
-  "level": 42,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/groombridge_34_40"
+    }
+  ],
   "ship_class": "survey",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 2622062
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/groombridge_34_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -71,6 +65,12 @@
         "shield_pierce": 36657
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

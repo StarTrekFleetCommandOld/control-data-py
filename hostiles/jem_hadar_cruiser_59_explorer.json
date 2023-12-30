@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Jem'Hadar Cruiser",
   "description": "",
   "group": "dominion",
+  "level": 59,
+  "rarity": "common",
   "head_stats": {
     "attack": 88607117,
     "defense": 47007520,
     "health": 157049621
   },
-  "hostile_name": "Jem'Hadar Cruiser",
-  "level": 59,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "antimatter units",
-      "max_value": 4659,
-      "min_value": 4659,
-      "value": 4659
+      "$ref": "systems/dal_vor_59"
+    },
+    {
+      "$ref": "systems/vefeeq_57"
+    },
+    {
+      "$ref": "systems/altero_60"
+    },
+    {
+      "$ref": "systems/lysis_60"
     }
   ],
   "ship_class": "explorer",
@@ -37,25 +43,6 @@
       "shield_health": 183224618
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dal_vor_59"
-    },
-    {
-      "$ref": "systems/vefeeq_57"
-    },
-    {
-      "$ref": "systems/altero_60"
-    },
-    {
-      "$ref": "systems/lysis_60"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -87,6 +74,19 @@
         "shield_pierce": 3039780
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "antimatter units",
+      "max_value": 4659,
+      "min_value": 4659,
+      "value": 4659
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

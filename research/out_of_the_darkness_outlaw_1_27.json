@@ -1,11 +1,16 @@
 {
+  "research_name": "Out of the Darkness",
   "description": "Unlock a special Khan mission in the Rogue Faction Store",
-  "img_url": "./assets/out_of_the_darkness_outlaw_1_27.png",
+  "location": {
+    "column": 27,
+    "row": 1,
+    "tree": "outlaw"
+  },
   "levels": [
     {
-      "increased_power": 120000,
       "level": 1,
-      "required_by": [],
+      "research_time": 35313540,
+      "increased_power": 120000,
       "requirements": [
         {
           "name": "Armada Shield Piercing",
@@ -16,13 +21,20 @@
           "level": 40
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 259900000
+          }
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 3000,
             "grade": 4,
-            "rarity": "uncommon",
-            "value": 3000
+            "rarity": "uncommon"
           }
         ],
         "others": [
@@ -30,15 +42,8 @@
             "type": "outlaw research credits",
             "value": 5400
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 259900000
-          }
         ]
       },
-      "research_time": 35313540,
       "rewards": [
         {
           "type": "Gamma Particle",
@@ -51,10 +56,5 @@
       ]
     }
   ],
-  "location": {
-    "column": 27,
-    "row": 1,
-    "tree": "outlaw"
-  },
-  "research_name": "Out of the Darkness"
+  "img_url": "./assets/out_of_the_darkness_outlaw_1_27.png"
 }

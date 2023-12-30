@@ -1,65 +1,13 @@
 {
+  "hostile_name": "Romulan Trader",
   "description": "",
   "group": "romulan",
+  "level": 24,
+  "rarity": "common",
   "head_stats": {
     "attack": 7020,
     "defense": 18750,
     "health": 11520
-  },
-  "hostile_name": "Romulan Trader",
-  "level": 24,
-  "rarity": "common",
-  "rewards": [
-    {
-      "type": "tritanium",
-      "max_value": 274,
-      "min_value": 274,
-      "value": 274
-    },
-    {
-      "type": "dilithium",
-      "max_value": 23,
-      "min_value": 23,
-      "value": 23
-    },
-    {
-      "type": "federation points",
-      "max_value": 12,
-      "min_value": 12,
-      "value": 12
-    },
-    {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "klingon points",
-      "max_value": 24,
-      "min_value": 24,
-      "value": 24
-    }
-  ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 1000,
-      "armor_pierce": 1000,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 5520,
-      "shield_pierce": 1000
-    },
-    "defense": {
-      "armor": 1250,
-      "dodge": 1250,
-      "shield_deflect": 1250
-    },
-    "health": {
-      "hull_health": 11520,
-      "shield_health": 11520
-    }
   },
   "systems": [
     {
@@ -99,11 +47,26 @@
       "$ref": "systems/rooth_26"
     }
   ],
-  "utility": [
-    {
-      "impulse_speed": 10
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 1000,
+      "armor_pierce": 1000,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 5520,
+      "shield_pierce": 1000
+    },
+    "defense": {
+      "armor": 1250,
+      "dodge": 1250,
+      "shield_deflect": 1250
+    },
+    "health": {
+      "hull_health": 11520,
+      "shield_health": 11520
     }
-  ],
+  },
   "weapons": [
     {
       "firing_pattern": [
@@ -135,6 +98,43 @@
         "shield_pierce": 1000
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 274,
+      "min_value": 274,
+      "value": 274
+    },
+    {
+      "type": "dilithium",
+      "max_value": 23,
+      "min_value": 23,
+      "value": 23
+    },
+    {
+      "type": "federation points",
+      "max_value": 12,
+      "min_value": 12,
+      "value": 12
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 24,
+      "min_value": 24,
+      "value": 24
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

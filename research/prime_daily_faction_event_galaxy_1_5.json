@@ -1,43 +1,43 @@
 {
+  "research_name": "Prime Daily Faction Event",
   "description": "Increases Faction Rep and Tokens gained from the Daily Faction Event by 100%",
-  "img_url": "./assets/prime_daily_faction_event_galaxy_1_5.png",
+  "location": {
+    "column": 5,
+    "row": 1,
+    "tree": "galaxy"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 1.0
-      },
-      "increased_power": 3100,
       "level": 1,
-      "required_by": [],
+      "research_time": 142860,
+      "increased_power": 3100,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 23
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 22250
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "faction event particle",
             "value": 1000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 22250
-          }
         ]
       },
-      "research_time": 142860
+      "bonus": {
+        "percentage": true,
+        "value": 1.0
+      }
     }
   ],
-  "location": {
-    "column": 5,
-    "row": 1,
-    "tree": "galaxy"
-  },
-  "research_name": "Prime Daily Faction Event"
+  "img_url": "./assets/prime_daily_faction_event_galaxy_1_5.png"
 }

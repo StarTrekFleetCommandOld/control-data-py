@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Lost Pakled Thief",
   "description": "",
   "group": "neutral",
+  "level": 58,
+  "rarity": "common",
   "head_stats": {
     "attack": 87983029,
     "defense": 28648625,
     "health": 130702031
   },
-  "hostile_name": "Lost Pakled Thief",
-  "level": 58,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 5862,
-      "min_value": 5862,
-      "value": 5862
+      "$ref": "systems/sivis_60"
+    },
+    {
+      "$ref": "systems/jaslyn_60"
+    },
+    {
+      "$ref": "systems/tak_tak_58"
     }
   ],
   "ship_class": "battleship",
@@ -37,22 +40,6 @@
       "shield_health": 105974194
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/sivis_60"
-    },
-    {
-      "$ref": "systems/jaslyn_60"
-    },
-    {
-      "$ref": "systems/tak_tak_58"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 3938059
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 5862,
+      "min_value": 5862,
+      "value": 5862
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

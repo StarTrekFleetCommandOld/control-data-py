@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Hirogen Hunter",
   "description": "",
   "group": "neutral",
+  "level": 52,
+  "rarity": "common",
   "head_stats": {
     "attack": 30468328,
     "defense": 9920955,
     "health": 45261824
   },
-  "hostile_name": "Hirogen Hunter",
-  "level": 52,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 2074,
-      "min_value": 2074,
-      "value": 2074
+      "$ref": "systems/dijor_joh_50"
+    },
+    {
+      "$ref": "systems/aran_50"
+    },
+    {
+      "$ref": "systems/sakari_53"
+    },
+    {
+      "$ref": "systems/suvfa_53"
+    },
+    {
+      "$ref": "systems/neken_51"
+    },
+    {
+      "$ref": "systems/leichter_53"
     }
   ],
   "ship_class": "battleship",
@@ -37,31 +49,6 @@
       "shield_health": 36698629
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dijor_joh_50"
-    },
-    {
-      "$ref": "systems/aran_50"
-    },
-    {
-      "$ref": "systems/sakari_53"
-    },
-    {
-      "$ref": "systems/suvfa_53"
-    },
-    {
-      "$ref": "systems/neken_51"
-    },
-    {
-      "$ref": "systems/leichter_53"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 1363741
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 2074,
+      "min_value": 2074,
+      "value": 2074
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

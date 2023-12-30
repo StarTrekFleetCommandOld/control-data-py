@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Lost Unknown Alien",
   "description": "",
   "group": "neutral",
+  "level": 53,
+  "rarity": "common",
   "head_stats": {
     "attack": 14300623,
     "defense": 8983980,
     "health": 30553042
   },
-  "hostile_name": "Lost Unknown Alien",
-  "level": 53,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 2211,
-      "min_value": 2211,
-      "value": 2211
+      "$ref": "systems/jettas_55"
+    },
+    {
+      "$ref": "systems/sakari_53"
+    },
+    {
+      "$ref": "systems/burdow_55"
+    },
+    {
+      "$ref": "systems/suvfa_53"
+    },
+    {
+      "$ref": "systems/neken_51"
+    },
+    {
+      "$ref": "systems/leichter_53"
     }
   ],
   "ship_class": "interceptor",
@@ -37,31 +49,6 @@
       "shield_health": 30553042
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/jettas_55"
-    },
-    {
-      "$ref": "systems/sakari_53"
-    },
-    {
-      "$ref": "systems/burdow_55"
-    },
-    {
-      "$ref": "systems/suvfa_53"
-    },
-    {
-      "$ref": "systems/neken_51"
-    },
-    {
-      "$ref": "systems/leichter_53"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 219530
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 2211,
+      "min_value": 2211,
+      "value": 2211
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

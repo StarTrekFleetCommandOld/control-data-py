@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Rigellian Hunter",
   "description": "",
   "group": "neutral",
+  "level": 18,
+  "rarity": "common",
   "head_stats": {
     "attack": 5681,
     "defense": 5165,
     "health": 2150
   },
-  "hostile_name": "Rigellian Hunter",
-  "level": 18,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 652,
-      "min_value": 652,
-      "value": 652
+      "$ref": "systems/eronia_18"
+    },
+    {
+      "$ref": "systems/labac_17"
+    },
+    {
+      "$ref": "systems/obilent_17"
     }
   ],
   "ship_class": "interceptor",
@@ -37,22 +40,6 @@
       "shield_health": 2150
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/eronia_18"
-    },
-    {
-      "$ref": "systems/labac_17"
-    },
-    {
-      "$ref": "systems/obilent_17"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 172
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 652,
+      "min_value": 652,
+      "value": 652
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

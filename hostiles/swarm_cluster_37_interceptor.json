@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Swarm Cluster",
   "description": "",
   "group": "swarm",
+  "level": 37,
+  "rarity": "common",
   "head_stats": {
     "attack": 948083,
     "defense": 1143715,
     "health": 5718264
   },
-  "hostile_name": "Swarm Cluster",
-  "level": 37,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "frequency modulator mk. ii",
-      "max_value": 3,
-      "min_value": 3,
-      "value": 3
+      "$ref": "systems/araxian_37"
+    },
+    {
+      "$ref": "systems/iusum_37"
+    },
+    {
+      "$ref": "systems/estar_37"
     }
   ],
   "ship_class": "interceptor",
@@ -37,22 +40,6 @@
       "shield_health": 0
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/araxian_37"
-    },
-    {
-      "$ref": "systems/iusum_37"
-    },
-    {
-      "$ref": "systems/estar_37"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -146,6 +133,19 @@
         "shield_pierce": 32679
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "frequency modulator mk. ii",
+      "max_value": 3,
+      "min_value": 3,
+      "value": 3
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

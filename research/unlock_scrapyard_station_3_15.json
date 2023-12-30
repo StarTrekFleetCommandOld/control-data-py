@@ -1,11 +1,16 @@
 {
+  "research_name": "Unlock Scrapyard",
   "description": "Unlocks the Scrapyard building.",
-  "img_url": "./assets/unlock_scrapyard_station_3_15.png",
+  "location": {
+    "column": 15,
+    "row": 3,
+    "tree": "station"
+  },
   "levels": [
     {
-      "increased_power": 12000,
       "level": 1,
-      "required_by": [],
+      "research_time": 249300,
+      "increased_power": 12000,
       "requirements": [
         {
           "name": "Station Weaponry",
@@ -16,9 +21,8 @@
           "level": 20
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -28,15 +32,11 @@
             "type": "dilithium",
             "value": 26250
           }
-        ]
-      },
-      "research_time": 249300
+        ],
+        "materials": [],
+        "others": []
+      }
     }
   ],
-  "location": {
-    "column": 15,
-    "row": 3,
-    "tree": "station"
-  },
-  "research_name": "Unlock Scrapyard"
+  "img_url": "./assets/unlock_scrapyard_station_3_15.png"
 }

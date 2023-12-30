@@ -1,38 +1,20 @@
 {
+  "hostile_name": "Immortal Arrow Class",
   "description": "",
   "group": "romulan",
+  "level": 50,
+  "rarity": "common",
   "head_stats": {
     "attack": 4851273,
     "defense": 2944100,
     "health": 10430892
   },
-  "hostile_name": "Immortal Arrow Class",
-  "level": 50,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken interceptor parts",
-      "max_value": 147,
-      "min_value": 147,
-      "value": 147
+      "$ref": "systems/van_vlerken_50"
     },
     {
-      "type": "federation points",
-      "max_value": 6000,
-      "min_value": 6000,
-      "value": 6000
-    },
-    {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "klingon points",
-      "max_value": 12000,
-      "min_value": 12000,
-      "value": 12000
+      "$ref": "systems/omadi_52"
     }
   ],
   "ship_class": "interceptor",
@@ -55,19 +37,6 @@
       "shield_health": 9934183
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/van_vlerken_50"
-    },
-    {
-      "$ref": "systems/omadi_52"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -130,6 +99,37 @@
         "shield_pierce": 78695
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken interceptor parts",
+      "max_value": 147,
+      "min_value": 147,
+      "value": 147
+    },
+    {
+      "type": "federation points",
+      "max_value": 6000,
+      "min_value": 6000,
+      "value": 6000
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 12000,
+      "min_value": 12000,
+      "value": 12000
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

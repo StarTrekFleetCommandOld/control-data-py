@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Lost Unknown Alien",
   "description": "",
   "group": "neutral",
+  "level": 47,
+  "rarity": "common",
   "head_stats": {
     "attack": 2413221,
     "defense": 1678300,
     "health": 5561191
   },
-  "hostile_name": "Lost Unknown Alien",
-  "level": 47,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 584,
-      "min_value": 584,
-      "value": 584
+      "$ref": "systems/new_talax_45"
+    },
+    {
+      "$ref": "systems/valla_terna_45"
+    },
+    {
+      "$ref": "systems/kraydin_vori_48"
+    },
+    {
+      "$ref": "systems/ramar_45"
     }
   ],
   "ship_class": "interceptor",
@@ -37,25 +43,6 @@
       "shield_health": 5561191
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/new_talax_45"
-    },
-    {
-      "$ref": "systems/valla_terna_45"
-    },
-    {
-      "$ref": "systems/kraydin_vori_48"
-    },
-    {
-      "$ref": "systems/ramar_45"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -118,6 +105,19 @@
         "shield_pierce": 53252
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 584,
+      "min_value": 584,
+      "value": 584
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

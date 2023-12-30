@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Corvallen Mercenary",
   "description": "",
   "group": "neutral",
+  "level": 42,
+  "rarity": "common",
   "head_stats": {
     "attack": 1908436,
     "defense": 893960,
     "health": 2970932
   },
-  "hostile_name": "Corvallen Mercenary",
-  "level": 42,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 211,
-      "min_value": 211,
-      "value": 211
+      "$ref": "systems/perralon_472_44"
+    },
+    {
+      "$ref": "systems/new_berlin_42"
+    },
+    {
+      "$ref": "systems/kildare_43"
+    },
+    {
+      "$ref": "systems/harrizon_44"
     }
   ],
   "ship_class": "explorer",
@@ -37,25 +43,6 @@
       "shield_health": 3327445
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/perralon_472_44"
-    },
-    {
-      "$ref": "systems/new_berlin_42"
-    },
-    {
-      "$ref": "systems/kildare_43"
-    },
-    {
-      "$ref": "systems/harrizon_44"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -87,6 +74,19 @@
         "shield_pierce": 81470
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 211,
+      "min_value": 211,
+      "value": 211
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

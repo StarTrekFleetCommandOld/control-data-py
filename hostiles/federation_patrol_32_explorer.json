@@ -1,15 +1,31 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 32,
+  "rarity": "common",
   "head_stats": {
     "attack": 156424,
     "defense": 161905,
     "health": 53925
   },
-  "hostile_name": "Federation Patrol",
-  "level": 32,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/aiti_33"
+    },
+    {
+      "$ref": "systems/ascher_30"
+    },
+    {
+      "$ref": "systems/sinisser_31"
+    },
+    {
+      "$ref": "systems/noakyn_30"
+    },
+    {
+      "$ref": "systems/andoria_34"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,28 +46,6 @@
       "shield_health": 63730
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/aiti_33"
-    },
-    {
-      "$ref": "systems/ascher_30"
-    },
-    {
-      "$ref": "systems/sinisser_31"
-    },
-    {
-      "$ref": "systems/noakyn_30"
-    },
-    {
-      "$ref": "systems/andoria_34"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -83,6 +77,12 @@
         "shield_pierce": 4950
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

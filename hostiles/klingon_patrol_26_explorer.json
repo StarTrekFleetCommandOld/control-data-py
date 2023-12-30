@@ -1,14 +1,78 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 26,
+  "rarity": "common",
   "head_stats": {
     "attack": 23415,
     "defense": 27190,
     "health": 12765
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 26,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/izth_26"
+    },
+    {
+      "$ref": "systems/loaiy_25"
+    },
+    {
+      "$ref": "systems/narendra_25"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 5400,
+      "armor_pierce": 1050,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 12558,
+      "shield_pierce": 788
+    },
+    "defense": {
+      "armor": 788,
+      "dodge": 1050,
+      "shield_deflect": 3600
+    },
+    "health": {
+      "hull_health": 12420,
+      "shield_health": 13110
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 5400,
+        "armor_pierce": 1050,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 4186,
+        "max_damage": 4004,
+        "min_damage": 3276,
+        "shield_pierce": 788
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,73 +105,9 @@
       "value": 0
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 5400,
-      "armor_pierce": 1050,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 12558,
-      "shield_pierce": 788
-    },
-    "defense": {
-      "armor": 788,
-      "dodge": 1050,
-      "shield_deflect": 3600
-    },
-    "health": {
-      "hull_health": 12420,
-      "shield_health": 13110
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/izth_26"
-    },
-    {
-      "$ref": "systems/loaiy_25"
-    },
-    {
-      "$ref": "systems/narendra_25"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 20
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 5400,
-        "armor_pierce": 1050,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 4186,
-        "max_damage": 4004,
-        "min_damage": 3276,
-        "shield_pierce": 788
-      },
-      "weapon_type": "energy"
     }
   ]
 }

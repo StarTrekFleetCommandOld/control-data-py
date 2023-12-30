@@ -1,15 +1,28 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 25,
+  "rarity": "common",
   "head_stats": {
     "attack": 21154,
     "defense": 21250,
     "health": 9945
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 25,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/strezhi_26"
+    },
+    {
+      "$ref": "systems/wauoxic_24"
+    },
+    {
+      "$ref": "systems/vendus_a_27"
+    },
+    {
+      "$ref": "systems/qualor_25"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 8660
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/strezhi_26"
-    },
-    {
-      "$ref": "systems/wauoxic_24"
-    },
-    {
-      "$ref": "systems/vendus_a_27"
-    },
-    {
-      "$ref": "systems/qualor_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 20
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -80,6 +74,12 @@
         "shield_pierce": 875
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 20
     }
   ]
 }

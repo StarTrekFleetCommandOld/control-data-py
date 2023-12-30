@@ -1,44 +1,20 @@
 {
+  "hostile_name": "Veteran Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1952982,
     "defense": 1865435,
     "health": 618500
   },
-  "hostile_name": "Veteran Federation Patrol",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1029,
-      "min_value": 1029,
-      "value": 1029
+      "$ref": "systems/lakeside_39"
     },
     {
-      "type": "dilithium",
-      "max_value": 186,
-      "min_value": 186,
-      "value": 186
-    },
-    {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "romulan points",
-      "max_value": 2061,
-      "min_value": 2061,
-      "value": 2061
-    },
-    {
-      "type": "klingon points",
-      "max_value": 1030,
-      "min_value": 1030,
-      "value": 1030
+      "$ref": "systems/bolarus_39"
     }
   ],
   "ship_class": "interceptor",
@@ -61,19 +37,6 @@
       "shield_health": 714710
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/lakeside_39"
-    },
-    {
-      "$ref": "systems/bolarus_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +99,43 @@
         "shield_pierce": 65839
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1029,
+      "min_value": 1029,
+      "value": 1029
+    },
+    {
+      "type": "dilithium",
+      "max_value": 186,
+      "min_value": 186,
+      "value": 186
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 2061,
+      "min_value": 2061,
+      "value": 2061
+    },
+    {
+      "type": "klingon points",
+      "max_value": 1030,
+      "min_value": 1030,
+      "value": 1030
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

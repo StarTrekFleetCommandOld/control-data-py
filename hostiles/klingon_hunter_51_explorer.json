@@ -1,15 +1,28 @@
 {
+  "hostile_name": "Klingon Hunter",
   "description": "",
   "group": "federation",
+  "level": 51,
+  "rarity": "common",
   "head_stats": {
     "attack": 10626586,
     "defense": 3888515,
     "health": 12934900
   },
-  "hostile_name": "Klingon Hunter",
-  "level": 51,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/rylan_50"
+    },
+    {
+      "$ref": "systems/miers_49"
+    },
+    {
+      "$ref": "systems/caelum_49"
+    },
+    {
+      "$ref": "systems/gamma_sedra_50"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 15090721
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/rylan_50"
-    },
-    {
-      "$ref": "systems/miers_49"
-    },
-    {
-      "$ref": "systems/caelum_49"
-    },
-    {
-      "$ref": "systems/gamma_sedra_50"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -80,6 +74,12 @@
         "shield_pierce": 332779
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

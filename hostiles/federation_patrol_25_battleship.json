@@ -1,44 +1,26 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 25,
+  "rarity": "common",
   "head_stats": {
     "attack": 20270,
     "defense": 22655,
     "health": 9240
   },
-  "hostile_name": "Federation Patrol",
-  "level": 25,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 323,
-      "min_value": 323,
-      "value": 323
+      "$ref": "systems/angosia_25"
     },
     {
-      "type": "dilithium",
-      "max_value": 83,
-      "min_value": 83,
-      "value": 83
+      "$ref": "systems/gowok_23"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/querlz_26"
     },
     {
-      "type": "romulan points",
-      "max_value": 17,
-      "min_value": 17,
-      "value": 17
-    },
-    {
-      "type": "klingon points",
-      "max_value": 8,
-      "min_value": 8,
-      "value": 8
+      "$ref": "systems/eagutim_25"
     }
   ],
   "ship_class": "battleship",
@@ -61,25 +43,6 @@
       "shield_health": 9360
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/angosia_25"
-    },
-    {
-      "$ref": "systems/gowok_23"
-    },
-    {
-      "$ref": "systems/querlz_26"
-    },
-    {
-      "$ref": "systems/eagutim_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -142,6 +105,43 @@
         "shield_pierce": 4500
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 323,
+      "min_value": 323,
+      "value": 323
+    },
+    {
+      "type": "dilithium",
+      "max_value": 83,
+      "min_value": 83,
+      "value": 83
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 17,
+      "min_value": 17,
+      "value": 17
+    },
+    {
+      "type": "klingon points",
+      "max_value": 8,
+      "min_value": 8,
+      "value": 8
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

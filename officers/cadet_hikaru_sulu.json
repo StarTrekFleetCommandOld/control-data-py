@@ -1,7 +1,11 @@
 {
-  "description": "Sulu proved a gifted pilot even during his time at the Academy, good enough to earn a place on Red Squad, the elite team of the Academy's best.",
+  "officer_name": "Cadet Hikaru Sulu",
+  "description": "",
+  "class": "command",
+  "group": "another time",
+  "faction": "federation",
+  "rarity": "common",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Big Shot",
       "bonus": "Cadet Sulu increases the damage of the first shots of the ship by {value} for the first round.",
@@ -12,18 +16,20 @@
       "name": "Fighting Spirit",
       "bonus": "Cadet Sulu increases the Attack of all the Officers on the ship by {value}.",
       "percentage": true
-    }
+    },
+    "below_decks_ability": null
   },
-  "class": "command",
-  "faction": "federation",
-  "group": "another time",
-  "img_url": "./assets/cadet_hikaru_sulu.png",
-  "officer_name": "Cadet Hikaru Sulu",
+  "synergy": {
+    "command": 0.05,
+    "engineering": 0.1,
+    "science": 0.1
+  },
+  "traits": [],
   "ranks": [
     {
+      "rank_id": 1,
       "name": "ENSIGN I",
       "officer_ability_value": 0.05,
-      "rank_id": 1,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -33,9 +39,9 @@
       }
     },
     {
+      "rank_id": 2,
       "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.08,
-      "rank_id": 2,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -45,9 +51,9 @@
       }
     },
     {
+      "rank_id": 3,
       "name": "LIEUTENANT III",
       "officer_ability_value": 0.1,
-      "rank_id": 3,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -57,9 +63,9 @@
       }
     },
     {
+      "rank_id": 4,
       "name": "LT. COMMANDER IV",
       "officer_ability_value": 0.12,
-      "rank_id": 4,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -69,9 +75,9 @@
       }
     },
     {
+      "rank_id": 5,
       "name": "COMMANDER V",
       "officer_ability_value": 0.15,
-      "rank_id": 5,
       "requirements": {
         "badges": 0,
         "credits": 1000,
@@ -81,11 +87,5 @@
       }
     }
   ],
-  "rarity": "common",
-  "synergy": {
-    "command": 0.05,
-    "engineering": 0.1,
-    "science": 0.1
-  },
-  "traits": []
+  "img_url": "./assets/cadet_hikaru_sulu.png"
 }

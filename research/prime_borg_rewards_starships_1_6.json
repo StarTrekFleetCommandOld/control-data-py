@@ -1,35 +1,40 @@
 {
+  "research_name": "Prime Borg Rewards",
   "description": "+100% Rewards for Faction Credits and Reputation in the Borg refinery & better outcomes for the Latinum Antique Refinery",
-  "img_url": "./assets/prime_borg_rewards_starships_1_6.png",
+  "location": {
+    "column": 6,
+    "row": 1,
+    "tree": "starships"
+  },
   "levels": [
     {
-      "increased_power": 20000,
       "level": 1,
-      "required_by": [],
+      "research_time": 597600,
+      "increased_power": 20000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 24
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [
-          {
-            "type": "gas",
-            "grade": 4,
-            "rarity": "epic",
-            "value": 100
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 3000000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "gas",
+            "value": 100,
+            "grade": 4,
+            "rarity": "epic"
+          }
+        ],
+        "others": []
       },
-      "research_time": 597600,
       "rewards": [
         {
           "type": "Relocation Token",
@@ -38,10 +43,5 @@
       ]
     }
   ],
-  "location": {
-    "column": 6,
-    "row": 1,
-    "tree": "starships"
-  },
-  "research_name": "Prime Borg Rewards"
+  "img_url": "./assets/prime_borg_rewards_starships_1_6.png"
 }

@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Klingon War Army",
   "description": "",
   "group": "klingon",
+  "level": 42,
+  "rarity": "common",
   "head_stats": {
     "attack": 3980966,
     "defense": 1624470,
     "health": 5628829
   },
-  "hostile_name": "Klingon War Army",
-  "level": 42,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/ursva_40"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 6304290
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ursva_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -71,6 +65,12 @@
         "shield_pierce": 146436
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

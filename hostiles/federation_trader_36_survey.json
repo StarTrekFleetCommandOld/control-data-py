@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Federation Trader",
   "description": "",
   "group": "federation",
+  "level": 36,
+  "rarity": "common",
   "head_stats": {
     "attack": 141051,
     "defense": 313170,
     "health": 150380
   },
-  "hostile_name": "Federation Trader",
-  "level": 36,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/siiolux_35"
+    },
+    {
+      "$ref": "systems/axanar_36"
+    },
+    {
+      "$ref": "systems/andoria_34"
+    }
+  ],
   "ship_class": "survey",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 150380
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/siiolux_35"
-    },
-    {
-      "$ref": "systems/axanar_36"
-    },
-    {
-      "$ref": "systems/andoria_34"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 9
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -77,6 +71,12 @@
         "shield_pierce": 16702
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 9
     }
   ]
 }

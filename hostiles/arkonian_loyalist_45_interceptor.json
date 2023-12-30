@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Arkonian Loyalist",
   "description": "",
   "group": "neutral",
+  "level": 45,
+  "rarity": "common",
   "head_stats": {
     "attack": 2570705,
     "defense": 1295615,
     "health": 4190430
   },
-  "hostile_name": "Arkonian Loyalist",
-  "level": 45,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/szov_43"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 4190430
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/szov_43"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 42119
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

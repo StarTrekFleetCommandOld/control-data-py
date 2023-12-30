@@ -1,26 +1,29 @@
 {
+  "hostile_name": "Doomsday Worm",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1908436,
     "defense": 893960,
     "health": 2970932
   },
-  "hostile_name": "Doomsday Worm",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 654,
-      "min_value": 654,
-      "value": 654
+      "$ref": "systems/enzocas_42"
     },
     {
-      "type": "dilithium",
-      "max_value": 170,
-      "min_value": 170,
-      "value": 170
+      "$ref": "systems/doka_40"
+    },
+    {
+      "$ref": "systems/kordindr_42"
+    },
+    {
+      "$ref": "systems/napiar_42"
+    },
+    {
+      "$ref": "systems/mal_tahn_38"
     }
   ],
   "ship_class": "explorer",
@@ -43,28 +46,6 @@
       "shield_health": 3327445
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/enzocas_42"
-    },
-    {
-      "$ref": "systems/doka_40"
-    },
-    {
-      "$ref": "systems/kordindr_42"
-    },
-    {
-      "$ref": "systems/napiar_42"
-    },
-    {
-      "$ref": "systems/mal_tahn_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -127,6 +108,25 @@
         "shield_pierce": 81470
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 654,
+      "min_value": 654,
+      "value": 654
+    },
+    {
+      "type": "dilithium",
+      "max_value": 170,
+      "min_value": 170,
+      "value": 170
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

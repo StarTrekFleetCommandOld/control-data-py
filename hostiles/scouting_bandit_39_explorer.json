@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Scouting Bandit",
   "description": "",
   "group": "neutral",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 475859,
     "defense": 471235,
     "health": 177365
   },
-  "hostile_name": "Scouting Bandit",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/umxheli_41"
+    },
+    {
+      "$ref": "systems/sotavi_41"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 182160
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/umxheli_41"
-    },
-    {
-      "$ref": "systems/sotavi_41"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -74,6 +68,12 @@
         "shield_pierce": 15708
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

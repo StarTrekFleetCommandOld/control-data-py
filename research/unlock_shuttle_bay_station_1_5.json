@@ -1,20 +1,24 @@
 {
+  "research_name": "Unlock Shuttle Bay",
   "description": "Unlocks the Shuttle Bay.",
-  "img_url": "./assets/unlock_shuttle_bay_station_1_5.png",
+  "location": {
+    "column": 5,
+    "row": 1,
+    "tree": "station"
+  },
   "levels": [
     {
-      "increased_power": 1250,
       "level": 1,
-      "required_by": [],
+      "research_time": 10800,
+      "increased_power": 1250,
       "requirements": [
         {
           "name": "Operations",
           "level": 8
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -24,16 +28,12 @@
             "type": "dilithium",
             "value": 250
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "research_time": 10800,
       "rewards": []
     }
   ],
-  "location": {
-    "column": 5,
-    "row": 1,
-    "tree": "station"
-  },
-  "research_name": "Unlock Shuttle Bay"
+  "img_url": "./assets/unlock_shuttle_bay_station_1_5.png"
 }

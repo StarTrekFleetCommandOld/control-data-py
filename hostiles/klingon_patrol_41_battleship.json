@@ -1,38 +1,32 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 41,
+  "rarity": "common",
   "head_stats": {
     "attack": 1369907,
     "defense": 522525,
     "health": 2653151
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 41,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 168,
-      "min_value": 168,
-      "value": 168
+      "$ref": "systems/szov_43"
     },
     {
-      "type": "federation points",
-      "max_value": 2320,
-      "min_value": 2320,
-      "value": 2320
+      "$ref": "systems/lankal_39"
     },
     {
-      "type": "romulan points",
-      "max_value": 1160,
-      "min_value": 1160,
-      "value": 1160
+      "$ref": "systems/dok_vos_41"
     },
     {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/ja_corash_40"
+    },
+    {
+      "$ref": "systems/toh_kaht_43"
+    },
+    {
+      "$ref": "systems/gya_han_39"
     }
   ],
   "ship_class": "battleship",
@@ -55,31 +49,6 @@
       "shield_health": 2274129
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/szov_43"
-    },
-    {
-      "$ref": "systems/lankal_39"
-    },
-    {
-      "$ref": "systems/dok_vos_41"
-    },
-    {
-      "$ref": "systems/ja_corash_40"
-    },
-    {
-      "$ref": "systems/toh_kaht_43"
-    },
-    {
-      "$ref": "systems/gya_han_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -142,6 +111,37 @@
         "shield_pierce": 93872
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 168,
+      "min_value": 168,
+      "value": 168
+    },
+    {
+      "type": "federation points",
+      "max_value": 2320,
+      "min_value": 2320,
+      "value": 2320
+    },
+    {
+      "type": "romulan points",
+      "max_value": 1160,
+      "min_value": 1160,
+      "value": 1160
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

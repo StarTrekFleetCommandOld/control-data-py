@@ -1,15 +1,31 @@
 {
+  "hostile_name": "Lost Orion Slaver",
   "description": "",
   "group": "neutral",
+  "level": 31,
+  "rarity": "common",
   "head_stats": {
     "attack": 99132,
     "defense": 107940,
     "health": 43890
   },
-  "hostile_name": "Lost Orion Slaver",
-  "level": 31,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/miranil_33"
+    },
+    {
+      "$ref": "systems/eviloy_29"
+    },
+    {
+      "$ref": "systems/kalak_30"
+    },
+    {
+      "$ref": "systems/antaria_33"
+    },
+    {
+      "$ref": "systems/ba_neth_32"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,28 +46,6 @@
       "shield_health": 51870
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/miranil_33"
-    },
-    {
-      "$ref": "systems/eviloy_29"
-    },
-    {
-      "$ref": "systems/kalak_30"
-    },
-    {
-      "$ref": "systems/antaria_33"
-    },
-    {
-      "$ref": "systems/ba_neth_32"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -83,6 +77,12 @@
         "shield_pierce": 3300
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

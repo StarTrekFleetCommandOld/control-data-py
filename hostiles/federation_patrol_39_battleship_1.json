@@ -1,44 +1,29 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 577957,
     "defense": 569405,
     "health": 184555
   },
-  "hostile_name": "Federation Patrol",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 568,
-      "min_value": 568,
-      "value": 568
+      "$ref": "systems/fellebia_38"
     },
     {
-      "type": "dilithium",
-      "max_value": 141,
-      "min_value": 141,
-      "value": 141
+      "$ref": "systems/altair_39"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/kurchee_41"
     },
     {
-      "type": "romulan points",
-      "max_value": 654,
-      "min_value": 654,
-      "value": 654
+      "$ref": "systems/deneb_38"
     },
     {
-      "type": "klingon points",
-      "max_value": 327,
-      "min_value": 327,
-      "value": 327
+      "$ref": "systems/memory_alpha_39"
     }
   ],
   "ship_class": "battleship",
@@ -61,28 +46,6 @@
       "shield_health": 186950
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/fellebia_38"
-    },
-    {
-      "$ref": "systems/altair_39"
-    },
-    {
-      "$ref": "systems/kurchee_41"
-    },
-    {
-      "$ref": "systems/deneb_38"
-    },
-    {
-      "$ref": "systems/memory_alpha_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -145,6 +108,43 @@
         "shield_pierce": 113096
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 568,
+      "min_value": 568,
+      "value": 568
+    },
+    {
+      "type": "dilithium",
+      "max_value": 141,
+      "min_value": 141,
+      "value": 141
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 654,
+      "min_value": 654,
+      "value": 654
+    },
+    {
+      "type": "klingon points",
+      "max_value": 327,
+      "min_value": 327,
+      "value": 327
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

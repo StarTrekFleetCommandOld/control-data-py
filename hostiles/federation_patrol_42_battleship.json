@@ -1,38 +1,23 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 42,
+  "rarity": "common",
   "head_stats": {
     "attack": 1868579,
     "defense": 712735,
     "health": 3594313
   },
-  "hostile_name": "Federation Patrol",
-  "level": 42,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 200,
-      "min_value": 200,
-      "value": 200
+      "$ref": "systems/kurchee_41"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/holles_43"
     },
     {
-      "type": "romulan points",
-      "max_value": 2400,
-      "min_value": 2400,
-      "value": 2400
-    },
-    {
-      "type": "klingon points",
-      "max_value": 1200,
-      "min_value": 1200,
-      "value": 1200
+      "$ref": "systems/kildare_43"
     }
   ],
   "ship_class": "battleship",
@@ -55,22 +40,6 @@
       "shield_health": 3249653
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/kurchee_41"
-    },
-    {
-      "$ref": "systems/holles_43"
-    },
-    {
-      "$ref": "systems/kildare_43"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -133,6 +102,37 @@
         "shield_pierce": 128043
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 200,
+      "min_value": 200,
+      "value": 200
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 2400,
+      "min_value": 2400,
+      "value": 2400
+    },
+    {
+      "type": "klingon points",
+      "max_value": 1200,
+      "min_value": 1200,
+      "value": 1200
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

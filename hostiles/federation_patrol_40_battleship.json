@@ -1,38 +1,32 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1112057,
     "defense": 424170,
     "health": 2139100
   },
-  "hostile_name": "Federation Patrol",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 132,
-      "min_value": 132,
-      "value": 132
+      "$ref": "systems/goesting_40"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/fellebia_38"
     },
     {
-      "type": "romulan points",
-      "max_value": 2240,
-      "min_value": 2240,
-      "value": 2240
+      "$ref": "systems/altair_39"
     },
     {
-      "type": "klingon points",
-      "max_value": 1120,
-      "min_value": 1120,
-      "value": 1120
+      "$ref": "systems/kurchee_41"
+    },
+    {
+      "$ref": "systems/deneb_38"
+    },
+    {
+      "$ref": "systems/memory_alpha_39"
     }
   ],
   "ship_class": "battleship",
@@ -55,31 +49,6 @@
       "shield_health": 1933982
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/goesting_40"
-    },
-    {
-      "$ref": "systems/fellebia_38"
-    },
-    {
-      "$ref": "systems/altair_39"
-    },
-    {
-      "$ref": "systems/kurchee_41"
-    },
-    {
-      "$ref": "systems/deneb_38"
-    },
-    {
-      "$ref": "systems/memory_alpha_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -142,6 +111,37 @@
         "shield_pierce": 76203
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 132,
+      "min_value": 132,
+      "value": 132
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 2240,
+      "min_value": 2240,
+      "value": 2240
+    },
+    {
+      "type": "klingon points",
+      "max_value": 1120,
+      "min_value": 1120,
+      "value": 1120
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

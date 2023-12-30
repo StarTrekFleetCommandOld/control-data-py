@@ -1,44 +1,29 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 22,
+  "rarity": "common",
   "head_stats": {
     "attack": 14545,
     "defense": 17170,
     "health": 6040
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 22,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 250,
-      "min_value": 250,
-      "value": 250
+      "$ref": "systems/draken_23"
     },
     {
-      "type": "dilithium",
-      "max_value": 21,
-      "min_value": 21,
-      "value": 21
+      "$ref": "systems/dauouuy_22"
     },
     {
-      "type": "federation points",
-      "max_value": 3,
-      "min_value": 3,
-      "value": 3
+      "$ref": "systems/mada_21"
     },
     {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/nipaj_24"
     },
     {
-      "type": "klingon points",
-      "max_value": 7,
-      "min_value": 7,
-      "value": 7
+      "$ref": "systems/posel_23"
     }
   ],
   "ship_class": "battleship",
@@ -61,28 +46,6 @@
       "shield_health": 4280
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/draken_23"
-    },
-    {
-      "$ref": "systems/dauouuy_22"
-    },
-    {
-      "$ref": "systems/mada_21"
-    },
-    {
-      "$ref": "systems/nipaj_24"
-    },
-    {
-      "$ref": "systems/posel_23"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -145,6 +108,43 @@
         "shield_pierce": 3675
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 250,
+      "min_value": 250,
+      "value": 250
+    },
+    {
+      "type": "dilithium",
+      "max_value": 21,
+      "min_value": 21,
+      "value": 21
+    },
+    {
+      "type": "federation points",
+      "max_value": 3,
+      "min_value": 3,
+      "value": 3
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 7,
+      "min_value": 7,
+      "value": 7
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

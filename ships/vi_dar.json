@@ -1,109 +1,121 @@
 {
+  "ship_name": "VI'DAR",
   "description": "Created in shadow and filled with its creators\u2019 lust for vengeance, the Vi\u2019dar was to be the ultimate weapon of Romulus. Desperate for some defense against the Borg threat, the Romulans fitted their already powerful disruptor weaponry with Borg technology. These tremendous new weapons can tear through even the most durable hull lining, but their real strength lies against a most curious foe: the Borg themselves. The Romulan scientists working on the Vi\u2019dar managed to create a disruptor system with a constantly shifting frequency, making it impossible for Borg ships to adapt their shielding. With a full-scale Borg invasion all but inevitable, the galaxy may very well place their last hopes in this unlikely ally. A ship born of Borg, destined to destroy them.",
+  "ship_class": "interceptor",
+  "grade": 3,
+  "faction": "neutral",
+  "rarity": "uncommon",
   "blueprints": {
     "cost": 0,
     "quantity": 100
-  },
-  "faction": "neutral",
-  "grade": 3,
-  "img_url": "./assets/vi_dar.png",
-  "rarity": "uncommon",
-  "requirements": [
-    {
-      "name": "Shipyard",
-      "level": 25
-    }
-  ],
-  "scrap_info": {
-    "scrappable": false
   },
   "ship_ability": {
     "title": "Cybernetic Augmentation",
     "description": "Ship Abilities are always active.",
     "percentage": true
   },
-  "ship_class": "interceptor",
-  "ship_name": "VI'DAR",
+  "scrap_info": {
+    "scrappable": false
+  },
+  "requirements": [
+    {
+      "name": "Shipyard",
+      "level": 25
+    }
+  ],
   "tiers": [
     {
+      "tier": 1,
       "build_time": 882000,
+      "repair_time": 15422,
       "components": [
         {
           "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 256,
               "armor_pierce": 1536,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
               "max_damage": 5281,
               "min_damage": 4320,
               "shield_pierce": 256,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 256,
               "armor_pierce": 1536,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
               "max_damage": 4620,
               "min_damage": 3780,
               "shield_pierce": 256,
-              "weapon_type": "kinetic"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Railgun",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 256,
               "armor_pierce": 1536,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 17822,
+              "min_damage": 14581,
+              "shield_pierce": 256,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 0,
@@ -114,24 +126,20 @@
                 0,
                 0,
                 1
-              ],
-              "max_damage": 17822,
-              "min_damage": 14581,
-              "shield_pierce": 256,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 14000,
@@ -140,64 +148,43 @@
               "ship_increased_protected_cargo": 0
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
+          "img_url": "./assets/component_warp_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "warp_info": {
               "warp_distance": 25,
               "warp_speed": 2.4
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
+          "img_url": "./assets/component_impulse_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "impulse_info": {
               "dodge": 949,
               "impulse_speed": 120
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 700000
-          },
-          {
-            "type": "dilithium",
-            "value": 20000
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 240.0,
@@ -230,50 +217,52 @@
           "ship_xp": 1700
         }
       ],
-      "repair_time": 15422,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 700000
+          },
+          {
+            "type": "dilithium",
+            "value": 20000
+          }
+        ],
+        "materials": [],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 102600,
+      "repair_time": 17222,
       "components": [
         {
           "name": "Phaser Turrets",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 321,
-              "armor_pierce": 5065,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 5977,
-              "min_damage": 4891,
-              "shield_pierce": 333,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 165595
+              },
+              {
+                "type": "dilithium",
+                "value": 20699
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 48,
                 "grade": 3,
-                "rarity": "common",
-                "value": 48
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 11,
                 "grade": 3,
-                "rarity": "common",
-                "value": 11
+                "rarity": "common"
               }
             ],
             "others": [
@@ -285,20 +274,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 40
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 165595
-              },
-              {
-                "type": "dilithium",
-                "value": 20699
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -308,46 +285,58 @@
               "type": "dilithium",
               "value": 27
             }
-          ]
-        },
-        {
-          "name": "Photon Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 321,
               "armor_pierce": 5065,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 5977,
+              "min_damage": 4891,
+              "shield_pierce": 333,
+              "weapon_type": "energy",
               "firing_pattern": [
+                1,
                 0,
                 1,
+                0,
                 1,
+                0,
                 1,
-                1,
-                1,
-                1,
-                1,
+                0,
                 1
-              ],
-              "max_damage": 5230,
-              "min_damage": 4279,
-              "shield_pierce": 333,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 378767
+              },
+              {
+                "type": "dilithium",
+                "value": 47346
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 109,
                 "grade": 3,
-                "rarity": "common",
-                "value": 109
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 25,
                 "grade": 3,
-                "rarity": "common",
-                "value": 25
+                "rarity": "common"
               }
             ],
             "others": [
@@ -359,20 +348,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 90
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 378767
-              },
-              {
-                "type": "dilithium",
-                "value": 47346
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -382,46 +359,58 @@
               "type": "dilithium",
               "value": 27
             }
-          ]
-        },
-        {
-          "name": "Railgun",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 321,
               "armor_pierce": 5065,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 5230,
+              "min_damage": 4279,
+              "shield_pierce": 333,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
-                0,
                 1,
-                0,
-                0,
                 1,
-                0,
-                0,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
-              ],
-              "max_damage": 20174,
-              "min_damage": 16506,
-              "shield_pierce": 333,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Railgun",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 520787
+              },
+              {
+                "type": "dilithium",
+                "value": 65098
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 150,
                 "grade": 3,
-                "rarity": "common",
-                "value": 150
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 34,
                 "grade": 3,
-                "rarity": "common",
-                "value": 34
+                "rarity": "common"
               }
             ],
             "others": [
@@ -433,20 +422,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 125
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 520787
-              },
-              {
-                "type": "dilithium",
-                "value": 65098
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -456,31 +433,58 @@
               "type": "dilithium",
               "value": 27
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 321,
+              "armor_pierce": 5065,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 20174,
+              "min_damage": 16506,
+              "shield_pierce": 333,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 14000,
-              "increased_protected_cargo": 1750,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 250
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 142020
+              },
+              {
+                "type": "dilithium",
+                "value": 17753
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 41,
                 "grade": 3,
-                "rarity": "common",
-                "value": 41
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 9,
                 "grade": 3,
-                "rarity": "common",
-                "value": 9
+                "rarity": "common"
               }
             ],
             "others": [
@@ -492,20 +496,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 35
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 142020
-              },
-              {
-                "type": "dilithium",
-                "value": 17753
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -515,29 +507,43 @@
               "type": "dilithium",
               "value": 27
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 14000,
+              "increased_protected_cargo": 1750,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 250
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 27,
-              "warp_speed": 2.5
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 71010
+              },
+              {
+                "type": "dilithium",
+                "value": 8876
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 20,
                 "grade": 3,
-                "rarity": "common",
-                "value": 20
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 5,
                 "grade": 3,
-                "rarity": "common",
-                "value": 5
+                "rarity": "common"
               }
             ],
             "others": [
@@ -549,20 +555,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 15
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 71010
-              },
-              {
-                "type": "dilithium",
-                "value": 8876
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -572,29 +566,41 @@
               "type": "dilithium",
               "value": 27
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 27,
+              "warp_speed": 2.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 2406,
-              "impulse_speed": 120
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 142020
+              },
+              {
+                "type": "dilithium",
+                "value": 17753
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 41,
                 "grade": 3,
-                "rarity": "common",
-                "value": 41
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 9,
                 "grade": 3,
-                "rarity": "common",
-                "value": 9
+                "rarity": "common"
               }
             ],
             "others": [
@@ -606,20 +612,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 35
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 142020
-              },
-              {
-                "type": "dilithium",
-                "value": 17753
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -629,7 +623,14 @@
               "type": "dilithium",
               "value": 27
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 2406,
+              "impulse_speed": 120
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -663,51 +664,39 @@
           "level": 10,
           "ship_xp": 6000
         }
-      ],
-      "repair_time": 17222,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 205200,
+      "repair_time": 19742,
       "components": [
         {
           "name": "Phaser Turrets",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 403,
-              "armor_pierce": 5666,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 6766,
-              "min_damage": 5536,
-              "shield_pierce": 433,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 344334
+              },
+              {
+                "type": "dilithium",
+                "value": 29514
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 185,
                 "grade": 3,
-                "rarity": "common",
-                "value": 185
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 42,
                 "grade": 3,
-                "rarity": "common",
-                "value": 42
+                "rarity": "common"
               }
             ],
             "others": [
@@ -719,20 +708,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 195
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 344334
-              },
-              {
-                "type": "dilithium",
-                "value": 29514
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -742,46 +719,58 @@
               "type": "dilithium",
               "value": 48
             }
-          ]
-        },
-        {
-          "name": "Photon Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 403,
               "armor_pierce": 5666,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 6766,
+              "min_damage": 5536,
+              "shield_pierce": 433,
+              "weapon_type": "energy",
               "firing_pattern": [
+                1,
                 0,
                 1,
+                0,
                 1,
+                0,
                 1,
-                1,
-                1,
-                1,
-                1,
+                0,
                 1
-              ],
-              "max_damage": 5920,
-              "min_damage": 4844,
-              "shield_pierce": 433,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 787598
+              },
+              {
+                "type": "dilithium",
+                "value": 67508
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 57,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 57
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 13,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 13
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -793,20 +782,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 450
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 787598
-              },
-              {
-                "type": "dilithium",
-                "value": 67508
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -816,46 +793,58 @@
               "type": "dilithium",
               "value": 48
             }
-          ]
-        },
-        {
-          "name": "Railgun",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 403,
               "armor_pierce": 5666,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 5920,
+              "min_damage": 4844,
+              "shield_pierce": 433,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
-                0,
                 1,
-                0,
-                0,
                 1,
-                0,
-                0,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
-              ],
-              "max_damage": 22836,
-              "min_damage": 18684,
-              "shield_pierce": 433,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Railgun",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1082911
+              },
+              {
+                "type": "dilithium",
+                "value": 92821
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 79,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 79
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 18,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 18
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -867,20 +856,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 620
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1082911
-              },
-              {
-                "type": "dilithium",
-                "value": 92821
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -890,31 +867,58 @@
               "type": "dilithium",
               "value": 48
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 403,
+              "armor_pierce": 5666,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 22836,
+              "min_damage": 18684,
+              "shield_pierce": 433,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 8000,
-              "increased_protected_cargo": 1250,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 250
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 295313
+              },
+              {
+                "type": "dilithium",
+                "value": 25313
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 159,
                 "grade": 3,
-                "rarity": "common",
-                "value": 159
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 36,
                 "grade": 3,
-                "rarity": "common",
-                "value": 36
+                "rarity": "common"
               }
             ],
             "others": [
@@ -926,20 +930,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 170
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 295313
-              },
-              {
-                "type": "dilithium",
-                "value": 25313
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -949,29 +941,43 @@
               "type": "dilithium",
               "value": 48
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 8000,
+              "increased_protected_cargo": 1250,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 250
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 29,
-              "warp_speed": 2.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 147656
+              },
+              {
+                "type": "dilithium",
+                "value": 12656
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 79,
                 "grade": 3,
-                "rarity": "common",
-                "value": 79
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 18,
                 "grade": 3,
-                "rarity": "common",
-                "value": 18
+                "rarity": "common"
               }
             ],
             "others": [
@@ -983,20 +989,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 85
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 147656
-              },
-              {
-                "type": "dilithium",
-                "value": 12656
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1006,29 +1000,41 @@
               "type": "dilithium",
               "value": 48
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 29,
+              "warp_speed": 2.6
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 2692,
-              "impulse_speed": 120
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 295313
+              },
+              {
+                "type": "dilithium",
+                "value": 25313
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 159,
                 "grade": 3,
-                "rarity": "common",
-                "value": 159
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 36,
                 "grade": 3,
-                "rarity": "common",
-                "value": 36
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1040,20 +1046,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 170
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 295313
-              },
-              {
-                "type": "dilithium",
-                "value": 25313
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1063,7 +1057,14 @@
               "type": "dilithium",
               "value": 48
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 2692,
+              "impulse_speed": 120
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1097,51 +1098,39 @@
           "level": 15,
           "ship_xp": 13500
         }
-      ],
-      "repair_time": 19742,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 342000,
+      "repair_time": 20822,
       "components": [
         {
           "name": "Phaser Turrets",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 505,
-              "armor_pierce": 7129,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 7659,
-              "min_damage": 6267,
-              "shield_pierce": 563,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 553967
+              },
+              {
+                "type": "dilithium",
+                "value": 41547
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 30,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 30
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 7,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 7
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1153,20 +1142,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 885
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 553967
-              },
-              {
-                "type": "dilithium",
-                "value": 41547
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1176,46 +1153,58 @@
               "type": "dilithium",
               "value": 102
             }
-          ]
-        },
-        {
-          "name": "Photon Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 505,
               "armor_pierce": 7129,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 7659,
+              "min_damage": 6267,
+              "shield_pierce": 563,
+              "weapon_type": "energy",
               "firing_pattern": [
+                1,
                 0,
                 1,
+                0,
                 1,
+                0,
                 1,
-                1,
-                1,
-                1,
-                1,
+                0,
                 1
-              ],
-              "max_damage": 6702,
-              "min_damage": 5483,
-              "shield_pierce": 563,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1267092
+              },
+              {
+                "type": "dilithium",
+                "value": 95032
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 68,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 68
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 16,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 16
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1227,20 +1216,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 2025
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1267092
-              },
-              {
-                "type": "dilithium",
-                "value": 95032
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1250,46 +1227,58 @@
               "type": "dilithium",
               "value": 102
             }
-          ]
-        },
-        {
-          "name": "Railgun",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 505,
               "armor_pierce": 7129,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 6702,
+              "min_damage": 5483,
+              "shield_pierce": 563,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
-                0,
                 1,
-                0,
-                0,
                 1,
-                0,
-                0,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
-              ],
-              "max_damage": 25850,
-              "min_damage": 21150,
-              "shield_pierce": 563,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Railgun",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1742192
+              },
+              {
+                "type": "dilithium",
+                "value": 130664
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 94,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 94
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 22,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 22
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1301,20 +1290,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 2790
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1742192
-              },
-              {
-                "type": "dilithium",
-                "value": 130664
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1324,31 +1301,58 @@
               "type": "dilithium",
               "value": 102
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 505,
+              "armor_pierce": 7129,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 25850,
+              "min_damage": 21150,
+              "shield_pierce": 563,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 18000,
-              "increased_protected_cargo": 3750,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 250
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 475100
+              },
+              {
+                "type": "dilithium",
+                "value": 35633
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 328,
                 "grade": 3,
-                "rarity": "common",
-                "value": 328
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 74,
                 "grade": 3,
-                "rarity": "common",
-                "value": 74
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1360,20 +1364,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 760
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 475100
-              },
-              {
-                "type": "dilithium",
-                "value": 35633
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1383,29 +1375,43 @@
               "type": "dilithium",
               "value": 102
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 18000,
+              "increased_protected_cargo": 3750,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 250
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 31,
-              "warp_speed": 2.7
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 237550
+              },
+              {
+                "type": "dilithium",
+                "value": 17816
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 164,
                 "grade": 3,
-                "rarity": "common",
-                "value": 164
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 37,
                 "grade": 3,
-                "rarity": "common",
-                "value": 37
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1417,20 +1423,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 380
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 237550
-              },
-              {
-                "type": "dilithium",
-                "value": 17816
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1440,29 +1434,41 @@
               "type": "dilithium",
               "value": 102
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 31,
+              "warp_speed": 2.7
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 3744,
-              "impulse_speed": 120
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 475100
+              },
+              {
+                "type": "dilithium",
+                "value": 35633
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 328,
                 "grade": 3,
-                "rarity": "common",
-                "value": 328
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 74,
                 "grade": 3,
-                "rarity": "common",
-                "value": 74
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1474,20 +1480,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 760
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 475100
-              },
-              {
-                "type": "dilithium",
-                "value": 35633
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1497,7 +1491,14 @@
               "type": "dilithium",
               "value": 102
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 3744,
+              "impulse_speed": 120
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1531,51 +1532,39 @@
           "level": 20,
           "ship_xp": 25000
         }
-      ],
-      "repair_time": 20822,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 513000,
+      "repair_time": 22982,
       "components": [
         {
           "name": "Phaser Turrets",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 633,
-              "armor_pierce": 7200,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 8670,
-              "min_damage": 7094,
-              "shield_pierce": 732,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1159762
+              },
+              {
+                "type": "dilithium",
+                "value": 57988
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 37,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 37
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 9,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 9
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1587,20 +1576,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 2805
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1159762
-              },
-              {
-                "type": "dilithium",
-                "value": 57988
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1610,46 +1587,58 @@
               "type": "dilithium",
               "value": 179
             }
-          ]
-        },
-        {
-          "name": "Photon Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 633,
               "armor_pierce": 7200,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 8670,
+              "min_damage": 7094,
+              "shield_pierce": 732,
+              "weapon_type": "energy",
               "firing_pattern": [
+                1,
                 0,
                 1,
+                0,
                 1,
+                0,
                 1,
-                1,
-                1,
-                1,
-                1,
+                0,
                 1
-              ],
-              "max_damage": 7586,
-              "min_damage": 6207,
-              "shield_pierce": 732,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2652732
+              },
+              {
+                "type": "dilithium",
+                "value": 132637
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 84,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 84
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 19,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 19
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1661,20 +1650,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 6410
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2652732
-              },
-              {
-                "type": "dilithium",
-                "value": 132637
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1684,46 +1661,58 @@
               "type": "dilithium",
               "value": 179
             }
-          ]
-        },
-        {
-          "name": "Railgun",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 633,
               "armor_pierce": 7200,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 7586,
+              "min_damage": 6207,
+              "shield_pierce": 732,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
-                0,
                 1,
-                0,
-                0,
                 1,
-                0,
-                0,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
-              ],
-              "max_damage": 29261,
-              "min_damage": 23941,
-              "shield_pierce": 732,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Railgun",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3647382
+              },
+              {
+                "type": "dilithium",
+                "value": 182369
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 116,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 116
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 27,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 27
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1735,20 +1724,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 8815
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3647382
-              },
-              {
-                "type": "dilithium",
-                "value": 182369
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1758,31 +1735,58 @@
               "type": "dilithium",
               "value": 179
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 633,
+              "armor_pierce": 7200,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 29261,
+              "min_damage": 23941,
+              "shield_pierce": 732,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 18000,
-              "increased_protected_cargo": 1750,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 250
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 994650
+              },
+              {
+                "type": "dilithium",
+                "value": 49733
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 763,
                 "grade": 3,
-                "rarity": "common",
-                "value": 763
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 172,
                 "grade": 3,
-                "rarity": "common",
-                "value": 172
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1794,20 +1798,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 2405
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 994650
-              },
-              {
-                "type": "dilithium",
-                "value": 49733
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1817,29 +1809,43 @@
               "type": "dilithium",
               "value": 179
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 18000,
+              "increased_protected_cargo": 1750,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 250
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 33,
-              "warp_speed": 2.8
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 497325
+              },
+              {
+                "type": "dilithium",
+                "value": 24866
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 381,
                 "grade": 3,
-                "rarity": "common",
-                "value": 381
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 86,
                 "grade": 3,
-                "rarity": "common",
-                "value": 86
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1851,20 +1857,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 1200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 497325
-              },
-              {
-                "type": "dilithium",
-                "value": 24866
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1874,29 +1868,41 @@
               "type": "dilithium",
               "value": 179
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 33,
+              "warp_speed": 2.8
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 3932,
-              "impulse_speed": 120
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 994650
+              },
+              {
+                "type": "dilithium",
+                "value": 49733
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 31,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 31
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 7,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 7
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1908,20 +1914,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 2405
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 994650
-              },
-              {
-                "type": "dilithium",
-                "value": 49733
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1931,7 +1925,14 @@
               "type": "dilithium",
               "value": 179
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 3932,
+              "impulse_speed": 120
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1965,51 +1966,39 @@
           "level": 25,
           "ship_xp": 42000
         }
-      ],
-      "repair_time": 22982,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 684000,
+      "repair_time": 27662,
       "components": [
         {
           "name": "Phaser Turrets",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 794,
-              "armor_pierce": 7344,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 9814,
-              "min_damage": 8030,
-              "shield_pierce": 952,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1608905
+              },
+              {
+                "type": "dilithium",
+                "value": 80445
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 162,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 162
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 38,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 38
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2021,20 +2010,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 8315
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1608905
-              },
-              {
-                "type": "dilithium",
-                "value": 80445
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2044,46 +2021,58 @@
               "type": "dilithium",
               "value": 326
             }
-          ]
-        },
-        {
-          "name": "Photon Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 794,
               "armor_pierce": 7344,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 9814,
+              "min_damage": 8030,
+              "shield_pierce": 952,
+              "weapon_type": "energy",
               "firing_pattern": [
+                1,
                 0,
                 1,
+                0,
                 1,
+                0,
                 1,
-                1,
-                1,
-                1,
-                1,
+                0,
                 1
-              ],
-              "max_damage": 8587,
-              "min_damage": 7026,
-              "shield_pierce": 952,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3680060
+              },
+              {
+                "type": "dilithium",
+                "value": 184003
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 18,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 18
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 4,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 4
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2095,20 +2084,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 19015
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3680060
-              },
-              {
-                "type": "dilithium",
-                "value": 184003
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2118,46 +2095,58 @@
               "type": "dilithium",
               "value": 326
             }
-          ]
-        },
-        {
-          "name": "Railgun",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 794,
               "armor_pierce": 7344,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 8587,
+              "min_damage": 7026,
+              "shield_pierce": 952,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
-                0,
                 1,
-                0,
-                0,
                 1,
-                0,
-                0,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
-              ],
-              "max_damage": 33122,
-              "min_damage": 27100,
-              "shield_pierce": 952,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Railgun",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5059910
+              },
+              {
+                "type": "dilithium",
+                "value": 252995
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 24,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 24
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 6,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 6
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2169,20 +2158,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 26145
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5059910
-              },
-              {
-                "type": "dilithium",
-                "value": 252995
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2192,31 +2169,58 @@
               "type": "dilithium",
               "value": 326
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 794,
+              "armor_pierce": 7344,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 33122,
+              "min_damage": 27100,
+              "shield_pierce": 952,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 38000,
-              "increased_protected_cargo": 6250,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 250
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1379850
+              },
+              {
+                "type": "dilithium",
+                "value": 68993
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 1587,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1587
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 358,
                 "grade": 3,
-                "rarity": "common",
-                "value": 358
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2228,20 +2232,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 7130
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1379850
-              },
-              {
-                "type": "dilithium",
-                "value": 68993
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2251,29 +2243,43 @@
               "type": "dilithium",
               "value": 326
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 38000,
+              "increased_protected_cargo": 6250,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 250
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 35,
-              "warp_speed": 2.9
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 689925
+              },
+              {
+                "type": "dilithium",
+                "value": 34496
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 70,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 70
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 16,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 16
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2285,20 +2291,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 3565
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 689925
-              },
-              {
-                "type": "dilithium",
-                "value": 34496
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2308,29 +2302,41 @@
               "type": "dilithium",
               "value": 326
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 35,
+              "warp_speed": 2.9
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 4246,
-              "impulse_speed": 120
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1379850
+              },
+              {
+                "type": "dilithium",
+                "value": 68993
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 139,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 139
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 32,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 32
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2342,20 +2348,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 7130
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1379850
-              },
-              {
-                "type": "dilithium",
-                "value": 68993
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2365,7 +2359,14 @@
               "type": "dilithium",
               "value": 326
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 4246,
+              "impulse_speed": 120
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2399,51 +2400,39 @@
           "level": 30,
           "ship_xp": 69000
         }
-      ],
-      "repair_time": 27662,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 855000,
+      "repair_time": 29822,
       "components": [
         {
           "name": "Phaser Turrets",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 996,
-              "armor_pierce": 7638,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 11109,
-              "min_damage": 9089,
-              "shield_pierce": 1238,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3705256
+              },
+              {
+                "type": "dilithium",
+                "value": 111158
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 8,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 8
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 2,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 2
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2455,20 +2444,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 17785
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3705256
-              },
-              {
-                "type": "dilithium",
-                "value": 111158
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2478,46 +2455,58 @@
               "type": "dilithium",
               "value": 499
             }
-          ]
-        },
-        {
-          "name": "Photon Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 996,
               "armor_pierce": 7638,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 11109,
+              "min_damage": 9089,
+              "shield_pierce": 1238,
+              "weapon_type": "energy",
               "firing_pattern": [
+                1,
                 0,
                 1,
+                0,
                 1,
+                0,
                 1,
-                1,
-                1,
-                1,
-                1,
+                0,
                 1
-              ],
-              "max_damage": 9721,
-              "min_damage": 7953,
-              "shield_pierce": 1238,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8475059
+              },
+              {
+                "type": "dilithium",
+                "value": 254252
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 20,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 20
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 4,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 4
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2529,20 +2518,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 40680
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8475059
-              },
-              {
-                "type": "dilithium",
-                "value": 254252
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2552,46 +2529,58 @@
               "type": "dilithium",
               "value": 499
             }
-          ]
-        },
-        {
-          "name": "Railgun",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 996,
               "armor_pierce": 7638,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 9721,
+              "min_damage": 7953,
+              "shield_pierce": 1238,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
-                0,
                 1,
-                0,
-                0,
                 1,
-                0,
-                0,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
-              ],
-              "max_damage": 37494,
-              "min_damage": 30677,
-              "shield_pierce": 1238,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Railgun",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 11652809
+              },
+              {
+                "type": "dilithium",
+                "value": 349584
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 28,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 28
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 6,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 6
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2603,20 +2592,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 55935
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 11652809
-              },
-              {
-                "type": "dilithium",
-                "value": 349584
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2626,31 +2603,58 @@
               "type": "dilithium",
               "value": 499
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 996,
+              "armor_pierce": 7638,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 37494,
+              "min_damage": 30677,
+              "shield_pierce": 1238,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 38000,
-              "increased_protected_cargo": 5750,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 250
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3177750
+              },
+              {
+                "type": "dilithium",
+                "value": 95333
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 2193,
                 "grade": 3,
-                "rarity": "common",
-                "value": 2193
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 495,
                 "grade": 3,
-                "rarity": "common",
-                "value": 495
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2662,20 +2666,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 15255
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3177750
-              },
-              {
-                "type": "dilithium",
-                "value": 95333
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2685,29 +2677,43 @@
               "type": "dilithium",
               "value": 499
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 38000,
+              "increased_protected_cargo": 5750,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 250
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 37,
-              "warp_speed": 3.0
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1588875
+              },
+              {
+                "type": "dilithium",
+                "value": 47666
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 171,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 171
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 40,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 40
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2719,20 +2725,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 7625
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1588875
-              },
-              {
-                "type": "dilithium",
-                "value": 47666
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2742,29 +2736,41 @@
               "type": "dilithium",
               "value": 499
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 37,
+              "warp_speed": 3.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 4671,
-              "impulse_speed": 120
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3177750
+              },
+              {
+                "type": "dilithium",
+                "value": 95333
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 342,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 342
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 79,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 79
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2776,20 +2782,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 15255
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3177750
-              },
-              {
-                "type": "dilithium",
-                "value": 95333
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2799,7 +2793,14 @@
               "type": "dilithium",
               "value": 499
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 4671,
+              "impulse_speed": 120
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2833,51 +2834,39 @@
           "level": 35,
           "ship_xp": 100000
         }
-      ],
-      "repair_time": 29822,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 1111500,
+      "repair_time": 34142,
       "components": [
         {
           "name": "Phaser Turrets",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1249,
-              "armor_pierce": 12960,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 12575,
-              "min_damage": 10289,
-              "shield_pierce": 1609,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7142974
+              },
+              {
+                "type": "dilithium",
+                "value": 204085
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 10,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 10
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 2,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 2
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2889,20 +2878,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 33165
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 7142974
-              },
-              {
-                "type": "dilithium",
-                "value": 204085
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2912,46 +2889,58 @@
               "type": "dilithium",
               "value": 859
             }
-          ]
-        },
-        {
-          "name": "Photon Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1249,
               "armor_pierce": 12960,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 12575,
+              "min_damage": 10289,
+              "shield_pierce": 1609,
+              "weapon_type": "energy",
               "firing_pattern": [
+                1,
                 0,
                 1,
+                0,
                 1,
+                0,
                 1,
-                1,
-                1,
-                1,
-                1,
+                0,
                 1
-              ],
-              "max_damage": 11003,
-              "min_damage": 9003,
-              "shield_pierce": 1609,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 16338175
+              },
+              {
+                "type": "dilithium",
+                "value": 466805
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 24,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 24
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 6,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 6
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2963,20 +2952,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 75855
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 16338175
-              },
-              {
-                "type": "dilithium",
-                "value": 466805
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2986,46 +2963,58 @@
               "type": "dilithium",
               "value": 859
             }
-          ]
-        },
-        {
-          "name": "Railgun",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1249,
               "armor_pierce": 12960,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 11003,
+              "min_damage": 9003,
+              "shield_pierce": 1609,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
-                0,
                 1,
-                0,
-                0,
                 1,
-                0,
-                0,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
-              ],
-              "max_damage": 42441,
-              "min_damage": 34725,
-              "shield_pierce": 1609,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Railgun",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 22464225
+              },
+              {
+                "type": "dilithium",
+                "value": 641835
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 34,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 34
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 8,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 8
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3037,20 +3026,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 104300
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 22464225
-              },
-              {
-                "type": "dilithium",
-                "value": 641835
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3060,31 +3037,58 @@
               "type": "dilithium",
               "value": 859
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1249,
+              "armor_pierce": 12960,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 42441,
+              "min_damage": 34725,
+              "shield_pierce": 1609,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 58000,
-              "increased_protected_cargo": 9250,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 250
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6126050
+              },
+              {
+                "type": "dilithium",
+                "value": 175030
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 471,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 471
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 109,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 109
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3096,20 +3100,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 28440
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 6126050
-              },
-              {
-                "type": "dilithium",
-                "value": 175030
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3119,29 +3111,43 @@
               "type": "dilithium",
               "value": 859
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 58000,
+              "increased_protected_cargo": 9250,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 250
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 39,
-              "warp_speed": 3.1
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3063025
+              },
+              {
+                "type": "dilithium",
+                "value": 87515
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 236,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 236
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 55,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 55
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3153,20 +3159,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 14220
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3063025
-              },
-              {
-                "type": "dilithium",
-                "value": 87515
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3176,29 +3170,41 @@
               "type": "dilithium",
               "value": 859
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 39,
+              "warp_speed": 3.1
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 6013,
-              "impulse_speed": 120
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6126050
+              },
+              {
+                "type": "dilithium",
+                "value": 175030
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 10,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 10
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 2,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 2
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3210,20 +3216,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 28440
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 6126050
-              },
-              {
-                "type": "dilithium",
-                "value": 175030
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3233,7 +3227,14 @@
               "type": "dilithium",
               "value": 859
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 6013,
+              "impulse_speed": 120
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3267,51 +3268,39 @@
           "level": 40,
           "ship_xp": 140000
         }
-      ],
-      "repair_time": 34142,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 1368000,
+      "repair_time": 40982,
       "components": [
         {
           "name": "Phaser Turrets",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1566,
-              "armor_pierce": 13089,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 14235,
-              "min_damage": 11647,
-              "shield_pierce": 2088,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 11969063
+              },
+              {
+                "type": "dilithium",
+                "value": 341973
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 14,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 14
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 2,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 2
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3323,20 +3312,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 77285
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 11969063
-              },
-              {
-                "type": "dilithium",
-                "value": 341973
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3346,46 +3323,58 @@
               "type": "dilithium",
               "value": 1507
             }
-          ]
-        },
-        {
-          "name": "Photon Torpedoes",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1566,
               "armor_pierce": 13089,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 14235,
+              "min_damage": 11647,
+              "shield_pierce": 2088,
+              "weapon_type": "energy",
               "firing_pattern": [
+                1,
                 0,
                 1,
+                0,
                 1,
+                0,
                 1,
-                1,
-                1,
-                1,
-                1,
+                0,
                 1
-              ],
-              "max_damage": 12455,
-              "min_damage": 10191,
-              "shield_pierce": 2088,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Photon Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 27376922
+              },
+              {
+                "type": "dilithium",
+                "value": 782198
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 32,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 32
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 6,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 6
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3397,20 +3386,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 176775
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 27376922
-              },
-              {
-                "type": "dilithium",
-                "value": 782198
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3420,46 +3397,58 @@
               "type": "dilithium",
               "value": 1507
             }
-          ]
-        },
-        {
-          "name": "Railgun",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1566,
               "armor_pierce": 13089,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 12455,
+              "min_damage": 10191,
+              "shield_pierce": 2088,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
-                0,
                 1,
-                0,
-                0,
                 1,
-                0,
-                0,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
-              ],
-              "max_damage": 48042,
-              "min_damage": 39307,
-              "shield_pierce": 2088,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Railgun",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 37641984
+              },
+              {
+                "type": "dilithium",
+                "value": 1075485
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 44,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 44
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 10,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 10
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3471,20 +3460,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 243060
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 37641984
-              },
-              {
-                "type": "dilithium",
-                "value": 1075485
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3494,31 +3471,58 @@
               "type": "dilithium",
               "value": 1507
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1566,
+              "armor_pierce": 13089,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 48042,
+              "min_damage": 39307,
+              "shield_pierce": 2088,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 68000,
-              "increased_protected_cargo": 9750,
-              "ship_increased_cargo": 2000,
-              "ship_increased_protected_cargo": 250
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 10265063
+              },
+              {
+                "type": "dilithium",
+                "value": 293287
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 947,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 947
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 220,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 220
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3530,20 +3534,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 66285
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 10265063
-              },
-              {
-                "type": "dilithium",
-                "value": 293287
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3553,29 +3545,43 @@
               "type": "dilithium",
               "value": 1507
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 68000,
+              "increased_protected_cargo": 9750,
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 250
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 41,
-              "warp_speed": 3.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5132531
+              },
+              {
+                "type": "dilithium",
+                "value": 146644
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 3,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 3
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 1,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 1
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3587,20 +3593,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 33140
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5132531
-              },
-              {
-                "type": "dilithium",
-                "value": 146644
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3610,29 +3604,41 @@
               "type": "dilithium",
               "value": 1507
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 41,
+              "warp_speed": 3.2
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engine",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 6133,
-              "impulse_speed": 120
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 10265063
+              },
+              {
+                "type": "dilithium",
+                "value": 293287
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 12,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 12
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 2,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 2
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3644,20 +3650,8 @@
                 "type": "Charged Nanoprobe",
                 "value": 66285
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 10265063
-              },
-              {
-                "type": "dilithium",
-                "value": 293287
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3667,7 +3661,14 @@
               "type": "dilithium",
               "value": 1507
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 6133,
+              "impulse_speed": 120
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3701,9 +3702,8 @@
           "level": 45,
           "ship_xp": 200000
         }
-      ],
-      "repair_time": 40982,
-      "tier": 9
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/vi_dar.png"
 }

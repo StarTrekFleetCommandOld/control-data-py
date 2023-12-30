@@ -1,15 +1,16 @@
 {
+  "research_name": "Stella Research",
   "description": "Unlocks the ability to build the Stella and grants it bonus shots vs all Eclipse enemies",
-  "img_url": "./assets/stella_research_outlaw_2_9.png",
+  "location": {
+    "column": 9,
+    "row": 2,
+    "tree": "outlaw"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 3.0
-      },
-      "increased_power": 37500,
       "level": 1,
-      "required_by": [],
+      "research_time": 727560,
+      "increased_power": 37500,
       "requirements": [
         {
           "name": "Augmented Warp",
@@ -24,16 +25,8 @@
           "level": 27
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 590
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -43,9 +36,21 @@
             "type": "dilithium",
             "value": 1100000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 590,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
-      "research_time": 727560,
+      "bonus": {
+        "percentage": true,
+        "value": 3.0
+      },
       "rewards": [
         {
           "type": "Rogue Reputation",
@@ -54,10 +59,5 @@
       ]
     }
   ],
-  "location": {
-    "column": 9,
-    "row": 2,
-    "tree": "outlaw"
-  },
-  "research_name": "Stella Research"
+  "img_url": "./assets/stella_research_outlaw_2_9.png"
 }

@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Hirogen Hunter",
   "description": "",
   "group": "neutral",
+  "level": 28,
+  "rarity": "common",
   "head_stats": {
     "attack": 74028,
     "defense": 82425,
     "health": 35020
   },
-  "hostile_name": "Hirogen Hunter",
-  "level": 28,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 102,
-      "min_value": 102,
-      "value": 102
+      "$ref": "systems/eviloy_29"
+    },
+    {
+      "$ref": "systems/uxal_26"
+    },
+    {
+      "$ref": "systems/kalak_30"
     }
   ],
   "ship_class": "battleship",
@@ -37,22 +40,6 @@
       "shield_health": 24800
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/eviloy_29"
-    },
-    {
-      "$ref": "systems/uxal_26"
-    },
-    {
-      "$ref": "systems/kalak_30"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 17640
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 102,
+      "min_value": 102,
+      "value": 102
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

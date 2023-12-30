@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Swarm Cluster",
   "description": "",
   "group": "swarm",
+  "level": 24,
+  "rarity": "common",
   "head_stats": {
     "attack": 19557,
     "defense": 54195,
     "health": 117625
   },
-  "hostile_name": "Swarm Cluster",
-  "level": 24,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "frequency modulators",
-      "max_value": 68,
-      "min_value": 68,
-      "value": 68
+      "$ref": "systems/er_yozun_24"
+    },
+    {
+      "$ref": "systems/lahrel_24"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 0
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/er_yozun_24"
-    },
-    {
-      "$ref": "systems/lahrel_24"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 805
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "frequency modulators",
+      "max_value": 68,
+      "min_value": 68,
+      "value": 68
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

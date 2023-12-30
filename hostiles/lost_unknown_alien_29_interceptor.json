@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Lost Unknown Alien",
   "description": "",
   "group": "neutral",
+  "level": 29,
+  "rarity": "common",
   "head_stats": {
     "attack": 64113,
     "defense": 68690,
     "health": 30360
   },
-  "hostile_name": "Lost Unknown Alien",
-  "level": 29,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 12425,
-      "min_value": 12425,
-      "value": 12425
+      "$ref": "systems/eviloy_29"
+    },
+    {
+      "$ref": "systems/kalak_30"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 30360
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/eviloy_29"
-    },
-    {
-      "$ref": "systems/kalak_30"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 1838
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 12425,
+      "min_value": 12425,
+      "value": 12425
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

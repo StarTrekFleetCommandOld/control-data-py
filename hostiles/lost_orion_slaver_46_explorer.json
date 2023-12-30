@@ -1,15 +1,28 @@
 {
+  "hostile_name": "Lost Orion Slaver",
   "description": "",
   "group": "neutral",
+  "level": 46,
+  "rarity": "common",
   "head_stats": {
     "attack": 3472567,
     "defense": 1499960,
     "health": 5030666
   },
-  "hostile_name": "Lost Orion Slaver",
-  "level": 46,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/new_talax_45"
+    },
+    {
+      "$ref": "systems/valla_terna_45"
+    },
+    {
+      "$ref": "systems/kraydin_vori_48"
+    },
+    {
+      "$ref": "systems/ramar_45"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 5869112
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/new_talax_45"
-    },
-    {
-      "$ref": "systems/valla_terna_45"
-    },
-    {
-      "$ref": "systems/kraydin_vori_48"
-    },
-    {
-      "$ref": "systems/ramar_45"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -80,6 +74,12 @@
         "shield_pierce": 130232
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

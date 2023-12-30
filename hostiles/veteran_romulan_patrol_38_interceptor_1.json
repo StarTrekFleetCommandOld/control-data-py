@@ -1,44 +1,20 @@
 {
+  "hostile_name": "Veteran Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 38,
+  "rarity": "common",
   "head_stats": {
     "attack": 877275,
     "defense": 857600,
     "health": 262990
   },
-  "hostile_name": "Veteran Romulan Patrol",
-  "level": 38,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 601,
-      "min_value": 601,
-      "value": 601
+      "$ref": "systems/chaltok_39"
     },
     {
-      "type": "dilithium",
-      "max_value": 51,
-      "min_value": 51,
-      "value": 51
-    },
-    {
-      "type": "federation points",
-      "max_value": 468,
-      "min_value": 468,
-      "value": 468
-    },
-    {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "klingon points",
-      "max_value": 936,
-      "min_value": 936,
-      "value": 936
+      "$ref": "systems/dessica_39"
     }
   ],
   "ship_class": "interceptor",
@@ -61,19 +37,6 @@
       "shield_health": 222080
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/chaltok_39"
-    },
-    {
-      "$ref": "systems/dessica_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +99,43 @@
         "shield_pierce": 33121
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 601,
+      "min_value": 601,
+      "value": 601
+    },
+    {
+      "type": "dilithium",
+      "max_value": 51,
+      "min_value": 51,
+      "value": 51
+    },
+    {
+      "type": "federation points",
+      "max_value": 468,
+      "min_value": 468,
+      "value": 468
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 936,
+      "min_value": 936,
+      "value": 936
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

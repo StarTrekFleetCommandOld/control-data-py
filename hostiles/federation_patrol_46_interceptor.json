@@ -1,38 +1,26 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 46,
+  "rarity": "common",
   "head_stats": {
     "attack": 2090039,
     "defense": 1447520,
     "health": 4946612
   },
-  "hostile_name": "Federation Patrol",
-  "level": 46,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 510,
-      "min_value": 510,
-      "value": 510
+      "$ref": "systems/kor_ar_ka_44"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/sozin_46"
     },
     {
-      "type": "romulan points",
-      "max_value": 3040,
-      "min_value": 3040,
-      "value": 3040
+      "$ref": "systems/enten_45"
     },
     {
-      "type": "klingon points",
-      "max_value": 1520,
-      "min_value": 1520,
-      "value": 1520
+      "$ref": "systems/avofall_48"
     }
   ],
   "ship_class": "interceptor",
@@ -55,25 +43,6 @@
       "shield_health": 5182165
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/kor_ar_ka_44"
-    },
-    {
-      "$ref": "systems/sozin_46"
-    },
-    {
-      "$ref": "systems/enten_45"
-    },
-    {
-      "$ref": "systems/avofall_48"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +105,37 @@
         "shield_pierce": 47360
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 510,
+      "min_value": 510,
+      "value": 510
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 3040,
+      "min_value": 3040,
+      "value": 3040
+    },
+    {
+      "type": "klingon points",
+      "max_value": 1520,
+      "min_value": 1520,
+      "value": 1520
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

@@ -1,44 +1,26 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 29,
+  "rarity": "common",
   "head_stats": {
     "attack": 55930,
     "defense": 59500,
     "health": 33205
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 29,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1330,
-      "min_value": 1330,
-      "value": 1330
+      "$ref": "systems/ebisu_31"
     },
     {
-      "type": "tritanium",
-      "max_value": 103,
-      "min_value": 103,
-      "value": 103
+      "$ref": "systems/enthra_27"
     },
     {
-      "type": "federation points",
-      "max_value": 61,
-      "min_value": 61,
-      "value": 61
+      "$ref": "systems/nurnias_30"
     },
     {
-      "type": "romulan points",
-      "max_value": 31,
-      "min_value": 31,
-      "value": 31
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/morska_29"
     }
   ],
   "ship_class": "battleship",
@@ -61,25 +43,6 @@
       "shield_health": 28460
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ebisu_31"
-    },
-    {
-      "$ref": "systems/enthra_27"
-    },
-    {
-      "$ref": "systems/nurnias_30"
-    },
-    {
-      "$ref": "systems/morska_29"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -142,6 +105,43 @@
         "shield_pierce": 11025
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1330,
+      "min_value": 1330,
+      "value": 1330
+    },
+    {
+      "type": "tritanium",
+      "max_value": 103,
+      "min_value": 103,
+      "value": 103
+    },
+    {
+      "type": "federation points",
+      "max_value": 61,
+      "min_value": 61,
+      "value": 61
+    },
+    {
+      "type": "romulan points",
+      "max_value": 31,
+      "min_value": 31,
+      "value": 31
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

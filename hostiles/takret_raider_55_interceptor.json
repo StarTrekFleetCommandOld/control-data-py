@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Takret Raider",
   "description": "",
   "group": "neutral",
+  "level": 55,
+  "rarity": "common",
   "head_stats": {
     "attack": 49762613,
     "defense": 13852395,
     "health": 51124741
   },
-  "hostile_name": "Takret Raider",
-  "level": 55,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken interceptor parts",
-      "max_value": 458,
-      "min_value": 458,
-      "value": 458
+      "$ref": "systems/merius_53"
+    },
+    {
+      "$ref": "systems/isa_day_57"
+    },
+    {
+      "$ref": "systems/omana_54"
+    },
+    {
+      "$ref": "systems/sauchei_55"
+    },
+    {
+      "$ref": "systems/scanlon_54"
+    },
+    {
+      "$ref": "systems/bell_eu_55"
     }
   ],
   "ship_class": "interceptor",
@@ -37,31 +49,6 @@
       "shield_health": 51124741
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/merius_53"
-    },
-    {
-      "$ref": "systems/isa_day_57"
-    },
-    {
-      "$ref": "systems/omana_54"
-    },
-    {
-      "$ref": "systems/sauchei_55"
-    },
-    {
-      "$ref": "systems/scanlon_54"
-    },
-    {
-      "$ref": "systems/bell_eu_55"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 515166
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken interceptor parts",
+      "max_value": 458,
+      "min_value": 458,
+      "value": 458
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

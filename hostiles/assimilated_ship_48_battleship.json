@@ -1,26 +1,26 @@
 {
+  "hostile_name": "Assimilated Ship",
   "description": "",
   "group": "assimilated",
+  "level": 48,
+  "rarity": "common",
   "head_stats": {
     "attack": 4207332,
     "defense": 1465225,
     "health": 6732502
   },
-  "hostile_name": "Assimilated Ship",
-  "level": 48,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 760,
-      "min_value": 760,
-      "value": 760
+      "$ref": "systems/beta_sector_50"
     },
     {
-      "type": "pattern disruptor",
-      "max_value": 6,
-      "min_value": 6,
-      "value": 6
+      "$ref": "systems/weima_49"
+    },
+    {
+      "$ref": "systems/rek_sgar_49"
+    },
+    {
+      "$ref": "systems/corsen_49"
     }
   ],
   "ship_class": "battleship",
@@ -43,25 +43,6 @@
       "shield_health": 5770700
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/beta_sector_50"
-    },
-    {
-      "$ref": "systems/weima_49"
-    },
-    {
-      "$ref": "systems/rek_sgar_49"
-    },
-    {
-      "$ref": "systems/corsen_49"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +105,25 @@
         "shield_pierce": 266581
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 760,
+      "min_value": 760,
+      "value": 760
+    },
+    {
+      "type": "pattern disruptor",
+      "max_value": 6,
+      "min_value": 6,
+      "value": 6
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

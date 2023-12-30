@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Hirogen Hunter",
   "description": "",
   "group": "neutral",
+  "level": 32,
+  "rarity": "common",
   "head_stats": {
     "attack": 235464,
     "defense": 230595,
     "health": 63480
   },
-  "hostile_name": "Hirogen Hunter",
-  "level": 32,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1644,
-      "min_value": 1644,
-      "value": 1644
+      "$ref": "systems/miranil_33"
+    },
+    {
+      "$ref": "systems/kalak_30"
+    },
+    {
+      "$ref": "systems/antaria_33"
+    },
+    {
+      "$ref": "systems/ba_neth_32"
     }
   ],
   "ship_class": "interceptor",
@@ -37,25 +43,6 @@
       "shield_health": 63480
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/miranil_33"
-    },
-    {
-      "$ref": "systems/kalak_30"
-    },
-    {
-      "$ref": "systems/antaria_33"
-    },
-    {
-      "$ref": "systems/ba_neth_32"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -118,6 +105,19 @@
         "shield_pierce": 6169
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1644,
+      "min_value": 1644,
+      "value": 1644
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

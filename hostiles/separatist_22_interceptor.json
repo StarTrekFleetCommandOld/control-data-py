@@ -1,26 +1,23 @@
 {
+  "hostile_name": "Separatist \u21ef",
   "description": "",
   "group": "neutral",
+  "level": 22,
+  "rarity": "common",
   "head_stats": {
     "attack": 33710,
     "defense": 17505,
     "health": 14400
   },
-  "hostile_name": "Separatist \u21ef",
-  "level": 22,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 2904,
-      "min_value": 2904,
-      "value": 2904
+      "$ref": "systems/aesuri_22"
     },
     {
-      "type": "dilithium",
-      "max_value": 59,
-      "min_value": 59,
-      "value": 59
+      "$ref": "systems/kol_ran_22"
+    },
+    {
+      "$ref": "systems/rada_ban_22"
     }
   ],
   "ship_class": "interceptor",
@@ -43,22 +40,6 @@
       "shield_health": 14400
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/aesuri_22"
-    },
-    {
-      "$ref": "systems/kol_ran_22"
-    },
-    {
-      "$ref": "systems/rada_ban_22"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +102,25 @@
         "shield_pierce": 438
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 2904,
+      "min_value": 2904,
+      "value": 2904
+    },
+    {
+      "type": "dilithium",
+      "max_value": 59,
+      "min_value": 59,
+      "value": 59
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

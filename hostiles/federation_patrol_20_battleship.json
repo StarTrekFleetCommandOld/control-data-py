@@ -1,44 +1,20 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 20,
+  "rarity": "common",
   "head_stats": {
     "attack": 8892,
     "defense": 8605,
     "health": 3695
   },
-  "hostile_name": "Federation Patrol",
-  "level": 20,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 183,
-      "min_value": 183,
-      "value": 183
+      "$ref": "systems/zadiaoo_22"
     },
     {
-      "type": "dilithium",
-      "max_value": 63,
-      "min_value": 63,
-      "value": 63
-    },
-    {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "romulan points",
-      "max_value": 5,
-      "min_value": 5,
-      "value": 5
-    },
-    {
-      "type": "klingon points",
-      "max_value": 2,
-      "min_value": 2,
-      "value": 2
+      "$ref": "systems/voss_20"
     }
   ],
   "ship_class": "battleship",
@@ -61,19 +37,6 @@
       "shield_health": 3740
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/zadiaoo_22"
-    },
-    {
-      "$ref": "systems/voss_20"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +99,43 @@
         "shield_pierce": 1710
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 183,
+      "min_value": 183,
+      "value": 183
+    },
+    {
+      "type": "dilithium",
+      "max_value": 63,
+      "min_value": 63,
+      "value": 63
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 5,
+      "min_value": 5,
+      "value": 5
+    },
+    {
+      "type": "klingon points",
+      "max_value": 2,
+      "min_value": 2,
+      "value": 2
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

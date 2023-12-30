@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Bird of Prey Fighter \u21ef",
   "description": "",
   "group": "neutral",
+  "level": 33,
+  "rarity": "common",
   "head_stats": {
     "attack": 771081,
     "defense": 759970,
     "health": 218880
   },
-  "hostile_name": "Bird of Prey Fighter \u21ef",
-  "level": 33,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "mycelium spore",
-      "max_value": 220,
-      "min_value": 220,
-      "value": 220
+      "$ref": "systems/ordesia_33"
+    },
+    {
+      "$ref": "systems/ferrer_33"
+    },
+    {
+      "$ref": "systems/kavka_33"
     }
   ],
   "ship_class": "interceptor",
@@ -37,22 +40,6 @@
       "shield_health": 218880
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ordesia_33"
-    },
-    {
-      "$ref": "systems/ferrer_33"
-    },
-    {
-      "$ref": "systems/kavka_33"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 20330
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "mycelium spore",
+      "max_value": 220,
+      "min_value": 220,
+      "value": 220
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

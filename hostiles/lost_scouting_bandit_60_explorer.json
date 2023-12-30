@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Lost Scouting Bandit",
   "description": "",
   "group": "neutral",
+  "level": 60,
+  "rarity": "common",
   "head_stats": {
     "attack": 147167528,
     "defense": 58556080,
     "health": 195632746
   },
-  "hostile_name": "Lost Scouting Bandit",
-  "level": 60,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 10292,
-      "min_value": 10292,
-      "value": 10292
+      "$ref": "systems/sivis_60"
+    },
+    {
+      "$ref": "systems/jaslyn_60"
+    },
+    {
+      "$ref": "systems/tak_tak_58"
     }
   ],
   "ship_class": "explorer",
@@ -37,22 +40,6 @@
       "shield_health": 228238278
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/sivis_60"
-    },
-    {
-      "$ref": "systems/jaslyn_60"
-    },
-    {
-      "$ref": "systems/tak_tak_58"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 3786577
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 10292,
+      "min_value": 10292,
+      "value": 10292
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

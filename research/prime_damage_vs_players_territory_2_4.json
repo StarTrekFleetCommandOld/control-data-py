@@ -1,43 +1,43 @@
 {
+  "research_name": "Prime Damage Vs Players",
   "description": "Increased base damage against player ships.",
-  "img_url": "./assets/prime_damage_vs_players_territory_2_4.png",
+  "location": {
+    "column": 4,
+    "row": 2,
+    "tree": "territory"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 1.5
-      },
-      "increased_power": 40000,
       "level": 1,
-      "required_by": [],
+      "research_time": 728160,
+      "increased_power": 40000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 25
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 7600000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "prime particle",
             "value": 1000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 7600000
-          }
         ]
       },
-      "research_time": 728160
+      "bonus": {
+        "percentage": true,
+        "value": 1.5
+      }
     }
   ],
-  "location": {
-    "column": 4,
-    "row": 2,
-    "tree": "territory"
-  },
-  "research_name": "Prime Damage Vs Players"
+  "img_url": "./assets/prime_damage_vs_players_territory_2_4.png"
 }

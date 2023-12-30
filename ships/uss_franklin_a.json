@@ -1,75 +1,87 @@
 {
+  "ship_name": "USS FRANKLIN-A",
   "description": "After the unexpected return of the USS Franklin in 2263, Starfleet began to examine the many upgrades and jury-rigged fixes applied to the ancient vessel by Jaylah. At first, it was decided that the ship be scrapped for materials and a statue made in its honor, but then the Swarm returned.\nZenith\u2019s invasion changed everything. The Franklin was pressed back into service and upgraded by a mysterious Independent Commander to take the fight to the Swarm. They were victorious, if only barely.\nIt was only a matter of time before Zenith returned, so the decision was made to retrofit the Franklin and bring it up to the modern standard of Starfleet vessels. So it was, the USS Franklin-A was born.\nThe Franklin-A has been custom-built to combat the Swarm threat. Armed with a special volumetric wavelength amplifier, it is capable of disrupting an entire Swarm cluster in a matter of seconds by overwhelming their shared frequency.",
+  "ship_class": "explorer",
+  "grade": 4,
+  "faction": "augment",
+  "rarity": "uncommon",
   "blueprints": {
     "cost": 0,
     "quantity": 200
-  },
-  "faction": "augment",
-  "grade": 4,
-  "img_url": "./assets/uss_franklin_a.png",
-  "rarity": "uncommon",
-  "requirements": [
-    {
-      "name": "Shipyard",
-      "level": 35
-    }
-  ],
-  "scrap_info": {
-    "scrappable": false
   },
   "ship_ability": {
     "title": "Swarm Hunter",
     "description": "When fighting Swarm Hostiles or Swarm Armadas, The Franklin-A's Damage is increased by {value}",
     "percentage": true
   },
-  "ship_class": "explorer",
-  "ship_name": "USS FRANKLIN-A",
+  "scrap_info": {
+    "scrappable": false
+  },
+  "requirements": [
+    {
+      "name": "Shipyard",
+      "level": 35
+    }
+  ],
   "tiers": [
     {
+      "tier": 1,
       "build_time": 14256000,
+      "repair_time": 84000,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 7250,
               "armor_pierce": 1000,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 3120,
               "min_damage": 2600,
               "shield_pierce": 1000,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 7250,
               "armor_pierce": 1000,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 6240,
+              "min_damage": 5200,
+              "shield_pierce": 1000,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -80,24 +92,20 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 6240,
-              "min_damage": 5200,
-              "shield_pierce": 1000,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
-          "repair_cost": []
+          "quantity": 2
         },
         {
           "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 3500,
@@ -106,84 +114,44 @@
               "ship_increased_protected_cargo": 0
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
+          "img_url": "./assets/component_warp_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 100,
               "warp_distance": 75,
-              "warp_speed": 2.6
+              "warp_speed": 2.6,
+              "impulse_speed": 100
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Shield",
+          "img_url": "./assets/component_shield.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "shield_info": {
               "shield_deflection": 1201,
               "shield_health": 27000
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 300
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 30
-          },
-          {
-            "type": "gas",
-            "grade": 3,
-            "rarity": "common",
-            "value": 50
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 20000000
-          },
-          {
-            "type": "dilithium",
-            "value": 300000
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 35.0,
@@ -216,64 +184,125 @@
           "ship_xp": 29000
         }
       ],
-      "repair_time": 84000,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 20000000
+          },
+          {
+            "type": "dilithium",
+            "value": 300000
+          }
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 300,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 30,
+            "grade": 3,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "gas",
+            "value": 50,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 300000,
+      "repair_time": 163200,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 39000000
+              },
+              {
+                "type": "dilithium",
+                "value": 490000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 370,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 52,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 200,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 460
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 66000
+            },
+            {
+              "type": "dilithium",
+              "value": 8500
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 7722,
               "armor_pierce": 1134,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 3280,
               "min_damage": 2733,
               "shield_pierce": 1134,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 370
-              },
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 52
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 200
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 460
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -283,10 +312,34 @@
                 "type": "dilithium",
                 "value": 490000
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 370,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 52,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 200,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 460
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -296,16 +349,17 @@
               "type": "dilithium",
               "value": 8500
             }
-          ]
-        },
-        {
-          "name": "High-Impact Torpedo",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 7722,
               "armor_pierce": 1134,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 6560,
+              "min_damage": 5466,
+              "shield_pierce": 1134,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -316,66 +370,54 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 6560,
-              "min_damage": 5466,
-              "shield_pierce": 1134,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 39000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 62,
                 "grade": 3,
-                "rarity": "common",
-                "value": 370
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 21,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 52
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 34,
                 "grade": 3,
-                "rarity": "common",
-                "value": 200
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "Frequency Modulator Mk. II",
-                "value": 460
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 39000000
-              },
-              {
-                "type": "dilithium",
-                "value": 490000
+                "value": 85
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 66000
-            },
-            {
-              "type": "dilithium",
-              "value": 8500
+              "value": 87000
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 500,
@@ -384,71 +426,30 @@
               "ship_increased_protected_cargo": 250
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 62
-              },
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 21
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 34
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 85
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 39000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 87000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 80,
-              "warp_speed": 2.7
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 250000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 190,
                 "grade": 3,
-                "rarity": "common",
-                "value": 190
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 100,
                 "grade": 3,
-                "rarity": "common",
-                "value": 100
+                "rarity": "common"
               }
             ],
             "others": [
@@ -460,50 +461,51 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 240
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 250000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 23000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 80,
+              "warp_speed": 2.7,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1258,
-              "shield_health": 30921
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 79000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 250,
                 "grade": 3,
-                "rarity": "common",
-                "value": 250
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 31,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 31
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 130,
                 "grade": 3,
-                "rarity": "common",
-                "value": 130
+                "rarity": "common"
               }
             ],
             "others": [
@@ -511,16 +513,8 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 310
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 79000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -530,7 +524,14 @@
               "type": "dilithium",
               "value": 16000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1258,
+              "shield_health": 30921
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -564,65 +565,93 @@
           "level": 10,
           "ship_xp": 130000
         }
-      ],
-      "repair_time": 163200,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 600000,
+      "repair_time": 169680,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 90000000
+              },
+              {
+                "type": "dilithium",
+                "value": 940000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 630,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 24,
+                "grade": 3,
+                "rarity": "rare"
+              },
+              {
+                "type": "gas",
+                "value": 54,
+                "grade": 3,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 6400
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 170000
+            },
+            {
+              "type": "dilithium",
+              "value": 29000
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 8224,
               "armor_pierce": 1286,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 3448,
               "min_damage": 2873,
               "shield_pierce": 1286,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 630
-              },
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 24
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 54
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 6400
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -632,10 +661,34 @@
                 "type": "dilithium",
                 "value": 940000
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 630,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 24,
+                "grade": 3,
+                "rarity": "rare"
+              },
+              {
+                "type": "gas",
+                "value": 54,
+                "grade": 3,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 6400
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -645,16 +698,17 @@
               "type": "dilithium",
               "value": 29000
             }
-          ]
-        },
-        {
-          "name": "High-Impact Torpedo",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 8224,
               "armor_pierce": 1286,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 6896,
+              "min_damage": 5746,
+              "shield_pierce": 1286,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -665,66 +719,54 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 6896,
-              "min_damage": 5746,
-              "shield_pierce": 1286,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 90000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 110,
                 "grade": 3,
-                "rarity": "common",
-                "value": 630
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 9,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 24
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 9,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 54
+                "rarity": "uncommon"
               }
             ],
             "others": [
               {
                 "type": "Frequency Modulator Mk. II",
-                "value": 6400
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 90000000
-              },
-              {
-                "type": "dilithium",
-                "value": 940000
+                "value": 1200
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 170000
-            },
-            {
-              "type": "dilithium",
-              "value": 29000
+              "value": 230000
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 500,
@@ -733,71 +775,30 @@
               "ship_increased_protected_cargo": 250
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 110
-              },
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 9
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 9
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 1200
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 90000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 230000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 85,
-              "warp_speed": 2.8
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 470000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 320,
                 "grade": 3,
-                "rarity": "common",
-                "value": 320
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 27,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 27
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -809,50 +810,51 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 3300
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 470000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 81000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 85,
+              "warp_speed": 2.8,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1366,
-              "shield_health": 35412
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 180000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 420,
                 "grade": 3,
-                "rarity": "common",
-                "value": 420
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 14,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 14
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 36,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 36
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -860,16 +862,8 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 4300
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 180000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -879,7 +873,14 @@
               "type": "dilithium",
               "value": 56000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1366,
+              "shield_health": 35412
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -913,65 +914,93 @@
           "level": 15,
           "ship_xp": 318000
         }
-      ],
-      "repair_time": 169680,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 1000000,
+      "repair_time": 176880,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 140000000
+              },
+              {
+                "type": "dilithium",
+                "value": 2000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 940,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 36,
+                "grade": 3,
+                "rarity": "rare"
+              },
+              {
+                "type": "gas",
+                "value": 21,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 22000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 280000
+            },
+            {
+              "type": "dilithium",
+              "value": 38000
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 8759,
               "armor_pierce": 1459,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 3624,
               "min_damage": 3020,
               "shield_pierce": 1459,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 940
-              },
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 36
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 21
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 22000
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -981,10 +1010,34 @@
                 "type": "dilithium",
                 "value": 2000000
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 940,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 36,
+                "grade": 3,
+                "rarity": "rare"
+              },
+              {
+                "type": "gas",
+                "value": 21,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 22000
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -994,16 +1047,17 @@
               "type": "dilithium",
               "value": 38000
             }
-          ]
-        },
-        {
-          "name": "High-Impact Torpedo",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 8759,
               "armor_pierce": 1459,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 7248,
+              "min_damage": 6040,
+              "shield_pierce": 1459,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -1014,66 +1068,54 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 7248,
-              "min_damage": 6040,
-              "shield_pierce": 1459,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 140000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 160,
                 "grade": 3,
-                "rarity": "common",
-                "value": 940
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 14,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 36
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 4,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 21
+                "rarity": "rare"
               }
             ],
             "others": [
               {
                 "type": "Frequency Modulator Mk. II",
-                "value": 22000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 140000000
-              },
-              {
-                "type": "dilithium",
-                "value": 2000000
+                "value": 4000
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 280000
-            },
-            {
-              "type": "dilithium",
-              "value": 38000
+              "value": 370000
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 1110,
@@ -1082,71 +1124,30 @@
               "ship_increased_protected_cargo": 250
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 160
-              },
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 14
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 4
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 4000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 140000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 370000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 90,
-              "warp_speed": 3.0
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 1000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 470,
                 "grade": 3,
-                "rarity": "common",
-                "value": 470
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 11,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 11
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -1158,50 +1159,51 @@
                 "type": "Franklin Warp Relay Mk. II",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 1000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 110000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 90,
+              "warp_speed": 3.0,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1484,
-              "shield_health": 40555
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 280000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 620,
                 "grade": 3,
-                "rarity": "common",
-                "value": 620
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 22,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 22
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 14,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 14
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -1209,16 +1211,8 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 14000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 280000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1228,7 +1222,14 @@
               "type": "dilithium",
               "value": 74000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1484,
+              "shield_health": 40555
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1262,65 +1263,93 @@
           "level": 20,
           "ship_xp": 628000
         }
-      ],
-      "repair_time": 176880,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 1500000,
+      "repair_time": 184080,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 270000000
+              },
+              {
+                "type": "dilithium",
+                "value": 6000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 61,
+                "grade": 3,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 780,
+                "grade": 4,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 2700,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 57000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 440000
+            },
+            {
+              "type": "dilithium",
+              "value": 52000
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 9329,
               "armor_pierce": 1655,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 3809,
               "min_damage": 3174,
               "shield_pierce": 1655,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 61
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 780
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 2700
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 57000
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1330,10 +1359,34 @@
                 "type": "dilithium",
                 "value": 6000000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 61,
+                "grade": 3,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 780,
+                "grade": 4,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 2700,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 57000
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1343,16 +1396,17 @@
               "type": "dilithium",
               "value": 52000
             }
-          ]
-        },
-        {
-          "name": "High-Impact Torpedo",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 9329,
               "armor_pierce": 1655,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 7618,
+              "min_damage": 6348,
+              "shield_pierce": 1655,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -1363,66 +1417,48 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 7618,
-              "min_damage": 6348,
-              "shield_pierce": 1655,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 270000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 10,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 61
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 1100,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 780
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 2700
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "Frequency Modulator Mk. II",
-                "value": 57000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 270000000
-              },
-              {
-                "type": "dilithium",
-                "value": 6000000
+                "value": 11000
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 440000
-            },
-            {
-              "type": "dilithium",
-              "value": 52000
+              "value": 580000
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 1490,
@@ -1431,59 +1467,24 @@
               "ship_increased_protected_cargo": 250
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 10
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1100
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 11000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 270000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 580000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 100,
-              "warp_speed": 3.1
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 3000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 31,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 31
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -1495,50 +1496,51 @@
                 "type": "Franklin Warp Regulator Mk. II",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 3000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 140000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 100,
+              "warp_speed": 3.1,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1612,
-              "shield_health": 46445
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 530000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 41,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 41
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 180,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 180
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 1600,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1600
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1546,16 +1548,8 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 38000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 530000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1565,7 +1559,14 @@
               "type": "dilithium",
               "value": 100000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1612,
+              "shield_health": 46445
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1599,65 +1600,93 @@
           "level": 25,
           "ship_xp": 1083000
         }
-      ],
-      "repair_time": 184080,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 2000000,
+      "repair_time": 192000,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 370000000
+              },
+              {
+                "type": "dilithium",
+                "value": 9600000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 6100,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 3100,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 260,
+                "grade": 4,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 140000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 740000
+            },
+            {
+              "type": "dilithium",
+              "value": 80000
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 9936,
               "armor_pierce": 1877,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 4004,
               "min_damage": 3336,
               "shield_pierce": 1877,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "common",
-                "value": 6100
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 3100
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 260
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 140000
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1667,10 +1696,34 @@
                 "type": "dilithium",
                 "value": 9600000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 6100,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 3100,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 260,
+                "grade": 4,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 140000
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1680,16 +1733,17 @@
               "type": "dilithium",
               "value": 80000
             }
-          ]
-        },
-        {
-          "name": "High-Impact Torpedo",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 9936,
               "armor_pierce": 1877,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 8008,
+              "min_damage": 6672,
+              "shield_pierce": 1877,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -1700,66 +1754,48 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 8008,
-              "min_damage": 6672,
-              "shield_pierce": 1877,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 370000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1200,
                 "grade": 4,
-                "rarity": "common",
-                "value": 6100
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 540,
                 "grade": 4,
-                "rarity": "common",
-                "value": 3100
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 260
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "Frequency Modulator Mk. II",
-                "value": 140000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 370000000
-              },
-              {
-                "type": "dilithium",
-                "value": 9600000
+                "value": 26000
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 740000
-            },
-            {
-              "type": "dilithium",
-              "value": 80000
+              "value": 990000
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 2020,
@@ -1768,65 +1804,30 @@
               "ship_increased_protected_cargo": 250
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1200
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 540
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 26000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 370000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 990000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 105,
-              "warp_speed": 3.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 4800000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3700,
                 "grade": 4,
-                "rarity": "common",
-                "value": 3700
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 1600,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1600
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1838,50 +1839,51 @@
                 "type": "Franklin Warp Injector Mk. II",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 4800000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 220000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 105,
+              "warp_speed": 3.2,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1751,
-              "shield_health": 53190
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 740000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1200,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1200
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2200,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2200
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 53,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 53
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -1889,16 +1891,8 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 92000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 740000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1908,7 +1902,14 @@
               "type": "dilithium",
               "value": 150000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1751,
+              "shield_health": 53190
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1942,65 +1943,93 @@
           "level": 30,
           "ship_xp": 1640000
         }
-      ],
-      "repair_time": 192000,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 2500000,
+      "repair_time": 200640,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 610000000
+              },
+              {
+                "type": "dilithium",
+                "value": 21000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 2300,
+                "grade": 4,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 4200,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 350,
+                "grade": 4,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 320000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1300000
+            },
+            {
+              "type": "dilithium",
+              "value": 130000
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 10582,
               "armor_pierce": 2129,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 4209,
               "min_damage": 3507,
               "shield_pierce": 2129,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 2300
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 4200
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 350
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 320000
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2010,10 +2039,34 @@
                 "type": "dilithium",
                 "value": 21000000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 2300,
+                "grade": 4,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 4200,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 350,
+                "grade": 4,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 320000
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2023,16 +2076,17 @@
               "type": "dilithium",
               "value": 130000
             }
-          ]
-        },
-        {
-          "name": "High-Impact Torpedo",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 10582,
               "armor_pierce": 2129,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 8418,
+              "min_damage": 7014,
+              "shield_pierce": 2129,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -2043,66 +2097,54 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 8418,
-              "min_damage": 7014,
-              "shield_pierce": 2129,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 610000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 460,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2300
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 720,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4200
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 140,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 350
+                "rarity": "rare"
               }
             ],
             "others": [
               {
                 "type": "Frequency Modulator Mk. II",
-                "value": 320000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 610000000
-              },
-              {
-                "type": "dilithium",
-                "value": 21000000
+                "value": 59000
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 1300000
-            },
-            {
-              "type": "dilithium",
-              "value": 130000
+              "value": 1700000
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 2730,
@@ -2111,71 +2153,30 @@
               "ship_increased_protected_cargo": 250
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 460
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 720
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 140
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 59000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 610000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1700000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 110,
-              "warp_speed": 3.3
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 10000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1400,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1400
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 2200,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2200
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2187,50 +2188,51 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 170000
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 10000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 360000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 110,
+              "warp_speed": 3.3,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1902,
-              "shield_health": 60915
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1200000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 460,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 460
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 2900,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2900
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 210,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 210
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2238,16 +2240,8 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 210000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1200000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2257,7 +2251,14 @@
               "type": "dilithium",
               "value": 250000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1902,
+              "shield_health": 60915
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2291,65 +2292,93 @@
           "level": 35,
           "ship_xp": 2433000
         }
-      ],
-      "repair_time": 200640,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 3250000,
+      "repair_time": 210000,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 750000000
+              },
+              {
+                "type": "dilithium",
+                "value": 26000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 2300,
+                "grade": 4,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 4300,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 360,
+                "grade": 4,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 740000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 2300000
+            },
+            {
+              "type": "dilithium",
+              "value": 240000
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 11270,
               "armor_pierce": 2415,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 4424,
               "min_damage": 3686,
               "shield_pierce": 2415,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 2300
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 4300
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 360
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 740000
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2359,10 +2388,34 @@
                 "type": "dilithium",
                 "value": 26000000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 2300,
+                "grade": 4,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 4300,
+                "grade": 4,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 360,
+                "grade": 4,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 740000
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2372,16 +2425,17 @@
               "type": "dilithium",
               "value": 240000
             }
-          ]
-        },
-        {
-          "name": "High-Impact Torpedo",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 11270,
               "armor_pierce": 2415,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 8848,
+              "min_damage": 7372,
+              "shield_pierce": 2415,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -2392,66 +2446,54 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 8848,
-              "min_damage": 7372,
-              "shield_pierce": 2415,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 750000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 460,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2300
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 730,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4300
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 140,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 360
+                "rarity": "rare"
               }
             ],
             "others": [
               {
                 "type": "Frequency Modulator Mk. II",
-                "value": 740000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 750000000
-              },
-              {
-                "type": "dilithium",
-                "value": 26000000
+                "value": 140000
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 2300000
-            },
-            {
-              "type": "dilithium",
-              "value": 240000
+              "value": 3000000
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 4150,
@@ -2460,71 +2502,30 @@
               "ship_increased_protected_cargo": 250
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 460
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 730
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 140
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 140000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 750000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 3000000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 120,
-              "warp_speed": 3.4
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 13000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1400,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1400
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 2200,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2200
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2536,50 +2537,51 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 380000
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 13000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 650000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 120,
+              "warp_speed": 3.4,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2066,
-              "shield_health": 69762
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1500000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 460,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 460
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 2900,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2900
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 210,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 210
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2587,16 +2589,8 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 490000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1500000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2606,7 +2600,14 @@
               "type": "dilithium",
               "value": 450000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2066,
+              "shield_health": 69762
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2640,65 +2641,93 @@
           "level": 40,
           "ship_xp": 3445000
         }
-      ],
-      "repair_time": 210000,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 4000000,
+      "repair_time": 220080,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1200000000
+              },
+              {
+                "type": "dilithium",
+                "value": 38000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 120,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "gas",
+                "value": 720,
+                "grade": 4,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 4800,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 1800000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4000000
+            },
+            {
+              "type": "dilithium",
+              "value": 450000
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 12003,
               "armor_pierce": 2739,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 4650,
               "min_damage": 3874,
               "shield_pierce": 2739,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 120
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 720
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 4800
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 1800000
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2708,10 +2737,34 @@
                 "type": "dilithium",
                 "value": 38000000
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 120,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "gas",
+                "value": 720,
+                "grade": 4,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 4800,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 1800000
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2721,16 +2774,17 @@
               "type": "dilithium",
               "value": 450000
             }
-          ]
-        },
-        {
-          "name": "High-Impact Torpedo",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 12003,
               "armor_pierce": 2739,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 9300,
+              "min_damage": 7748,
+              "shield_pierce": 2739,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -2741,66 +2795,54 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 9300,
-              "min_damage": 7748,
-              "shield_pierce": 2739,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1200000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 46,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 120
+                "rarity": "epic"
               },
               {
                 "type": "gas",
+                "value": 140,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 720
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 830,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4800
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "Frequency Modulator Mk. II",
-                "value": 1800000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1200000000
-              },
-              {
-                "type": "dilithium",
-                "value": 38000000
+                "value": 330000
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 4000000
-            },
-            {
-              "type": "dilithium",
-              "value": 450000
+              "value": 5300000
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 5000,
@@ -2809,71 +2851,30 @@
               "ship_increased_protected_cargo": 250
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 46
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 140
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 830
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 330000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1200000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 5300000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 130,
-              "warp_speed": 3.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 19000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 430,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 430
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 2500,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2500
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2885,50 +2886,51 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 910000
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 19000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 1300000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 130,
+              "warp_speed": 3.6,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2244,
-              "shield_health": 79893
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2400000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 70,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 70
+                "rarity": "epic"
               },
               {
                 "type": "gas",
+                "value": 140,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 140
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 3300,
                 "grade": 4,
-                "rarity": "common",
-                "value": 3300
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2936,16 +2938,8 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 1200000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2400000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2955,7 +2949,14 @@
               "type": "dilithium",
               "value": 870000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2244,
+              "shield_health": 79893
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2989,65 +2990,93 @@
           "level": 45,
           "ship_xp": 4543000
         }
-      ],
-      "repair_time": 220080,
-      "tier": 9
+      ]
     },
     {
+      "tier": 10,
       "build_time": 5000000,
+      "repair_time": 230880,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2200000000
+              },
+              {
+                "type": "dilithium",
+                "value": 62000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 160,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "gas",
+                "value": 970,
+                "grade": 4,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 6500,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 3800000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 8100000
+            },
+            {
+              "type": "dilithium",
+              "value": 850000
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 12784,
               "armor_pierce": 3107,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 4888,
               "min_damage": 4072,
               "shield_pierce": 3107,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 160
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 970
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 6500
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 3800000
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3057,10 +3086,34 @@
                 "type": "dilithium",
                 "value": 62000000
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 160,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "gas",
+                "value": 970,
+                "grade": 4,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 6500,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 3800000
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3070,16 +3123,17 @@
               "type": "dilithium",
               "value": 850000
             }
-          ]
-        },
-        {
-          "name": "High-Impact Torpedo",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 12784,
               "armor_pierce": 3107,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 9776,
+              "min_damage": 8144,
+              "shield_pierce": 3107,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -3090,66 +3144,54 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 9776,
-              "min_damage": 8144,
-              "shield_pierce": 3107,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2200000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 63,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 160
+                "rarity": "epic"
               },
               {
                 "type": "gas",
+                "value": 190,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 970
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 1100,
                 "grade": 4,
-                "rarity": "common",
-                "value": 6500
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "Frequency Modulator Mk. II",
-                "value": 3800000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2200000000
-              },
-              {
-                "type": "dilithium",
-                "value": 62000000
+                "value": 710000
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 8100000
-            },
-            {
-              "type": "dilithium",
-              "value": 850000
+              "value": 11000000
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 1000,
@@ -3158,71 +3200,30 @@
               "ship_increased_protected_cargo": 0
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 63
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 190
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1100
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 710000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2200000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 11000000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 140,
-              "warp_speed": 3.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 31000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 580,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 580
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 3400,
                 "grade": 4,
-                "rarity": "common",
-                "value": 3400
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3234,50 +3235,51 @@
                 "type": "Franklin-A Alpha Retrofit Key",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 31000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 2300000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 140,
+              "warp_speed": 3.6,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2438,
-              "shield_health": 91496
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 4500000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 94,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 94
+                "rarity": "epic"
               },
               {
                 "type": "gas",
+                "value": 190,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 190
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 4500,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4500
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3285,16 +3287,8 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 2600000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 4500000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3304,7 +3298,14 @@
               "type": "dilithium",
               "value": 1600000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2438,
+              "shield_health": 91496
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3338,65 +3339,93 @@
           "level": 50,
           "ship_xp": 6040000
         }
-      ],
-      "repair_time": 230880,
-      "tier": 10
+      ]
     },
     {
+      "tier": 11,
       "build_time": 6500000,
+      "repair_time": 242400,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2800000000
+              },
+              {
+                "type": "dilithium",
+                "value": 74000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 160,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "gas",
+                "value": 180,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 6600,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 8700000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 9700000
+            },
+            {
+              "type": "dilithium",
+              "value": 1000000
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 13615,
               "armor_pierce": 3524,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 5138,
               "min_damage": 4280,
               "shield_pierce": 3524,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 160
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 180
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 6600
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 8700000
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3406,10 +3435,34 @@
                 "type": "dilithium",
                 "value": 74000000
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 160,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "gas",
+                "value": 180,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 6600,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 8700000
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3419,16 +3472,17 @@
               "type": "dilithium",
               "value": 1000000
             }
-          ]
-        },
-        {
-          "name": "High-Impact Torpedo",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 13615,
               "armor_pierce": 3524,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 10276,
+              "min_damage": 8560,
+              "shield_pierce": 3524,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -3439,66 +3493,54 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 10276,
-              "min_damage": 8560,
-              "shield_pierce": 3524,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2800000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 63,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 160
+                "rarity": "epic"
               },
               {
                 "type": "gas",
+                "value": 35,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 180
+                "rarity": "epic"
               },
               {
                 "type": "crystal",
+                "value": 1100,
                 "grade": 4,
-                "rarity": "common",
-                "value": 6600
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "Frequency Modulator Mk. II",
-                "value": 8700000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2800000000
-              },
-              {
-                "type": "dilithium",
-                "value": 74000000
+                "value": 1600000
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 9700000
-            },
-            {
-              "type": "dilithium",
-              "value": 1000000
+              "value": 13000000
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 1000,
@@ -3507,71 +3549,30 @@
               "ship_increased_protected_cargo": 0
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 63
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 35
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1100
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 1600000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2800000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 13000000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 150,
-              "warp_speed": 3.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 37000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 35,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 35
+                "rarity": "epic"
               },
               {
                 "type": "crystal",
+                "value": 3400,
                 "grade": 4,
-                "rarity": "common",
-                "value": 3400
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3583,50 +3584,51 @@
                 "type": "Franklin-A Delta Retrofit Key",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 37000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 2800000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 150,
+              "warp_speed": 3.6,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2648,
-              "shield_health": 104784
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5600000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 95,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 95
+                "rarity": "epic"
               },
               {
                 "type": "gas",
+                "value": 110,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 110
+                "rarity": "epic"
               },
               {
                 "type": "crystal",
+                "value": 4500,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4500
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3634,16 +3636,8 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 5800000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5600000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3653,7 +3647,14 @@
               "type": "dilithium",
               "value": 2000000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2648,
+              "shield_health": 104784
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3687,65 +3688,93 @@
           "level": 55,
           "ship_xp": 7848000
         }
-      ],
-      "repair_time": 242400,
-      "tier": 11
+      ]
     },
     {
+      "tier": 12,
       "build_time": 9000000,
+      "repair_time": 255000,
       "components": [
         {
           "name": "Phaser Beam",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3500000000
+              },
+              {
+                "type": "dilithium",
+                "value": 98000000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 160,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "gas",
+                "value": 180,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 6600,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 18000000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 12000000
+            },
+            {
+              "type": "dilithium",
+              "value": 1200000
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 14500,
               "armor_pierce": 4000,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
               "max_damage": 5400,
               "min_damage": 4500,
               "shield_pierce": 4000,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 160
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 180
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 6600
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 18000000
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3755,10 +3784,34 @@
                 "type": "dilithium",
                 "value": 98000000
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 160,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "gas",
+                "value": 180,
+                "grade": 4,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 6600,
+                "grade": 4,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "Frequency Modulator Mk. II",
+                "value": 18000000
+              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3768,16 +3821,17 @@
               "type": "dilithium",
               "value": 1200000
             }
-          ]
-        },
-        {
-          "name": "High-Impact Torpedo",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 14500,
               "armor_pierce": 4000,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 10800,
+              "min_damage": 9000,
+              "shield_pierce": 4000,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -3788,66 +3842,54 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 10800,
-              "min_damage": 9000,
-              "shield_pierce": 4000,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3500000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 64,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 160
+                "rarity": "epic"
               },
               {
                 "type": "gas",
+                "value": 35,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 180
+                "rarity": "epic"
               },
               {
                 "type": "crystal",
+                "value": 1100,
                 "grade": 4,
-                "rarity": "common",
-                "value": 6600
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "Frequency Modulator Mk. II",
-                "value": 18000000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3500000000
-              },
-              {
-                "type": "dilithium",
-                "value": 98000000
+                "value": 3400000
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 12000000
-            },
-            {
-              "type": "dilithium",
-              "value": 1200000
+              "value": 16000000
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 1000,
@@ -3856,71 +3898,30 @@
               "ship_increased_protected_cargo": 0
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 64
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 35
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1100
-              }
-            ],
-            "others": [
-              {
-                "type": "Frequency Modulator Mk. II",
-                "value": 3400000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3500000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 16000000
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 165,
-              "warp_speed": 3.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 49000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 35,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 35
+                "rarity": "epic"
               },
               {
                 "type": "crystal",
+                "value": 3400,
                 "grade": 4,
-                "rarity": "common",
-                "value": 3400
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3932,50 +3933,51 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 9600000
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 49000000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 3400000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 165,
+              "warp_speed": 3.6,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2876,
-              "shield_health": 120000
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7000000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 96,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 96
+                "rarity": "epic"
               },
               {
                 "type": "gas",
+                "value": 110,
                 "grade": 4,
-                "rarity": "epic",
-                "value": 110
+                "rarity": "epic"
               },
               {
                 "type": "crystal",
+                "value": 4500,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4500
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3983,16 +3985,8 @@
                 "type": "Frequency Modulator Mk. II",
                 "value": 12000000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 7000000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4002,7 +3996,14 @@
               "type": "dilithium",
               "value": 2300000
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2876,
+              "shield_health": 120000
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4036,9 +4037,8 @@
           "level": 60,
           "ship_xp": 10000000
         }
-      ],
-      "repair_time": 255000,
-      "tier": 12
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/uss_franklin_a.png"
 }

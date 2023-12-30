@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Jem'Hadar Cruiser",
   "description": "",
   "group": "dominion",
+  "level": 46,
+  "rarity": "common",
   "head_stats": {
     "attack": 3835397,
     "defense": 1742325,
     "health": 3814922
   },
-  "hostile_name": "Jem'Hadar Cruiser",
-  "level": 46,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "antimatter units",
-      "max_value": 405,
-      "min_value": 405,
-      "value": 405
+      "$ref": "systems/tediden_48"
+    },
+    {
+      "$ref": "systems/clohma_46"
+    },
+    {
+      "$ref": "systems/sagra_45"
+    },
+    {
+      "$ref": "systems/kurill_44"
     }
   ],
   "ship_class": "explorer",
@@ -37,25 +43,6 @@
       "shield_health": 5869112
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/tediden_48"
-    },
-    {
-      "$ref": "systems/clohma_46"
-    },
-    {
-      "$ref": "systems/sagra_45"
-    },
-    {
-      "$ref": "systems/kurill_44"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -87,6 +74,19 @@
         "shield_pierce": 130232
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "antimatter units",
+      "max_value": 405,
+      "min_value": 405,
+      "value": 405
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

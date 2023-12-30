@@ -1,44 +1,20 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 20,
+  "rarity": "common",
   "head_stats": {
     "attack": 9652,
     "defense": 9320,
     "health": 3530
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 20,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 755,
-      "min_value": 755,
-      "value": 755
+      "$ref": "systems/baryn_21"
     },
     {
-      "type": "tritanium",
-      "max_value": 66,
-      "min_value": 66,
-      "value": 66
-    },
-    {
-      "type": "federation points",
-      "max_value": 5,
-      "min_value": 5,
-      "value": 5
-    },
-    {
-      "type": "romulan points",
-      "max_value": 2,
-      "min_value": 2,
-      "value": 2
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/jonauer_22"
     }
   ],
   "ship_class": "interceptor",
@@ -61,19 +37,6 @@
       "shield_health": 3530
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/baryn_21"
-    },
-    {
-      "$ref": "systems/jonauer_22"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +99,43 @@
         "shield_pierce": 249
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 755,
+      "min_value": 755,
+      "value": 755
+    },
+    {
+      "type": "tritanium",
+      "max_value": 66,
+      "min_value": 66,
+      "value": 66
+    },
+    {
+      "type": "federation points",
+      "max_value": 5,
+      "min_value": 5,
+      "value": 5
+    },
+    {
+      "type": "romulan points",
+      "max_value": 2,
+      "min_value": 2,
+      "value": 2
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

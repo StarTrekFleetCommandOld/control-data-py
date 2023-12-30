@@ -1,20 +1,23 @@
 {
-  "description": "",
   "armada_name": "Formation Armada",
+  "description": "",
   "group": "neutral",
+  "level": 35,
+  "rarity": "uncommon",
   "head_stats": {
     "attack": 2005210,
     "defense": 1575000,
     "health": 15436608
   },
-  "level": 35,
-  "rarity": "uncommon",
-  "rewards": [
+  "systems": [
     {
-      "type": "Artifact Token",
-      "max_value": 2200,
-      "min_value": 2200,
-      "value": 2200
+      "$ref": "systems/dinaal_35"
+    },
+    {
+      "$ref": "systems/verto_peyl_35"
+    },
+    {
+      "$ref": "systems/antaria_33"
     }
   ],
   "stats": {
@@ -36,17 +39,6 @@
       "shield_health": 15429216
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dinaal_35"
-    },
-    {
-      "$ref": "systems/verto_peyl_35"
-    },
-    {
-      "$ref": "systems/antaria_33"
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -97,6 +89,14 @@
         "shield_pierce": 86320
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "Artifact Token",
+      "max_value": 2200,
+      "min_value": 2200,
+      "value": 2200
     }
   ]
 }

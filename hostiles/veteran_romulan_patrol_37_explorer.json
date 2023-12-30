@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Veteran Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 37,
+  "rarity": "common",
   "head_stats": {
     "attack": 525803,
     "defense": 534065,
     "health": 198700
   },
-  "hostile_name": "Veteran Romulan Patrol",
-  "level": 37,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/romii_38"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 173050
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/romii_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 20
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -71,6 +65,12 @@
         "shield_pierce": 21991
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 20
     }
   ]
 }

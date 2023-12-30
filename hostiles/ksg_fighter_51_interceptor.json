@@ -1,38 +1,26 @@
 {
+  "hostile_name": "KSG Fighter",
   "description": "",
   "group": "klingon",
+  "level": 51,
+  "rarity": "common",
   "head_stats": {
     "attack": 5755947,
     "defense": 3616020,
     "health": 12297483
   },
-  "hostile_name": "KSG Fighter",
-  "level": 51,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken interceptor parts",
-      "max_value": 164,
-      "min_value": 164,
-      "value": 164
+      "$ref": "systems/ghuh_50"
     },
     {
-      "type": "federation points",
-      "max_value": 14640,
-      "min_value": 14640,
-      "value": 14640
+      "$ref": "systems/lycrus_52"
     },
     {
-      "type": "romulan points",
-      "max_value": 7320,
-      "min_value": 7320,
-      "value": 7320
+      "$ref": "systems/ariadexa_52"
     },
     {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/tugh_li_wov_52"
     }
   ],
   "ship_class": "interceptor",
@@ -55,25 +43,6 @@
       "shield_health": 12297483
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ghuh_50"
-    },
-    {
-      "$ref": "systems/lycrus_52"
-    },
-    {
-      "$ref": "systems/ariadexa_52"
-    },
-    {
-      "$ref": "systems/tugh_li_wov_52"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +105,37 @@
         "shield_pierce": 88360
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken interceptor parts",
+      "max_value": 164,
+      "min_value": 164,
+      "value": 164
+    },
+    {
+      "type": "federation points",
+      "max_value": 14640,
+      "min_value": 14640,
+      "value": 14640
+    },
+    {
+      "type": "romulan points",
+      "max_value": 7320,
+      "min_value": 7320,
+      "value": 7320
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

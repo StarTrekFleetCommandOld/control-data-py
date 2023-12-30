@@ -1,54 +1,49 @@
 {
-  "description": "A massive industrial structure which processes the plasma harvested from Plasma Storms into a useful material.",
-  "bonuses": {
-    "bonus1": {
-      "name": "Col. Plasma Capacity",
-      "percentage": false
-    },
-    "bonus2": {
-      "name": "Mag. Plasma Capacity",
-      "percentage": false
-    },
-    "bonus3": {
-      "name": "Act. Plasma Capacity",
-      "percentage": false
-    }
-  },
   "building_name": "Plasma Processor",
+  "description": "A massive industrial structure which processes the plasma harvested from Plasma Storms into a useful material.",
   "levels": [
     {
-      "bonuses": {
-        "bonus1": 240000.0,
-        "bonus2": 0.0,
-        "bonus3": 0.0
-      },
+      "level": 1,
+      "build_time": 36720,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Assembly Chambers",
+          "level": 1
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
             "type": "subspace superconductor",
             "value": 12500
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 36720,
+      "bonuses": {
+        "bonus1": 240000.0,
+        "bonus2": 0.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 2,
+      "build_time": 75360,
       "increased_power": 0,
-      "level": 1,
       "requirements": [
         {
           "name": "Assembly Chambers",
+          "level": 2
+        },
+        {
+          "name": "Collisional Plasma Vault A",
           "level": 1
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 576000.0,
-        "bonus2": 0.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -59,30 +54,30 @@
             "type": "subspace superconductor",
             "value": 25025
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 75360,
+      "bonuses": {
+        "bonus1": 576000.0,
+        "bonus2": 0.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 3,
+      "build_time": 116880,
       "increased_power": 0,
-      "level": 2,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 2
+          "level": 3
         },
         {
-          "name": "Collisional Plasma Vault A",
-          "level": 1
+          "name": "Collisional Plasma Vault B",
+          "level": 2
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 700000.0,
-        "bonus2": 0.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -93,30 +88,30 @@
             "type": "subspace superconductor",
             "value": 37525
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 116880,
+      "bonuses": {
+        "bonus1": 700000.0,
+        "bonus2": 0.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 4,
+      "build_time": 149760,
       "increased_power": 0,
-      "level": 3,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 3
+          "level": 4
         },
         {
-          "name": "Collisional Plasma Vault B",
-          "level": 2
+          "name": "Collisional Plasma Vault A",
+          "level": 4
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1200000.0,
-        "bonus2": 288000.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -127,30 +122,34 @@
             "type": "subspace superconductor",
             "value": 50025
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 149760,
+      "bonuses": {
+        "bonus1": 1200000.0,
+        "bonus2": 288000.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 5,
+      "build_time": 192000,
       "increased_power": 0,
-      "level": 4,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 4
+          "level": 5
         },
         {
-          "name": "Collisional Plasma Vault A",
-          "level": 4
+          "name": "Collisional Plasma Vault B",
+          "level": 5
+        },
+        {
+          "name": "Magnetic Plasma Vault A",
+          "level": 1
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1404000.0,
-        "bonus2": 432000.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -165,34 +164,30 @@
             "type": "subspace superconductor",
             "value": 62550
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 192000,
+      "bonuses": {
+        "bonus1": 1404000.0,
+        "bonus2": 432000.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 6,
+      "build_time": 228000,
       "increased_power": 0,
-      "level": 5,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 5
+          "level": 6
         },
         {
-          "name": "Collisional Plasma Vault B",
-          "level": 5
-        },
-        {
-          "name": "Magnetic Plasma Vault A",
-          "level": 1
+          "name": "Collisional Plasma Vault A",
+          "level": 6
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1560000.0,
-        "bonus2": 1000000.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -207,30 +202,34 @@
             "type": "subspace superconductor",
             "value": 80050
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 228000,
+      "bonuses": {
+        "bonus1": 1560000.0,
+        "bonus2": 1000000.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 7,
+      "build_time": 300000,
       "increased_power": 0,
-      "level": 6,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 6
+          "level": 7
         },
         {
-          "name": "Collisional Plasma Vault A",
-          "level": 6
+          "name": "Collisional Plasma Vault B",
+          "level": 7
+        },
+        {
+          "name": "Magnetic Plasma Vault A",
+          "level": 3
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1944000.0,
-        "bonus2": 1248000.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -245,34 +244,30 @@
             "type": "subspace superconductor",
             "value": 97575
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 300000,
+      "bonuses": {
+        "bonus1": 1944000.0,
+        "bonus2": 1248000.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 8,
+      "build_time": 349680,
       "increased_power": 0,
-      "level": 7,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 7
+          "level": 8
         },
         {
-          "name": "Collisional Plasma Vault B",
-          "level": 7
-        },
-        {
-          "name": "Magnetic Plasma Vault A",
-          "level": 3
+          "name": "Magnetic Plasma Vault B",
+          "level": 1
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2268000.0,
-        "bonus2": 1512000.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -287,30 +282,30 @@
             "type": "subspace superconductor",
             "value": 115075
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 349680,
+      "bonuses": {
+        "bonus1": 2268000.0,
+        "bonus2": 1512000.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 9,
+      "build_time": 399360,
       "increased_power": 0,
-      "level": 8,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 8
+          "level": 9
         },
         {
-          "name": "Magnetic Plasma Vault B",
-          "level": 1
+          "name": "Collisional Plasma Vault B",
+          "level": 9
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2688000.0,
-        "bonus2": 2688000.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -325,30 +320,34 @@
             "type": "subspace superconductor",
             "value": 132600
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 399360,
+      "bonuses": {
+        "bonus1": 2688000.0,
+        "bonus2": 2688000.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 10,
+      "build_time": 452400,
       "increased_power": 0,
-      "level": 9,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 9
+          "level": 10
         },
         {
-          "name": "Collisional Plasma Vault B",
-          "level": 9
+          "name": "Collisional Plasma Vault A",
+          "level": 10
+        },
+        {
+          "name": "Magnetic Plasma Vault B",
+          "level": 3
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 3024000.0,
-        "bonus2": 3024000.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -363,34 +362,34 @@
             "type": "subspace superconductor",
             "value": 150100
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 452400,
+      "bonuses": {
+        "bonus1": 3024000.0,
+        "bonus2": 3024000.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 11,
+      "build_time": 520320,
       "increased_power": 0,
-      "level": 10,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 10
+          "level": 11
         },
         {
-          "name": "Collisional Plasma Vault A",
-          "level": 10
+          "name": "Collisional Plasma Vault B",
+          "level": 11
         },
         {
-          "name": "Magnetic Plasma Vault B",
-          "level": 3
+          "name": "Magnetic Plasma Vault A",
+          "level": 7
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 3480000.0,
-        "bonus2": 3480000.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -405,34 +404,30 @@
             "type": "subspace superconductor",
             "value": 172625
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 520320,
+      "bonuses": {
+        "bonus1": 3480000.0,
+        "bonus2": 3480000.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 12,
+      "build_time": 585600,
       "increased_power": 0,
-      "level": 11,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 11
+          "level": 12
         },
         {
-          "name": "Collisional Plasma Vault B",
-          "level": 11
-        },
-        {
-          "name": "Magnetic Plasma Vault A",
-          "level": 7
+          "name": "Magnetic Plasma Vault B",
+          "level": 5
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 3828000.0,
-        "bonus2": 3828000.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -447,30 +442,30 @@
             "type": "subspace superconductor",
             "value": 195125
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 585600,
+      "bonuses": {
+        "bonus1": 3828000.0,
+        "bonus2": 3828000.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 13,
+      "build_time": 669120,
       "increased_power": 0,
-      "level": 12,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 12
+          "level": 13
         },
         {
-          "name": "Magnetic Plasma Vault B",
-          "level": 5
+          "name": "Collisional Plasma Vault B",
+          "level": 13
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 4320000.0,
-        "bonus2": 4320000.0,
-        "bonus3": 0.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -485,30 +480,34 @@
             "type": "subspace superconductor",
             "value": 217650
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 669120,
+      "bonuses": {
+        "bonus1": 4320000.0,
+        "bonus2": 4320000.0,
+        "bonus3": 0.0
+      }
+    },
+    {
+      "level": 14,
+      "build_time": 695760,
       "increased_power": 0,
-      "level": 13,
       "requirements": [
         {
-          "name": "Assembly Chambers",
+          "name": "Collisional Plasma Vault A",
+          "level": 14
+        },
+        {
+          "name": "Magnetic Plasma Vault A",
           "level": 13
         },
         {
-          "name": "Collisional Plasma Vault B",
-          "level": 13
+          "name": "Magnetic Plasma Vault B",
+          "level": 8
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 4680000.0,
-        "bonus2": 4680000.0,
-        "bonus3": 384000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -523,34 +522,34 @@
             "type": "subspace superconductor",
             "value": 240175
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 695760,
+      "bonuses": {
+        "bonus1": 4680000.0,
+        "bonus2": 4680000.0,
+        "bonus3": 384000.0
+      }
+    },
+    {
+      "level": 15,
+      "build_time": 827760,
       "increased_power": 0,
-      "level": 14,
       "requirements": [
         {
-          "name": "Collisional Plasma Vault A",
-          "level": 14
+          "name": "Collisional Plasma Vault B",
+          "level": 15
         },
         {
           "name": "Magnetic Plasma Vault A",
-          "level": 13
+          "level": 15
         },
         {
-          "name": "Magnetic Plasma Vault B",
-          "level": 8
+          "name": "Active Plasma Vault A",
+          "level": 3
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 5394000.0,
-        "bonus2": 5394000.0,
-        "bonus3": 768000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -565,34 +564,34 @@
             "type": "subspace superconductor",
             "value": 262675
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 827760,
-      "increased_power": 0,
-      "level": 15,
-      "requirements": [
-        {
-          "name": "Collisional Plasma Vault B",
-          "level": 15
-        },
-        {
-          "name": "Magnetic Plasma Vault A",
-          "level": 15
-        },
-        {
-          "name": "Active Plasma Vault A",
-          "level": 3
-        }
-      ]
+      "bonuses": {
+        "bonus1": 5394000.0,
+        "bonus2": 5394000.0,
+        "bonus3": 768000.0
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 5952000.0,
-        "bonus2": 5952000.0,
-        "bonus3": 2000000.0
-      },
+      "level": 16,
+      "build_time": 864000,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Assembly Chambers",
+          "level": 16
+        },
+        {
+          "name": "Magnetic Plasma Vault B",
+          "level": 12
+        },
+        {
+          "name": "Active Plasma Vault B",
+          "level": 3
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -607,34 +606,30 @@
             "type": "subspace superconductor",
             "value": 285200
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 864000,
+      "bonuses": {
+        "bonus1": 5952000.0,
+        "bonus2": 5952000.0,
+        "bonus3": 2000000.0
+      }
+    },
+    {
+      "level": 17,
+      "build_time": 912000,
       "increased_power": 0,
-      "level": 16,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 16
+          "level": 17
         },
         {
-          "name": "Magnetic Plasma Vault B",
-          "level": 12
-        },
-        {
-          "name": "Active Plasma Vault B",
-          "level": 3
+          "name": "Active Plasma Vault A",
+          "level": 8
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 6720000.0,
-        "bonus2": 6720000.0,
-        "bonus3": 2288000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -649,30 +644,34 @@
             "type": "subspace superconductor",
             "value": 307700
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 912000,
-      "increased_power": 0,
-      "level": 17,
-      "requirements": [
-        {
-          "name": "Assembly Chambers",
-          "level": 17
-        },
-        {
-          "name": "Active Plasma Vault A",
-          "level": 8
-        }
-      ]
+      "bonuses": {
+        "bonus1": 6720000.0,
+        "bonus2": 6720000.0,
+        "bonus3": 2288000.0
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 7296000.0,
-        "bonus2": 7296000.0,
-        "bonus3": 2592000.0
-      },
+      "level": 18,
+      "build_time": 1001760,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Collisional Plasma Vault A",
+          "level": 18
+        },
+        {
+          "name": "Magnetic Plasma Vault B",
+          "level": 16
+        },
+        {
+          "name": "Active Plasma Vault B",
+          "level": 8
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -687,34 +686,34 @@
             "type": "subspace superconductor",
             "value": 335225
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1001760,
-      "increased_power": 0,
-      "level": 18,
-      "requirements": [
-        {
-          "name": "Collisional Plasma Vault A",
-          "level": 18
-        },
-        {
-          "name": "Magnetic Plasma Vault B",
-          "level": 16
-        },
-        {
-          "name": "Active Plasma Vault B",
-          "level": 8
-        }
-      ]
+      "bonuses": {
+        "bonus1": 7296000.0,
+        "bonus2": 7296000.0,
+        "bonus3": 2592000.0
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 8118000.0,
-        "bonus2": 8118000.0,
-        "bonus3": 4144000.0
-      },
+      "level": 19,
+      "build_time": 1094160,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Collisional Plasma Vault B",
+          "level": 19
+        },
+        {
+          "name": "Magnetic Plasma Vault A",
+          "level": 19
+        },
+        {
+          "name": "Active Plasma Vault A",
+          "level": 12
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -729,34 +728,34 @@
             "type": "subspace superconductor",
             "value": 362750
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1094160,
-      "increased_power": 0,
-      "level": 19,
-      "requirements": [
-        {
-          "name": "Collisional Plasma Vault B",
-          "level": 19
-        },
-        {
-          "name": "Magnetic Plasma Vault A",
-          "level": 19
-        },
-        {
-          "name": "Active Plasma Vault A",
-          "level": 12
-        }
-      ]
+      "bonuses": {
+        "bonus1": 8118000.0,
+        "bonus2": 8118000.0,
+        "bonus3": 4144000.0
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 8712000.0,
-        "bonus2": 8712000.0,
-        "bonus3": 4930000.0
-      },
+      "level": 20,
+      "build_time": 1175760,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Assembly Chambers",
+          "level": 20
+        },
+        {
+          "name": "Magnetic Plasma Vault B",
+          "level": 20
+        },
+        {
+          "name": "Active Plasma Vault B",
+          "level": 12
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -771,34 +770,30 @@
             "type": "subspace superconductor",
             "value": 390275
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1175760,
+      "bonuses": {
+        "bonus1": 8712000.0,
+        "bonus2": 8712000.0,
+        "bonus3": 4930000.0
+      }
+    },
+    {
+      "level": 21,
+      "build_time": 1258800,
       "increased_power": 0,
-      "level": 20,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 20
+          "level": 21
         },
         {
-          "name": "Magnetic Plasma Vault B",
-          "level": 20
-        },
-        {
-          "name": "Active Plasma Vault B",
-          "level": 12
+          "name": "Active Plasma Vault A",
+          "level": 15
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 9792000.0,
-        "bonus2": 9792000.0,
-        "bonus3": 5940000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -813,30 +808,34 @@
             "type": "subspace superconductor",
             "value": 417775
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1258800,
+      "bonuses": {
+        "bonus1": 9792000.0,
+        "bonus2": 9792000.0,
+        "bonus3": 5940000.0
+      }
+    },
+    {
+      "level": 22,
+      "build_time": 1332000,
       "increased_power": 0,
-      "level": 21,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 21
+          "level": 22
         },
         {
-          "name": "Active Plasma Vault A",
+          "name": "Collisional Plasma Vault A",
+          "level": 22
+        },
+        {
+          "name": "Active Plasma Vault B",
           "level": 15
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 10608000.0,
-        "bonus2": 10608000.0,
-        "bonus3": 6696000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -851,34 +850,34 @@
             "type": "subspace superconductor",
             "value": 445300
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1332000,
-      "increased_power": 0,
-      "level": 22,
-      "requirements": [
-        {
-          "name": "Assembly Chambers",
-          "level": 22
-        },
-        {
-          "name": "Collisional Plasma Vault A",
-          "level": 22
-        },
-        {
-          "name": "Active Plasma Vault B",
-          "level": 15
-        }
-      ]
+      "bonuses": {
+        "bonus1": 10608000.0,
+        "bonus2": 10608000.0,
+        "bonus3": 6696000.0
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 11760000.0,
-        "bonus2": 11760000.0,
-        "bonus3": 7488000.0
-      },
+      "level": 23,
+      "build_time": 1436160,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Collisional Plasma Vault B",
+          "level": 23
+        },
+        {
+          "name": "Magnetic Plasma Vault A",
+          "level": 23
+        },
+        {
+          "name": "Active Plasma Vault A",
+          "level": 19
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -893,34 +892,34 @@
             "type": "subspace superconductor",
             "value": 477825
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1436160,
-      "increased_power": 0,
-      "level": 23,
-      "requirements": [
-        {
-          "name": "Collisional Plasma Vault B",
-          "level": 23
-        },
-        {
-          "name": "Magnetic Plasma Vault A",
-          "level": 23
-        },
-        {
-          "name": "Active Plasma Vault A",
-          "level": 19
-        }
-      ]
+      "bonuses": {
+        "bonus1": 11760000.0,
+        "bonus2": 11760000.0,
+        "bonus3": 7488000.0
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 12600000.0,
-        "bonus2": 12600000.0,
-        "bonus3": 8712000.0
-      },
+      "level": 24,
+      "build_time": 1536240,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Assembly Chambers",
+          "level": 24
+        },
+        {
+          "name": "Magnetic Plasma Vault B",
+          "level": 24
+        },
+        {
+          "name": "Active Plasma Vault B",
+          "level": 19
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -935,34 +934,34 @@
             "type": "subspace superconductor",
             "value": 510350
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1536240,
+      "bonuses": {
+        "bonus1": 12600000.0,
+        "bonus2": 12600000.0,
+        "bonus3": 8712000.0
+      }
+    },
+    {
+      "level": 25,
+      "build_time": 1632000,
       "increased_power": 0,
-      "level": 24,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 24
+          "level": 25
         },
         {
-          "name": "Magnetic Plasma Vault B",
-          "level": 24
+          "name": "Active Plasma Vault A",
+          "level": 23
         },
         {
-          "name": "Active Plasma Vault B",
-          "level": 19
+          "name": "Salvage Yard",
+          "level": 25
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 14040000.0,
-        "bonus2": 14040000.0,
-        "bonus3": 10404000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -977,34 +976,34 @@
             "type": "subspace superconductor",
             "value": 542875
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1632000,
+      "bonuses": {
+        "bonus1": 14040000.0,
+        "bonus2": 14040000.0,
+        "bonus3": 10404000.0
+      }
+    },
+    {
+      "level": 26,
+      "build_time": 1680000,
       "increased_power": 0,
-      "level": 25,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 25
+          "level": 26
         },
         {
-          "name": "Active Plasma Vault A",
+          "name": "Collisional Plasma Vault A",
+          "level": 26
+        },
+        {
+          "name": "Active Plasma Vault B",
           "level": 23
-        },
-        {
-          "name": "Salvage Yard",
-          "level": 25
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 15120000.0,
-        "bonus2": 15120000.0,
-        "bonus3": 14700000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1019,34 +1018,34 @@
             "type": "subspace superconductor",
             "value": 575400
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1680000,
-      "increased_power": 0,
-      "level": 26,
-      "requirements": [
-        {
-          "name": "Assembly Chambers",
-          "level": 26
-        },
-        {
-          "name": "Collisional Plasma Vault A",
-          "level": 26
-        },
-        {
-          "name": "Active Plasma Vault B",
-          "level": 23
-        }
-      ]
+      "bonuses": {
+        "bonus1": 15120000.0,
+        "bonus2": 15120000.0,
+        "bonus3": 14700000.0
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 16650000.0,
-        "bonus2": 16650000.0,
-        "bonus3": 16200000.0
-      },
+      "level": 27,
+      "build_time": 1864800,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Collisional Plasma Vault B",
+          "level": 27
+        },
+        {
+          "name": "Magnetic Plasma Vault A",
+          "level": 27
+        },
+        {
+          "name": "Active Plasma Vault A",
+          "level": 27
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1061,34 +1060,34 @@
             "type": "subspace superconductor",
             "value": 607925
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1864800,
-      "increased_power": 0,
-      "level": 27,
-      "requirements": [
-        {
-          "name": "Collisional Plasma Vault B",
-          "level": 27
-        },
-        {
-          "name": "Magnetic Plasma Vault A",
-          "level": 27
-        },
-        {
-          "name": "Active Plasma Vault A",
-          "level": 27
-        }
-      ]
+      "bonuses": {
+        "bonus1": 16650000.0,
+        "bonus2": 16650000.0,
+        "bonus3": 16200000.0
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 17760000.0,
-        "bonus2": 17760000.0,
-        "bonus3": 17760000.0
-      },
+      "level": 28,
+      "build_time": 1920000,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Assembly Chambers",
+          "level": 28
+        },
+        {
+          "name": "Magnetic Plasma Vault B",
+          "level": 28
+        },
+        {
+          "name": "Active Plasma Vault B",
+          "level": 28
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1103,34 +1102,30 @@
             "type": "subspace superconductor",
             "value": 640450
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1920000,
+      "bonuses": {
+        "bonus1": 17760000.0,
+        "bonus2": 17760000.0,
+        "bonus3": 17760000.0
+      }
+    },
+    {
+      "level": 29,
+      "build_time": 2047200,
       "increased_power": 0,
-      "level": 28,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 28
+          "level": 29
         },
         {
-          "name": "Magnetic Plasma Vault B",
-          "level": 28
-        },
-        {
-          "name": "Active Plasma Vault B",
-          "level": 28
+          "name": "Salvage Yard",
+          "level": 29
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 19380000.0,
-        "bonus2": 19380000.0,
-        "bonus3": 19380000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1145,30 +1140,34 @@
             "type": "subspace superconductor",
             "value": 677975
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2047200,
+      "bonuses": {
+        "bonus1": 19380000.0,
+        "bonus2": 19380000.0,
+        "bonus3": 19380000.0
+      }
+    },
+    {
+      "level": 30,
+      "build_time": 2136000,
       "increased_power": 0,
-      "level": 29,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 29
+          "level": 30
         },
         {
-          "name": "Salvage Yard",
+          "name": "Collisional Plasma Vault A",
+          "level": 30
+        },
+        {
+          "name": "Active Plasma Vault A",
           "level": 29
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 20748000.0,
-        "bonus2": 20748000.0,
-        "bonus3": 20748000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1183,34 +1182,34 @@
             "type": "subspace superconductor",
             "value": 715500
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2136000,
+      "bonuses": {
+        "bonus1": 20748000.0,
+        "bonus2": 20748000.0,
+        "bonus3": 20748000.0
+      }
+    },
+    {
+      "level": 31,
+      "build_time": 2267760,
       "increased_power": 0,
-      "level": 30,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 30
+          "level": 31
         },
         {
-          "name": "Collisional Plasma Vault A",
-          "level": 30
+          "name": "Collisional Plasma Vault B",
+          "level": 31
         },
         {
-          "name": "Active Plasma Vault A",
-          "level": 29
+          "name": "Magnetic Plasma Vault A",
+          "level": 31
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 22698000.0,
-        "bonus2": 22698000.0,
-        "bonus3": 22698000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1225,34 +1224,34 @@
             "type": "subspace superconductor",
             "value": 753025
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2267760,
+      "bonuses": {
+        "bonus1": 22698000.0,
+        "bonus2": 22698000.0,
+        "bonus3": 22698000.0
+      }
+    },
+    {
+      "level": 32,
+      "build_time": 2379360,
       "increased_power": 0,
-      "level": 31,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 31
-        },
-        {
-          "name": "Collisional Plasma Vault B",
-          "level": 31
+          "level": 32
         },
         {
           "name": "Magnetic Plasma Vault A",
-          "level": 31
+          "level": 32
+        },
+        {
+          "name": "Salvage Yard",
+          "level": 32
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 24102000.0,
-        "bonus2": 24102000.0,
-        "bonus3": 24102000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1267,34 +1266,34 @@
             "type": "subspace superconductor",
             "value": 790550
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2379360,
+      "bonuses": {
+        "bonus1": 24102000.0,
+        "bonus2": 24102000.0,
+        "bonus3": 24102000.0
+      }
+    },
+    {
+      "level": 33,
+      "build_time": 2492640,
       "increased_power": 0,
-      "level": 32,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 32
+          "level": 33
         },
         {
-          "name": "Magnetic Plasma Vault A",
-          "level": 32
+          "name": "Active Plasma Vault A",
+          "level": 33
         },
         {
           "name": "Salvage Yard",
-          "level": 32
+          "level": 33
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26160000.0,
-        "bonus2": 26160000.0,
-        "bonus3": 26160000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1309,34 +1308,34 @@
             "type": "subspace superconductor",
             "value": 828075
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2492640,
+      "bonuses": {
+        "bonus1": 26160000.0,
+        "bonus2": 26160000.0,
+        "bonus3": 26160000.0
+      }
+    },
+    {
+      "level": 34,
+      "build_time": 2606400,
       "increased_power": 0,
-      "level": 33,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 33
+          "level": 34
         },
         {
-          "name": "Active Plasma Vault A",
-          "level": 33
+          "name": "Collisional Plasma Vault A",
+          "level": 34
         },
         {
-          "name": "Salvage Yard",
-          "level": 33
+          "name": "Active Plasma Vault B",
+          "level": 34
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 27600000.0,
-        "bonus2": 27600000.0,
-        "bonus3": 27600000.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1351,26 +1350,27 @@
             "type": "subspace superconductor",
             "value": 870600
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2606400,
-      "increased_power": 0,
-      "level": 34,
-      "requirements": [
-        {
-          "name": "Assembly Chambers",
-          "level": 34
-        },
-        {
-          "name": "Collisional Plasma Vault A",
-          "level": 34
-        },
-        {
-          "name": "Active Plasma Vault B",
-          "level": 34
-        }
-      ]
+      "bonuses": {
+        "bonus1": 27600000.0,
+        "bonus2": 27600000.0,
+        "bonus3": 27600000.0
+      }
     }
-  ]
+  ],
+  "bonuses": {
+    "bonus1": {
+      "name": "Col. Plasma Capacity",
+      "percentage": false
+    },
+    "bonus2": {
+      "name": "Mag. Plasma Capacity",
+      "percentage": false
+    },
+    "bonus3": {
+      "name": "Act. Plasma Capacity",
+      "percentage": false
+    }
+  }
 }

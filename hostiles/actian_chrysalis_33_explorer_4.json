@@ -1,38 +1,20 @@
 {
+  "hostile_name": "Actian Chrysalis",
   "description": "",
   "group": "actian",
+  "level": 33,
+  "rarity": "common",
   "head_stats": {
     "attack": 97632,
     "defense": 521695,
     "health": 27569002
   },
-  "hostile_name": "Actian Chrysalis",
-  "level": 33,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "actian venom",
-      "max_value": 125,
-      "min_value": 125,
-      "value": 125
+      "$ref": "systems/donscheel_33"
     },
     {
-      "type": "diluted nitrium",
-      "max_value": 1,
-      "min_value": 1,
-      "value": 1
-    },
-    {
-      "type": "chrysalis silk",
-      "max_value": 1,
-      "min_value": 1,
-      "value": 1
-    },
-    {
-      "type": "cytotoxin slime",
-      "max_value": 1,
-      "min_value": 1,
-      "value": 1
+      "$ref": "systems/azuras_33"
     }
   ],
   "ship_class": "explorer",
@@ -55,19 +37,6 @@
       "shield_health": 30877290
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/donscheel_33"
-    },
-    {
-      "$ref": "systems/azuras_33"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -192,6 +161,37 @@
         "shield_pierce": 2580
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "actian venom",
+      "max_value": 125,
+      "min_value": 125,
+      "value": 125
+    },
+    {
+      "type": "diluted nitrium",
+      "max_value": 1,
+      "min_value": 1,
+      "value": 1
+    },
+    {
+      "type": "chrysalis silk",
+      "max_value": 1,
+      "min_value": 1,
+      "value": 1
+    },
+    {
+      "type": "cytotoxin slime",
+      "max_value": 1,
+      "min_value": 1,
+      "value": 1
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

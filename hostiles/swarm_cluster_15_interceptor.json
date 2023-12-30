@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Swarm Cluster",
   "description": "",
   "group": "swarm",
+  "level": 15,
+  "rarity": "common",
   "head_stats": {
     "attack": 2994,
     "defense": 7250,
     "health": 4305
   },
-  "hostile_name": "Swarm Cluster",
-  "level": 15,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "frequency modulators",
-      "max_value": 1,
-      "min_value": 1,
-      "value": 1
+      "$ref": "systems/andvaris_15"
+    },
+    {
+      "$ref": "systems/kohva_15"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 0
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/andvaris_15"
-    },
-    {
-      "$ref": "systems/kohva_15"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 25
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 140
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "frequency modulators",
+      "max_value": 1,
+      "min_value": 1,
+      "value": 1
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 25
     }
   ]
 }

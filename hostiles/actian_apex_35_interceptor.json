@@ -1,20 +1,17 @@
 {
+  "hostile_name": "Actian Apex",
   "description": "",
   "group": "actian",
+  "level": 35,
+  "rarity": "common",
   "head_stats": {
     "attack": 212880,
     "defense": 1824595,
     "health": 80350728
   },
-  "hostile_name": "Actian Apex",
-  "level": 35,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "actian venom",
-      "max_value": 1299,
-      "min_value": 1299,
-      "value": 1299
+      "$ref": "systems/boneshi_35"
     }
   ],
   "ship_class": "interceptor",
@@ -37,16 +34,6 @@
       "shield_health": 89992836
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/boneshi_35"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -171,6 +158,19 @@
         "shield_pierce": 5604
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "actian venom",
+      "max_value": 1299,
+      "min_value": 1299,
+      "value": 1299
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

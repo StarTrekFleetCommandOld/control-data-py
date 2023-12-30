@@ -1,20 +1,26 @@
 {
-  "description": "",
   "armada_name": "Formation Armada",
+  "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "uncommon",
   "head_stats": {
     "attack": 13447074,
     "defense": 4805040,
     "health": 105602979
   },
-  "level": 40,
-  "rarity": "uncommon",
-  "rewards": [
+  "systems": [
     {
-      "type": "Artifact Token",
-      "max_value": 2400,
-      "min_value": 2400,
-      "value": 2400
+      "$ref": "systems/korzans_40"
+    },
+    {
+      "$ref": "systems/fsep_086_40"
+    },
+    {
+      "$ref": "systems/quarra_43"
+    },
+    {
+      "$ref": "systems/kraylor_40"
     }
   ],
   "stats": {
@@ -36,20 +42,6 @@
       "shield_health": 100754124
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/korzans_40"
-    },
-    {
-      "$ref": "systems/fsep_086_40"
-    },
-    {
-      "$ref": "systems/quarra_43"
-    },
-    {
-      "$ref": "systems/kraylor_40"
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -100,6 +92,14 @@
         "shield_pierce": 186771
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "Artifact Token",
+      "max_value": 2400,
+      "min_value": 2400,
+      "value": 2400
     }
   ]
 }

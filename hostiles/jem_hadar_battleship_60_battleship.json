@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Jem'Hadar Battleship",
   "description": "",
   "group": "dominion",
+  "level": 60,
+  "rarity": "common",
   "head_stats": {
     "attack": 146336095,
     "defense": 46235875,
     "health": 218595784
   },
-  "hostile_name": "Jem'Hadar Battleship",
-  "level": 60,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "antimatter units",
-      "max_value": 8056,
-      "min_value": 8056,
-      "value": 8056
+      "$ref": "systems/dal_vor_59"
+    },
+    {
+      "$ref": "systems/altero_60"
+    },
+    {
+      "$ref": "systems/lysis_60"
     }
   ],
   "ship_class": "battleship",
@@ -37,22 +40,6 @@
       "shield_health": 187367096
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dal_vor_59"
-    },
-    {
-      "$ref": "systems/altero_60"
-    },
-    {
-      "$ref": "systems/lysis_60"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 6191514
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "antimatter units",
+      "max_value": 8056,
+      "min_value": 8056,
+      "value": 8056
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

@@ -1,38 +1,23 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 42,
+  "rarity": "common",
   "head_stats": {
     "attack": 1985663,
     "defense": 897130,
     "health": 3101654
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 42,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 211,
-      "min_value": 211,
-      "value": 211
+      "$ref": "systems/draomn_44"
     },
     {
-      "type": "federation points",
-      "max_value": 1200,
-      "min_value": 1200,
-      "value": 1200
+      "$ref": "systems/delmas_42"
     },
     {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "klingon points",
-      "max_value": 2400,
-      "min_value": 2400,
-      "value": 2400
+      "$ref": "systems/inaara_43"
     }
   ],
   "ship_class": "explorer",
@@ -55,22 +40,6 @@
       "shield_health": 3327445
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/draomn_44"
-    },
-    {
-      "$ref": "systems/delmas_42"
-    },
-    {
-      "$ref": "systems/inaara_43"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +71,37 @@
         "shield_pierce": 85544
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 211,
+      "min_value": 211,
+      "value": 211
+    },
+    {
+      "type": "federation points",
+      "max_value": 1200,
+      "min_value": 1200,
+      "value": 1200
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 2400,
+      "min_value": 2400,
+      "value": 2400
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

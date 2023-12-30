@@ -1,15 +1,16 @@
 {
+  "research_name": "Prime Ablative Armor Plating",
   "description": "Increases Hull Health for all ships.",
-  "img_url": "./assets/prime_ablative_armor_plating_starbase_3_2.png",
+  "location": {
+    "column": 2,
+    "row": 3,
+    "tree": "starbase"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 3.5
-      },
-      "increased_power": 70000,
       "level": 1,
-      "required_by": [],
+      "research_time": 3900060,
+      "increased_power": 70000,
       "requirements": [
         {
           "name": "R&D Department",
@@ -20,28 +21,27 @@
           "level": 1
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 33400000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "prime medal",
             "value": 1000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 33400000
-          }
         ]
       },
-      "research_time": 3900060
+      "bonus": {
+        "percentage": true,
+        "value": 3.5
+      }
     }
   ],
-  "location": {
-    "column": 2,
-    "row": 3,
-    "tree": "starbase"
-  },
-  "research_name": "Prime Ablative Armor Plating"
+  "img_url": "./assets/prime_ablative_armor_plating_starbase_3_2.png"
 }

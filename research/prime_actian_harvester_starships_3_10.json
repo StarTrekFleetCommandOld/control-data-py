@@ -1,43 +1,43 @@
 {
+  "research_name": "Prime Actian Harvester",
   "description": "+100% Actian Venom rewards from Actian Hostiles with the Mantis",
-  "img_url": "./assets/prime_actian_harvester_starships_3_10.png",
+  "location": {
+    "column": 10,
+    "row": 3,
+    "tree": "starships"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 1.0
-      },
-      "increased_power": 30000,
       "level": 1,
-      "required_by": [],
+      "research_time": 60,
+      "increased_power": 30000,
       "requirements": [
         {
           "name": "Foundry",
           "level": 33
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 1
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "pure venom",
             "value": 1000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 1
-          }
         ]
       },
-      "research_time": 60
+      "bonus": {
+        "percentage": true,
+        "value": 1.0
+      }
     }
   ],
-  "location": {
-    "column": 10,
-    "row": 3,
-    "tree": "starships"
-  },
-  "research_name": "Prime Actian Harvester"
+  "img_url": "./assets/prime_actian_harvester_starships_3_10.png"
 }

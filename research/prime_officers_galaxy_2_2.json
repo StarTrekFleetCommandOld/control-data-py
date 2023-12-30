@@ -1,45 +1,45 @@
 {
+  "research_name": "Prime Officers",
   "description": "Increase base Attack, Defense, and Health for all Officers.",
-  "img_url": "./assets/prime_officers_galaxy_2_2.png",
+  "location": {
+    "column": 2,
+    "row": 2,
+    "tree": "galaxy"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 1.0
-      },
-      "increased_power": 23500,
       "level": 1,
-      "required_by": [],
+      "research_time": 317880,
+      "increased_power": 23500,
       "requirements": [
         {
           "name": "Warp Technology",
           "level": 1
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [
-          {
-            "type": "gas",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 100
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 1660000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "gas",
+            "value": 100,
+            "grade": 4,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
-      "research_time": 317880
+      "bonus": {
+        "percentage": true,
+        "value": 1.0
+      }
     }
   ],
-  "location": {
-    "column": 2,
-    "row": 2,
-    "tree": "galaxy"
-  },
-  "research_name": "Prime Officers"
+  "img_url": "./assets/prime_officers_galaxy_2_2.png"
 }

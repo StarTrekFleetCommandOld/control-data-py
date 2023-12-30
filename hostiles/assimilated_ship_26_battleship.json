@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Assimilated Ship",
   "description": "",
   "group": "neutral",
+  "level": 26,
+  "rarity": "common",
   "head_stats": {
     "attack": 21757,
     "defense": 22500,
     "health": 10500
   },
-  "hostile_name": "Assimilated Ship",
-  "level": 26,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/torana_27"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 9000
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/torana_27"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 4500
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

@@ -1,10 +1,14 @@
 {
-  "description": "Her Imperial Majesty, Mother of the Fatherland, Overlord of Vulcan \u2013 Emperor Philippa Georgiou carries many titles. They tell the story of her all-encompassing rule over the Terran Empire. Taking what she wants and crushing any who dare oppose her, the Emperor sees herself as untouchable, despite the many enemies she has made along the way.",
+  "officer_name": "Emperor Georgiou",
+  "description": "",
+  "class": "command",
+  "group": "terran empire",
+  "faction": "neutral",
+  "rarity": "rare",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Imperatorial Attack",
-      "bonus": "When attacking a player during a takeover, Emperor Georgiou decreases the Defense of all officers on the opponent's ship by {value}.\nDecreasing Defense may lead to a decrease in opponent's mitigation",
+      "bonus": "Decreases the opponent crew's Defense by a stacking {value} of base each round when attacking a player during a Takeover.",
       "percentage": true,
       "value": 1.0
     },
@@ -12,76 +16,9 @@
       "name": "Bombardment",
       "bonus": "When attacking a player on a capture node, at the start of each round, Emperor Georgiou increases the number of shots of each weapon by {value}. (cumulative)\nWeapon shots are rounded to the nearest whole number",
       "percentage": true
-    }
+    },
+    "below_decks_ability": null
   },
-  "class": "command",
-  "faction": "neutral",
-  "group": "terran empire",
-  "img_url": "./assets/emperor_georgiou.png",
-  "officer_name": "Emperor Georgiou",
-  "ranks": [
-    {
-      "name": "ENSIGN I",
-      "officer_ability_value": 0.17,
-      "rank_id": 1,
-      "requirements": {
-        "badges": 0,
-        "credits": 0,
-        "others": [],
-        "shards": 34,
-        "xp": 0
-      }
-    },
-    {
-      "name": "LIEUTENANT JG II",
-      "officer_ability_value": 0.25,
-      "rank_id": 2,
-      "requirements": {
-        "badges": 0,
-        "credits": 0,
-        "others": [],
-        "shards": 55,
-        "xp": 10000
-      }
-    },
-    {
-      "name": "LIEUTENANT III",
-      "officer_ability_value": 0.34,
-      "rank_id": 3,
-      "requirements": {
-        "badges": 0,
-        "credits": 1050,
-        "others": [],
-        "shards": 115,
-        "xp": 100000
-      }
-    },
-    {
-      "name": "LT. COMMANDER IV",
-      "officer_ability_value": 0.4,
-      "rank_id": 4,
-      "requirements": {
-        "badges": 1,
-        "credits": 4600,
-        "others": [],
-        "shards": 155,
-        "xp": 250000
-      }
-    },
-    {
-      "name": "COMMANDER V",
-      "officer_ability_value": 0.5,
-      "rank_id": 5,
-      "requirements": {
-        "badges": 2,
-        "credits": 11000,
-        "others": [],
-        "shards": 220,
-        "xp": 500000
-      }
-    }
-  ],
-  "rarity": "rare",
   "synergy": {
     "command": 0.15,
     "engineering": 0.25,
@@ -128,5 +65,68 @@
       ],
       "tier": 2
     }
-  ]
+  ],
+  "ranks": [
+    {
+      "rank_id": 1,
+      "name": "ENSIGN I",
+      "officer_ability_value": 0.17,
+      "requirements": {
+        "badges": 0,
+        "credits": 0,
+        "others": [],
+        "shards": 34,
+        "xp": 0
+      }
+    },
+    {
+      "rank_id": 2,
+      "name": "LIEUTENANT JG II",
+      "officer_ability_value": 0.25,
+      "requirements": {
+        "badges": 0,
+        "credits": 0,
+        "others": [],
+        "shards": 55,
+        "xp": 10000
+      }
+    },
+    {
+      "rank_id": 3,
+      "name": "LIEUTENANT III",
+      "officer_ability_value": 0.34,
+      "requirements": {
+        "badges": 0,
+        "credits": 1050,
+        "others": [],
+        "shards": 115,
+        "xp": 100000
+      }
+    },
+    {
+      "rank_id": 4,
+      "name": "LT. COMMANDER IV",
+      "officer_ability_value": 0.4,
+      "requirements": {
+        "badges": 1,
+        "credits": 4600,
+        "others": [],
+        "shards": 155,
+        "xp": 250000
+      }
+    },
+    {
+      "rank_id": 5,
+      "name": "COMMANDER V",
+      "officer_ability_value": 0.5,
+      "requirements": {
+        "badges": 2,
+        "credits": 11000,
+        "others": [],
+        "shards": 220,
+        "xp": 500000
+      }
+    }
+  ],
+  "img_url": "./assets/emperor_georgiou.png"
 }

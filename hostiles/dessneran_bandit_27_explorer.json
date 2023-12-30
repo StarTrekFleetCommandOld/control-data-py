@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Dessneran Bandit",
   "description": "",
   "group": "neutral",
+  "level": 27,
+  "rarity": "common",
   "head_stats": {
     "attack": 28560,
     "defense": 30000,
     "health": 15540
   },
-  "hostile_name": "Dessneran Bandit",
-  "level": 27,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 324,
-      "min_value": 324,
-      "value": 324
+      "$ref": "systems/hoeven_27"
+    },
+    {
+      "$ref": "systems/willenia_28"
+    },
+    {
+      "$ref": "systems/niawillen_28"
+    },
+    {
+      "$ref": "systems/seevor_28"
     }
   ],
   "ship_class": "explorer",
@@ -37,25 +43,6 @@
       "shield_health": 15960
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/hoeven_27"
-    },
-    {
-      "$ref": "systems/willenia_28"
-    },
-    {
-      "$ref": "systems/niawillen_28"
-    },
-    {
-      "$ref": "systems/seevor_28"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -87,6 +74,19 @@
         "shield_pierce": 1000
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 324,
+      "min_value": 324,
+      "value": 324
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

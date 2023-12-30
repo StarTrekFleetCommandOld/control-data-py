@@ -1,15 +1,31 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 36,
+  "rarity": "common",
   "head_stats": {
     "attack": 344482,
     "defense": 357660,
     "health": 109380
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 36,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/aerimea_35"
+    },
+    {
+      "$ref": "systems/nequencia_38"
+    },
+    {
+      "$ref": "systems/iapedes_36"
+    },
+    {
+      "$ref": "systems/d_deridex_38"
+    },
+    {
+      "$ref": "systems/stagnimea_38"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,28 +46,6 @@
       "shield_health": 77450
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/aerimea_35"
-    },
-    {
-      "$ref": "systems/nequencia_38"
-    },
-    {
-      "$ref": "systems/iapedes_36"
-    },
-    {
-      "$ref": "systems/d_deridex_38"
-    },
-    {
-      "$ref": "systems/stagnimea_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -114,6 +108,12 @@
         "shield_pierce": 76543
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

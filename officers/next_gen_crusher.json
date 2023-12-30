@@ -1,7 +1,11 @@
 {
-  "description": "Having lost her parents as a child, Beverly Crusher had to become independent at an early age, an independence that left her feeling isolated and unable to relate to children in her age group. She became inspired to pursue medicine after witnessing her grandmother use organic remedies to treat those wounded in the tragic disaster on the Arvada III colony.\nWhile she doesn\u2019t always think before speaking, Crusher has worked hard to become more conscious of others\u2019 feelings, knowing how important her bedside manner will be as she pursues her medical career. Now, as part of Starfleet, she has been identified as one of the most promising up-and-coming doctors in the academy.",
+  "officer_name": "Next Gen Crusher",
+  "description": "",
+  "class": "science",
+  "group": "next gen",
+  "faction": "federation",
+  "rarity": "common",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Hypospray",
       "bonus": "Next Gen Crusher increases the Health of all Officers on the ship by {value}.",
@@ -12,18 +16,20 @@
       "name": "The Dancing Doctor",
       "bonus": "During combat, Next Gen Crusher increases the effectiveness of the Captain Maneuver by {value}.",
       "percentage": true
-    }
+    },
+    "below_decks_ability": null
   },
-  "class": "science",
-  "faction": "federation",
-  "group": "next gen",
-  "img_url": "./assets/next_gen_crusher.png",
-  "officer_name": "Next Gen Crusher",
+  "synergy": {
+    "command": 0.1,
+    "engineering": 0.1,
+    "science": 0.05
+  },
+  "traits": [],
   "ranks": [
     {
+      "rank_id": 1,
       "name": "ENSIGN I",
       "officer_ability_value": 0.04,
-      "rank_id": 1,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -33,9 +39,9 @@
       }
     },
     {
+      "rank_id": 2,
       "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.06,
-      "rank_id": 2,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -45,9 +51,9 @@
       }
     },
     {
+      "rank_id": 3,
       "name": "LIEUTENANT III",
       "officer_ability_value": 0.08,
-      "rank_id": 3,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -57,9 +63,9 @@
       }
     },
     {
+      "rank_id": 4,
       "name": "LT. COMMANDER IV",
       "officer_ability_value": 0.1,
-      "rank_id": 4,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -69,9 +75,9 @@
       }
     },
     {
+      "rank_id": 5,
       "name": "COMMANDER V",
       "officer_ability_value": 0.12,
-      "rank_id": 5,
       "requirements": {
         "badges": 0,
         "credits": 1000,
@@ -81,11 +87,5 @@
       }
     }
   ],
-  "rarity": "common",
-  "synergy": {
-    "command": 0.1,
-    "engineering": 0.1,
-    "science": 0.05
-  },
-  "traits": []
+  "img_url": "./assets/next_gen_crusher.png"
 }

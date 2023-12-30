@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Swarm Cluster",
   "description": "",
   "group": "swarm",
+  "level": 49,
+  "rarity": "common",
   "head_stats": {
     "attack": 9273322,
     "defense": 11187355,
     "health": 55932160
   },
-  "hostile_name": "Swarm Cluster",
-  "level": 49,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/raxo_49"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 0
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/raxo_49"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -133,6 +127,12 @@
         "shield_pierce": 319617
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

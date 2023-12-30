@@ -1,43 +1,43 @@
 {
+  "research_name": "Prime Protected Cargo",
   "description": "Increase base Protected Cargo.",
-  "img_url": "./assets/prime_protected_cargo_territory_2_2.png",
+  "location": {
+    "column": 2,
+    "row": 2,
+    "tree": "territory"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 1.0
-      },
-      "increased_power": 40000,
       "level": 1,
-      "required_by": [],
+      "research_time": 728160,
+      "increased_power": 40000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 25
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 7600000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "prime particle",
             "value": 1000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 7600000
-          }
         ]
       },
-      "research_time": 728160
+      "bonus": {
+        "percentage": true,
+        "value": 1.0
+      }
     }
   ],
-  "location": {
-    "column": 2,
-    "row": 2,
-    "tree": "territory"
-  },
-  "research_name": "Prime Protected Cargo"
+  "img_url": "./assets/prime_protected_cargo_territory_2_2.png"
 }

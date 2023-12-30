@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Fearless Bandits",
   "description": "",
   "group": "neutral",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 495017,
     "defense": 471235,
     "health": 167780
   },
-  "hostile_name": "Fearless Bandits",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/yreva_41"
+    },
+    {
+      "$ref": "systems/singularity_apex_41"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 143810
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/yreva_41"
-    },
-    {
-      "$ref": "systems/singularity_apex_41"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +99,12 @@
         "shield_pierce": 94246
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

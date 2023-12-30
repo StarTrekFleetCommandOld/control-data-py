@@ -1,41 +1,53 @@
 {
+  "ship_name": "D'VOR FEESHA",
   "description": "Innovation is the first stage of profit.\nOr at least, that\u2019s what Quark would tell you. \nThe D\u2019Vor Feesha is a marvel of Ferengi engineering and entrepreneurial wits. Armed with a dx2000 mining laser, capable of cutting through up to twelve inches of solid rock, the Feesha is the next stage of evolution in galactic Latinum mining.\nDesigned, built and personally tested by Quark, this immaculate vessel comes equipped with tritanium hull plating, cutting edge recycling shields and a sleek design. Though it is reminiscent of its predecessor, make no mistake, the Feesha is an upgrade in every way. Quark guarantees it... And a Quark guarantee is Latinum in the bank!",
+  "ship_class": "survey",
+  "grade": 4,
+  "faction": "neutral",
+  "rarity": "epic",
   "blueprints": {
     "cost": 0,
     "quantity": 120
-  },
-  "faction": "neutral",
-  "grade": 4,
-  "img_url": "./assets/d_vor_feesha.png",
-  "rarity": "epic",
-  "requirements": [
-    {
-      "name": "Shipyard",
-      "level": 35
-    }
-  ],
-  "scrap_info": {
-    "scrappable": false
   },
   "ship_ability": {
     "title": "Concentrated Latinum Mining",
     "description": "+{value} Mining Bonus for Concentrated Latinum.",
     "percentage": true
   },
-  "ship_class": "survey",
-  "ship_name": "D'VOR FEESHA",
+  "scrap_info": {
+    "scrappable": false
+  },
+  "requirements": [
+    {
+      "name": "Shipyard",
+      "level": 35
+    }
+  ],
   "tiers": [
     {
+      "tier": 1,
       "build_time": 3672000,
+      "repair_time": 6960,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1568,
               "armor_pierce": 1176,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 5488,
+              "min_damage": 4490,
+              "shield_pierce": 1344,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -46,40 +58,36 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 5488,
-              "min_damage": 4490,
-              "shield_pierce": 1344,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
+          "img_url": "./assets/component_mining_laser.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "mining_laser_info": {
               "mining_bonus": 5.2
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 50000,
@@ -88,81 +96,60 @@
               "ship_increased_protected_cargo": 0
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
+          "img_url": "./assets/component_warp_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "warp_info": {
               "warp_distance": 40,
               "warp_speed": 3.5
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Shields",
+          "img_url": "./assets/component_shield.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "shield_info": {
               "shield_deflection": 2118,
               "shield_health": 31450
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "impulse_info": {
               "dodge": 1589,
               "impulse_speed": 105
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 620000
-          },
-          {
-            "type": "dilithium",
-            "value": 14850
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 350.0,
@@ -195,20 +182,68 @@
           "ship_xp": 29000
         }
       ],
-      "repair_time": 6960,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 620000
+          },
+          {
+            "type": "dilithium",
+            "value": 14850
+          }
+        ],
+        "materials": [],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 324000,
+      "repair_time": 7680,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 14938750
+              },
+              {
+                "type": "dilithium",
+                "value": 127181
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 510
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1458
+            },
+            {
+              "type": "dilithium",
+              "value": 69
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1665,
               "armor_pierce": 1249,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 5590,
+              "min_damage": 4574,
+              "shield_pierce": 1427,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -219,60 +254,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 5590,
-              "min_damage": 4574,
-              "shield_pierce": 1427,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 510
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 14938750
-              },
-              {
-                "type": "dilithium",
-                "value": 127181
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1458
-            },
-            {
-              "type": "dilithium",
-              "value": 69
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 5.3
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 729
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -282,10 +272,15 @@
                 "type": "dilithium",
                 "value": 164588
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 729
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -295,26 +290,18 @@
               "type": "dilithium",
               "value": 90
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 5.3
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 10000,
-              "increased_protected_cargo": 1500,
-              "ship_increased_cargo": 7000,
-              "ship_increased_protected_cargo": 500
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 729
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -324,10 +311,15 @@
                 "type": "dilithium",
                 "value": 149625
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 729
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -337,24 +329,21 @@
               "type": "dilithium",
               "value": 82
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 10000,
+              "increased_protected_cargo": 1500,
+              "ship_increased_cargo": 7000,
+              "ship_increased_protected_cargo": 500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 42,
-              "warp_speed": 3.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 656
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -364,10 +353,15 @@
                 "type": "dilithium",
                 "value": 112219
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 656
+              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -377,24 +371,19 @@
               "type": "dilithium",
               "value": 61
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 42,
+              "warp_speed": 3.6
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2258,
-              "shield_health": 31755
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 438
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -404,10 +393,15 @@
                 "type": "dilithium",
                 "value": 104738
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 438
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -417,24 +411,19 @@
               "type": "dilithium",
               "value": 57
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2258,
+              "shield_health": 31755
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 1694,
-              "impulse_speed": 105
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 438
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -444,10 +433,15 @@
                 "type": "dilithium",
                 "value": 89775
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 438
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -457,7 +451,14 @@
               "type": "dilithium",
               "value": 49
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 1694,
+              "impulse_speed": 105
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -491,21 +492,55 @@
           "level": 10,
           "ship_xp": 130000
         }
-      ],
-      "repair_time": 7680,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 648000,
+      "repair_time": 8820,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 25370800
+              },
+              {
+                "type": "dilithium",
+                "value": 309400
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 801
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3600
+            },
+            {
+              "type": "dilithium",
+              "value": 730
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1823,
               "armor_pierce": 1367,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 5734,
+              "min_damage": 4692,
+              "shield_pierce": 1563,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -516,60 +551,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 5734,
-              "min_damage": 4692,
-              "shield_pierce": 1563,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 801
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 25370800
-              },
-              {
-                "type": "dilithium",
-                "value": 309400
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 3600
-            },
-            {
-              "type": "dilithium",
-              "value": 730
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 5.4
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1145
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -579,10 +569,15 @@
                 "type": "dilithium",
                 "value": 400400
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1145
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -592,26 +587,18 @@
               "type": "dilithium",
               "value": 945
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 5.4
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 12000,
-              "increased_protected_cargo": 1700,
-              "ship_increased_cargo": 7000,
-              "ship_increased_protected_cargo": 500
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1145
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -621,10 +608,15 @@
                 "type": "dilithium",
                 "value": 364000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1145
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -634,24 +626,21 @@
               "type": "dilithium",
               "value": 859
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 12000,
+              "increased_protected_cargo": 1700,
+              "ship_increased_cargo": 7000,
+              "ship_increased_protected_cargo": 500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 46,
-              "warp_speed": 3.7
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1030
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -661,10 +650,15 @@
                 "type": "dilithium",
                 "value": 273000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1030
+              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -674,24 +668,19 @@
               "type": "dilithium",
               "value": 644
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 46,
+              "warp_speed": 3.7
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2427,
-              "shield_health": 32191
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 687
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -701,10 +690,15 @@
                 "type": "dilithium",
                 "value": 254800
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 687
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -714,24 +708,19 @@
               "type": "dilithium",
               "value": 601
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2427,
+              "shield_health": 32191
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 1821,
-              "impulse_speed": 105
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 687
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -741,10 +730,15 @@
                 "type": "dilithium",
                 "value": 218400
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 687
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -754,7 +748,14 @@
               "type": "dilithium",
               "value": 515
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 1821,
+              "impulse_speed": 105
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -788,21 +789,55 @@
           "level": 15,
           "ship_xp": 318000
         }
-      ],
-      "repair_time": 8820,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 1080000,
+      "repair_time": 9900,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 37638000
+              },
+              {
+                "type": "dilithium",
+                "value": 459000
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1269
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4406
+            },
+            {
+              "type": "dilithium",
+              "value": 899
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2091,
               "armor_pierce": 1568,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 5973,
+              "min_damage": 4890,
+              "shield_pierce": 1792,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -813,60 +848,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 5973,
-              "min_damage": 4890,
-              "shield_pierce": 1792,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1269
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 37638000
-              },
-              {
-                "type": "dilithium",
-                "value": 459000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 4406
-            },
-            {
-              "type": "dilithium",
-              "value": 899
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 5.5
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1813
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -876,10 +866,15 @@
                 "type": "dilithium",
                 "value": 594000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1813
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -889,26 +884,18 @@
               "type": "dilithium",
               "value": 1163
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 5.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 14400,
-              "increased_protected_cargo": 2100,
-              "ship_increased_cargo": 7000,
-              "ship_increased_protected_cargo": 500
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1813
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -918,10 +905,15 @@
                 "type": "dilithium",
                 "value": 540000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1813
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -931,24 +923,21 @@
               "type": "dilithium",
               "value": 1057
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 14400,
+              "increased_protected_cargo": 2100,
+              "ship_increased_cargo": 7000,
+              "ship_increased_protected_cargo": 500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 53,
-              "warp_speed": 3.8
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1631
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -958,10 +947,15 @@
                 "type": "dilithium",
                 "value": 405000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1631
+              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -971,24 +965,19 @@
               "type": "dilithium",
               "value": 793
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 53,
+              "warp_speed": 3.8
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2707,
-              "shield_health": 32913
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1088
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -998,10 +987,15 @@
                 "type": "dilithium",
                 "value": 378000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1088
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1011,24 +1005,19 @@
               "type": "dilithium",
               "value": 740
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2707,
+              "shield_health": 32913
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 2031,
-              "impulse_speed": 107
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1088
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1038,10 +1027,15 @@
                 "type": "dilithium",
                 "value": 324000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1088
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1051,7 +1045,14 @@
               "type": "dilithium",
               "value": 634
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 2031,
+              "impulse_speed": 107
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1085,21 +1086,55 @@
           "level": 20,
           "ship_xp": 628000
         }
-      ],
-      "repair_time": 9900,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 1620000,
+      "repair_time": 11820,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 63707840
+              },
+              {
+                "type": "dilithium",
+                "value": 1820224
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1576
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 125561
+            },
+            {
+              "type": "dilithium",
+              "value": 31586
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2577,
               "armor_pierce": 1933,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 6425,
+              "min_damage": 5263,
+              "shield_pierce": 2209,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -1110,60 +1145,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 6425,
-              "min_damage": 5263,
-              "shield_pierce": 2209,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1576
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 63707840
-              },
-              {
-                "type": "dilithium",
-                "value": 1820224
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 125561
-            },
-            {
-              "type": "dilithium",
-              "value": 31586
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 5.6
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 2252
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1173,10 +1163,15 @@
                 "type": "dilithium",
                 "value": 2355584
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 2252
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1186,26 +1181,18 @@
               "type": "dilithium",
               "value": 40876
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 5.6
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 86400,
-              "increased_protected_cargo": 10400,
-              "ship_increased_cargo": 7000,
-              "ship_increased_protected_cargo": 500
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 2252
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1215,10 +1202,15 @@
                 "type": "dilithium",
                 "value": 2141440
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 2252
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1228,17 +1220,31 @@
               "type": "dilithium",
               "value": 37160
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 86400,
+              "increased_protected_cargo": 10400,
+              "ship_increased_cargo": 7000,
+              "ship_increased_protected_cargo": 500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 77,
-              "warp_speed": 4.0
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 56212800
+              },
+              {
+                "type": "dilithium",
+                "value": 1606080
+              }
+            ],
             "materials": [],
             "others": [
               {
@@ -1249,20 +1255,8 @@
                 "type": "D'Vor Feesha Parts",
                 "value": 2027
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 56212800
-              },
-              {
-                "type": "dilithium",
-                "value": 1606080
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1272,24 +1266,19 @@
               "type": "dilithium",
               "value": 27870
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 77,
+              "warp_speed": 4.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 3267,
-              "shield_health": 34259
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1351
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1299,10 +1288,15 @@
                 "type": "dilithium",
                 "value": 1499008
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1351
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1312,24 +1306,19 @@
               "type": "dilithium",
               "value": 26012
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 3267,
+              "shield_health": 34259
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 2451,
-              "impulse_speed": 107
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 1351
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1339,10 +1328,15 @@
                 "type": "dilithium",
                 "value": 1284864
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 1351
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1352,7 +1346,14 @@
               "type": "dilithium",
               "value": 22296
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 2451,
+              "impulse_speed": 107
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1386,21 +1387,55 @@
           "level": 25,
           "ship_xp": 1083000
         }
-      ],
-      "repair_time": 11820,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 2160000,
+      "repair_time": 13920,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 126185220
+              },
+              {
+                "type": "dilithium",
+                "value": 4729536
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 5513
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 210568
+            },
+            {
+              "type": "dilithium",
+              "value": 63633
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 3701,
               "armor_pierce": 2776,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 7466,
+              "min_damage": 6110,
+              "shield_pierce": 3173,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -1411,60 +1446,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 7466,
-              "min_damage": 6110,
-              "shield_pierce": 3173,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 5513
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 126185220
-              },
-              {
-                "type": "dilithium",
-                "value": 4729536
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 210568
-            },
-            {
-              "type": "dilithium",
-              "value": 63633
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 5.7
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 7875
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1474,10 +1464,15 @@
                 "type": "dilithium",
                 "value": 6120576
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 7875
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1487,26 +1482,18 @@
               "type": "dilithium",
               "value": 82349
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 5.7
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 34560,
-              "increased_protected_cargo": 3500,
-              "ship_increased_cargo": 7000,
-              "ship_increased_protected_cargo": 500
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 7875
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1516,10 +1503,15 @@
                 "type": "dilithium",
                 "value": 5564160
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 7875
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1529,24 +1521,21 @@
               "type": "dilithium",
               "value": 74862
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 34560,
+              "increased_protected_cargo": 3500,
+              "ship_increased_cargo": 7000,
+              "ship_increased_protected_cargo": 500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 88,
-              "warp_speed": 4.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 7088
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1556,10 +1545,15 @@
                 "type": "dilithium",
                 "value": 4173120
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 7088
+              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1569,24 +1563,19 @@
               "type": "dilithium",
               "value": 56147
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 88,
+              "warp_speed": 4.2
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 4480,
-              "shield_health": 37360
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 4725
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1596,10 +1585,15 @@
                 "type": "dilithium",
                 "value": 3894912
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 4725
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1609,24 +1603,19 @@
               "type": "dilithium",
               "value": 52404
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 4480,
+              "shield_health": 37360
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 3361,
-              "impulse_speed": 107
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 4725
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1636,10 +1625,15 @@
                 "type": "dilithium",
                 "value": 3338496
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 4725
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1649,7 +1643,14 @@
               "type": "dilithium",
               "value": 44917
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 3361,
+              "impulse_speed": 107
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1683,21 +1684,55 @@
           "level": 30,
           "ship_xp": 1640000
         }
-      ],
-      "repair_time": 13920,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 2700000,
+      "repair_time": 16620,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 325238900
+              },
+              {
+                "type": "dilithium",
+                "value": 9529520
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 6840
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 389382
+            },
+            {
+              "type": "dilithium",
+              "value": 101488
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 5610,
               "armor_pierce": 4207,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 9251,
+              "min_damage": 7566,
+              "shield_pierce": 4809,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -1708,60 +1743,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 9251,
-              "min_damage": 7566,
-              "shield_pierce": 4809,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 6840
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 325238900
-              },
-              {
-                "type": "dilithium",
-                "value": 9529520
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 389382
-            },
-            {
-              "type": "dilithium",
-              "value": 101488
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 5.8
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 9771
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1771,10 +1761,15 @@
                 "type": "dilithium",
                 "value": 12332320
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 9771
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1784,26 +1779,18 @@
               "type": "dilithium",
               "value": 131338
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 5.8
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 41472,
-              "increased_protected_cargo": 4500,
-              "ship_increased_cargo": 7000,
-              "ship_increased_protected_cargo": 500
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 9771
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1813,10 +1800,15 @@
                 "type": "dilithium",
                 "value": 11211200
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 9771
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1826,24 +1818,21 @@
               "type": "dilithium",
               "value": 119398
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 41472,
+              "increased_protected_cargo": 4500,
+              "ship_increased_cargo": 7000,
+              "ship_increased_protected_cargo": 500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 121,
-              "warp_speed": 4.4
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 8794
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1853,10 +1842,15 @@
                 "type": "dilithium",
                 "value": 8408400
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 8794
+              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1866,24 +1860,19 @@
               "type": "dilithium",
               "value": 89549
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 121,
+              "warp_speed": 4.4
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 6603,
-              "shield_health": 42679
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 5863
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1893,10 +1882,15 @@
                 "type": "dilithium",
                 "value": 7847840
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 5863
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1906,24 +1900,19 @@
               "type": "dilithium",
               "value": 83579
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 6603,
+              "shield_health": 42679
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 4953,
-              "impulse_speed": 107
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 5863
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1933,10 +1922,15 @@
                 "type": "dilithium",
                 "value": 6726720
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 5863
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1946,7 +1940,14 @@
               "type": "dilithium",
               "value": 71639
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 4953,
+              "impulse_speed": 107
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1980,21 +1981,55 @@
           "level": 35,
           "ship_xp": 2433000
         }
-      ],
-      "repair_time": 16620,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 3510000,
+      "repair_time": 19320,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 679537600
+              },
+              {
+                "type": "dilithium",
+                "value": 19069920
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 8633
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 729091
+            },
+            {
+              "type": "dilithium",
+              "value": 145747
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 8430,
               "armor_pierce": 6323,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 11895,
+              "min_damage": 9730,
+              "shield_pierce": 7226,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2005,60 +2040,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 11895,
-              "min_damage": 9730,
-              "shield_pierce": 7226,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 8633
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 679537600
-              },
-              {
-                "type": "dilithium",
-                "value": 19069920
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 729091
-            },
-            {
-              "type": "dilithium",
-              "value": 145747
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 5.9
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 12333
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2068,10 +2058,15 @@
                 "type": "dilithium",
                 "value": 24678720
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 12333
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2081,26 +2076,18 @@
               "type": "dilithium",
               "value": 188614
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 5.9
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 49766,
-              "increased_protected_cargo": 6000,
-              "ship_increased_cargo": 7000,
-              "ship_increased_protected_cargo": 500
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 12333
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2110,10 +2097,15 @@
                 "type": "dilithium",
                 "value": 22435200
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 12333
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2123,24 +2115,21 @@
               "type": "dilithium",
               "value": 171467
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 49766,
+              "increased_protected_cargo": 6000,
+              "ship_increased_cargo": 7000,
+              "ship_increased_protected_cargo": 500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 165,
-              "warp_speed": 4.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 11100
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2150,10 +2139,15 @@
                 "type": "dilithium",
                 "value": 16826400
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 11100
+              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2163,24 +2157,19 @@
               "type": "dilithium",
               "value": 128600
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 165,
+              "warp_speed": 4.6
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 9776,
-              "shield_health": 50567
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 7400
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2190,10 +2179,15 @@
                 "type": "dilithium",
                 "value": 15704640
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 7400
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2203,24 +2197,19 @@
               "type": "dilithium",
               "value": 120027
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 9776,
+              "shield_health": 50567
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 7332,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 7400
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2230,10 +2219,15 @@
                 "type": "dilithium",
                 "value": 13461120
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 7400
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2243,7 +2237,14 @@
               "type": "dilithium",
               "value": 102880
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 7332,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2277,21 +2278,55 @@
           "level": 40,
           "ship_xp": 3445000
         }
-      ],
-      "repair_time": 19320,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 4320000,
+      "repair_time": 21780,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1248954300
+              },
+              {
+                "type": "dilithium",
+                "value": 46597680
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 10763
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 968874
+            },
+            {
+              "type": "dilithium",
+              "value": 242414
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 12782,
               "armor_pierce": 9587,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 15946,
+              "min_damage": 13046,
+              "shield_pierce": 10957,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2302,60 +2337,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 15946,
-              "min_damage": 13046,
-              "shield_pierce": 10957,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 10763
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1248954300
-              },
-              {
-                "type": "dilithium",
-                "value": 46597680
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 968874
-            },
-            {
-              "type": "dilithium",
-              "value": 242414
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 6.0
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 15375
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2365,10 +2355,15 @@
                 "type": "dilithium",
                 "value": 60302880
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 15375
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2378,26 +2373,18 @@
               "type": "dilithium",
               "value": 313713
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 6.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 59720,
-              "increased_protected_cargo": 6500,
-              "ship_increased_cargo": 7000,
-              "ship_increased_protected_cargo": 500
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 15375
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2407,10 +2394,15 @@
                 "type": "dilithium",
                 "value": 54820800
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 15375
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2420,24 +2412,21 @@
               "type": "dilithium",
               "value": 285193
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 59720,
+              "increased_protected_cargo": 6500,
+              "ship_increased_cargo": 7000,
+              "ship_increased_protected_cargo": 500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 209,
-              "warp_speed": 4.8
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 13838
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2447,10 +2436,15 @@
                 "type": "dilithium",
                 "value": 41115600
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 13838
+              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2460,24 +2454,19 @@
               "type": "dilithium",
               "value": 213895
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 209,
+              "warp_speed": 4.8
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 14582,
-              "shield_health": 62663
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 9225
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2487,10 +2476,15 @@
                 "type": "dilithium",
                 "value": 38374560
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 9225
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2500,24 +2494,19 @@
               "type": "dilithium",
               "value": 199635
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 14582,
+              "shield_health": 62663
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 10937,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 9225
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2527,10 +2516,15 @@
                 "type": "dilithium",
                 "value": 32892480
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 9225
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2540,7 +2534,14 @@
               "type": "dilithium",
               "value": 171116
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 10937,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2574,21 +2575,55 @@
           "level": 45,
           "ship_xp": 4543000
         }
-      ],
-      "repair_time": 21780,
-      "tier": 9
+      ]
     },
     {
+      "tier": 10,
       "build_time": 5400000,
+      "repair_time": 25440,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 23748898000
+              },
+              {
+                "type": "dilithium",
+                "value": 166338200
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 13271
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 51640661
+            },
+            {
+              "type": "dilithium",
+              "value": 11660861
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 17444,
               "armor_pierce": 13083,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 20295,
+              "min_damage": 16606,
+              "shield_pierce": 14953,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2599,60 +2634,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 20295,
-              "min_damage": 16606,
-              "shield_pierce": 14953,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 13271
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 23748898000
-              },
-              {
-                "type": "dilithium",
-                "value": 166338200
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 51640661
-            },
-            {
-              "type": "dilithium",
-              "value": 11660861
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 6.1
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 18958
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2662,10 +2652,15 @@
                 "type": "dilithium",
                 "value": 215261200
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 18958
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2675,26 +2670,18 @@
               "type": "dilithium",
               "value": 15090526
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 6.1
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 358318,
-              "increased_protected_cargo": 15800,
-              "ship_increased_cargo": 7000,
-              "ship_increased_protected_cargo": 500
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 18958
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2704,10 +2691,15 @@
                 "type": "dilithium",
                 "value": 195692000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 18958
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2717,17 +2709,31 @@
               "type": "dilithium",
               "value": 13718660
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 358318,
+              "increased_protected_cargo": 15800,
+              "ship_increased_cargo": 7000,
+              "ship_increased_protected_cargo": 500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 231,
-              "warp_speed": 5.0
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 20954910000
+              },
+              {
+                "type": "dilithium",
+                "value": 146769000
+              }
+            ],
             "materials": [],
             "others": [
               {
@@ -2738,20 +2744,8 @@
                 "type": "D'Vor Feesha Parts",
                 "value": 17063
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 20954910000
-              },
-              {
-                "type": "dilithium",
-                "value": 146769000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2761,24 +2755,19 @@
               "type": "dilithium",
               "value": 10288995
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 231,
+              "warp_speed": 5.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 19773,
-              "shield_health": 75633
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 11375
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2788,10 +2777,15 @@
                 "type": "dilithium",
                 "value": 136984400
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 11375
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2801,24 +2795,19 @@
               "type": "dilithium",
               "value": 9603062
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 19773,
+              "shield_health": 75633
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 14830,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 11375
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2828,10 +2817,15 @@
                 "type": "dilithium",
                 "value": 117415200
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 11375
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2841,7 +2835,14 @@
               "type": "dilithium",
               "value": 8231196
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 14830,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2875,21 +2876,55 @@
           "level": 50,
           "ship_xp": 6040000
         }
-      ],
-      "repair_time": 25440,
-      "tier": 10
+      ]
     },
     {
+      "tier": 11,
       "build_time": 7020000,
+      "repair_time": 28500,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 38245552800
+              },
+              {
+                "type": "dilithium",
+                "value": 274004640
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 46223
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 81737121
+            },
+            {
+              "type": "dilithium",
+              "value": 17768961
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 22739,
               "armor_pierce": 17053,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 25231,
+              "min_damage": 20645,
+              "shield_pierce": 19491,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2900,60 +2935,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 25231,
-              "min_damage": 20645,
-              "shield_pierce": 19491,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 46223
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 38245552800
-              },
-              {
-                "type": "dilithium",
-                "value": 274004640
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 81737121
-            },
-            {
-              "type": "dilithium",
-              "value": 17768961
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 6.2
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 66033
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2963,10 +2953,15 @@
                 "type": "dilithium",
                 "value": 354594240
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 66033
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2976,26 +2971,18 @@
               "type": "dilithium",
               "value": 22995126
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 6.2
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 143327,
-              "increased_protected_cargo": 11700,
-              "ship_increased_cargo": 7000,
-              "ship_increased_protected_cargo": 500
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 66033
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3005,10 +2992,15 @@
                 "type": "dilithium",
                 "value": 322358400
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 66033
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3018,24 +3010,21 @@
               "type": "dilithium",
               "value": 20904660
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 143327,
+              "increased_protected_cargo": 11700,
+              "ship_increased_cargo": 7000,
+              "ship_increased_protected_cargo": 500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 286,
-              "warp_speed": 5.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 59430
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3045,10 +3034,15 @@
                 "type": "dilithium",
                 "value": 241768800
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 59430
+              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3058,24 +3052,19 @@
               "type": "dilithium",
               "value": 15678495
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 286,
+              "warp_speed": 5.2
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 25669,
-              "shield_health": 90352
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 39620
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3085,10 +3074,15 @@
                 "type": "dilithium",
                 "value": 225650880
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 39620
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3098,24 +3092,19 @@
               "type": "dilithium",
               "value": 14633262
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 25669,
+              "shield_health": 90352
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 19252,
-              "impulse_speed": 112
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 39620
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3125,10 +3114,15 @@
                 "type": "dilithium",
                 "value": 193415040
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 39620
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3138,7 +3132,14 @@
               "type": "dilithium",
               "value": 12542796
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 19252,
+              "impulse_speed": 112
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3172,21 +3173,55 @@
           "level": 55,
           "ship_xp": 7848000
         }
-      ],
-      "repair_time": 28500,
-      "tier": 11
+      ]
     },
     {
+      "tier": 12,
       "build_time": 9720000,
+      "repair_time": 32820,
       "components": [
         {
           "name": "Heavy Phaser Cannon",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 62160393750
+              },
+              {
+                "type": "dilithium",
+                "value": 445208750
+              }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 57240
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 132620772
+            },
+            {
+              "type": "dilithium",
+              "value": 26524083
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 28914,
               "armor_pierce": 21685,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 30979,
+              "min_damage": 25346,
+              "shield_pierce": 24784,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -3197,60 +3232,15 @@
                 1,
                 0,
                 1
-              ],
-              "max_damage": 30979,
-              "min_damage": 25346,
-              "shield_pierce": 24784,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 57240
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 62160393750
-              },
-              {
-                "type": "dilithium",
-                "value": 445208750
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 132620772
-            },
-            {
-              "type": "dilithium",
-              "value": 26524083
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Tool",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 6.3
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 81771
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3260,10 +3250,15 @@
                 "type": "dilithium",
                 "value": 576152500
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 81771
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3273,26 +3268,18 @@
               "type": "dilithium",
               "value": 34325284
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 6.3
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 171993,
-              "increased_protected_cargo": 13400,
-              "ship_increased_cargo": 7000,
-              "ship_increased_protected_cargo": 500
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 81771
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3302,10 +3289,15 @@
                 "type": "dilithium",
                 "value": 523775000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 81771
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3315,24 +3307,21 @@
               "type": "dilithium",
               "value": 31204804
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 171993,
+              "increased_protected_cargo": 13400,
+              "ship_increased_cargo": 7000,
+              "ship_increased_protected_cargo": 500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 363,
-              "warp_speed": 5.5
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 73594
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3342,10 +3331,15 @@
                 "type": "dilithium",
                 "value": 392831250
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 73594
+              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3355,24 +3349,19 @@
               "type": "dilithium",
               "value": 23403603
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 363,
+              "warp_speed": 5.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shields",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 32528,
-              "shield_health": 107500
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 49063
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3382,10 +3371,15 @@
                 "type": "dilithium",
                 "value": 366642500
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 49063
+              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3395,24 +3389,19 @@
               "type": "dilithium",
               "value": 21843363
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 32528,
+              "shield_health": 107500
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 24396,
-              "impulse_speed": 112
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "D'Vor Feesha Parts",
-                "value": 49063
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3422,10 +3411,15 @@
                 "type": "dilithium",
                 "value": 314265000
               }
+            ],
+            "materials": [],
+            "others": [
+              {
+                "type": "D'Vor Feesha Parts",
+                "value": 49063
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3435,7 +3429,14 @@
               "type": "dilithium",
               "value": 18722882
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 24396,
+              "impulse_speed": 112
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3469,9 +3470,8 @@
           "level": 60,
           "ship_xp": 10000000
         }
-      ],
-      "repair_time": 32820,
-      "tier": 12
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/d_vor_feesha.png"
 }

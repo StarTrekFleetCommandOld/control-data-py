@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Cardassian Military",
   "description": "",
   "group": "neutral",
+  "level": 26,
+  "rarity": "common",
   "head_stats": {
     "attack": 22554,
     "defense": 22500,
     "health": 9600
   },
-  "hostile_name": "Cardassian Military",
-  "level": 26,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 68,
-      "min_value": 68,
-      "value": 68
+      "$ref": "systems/chin_toka_28"
+    },
+    {
+      "$ref": "systems/myyric_27"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 9600
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/chin_toka_28"
-    },
-    {
-      "$ref": "systems/myyric_27"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 750
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 68,
+      "min_value": 68,
+      "value": 68
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

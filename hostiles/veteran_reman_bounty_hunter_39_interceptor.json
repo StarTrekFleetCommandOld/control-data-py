@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Veteran Reman Bounty Hunter",
   "description": "",
   "group": "neutral",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 1108207,
     "defense": 1025000,
     "health": 340120
   },
-  "hostile_name": "Veteran Reman Bounty Hunter",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/caerulum_39"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 340120
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/caerulum_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 34167
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

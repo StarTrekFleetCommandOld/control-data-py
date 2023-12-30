@@ -1,38 +1,26 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 42,
+  "rarity": "common",
   "head_stats": {
     "attack": 1202536,
     "defense": 941985,
     "health": 3096478
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 42,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 208,
-      "min_value": 208,
-      "value": 208
+      "$ref": "systems/ami_bera_43"
     },
     {
-      "type": "federation points",
-      "max_value": 1200,
-      "min_value": 1200,
-      "value": 1200
+      "$ref": "systems/naalur_44"
     },
     {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/talvath_43"
     },
     {
-      "type": "klingon points",
-      "max_value": 2400,
-      "min_value": 2400,
-      "value": 2400
+      "$ref": "systems/vola_41"
     }
   ],
   "ship_class": "interceptor",
@@ -55,25 +43,6 @@
       "shield_health": 2949027
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ami_bera_43"
-    },
-    {
-      "$ref": "systems/naalur_44"
-    },
-    {
-      "$ref": "systems/talvath_43"
-    },
-    {
-      "$ref": "systems/vola_41"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +105,37 @@
         "shield_pierce": 31109
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 208,
+      "min_value": 208,
+      "value": 208
+    },
+    {
+      "type": "federation points",
+      "max_value": 1200,
+      "min_value": 1200,
+      "value": 1200
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 2400,
+      "min_value": 2400,
+      "value": 2400
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

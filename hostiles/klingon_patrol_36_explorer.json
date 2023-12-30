@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 36,
+  "rarity": "common",
   "head_stats": {
     "attack": 309904,
     "defense": 330320,
     "health": 115635
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 36,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/beta_penthe_34"
+    },
+    {
+      "$ref": "systems/mempa_38"
+    },
+    {
+      "$ref": "systems/jiwu_puh_36"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 118760
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/beta_penthe_34"
-    },
-    {
-      "$ref": "systems/mempa_38"
-    },
-    {
-      "$ref": "systems/jiwu_puh_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -77,6 +71,12 @@
         "shield_pierce": 9568
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

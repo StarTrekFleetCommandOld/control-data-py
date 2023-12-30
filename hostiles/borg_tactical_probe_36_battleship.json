@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Borg Tactical Probe",
   "description": "",
   "group": "borg",
+  "level": 36,
+  "rarity": "common",
   "head_stats": {
     "attack": 6629084,
     "defense": 1846875,
     "health": 14589000
   },
-  "hostile_name": "Borg Tactical Probe",
-  "level": 36,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/solus_daevun_36"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 11648000
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/solus_daevun_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 48
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -164,6 +158,12 @@
         "shield_pierce": 220550
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 48
     }
   ]
 }

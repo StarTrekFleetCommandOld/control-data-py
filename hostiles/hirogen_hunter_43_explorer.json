@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Hirogen Hunter",
   "description": "",
   "group": "neutral",
+  "level": 43,
+  "rarity": "common",
   "head_stats": {
     "attack": 3021313,
     "defense": 1331770,
     "health": 4470522
   },
-  "hostile_name": "Hirogen Hunter",
-  "level": 43,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 352,
-      "min_value": 352,
-      "value": 352
+      "$ref": "systems/dawise_43"
+    },
+    {
+      "$ref": "systems/quarra_43"
+    },
+    {
+      "$ref": "systems/new_talax_45"
+    },
+    {
+      "$ref": "systems/rovah_43"
+    },
+    {
+      "$ref": "systems/valla_terna_45"
+    },
+    {
+      "$ref": "systems/ramar_45"
     }
   ],
   "ship_class": "explorer",
@@ -37,31 +49,6 @@
       "shield_health": 5215610
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dawise_43"
-    },
-    {
-      "$ref": "systems/quarra_43"
-    },
-    {
-      "$ref": "systems/new_talax_45"
-    },
-    {
-      "$ref": "systems/rovah_43"
-    },
-    {
-      "$ref": "systems/valla_terna_45"
-    },
-    {
-      "$ref": "systems/ramar_45"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -93,6 +80,19 @@
         "shield_pierce": 115821
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 352,
+      "min_value": 352,
+      "value": 352
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

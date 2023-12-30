@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Star Empire Skirmisher",
   "description": "",
   "group": "romulan",
+  "level": 36,
+  "rarity": "common",
   "head_stats": {
     "attack": 344482,
     "defense": 357660,
     "health": 109380
   },
-  "hostile_name": "Star Empire Skirmisher",
-  "level": 36,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/mokba_34"
+    },
+    {
+      "$ref": "systems/hig_qar_38"
+    },
+    {
+      "$ref": "systems/embek_36"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 77450
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/mokba_34"
-    },
-    {
-      "$ref": "systems/hig_qar_38"
-    },
-    {
-      "$ref": "systems/embek_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +102,12 @@
         "shield_pierce": 76543
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

@@ -1,38 +1,23 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 48,
+  "rarity": "common",
   "head_stats": {
     "attack": 2757226,
     "defense": 1796240,
     "health": 6252126
   },
-  "hostile_name": "Federation Patrol",
-  "level": 48,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 731,
-      "min_value": 731,
-      "value": 731
+      "$ref": "systems/rylan_50"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/sozin_46"
     },
     {
-      "type": "romulan points",
-      "max_value": 3360,
-      "min_value": 3360,
-      "value": 3360
-    },
-    {
-      "type": "klingon points",
-      "max_value": 1680,
-      "min_value": 1680,
-      "value": 1680
+      "$ref": "systems/avofall_48"
     }
   ],
   "ship_class": "interceptor",
@@ -55,22 +40,6 @@
       "shield_health": 6549846
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/rylan_50"
-    },
-    {
-      "$ref": "systems/sozin_46"
-    },
-    {
-      "$ref": "systems/avofall_48"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -133,6 +102,37 @@
         "shield_pierce": 59878
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 731,
+      "min_value": 731,
+      "value": 731
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 3360,
+      "min_value": 3360,
+      "value": 3360
+    },
+    {
+      "type": "klingon points",
+      "max_value": 1680,
+      "min_value": 1680,
+      "value": 1680
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

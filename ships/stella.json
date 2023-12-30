@@ -1,13 +1,23 @@
 {
+  "ship_name": "STELLA",
   "description": "The Stella is a marvel of engineering and criminal ingenuity. The vessel is unique in its modularity. Every component works in concert with its siblings, but is also completely self sufficient, allowing a savvy engineer to swap out and upgrade those parts with ease.\nThis means that the ship can very easily be broken down into its base components and reassembled again. Harry Mudd has taken advantage of this particular element of the ship\u2019s design, breaking it down to avoid detection whenever he pulls off a heist, only to reassemble it with different signatures in another part of the galaxy.\nWith this ingenious method, Mudd has achieved the dream of every criminal in the galaxy. He has rendered himself untraceable.",
+  "ship_class": "battleship",
+  "grade": 3,
+  "faction": "neutral",
+  "rarity": "uncommon",
   "blueprints": {
     "cost": 0,
     "quantity": 100
   },
-  "faction": "neutral",
-  "grade": 3,
-  "img_url": "./assets/stella.png",
-  "rarity": "uncommon",
+  "ship_ability": {
+    "title": "Master Thief",
+    "description": "The STELLA increases the reward you get from Eclipse hostiles and Armada Targets by {value}",
+    "percentage": true
+  },
+  "scrap_info": {
+    "scrappable": true,
+    "required_scrapyard_level": 1
+  },
   "requirements": [
     {
       "name": "Shipyard",
@@ -18,29 +28,31 @@
       "level": 1
     }
   ],
-  "scrap_info": {
-    "required_scrapyard_level": 1,
-    "scrappable": true
-  },
-  "ship_ability": {
-    "title": "Master Thief",
-    "description": "The STELLA increases the reward you get from Eclipse hostiles and Armada Targets by {value}",
-    "percentage": true
-  },
-  "ship_class": "battleship",
-  "ship_name": "STELLA",
   "tiers": [
     {
+      "tier": 1,
       "build_time": 57600,
+      "repair_time": 3444,
       "components": [
         {
           "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 378,
               "armor_pierce": 378,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 7434,
+              "min_damage": 4956,
+              "shield_pierce": 2645,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -51,30 +63,30 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 7434,
-              "min_damage": 4956,
-              "shield_pierce": 2645,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 378,
               "armor_pierce": 378,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 6618,
+              "min_damage": 4412,
+              "shield_pierce": 2645,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -85,94 +97,71 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 6618,
-              "min_damage": 4412,
-              "shield_pierce": 2645,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
+          "quantity": 2
         },
         {
           "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "impulse_info": {
               "dodge": 279,
               "impulse_speed": 85
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "armor_info": {
               "armor": 1423,
               "hull_health": 9867
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Shield",
+          "img_url": "./assets/component_shield.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "shield_info": {
               "shield_deflection": 279,
               "shield_health": 6487
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 800000
-          },
-          {
-            "type": "dilithium",
-            "value": 28000
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": true,
           "level": 1,
+          "ship_xp": 0,
           "scrap_details": {
+            "scrap_time": 86400,
             "rewards": [
               {
                 "type": "tritanium",
@@ -190,16 +179,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 86400
-          },
-          "ship_xp": 0
+            ]
+          }
         },
         {
           "ability_bonus": 2.25,
           "additional_officer_slot": false,
           "level": 2,
+          "ship_xp": 800,
           "scrap_details": {
+            "scrap_time": 88200,
             "rewards": [
               {
                 "type": "tritanium",
@@ -217,16 +206,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 88200
-          },
-          "ship_xp": 800
+            ]
+          }
         },
         {
           "ability_bonus": 2.5,
           "additional_officer_slot": false,
           "level": 3,
+          "ship_xp": 1000,
           "scrap_details": {
+            "scrap_time": 90000,
             "rewards": [
               {
                 "type": "tritanium",
@@ -244,16 +233,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 90000
-          },
-          "ship_xp": 1000
+            ]
+          }
         },
         {
           "ability_bonus": 2.75,
           "additional_officer_slot": false,
           "level": 4,
+          "ship_xp": 1400,
           "scrap_details": {
+            "scrap_time": 91860,
             "rewards": [
               {
                 "type": "tritanium",
@@ -271,16 +260,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 91860
-          },
-          "ship_xp": 1400
+            ]
+          }
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": true,
           "level": 5,
+          "ship_xp": 1700,
           "scrap_details": {
+            "scrap_time": 93720,
             "rewards": [
               {
                 "type": "tritanium",
@@ -298,26 +287,63 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 93720
-          },
-          "ship_xp": 1700
+            ]
+          }
         }
       ],
-      "repair_time": 3444,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 800000
+          },
+          {
+            "type": "dilithium",
+            "value": 28000
+          }
+        ],
+        "materials": [],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 11820,
+      "repair_time": 5520,
       "components": [
         {
           "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": [
+              {
+                "type": "Uncommon Uranium",
+                "value": 210
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1790
+            },
+            {
+              "type": "dilithium",
+              "value": 610
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 441,
               "armor_pierce": 441,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 7654,
+              "min_damage": 5102,
+              "shield_pierce": 2770,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -328,44 +354,44 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 7654,
-              "min_damage": 5102,
-              "shield_pierce": 2770,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
-                "value": 210
+                "value": 105
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 1790
+              "value": 1491
             },
             {
               "type": "dilithium",
-              "value": 610
+              "value": 183
             }
-          ]
-        },
-        {
-          "name": "Pulsed Phaser",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 441,
               "armor_pierce": 441,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 6850,
+              "min_damage": 4566,
+              "shield_pierce": 2770,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -376,116 +402,91 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 6850,
-              "min_damage": 4566,
-              "shield_pierce": 2770,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
-                "value": 105
+                "value": 26
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 1491
-            },
-            {
-              "type": "dilithium",
-              "value": 183
+              "value": 224
             }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
+          ],
           "additional_info": {
             "impulse_info": {
               "dodge": 317,
               "impulse_speed": 90
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "Uncommon Uranium",
-                "value": 26
-              }
-            ],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 224
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1548,
-              "hull_health": 10603
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 53
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 448
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1548,
+              "hull_health": 10603
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 317,
-              "shield_health": 6987
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 26
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 224
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 317,
+              "shield_health": 6987
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -493,7 +494,9 @@
           "ability_bonus": 3.05,
           "additional_officer_slot": false,
           "level": 6,
+          "ship_xp": 2400,
           "scrap_details": {
+            "scrap_time": 95700,
             "rewards": [
               {
                 "type": "tritanium",
@@ -511,16 +514,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 95700
-          },
-          "ship_xp": 2400
+            ]
+          }
         },
         {
           "ability_bonus": 3.1,
           "additional_officer_slot": false,
           "level": 7,
+          "ship_xp": 2900,
           "scrap_details": {
+            "scrap_time": 97620,
             "rewards": [
               {
                 "type": "tritanium",
@@ -538,16 +541,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 97620
-          },
-          "ship_xp": 2900
+            ]
+          }
         },
         {
           "ability_bonus": 3.15,
           "additional_officer_slot": false,
           "level": 8,
+          "ship_xp": 3900,
           "scrap_details": {
+            "scrap_time": 99660,
             "rewards": [
               {
                 "type": "tritanium",
@@ -565,16 +568,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 99660
-          },
-          "ship_xp": 3900
+            ]
+          }
         },
         {
           "ability_bonus": 3.2,
           "additional_officer_slot": false,
           "level": 9,
+          "ship_xp": 4600,
           "scrap_details": {
+            "scrap_time": 101700,
             "rewards": [
               {
                 "type": "tritanium",
@@ -592,16 +595,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 101700
-          },
-          "ship_xp": 4600
+            ]
+          }
         },
         {
           "ability_bonus": 3.25,
           "additional_officer_slot": false,
           "level": 10,
+          "ship_xp": 6000,
           "scrap_details": {
+            "scrap_time": 103800,
             "rewards": [
               {
                 "type": "tritanium",
@@ -619,26 +622,49 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 103800
-          },
-          "ship_xp": 6000
+            ]
+          }
         }
-      ],
-      "repair_time": 5520,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 23640,
+      "repair_time": 8316,
       "components": [
         {
           "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": [
+              {
+                "type": "Uncommon Uranium",
+                "value": 1264
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3683
+            },
+            {
+              "type": "dilithium",
+              "value": 1230
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 504,
               "armor_pierce": 504,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 7874,
+              "min_damage": 5248,
+              "shield_pierce": 2895,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -649,44 +675,44 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 7874,
-              "min_damage": 5248,
-              "shield_pierce": 2895,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
-                "value": 1264
+                "value": 632
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 3683
+              "value": 3069
             },
             {
               "type": "dilithium",
-              "value": 1230
+              "value": 369
             }
-          ]
-        },
-        {
-          "name": "Pulsed Phaser",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 504,
               "armor_pierce": 504,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 7082,
+              "min_damage": 4720,
+              "shield_pierce": 2895,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -697,116 +723,91 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 7082,
-              "min_damage": 4720,
-              "shield_pierce": 2895,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
-                "value": 632
+                "value": 158
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 3069
-            },
-            {
-              "type": "dilithium",
-              "value": 369
+              "value": 460
             }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
+          ],
           "additional_info": {
             "impulse_info": {
               "dodge": 355,
               "impulse_speed": 95
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "Uncommon Uranium",
-                "value": 158
-              }
-            ],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 460
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1673,
-              "hull_health": 11339
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 316
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 921
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1673,
+              "hull_health": 11339
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 355,
-              "shield_health": 7487
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 158
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 460
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 355,
+              "shield_health": 7487
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -814,7 +815,9 @@
           "ability_bonus": 3.3,
           "additional_officer_slot": false,
           "level": 11,
+          "ship_xp": 7000,
           "scrap_details": {
+            "scrap_time": 105960,
             "rewards": [
               {
                 "type": "tritanium",
@@ -832,16 +835,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 105960
-          },
-          "ship_xp": 7000
+            ]
+          }
         },
         {
           "ability_bonus": 3.35,
           "additional_officer_slot": false,
           "level": 12,
+          "ship_xp": 8500,
           "scrap_details": {
+            "scrap_time": 108120,
             "rewards": [
               {
                 "type": "tritanium",
@@ -859,16 +862,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 108120
-          },
-          "ship_xp": 8500
+            ]
+          }
         },
         {
           "ability_bonus": 3.4,
           "additional_officer_slot": false,
           "level": 13,
+          "ship_xp": 9500,
           "scrap_details": {
+            "scrap_time": 110340,
             "rewards": [
               {
                 "type": "tritanium",
@@ -886,16 +889,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 110340
-          },
-          "ship_xp": 9500
+            ]
+          }
         },
         {
           "ability_bonus": 3.45,
           "additional_officer_slot": false,
           "level": 14,
+          "ship_xp": 11000,
           "scrap_details": {
+            "scrap_time": 112620,
             "rewards": [
               {
                 "type": "tritanium",
@@ -913,16 +916,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 112620
-          },
-          "ship_xp": 11000
+            ]
+          }
         },
         {
           "ability_bonus": 3.5,
           "additional_officer_slot": true,
           "level": 15,
+          "ship_xp": 13500,
           "scrap_details": {
+            "scrap_time": 114960,
             "rewards": [
               {
                 "type": "tritanium",
@@ -940,26 +943,49 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 114960
-          },
-          "ship_xp": 13500
+            ]
+          }
         }
-      ],
-      "repair_time": 8316,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 39400,
+      "repair_time": 12552,
       "components": [
         {
           "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": [
+              {
+                "type": "Uncommon Uranium",
+                "value": 2524
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 6229
+            },
+            {
+              "type": "dilithium",
+              "value": 1875
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 567,
               "armor_pierce": 567,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 8094,
+              "min_damage": 5394,
+              "shield_pierce": 3020,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -970,44 +996,44 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 8094,
-              "min_damage": 5394,
-              "shield_pierce": 3020,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
-                "value": 2524
+                "value": 1262
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 6229
+              "value": 5191
             },
             {
               "type": "dilithium",
-              "value": 1875
+              "value": 562
             }
-          ]
-        },
-        {
-          "name": "Pulsed Phaser",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 567,
               "armor_pierce": 567,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 7314,
+              "min_damage": 4874,
+              "shield_pierce": 3020,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -1018,116 +1044,91 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 7314,
-              "min_damage": 4874,
-              "shield_pierce": 3020,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
-                "value": 1262
+                "value": 316
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 5191
-            },
-            {
-              "type": "dilithium",
-              "value": 562
+              "value": 779
             }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
+          ],
           "additional_info": {
             "impulse_info": {
               "dodge": 393,
               "impulse_speed": 100
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "Uncommon Uranium",
-                "value": 316
-              }
-            ],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 779
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1798,
-              "hull_health": 12075
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 632
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 1557
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1798,
+              "hull_health": 12075
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 393,
-              "shield_health": 7987
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 316
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 779
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 393,
+              "shield_health": 7987
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1135,7 +1136,9 @@
           "ability_bonus": 3.55,
           "additional_officer_slot": false,
           "level": 16,
+          "ship_xp": 15000,
           "scrap_details": {
+            "scrap_time": 117300,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1153,16 +1156,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 117300
-          },
-          "ship_xp": 15000
+            ]
+          }
         },
         {
           "ability_bonus": 3.6,
           "additional_officer_slot": false,
           "level": 17,
+          "ship_xp": 17500,
           "scrap_details": {
+            "scrap_time": 119700,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1180,16 +1183,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 119700
-          },
-          "ship_xp": 17500
+            ]
+          }
         },
         {
           "ability_bonus": 3.65,
           "additional_officer_slot": false,
           "level": 18,
+          "ship_xp": 19500,
           "scrap_details": {
+            "scrap_time": 122160,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1207,16 +1210,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 122160
-          },
-          "ship_xp": 19500
+            ]
+          }
         },
         {
           "ability_bonus": 3.7,
           "additional_officer_slot": false,
           "level": 19,
+          "ship_xp": 23000,
           "scrap_details": {
+            "scrap_time": 124680,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1234,16 +1237,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 124680
-          },
-          "ship_xp": 23000
+            ]
+          }
         },
         {
           "ability_bonus": 3.75,
           "additional_officer_slot": false,
           "level": 20,
+          "ship_xp": 25000,
           "scrap_details": {
+            "scrap_time": 127260,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1261,44 +1264,21 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 127260
-          },
-          "ship_xp": 25000
+            ]
+          }
         }
-      ],
-      "repair_time": 12552,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 59100,
+      "repair_time": 16656,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 630,
-              "armor_pierce": 630,
-              "crit_chance": 0.05,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                2,
-                0,
-                2,
-                0,
-                2,
-                0,
-                2,
-                0,
-                2
-              ],
-              "max_damage": 8314,
-              "min_damage": 5540,
-              "shield_pierce": 3145,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
@@ -1309,11 +1289,8 @@
                 "type": "Uncommon Uranium",
                 "value": 9868
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1323,34 +1300,37 @@
               "type": "dilithium",
               "value": 2936
             }
-          ]
-        },
-        {
-          "name": "Pulsed Phaser",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 630,
               "armor_pierce": 630,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 7546,
-              "min_damage": 5028,
+              "max_damage": 8314,
+              "min_damage": 5540,
               "shield_pierce": 3145,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                2,
+                0,
+                2,
+                0,
+                2,
+                0,
+                2,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
@@ -1361,11 +1341,8 @@
                 "type": "Uncommon Uranium",
                 "value": 4934
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1375,44 +1352,64 @@
               "type": "dilithium",
               "value": 881
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 630,
+              "armor_pierce": 630,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "max_damage": 7546,
+              "min_damage": 5028,
+              "shield_pierce": 3145,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 2
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 431,
-              "impulse_speed": 105
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 1234
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 1276
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 431,
+              "impulse_speed": 105
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1923,
-              "hull_health": 12811
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
@@ -1423,44 +1420,48 @@
                 "type": "Uncommon Uranium",
                 "value": 2468
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 2552
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1923,
+              "hull_health": 12811
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 431,
-              "shield_health": 8487
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 1234
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 1276
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 431,
+              "shield_health": 8487
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1468,7 +1469,9 @@
           "ability_bonus": 3.8,
           "additional_officer_slot": false,
           "level": 21,
+          "ship_xp": 29000,
           "scrap_details": {
+            "scrap_time": 129900,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1486,16 +1489,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 129900
-          },
-          "ship_xp": 29000
+            ]
+          }
         },
         {
           "ability_bonus": 3.85,
           "additional_officer_slot": false,
           "level": 22,
+          "ship_xp": 31500,
           "scrap_details": {
+            "scrap_time": 132540,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1513,16 +1516,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 132540
-          },
-          "ship_xp": 31500
+            ]
+          }
         },
         {
           "ability_bonus": 3.9,
           "additional_officer_slot": false,
           "level": 23,
+          "ship_xp": 36000,
           "scrap_details": {
+            "scrap_time": 135300,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1540,16 +1543,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 135300
-          },
-          "ship_xp": 36000
+            ]
+          }
         },
         {
           "ability_bonus": 3.95,
           "additional_officer_slot": false,
           "level": 24,
+          "ship_xp": 39000,
           "scrap_details": {
+            "scrap_time": 138060,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1567,16 +1570,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 138060
-          },
-          "ship_xp": 39000
+            ]
+          }
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": true,
           "level": 25,
+          "ship_xp": 42000,
           "scrap_details": {
+            "scrap_time": 140940,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1594,44 +1597,21 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 140940
-          },
-          "ship_xp": 42000
+            ]
+          }
         }
-      ],
-      "repair_time": 16656,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 78800,
+      "repair_time": 22368,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 693,
-              "armor_pierce": 693,
-              "crit_chance": 0.05,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                2,
-                0,
-                2,
-                0,
-                2,
-                0,
-                2,
-                0,
-                2
-              ],
-              "max_damage": 8534,
-              "min_damage": 5686,
-              "shield_pierce": 3270,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
@@ -1642,11 +1622,8 @@
                 "type": "Uncommon Uranium",
                 "value": 29600
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1656,34 +1633,37 @@
               "type": "dilithium",
               "value": 5122
             }
-          ]
-        },
-        {
-          "name": "Pulsed Phaser",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 693,
               "armor_pierce": 693,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 7778,
-              "min_damage": 5182,
+              "max_damage": 8534,
+              "min_damage": 5686,
               "shield_pierce": 3270,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                2,
+                0,
+                2,
+                0,
+                2,
+                0,
+                2,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
@@ -1694,11 +1674,8 @@
                 "type": "Uncommon Uranium",
                 "value": 14800
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1708,44 +1685,64 @@
               "type": "dilithium",
               "value": 1537
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 693,
+              "armor_pierce": 693,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "max_damage": 7778,
+              "min_damage": 5182,
+              "shield_pierce": 3270,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 2
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 469,
-              "impulse_speed": 110
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 3700
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 2233
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 469,
+              "impulse_speed": 110
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 2048,
-              "hull_health": 13547
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
@@ -1756,44 +1753,48 @@
                 "type": "Uncommon Uranium",
                 "value": 7400
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 4467
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 2048,
+              "hull_health": 13547
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 469,
-              "shield_health": 8987
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 3700
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 2233
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 469,
+              "shield_health": 8987
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1801,7 +1802,9 @@
           "ability_bonus": 4.05,
           "additional_officer_slot": false,
           "level": 26,
+          "ship_xp": 47000,
           "scrap_details": {
+            "scrap_time": 143820,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1819,16 +1822,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 143820
-          },
-          "ship_xp": 47000
+            ]
+          }
         },
         {
           "ability_bonus": 4.1,
           "additional_officer_slot": false,
           "level": 27,
+          "ship_xp": 51000,
           "scrap_details": {
+            "scrap_time": 146820,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1846,16 +1849,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 146820
-          },
-          "ship_xp": 51000
+            ]
+          }
         },
         {
           "ability_bonus": 4.15,
           "additional_officer_slot": false,
           "level": 28,
+          "ship_xp": 57000,
           "scrap_details": {
+            "scrap_time": 149820,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1873,16 +1876,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 149820
-          },
-          "ship_xp": 57000
+            ]
+          }
         },
         {
           "ability_bonus": 4.2,
           "additional_officer_slot": false,
           "level": 29,
+          "ship_xp": 61000,
           "scrap_details": {
+            "scrap_time": 152880,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1900,16 +1903,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 152880
-          },
-          "ship_xp": 61000
+            ]
+          }
         },
         {
           "ability_bonus": 4.25,
           "additional_officer_slot": false,
           "level": 30,
+          "ship_xp": 69000,
           "scrap_details": {
+            "scrap_time": 156060,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1927,44 +1930,21 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 156060
-          },
-          "ship_xp": 69000
+            ]
+          }
         }
-      ],
-      "repair_time": 22368,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 98500,
+      "repair_time": 29088,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 756,
-              "armor_pierce": 756,
-              "crit_chance": 0.05,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                2,
-                0,
-                2,
-                0,
-                2,
-                0,
-                2,
-                0,
-                2
-              ],
-              "max_damage": 8754,
-              "min_damage": 5832,
-              "shield_pierce": 3395,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
@@ -1975,11 +1955,8 @@
                 "type": "Uncommon Uranium",
                 "value": 59204
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1989,34 +1966,37 @@
               "type": "dilithium",
               "value": 8900
             }
-          ]
-        },
-        {
-          "name": "Pulsed Phaser",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 756,
               "armor_pierce": 756,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 8010,
-              "min_damage": 5336,
+              "max_damage": 8754,
+              "min_damage": 5832,
               "shield_pierce": 3395,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                2,
+                0,
+                2,
+                0,
+                2,
+                0,
+                2,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
@@ -2027,11 +2007,8 @@
                 "type": "Uncommon Uranium",
                 "value": 29602
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2041,44 +2018,64 @@
               "type": "dilithium",
               "value": 2670
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 756,
+              "armor_pierce": 756,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "max_damage": 8010,
+              "min_damage": 5336,
+              "shield_pierce": 3395,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 2
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 507,
-              "impulse_speed": 115
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 7400
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 3770
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 507,
+              "impulse_speed": 115
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 2173,
-              "hull_health": 14283
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
@@ -2089,44 +2086,48 @@
                 "type": "Uncommon Uranium",
                 "value": 14802
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 7539
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 2173,
+              "hull_health": 14283
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 507,
-              "shield_health": 9487
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Uncommon Uranium",
                 "value": 7400
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 3770
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 507,
+              "shield_health": 9487
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2134,7 +2135,9 @@
           "ability_bonus": 4.3,
           "additional_officer_slot": false,
           "level": 31,
+          "ship_xp": 72000,
           "scrap_details": {
+            "scrap_time": 159240,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2152,16 +2155,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 159240
-          },
-          "ship_xp": 72000
+            ]
+          }
         },
         {
           "ability_bonus": 4.35,
           "additional_officer_slot": false,
           "level": 32,
+          "ship_xp": 81000,
           "scrap_details": {
+            "scrap_time": 162540,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2179,16 +2182,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 162540
-          },
-          "ship_xp": 81000
+            ]
+          }
         },
         {
           "ability_bonus": 4.4,
           "additional_officer_slot": false,
           "level": 33,
+          "ship_xp": 86000,
           "scrap_details": {
+            "scrap_time": 165900,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2206,16 +2209,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 165900
-          },
-          "ship_xp": 86000
+            ]
+          }
         },
         {
           "ability_bonus": 4.45,
           "additional_officer_slot": false,
           "level": 34,
+          "ship_xp": 95000,
           "scrap_details": {
+            "scrap_time": 169320,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2233,16 +2236,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 169320
-          },
-          "ship_xp": 95000
+            ]
+          }
         },
         {
           "ability_bonus": 4.5,
           "additional_officer_slot": false,
           "level": 35,
+          "ship_xp": 100000,
           "scrap_details": {
+            "scrap_time": 172800,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2260,26 +2263,49 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 172800
-          },
-          "ship_xp": 100000
+            ]
+          }
         }
-      ],
-      "repair_time": 29088,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 128050,
+      "repair_time": 37788,
       "components": [
         {
           "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": [
+              {
+                "type": "Epic Uranium",
+                "value": 1512
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 52010
+            },
+            {
+              "type": "dilithium",
+              "value": 16219
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 819,
               "armor_pierce": 819,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 8974,
+              "min_damage": 5978,
+              "shield_pierce": 3520,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -2290,44 +2316,44 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 8974,
-              "min_damage": 5978,
-              "shield_pierce": 3520,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Epic Uranium",
-                "value": 1512
+                "value": 756
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 52010
+              "value": 43342
             },
             {
               "type": "dilithium",
-              "value": 16219
+              "value": 4866
             }
-          ]
-        },
-        {
-          "name": "Pulsed Phaser",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 819,
               "armor_pierce": 819,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 8242,
+              "min_damage": 5490,
+              "shield_pierce": 3520,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -2338,116 +2364,91 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 8242,
-              "min_damage": 5490,
-              "shield_pierce": 3520,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Epic Uranium",
-                "value": 756
+                "value": 190
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 43342
-            },
-            {
-              "type": "dilithium",
-              "value": 4866
+              "value": 6501
             }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
+          ],
           "additional_info": {
             "impulse_info": {
               "dodge": 545,
               "impulse_speed": 120
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "Epic Uranium",
-                "value": 190
-              }
-            ],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 6501
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 2298,
-              "hull_health": 15019
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Epic Uranium",
                 "value": 378
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 13003
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 2298,
+              "hull_health": 15019
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 545,
-              "shield_health": 9987
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Epic Uranium",
                 "value": 190
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 6501
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 545,
+              "shield_health": 9987
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2455,7 +2456,9 @@
           "ability_bonus": 4.65,
           "additional_officer_slot": false,
           "level": 36,
+          "ship_xp": 105000,
           "scrap_details": {
+            "scrap_time": 161220,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2473,16 +2476,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 161220
-          },
-          "ship_xp": 105000
+            ]
+          }
         },
         {
           "ability_bonus": 4.8,
           "additional_officer_slot": false,
           "level": 37,
+          "ship_xp": 116000,
           "scrap_details": {
+            "scrap_time": 150420,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2500,16 +2503,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 150420
-          },
-          "ship_xp": 116000
+            ]
+          }
         },
         {
           "ability_bonus": 4.95,
           "additional_officer_slot": false,
           "level": 38,
+          "ship_xp": 122000,
           "scrap_details": {
+            "scrap_time": 140340,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2527,16 +2530,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 140340
-          },
-          "ship_xp": 122000
+            ]
+          }
         },
         {
           "ability_bonus": 5.1,
           "additional_officer_slot": false,
           "level": 39,
+          "ship_xp": 134000,
           "scrap_details": {
+            "scrap_time": 130980,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2554,16 +2557,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 130980
-          },
-          "ship_xp": 134000
+            ]
+          }
         },
         {
           "ability_bonus": 5.25,
           "additional_officer_slot": false,
           "level": 40,
+          "ship_xp": 140000,
           "scrap_details": {
+            "scrap_time": 122160,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2581,26 +2584,49 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 122160
-          },
-          "ship_xp": 140000
+            ]
+          }
         }
-      ],
-      "repair_time": 37788,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 157600,
+      "repair_time": 46440,
       "components": [
         {
           "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": [
+              {
+                "type": "Epic Uranium",
+                "value": 3528
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 90685
+            },
+            {
+              "type": "dilithium",
+              "value": 31921
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 878,
               "armor_pierce": 878,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 9180,
+              "min_damage": 6120,
+              "shield_pierce": 3645,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 2,
                 0,
@@ -2611,44 +2637,44 @@
                 2,
                 0,
                 2
-              ],
-              "max_damage": 9180,
-              "min_damage": 6120,
-              "shield_pierce": 3645,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Epic Uranium",
-                "value": 3528
+                "value": 1764
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 90685
+              "value": 75570
             },
             {
               "type": "dilithium",
-              "value": 31921
+              "value": 9576
             }
-          ]
-        },
-        {
-          "name": "Pulsed Phaser",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 878,
               "armor_pierce": 878,
               "crit_chance": 0.05,
               "crit_damage": 1.15,
+              "max_damage": 8460,
+              "min_damage": 5640,
+              "shield_pierce": 3645,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -2659,116 +2685,91 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 8460,
-              "min_damage": 5640,
-              "shield_pierce": 3645,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 2
+        },
+        {
+          "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Epic Uranium",
-                "value": 1764
+                "value": 442
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 75570
-            },
-            {
-              "type": "dilithium",
-              "value": 9576
+              "value": 11336
             }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
+          ],
           "additional_info": {
             "impulse_info": {
               "dodge": 579,
               "impulse_speed": 125
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "Epic Uranium",
-                "value": 442
-              }
-            ],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 11336
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 2423,
-              "hull_health": 15750
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Epic Uranium",
                 "value": 882
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 22671
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 2423,
+              "hull_health": 15750
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 579,
-              "shield_health": 10487
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [],
             "materials": [],
             "others": [
               {
                 "type": "Epic Uranium",
                 "value": 442
               }
-            ],
-            "resources": []
+            ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 11336
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 579,
+              "shield_health": 10487
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2776,7 +2777,9 @@
           "ability_bonus": 5.4,
           "additional_officer_slot": false,
           "level": 41,
+          "ship_xp": 154000,
           "scrap_details": {
+            "scrap_time": 114000,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2794,16 +2797,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 114000
-          },
-          "ship_xp": 154000
+            ]
+          }
         },
         {
           "ability_bonus": 5.55,
           "additional_officer_slot": false,
           "level": 42,
+          "ship_xp": 161000,
           "scrap_details": {
+            "scrap_time": 106380,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2821,16 +2824,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 106380
-          },
-          "ship_xp": 161000
+            ]
+          }
         },
         {
           "ability_bonus": 5.7,
           "additional_officer_slot": false,
           "level": 43,
+          "ship_xp": 176000,
           "scrap_details": {
+            "scrap_time": 99240,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2848,16 +2851,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 99240
-          },
-          "ship_xp": 176000
+            ]
+          }
         },
         {
           "ability_bonus": 5.85,
           "additional_officer_slot": false,
           "level": 44,
+          "ship_xp": 183000,
           "scrap_details": {
+            "scrap_time": 92580,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2875,16 +2878,16 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 92580
-          },
-          "ship_xp": 183000
+            ]
+          }
         },
         {
           "ability_bonus": 6.0,
           "additional_officer_slot": true,
           "level": 45,
+          "ship_xp": 200000,
           "scrap_details": {
+            "scrap_time": 86400,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2902,14 +2905,11 @@
                 "type": "stella hull scan",
                 "value": 1
               }
-            ],
-            "scrap_time": 86400
-          },
-          "ship_xp": 200000
+            ]
+          }
         }
-      ],
-      "repair_time": 46440,
-      "tier": 9
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/stella.png"
 }

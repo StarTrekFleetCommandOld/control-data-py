@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Arkonian Scavenger",
   "description": "",
   "group": "neutral",
+  "level": 37,
+  "rarity": "common",
   "head_stats": {
     "attack": 318596,
     "defense": 313165,
     "health": 115915
   },
-  "hostile_name": "Arkonian Scavenger",
-  "level": 37,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 525,
-      "min_value": 525,
-      "value": 525
+      "$ref": "systems/yoruba_39"
+    },
+    {
+      "$ref": "systems/elzbar_38"
+    },
+    {
+      "$ref": "systems/nezha_38"
+    },
+    {
+      "$ref": "systems/ayvren_38"
     }
   ],
   "ship_class": "explorer",
@@ -37,25 +43,6 @@
       "shield_health": 119050
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/yoruba_39"
-    },
-    {
-      "$ref": "systems/elzbar_38"
-    },
-    {
-      "$ref": "systems/nezha_38"
-    },
-    {
-      "$ref": "systems/ayvren_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -87,6 +74,19 @@
         "shield_pierce": 10439
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 525,
+      "min_value": 525,
+      "value": 525
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

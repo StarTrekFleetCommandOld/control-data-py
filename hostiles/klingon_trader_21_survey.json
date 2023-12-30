@@ -1,14 +1,96 @@
 {
+  "hostile_name": "Klingon Trader",
   "description": "",
   "group": "klingon",
+  "level": 21,
+  "rarity": "common",
   "head_stats": {
     "attack": 4914,
     "defense": 13125,
     "health": 7200
   },
-  "hostile_name": "Klingon Trader",
-  "level": 21,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/bek_21"
+    },
+    {
+      "$ref": "systems/francihk_20"
+    },
+    {
+      "$ref": "systems/baryn_21"
+    },
+    {
+      "$ref": "systems/antonehk_21"
+    },
+    {
+      "$ref": "systems/godui_23"
+    },
+    {
+      "$ref": "systems/jonauer_22"
+    },
+    {
+      "$ref": "systems/woxoxit_22"
+    },
+    {
+      "$ref": "systems/uikuv_23"
+    },
+    {
+      "$ref": "systems/khitomer_23"
+    }
+  ],
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 700,
+      "armor_pierce": 700,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 3864,
+      "shield_pierce": 700
+    },
+    "defense": {
+      "armor": 875,
+      "dodge": 875,
+      "shield_deflect": 875
+    },
+    "health": {
+      "hull_health": 7200,
+      "shield_health": 7200
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 700,
+        "armor_pierce": 700,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 3864,
+        "max_damage": 3696,
+        "min_damage": 3024,
+        "shield_pierce": 700
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,91 +123,9 @@
       "value": 0
     }
   ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 700,
-      "armor_pierce": 700,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 3864,
-      "shield_pierce": 700
-    },
-    "defense": {
-      "armor": 875,
-      "dodge": 875,
-      "shield_deflect": 875
-    },
-    "health": {
-      "hull_health": 7200,
-      "shield_health": 7200
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/bek_21"
-    },
-    {
-      "$ref": "systems/francihk_20"
-    },
-    {
-      "$ref": "systems/baryn_21"
-    },
-    {
-      "$ref": "systems/antonehk_21"
-    },
-    {
-      "$ref": "systems/godui_23"
-    },
-    {
-      "$ref": "systems/jonauer_22"
-    },
-    {
-      "$ref": "systems/woxoxit_22"
-    },
-    {
-      "$ref": "systems/uikuv_23"
-    },
-    {
-      "$ref": "systems/khitomer_23"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 10
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 700,
-        "armor_pierce": 700,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 3864,
-        "max_damage": 3696,
-        "min_damage": 3024,
-        "shield_pierce": 700
-      },
-      "weapon_type": "energy"
     }
   ]
 }

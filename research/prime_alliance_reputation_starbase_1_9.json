@@ -1,15 +1,16 @@
 {
+  "research_name": "Prime Alliance Reputation",
   "description": "Increases the amount of Alliance Reputation earned when defeating Cardassian Stations",
-  "img_url": "./assets/prime_alliance_reputation_starbase_1_9.png",
+  "location": {
+    "column": 9,
+    "row": 1,
+    "tree": "starbase"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 3.0
-      },
-      "increased_power": 70000,
       "level": 1,
-      "required_by": [],
+      "research_time": 3900060,
+      "increased_power": 70000,
       "requirements": [
         {
           "name": "R&D Department",
@@ -20,28 +21,27 @@
           "level": 1
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 33400000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "prime medal",
             "value": 500
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 33400000
-          }
         ]
       },
-      "research_time": 3900060
+      "bonus": {
+        "percentage": true,
+        "value": 3.0
+      }
     }
   ],
-  "location": {
-    "column": 9,
-    "row": 1,
-    "tree": "starbase"
-  },
-  "research_name": "Prime Alliance Reputation"
+  "img_url": "./assets/prime_alliance_reputation_starbase_1_9.png"
 }

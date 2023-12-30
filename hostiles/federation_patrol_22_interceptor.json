@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 22,
+  "rarity": "common",
   "head_stats": {
     "attack": 15082,
     "defense": 18075,
     "health": 10940
   },
-  "hostile_name": "Federation Patrol",
-  "level": 22,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/aruna_21"
+    },
+    {
+      "$ref": "systems/metea_24"
+    },
+    {
+      "$ref": "systems/le_onor_21"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 12640
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/aruna_21"
-    },
-    {
-      "$ref": "systems/metea_24"
-    },
-    {
-      "$ref": "systems/le_onor_21"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +102,12 @@
         "shield_pierce": 638
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

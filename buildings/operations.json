@@ -1,74 +1,68 @@
 {
-  "description": "Operations houses the command center and the main computer. Upgrading Operations increases the overall capability of the Station by unlocking more buildings for construction.",
-  "bonuses": {
-    "bonus1": {
-      "name": "Weapon Damage Bonus",
-      "percentage": true
-    }
-  },
   "building_name": "Operations",
+  "description": "Operations houses the command center and the main computer. Upgrading Operations increases the overall capability of the Station by unlocking more buildings for construction.",
   "levels": [
     {
-      "bonuses": {
-        "bonus1": 0.01
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": []
-      },
+      "level": 1,
       "build_time": 0,
       "increased_power": 0,
-      "level": 1,
-      "requirements": []
+      "requirements": [],
+      "build_costs": {
+        "resources": [],
+        "materials": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.01
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 0.02
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "parsteel",
-            "value": 50
-          }
-        ]
-      },
+      "level": 2,
       "build_time": 300,
       "increased_power": 120,
-      "level": 2,
       "requirements": [
         {
           "name": "Parsteel Warehouse",
           "level": 1
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.03
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "parsteel",
-            "value": 75
+            "value": 50
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.02
+      }
+    },
+    {
+      "level": 3,
       "build_time": 360,
       "increased_power": 70,
-      "level": 3,
       "requirements": [
         {
           "name": "Parsteel Warehouse",
           "level": 2
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 75
+          }
+        ],
+        "materials": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.03
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -81,22 +75,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.04
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "parsteel",
-            "value": 125
-          }
-        ]
-      },
+      "level": 4,
       "build_time": 450,
       "increased_power": 80,
-      "level": 4,
       "requirements": [
         {
           "name": "Parsteel Warehouse",
@@ -107,6 +88,19 @@
           "level": 2
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 125
+          }
+        ],
+        "materials": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.04
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -119,28 +113,28 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.05
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "parsteel",
-            "value": 400
-          }
-        ]
-      },
+      "level": 5,
       "build_time": 900,
       "increased_power": 100,
-      "level": 5,
       "requirements": [
         {
           "name": "Parsteel Warehouse",
           "level": 4
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 400
+          }
+        ],
+        "materials": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.05
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -157,28 +151,28 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.06
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "parsteel",
-            "value": 1000
-          }
-        ]
-      },
+      "level": 6,
       "build_time": 1800,
       "increased_power": 110,
-      "level": 6,
       "requirements": [
         {
           "name": "Drydock B",
           "level": 1
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1000
+          }
+        ],
+        "materials": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.06
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -195,26 +189,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.07
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 70
-          },
-          {
-            "type": "parsteel",
-            "value": 2000
-          }
-        ]
-      },
+      "level": 7,
       "build_time": 7200,
       "increased_power": 145,
-      "level": 7,
       "requirements": [
         {
           "name": "Shipyard",
@@ -225,6 +202,23 @@
           "level": 3
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 70
+          },
+          {
+            "type": "parsteel",
+            "value": 2000
+          }
+        ],
+        "materials": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.07
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -241,26 +235,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.08
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 100
-          },
-          {
-            "type": "parsteel",
-            "value": 6000
-          }
-        ]
-      },
+      "level": 8,
       "build_time": 21600,
       "increased_power": 175,
-      "level": 8,
       "requirements": [
         {
           "name": "Shipyard",
@@ -275,6 +252,23 @@
           "level": 4
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 100
+          },
+          {
+            "type": "parsteel",
+            "value": 6000
+          }
+        ],
+        "materials": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.08
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -291,26 +285,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.09
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 250
-          },
-          {
-            "type": "parsteel",
-            "value": 10000
-          }
-        ]
-      },
+      "level": 9,
       "build_time": 18000,
       "increased_power": 200,
-      "level": 9,
       "requirements": [
         {
           "name": "Shipyard",
@@ -325,6 +302,23 @@
           "level": 8
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 250
+          },
+          {
+            "type": "parsteel",
+            "value": 10000
+          }
+        ],
+        "materials": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.09
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -341,26 +335,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.1
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 225
-          },
-          {
-            "type": "parsteel",
-            "value": 15000
-          }
-        ]
-      },
+      "level": 10,
       "build_time": 28800,
       "increased_power": 275,
-      "level": 10,
       "requirements": [
         {
           "name": "Shipyard",
@@ -375,6 +352,23 @@
           "level": 9
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 225
+          },
+          {
+            "type": "parsteel",
+            "value": 15000
+          }
+        ],
+        "materials": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.1
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -391,12 +385,16 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.11
-      },
+      "level": 11,
+      "build_time": 25920,
+      "increased_power": 325,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 10
+        }
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -410,17 +408,13 @@
             "type": "dilithium",
             "value": 20
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "build_time": 25920,
-      "increased_power": 325,
-      "level": 11,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 10
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.11
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -437,12 +431,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.12
-      },
+      "level": 12,
+      "build_time": 46080,
+      "increased_power": 400,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 11
+        },
+        {
+          "name": "Refinery",
+          "level": 3
+        }
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -456,21 +458,13 @@
             "type": "dilithium",
             "value": 55
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "build_time": 46080,
-      "increased_power": 400,
-      "level": 12,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 11
-        },
-        {
-          "name": "Refinery",
-          "level": 3
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.12
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -487,12 +481,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.13
-      },
+      "level": 13,
+      "build_time": 68400,
+      "increased_power": 400,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 12
+        },
+        {
+          "name": "Refinery",
+          "level": 6
+        }
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -506,21 +508,13 @@
             "type": "dilithium",
             "value": 120
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "build_time": 68400,
-      "increased_power": 400,
-      "level": 13,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 12
-        },
-        {
-          "name": "Refinery",
-          "level": 6
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.13
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -537,37 +531,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.14
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "common",
-            "value": 25
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 825
-          },
-          {
-            "type": "parsteel",
-            "value": 44880
-          },
-          {
-            "type": "dilithium",
-            "value": 220
-          }
-        ]
-      },
+      "level": 14,
       "build_time": 95760,
       "increased_power": 500,
-      "level": 14,
       "requirements": [
         {
           "name": "Shipyard",
@@ -582,6 +548,34 @@
           "level": 6
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 825
+          },
+          {
+            "type": "parsteel",
+            "value": 44880
+          },
+          {
+            "type": "dilithium",
+            "value": 220
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 25,
+            "grade": 2,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.14
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -598,37 +592,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.15
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "common",
-            "value": 50
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 1125
-          },
-          {
-            "type": "parsteel",
-            "value": 61200
-          },
-          {
-            "type": "dilithium",
-            "value": 375
-          }
-        ]
-      },
+      "level": 15,
       "build_time": 123120,
       "increased_power": 600,
-      "level": 15,
       "requirements": [
         {
           "name": "Shipyard",
@@ -643,6 +609,34 @@
           "level": 10
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 1125
+          },
+          {
+            "type": "parsteel",
+            "value": 61200
+          },
+          {
+            "type": "dilithium",
+            "value": 375
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 50,
+            "grade": 2,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.15
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -659,25 +653,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.16
-      },
+      "level": 16,
+      "build_time": 144720,
+      "increased_power": 700,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 15
+        },
+        {
+          "name": "Defense Technologies",
+          "level": 5
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "common",
-            "value": 100
-          },
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "uncommon",
-            "value": 5
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -691,21 +680,26 @@
             "type": "dilithium",
             "value": 500
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 100,
+            "grade": 2,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 5,
+            "grade": 2,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 144720,
-      "increased_power": 700,
-      "level": 16,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 15
-        },
-        {
-          "name": "Defense Technologies",
-          "level": 5
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.16
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -722,25 +716,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.17
-      },
+      "level": 17,
+      "build_time": 156240,
+      "increased_power": 800,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 16
+        },
+        {
+          "name": "Dilithium Vault",
+          "level": 3
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "common",
-            "value": 200
-          },
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "uncommon",
-            "value": 10
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -754,21 +743,26 @@
             "type": "dilithium",
             "value": 700
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 200,
+            "grade": 2,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 10,
+            "grade": 2,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 156240,
-      "increased_power": 800,
-      "level": 17,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 16
-        },
-        {
-          "name": "Dilithium Vault",
-          "level": 3
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.17
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -785,43 +779,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.18
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "common",
-            "value": 500
-          },
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "uncommon",
-            "value": 25
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 3000
-          },
-          {
-            "type": "parsteel",
-            "value": 163200
-          },
-          {
-            "type": "dilithium",
-            "value": 1000
-          }
-        ]
-      },
+      "level": 18,
       "build_time": 239040,
       "increased_power": 1000,
-      "level": 18,
       "requirements": [
         {
           "name": "Shipyard",
@@ -836,6 +796,40 @@
           "level": 17
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 3000
+          },
+          {
+            "type": "parsteel",
+            "value": 163200
+          },
+          {
+            "type": "dilithium",
+            "value": 1000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 500,
+            "grade": 2,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 25,
+            "grade": 2,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.18
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -852,25 +846,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.19
-      },
+      "level": 19,
+      "build_time": 347040,
+      "increased_power": 1000,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 18
+        },
+        {
+          "name": "Ship Hangar",
+          "level": 5
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "common",
-            "value": 1000
-          },
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "uncommon",
-            "value": 100
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -884,21 +873,26 @@
             "type": "dilithium",
             "value": 1500
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 1000,
+            "grade": 2,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 100,
+            "grade": 2,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 347040,
-      "increased_power": 1000,
-      "level": 19,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 18
-        },
-        {
-          "name": "Ship Hangar",
-          "level": 5
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.19
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -915,43 +909,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.2
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "common",
-            "value": 5000
-          },
-          {
-            "type": "ore",
-            "grade": 2,
-            "rarity": "uncommon",
-            "value": 300
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 6375
-          },
-          {
-            "type": "parsteel",
-            "value": 346800
-          },
-          {
-            "type": "dilithium",
-            "value": 2125
-          }
-        ]
-      },
+      "level": 20,
       "build_time": 521280,
       "increased_power": 1000,
-      "level": 20,
       "requirements": [
         {
           "name": "Shipyard",
@@ -966,6 +926,40 @@
           "level": 19
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 6375
+          },
+          {
+            "type": "parsteel",
+            "value": 346800
+          },
+          {
+            "type": "dilithium",
+            "value": 2125
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 5000,
+            "grade": 2,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 300,
+            "grade": 2,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.2
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -982,30 +976,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.21
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 10733
-          },
-          {
-            "type": "parsteel",
-            "value": 583848
-          },
-          {
-            "type": "dilithium",
-            "value": 3578
-          }
-        ]
-      },
+      "level": 21,
       "build_time": 476640,
       "increased_power": 1250,
-      "level": 21,
       "requirements": [
         {
           "name": "Shipyard",
@@ -1020,6 +993,27 @@
           "level": 20
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 10733
+          },
+          {
+            "type": "parsteel",
+            "value": 583848
+          },
+          {
+            "type": "dilithium",
+            "value": 3578
+          }
+        ],
+        "materials": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.21
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1036,37 +1030,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.22
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 300
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 16695
-          },
-          {
-            "type": "parsteel",
-            "value": 908208
-          },
-          {
-            "type": "dilithium",
-            "value": 5565
-          }
-        ]
-      },
+      "level": 22,
       "build_time": 743040,
       "increased_power": 1500,
-      "level": 22,
       "requirements": [
         {
           "name": "Shipyard",
@@ -1081,6 +1047,34 @@
           "level": 18
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 16695
+          },
+          {
+            "type": "parsteel",
+            "value": 908208
+          },
+          {
+            "type": "dilithium",
+            "value": 5565
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 300,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.22
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1097,37 +1091,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.23
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 430
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 27473
-          },
-          {
-            "type": "parsteel",
-            "value": 1494504
-          },
-          {
-            "type": "dilithium",
-            "value": 9158
-          }
-        ]
-      },
+      "level": 23,
       "build_time": 874080,
       "increased_power": 1500,
-      "level": 23,
       "requirements": [
         {
           "name": "Shipyard",
@@ -1142,6 +1108,34 @@
           "level": 22
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 27473
+          },
+          {
+            "type": "parsteel",
+            "value": 1494504
+          },
+          {
+            "type": "dilithium",
+            "value": 9158
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 430,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.23
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1158,43 +1152,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.24
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 560
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 50
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 43290
-          },
-          {
-            "type": "parsteel",
-            "value": 2354976
-          },
-          {
-            "type": "dilithium",
-            "value": 14430
-          }
-        ]
-      },
+      "level": 24,
       "build_time": 1071360,
       "increased_power": 1750,
-      "level": 24,
       "requirements": [
         {
           "name": "Science Lab",
@@ -1209,6 +1169,40 @@
           "level": 5
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 43290
+          },
+          {
+            "type": "parsteel",
+            "value": 2354976
+          },
+          {
+            "type": "dilithium",
+            "value": 14430
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 560,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 50,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.24
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1225,25 +1219,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.25
-      },
+      "level": 25,
+      "build_time": 992160,
+      "increased_power": 2000,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 24
+        },
+        {
+          "name": "Ship Hangar",
+          "level": 24
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 700
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 80
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -1257,21 +1246,26 @@
             "type": "dilithium",
             "value": 23400
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 700,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 80,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 992160,
-      "increased_power": 2000,
-      "level": 25,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 24
-        },
-        {
-          "name": "Ship Hangar",
-          "level": 24
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.25
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1288,25 +1282,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.26
-      },
+      "level": 26,
+      "build_time": 1346400,
+      "increased_power": 2000,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 25
+        },
+        {
+          "name": "Defense Platform C",
+          "level": 25
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 860
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 120
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -1320,21 +1309,26 @@
             "type": "dilithium",
             "value": 36563
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 860,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 120,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 1346400,
-      "increased_power": 2000,
-      "level": 26,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 25
-        },
-        {
-          "name": "Defense Platform C",
-          "level": 25
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.26
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1351,25 +1345,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.27
-      },
+      "level": 27,
+      "build_time": 1533600,
+      "increased_power": 2500,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 26
+        },
+        {
+          "name": "Foundry",
+          "level": 26
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1030
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 170
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -1383,21 +1372,26 @@
             "type": "dilithium",
             "value": 55800
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 1030,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 170,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 1533600,
-      "increased_power": 2500,
-      "level": 27,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 26
-        },
-        {
-          "name": "Foundry",
-          "level": 26
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.27
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1414,25 +1408,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.28
-      },
+      "level": 28,
+      "build_time": 1779840,
+      "increased_power": 2500,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 27
+        },
+        {
+          "name": "Engine Technology Lab",
+          "level": 27
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1210
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 230
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -1446,21 +1435,26 @@
             "type": "dilithium",
             "value": 83700
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 1210,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 230,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 1779840,
-      "increased_power": 2500,
-      "level": 28,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 27
-        },
-        {
-          "name": "Engine Technology Lab",
-          "level": 27
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.28
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1477,43 +1471,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.29
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1410
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 300
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 399750
-          },
-          {
-            "type": "parsteel",
-            "value": 21746400
-          },
-          {
-            "type": "dilithium",
-            "value": 133250
-          }
-        ]
-      },
+      "level": 29,
       "build_time": 1962720,
       "increased_power": 2500,
-      "level": 29,
       "requirements": [
         {
           "name": "Shipyard",
@@ -1528,6 +1488,40 @@
           "level": 28
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 399750
+          },
+          {
+            "type": "parsteel",
+            "value": 21746400
+          },
+          {
+            "type": "dilithium",
+            "value": 133250
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 1410,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 300,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.29
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1544,43 +1538,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.3
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1640
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 390
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 585000
-          },
-          {
-            "type": "parsteel",
-            "value": 31824000
-          },
-          {
-            "type": "dilithium",
-            "value": 195000
-          }
-        ]
-      },
+      "level": 30,
       "build_time": 2128320,
       "increased_power": 3000,
-      "level": 30,
       "requirements": [
         {
           "name": "Shipyard",
@@ -1595,6 +1555,40 @@
           "level": 29
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 585000
+          },
+          {
+            "type": "parsteel",
+            "value": 31824000
+          },
+          {
+            "type": "dilithium",
+            "value": 195000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 1640,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 390,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.3
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1611,43 +1605,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.31
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1900
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "rare",
-            "value": 50
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 924750
-          },
-          {
-            "type": "parsteel",
-            "value": 50306400
-          },
-          {
-            "type": "dilithium",
-            "value": 308250
-          }
-        ]
-      },
+      "level": 31,
       "build_time": 2792160,
       "increased_power": 3000,
-      "level": 31,
       "requirements": [
         {
           "name": "Shipyard",
@@ -1662,6 +1622,40 @@
           "level": 30
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 924750
+          },
+          {
+            "type": "parsteel",
+            "value": 50306400
+          },
+          {
+            "type": "dilithium",
+            "value": 308250
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 1900,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 50,
+            "grade": 3,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.31
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1678,43 +1672,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.32
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 2100
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 630
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 1335750
-          },
-          {
-            "type": "parsteel",
-            "value": 72664800
-          },
-          {
-            "type": "dilithium",
-            "value": 445250
-          }
-        ]
-      },
+      "level": 32,
       "build_time": 2727360,
       "increased_power": 3500,
-      "level": 32,
       "requirements": [
         {
           "name": "Shipyard",
@@ -1729,6 +1689,40 @@
           "level": 31
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 1335750
+          },
+          {
+            "type": "parsteel",
+            "value": 72664800
+          },
+          {
+            "type": "dilithium",
+            "value": 445250
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 2100,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 630,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.32
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1745,43 +1739,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.33
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 2400
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 780
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 2066250
-          },
-          {
-            "type": "parsteel",
-            "value": 112404000
-          },
-          {
-            "type": "dilithium",
-            "value": 688750
-          }
-        ]
-      },
+      "level": 33,
       "build_time": 3964320,
       "increased_power": 3500,
-      "level": 33,
       "requirements": [
         {
           "name": "Shipyard",
@@ -1796,6 +1756,40 @@
           "level": 32
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 2066250
+          },
+          {
+            "type": "parsteel",
+            "value": 112404000
+          },
+          {
+            "type": "dilithium",
+            "value": 688750
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 2400,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 780,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.33
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1812,43 +1806,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.34
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 2800
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 950
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 3262500
-          },
-          {
-            "type": "parsteel",
-            "value": 177480000
-          },
-          {
-            "type": "dilithium",
-            "value": 1087500
-          }
-        ]
-      },
+      "level": 34,
       "build_time": 5248800,
       "increased_power": 4000,
-      "level": 34,
       "requirements": [
         {
           "name": "Shipyard",
@@ -1863,6 +1823,40 @@
           "level": 33
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 3262500
+          },
+          {
+            "type": "parsteel",
+            "value": 177480000
+          },
+          {
+            "type": "dilithium",
+            "value": 1087500
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 2800,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 950,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.34
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1879,43 +1873,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.35
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 3100
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "rare",
-            "value": 100
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 5049000
-          },
-          {
-            "type": "parsteel",
-            "value": 274665600
-          },
-          {
-            "type": "dilithium",
-            "value": 1683000
-          }
-        ]
-      },
+      "level": 35,
       "build_time": 6917760,
       "increased_power": 4000,
-      "level": 35,
       "requirements": [
         {
           "name": "Parsteel Warehouse",
@@ -1930,6 +1890,40 @@
           "level": 34
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 5049000
+          },
+          {
+            "type": "parsteel",
+            "value": 274665600
+          },
+          {
+            "type": "dilithium",
+            "value": 1683000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 3100,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 100,
+            "grade": 3,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.35
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -1946,25 +1940,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.36
-      },
+      "level": 36,
+      "build_time": 8841600,
+      "increased_power": 4500,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 35
+        },
+        {
+          "name": "Parsteel Warehouse",
+          "level": 31
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 3500
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 1370
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -1978,21 +1967,26 @@
             "type": "dilithium",
             "value": 2371500
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 3500,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 1370,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 8841600,
-      "increased_power": 4500,
-      "level": 36,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 35
-        },
-        {
-          "name": "Parsteel Warehouse",
-          "level": 31
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.36
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2009,25 +2003,16 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.37
-      },
+      "level": 37,
+      "build_time": 9136800,
+      "increased_power": 5000,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 36
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 3900
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 1620
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -2041,17 +2026,26 @@
             "type": "dilithium",
             "value": 3645000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 3900,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 1620,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 9136800,
-      "increased_power": 5000,
-      "level": 37,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 36
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.37
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2068,25 +2062,16 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.38
-      },
+      "level": 38,
+      "build_time": 14817600,
+      "increased_power": 5000,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 37
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 4300
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 1900
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -2100,17 +2085,26 @@
             "type": "dilithium",
             "value": 5670000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 4300,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 1900,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 14817600,
-      "increased_power": 5000,
-      "level": 38,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 37
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.38
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2127,25 +2121,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.39
-      },
+      "level": 39,
+      "build_time": 19667520,
+      "increased_power": 5000,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 38
+        },
+        {
+          "name": "Ship Hangar",
+          "level": 38
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 4800
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "rare",
-            "value": 500
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -2159,21 +2148,26 @@
             "type": "dilithium",
             "value": 9675000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 4800,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 500,
+            "grade": 3,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
-      "build_time": 19667520,
-      "increased_power": 5000,
-      "level": 39,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 38
-        },
-        {
-          "name": "Ship Hangar",
-          "level": 38
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.39
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2190,35 +2184,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.4
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [
-          {
-            "type": "ascend key",
-            "value": 400
-          }
-        ],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 45150000
-          },
-          {
-            "type": "parsteel",
-            "value": 6877248000
-          },
-          {
-            "type": "dilithium",
-            "value": 15050000
-          }
-        ]
-      },
+      "level": 40,
       "build_time": 34905600,
       "increased_power": 6000,
-      "level": 40,
       "requirements": [
         {
           "name": "Shipyard",
@@ -2233,6 +2201,32 @@
           "level": 39
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 45150000
+          },
+          {
+            "type": "parsteel",
+            "value": 6877248000
+          },
+          {
+            "type": "dilithium",
+            "value": 15050000
+          }
+        ],
+        "materials": [],
+        "others": [
+          {
+            "type": "ascend key",
+            "value": 400
+          }
+        ]
+      },
+      "bonuses": {
+        "bonus1": 0.4
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2249,19 +2243,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.41
-      },
+      "level": 41,
+      "build_time": 32713920,
+      "increased_power": 6000,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 40
+        },
+        {
+          "name": "Parsteel Vault",
+          "level": 40
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "common",
-            "value": 50000
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -2275,21 +2270,20 @@
             "type": "dilithium",
             "value": 21500000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 50000,
+            "grade": 4,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
-      "build_time": 32713920,
-      "increased_power": 6000,
-      "level": 41,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 40
-        },
-        {
-          "name": "Parsteel Vault",
-          "level": 40
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.41
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2306,43 +2300,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.42
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 30000
-          },
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "common",
-            "value": 88000
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 96075000
-          },
-          {
-            "type": "parsteel",
-            "value": 10452960000
-          },
-          {
-            "type": "dilithium",
-            "value": 32025000
-          }
-        ]
-      },
+      "level": 42,
       "build_time": 50284800,
       "increased_power": 7000,
-      "level": 42,
       "requirements": [
         {
           "name": "Shipyard",
@@ -2357,6 +2317,40 @@
           "level": 41
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 96075000
+          },
+          {
+            "type": "parsteel",
+            "value": 10452960000
+          },
+          {
+            "type": "dilithium",
+            "value": 32025000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 30000,
+            "grade": 4,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "ore",
+            "value": 88000,
+            "grade": 4,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.42
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2373,43 +2367,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.43
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 2500
-          },
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "common",
-            "value": 50000
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 137250000
-          },
-          {
-            "type": "parsteel",
-            "value": 14932800000
-          },
-          {
-            "type": "dilithium",
-            "value": 45750000
-          }
-        ]
-      },
+      "level": 43,
       "build_time": 66437280,
       "increased_power": 7000,
-      "level": 43,
       "requirements": [
         {
           "name": "Shipyard",
@@ -2424,6 +2384,40 @@
           "level": 42
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 137250000
+          },
+          {
+            "type": "parsteel",
+            "value": 14932800000
+          },
+          {
+            "type": "dilithium",
+            "value": 45750000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 2500,
+            "grade": 4,
+            "rarity": "rare"
+          },
+          {
+            "type": "ore",
+            "value": 50000,
+            "grade": 4,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.43
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2440,43 +2434,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.44
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 6000
-          },
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 16500
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 205875000
-          },
-          {
-            "type": "parsteel",
-            "value": 22399200000
-          },
-          {
-            "type": "dilithium",
-            "value": 68625000
-          }
-        ]
-      },
+      "level": 44,
       "build_time": 86715360,
       "increased_power": 7000,
-      "level": 44,
       "requirements": [
         {
           "name": "Shipyard",
@@ -2491,6 +2451,40 @@
           "level": 20
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 205875000
+          },
+          {
+            "type": "parsteel",
+            "value": 22399200000
+          },
+          {
+            "type": "dilithium",
+            "value": 68625000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 6000,
+            "grade": 4,
+            "rarity": "rare"
+          },
+          {
+            "type": "ore",
+            "value": 16500,
+            "grade": 4,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.44
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2507,43 +2501,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.45
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 9000
-          },
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "common",
-            "value": 150000
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 292500000
-          },
-          {
-            "type": "parsteel",
-            "value": 31824000000
-          },
-          {
-            "type": "dilithium",
-            "value": 97500000
-          }
-        ]
-      },
+      "level": 45,
       "build_time": 111949920,
       "increased_power": 7000,
-      "level": 45,
       "requirements": [
         {
           "name": "Shipyard",
@@ -2558,6 +2518,40 @@
           "level": 44
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 292500000
+          },
+          {
+            "type": "parsteel",
+            "value": 31824000000
+          },
+          {
+            "type": "dilithium",
+            "value": 97500000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 9000,
+            "grade": 4,
+            "rarity": "rare"
+          },
+          {
+            "type": "ore",
+            "value": 150000,
+            "grade": 4,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.45
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2574,43 +2568,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.46
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 10000
-          },
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 30000
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 402187500
-          },
-          {
-            "type": "parsteel",
-            "value": 43758000000
-          },
-          {
-            "type": "dilithium",
-            "value": 134062500
-          }
-        ]
-      },
+      "level": 46,
       "build_time": 143101440,
       "increased_power": 8000,
-      "level": 46,
       "requirements": [
         {
           "name": "Shipyard",
@@ -2625,6 +2585,40 @@
           "level": 45
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 402187500
+          },
+          {
+            "type": "parsteel",
+            "value": 43758000000
+          },
+          {
+            "type": "dilithium",
+            "value": 134062500
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 10000,
+            "grade": 4,
+            "rarity": "rare"
+          },
+          {
+            "type": "ore",
+            "value": 30000,
+            "grade": 4,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.46
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2641,25 +2635,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.47
-      },
+      "level": 47,
+      "build_time": 181280160,
+      "increased_power": 9000,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 46
+        },
+        {
+          "name": "Defense Platform E",
+          "level": 46
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 12000
-          },
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 30000
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -2673,21 +2662,26 @@
             "type": "dilithium",
             "value": 195000000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 12000,
+            "grade": 4,
+            "rarity": "rare"
+          },
+          {
+            "type": "ore",
+            "value": 30000,
+            "grade": 4,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 181280160,
-      "increased_power": 9000,
-      "level": 47,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 46
-        },
-        {
-          "name": "Defense Platform E",
-          "level": 46
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.47
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2704,43 +2698,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.48
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 8000
-          },
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 30000
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 945000000
-          },
-          {
-            "type": "parsteel",
-            "value": 102816000000
-          },
-          {
-            "type": "dilithium",
-            "value": 315000000
-          }
-        ]
-      },
+      "level": 48,
       "build_time": 227753280,
       "increased_power": 8000,
-      "level": 48,
       "requirements": [
         {
           "name": "Shipyard",
@@ -2755,6 +2715,40 @@
           "level": 47
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 945000000
+          },
+          {
+            "type": "parsteel",
+            "value": 102816000000
+          },
+          {
+            "type": "dilithium",
+            "value": 315000000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 8000,
+            "grade": 4,
+            "rarity": "rare"
+          },
+          {
+            "type": "ore",
+            "value": 30000,
+            "grade": 4,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.48
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2771,25 +2765,16 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.49
-      },
+      "level": 49,
+      "build_time": 283966560,
+      "increased_power": 10000,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 48
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 3400
-          },
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 12500
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -2803,17 +2788,26 @@
             "type": "dilithium",
             "value": 525000000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 3400,
+            "grade": 4,
+            "rarity": "rare"
+          },
+          {
+            "type": "ore",
+            "value": 12500,
+            "grade": 4,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "build_time": 283966560,
-      "increased_power": 10000,
-      "level": 49,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 48
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.49
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2830,43 +2824,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.5
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 20000
-          },
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 60000
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 2756250000
-          },
-          {
-            "type": "parsteel",
-            "value": 299880000000
-          },
-          {
-            "type": "dilithium",
-            "value": 918750000
-          }
-        ]
-      },
+      "level": 50,
       "build_time": 351570240,
       "increased_power": 9000,
-      "level": 50,
       "requirements": [
         {
           "name": "Ship Hangar",
@@ -2881,6 +2841,40 @@
           "level": 49
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 2756250000
+          },
+          {
+            "type": "parsteel",
+            "value": 299880000000
+          },
+          {
+            "type": "dilithium",
+            "value": 918750000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 20000,
+            "grade": 4,
+            "rarity": "rare"
+          },
+          {
+            "type": "ore",
+            "value": 60000,
+            "grade": 4,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.5
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2897,35 +2891,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.51
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [
-          {
-            "type": "ascend key 2",
-            "value": 400
-          }
-        ],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 5850000000
-          },
-          {
-            "type": "parsteel",
-            "value": 1495728000000
-          },
-          {
-            "type": "dilithium",
-            "value": 1950000000
-          }
-        ]
-      },
+      "level": 51,
       "build_time": 372664800,
       "increased_power": 11000,
-      "level": 51,
       "requirements": [
         {
           "name": "Shipyard",
@@ -2940,6 +2908,32 @@
           "level": 5
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 5850000000
+          },
+          {
+            "type": "parsteel",
+            "value": 1495728000000
+          },
+          {
+            "type": "dilithium",
+            "value": 1950000000
+          }
+        ],
+        "materials": [],
+        "others": [
+          {
+            "type": "ascend key 2",
+            "value": 400
+          }
+        ]
+      },
+      "bonuses": {
+        "bonus1": 0.51
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -2952,19 +2946,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.52
-      },
+      "level": 52,
+      "build_time": 395025120,
+      "increased_power": 10000,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 51
+        },
+        {
+          "name": "Parsteel Vault",
+          "level": 51
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "common",
-            "value": 42200
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -2978,21 +2973,20 @@
             "type": "dilithium",
             "value": 3315000000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 42200,
+            "grade": 5,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
-      "build_time": 395025120,
-      "increased_power": 10000,
-      "level": 52,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 51
-        },
-        {
-          "name": "Parsteel Vault",
-          "level": 51
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.52
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -3009,43 +3003,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.53
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 36700
-          },
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "common",
-            "value": 55900
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 17400000000
-          },
-          {
-            "type": "parsteel",
-            "value": 4543488000000
-          },
-          {
-            "type": "dilithium",
-            "value": 5800000000
-          }
-        ]
-      },
+      "level": 53,
       "build_time": 418726080,
       "increased_power": 11000,
-      "level": 53,
       "requirements": [
         {
           "name": "Dilithium Vault",
@@ -3060,6 +3020,40 @@
           "level": 52
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 17400000000
+          },
+          {
+            "type": "parsteel",
+            "value": 4543488000000
+          },
+          {
+            "type": "dilithium",
+            "value": 5800000000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 36700,
+            "grade": 5,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "ore",
+            "value": 55900,
+            "grade": 5,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.53
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -3076,43 +3070,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.54
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 46200
-          },
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "rare",
-            "value": 9600
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 26100000000
-          },
-          {
-            "type": "parsteel",
-            "value": 6815232000000
-          },
-          {
-            "type": "dilithium",
-            "value": 8700000000
-          }
-        ]
-      },
+      "level": 54,
       "build_time": 443849760,
       "increased_power": 12000,
-      "level": 54,
       "requirements": [
         {
           "name": "Shipyard",
@@ -3127,6 +3087,40 @@
           "level": 53
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 26100000000
+          },
+          {
+            "type": "parsteel",
+            "value": 6815232000000
+          },
+          {
+            "type": "dilithium",
+            "value": 8700000000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 46200,
+            "grade": 5,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "ore",
+            "value": 9600,
+            "grade": 5,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.54
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -3143,43 +3137,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.55
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 74000
-          },
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "rare",
-            "value": 12600
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 40950000000
-          },
-          {
-            "type": "parsteel",
-            "value": 11583936000000
-          },
-          {
-            "type": "dilithium",
-            "value": 13650000000
-          }
-        ]
-      },
+      "level": 55,
       "build_time": 470481120,
       "increased_power": 11000,
-      "level": 55,
       "requirements": [
         {
           "name": "Shipyard",
@@ -3194,6 +3154,40 @@
           "level": 54
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 40950000000
+          },
+          {
+            "type": "parsteel",
+            "value": 11583936000000
+          },
+          {
+            "type": "dilithium",
+            "value": 13650000000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 74000,
+            "grade": 5,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "ore",
+            "value": 12600,
+            "grade": 5,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.55
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -3210,43 +3204,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.56
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 68800
-          },
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "rare",
-            "value": 17300
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 64350000000
-          },
-          {
-            "type": "parsteel",
-            "value": 18203328000000
-          },
-          {
-            "type": "dilithium",
-            "value": 21450000000
-          }
-        ]
-      },
+      "level": 56,
       "build_time": 498709440,
       "increased_power": 15000,
-      "level": 56,
       "requirements": [
         {
           "name": "Shipyard",
@@ -3261,6 +3221,40 @@
           "level": 55
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 64350000000
+          },
+          {
+            "type": "parsteel",
+            "value": 18203328000000
+          },
+          {
+            "type": "dilithium",
+            "value": 21450000000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 68800,
+            "grade": 5,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "ore",
+            "value": 17300,
+            "grade": 5,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.56
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -3277,43 +3271,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.57
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 71300
-          },
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "rare",
-            "value": 22200
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 100740000000
-          },
-          {
-            "type": "parsteel",
-            "value": 28497331200000
-          },
-          {
-            "type": "dilithium",
-            "value": 33580000000
-          }
-        ]
-      },
+      "level": 57,
       "build_time": 528631200,
       "increased_power": 10000,
-      "level": 57,
       "requirements": [
         {
           "name": "Shipyard",
@@ -3328,6 +3288,40 @@
           "level": 56
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 100740000000
+          },
+          {
+            "type": "parsteel",
+            "value": 28497331200000
+          },
+          {
+            "type": "dilithium",
+            "value": 33580000000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 71300,
+            "grade": 5,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "ore",
+            "value": 22200,
+            "grade": 5,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.57
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -3344,43 +3338,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.58
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 96100
-          },
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "rare",
-            "value": 18300
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 157680000000
-          },
-          {
-            "type": "parsteel",
-            "value": 41173401600000
-          },
-          {
-            "type": "dilithium",
-            "value": 52560000000
-          }
-        ]
-      },
+      "level": 58,
       "build_time": 560350080,
       "increased_power": 15000,
-      "level": 58,
       "requirements": [
         {
           "name": "Shipyard",
@@ -3395,6 +3355,40 @@
           "level": 56
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 157680000000
+          },
+          {
+            "type": "parsteel",
+            "value": 41173401600000
+          },
+          {
+            "type": "dilithium",
+            "value": 52560000000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 96100,
+            "grade": 5,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "ore",
+            "value": 18300,
+            "grade": 5,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.58
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -3411,25 +3405,20 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.59
-      },
+      "level": 59,
+      "build_time": 593971200,
+      "increased_power": 15000,
+      "requirements": [
+        {
+          "name": "Shipyard",
+          "level": 58
+        },
+        {
+          "name": "Defense Platform F",
+          "level": 55
+        }
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 126400
-          },
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "rare",
-            "value": 37400
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -3443,21 +3432,26 @@
             "type": "dilithium",
             "value": 78840000000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 126400,
+            "grade": 5,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "ore",
+            "value": 37400,
+            "grade": 5,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
-      "build_time": 593971200,
-      "increased_power": 15000,
-      "level": 59,
-      "requirements": [
-        {
-          "name": "Shipyard",
-          "level": 58
-        },
-        {
-          "name": "Defense Platform F",
-          "level": 55
-        }
-      ],
+      "bonuses": {
+        "bonus1": 0.59
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -3474,43 +3468,9 @@
       ]
     },
     {
-      "bonuses": {
-        "bonus1": 0.6
-      },
-      "build_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 117400
-          },
-          {
-            "type": "ore",
-            "grade": 5,
-            "rarity": "rare",
-            "value": 36600
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 369375000000
-          },
-          {
-            "type": "parsteel",
-            "value": 96451200000000
-          },
-          {
-            "type": "dilithium",
-            "value": 123125000000
-          }
-        ]
-      },
+      "level": 60,
       "build_time": 629608320,
       "increased_power": 15000,
-      "level": 60,
       "requirements": [
         {
           "name": "Ship Hangar",
@@ -3525,6 +3485,40 @@
           "level": 59
         }
       ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 369375000000
+          },
+          {
+            "type": "parsteel",
+            "value": 96451200000000
+          },
+          {
+            "type": "dilithium",
+            "value": 123125000000
+          }
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 117400,
+            "grade": 5,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "ore",
+            "value": 36600,
+            "grade": 5,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.6
+      },
       "rewards": [
         {
           "type": "Latinum",
@@ -3540,5 +3534,11 @@
         }
       ]
     }
-  ]
+  ],
+  "bonuses": {
+    "bonus1": {
+      "name": "Weapon Damage Bonus",
+      "percentage": true
+    }
+  }
 }

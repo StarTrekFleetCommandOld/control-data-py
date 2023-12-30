@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Dessneran Bandit",
   "description": "",
   "group": "neutral",
+  "level": 31,
+  "rarity": "common",
   "head_stats": {
     "attack": 79001,
     "defense": 82500,
     "health": 38850
   },
-  "hostile_name": "Dessneran Bandit",
-  "level": 31,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/januu_33"
+    },
+    {
+      "$ref": "systems/izanagi_32"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 39900
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/januu_33"
-    },
-    {
-      "$ref": "systems/izanagi_32"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -74,6 +68,12 @@
         "shield_pierce": 2750
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

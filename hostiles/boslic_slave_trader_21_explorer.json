@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Boslic Slave Trader",
   "description": "",
   "group": "neutral",
+  "level": 21,
+  "rarity": "common",
   "head_stats": {
     "attack": 8959,
     "defense": 9750,
     "health": 4440
   },
-  "hostile_name": "Boslic Slave Trader",
-  "level": 21,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 232,
-      "min_value": 232,
-      "value": 232
+      "$ref": "systems/gelvin_19"
+    },
+    {
+      "$ref": "systems/midnight_19"
+    },
+    {
+      "$ref": "systems/zhang_19"
+    },
+    {
+      "$ref": "systems/opla_20"
+    },
+    {
+      "$ref": "systems/fastolf_21"
+    },
+    {
+      "$ref": "systems/sorenle_21"
     }
   ],
   "ship_class": "explorer",
@@ -37,31 +49,6 @@
       "shield_health": 4560
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/gelvin_19"
-    },
-    {
-      "$ref": "systems/midnight_19"
-    },
-    {
-      "$ref": "systems/zhang_19"
-    },
-    {
-      "$ref": "systems/opla_20"
-    },
-    {
-      "$ref": "systems/fastolf_21"
-    },
-    {
-      "$ref": "systems/sorenle_21"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -93,6 +80,19 @@
         "shield_pierce": 325
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 232,
+      "min_value": 232,
+      "value": 232
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

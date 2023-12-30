@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Hirogen Hunter",
   "description": "",
   "group": "neutral",
+  "level": 59,
+  "rarity": "common",
   "head_stats": {
     "attack": 159770039,
     "defense": 52023585,
     "health": 237344281
   },
-  "hostile_name": "Hirogen Hunter",
-  "level": 59,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 9038,
-      "min_value": 9038,
-      "value": 9038
+      "$ref": "systems/sivis_60"
+    },
+    {
+      "$ref": "systems/jaslyn_60"
+    },
+    {
+      "$ref": "systems/tak_tak_58"
     }
   ],
   "ship_class": "battleship",
@@ -37,22 +40,6 @@
       "shield_health": 192440535
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/sivis_60"
-    },
-    {
-      "$ref": "systems/jaslyn_60"
-    },
-    {
-      "$ref": "systems/tak_tak_58"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 7151196
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 9038,
+      "min_value": 9038,
+      "value": 9038
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

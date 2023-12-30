@@ -1,38 +1,23 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 48,
+  "rarity": "common",
   "head_stats": {
     "attack": 4385884,
     "defense": 1468535,
     "health": 7069128
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 48,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 775,
-      "min_value": 775,
-      "value": 775
+      "$ref": "systems/rai_trohk_49"
     },
     {
-      "type": "federation points",
-      "max_value": 3360,
-      "min_value": 3360,
-      "value": 3360
+      "$ref": "systems/lu_kash_46"
     },
     {
-      "type": "romulan points",
-      "max_value": 1680,
-      "min_value": 1680,
-      "value": 1680
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/annalu_47"
     }
   ],
   "ship_class": "battleship",
@@ -55,22 +40,6 @@
       "shield_health": 6059235
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/rai_trohk_49"
-    },
-    {
-      "$ref": "systems/lu_kash_46"
-    },
-    {
-      "$ref": "systems/annalu_47"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -133,6 +102,37 @@
         "shield_pierce": 266581
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 775,
+      "min_value": 775,
+      "value": 775
+    },
+    {
+      "type": "federation points",
+      "max_value": 3360,
+      "min_value": 3360,
+      "value": 3360
+    },
+    {
+      "type": "romulan points",
+      "max_value": 1680,
+      "min_value": 1680,
+      "value": 1680
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

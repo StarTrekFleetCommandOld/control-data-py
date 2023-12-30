@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Scouting Bandit",
   "description": "",
   "group": "neutral",
+  "level": 48,
+  "rarity": "common",
   "head_stats": {
     "attack": 4394213,
     "defense": 1823575,
     "health": 6032480
   },
-  "hostile_name": "Scouting Bandit",
-  "level": 48,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 771,
-      "min_value": 771,
-      "value": 771
+      "$ref": "systems/neo_tek_48"
+    },
+    {
+      "$ref": "systems/genflint_48"
+    },
+    {
+      "$ref": "systems/lsp_539_47"
+    },
+    {
+      "$ref": "systems/maumo_47"
     }
   ],
   "ship_class": "explorer",
@@ -37,25 +43,6 @@
       "shield_health": 6756380
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/neo_tek_48"
-    },
-    {
-      "$ref": "systems/genflint_48"
-    },
-    {
-      "$ref": "systems/lsp_539_47"
-    },
-    {
-      "$ref": "systems/maumo_47"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -87,6 +74,19 @@
         "shield_pierce": 164656
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 771,
+      "min_value": 771,
+      "value": 771
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

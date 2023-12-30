@@ -1,14 +1,78 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 30,
+  "rarity": "common",
   "head_stats": {
     "attack": 66622,
     "defense": 76125,
     "health": 37020
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 30,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/ulrich_31"
+    },
+    {
+      "$ref": "systems/morska_29"
+    },
+    {
+      "$ref": "systems/elequa_30"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 15120,
+      "armor_pierce": 2940,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 36225,
+      "shield_pierce": 2205
+    },
+    "defense": {
+      "armor": 2205,
+      "dodge": 2940,
+      "shield_deflect": 10080
+    },
+    "health": {
+      "hull_health": 36020,
+      "shield_health": 38020
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 15120,
+        "armor_pierce": 2940,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 12075,
+        "max_damage": 11550,
+        "min_damage": 9450,
+        "shield_pierce": 2205
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,73 +105,9 @@
       "value": 0
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 15120,
-      "armor_pierce": 2940,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 36225,
-      "shield_pierce": 2205
-    },
-    "defense": {
-      "armor": 2205,
-      "dodge": 2940,
-      "shield_deflect": 10080
-    },
-    "health": {
-      "hull_health": 36020,
-      "shield_health": 38020
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/ulrich_31"
-    },
-    {
-      "$ref": "systems/morska_29"
-    },
-    {
-      "$ref": "systems/elequa_30"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 20
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 15120,
-        "armor_pierce": 2940,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 12075,
-        "max_damage": 11550,
-        "min_damage": 9450,
-        "shield_pierce": 2205
-      },
-      "weapon_type": "energy"
     }
   ]
 }

@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Exchange Transport",
   "description": "",
   "group": "eclipse",
+  "level": 34,
+  "rarity": "common",
   "head_stats": {
     "attack": 530695,
     "defense": 1125000,
     "health": 3560561
   },
-  "hostile_name": "Exchange Transport",
-  "level": 34,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "eclipse security codes",
-      "max_value": 274,
-      "min_value": 274,
-      "value": 274
+      "$ref": "systems/yuma_32"
+    },
+    {
+      "$ref": "systems/exchange_delta_34"
+    },
+    {
+      "$ref": "systems/exchange_gamma_32"
+    },
+    {
+      "$ref": "systems/karppinen_36"
+    },
+    {
+      "$ref": "systems/peckinpah_34"
     }
   ],
   "ship_class": "survey",
@@ -37,28 +46,6 @@
       "shield_health": 2843209
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/yuma_32"
-    },
-    {
-      "$ref": "systems/exchange_delta_34"
-    },
-    {
-      "$ref": "systems/exchange_gamma_32"
-    },
-    {
-      "$ref": "systems/karppinen_36"
-    },
-    {
-      "$ref": "systems/peckinpah_34"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 18
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +108,19 @@
         "shield_pierce": 163200
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "eclipse security codes",
+      "max_value": 274,
+      "min_value": 274,
+      "value": 274
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 18
     }
   ]
 }

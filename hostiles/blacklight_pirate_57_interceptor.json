@@ -1,15 +1,31 @@
 {
+  "hostile_name": "Blacklight Pirate",
   "description": "",
   "group": "neutral",
+  "level": 57,
+  "rarity": "common",
   "head_stats": {
     "attack": 84407723,
     "defense": 23496550,
     "health": 86718174
   },
-  "hostile_name": "Blacklight Pirate",
-  "level": 57,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/rydania_59"
+    },
+    {
+      "$ref": "systems/st_19184_58"
+    },
+    {
+      "$ref": "systems/isa_day_57"
+    },
+    {
+      "$ref": "systems/sauchei_55"
+    },
+    {
+      "$ref": "systems/bell_eu_55"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,28 +46,6 @@
       "shield_health": 86718174
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/rydania_59"
-    },
-    {
-      "$ref": "systems/st_19184_58"
-    },
-    {
-      "$ref": "systems/isa_day_57"
-    },
-    {
-      "$ref": "systems/sauchei_55"
-    },
-    {
-      "$ref": "systems/bell_eu_55"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -114,6 +108,12 @@
         "shield_pierce": 873829
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

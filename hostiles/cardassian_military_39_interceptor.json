@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Cardassian Military",
   "description": "",
   "group": "neutral",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 514175,
     "defense": 471235,
     "health": 153400
   },
-  "hostile_name": "Cardassian Military",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 310,
-      "min_value": 310,
-      "value": 310
+      "$ref": "systems/manora_39"
+    },
+    {
+      "$ref": "systems/borias_cluster_39"
+    },
+    {
+      "$ref": "systems/trelka_v_39"
     }
   ],
   "ship_class": "interceptor",
@@ -37,22 +40,6 @@
       "shield_health": 153400
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/manora_39"
-    },
-    {
-      "$ref": "systems/borias_cluster_39"
-    },
-    {
-      "$ref": "systems/trelka_v_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 15708
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 310,
+      "min_value": 310,
+      "value": 310
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

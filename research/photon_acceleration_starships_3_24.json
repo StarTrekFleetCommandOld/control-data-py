@@ -1,22 +1,30 @@
 {
+  "research_name": "Photon Acceleration",
   "description": "Increases base Damage against player ships while Supported by a Cerritos.",
-  "img_url": "./assets/photon_acceleration_starships_3_24.png",
+  "location": {
+    "column": 24,
+    "row": 3,
+    "tree": "starships"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 1.5
-      },
-      "increased_power": 45000,
       "level": 1,
-      "required_by": [],
+      "research_time": 2799600,
+      "increased_power": 45000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 36
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 1660000
+          }
+        ],
         "materials": [],
         "others": [
           {
@@ -27,21 +35,13 @@
             "type": "rare culver particle",
             "value": 12000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 1660000
-          }
         ]
       },
-      "research_time": 2799600
+      "bonus": {
+        "percentage": true,
+        "value": 1.5
+      }
     }
   ],
-  "location": {
-    "column": 24,
-    "row": 3,
-    "tree": "starships"
-  },
-  "research_name": "Photon Acceleration"
+  "img_url": "./assets/photon_acceleration_starships_3_24.png"
 }

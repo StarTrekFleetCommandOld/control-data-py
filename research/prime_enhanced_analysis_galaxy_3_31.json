@@ -1,22 +1,30 @@
 {
+  "research_name": "Prime Enhanced Analysis",
   "description": "Increases base Ship XP earned from combat.",
-  "img_url": "./assets/prime_enhanced_analysis_galaxy_3_31.png",
+  "location": {
+    "column": 31,
+    "row": 3,
+    "tree": "galaxy"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 2.5
-      },
-      "increased_power": 78000,
       "level": 1,
-      "required_by": [],
+      "research_time": 22467060,
+      "increased_power": 78000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 41
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 226500000
+          }
+        ],
         "materials": [],
         "others": [
           {
@@ -27,21 +35,13 @@
             "type": "rodinium particle",
             "value": 125
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 226500000
-          }
         ]
       },
-      "research_time": 22467060
+      "bonus": {
+        "percentage": true,
+        "value": 2.5
+      }
     }
   ],
-  "location": {
-    "column": 31,
-    "row": 3,
-    "tree": "galaxy"
-  },
-  "research_name": "Prime Enhanced Analysis"
+  "img_url": "./assets/prime_enhanced_analysis_galaxy_3_31.png"
 }

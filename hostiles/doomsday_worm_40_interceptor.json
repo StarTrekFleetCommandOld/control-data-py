@@ -1,26 +1,29 @@
 {
+  "hostile_name": "Doomsday Worm",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1685057,
     "defense": 938660,
     "health": 2949027
   },
-  "hostile_name": "Doomsday Worm",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 2346,
-      "min_value": 2346,
-      "value": 2346
+      "$ref": "systems/enzocas_42"
     },
     {
-      "type": "tritanium",
-      "max_value": 179,
-      "min_value": 179,
-      "value": 179
+      "$ref": "systems/doka_40"
+    },
+    {
+      "$ref": "systems/kordindr_42"
+    },
+    {
+      "$ref": "systems/napiar_42"
+    },
+    {
+      "$ref": "systems/mal_tahn_38"
     }
   ],
   "ship_class": "interceptor",
@@ -43,28 +46,6 @@
       "shield_health": 2949027
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/enzocas_42"
-    },
-    {
-      "$ref": "systems/doka_40"
-    },
-    {
-      "$ref": "systems/kordindr_42"
-    },
-    {
-      "$ref": "systems/napiar_42"
-    },
-    {
-      "$ref": "systems/mal_tahn_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -127,6 +108,25 @@
         "shield_pierce": 29628
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 2346,
+      "min_value": 2346,
+      "value": 2346
+    },
+    {
+      "type": "tritanium",
+      "max_value": 179,
+      "min_value": 179,
+      "value": 179
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

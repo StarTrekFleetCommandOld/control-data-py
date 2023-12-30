@@ -1,41 +1,13 @@
 {
+  "hostile_name": "Unknown Alien",
   "description": "",
   "group": "neutral",
+  "level": 25,
+  "rarity": "common",
   "head_stats": {
     "attack": 38073,
     "defense": 37120,
     "health": 17280
-  },
-  "hostile_name": "Unknown Alien",
-  "level": 25,
-  "rarity": "common",
-  "rewards": [
-    {
-      "type": "mycelium spore",
-      "max_value": 115,
-      "min_value": 115,
-      "value": 115
-    }
-  ],
-  "ship_class": "interceptor",
-  "stats": {
-    "attack": {
-      "accuracy": 1237,
-      "armor_pierce": 7425,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 23225,
-      "shield_pierce": 1237
-    },
-    "defense": {
-      "armor": 1237,
-      "dodge": 4950,
-      "shield_deflect": 1237
-    },
-    "health": {
-      "hull_health": 17280,
-      "shield_health": 17280
-    }
   },
   "systems": [
     {
@@ -69,11 +41,26 @@
       "$ref": "systems/arcadion_23"
     }
   ],
-  "utility": [
-    {
-      "impulse_speed": 16
+  "ship_class": "interceptor",
+  "stats": {
+    "attack": {
+      "accuracy": 1237,
+      "armor_pierce": 7425,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 23225,
+      "shield_pierce": 1237
+    },
+    "defense": {
+      "armor": 1237,
+      "dodge": 4950,
+      "shield_deflect": 1237
+    },
+    "health": {
+      "hull_health": 17280,
+      "shield_health": 17280
     }
-  ],
+  },
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +123,19 @@
         "shield_pierce": 1237
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "mycelium spore",
+      "max_value": 115,
+      "min_value": 115,
+      "value": 115
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

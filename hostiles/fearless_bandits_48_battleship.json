@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Fearless Bandits",
   "description": "",
   "group": "neutral",
+  "level": 48,
+  "rarity": "common",
   "head_stats": {
     "attack": 4207332,
     "defense": 1465225,
     "health": 6732502
   },
-  "hostile_name": "Fearless Bandits",
-  "level": 48,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 745,
-      "min_value": 745,
-      "value": 745
+      "$ref": "systems/odin_46"
+    },
+    {
+      "$ref": "systems/jublu_48"
+    },
+    {
+      "$ref": "systems/toen_48"
+    },
+    {
+      "$ref": "systems/kayla_46"
     }
   ],
   "ship_class": "battleship",
@@ -37,25 +43,6 @@
       "shield_health": 5770700
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/odin_46"
-    },
-    {
-      "$ref": "systems/jublu_48"
-    },
-    {
-      "$ref": "systems/toen_48"
-    },
-    {
-      "$ref": "systems/kayla_46"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -118,6 +105,19 @@
         "shield_pierce": 266581
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 745,
+      "min_value": 745,
+      "value": 745
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

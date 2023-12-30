@@ -1,14 +1,72 @@
 {
+  "hostile_name": "Klingon Trader",
   "description": "",
   "group": "klingon",
+  "level": 33,
+  "rarity": "common",
   "head_stats": {
     "attack": 78960,
     "defense": 176250,
     "health": 82800
   },
-  "hostile_name": "Klingon Trader",
-  "level": 33,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/carraya_33"
+    }
+  ],
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 9400,
+      "armor_pierce": 9400,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 64860,
+      "shield_pierce": 9400
+    },
+    "defense": {
+      "armor": 11750,
+      "dodge": 11750,
+      "shield_deflect": 11750
+    },
+    "health": {
+      "hull_health": 82800,
+      "shield_health": 82800
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 9400,
+        "armor_pierce": 9400,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 64860,
+        "max_damage": 62040,
+        "min_damage": 50760,
+        "shield_pierce": 9400
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,67 +99,9 @@
       "value": 0
     }
   ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 9400,
-      "armor_pierce": 9400,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 64860,
-      "shield_pierce": 9400
-    },
-    "defense": {
-      "armor": 11750,
-      "dodge": 11750,
-      "shield_deflect": 11750
-    },
-    "health": {
-      "hull_health": 82800,
-      "shield_health": 82800
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/carraya_33"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 9
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 9400,
-        "armor_pierce": 9400,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 64860,
-        "max_damage": 62040,
-        "min_damage": 50760,
-        "shield_pierce": 9400
-      },
-      "weapon_type": "energy"
     }
   ]
 }

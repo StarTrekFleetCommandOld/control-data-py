@@ -1,20 +1,17 @@
 {
+  "hostile_name": "Scouting Bandit",
   "description": "",
   "group": "neutral",
+  "level": 37,
+  "rarity": "common",
   "head_stats": {
     "attack": 318596,
     "defense": 313165,
     "health": 115915
   },
-  "hostile_name": "Scouting Bandit",
-  "level": 37,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 472,
-      "min_value": 472,
-      "value": 472
+      "$ref": "systems/kalla_36"
     }
   ],
   "ship_class": "explorer",
@@ -37,16 +34,6 @@
       "shield_health": 119050
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/kalla_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -78,6 +65,19 @@
         "shield_pierce": 10439
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 472,
+      "min_value": 472,
+      "value": 472
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

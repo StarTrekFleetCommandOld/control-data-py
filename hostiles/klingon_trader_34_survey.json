@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Klingon Trader",
   "description": "",
   "group": "klingon",
+  "level": 34,
+  "rarity": "common",
   "head_stats": {
     "attack": 98040,
     "defense": 225000,
     "health": 108000
   },
-  "hostile_name": "Klingon Trader",
-  "level": 34,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/carraya_33"
+    },
+    {
+      "$ref": "systems/jiwu_puh_36"
+    }
+  ],
   "ship_class": "survey",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 108000
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/carraya_33"
-    },
-    {
-      "$ref": "systems/jiwu_puh_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 9
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -74,6 +68,12 @@
         "shield_pierce": 12000
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 9
     }
   ]
 }

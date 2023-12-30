@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Orion Traitor",
   "description": "",
   "group": "neutral",
+  "level": 15,
+  "rarity": "common",
   "head_stats": {
     "attack": 2338,
     "defense": 3000,
     "health": 1275
   },
-  "hostile_name": "Orion Traitor",
-  "level": 15,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 145,
-      "min_value": 145,
-      "value": 145
+      "$ref": "systems/zaurak_13"
+    },
+    {
+      "$ref": "systems/astrida_14"
     }
   ],
   "ship_class": "explorer",
@@ -37,19 +37,6 @@
       "shield_health": 1310
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/zaurak_13"
-    },
-    {
-      "$ref": "systems/astrida_14"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -81,6 +68,19 @@
         "shield_pierce": 100
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 145,
+      "min_value": 145,
+      "value": 145
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

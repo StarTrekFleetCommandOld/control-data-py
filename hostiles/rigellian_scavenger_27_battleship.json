@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Rigellian Scavenger",
   "description": "",
   "group": "neutral",
+  "level": 27,
+  "rarity": "common",
   "head_stats": {
     "attack": 29664,
     "defense": 30000,
     "health": 14700
   },
-  "hostile_name": "Rigellian Scavenger",
-  "level": 27,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 292,
-      "min_value": 292,
-      "value": 292
+      "$ref": "systems/ambit_28"
+    },
+    {
+      "$ref": "systems/koras_12_18"
+    },
+    {
+      "$ref": "systems/system_j_25_25"
     }
   ],
   "ship_class": "battleship",
@@ -37,22 +40,6 @@
       "shield_health": 12600
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ambit_28"
-    },
-    {
-      "$ref": "systems/koras_12_18"
-    },
-    {
-      "$ref": "systems/system_j_25_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 6000
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 292,
+      "min_value": 292,
+      "value": 292
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

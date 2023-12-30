@@ -1,15 +1,31 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 27,
+  "rarity": "common",
   "head_stats": {
     "attack": 37669,
     "defense": 39250,
     "health": 15460
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 27,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/hoeven_27"
+    },
+    {
+      "$ref": "systems/maranga_25"
+    },
+    {
+      "$ref": "systems/yadow_25"
+    },
+    {
+      "$ref": "systems/laija_25"
+    },
+    {
+      "$ref": "systems/morska_29"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,28 +46,6 @@
       "shield_health": 15460
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/hoeven_27"
-    },
-    {
-      "$ref": "systems/maranga_25"
-    },
-    {
-      "$ref": "systems/yadow_25"
-    },
-    {
-      "$ref": "systems/laija_25"
-    },
-    {
-      "$ref": "systems/morska_29"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -114,6 +108,12 @@
         "shield_pierce": 1050
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

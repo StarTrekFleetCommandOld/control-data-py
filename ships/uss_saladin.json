@@ -1,42 +1,54 @@
 {
+  "ship_name": "USS SALADIN",
   "description": "The Saladin class interceptor is a small Starfleet construction used for dogfighting scenarios, mainly in the defense of outposts and Space Stations. Unlike its older cousin, the Mayflower class, the Saladin relies on a single nacelle and an array of thrusters along the saucer section to provide its maneuverability.",
+  "ship_class": "interceptor",
+  "grade": 3,
+  "faction": "federation",
+  "rarity": "uncommon",
   "blueprints": {
     "cost": 0,
     "quantity": 100
-  },
-  "faction": "federation",
-  "grade": 3,
-  "img_url": "./assets/uss_saladin.png",
-  "rarity": "uncommon",
-  "requirements": [
-    {
-      "name": "Shipyard",
-      "level": 28
-    }
-  ],
-  "scrap_info": {
-    "required_scrapyard_level": 42,
-    "scrappable": true
   },
   "ship_ability": {
     "title": "Protector",
     "description": "When the Station or the USS SALADIN gets attacked, it increases the Shield Health of all the ships and Defense Platforms by {value}.",
     "percentage": true
   },
-  "ship_class": "interceptor",
-  "ship_name": "USS SALADIN",
+  "scrap_info": {
+    "scrappable": true,
+    "required_scrapyard_level": 42
+  },
+  "requirements": [
+    {
+      "name": "Shipyard",
+      "level": 28
+    }
+  ],
   "tiers": [
     {
+      "tier": 1,
       "build_time": 1468800,
+      "repair_time": 30000,
       "components": [
         {
           "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1127,
               "armor_pierce": 7922,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 42422,
+              "min_damage": 34709,
+              "shield_pierce": 966,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -47,30 +59,30 @@
                 1,
                 0,
                 0
-              ],
-              "max_damage": 42422,
-              "min_damage": 34709,
-              "shield_pierce": 966,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Phaser Bank",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1127,
               "armor_pierce": 7922,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 13467,
+              "min_damage": 11019,
+              "shield_pierce": 966,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -81,24 +93,20 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 13467,
-              "min_damage": 11019,
-              "shield_pierce": 966,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 10000,
@@ -107,83 +115,51 @@
               "ship_increased_protected_cargo": 0
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
+          "img_url": "./assets/component_warp_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "warp_info": {
               "warp_distance": 28,
               "warp_speed": 2.7
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "impulse_info": {
               "dodge": 4161,
               "impulse_speed": 115
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 2200
-          },
-          {
-            "type": "gas",
-            "grade": 3,
-            "rarity": "common",
-            "value": 275
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 1300000
-          },
-          {
-            "type": "dilithium",
-            "value": 64000
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 0.15,
           "additional_officer_slot": false,
           "level": 1,
+          "ship_xp": 0,
           "scrap_details": {
+            "scrap_time": 895620,
             "rewards": [
               {
                 "type": "tritanium",
@@ -193,16 +169,16 @@
                 "type": "dilithium",
                 "value": 12800
               }
-            ],
-            "scrap_time": 895620
-          },
-          "ship_xp": 0
+            ]
+          }
         },
         {
           "ability_bonus": 0.16,
           "additional_officer_slot": false,
           "level": 2,
+          "ship_xp": 800,
           "scrap_details": {
+            "scrap_time": 895620,
             "rewards": [
               {
                 "type": "tritanium",
@@ -216,16 +192,16 @@
                 "type": "ship xp",
                 "value": 32
               }
-            ],
-            "scrap_time": 895620
-          },
-          "ship_xp": 800
+            ]
+          }
         },
         {
           "ability_bonus": 0.17,
           "additional_officer_slot": false,
           "level": 3,
+          "ship_xp": 1000,
           "scrap_details": {
+            "scrap_time": 895620,
             "rewards": [
               {
                 "type": "tritanium",
@@ -239,16 +215,16 @@
                 "type": "ship xp",
                 "value": 72
               }
-            ],
-            "scrap_time": 895620
-          },
-          "ship_xp": 1000
+            ]
+          }
         },
         {
           "ability_bonus": 0.18,
           "additional_officer_slot": false,
           "level": 4,
+          "ship_xp": 1400,
           "scrap_details": {
+            "scrap_time": 895620,
             "rewards": [
               {
                 "type": "tritanium",
@@ -262,16 +238,16 @@
                 "type": "ship xp",
                 "value": 128
               }
-            ],
-            "scrap_time": 895620
-          },
-          "ship_xp": 1400
+            ]
+          }
         },
         {
           "ability_bonus": 0.18,
           "additional_officer_slot": true,
           "level": 5,
+          "ship_xp": 1700,
           "scrap_details": {
+            "scrap_time": 895620,
             "rewards": [
               {
                 "type": "tritanium",
@@ -285,26 +261,98 @@
                 "type": "ship xp",
                 "value": 196
               }
-            ],
-            "scrap_time": 895620
-          },
-          "ship_xp": 1700
+            ]
+          }
         }
       ],
-      "repair_time": 30000,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 1300000
+          },
+          {
+            "type": "dilithium",
+            "value": 64000
+          }
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 2200,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "gas",
+            "value": 275,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 240000,
+      "repair_time": 33672,
       "components": [
         {
           "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1750000
+              },
+              {
+                "type": "dilithium",
+                "value": 10500
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 425,
+                "grade": 3,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 100,
+                "grade": 3,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 70
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3633
+            },
+            {
+              "type": "dilithium",
+              "value": 204
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1139,
               "armor_pierce": 8001,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 42884,
+              "min_damage": 35087,
+              "shield_pierce": 977,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -315,66 +363,66 @@
                 1,
                 0,
                 0
-              ],
-              "max_damage": 42884,
-              "min_damage": 35087,
-              "shield_pierce": 977,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Bank",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 525000
+              },
+              {
+                "type": "dilithium",
+                "value": 17500
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 325,
                 "grade": 3,
-                "rarity": "common",
-                "value": 425
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 70,
                 "grade": 3,
-                "rarity": "common",
-                "value": 100
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 70
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1750000
-              },
-              {
-                "type": "dilithium",
-                "value": 10500
+                "value": 60
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 3633
+              "value": 2180
             },
             {
               "type": "dilithium",
-              "value": 204
+              "value": 340
             }
-          ]
-        },
-        {
-          "name": "Phaser Bank",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1139,
               "armor_pierce": 8001,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 13614,
+              "min_damage": 11139,
+              "shield_pierce": 977,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -385,60 +433,42 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 13614,
-              "min_damage": 11139,
-              "shield_pierce": 977,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 525000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 80,
                 "grade": 3,
-                "rarity": "common",
-                "value": 325
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 70
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 60
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 525000
-              },
-              {
-                "type": "dilithium",
-                "value": 17500
+                "value": 12
               }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 2180
-            },
-            {
-              "type": "dilithium",
-              "value": 340
+              "value": 2906
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 2100,
@@ -447,52 +477,24 @@
               "ship_increased_protected_cargo": 88
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 80
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Interceptor Parts",
-                "value": 12
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 525000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 2906
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 30,
-              "warp_speed": 2.8
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 17500
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 70,
                 "grade": 3,
-                "rarity": "common",
-                "value": 70
+                "rarity": "common"
               }
             ],
             "others": [
@@ -500,44 +502,44 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 36
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 17500
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 409
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 30,
+              "warp_speed": 2.8
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 4369,
-              "impulse_speed": 115
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1050000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 325,
                 "grade": 3,
-                "rarity": "common",
-                "value": 325
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 50,
                 "grade": 3,
-                "rarity": "common",
-                "value": 50
+                "rarity": "common"
               }
             ],
             "others": [
@@ -545,16 +547,8 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 48
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1050000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -564,7 +558,14 @@
               "type": "dilithium",
               "value": 681
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 4369,
+              "impulse_speed": 115
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -572,7 +573,9 @@
           "ability_bonus": 0.19,
           "additional_officer_slot": false,
           "level": 6,
+          "ship_xp": 2400,
           "scrap_details": {
+            "scrap_time": 1007580,
             "rewards": [
               {
                 "type": "tritanium",
@@ -598,16 +601,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 535
               }
-            ],
-            "scrap_time": 1007580
-          },
-          "ship_xp": 2400
+            ]
+          }
         },
         {
           "ability_bonus": 0.19,
           "additional_officer_slot": false,
           "level": 7,
+          "ship_xp": 2900,
           "scrap_details": {
+            "scrap_time": 1007580,
             "rewards": [
               {
                 "type": "tritanium",
@@ -633,16 +636,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 653
               }
-            ],
-            "scrap_time": 1007580
-          },
-          "ship_xp": 2900
+            ]
+          }
         },
         {
           "ability_bonus": 0.2,
           "additional_officer_slot": false,
           "level": 8,
+          "ship_xp": 3900,
           "scrap_details": {
+            "scrap_time": 1007580,
             "rewards": [
               {
                 "type": "tritanium",
@@ -668,16 +671,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 828
               }
-            ],
-            "scrap_time": 1007580
-          },
-          "ship_xp": 3900
+            ]
+          }
         },
         {
           "ability_bonus": 0.2,
           "additional_officer_slot": false,
           "level": 9,
+          "ship_xp": 4600,
           "scrap_details": {
+            "scrap_time": 1007580,
             "rewards": [
               {
                 "type": "tritanium",
@@ -703,16 +706,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 1004
               }
-            ],
-            "scrap_time": 1007580
-          },
-          "ship_xp": 4600
+            ]
+          }
         },
         {
           "ability_bonus": 0.21,
           "additional_officer_slot": true,
           "level": 10,
+          "ship_xp": 6000,
           "scrap_details": {
+            "scrap_time": 1007580,
             "rewards": [
               {
                 "type": "tritanium",
@@ -738,26 +741,71 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 1238
               }
-            ],
-            "scrap_time": 1007580
-          },
-          "ship_xp": 6000
+            ]
+          }
         }
-      ],
-      "repair_time": 33672,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 480000,
+      "repair_time": 37686,
       "components": [
         {
           "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3500000
+              },
+              {
+                "type": "dilithium",
+                "value": 25000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 62,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 15,
+                "grade": 3,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 140
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 10407
+            },
+            {
+              "type": "dilithium",
+              "value": 455
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1160,
               "armor_pierce": 8161,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 43653,
+              "min_damage": 35716,
+              "shield_pierce": 994,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -768,66 +816,66 @@
                 1,
                 0,
                 0
-              ],
-              "max_damage": 43653,
-              "min_damage": 35716,
-              "shield_pierce": 994,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Bank",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1050000
+              },
+              {
+                "type": "dilithium",
+                "value": 41500
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 1000,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 62
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 220,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 15
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 140
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3500000
-              },
-              {
-                "type": "dilithium",
-                "value": 25000
+                "value": 120
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 10407
+              "value": 6244
             },
             {
               "type": "dilithium",
-              "value": 455
+              "value": 759
             }
-          ]
-        },
-        {
-          "name": "Phaser Bank",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1160,
               "armor_pierce": 8161,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 13858,
+              "min_damage": 11338,
+              "shield_pierce": 994,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -838,60 +886,42 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 13858,
-              "min_damage": 11338,
-              "shield_pierce": 994,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1050000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 250,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1000
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 220
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 120
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1050000
-              },
-              {
-                "type": "dilithium",
-                "value": 41500
+                "value": 24
               }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 6244
-            },
-            {
-              "type": "dilithium",
-              "value": 759
+              "value": 8325
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 2720,
@@ -900,52 +930,24 @@
               "ship_increased_protected_cargo": 88
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 250
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Interceptor Parts",
-                "value": 24
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1050000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 8325
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 33,
-              "warp_speed": 2.9
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 41500
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 220,
                 "grade": 3,
-                "rarity": "common",
-                "value": 220
+                "rarity": "common"
               }
             ],
             "others": [
@@ -953,44 +955,44 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 70
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 41500
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 910
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 33,
+              "warp_speed": 2.9
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 4719,
-              "impulse_speed": 115
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2100000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 1000,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1000
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 150,
                 "grade": 3,
-                "rarity": "common",
-                "value": 150
+                "rarity": "common"
               }
             ],
             "others": [
@@ -998,16 +1000,8 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 100
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2100000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1017,7 +1011,14 @@
               "type": "dilithium",
               "value": 1517
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 4719,
+              "impulse_speed": 115
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1025,7 +1026,9 @@
           "ability_bonus": 0.21,
           "additional_officer_slot": false,
           "level": 11,
+          "ship_xp": 7000,
           "scrap_details": {
+            "scrap_time": 1119540,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1051,16 +1054,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 1367
               }
-            ],
-            "scrap_time": 1119540
-          },
-          "ship_xp": 7000
+            ]
+          }
         },
         {
           "ability_bonus": 0.22,
           "additional_officer_slot": false,
           "level": 12,
+          "ship_xp": 8500,
           "scrap_details": {
+            "scrap_time": 1119540,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1086,16 +1089,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 1600
               }
-            ],
-            "scrap_time": 1119540
-          },
-          "ship_xp": 8500
+            ]
+          }
         },
         {
           "ability_bonus": 0.22,
           "additional_officer_slot": false,
           "level": 13,
+          "ship_xp": 9500,
           "scrap_details": {
+            "scrap_time": 1119540,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1121,16 +1124,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 2067
               }
-            ],
-            "scrap_time": 1119540
-          },
-          "ship_xp": 9500
+            ]
+          }
         },
         {
           "ability_bonus": 0.23,
           "additional_officer_slot": false,
           "level": 14,
+          "ship_xp": 11000,
           "scrap_details": {
+            "scrap_time": 1119540,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1156,16 +1159,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 2651
               }
-            ],
-            "scrap_time": 1119540
-          },
-          "ship_xp": 11000
+            ]
+          }
         },
         {
           "ability_bonus": 0.23,
           "additional_officer_slot": false,
           "level": 15,
+          "ship_xp": 13500,
           "scrap_details": {
+            "scrap_time": 1119540,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1191,26 +1194,71 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 3468
               }
-            ],
-            "scrap_time": 1119540
-          },
-          "ship_xp": 13500
+            ]
+          }
         }
-      ],
-      "repair_time": 37686,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 800000,
+      "repair_time": 43144,
       "components": [
         {
           "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5850000
+              },
+              {
+                "type": "dilithium",
+                "value": 52500
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 210,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 50,
+                "grade": 3,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 250
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 19191
+            },
+            {
+              "type": "dilithium",
+              "value": 791
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1212,
               "armor_pierce": 8487,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 45607,
+              "min_damage": 37315,
+              "shield_pierce": 1039,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -1221,66 +1269,66 @@
                 1,
                 0,
                 0
-              ],
-              "max_damage": 45607,
-              "min_damage": 37315,
-              "shield_pierce": 1039,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Bank",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1750000
+              },
+              {
+                "type": "dilithium",
+                "value": 87000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 170,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 210
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 37,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 50
+                "rarity": "uncommon"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 250
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5850000
-              },
-              {
-                "type": "dilithium",
-                "value": 52500
+                "value": 210
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 19191
+              "value": 11514
             },
             {
               "type": "dilithium",
-              "value": 791
+              "value": 1319
             }
-          ]
-        },
-        {
-          "name": "Phaser Bank",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1212,
               "armor_pierce": 8487,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 14478,
+              "min_damage": 11846,
+              "shield_pierce": 1039,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -1291,60 +1339,42 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 14478,
-              "min_damage": 11846,
-              "shield_pierce": 1039,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1750000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 650,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 170
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 37
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 210
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1750000
-              },
-              {
-                "type": "dilithium",
-                "value": 87000
+                "value": 42
               }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 11514
-            },
-            {
-              "type": "dilithium",
-              "value": 1319
+              "value": 15352
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 3540,
@@ -1353,52 +1383,24 @@
               "ship_increased_protected_cargo": 88
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 650
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Interceptor Parts",
-                "value": 42
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1750000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 15352
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 36,
-              "warp_speed": 3.0
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 87000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 600,
                 "grade": 3,
-                "rarity": "common",
-                "value": 600
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1406,44 +1408,44 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 130
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 87000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 1582
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 36,
+              "warp_speed": 3.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 5190,
-              "impulse_speed": 115
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3500000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 2600,
                 "grade": 3,
-                "rarity": "common",
-                "value": 2600
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 400,
                 "grade": 3,
-                "rarity": "common",
-                "value": 400
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1451,16 +1453,8 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 170
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3500000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1470,7 +1464,14 @@
               "type": "dilithium",
               "value": 2637
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 5190,
+              "impulse_speed": 115
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1478,7 +1479,9 @@
           "ability_bonus": 0.24,
           "additional_officer_slot": false,
           "level": 16,
+          "ship_xp": 15000,
           "scrap_details": {
+            "scrap_time": 1231440,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1516,16 +1519,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 3575
               }
-            ],
-            "scrap_time": 1231440
-          },
-          "ship_xp": 15000
+            ]
+          }
         },
         {
           "ability_bonus": 0.24,
           "additional_officer_slot": false,
           "level": 17,
+          "ship_xp": 17500,
           "scrap_details": {
+            "scrap_time": 1231440,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1563,16 +1566,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 3966
               }
-            ],
-            "scrap_time": 1231440
-          },
-          "ship_xp": 17500
+            ]
+          }
         },
         {
           "ability_bonus": 0.25,
           "additional_officer_slot": false,
           "level": 18,
+          "ship_xp": 19500,
           "scrap_details": {
+            "scrap_time": 1231440,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1610,16 +1613,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 4747
               }
-            ],
-            "scrap_time": 1231440
-          },
-          "ship_xp": 19500
+            ]
+          }
         },
         {
           "ability_bonus": 0.25,
           "additional_officer_slot": false,
           "level": 19,
+          "ship_xp": 23000,
           "scrap_details": {
+            "scrap_time": 1231440,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1657,16 +1660,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 5723
               }
-            ],
-            "scrap_time": 1231440
-          },
-          "ship_xp": 23000
+            ]
+          }
         },
         {
           "ability_bonus": 0.26,
           "additional_officer_slot": true,
           "level": 20,
+          "ship_xp": 25000,
           "scrap_details": {
+            "scrap_time": 1231440,
             "rewards": [
               {
                 "type": "tritanium",
@@ -1704,26 +1707,71 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 7091
               }
-            ],
-            "scrap_time": 1231440
-          },
-          "ship_xp": 25000
+            ]
+          }
         }
-      ],
-      "repair_time": 43144,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 1200000,
+      "repair_time": 51966,
       "components": [
         {
           "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 10800000
+              },
+              {
+                "type": "dilithium",
+                "value": 104000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 425,
+                "grade": 3,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 100,
+                "grade": 3,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 425
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 36023
+            },
+            {
+              "type": "dilithium",
+              "value": 1472
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1330,
               "armor_pierce": 9336,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 50081,
+              "min_damage": 40975,
+              "shield_pierce": 1140,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -1734,66 +1782,66 @@
                 1,
                 0,
                 0
-              ],
-              "max_damage": 50081,
-              "min_damage": 40975,
-              "shield_pierce": 1140,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Bank",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3250000
+              },
+              {
+                "type": "dilithium",
+                "value": 173000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 325,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 425
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 70,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 100
+                "rarity": "uncommon"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 425
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 10800000
-              },
-              {
-                "type": "dilithium",
-                "value": 104000
+                "value": 350
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 36023
+              "value": 21614
             },
             {
               "type": "dilithium",
-              "value": 1472
+              "value": 2453
             }
-          ]
-        },
-        {
-          "name": "Phaser Bank",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1330,
               "armor_pierce": 9336,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 15899,
+              "min_damage": 13008,
+              "shield_pierce": 1140,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -1804,60 +1852,42 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 15899,
-              "min_damage": 13008,
-              "shield_pierce": 1140,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3250000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 1250,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 325
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 70
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 350
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3250000
-              },
-              {
-                "type": "dilithium",
-                "value": 173000
+                "value": 70
               }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 21614
-            },
-            {
-              "type": "dilithium",
-              "value": 2453
+              "value": 28818
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 4610,
@@ -1866,52 +1896,24 @@
               "ship_increased_protected_cargo": 88
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 1250
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Interceptor Parts",
-                "value": 70
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3250000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 28818
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 40,
-              "warp_speed": 3.1
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 173000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1125,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1125
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1919,44 +1921,44 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 220
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 173000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 2944
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 40,
+              "warp_speed": 3.1
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 6073,
-              "impulse_speed": 115
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6500000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 325,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 325
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 50,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 50
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1964,16 +1966,8 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 300
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 6500000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1983,7 +1977,14 @@
               "type": "dilithium",
               "value": 4906
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 6073,
+              "impulse_speed": 115
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1991,7 +1992,9 @@
           "ability_bonus": 0.26,
           "additional_officer_slot": false,
           "level": 21,
+          "ship_xp": 29000,
           "scrap_details": {
+            "scrap_time": 1343400,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2029,16 +2032,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 7272
               }
-            ],
-            "scrap_time": 1343400
-          },
-          "ship_xp": 29000
+            ]
+          }
         },
         {
           "ability_bonus": 0.27,
           "additional_officer_slot": false,
           "level": 22,
+          "ship_xp": 31500,
           "scrap_details": {
+            "scrap_time": 1343400,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2076,16 +2079,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 7842
               }
-            ],
-            "scrap_time": 1343400
-          },
-          "ship_xp": 31500
+            ]
+          }
         },
         {
           "ability_bonus": 0.27,
           "additional_officer_slot": false,
           "level": 23,
+          "ship_xp": 36000,
           "scrap_details": {
+            "scrap_time": 1343400,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2123,16 +2126,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 8983
               }
-            ],
-            "scrap_time": 1343400
-          },
-          "ship_xp": 36000
+            ]
+          }
         },
         {
           "ability_bonus": 0.28,
           "additional_officer_slot": false,
           "level": 24,
+          "ship_xp": 39000,
           "scrap_details": {
+            "scrap_time": 1343400,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2170,16 +2173,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 10408
               }
-            ],
-            "scrap_time": 1343400
-          },
-          "ship_xp": 39000
+            ]
+          }
         },
         {
           "ability_bonus": 0.28,
           "additional_officer_slot": false,
           "level": 25,
+          "ship_xp": 42000,
           "scrap_details": {
+            "scrap_time": 1343400,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2217,26 +2220,71 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 12404
               }
-            ],
-            "scrap_time": 1343400
-          },
-          "ship_xp": 42000
+            ]
+          }
         }
-      ],
-      "repair_time": 51966,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 1600000,
+      "repair_time": 62418,
       "components": [
         {
           "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 19400000
+              },
+              {
+                "type": "dilithium",
+                "value": 205000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 15,
+                "grade": 3,
+                "rarity": "rare"
+              },
+              {
+                "type": "gas",
+                "value": 4,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 875
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 63156
+            },
+            {
+              "type": "dilithium",
+              "value": 2649
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1548,
               "armor_pierce": 10830,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 58272,
+              "min_damage": 47677,
+              "shield_pierce": 1327,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2247,66 +2295,66 @@
                 1,
                 0,
                 0
-              ],
-              "max_damage": 58272,
-              "min_damage": 47677,
-              "shield_pierce": 1327,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Bank",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5850000
+              },
+              {
+                "type": "dilithium",
+                "value": 345000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 800,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 15
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 180,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 4
+                "rarity": "uncommon"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 875
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 19400000
-              },
-              {
-                "type": "dilithium",
-                "value": 205000
+                "value": 725
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 63156
+              "value": 37894
             },
             {
               "type": "dilithium",
-              "value": 2649
+              "value": 4415
             }
-          ]
-        },
-        {
-          "name": "Phaser Bank",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1548,
               "armor_pierce": 10830,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 18499,
+              "min_damage": 15136,
+              "shield_pierce": 1327,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -2317,60 +2365,42 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 18499,
-              "min_damage": 15136,
-              "shield_pierce": 1327,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5850000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 2500,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 800
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 180
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 725
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5850000
-              },
-              {
-                "type": "dilithium",
-                "value": 345000
+                "value": 140
               }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 37894
-            },
-            {
-              "type": "dilithium",
-              "value": 4415
+              "value": 50525
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 5980,
@@ -2379,52 +2409,24 @@
               "ship_increased_protected_cargo": 88
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 2500
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Interceptor Parts",
-                "value": 140
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5850000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 50525
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 45,
-              "warp_speed": 3.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 345000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 180,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 180
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2432,44 +2434,44 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 425
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 345000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 5298
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 45,
+              "warp_speed": 3.2
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 7287,
-              "impulse_speed": 115
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 11700000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 800,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 800
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 120,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 120
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2477,16 +2479,8 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 575
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 11700000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2496,7 +2490,14 @@
               "type": "dilithium",
               "value": 8830
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 7287,
+              "impulse_speed": 115
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2504,7 +2505,9 @@
           "ability_bonus": 0.29,
           "additional_officer_slot": false,
           "level": 26,
+          "ship_xp": 47000,
           "scrap_details": {
+            "scrap_time": 1455360,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2542,16 +2545,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 12479
               }
-            ],
-            "scrap_time": 1455360
-          },
-          "ship_xp": 47000
+            ]
+          }
         },
         {
           "ability_bonus": 0.29,
           "additional_officer_slot": false,
           "level": 27,
+          "ship_xp": 51000,
           "scrap_details": {
+            "scrap_time": 1455360,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2589,16 +2592,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 13510
               }
-            ],
-            "scrap_time": 1455360
-          },
-          "ship_xp": 51000
+            ]
+          }
         },
         {
           "ability_bonus": 0.3,
           "additional_officer_slot": false,
           "level": 28,
+          "ship_xp": 57000,
           "scrap_details": {
+            "scrap_time": 1455360,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2636,16 +2639,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 15574
               }
-            ],
-            "scrap_time": 1455360
-          },
-          "ship_xp": 57000
+            ]
+          }
         },
         {
           "ability_bonus": 0.3,
           "additional_officer_slot": false,
           "level": 29,
+          "ship_xp": 61000,
           "scrap_details": {
+            "scrap_time": 1455360,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2683,16 +2686,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 18153
               }
-            ],
-            "scrap_time": 1455360
-          },
-          "ship_xp": 61000
+            ]
+          }
         },
         {
           "ability_bonus": 0.31,
           "additional_officer_slot": true,
           "level": 30,
+          "ship_xp": 69000,
           "scrap_details": {
+            "scrap_time": 1455360,
             "rewards": [
               {
                 "type": "tritanium",
@@ -2730,26 +2733,71 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 21765
               }
-            ],
-            "scrap_time": 1455360
-          },
-          "ship_xp": 69000
+            ]
+          }
         }
-      ],
-      "repair_time": 62418,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 2000000,
+      "repair_time": 71802,
       "components": [
         {
           "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 48500000
+              },
+              {
+                "type": "dilithium",
+                "value": 545000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 56,
+                "grade": 3,
+                "rarity": "rare"
+              },
+              {
+                "type": "gas",
+                "value": 14,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 1900
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 102477
+            },
+            {
+              "type": "dilithium",
+              "value": 4508
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1821,
               "armor_pierce": 12779,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 68554,
+              "min_damage": 56089,
+              "shield_pierce": 1561,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -2760,66 +2808,66 @@
                 1,
                 0,
                 0
-              ],
-              "max_damage": 68554,
-              "min_damage": 56089,
-              "shield_pierce": 1561,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Bank",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 14500000
+              },
+              {
+                "type": "dilithium",
+                "value": 910000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 45,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 56
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 10,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 14
+                "rarity": "rare"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 1900
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 48500000
-              },
-              {
-                "type": "dilithium",
-                "value": 545000
+                "value": 1600
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 102477
+              "value": 61486
             },
             {
               "type": "dilithium",
-              "value": 4508
+              "value": 7513
             }
-          ]
-        },
-        {
-          "name": "Phaser Bank",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1821,
               "armor_pierce": 12779,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 21763,
+              "min_damage": 17806,
+              "shield_pierce": 1561,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -2830,60 +2878,42 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 21763,
-              "min_damage": 17806,
-              "shield_pierce": 1561,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 14500000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 5750,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 45
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 10
+                "rarity": "common"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 1600
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 14500000
-              },
-              {
-                "type": "dilithium",
-                "value": 910000
+                "value": 325
               }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 61486
-            },
-            {
-              "type": "dilithium",
-              "value": 7513
+              "value": 81981
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 7780,
@@ -2892,52 +2922,24 @@
               "ship_increased_protected_cargo": 88
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 5750
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Interceptor Parts",
-                "value": 325
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 14500000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 81981
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 50,
-              "warp_speed": 3.3
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 910000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 425,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 425
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2945,44 +2947,44 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 975
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 910000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 9016
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 50,
+              "warp_speed": 3.3
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 8308,
-              "impulse_speed": 115
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 29100000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 1800,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 1800
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 275,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 275
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2990,16 +2992,8 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 1300
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 29100000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3009,7 +3003,14 @@
               "type": "dilithium",
               "value": 15027
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 8308,
+              "impulse_speed": 115
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3017,7 +3018,9 @@
           "ability_bonus": 0.31,
           "additional_officer_slot": false,
           "level": 31,
+          "ship_xp": 72000,
           "scrap_details": {
+            "scrap_time": 1567320,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3063,16 +3066,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 22475
               }
-            ],
-            "scrap_time": 1567320
-          },
-          "ship_xp": 72000
+            ]
+          }
         },
         {
           "ability_bonus": 0.32,
           "additional_officer_slot": false,
           "level": 32,
+          "ship_xp": 81000,
           "scrap_details": {
+            "scrap_time": 1567320,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3118,16 +3121,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 24698
               }
-            ],
-            "scrap_time": 1567320
-          },
-          "ship_xp": 81000
+            ]
+          }
         },
         {
           "ability_bonus": 0.32,
           "additional_officer_slot": false,
           "level": 33,
+          "ship_xp": 86000,
           "scrap_details": {
+            "scrap_time": 1567320,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3173,16 +3176,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 29144
               }
-            ],
-            "scrap_time": 1567320
-          },
-          "ship_xp": 86000
+            ]
+          }
         },
         {
           "ability_bonus": 0.33,
           "additional_officer_slot": false,
           "level": 34,
+          "ship_xp": 95000,
           "scrap_details": {
+            "scrap_time": 1567320,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3228,16 +3231,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 34701
               }
-            ],
-            "scrap_time": 1567320
-          },
-          "ship_xp": 95000
+            ]
+          }
         },
         {
           "ability_bonus": 0.33,
           "additional_officer_slot": true,
           "level": 35,
+          "ship_xp": 100000,
           "scrap_details": {
+            "scrap_time": 1567320,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3283,26 +3286,71 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 42481
               }
-            ],
-            "scrap_time": 1567320
-          },
-          "ship_xp": 100000
+            ]
+          }
         }
-      ],
-      "repair_time": 71802,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 2600000,
+      "repair_time": 81916,
       "components": [
         {
           "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 84800000
+              },
+              {
+                "type": "dilithium",
+                "value": 980000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 130,
+                "grade": 3,
+                "rarity": "rare"
+              },
+              {
+                "type": "gas",
+                "value": 32,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 3600
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 152826
+            },
+            {
+              "type": "dilithium",
+              "value": 7199
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2039,
               "armor_pierce": 14313,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 76745,
+              "min_damage": 62791,
+              "shield_pierce": 1748,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -3313,66 +3361,66 @@
                 1,
                 0,
                 0
-              ],
-              "max_damage": 76745,
-              "min_damage": 62791,
-              "shield_pierce": 1748,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Bank",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 25500000
+              },
+              {
+                "type": "dilithium",
+                "value": 1650000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 110,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 130
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 24,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 32
+                "rarity": "rare"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 3600
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 84800000
-              },
-              {
-                "type": "dilithium",
-                "value": 980000
+                "value": 3000
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 152826
+              "value": 91696
             },
             {
               "type": "dilithium",
-              "value": 7199
+              "value": 11998
             }
-          ]
-        },
-        {
-          "name": "Phaser Bank",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2039,
               "armor_pierce": 14313,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 24363,
+              "min_damage": 19934,
+              "shield_pierce": 1748,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -3383,60 +3431,42 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 24363,
-              "min_damage": 19934,
-              "shield_pierce": 1748,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 25500000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 1000,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 110
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 24
+                "rarity": "uncommon"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 3000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 25500000
-              },
-              {
-                "type": "dilithium",
-                "value": 1650000
+                "value": 600
               }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 91696
-            },
-            {
-              "type": "dilithium",
-              "value": 11998
+              "value": 122261
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 10120,
@@ -3445,52 +3475,24 @@
               "ship_increased_protected_cargo": 88
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 1000
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Interceptor Parts",
-                "value": 600
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 25500000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 122261
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 55,
-              "warp_speed": 3.4
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 1650000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 900,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 900
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3498,44 +3500,44 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 1800
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 1650000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 14397
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 55,
+              "warp_speed": 3.4
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 9055,
-              "impulse_speed": 115
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 50900000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 110,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 110
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 16,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 16
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3543,16 +3545,8 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 2400
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 50900000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3562,7 +3556,14 @@
               "type": "dilithium",
               "value": 23995
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 9055,
+              "impulse_speed": 115
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3570,7 +3571,9 @@
           "ability_bonus": 0.34,
           "additional_officer_slot": false,
           "level": 36,
+          "ship_xp": 105000,
           "scrap_details": {
+            "scrap_time": 1679280,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3616,16 +3619,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 43412
               }
-            ],
-            "scrap_time": 1679280
-          },
-          "ship_xp": 105000
+            ]
+          }
         },
         {
           "ability_bonus": 0.34,
           "additional_officer_slot": false,
           "level": 37,
+          "ship_xp": 116000,
           "scrap_details": {
+            "scrap_time": 1679280,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3671,16 +3674,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 47402
               }
-            ],
-            "scrap_time": 1679280
-          },
-          "ship_xp": 116000
+            ]
+          }
         },
         {
           "ability_bonus": 0.35,
           "additional_officer_slot": false,
           "level": 38,
+          "ship_xp": 122000,
           "scrap_details": {
+            "scrap_time": 1679280,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3726,16 +3729,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 55382
               }
-            ],
-            "scrap_time": 1679280
-          },
-          "ship_xp": 122000
+            ]
+          }
         },
         {
           "ability_bonus": 0.35,
           "additional_officer_slot": false,
           "level": 39,
+          "ship_xp": 134000,
           "scrap_details": {
+            "scrap_time": 1679280,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3781,16 +3784,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 65356
               }
-            ],
-            "scrap_time": 1679280
-          },
-          "ship_xp": 134000
+            ]
+          }
         },
         {
           "ability_bonus": 0.36,
           "additional_officer_slot": true,
           "level": 40,
+          "ship_xp": 140000,
           "scrap_details": {
+            "scrap_time": 1679280,
             "rewards": [
               {
                 "type": "tritanium",
@@ -3836,26 +3839,71 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 79321
               }
-            ],
-            "scrap_time": 1679280
-          },
-          "ship_xp": 140000
+            ]
+          }
         }
-      ],
-      "repair_time": 81916,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 3200000,
+      "repair_time": 96834,
       "components": [
         {
           "name": "High-Impact Torpedo",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 135000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1600000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 230,
+                "grade": 3,
+                "rarity": "rare"
+              },
+              {
+                "type": "gas",
+                "value": 54,
+                "grade": 3,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 5500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 241372
+            },
+            {
+              "type": "dilithium",
+              "value": 12917
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2242,
               "armor_pierce": 15744,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 84403,
+              "min_damage": 69057,
+              "shield_pierce": 1922,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 1,
                 0,
@@ -3866,66 +3914,66 @@
                 1,
                 0,
                 0
-              ],
-              "max_damage": 84403,
-              "min_damage": 69057,
-              "shield_pierce": 1922,
-              "weapon_type": "kinetic"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Bank",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 40500000
+              },
+              {
+                "type": "dilithium",
+                "value": 2700000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 180,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 230
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 41,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 54
+                "rarity": "rare"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 5500
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 135000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1600000
+                "value": 4500
               }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 241372
+              "value": 144823
             },
             {
               "type": "dilithium",
-              "value": 12917
+              "value": 21528
             }
-          ]
-        },
-        {
-          "name": "Phaser Bank",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2242,
               "armor_pierce": 15744,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 26795,
+              "min_damage": 21923,
+              "shield_pierce": 1922,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -3936,60 +3984,42 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 26795,
-              "min_damage": 21923,
-              "shield_pierce": 1922,
-              "weapon_type": "energy"
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 40500000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 1700,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 180
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 41
+                "rarity": "uncommon"
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Interceptor Parts",
-                "value": 4500
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 40500000
-              },
-              {
-                "type": "dilithium",
-                "value": 2700000
+                "value": 900
               }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 144823
-            },
-            {
-              "type": "dilithium",
-              "value": 21528
+              "value": 193098
             }
-          ]
-        },
-        {
-          "name": "Cargo Bay",
+          ],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 13150,
@@ -3998,52 +4028,24 @@
               "ship_increased_protected_cargo": 88
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 1700
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Interceptor Parts",
-                "value": 900
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 40500000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 193098
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 60,
-              "warp_speed": 3.5
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 2700000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 41,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 41
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -4051,44 +4053,44 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 2700
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 2700000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "dilithium",
               "value": 25833
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 60,
+              "warp_speed": 3.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 9418,
-              "impulse_speed": 115
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 81000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 180,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 180
+                "rarity": "rare"
               },
               {
                 "type": "gas",
+                "value": 27,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 27
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -4096,16 +4098,8 @@
                 "type": "3\u2605 Interceptor Parts",
                 "value": 3600
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 81000000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4115,7 +4109,14 @@
               "type": "dilithium",
               "value": 43055
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 9418,
+              "impulse_speed": 115
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4123,7 +4124,9 @@
           "ability_bonus": 0.36,
           "additional_officer_slot": false,
           "level": 41,
+          "ship_xp": 154000,
           "scrap_details": {
+            "scrap_time": 1791240,
             "rewards": [
               {
                 "type": "tritanium",
@@ -4169,16 +4172,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 79175
               }
-            ],
-            "scrap_time": 1791240
-          },
-          "ship_xp": 154000
+            ]
+          }
         },
         {
           "ability_bonus": 0.37,
           "additional_officer_slot": false,
           "level": 42,
+          "ship_xp": 161000,
           "scrap_details": {
+            "scrap_time": 1791240,
             "rewards": [
               {
                 "type": "tritanium",
@@ -4224,16 +4227,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 84954
               }
-            ],
-            "scrap_time": 1791240
-          },
-          "ship_xp": 161000
+            ]
+          }
         },
         {
           "ability_bonus": 0.37,
           "additional_officer_slot": false,
           "level": 43,
+          "ship_xp": 176000,
           "scrap_details": {
+            "scrap_time": 1791240,
             "rewards": [
               {
                 "type": "tritanium",
@@ -4279,16 +4282,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 96512
               }
-            ],
-            "scrap_time": 1791240
-          },
-          "ship_xp": 176000
+            ]
+          }
         },
         {
           "ability_bonus": 0.38,
           "additional_officer_slot": false,
           "level": 44,
+          "ship_xp": 183000,
           "scrap_details": {
+            "scrap_time": 1791240,
             "rewards": [
               {
                 "type": "tritanium",
@@ -4334,16 +4337,16 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 110960
               }
-            ],
-            "scrap_time": 1791240
-          },
-          "ship_xp": 183000
+            ]
+          }
         },
         {
           "ability_bonus": 0.4,
           "additional_officer_slot": true,
           "level": 45,
+          "ship_xp": 200000,
           "scrap_details": {
+            "scrap_time": 1791240,
             "rewards": [
               {
                 "type": "tritanium",
@@ -4389,14 +4392,11 @@
                 "type": "4\u2605 common interceptor parts",
                 "value": 131188
               }
-            ],
-            "scrap_time": 1791240
-          },
-          "ship_xp": 200000
+            ]
+          }
         }
-      ],
-      "repair_time": 96834,
-      "tier": 9
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/uss_saladin.png"
 }

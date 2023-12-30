@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 722907,
     "defense": 759970,
     "health": 239400
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/terminimurus_39"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 169510
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/terminimurus_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 162643
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Reckless Bandit",
   "description": "",
   "group": "neutral",
+  "level": 27,
+  "rarity": "common",
   "head_stats": {
     "attack": 30768,
     "defense": 30000,
     "health": 13440
   },
-  "hostile_name": "Reckless Bandit",
-  "level": 27,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/talmir_86_26"
+    },
+    {
+      "$ref": "systems/shynna_29"
+    },
+    {
+      "$ref": "systems/unoma_29"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 13440
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/talmir_86_26"
-    },
-    {
-      "$ref": "systems/shynna_29"
-    },
-    {
-      "$ref": "systems/unoma_29"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +102,12 @@
         "shield_pierce": 1000
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

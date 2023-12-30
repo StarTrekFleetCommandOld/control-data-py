@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Scouting Bandit",
   "description": "",
   "group": "neutral",
+  "level": 44,
+  "rarity": "common",
   "head_stats": {
     "attack": 2518604,
     "defense": 1133595,
     "health": 3762072
   },
-  "hostile_name": "Scouting Bandit",
-  "level": 44,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 356,
-      "min_value": 356,
-      "value": 356
+      "$ref": "systems/hannlaw_44"
+    },
+    {
+      "$ref": "systems/imada_44"
+    },
+    {
+      "$ref": "systems/romashki_45"
+    },
+    {
+      "$ref": "systems/vita_nova_43"
+    },
+    {
+      "$ref": "systems/glacii_45"
+    },
+    {
+      "$ref": "systems/new_berlin_42"
     }
   ],
   "ship_class": "explorer",
@@ -37,31 +49,6 @@
       "shield_health": 4213522
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/hannlaw_44"
-    },
-    {
-      "$ref": "systems/imada_44"
-    },
-    {
-      "$ref": "systems/romashki_45"
-    },
-    {
-      "$ref": "systems/vita_nova_43"
-    },
-    {
-      "$ref": "systems/glacii_45"
-    },
-    {
-      "$ref": "systems/new_berlin_42"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -93,6 +80,19 @@
         "shield_pierce": 103005
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 356,
+      "min_value": 356,
+      "value": 356
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

@@ -1,41 +1,13 @@
 {
+  "hostile_name": "Romulan Supply Ship",
   "description": "",
   "group": "romulan",
+  "level": 31,
+  "rarity": "common",
   "head_stats": {
     "attack": 34200,
     "defense": 82500,
     "health": 50400
-  },
-  "hostile_name": "Romulan Supply Ship",
-  "level": 31,
-  "rarity": "common",
-  "rewards": [
-    {
-      "type": "plundered cargo",
-      "max_value": 10965,
-      "min_value": 10965,
-      "value": 10965
-    }
-  ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 4400,
-      "armor_pierce": 4400,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 27600,
-      "shield_pierce": 4400
-    },
-    "defense": {
-      "armor": 5500,
-      "dodge": 5500,
-      "shield_deflect": 5500
-    },
-    "health": {
-      "hull_health": 50400,
-      "shield_health": 50400
-    }
   },
   "systems": [
     {
@@ -69,11 +41,26 @@
       "$ref": "systems/bildari_44"
     }
   ],
-  "utility": [
-    {
-      "impulse_speed": 5
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 4400,
+      "armor_pierce": 4400,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 27600,
+      "shield_pierce": 4400
+    },
+    "defense": {
+      "armor": 5500,
+      "dodge": 5500,
+      "shield_deflect": 5500
+    },
+    "health": {
+      "hull_health": 50400,
+      "shield_health": 50400
     }
-  ],
+  },
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +92,19 @@
         "shield_pierce": 4400
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "plundered cargo",
+      "max_value": 10965,
+      "min_value": 10965,
+      "value": 10965
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 5
     }
   ]
 }

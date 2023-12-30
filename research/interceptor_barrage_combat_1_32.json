@@ -1,43 +1,43 @@
 {
+  "research_name": "Interceptor Barrage",
   "description": "Consumes an Ion Particle to increase the base damage of Interceptors.",
-  "img_url": "./assets/interceptor_barrage_combat_1_32.png",
+  "location": {
+    "column": 32,
+    "row": 1,
+    "tree": "combat"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 0.2
-      },
-      "increased_power": 141000,
       "level": 1,
-      "required_by": [],
+      "research_time": 42034980,
+      "increased_power": 141000,
       "requirements": [
         {
           "name": "Engine Technology Lab",
           "level": 42
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 674100000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "ion particle",
             "value": 1
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 674100000
-          }
         ]
       },
-      "research_time": 42034980
+      "bonus": {
+        "percentage": true,
+        "value": 0.2
+      }
     }
   ],
-  "location": {
-    "column": 32,
-    "row": 1,
-    "tree": "combat"
-  },
-  "research_name": "Interceptor Barrage"
+  "img_url": "./assets/interceptor_barrage_combat_1_32.png"
 }

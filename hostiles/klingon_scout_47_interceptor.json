@@ -1,38 +1,20 @@
 {
+  "hostile_name": "Klingon Scout \u2605",
   "description": "",
   "group": "klingon",
+  "level": 47,
+  "rarity": "common",
   "head_stats": {
     "attack": 2101703,
     "defense": 417135,
     "health": 4946612
   },
-  "hostile_name": "Klingon Scout \u2605",
-  "level": 47,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 555,
-      "min_value": 555,
-      "value": 555
+      "$ref": "systems/ch_kmulk_47"
     },
     {
-      "type": "federation points",
-      "max_value": 9600,
-      "min_value": 9600,
-      "value": 9600
-    },
-    {
-      "type": "romulan points",
-      "max_value": 4800,
-      "min_value": 4800,
-      "value": 4800
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/annalu_47"
     }
   ],
   "ship_class": "interceptor",
@@ -55,19 +37,6 @@
       "shield_health": 4946612
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ch_kmulk_47"
-    },
-    {
-      "$ref": "systems/annalu_47"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 80
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -130,6 +99,37 @@
         "shield_pierce": 47360
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 555,
+      "min_value": 555,
+      "value": 555
+    },
+    {
+      "type": "federation points",
+      "max_value": 9600,
+      "min_value": 9600,
+      "value": 9600
+    },
+    {
+      "type": "romulan points",
+      "max_value": 4800,
+      "min_value": 4800,
+      "value": 4800
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 80
     }
   ]
 }

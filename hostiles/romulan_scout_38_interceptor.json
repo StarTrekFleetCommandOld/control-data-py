@@ -1,44 +1,20 @@
 {
+  "hostile_name": "Romulan Scout \u2605",
   "description": "",
   "group": "romulan",
+  "level": 38,
+  "rarity": "common",
   "head_stats": {
     "attack": 392120,
     "defense": 378405,
     "health": 112785
   },
-  "hostile_name": "Romulan Scout \u2605",
-  "level": 38,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1897,
-      "min_value": 1897,
-      "value": 1897
+      "$ref": "systems/nequencia_38"
     },
     {
-      "type": "tritanium",
-      "max_value": 164,
-      "min_value": 164,
-      "value": 164
-    },
-    {
-      "type": "federation points",
-      "max_value": 810,
-      "min_value": 810,
-      "value": 810
-    },
-    {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "klingon points",
-      "max_value": 1623,
-      "min_value": 1623,
-      "value": 1623
+      "$ref": "systems/altanea_38"
     }
   ],
   "ship_class": "interceptor",
@@ -61,19 +37,6 @@
       "shield_health": 95240
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/nequencia_38"
-    },
-    {
-      "$ref": "systems/altanea_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 80
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +99,43 @@
         "shield_pierce": 14614
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1897,
+      "min_value": 1897,
+      "value": 1897
+    },
+    {
+      "type": "tritanium",
+      "max_value": 164,
+      "min_value": 164,
+      "value": 164
+    },
+    {
+      "type": "federation points",
+      "max_value": 810,
+      "min_value": 810,
+      "value": 810
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 1623,
+      "min_value": 1623,
+      "value": 1623
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 80
     }
   ]
 }

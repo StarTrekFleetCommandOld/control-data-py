@@ -1,35 +1,40 @@
 {
-  "description": "The Shipyard is instrumental in ship construction. Upgrade this building to get access to more ships and increase the speed of ship construction.",
-  "bonuses": {
-    "bonus1": {
-      "name": "Ship Construction Speed",
-      "percentage": true
-    },
-    "bonus2": {
-      "name": "Tier Up Speed",
-      "percentage": true
-    }
-  },
   "building_name": "Shipyard",
+  "description": "The Shipyard is instrumental in ship construction. Upgrade this building to get access to more ships and increase the speed of ship construction.",
   "levels": [
     {
-      "bonuses": {
-        "bonus1": 0.0,
-        "bonus2": 0.0
-      },
+      "level": 1,
+      "build_time": 180,
+      "increased_power": 20,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 5
+        },
+        {
+          "name": "R&D Department",
+          "level": 4
+        }
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "parsteel",
             "value": 500
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "build_time": 180,
+      "bonuses": {
+        "bonus1": 0.0,
+        "bonus2": 0.0
+      }
+    },
+    {
+      "level": 2,
+      "build_time": 300,
       "increased_power": 20,
-      "level": 1,
       "requirements": [
         {
           "name": "Operations",
@@ -39,26 +44,26 @@
           "name": "R&D Department",
           "level": 4
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.03,
-        "bonus2": 0.03
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "parsteel",
             "value": 750
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "build_time": 300,
-      "increased_power": 20,
-      "level": 2,
+      "bonuses": {
+        "bonus1": 0.03,
+        "bonus2": 0.03
+      }
+    },
+    {
+      "level": 3,
+      "build_time": 480,
+      "increased_power": 25,
       "requirements": [
         {
           "name": "Operations",
@@ -68,84 +73,55 @@
           "name": "R&D Department",
           "level": 4
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.04,
-        "bonus2": 0.04
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "parsteel",
             "value": 1000
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "build_time": 480,
+      "bonuses": {
+        "bonus1": 0.04,
+        "bonus2": 0.04
+      }
+    },
+    {
+      "level": 4,
+      "build_time": 960,
       "increased_power": 25,
-      "level": 3,
       "requirements": [
         {
           "name": "Operations",
-          "level": 5
+          "level": 6
         },
         {
           "name": "R&D Department",
           "level": 4
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.05,
-        "bonus2": 0.05
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "parsteel",
             "value": 1250
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "build_time": 960,
-      "increased_power": 25,
-      "level": 4,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 6
-        },
-        {
-          "name": "R&D Department",
-          "level": 4
-        }
-      ]
+      "bonuses": {
+        "bonus1": 0.05,
+        "bonus2": 0.05
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 0.06,
-        "bonus2": 0.06
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "parsteel",
-            "value": 1750
-          }
-        ]
-      },
+      "level": 5,
       "build_time": 1560,
       "increased_power": 30,
-      "level": 5,
       "requirements": [
         {
           "name": "Operations",
@@ -155,26 +131,26 @@
           "name": "R&D Department",
           "level": 5
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.08,
-        "bonus2": 0.08
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "parsteel",
-            "value": 3000
+            "value": 1750
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.06,
+        "bonus2": 0.06
+      }
+    },
+    {
+      "level": 6,
       "build_time": 2640,
       "increased_power": 40,
-      "level": 6,
       "requirements": [
         {
           "name": "Operations",
@@ -184,16 +160,41 @@
           "name": "R&D Department",
           "level": 6
         }
-      ]
+      ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 3000
+          }
+        ],
+        "materials": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.08,
+        "bonus2": 0.08
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 0.09,
-        "bonus2": 0.09
-      },
+      "level": 7,
+      "build_time": 4920,
+      "increased_power": 50,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 7
+        },
+        {
+          "name": "R&D Department",
+          "level": 7
+        },
+        {
+          "name": "Drydock A",
+          "level": 4
+        }
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
@@ -203,48 +204,19 @@
             "type": "parsteel",
             "value": 4500
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "build_time": 4920,
-      "increased_power": 50,
-      "level": 7,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 7
-        },
-        {
-          "name": "R&D Department",
-          "level": 7
-        },
-        {
-          "name": "Drydock A",
-          "level": 4
-        }
-      ]
+      "bonuses": {
+        "bonus1": 0.09,
+        "bonus2": 0.09
+      }
     },
     {
-      "bonuses": {
-        "bonus1": 0.11,
-        "bonus2": 0.11
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 100
-          },
-          {
-            "type": "parsteel",
-            "value": 6000
-          }
-        ]
-      },
+      "level": 8,
       "build_time": 6900,
       "increased_power": 60,
-      "level": 8,
       "requirements": [
         {
           "name": "Operations",
@@ -258,30 +230,30 @@
           "name": "Drydock A",
           "level": 6
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.12,
-        "bonus2": 0.12
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 200
+            "value": 100
           },
           {
             "type": "parsteel",
-            "value": 7500
+            "value": 6000
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.11,
+        "bonus2": 0.11
+      }
+    },
+    {
+      "level": 9,
       "build_time": 10500,
       "increased_power": 70,
-      "level": 9,
       "requirements": [
         {
           "name": "Operations",
@@ -295,30 +267,30 @@
           "name": "Drydock A",
           "level": 9
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.14,
-        "bonus2": 0.14
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 150
+            "value": 200
           },
           {
             "type": "parsteel",
-            "value": 10000
+            "value": 7500
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.12,
+        "bonus2": 0.12
+      }
+    },
+    {
+      "level": 10,
       "build_time": 12000,
       "increased_power": 80,
-      "level": 10,
       "requirements": [
         {
           "name": "Operations",
@@ -328,30 +300,30 @@
           "name": "R&D Department",
           "level": 10
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.16,
-        "bonus2": 0.16
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 200
+            "value": 150
           },
           {
             "type": "parsteel",
-            "value": 12240
+            "value": 10000
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.14,
+        "bonus2": 0.14
+      }
+    },
+    {
+      "level": 11,
       "build_time": 12300,
       "increased_power": 105,
-      "level": 11,
       "requirements": [
         {
           "name": "Operations",
@@ -365,30 +337,30 @@
           "name": "Tritanium Generator B",
           "level": 10
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.18,
-        "bonus2": 0.18
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 275
+            "value": 200
           },
           {
             "type": "parsteel",
-            "value": 16830
+            "value": 12240
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.16,
+        "bonus2": 0.16
+      }
+    },
+    {
+      "level": 12,
       "build_time": 22320,
       "increased_power": 125,
-      "level": 12,
       "requirements": [
         {
           "name": "Operations",
@@ -398,30 +370,30 @@
           "name": "R&D Department",
           "level": 12
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.2,
-        "bonus2": 0.2
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 400
+            "value": 275
           },
           {
             "type": "parsteel",
-            "value": 24480
+            "value": 16830
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.18,
+        "bonus2": 0.18
+      }
+    },
+    {
+      "level": 13,
       "build_time": 33120,
       "increased_power": 150,
-      "level": 13,
       "requirements": [
         {
           "name": "Operations",
@@ -435,30 +407,30 @@
           "name": "Astronautics Studio",
           "level": 13
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.22,
-        "bonus2": 0.22
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 550
+            "value": 400
           },
           {
             "type": "parsteel",
-            "value": 33660
+            "value": 24480
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.2,
+        "bonus2": 0.2
+      }
+    },
+    {
+      "level": 14,
       "build_time": 46080,
       "increased_power": 175,
-      "level": 14,
       "requirements": [
         {
           "name": "Operations",
@@ -472,37 +444,30 @@
           "name": "Tritanium Generator B",
           "level": 14
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.24,
-        "bonus2": 0.24
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 2,
-            "rarity": "common",
-            "value": 50
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 750
+            "value": 550
           },
           {
             "type": "parsteel",
-            "value": 45900
+            "value": 33660
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.22,
+        "bonus2": 0.22
+      }
+    },
+    {
+      "level": 15,
       "build_time": 59040,
       "increased_power": 200,
-      "level": 15,
       "requirements": [
         {
           "name": "Operations",
@@ -516,37 +481,37 @@
           "name": "Dilithium Warehouse",
           "level": 12
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.26,
-        "bonus2": 0.26
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 2,
-            "rarity": "common",
-            "value": 100
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 1000
+            "value": 750
           },
           {
             "type": "parsteel",
-            "value": 61200
+            "value": 45900
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 50,
+            "grade": 2,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.24,
+        "bonus2": 0.24
+      }
+    },
+    {
+      "level": 16,
       "build_time": 69840,
       "increased_power": 225,
-      "level": 16,
       "requirements": [
         {
           "name": "Operations",
@@ -556,43 +521,37 @@
           "name": "R&D Department",
           "level": 16
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.29,
-        "bonus2": 0.29
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 2,
-            "rarity": "uncommon",
-            "value": 15
-          },
-          {
-            "type": "crystal",
-            "grade": 2,
-            "rarity": "common",
-            "value": 200
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 1400
+            "value": 1000
           },
           {
             "type": "parsteel",
-            "value": 85680
+            "value": 61200
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 100,
+            "grade": 2,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.26,
+        "bonus2": 0.26
+      }
+    },
+    {
+      "level": 17,
       "build_time": 74880,
       "increased_power": 300,
-      "level": 17,
       "requirements": [
         {
           "name": "Operations",
@@ -606,43 +565,43 @@
           "name": "Tritanium Warehouse",
           "level": 17
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.31,
-        "bonus2": 0.31
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 2,
-            "rarity": "uncommon",
-            "value": 85
-          },
-          {
-            "type": "crystal",
-            "grade": 2,
-            "rarity": "common",
-            "value": 1000
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 2000
+            "value": 1400
           },
           {
             "type": "parsteel",
-            "value": 122400
+            "value": 85680
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 15,
+            "grade": 2,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 200,
+            "grade": 2,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.29,
+        "bonus2": 0.29
+      }
+    },
+    {
+      "level": 18,
       "build_time": 114480,
       "increased_power": 300,
-      "level": 18,
       "requirements": [
         {
           "name": "Operations",
@@ -656,43 +615,43 @@
           "name": "Defense Technologies",
           "level": 12
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.34,
-        "bonus2": 0.34
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 2,
-            "rarity": "uncommon",
-            "value": 300
-          },
-          {
-            "type": "crystal",
-            "grade": 2,
-            "rarity": "common",
-            "value": 5000
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 3000
+            "value": 2000
           },
           {
             "type": "parsteel",
-            "value": 183600
+            "value": 122400
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 85,
+            "grade": 2,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 1000,
+            "grade": 2,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.31,
+        "bonus2": 0.31
+      }
+    },
+    {
+      "level": 19,
       "build_time": 166320,
       "increased_power": 300,
-      "level": 19,
       "requirements": [
         {
           "name": "Operations",
@@ -706,30 +665,43 @@
           "name": "Dilithium Vault",
           "level": 10
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.36,
-        "bonus2": 0.36
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 4250
+            "value": 3000
           },
           {
             "type": "parsteel",
-            "value": 260100
+            "value": 183600
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 300,
+            "grade": 2,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 5000,
+            "grade": 2,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.34,
+        "bonus2": 0.34
+      }
+    },
+    {
+      "level": 20,
       "build_time": 250560,
       "increased_power": 400,
-      "level": 20,
       "requirements": [
         {
           "name": "Operations",
@@ -743,30 +715,30 @@
           "name": "Ship Hangar",
           "level": 15
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.39,
-        "bonus2": 0.39
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 7155
+            "value": 4250
           },
           {
             "type": "parsteel",
-            "value": 437886
+            "value": 260100
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.36,
+        "bonus2": 0.36
+      }
+    },
+    {
+      "level": 21,
       "build_time": 228960,
       "increased_power": 400,
-      "level": 21,
       "requirements": [
         {
           "name": "Operations",
@@ -780,30 +752,30 @@
           "name": "Astronautics Studio",
           "level": 21
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.42,
-        "bonus2": 0.42
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 11130
+            "value": 7155
           },
           {
             "type": "parsteel",
-            "value": 681156
+            "value": 437886
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.39,
+        "bonus2": 0.39
+      }
+    },
+    {
+      "level": 22,
       "build_time": 355680,
       "increased_power": 500,
-      "level": 22,
       "requirements": [
         {
           "name": "Operations",
@@ -817,37 +789,30 @@
           "name": "Dilithium Warehouse",
           "level": 21
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.45,
-        "bonus2": 0.45
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 200
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 18315
+            "value": 11130
           },
           {
             "type": "parsteel",
-            "value": 1120878
+            "value": 681156
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.42,
+        "bonus2": 0.42
+      }
+    },
+    {
+      "level": 23,
       "build_time": 419040,
       "increased_power": 500,
-      "level": 23,
       "requirements": [
         {
           "name": "Operations",
@@ -861,37 +826,37 @@
           "name": "Refinery",
           "level": 22
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.48,
-        "bonus2": 0.48
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 600
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 28860
+            "value": 18315
           },
           {
             "type": "parsteel",
-            "value": 1766232
+            "value": 1120878
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 200,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.45,
+        "bonus2": 0.45
+      }
+    },
+    {
+      "level": 24,
       "build_time": 514080,
       "increased_power": 600,
-      "level": 24,
       "requirements": [
         {
           "name": "Operations",
@@ -905,43 +870,37 @@
           "name": "Dilithium Vault",
           "level": 24
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.51,
-        "bonus2": 0.51
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 700
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 80
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 46800
+            "value": 28860
           },
           {
             "type": "parsteel",
-            "value": 2864160
+            "value": 1766232
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 600,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.48,
+        "bonus2": 0.48
+      }
+    },
+    {
+      "level": 25,
       "build_time": 476640,
       "increased_power": 550,
-      "level": 25,
       "requirements": [
         {
           "name": "Drydock A",
@@ -955,43 +914,43 @@
           "name": "Drydock C",
           "level": 25
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.55,
-        "bonus2": 0.55
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 900
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 120
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 73125
+            "value": 46800
           },
           {
             "type": "parsteel",
-            "value": 4475250
+            "value": 2864160
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 700,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 80,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.51,
+        "bonus2": 0.51
+      }
+    },
+    {
+      "level": 26,
       "build_time": 646560,
       "increased_power": 750,
-      "level": 26,
       "requirements": [
         {
           "name": "Operations",
@@ -1005,43 +964,43 @@
           "name": "Astronautics Studio",
           "level": 26
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.58,
-        "bonus2": 0.58
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1000
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 170
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 111600
+            "value": 73125
           },
           {
             "type": "parsteel",
-            "value": 6829920
+            "value": 4475250
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 900,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 120,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.55,
+        "bonus2": 0.55
+      }
+    },
+    {
+      "level": 27,
       "build_time": 735840,
       "increased_power": 750,
-      "level": 27,
       "requirements": [
         {
           "name": "Operations",
@@ -1051,43 +1010,43 @@
           "name": "R&D Department",
           "level": 27
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.62,
-        "bonus2": 0.62
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1200
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 230
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 167400
+            "value": 111600
           },
           {
             "type": "parsteel",
-            "value": 10244880
+            "value": 6829920
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 1000,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 170,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.58,
+        "bonus2": 0.58
+      }
+    },
+    {
+      "level": 28,
       "build_time": 853920,
       "increased_power": 750,
-      "level": 28,
       "requirements": [
         {
           "name": "Operations",
@@ -1101,43 +1060,43 @@
           "name": "Defense Platform A",
           "level": 28
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.65,
-        "bonus2": 0.65
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1400
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 300
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 266500
+            "value": 167400
           },
           {
             "type": "parsteel",
-            "value": 16309800
+            "value": 10244880
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 1200,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 230,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.62,
+        "bonus2": 0.62
+      }
+    },
+    {
+      "level": 29,
       "build_time": 941760,
       "increased_power": 1000,
-      "level": 29,
       "requirements": [
         {
           "name": "Operations",
@@ -1151,43 +1110,43 @@
           "name": "Dilithium Vault",
           "level": 29
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.69,
-        "bonus2": 0.69
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1600
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 390
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 390000
+            "value": 266500
           },
           {
             "type": "parsteel",
-            "value": 23868000
+            "value": 16309800
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 1400,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 300,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.65,
+        "bonus2": 0.65
+      }
+    },
+    {
+      "level": 30,
       "build_time": 1020960,
       "increased_power": 1000,
-      "level": 30,
       "requirements": [
         {
           "name": "Operations",
@@ -1201,43 +1160,43 @@
           "name": "Dilithium Warehouse",
           "level": 28
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.73,
-        "bonus2": 0.73
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1900
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 500
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 616500
+            "value": 390000
           },
           {
             "type": "parsteel",
-            "value": 37729800
+            "value": 23868000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 1600,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 390,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.69,
+        "bonus2": 0.69
+      }
+    },
+    {
+      "level": 31,
       "build_time": 1340640,
       "increased_power": 1000,
-      "level": 31,
       "requirements": [
         {
           "name": "Operations",
@@ -1251,43 +1210,43 @@
           "name": "Foundry",
           "level": 31
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.77,
-        "bonus2": 0.77
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 2100
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "rare",
-            "value": 25
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 890500
+            "value": 616500
           },
           {
             "type": "parsteel",
-            "value": 54498600
+            "value": 37729800
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 1900,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 500,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.73,
+        "bonus2": 0.73
+      }
+    },
+    {
+      "level": 32,
       "build_time": 1308960,
       "increased_power": 1250,
-      "level": 32,
       "requirements": [
         {
           "name": "Operations",
@@ -1301,43 +1260,43 @@
           "name": "Refinery",
           "level": 31
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.81,
-        "bonus2": 0.81
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 2400
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 780
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 1377500
+            "value": 890500
           },
           {
             "type": "parsteel",
-            "value": 84303000
+            "value": 54498600
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 2100,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 25,
+            "grade": 3,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.77,
+        "bonus2": 0.77
+      }
+    },
+    {
+      "level": 33,
       "build_time": 1902240,
       "increased_power": 1250,
-      "level": 33,
       "requirements": [
         {
           "name": "Operations",
@@ -1351,43 +1310,43 @@
           "name": "Tritanium Vault",
           "level": 28
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.85,
-        "bonus2": 0.85
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 2800
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 950
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 2175000
+            "value": 1377500
           },
           {
             "type": "parsteel",
-            "value": 133110000
+            "value": 84303000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 2400,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 780,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.81,
+        "bonus2": 0.81
+      }
+    },
+    {
+      "level": 34,
       "build_time": 2520000,
       "increased_power": 1250,
-      "level": 34,
       "requirements": [
         {
           "name": "Operations",
@@ -1401,43 +1360,43 @@
           "name": "Engine Technology Lab",
           "level": 34
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.89,
-        "bonus2": 0.89
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 3100
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "uncommon",
-            "value": 1140
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 3366000
+            "value": 2175000
           },
           {
             "type": "parsteel",
-            "value": 205999200
+            "value": 133110000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 2800,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 950,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.85,
+        "bonus2": 0.85
+      }
+    },
+    {
+      "level": 35,
       "build_time": 3320640,
       "increased_power": 1250,
-      "level": 35,
       "requirements": [
         {
           "name": "Operations",
@@ -1451,43 +1410,43 @@
           "name": "Science Lab",
           "level": 35
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.93,
-        "bonus2": 0.93
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 3500
-          },
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "rare",
-            "value": 75
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 4743000
+            "value": 3366000
           },
           {
             "type": "parsteel",
-            "value": 290271600
+            "value": 205999200
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 3100,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 1140,
+            "grade": 3,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 0.89,
+        "bonus2": 0.89
+      }
+    },
+    {
+      "level": 36,
       "build_time": 4243680,
       "increased_power": 1500,
-      "level": 36,
       "requirements": [
         {
           "name": "Operations",
@@ -1501,29 +1460,54 @@
           "name": "Refinery",
           "level": 35
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.98,
-        "bonus2": 0.98
-      },
+      ],
       "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 4743000
+          },
+          {
+            "type": "parsteel",
+            "value": 290271600
+          }
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 3500,
             "grade": 3,
-            "rarity": "common",
-            "value": 3900
+            "rarity": "common"
           },
           {
             "type": "crystal",
+            "value": 75,
             "grade": 3,
-            "rarity": "uncommon",
-            "value": 1620
+            "rarity": "rare"
           }
         ],
-        "others": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.93,
+        "bonus2": 0.93
+      }
+    },
+    {
+      "level": 37,
+      "build_time": 4386240,
+      "increased_power": 1750,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 37
+        },
+        {
+          "name": "R&D Department",
+          "level": 37
+        }
+      ],
+      "build_costs": {
         "resources": [
           {
             "type": "tritanium",
@@ -1533,43 +1517,43 @@
             "type": "parsteel",
             "value": 446148000
           }
-        ]
-      },
-      "build_time": 4386240,
-      "increased_power": 1750,
-      "level": 37,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 37
-        },
-        {
-          "name": "R&D Department",
-          "level": 37
-        }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.02,
-        "bonus2": 1.02
-      },
-      "build_costs": {
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 3900,
             "grade": 3,
-            "rarity": "common",
-            "value": 4300
+            "rarity": "common"
           },
           {
             "type": "crystal",
+            "value": 1620,
             "grade": 3,
-            "rarity": "rare",
-            "value": 200
+            "rarity": "uncommon"
           }
         ],
-        "others": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 0.98,
+        "bonus2": 0.98
+      }
+    },
+    {
+      "level": 38,
+      "build_time": 7112160,
+      "increased_power": 1750,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 38
+        },
+        {
+          "name": "R&D Department",
+          "level": 38
+        }
+      ],
+      "build_costs": {
         "resources": [
           {
             "type": "tritanium",
@@ -1579,57 +1563,32 @@
             "type": "parsteel",
             "value": 694008000
           }
-        ]
-      },
-      "build_time": 7112160,
-      "increased_power": 1750,
-      "level": 38,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 38
-        },
-        {
-          "name": "R&D Department",
-          "level": 38
-        }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.07,
-        "bonus2": 1.07
-      },
-      "build_costs": {
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 4300,
             "grade": 3,
-            "rarity": "common",
-            "value": 4800
+            "rarity": "common"
           },
           {
             "type": "crystal",
+            "value": 200,
             "grade": 3,
-            "rarity": "rare",
-            "value": 200
+            "rarity": "rare"
           }
         ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 19350000
-          },
-          {
-            "type": "parsteel",
-            "value": 1184220000
-          }
-        ]
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.02,
+        "bonus2": 1.02
+      }
+    },
+    {
+      "level": 39,
       "build_time": 9440640,
       "increased_power": 1500,
-      "level": 39,
       "requirements": [
         {
           "name": "Operations",
@@ -1643,37 +1602,43 @@
           "name": "Armada Control Center",
           "level": 10
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.11,
-        "bonus2": 1.11
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 50000
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 30100000
+            "value": 19350000
           },
           {
             "type": "parsteel",
-            "value": 5157936000
+            "value": 1184220000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 4800,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "crystal",
+            "value": 200,
+            "grade": 3,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.07,
+        "bonus2": 1.07
+      }
+    },
+    {
+      "level": 40,
       "build_time": 16754400,
       "increased_power": 2000,
-      "level": 40,
       "requirements": [
         {
           "name": "Operations",
@@ -1687,43 +1652,37 @@
           "name": "Armada Control Center",
           "level": 20
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.16,
-        "bonus2": 1.16
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 20000
-          },
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 85000
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 43000000
+            "value": 30100000
           },
           {
             "type": "parsteel",
-            "value": 5263200000
+            "value": 5157936000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 50000,
+            "grade": 4,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.11,
+        "bonus2": 1.11
+      }
+    },
+    {
+      "level": 41,
       "build_time": 15703200,
       "increased_power": 2000,
-      "level": 41,
       "requirements": [
         {
           "name": "Operations",
@@ -1737,43 +1696,43 @@
           "name": "Refinery",
           "level": 40
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.21,
-        "bonus2": 1.21
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 8000
-          },
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 2500
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 64050000
+            "value": 43000000
           },
           {
             "type": "parsteel",
-            "value": 7839720000
+            "value": 5263200000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 20000,
+            "grade": 4,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 85000,
+            "grade": 4,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.16,
+        "bonus2": 1.16
+      }
+    },
+    {
+      "level": 42,
       "build_time": 24137280,
       "increased_power": 2000,
-      "level": 42,
       "requirements": [
         {
           "name": "Operations",
@@ -1787,43 +1746,43 @@
           "name": "4\u2605 Shield Modulation",
           "level": 1
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.26,
-        "bonus2": 1.26
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 2000
-          },
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 2000
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 91500000
+            "value": 64050000
           },
           {
             "type": "parsteel",
-            "value": 11199600000
+            "value": 7839720000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 8000,
+            "grade": 4,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 2500,
+            "grade": 4,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.21,
+        "bonus2": 1.21
+      }
+    },
+    {
+      "level": 43,
       "build_time": 31890240,
       "increased_power": 2500,
-      "level": 43,
       "requirements": [
         {
           "name": "Operations",
@@ -1833,43 +1792,43 @@
           "name": "R&D Department",
           "level": 43
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.31,
-        "bonus2": 1.31
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 10000
-          },
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 4000
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 137250000
+            "value": 91500000
           },
           {
             "type": "parsteel",
-            "value": 16799400000
+            "value": 11199600000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 2000,
+            "grade": 4,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 2000,
+            "grade": 4,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.26,
+        "bonus2": 1.26
+      }
+    },
+    {
+      "level": 44,
       "build_time": 41623200,
       "increased_power": 2500,
-      "level": 44,
       "requirements": [
         {
           "name": "Operations",
@@ -1883,43 +1842,43 @@
           "name": "Armada Control Center",
           "level": 39
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.37,
-        "bonus2": 1.37
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 10000
-          },
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 5000
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 195000000
+            "value": 137250000
           },
           {
             "type": "parsteel",
-            "value": 23868000000
+            "value": 16799400000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 10000,
+            "grade": 4,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 4000,
+            "grade": 4,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.31,
+        "bonus2": 1.31
+      }
+    },
+    {
+      "level": 45,
       "build_time": 53736480,
       "increased_power": 2500,
-      "level": 45,
       "requirements": [
         {
           "name": "Operations",
@@ -1929,43 +1888,43 @@
           "name": "R&D Department",
           "level": 45
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.43,
-        "bonus2": 1.43
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 11500
-          },
-          {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 2500
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 268125000
+            "value": 195000000
           },
           {
             "type": "parsteel",
-            "value": 32818500000
+            "value": 23868000000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 10000,
+            "grade": 4,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 5000,
+            "grade": 4,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.37,
+        "bonus2": 1.37
+      }
+    },
+    {
+      "level": 46,
       "build_time": 68689440,
       "increased_power": 2500,
-      "level": 46,
       "requirements": [
         {
           "name": "Operations",
@@ -1979,29 +1938,54 @@
           "name": "Station Sabotage",
           "level": 1
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.49,
-        "bonus2": 1.49
-      },
+      ],
       "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 268125000
+          },
+          {
+            "type": "parsteel",
+            "value": 32818500000
+          }
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 11500,
             "grade": 4,
-            "rarity": "uncommon",
-            "value": 12000
+            "rarity": "uncommon"
           },
           {
             "type": "crystal",
+            "value": 2500,
             "grade": 4,
-            "rarity": "rare",
-            "value": 8000
+            "rarity": "rare"
           }
         ],
-        "others": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 1.43,
+        "bonus2": 1.43
+      }
+    },
+    {
+      "level": 47,
+      "build_time": 87014880,
+      "increased_power": 3000,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 47
+        },
+        {
+          "name": "R&D Department",
+          "level": 47
+        }
+      ],
+      "build_costs": {
         "resources": [
           {
             "type": "tritanium",
@@ -2011,43 +1995,43 @@
             "type": "parsteel",
             "value": 47736000000
           }
-        ]
-      },
-      "build_time": 87014880,
-      "increased_power": 3000,
-      "level": 47,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 47
-        },
-        {
-          "name": "R&D Department",
-          "level": 47
-        }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.55,
-        "bonus2": 1.55
-      },
-      "build_costs": {
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 12000,
             "grade": 4,
-            "rarity": "uncommon",
-            "value": 15000
+            "rarity": "uncommon"
           },
           {
             "type": "crystal",
+            "value": 8000,
             "grade": 4,
-            "rarity": "rare",
-            "value": 4000
+            "rarity": "rare"
           }
         ],
-        "others": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 1.49,
+        "bonus2": 1.49
+      }
+    },
+    {
+      "level": 48,
+      "build_time": 109321920,
+      "increased_power": 3000,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 48
+        },
+        {
+          "name": "R&D Department",
+          "level": 48
+        }
+      ],
+      "build_costs": {
         "resources": [
           {
             "type": "tritanium",
@@ -2057,57 +2041,32 @@
             "type": "parsteel",
             "value": 77112000000
           }
-        ]
-      },
-      "build_time": 109321920,
-      "increased_power": 3000,
-      "level": 48,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 48
-        },
-        {
-          "name": "R&D Department",
-          "level": 48
-        }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.61,
-        "bonus2": 1.61
-      },
-      "build_costs": {
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 15000,
             "grade": 4,
-            "rarity": "uncommon",
-            "value": 25000
+            "rarity": "uncommon"
           },
           {
             "type": "crystal",
+            "value": 4000,
             "grade": 4,
-            "rarity": "rare",
-            "value": 20000
+            "rarity": "rare"
           }
         ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 1050000000
-          },
-          {
-            "type": "parsteel",
-            "value": 128520000000
-          }
-        ]
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.55,
+        "bonus2": 1.55
+      }
+    },
+    {
+      "level": 49,
       "build_time": 136304640,
       "increased_power": 3000,
-      "level": 49,
       "requirements": [
         {
           "name": "Operations",
@@ -2121,30 +2080,43 @@
           "name": "Defense Technologies",
           "level": 49
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.7,
-        "bonus2": 1.7
-      },
+      ],
       "build_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 1837500000
+            "value": 1050000000
           },
           {
             "type": "parsteel",
-            "value": 224910000000
+            "value": 128520000000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 25000,
+            "grade": 4,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 20000,
+            "grade": 4,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.61,
+        "bonus2": 1.61
+      }
+    },
+    {
+      "level": 50,
       "build_time": 168753600,
       "increased_power": 3000,
-      "level": 50,
       "requirements": [
         {
           "name": "Operations",
@@ -2158,37 +2130,30 @@
           "name": "4\u2605 Shield Efficiency",
           "level": 1
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.77,
-        "bonus2": 1.77
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 20600
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 3900000000
+            "value": 1837500000
           },
           {
             "type": "parsteel",
-            "value": 1121796000000
+            "value": 224910000000
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.7,
+        "bonus2": 1.7
+      }
+    },
+    {
+      "level": 51,
       "build_time": 178879680,
       "increased_power": 3500,
-      "level": 51,
       "requirements": [
         {
           "name": "Operations",
@@ -2202,43 +2167,37 @@
           "name": "Refinery",
           "level": 50
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.84,
-        "bonus2": 1.84
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 11400
-          },
-          {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 37500
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 6630000000
+            "value": 3900000000
           },
           {
             "type": "parsteel",
-            "value": 2028780000000
+            "value": 1121796000000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 20600,
+            "grade": 5,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 1.77,
+        "bonus2": 1.77
+      }
+    },
+    {
+      "level": 52,
       "build_time": 189612000,
       "increased_power": 3500,
-      "level": 52,
       "requirements": [
         {
           "name": "Operations",
@@ -2252,29 +2211,54 @@
           "name": "Defense Technologies",
           "level": 50
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.91,
-        "bonus2": 1.91
-      },
+      ],
       "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 6630000000
+          },
+          {
+            "type": "parsteel",
+            "value": 2028780000000
+          }
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 11400,
             "grade": 5,
-            "rarity": "uncommon",
-            "value": 40800
+            "rarity": "uncommon"
           },
           {
             "type": "crystal",
+            "value": 37500,
             "grade": 5,
-            "rarity": "common",
-            "value": 73100
+            "rarity": "common"
           }
         ],
-        "others": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 1.84,
+        "bonus2": 1.84
+      }
+    },
+    {
+      "level": 53,
+      "build_time": 200988000,
+      "increased_power": 4000,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 53
+        },
+        {
+          "name": "R&D Department",
+          "level": 53
+        }
+      ],
+      "build_costs": {
         "resources": [
           {
             "type": "tritanium",
@@ -2284,43 +2268,47 @@
             "type": "parsteel",
             "value": 3407616000000
           }
-        ]
-      },
-      "build_time": 200988000,
-      "increased_power": 4000,
-      "level": 53,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 53
-        },
-        {
-          "name": "R&D Department",
-          "level": 53
-        }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1.98,
-        "bonus2": 1.98
-      },
-      "build_costs": {
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 40800,
             "grade": 5,
-            "rarity": "uncommon",
-            "value": 36000
+            "rarity": "uncommon"
           },
           {
             "type": "crystal",
+            "value": 73100,
             "grade": 5,
-            "rarity": "rare",
-            "value": 11100
+            "rarity": "common"
           }
         ],
-        "others": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 1.91,
+        "bonus2": 1.91
+      }
+    },
+    {
+      "level": 54,
+      "build_time": 213048000,
+      "increased_power": 4000,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 54
+        },
+        {
+          "name": "R&D Department",
+          "level": 54
+        },
+        {
+          "name": "Defense Platform E",
+          "level": 53
+        }
+      ],
+      "build_costs": {
         "resources": [
           {
             "type": "tritanium",
@@ -2330,47 +2318,47 @@
             "type": "parsteel",
             "value": 5111424000000
           }
-        ]
-      },
-      "build_time": 213048000,
-      "increased_power": 4000,
-      "level": 54,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 54
-        },
-        {
-          "name": "R&D Department",
-          "level": 54
-        },
-        {
-          "name": "Defense Platform E",
-          "level": 53
-        }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2.05,
-        "bonus2": 2.05
-      },
-      "build_costs": {
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 36000,
             "grade": 5,
-            "rarity": "uncommon",
-            "value": 73600
+            "rarity": "uncommon"
           },
           {
             "type": "crystal",
+            "value": 11100,
             "grade": 5,
-            "rarity": "rare",
-            "value": 12600
+            "rarity": "rare"
           }
         ],
-        "others": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 1.98,
+        "bonus2": 1.98
+      }
+    },
+    {
+      "level": 55,
+      "build_time": 225830880,
+      "increased_power": 4000,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 55
+        },
+        {
+          "name": "R&D Department",
+          "level": 55
+        },
+        {
+          "name": "Defense Platform E",
+          "level": 54
+        }
+      ],
+      "build_costs": {
         "resources": [
           {
             "type": "tritanium",
@@ -2380,47 +2368,43 @@
             "type": "parsteel",
             "value": 8687952000000
           }
-        ]
-      },
-      "build_time": 225830880,
-      "increased_power": 4000,
-      "level": 55,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 55
-        },
-        {
-          "name": "R&D Department",
-          "level": 55
-        },
-        {
-          "name": "Defense Platform E",
-          "level": 54
-        }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2.13,
-        "bonus2": 2.13
-      },
-      "build_costs": {
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 73600,
             "grade": 5,
-            "rarity": "uncommon",
-            "value": 71700
+            "rarity": "uncommon"
           },
           {
             "type": "crystal",
+            "value": 12600,
             "grade": 5,
-            "rarity": "rare",
-            "value": 18300
+            "rarity": "rare"
           }
         ],
-        "others": [],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 2.05,
+        "bonus2": 2.05
+      }
+    },
+    {
+      "level": 56,
+      "build_time": 239379840,
+      "increased_power": 4000,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 56
+        },
+        {
+          "name": "R&D Department",
+          "level": 56
+        }
+      ],
+      "build_costs": {
         "resources": [
           {
             "type": "tritanium",
@@ -2430,57 +2414,32 @@
             "type": "parsteel",
             "value": 13652496000000
           }
-        ]
-      },
-      "build_time": 239379840,
-      "increased_power": 4000,
-      "level": 56,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 56
-        },
-        {
-          "name": "R&D Department",
-          "level": 56
-        }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2.21,
-        "bonus2": 2.21
-      },
-      "build_costs": {
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 71700,
             "grade": 5,
-            "rarity": "uncommon",
-            "value": 67700
+            "rarity": "uncommon"
           },
           {
             "type": "crystal",
+            "value": 18300,
             "grade": 5,
-            "rarity": "rare",
-            "value": 22200
+            "rarity": "rare"
           }
         ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 67160000000
-          },
-          {
-            "type": "parsteel",
-            "value": 21372998400000
-          }
-        ]
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 2.13,
+        "bonus2": 2.13
+      }
+    },
+    {
+      "level": 57,
       "build_time": 253743840,
       "increased_power": 4000,
-      "level": 57,
       "requirements": [
         {
           "name": "Operations",
@@ -2494,43 +2453,43 @@
           "name": "Defense Platform F",
           "level": 50
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2.29,
-        "bonus2": 2.29
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 75900
-          },
-          {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "rare",
-            "value": 24200
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 105120000000
+            "value": 67160000000
           },
           {
             "type": "parsteel",
-            "value": 30880051200000
+            "value": 21372998400000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 67700,
+            "grade": 5,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 22200,
+            "grade": 5,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 2.21,
+        "bonus2": 2.21
+      }
+    },
+    {
+      "level": 58,
       "build_time": 268967520,
       "increased_power": 5000,
-      "level": 58,
       "requirements": [
         {
           "name": "Operations",
@@ -2544,43 +2503,43 @@
           "name": "Scrapyard",
           "level": 57
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2.37,
-        "bonus2": 2.37
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "rare",
-            "value": 26700
-          },
-          {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 283900
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 157680000000
+            "value": 105120000000
           },
           {
             "type": "parsteel",
-            "value": 46320076800000
+            "value": 30880051200000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 75900,
+            "grade": 5,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 24200,
+            "grade": 5,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 2.29,
+        "bonus2": 2.29
+      }
+    },
+    {
+      "level": 59,
       "build_time": 285105600,
       "increased_power": 5000,
-      "level": 59,
       "requirements": [
         {
           "name": "Operations",
@@ -2594,43 +2553,43 @@
           "name": "Defense Technologies",
           "level": 59
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2.45,
-        "bonus2": 2.45
-      },
+      ],
       "build_costs": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 125300
-          },
-          {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "rare",
-            "value": 30500
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "tritanium",
-            "value": 246250000000
+            "value": 157680000000
           },
           {
             "type": "parsteel",
-            "value": 72338400000000
+            "value": 46320076800000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 26700,
+            "grade": 5,
+            "rarity": "rare"
+          },
+          {
+            "type": "crystal",
+            "value": 283900,
+            "grade": 5,
+            "rarity": "common"
+          }
+        ],
+        "others": []
       },
+      "bonuses": {
+        "bonus1": 2.37,
+        "bonus2": 2.37
+      }
+    },
+    {
+      "level": 60,
       "build_time": 302212800,
       "increased_power": 5000,
-      "level": 60,
       "requirements": [
         {
           "name": "Operations",
@@ -2640,7 +2599,48 @@
           "name": "R&D Department",
           "level": 60
         }
-      ]
+      ],
+      "build_costs": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 246250000000
+          },
+          {
+            "type": "parsteel",
+            "value": 72338400000000
+          }
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 125300,
+            "grade": 5,
+            "rarity": "uncommon"
+          },
+          {
+            "type": "crystal",
+            "value": 30500,
+            "grade": 5,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
+      },
+      "bonuses": {
+        "bonus1": 2.45,
+        "bonus2": 2.45
+      }
     }
-  ]
+  ],
+  "bonuses": {
+    "bonus1": {
+      "name": "Ship Construction Speed",
+      "percentage": true
+    },
+    "bonus2": {
+      "name": "Tier Up Speed",
+      "percentage": true
+    }
+  }
 }

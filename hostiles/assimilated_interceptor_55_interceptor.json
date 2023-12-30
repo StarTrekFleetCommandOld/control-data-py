@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Assimilated Interceptor",
   "description": "",
   "group": "assimilated",
+  "level": 55,
+  "rarity": "common",
   "head_stats": {
     "attack": 49762613,
     "defense": 13852395,
     "health": 51124741
   },
-  "hostile_name": "Assimilated Interceptor",
-  "level": 55,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken interceptor parts",
-      "max_value": 471,
-      "min_value": 471,
-      "value": 471
+      "$ref": "systems/tarna_55"
+    },
+    {
+      "$ref": "systems/ander_53"
+    },
+    {
+      "$ref": "systems/kyanta_57"
+    },
+    {
+      "$ref": "systems/xy_tos_56"
+    },
+    {
+      "$ref": "systems/vacuum_epicenter_53"
     }
   ],
   "ship_class": "interceptor",
@@ -37,28 +46,6 @@
       "shield_health": 51124741
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/tarna_55"
-    },
-    {
-      "$ref": "systems/ander_53"
-    },
-    {
-      "$ref": "systems/kyanta_57"
-    },
-    {
-      "$ref": "systems/xy_tos_56"
-    },
-    {
-      "$ref": "systems/vacuum_epicenter_53"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +108,19 @@
         "shield_pierce": 515166
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken interceptor parts",
+      "max_value": 471,
+      "min_value": 471,
+      "value": 471
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

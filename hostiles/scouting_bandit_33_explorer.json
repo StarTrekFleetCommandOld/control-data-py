@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Scouting Bandit",
   "description": "",
   "group": "neutral",
+  "level": 33,
+  "rarity": "common",
   "head_stats": {
     "attack": 142920,
     "defense": 150300,
     "health": 53835
   },
-  "hostile_name": "Scouting Bandit",
-  "level": 33,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/suliban_35"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 55290
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/suliban_35"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -71,6 +65,12 @@
         "shield_pierce": 5010
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

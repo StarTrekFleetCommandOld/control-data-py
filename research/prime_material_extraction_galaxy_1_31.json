@@ -1,28 +1,36 @@
 {
+  "research_name": "Prime Material Extraction",
   "description": "Increases the base mining rate of all grades of Crystal, Gas, and Ore.",
-  "img_url": "./assets/prime_material_extraction_galaxy_1_31.png",
+  "location": {
+    "column": 31,
+    "row": 1,
+    "tree": "galaxy"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 2.0
-      },
-      "increased_power": 181000,
       "level": 1,
-      "required_by": [],
+      "research_time": 29642820,
+      "increased_power": 181000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 40
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 519800000
+          }
+        ],
         "materials": [
           {
             "type": "crystal",
+            "value": 1000,
             "grade": 6,
-            "rarity": "rare",
-            "value": 1000
+            "rarity": "rare"
           }
         ],
         "others": [
@@ -30,21 +38,13 @@
             "type": "rodinium particle",
             "value": 100
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 519800000
-          }
         ]
       },
-      "research_time": 29642820
+      "bonus": {
+        "percentage": true,
+        "value": 2.0
+      }
     }
   ],
-  "location": {
-    "column": 31,
-    "row": 1,
-    "tree": "galaxy"
-  },
-  "research_name": "Prime Material Extraction"
+  "img_url": "./assets/prime_material_extraction_galaxy_1_31.png"
 }

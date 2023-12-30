@@ -1,44 +1,23 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 33,
+  "rarity": "common",
   "head_stats": {
     "attack": 169556,
     "defense": 170340,
     "health": 52380
   },
-  "hostile_name": "Federation Patrol",
-  "level": 33,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 462,
-      "min_value": 462,
-      "value": 462
+      "$ref": "systems/inari_31"
     },
     {
-      "type": "dilithium",
-      "max_value": 107,
-      "min_value": 107,
-      "value": 107
+      "$ref": "systems/tau_ceti_34"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "romulan points",
-      "max_value": 182,
-      "min_value": 182,
-      "value": 182
-    },
-    {
-      "type": "klingon points",
-      "max_value": 91,
-      "min_value": 91,
-      "value": 91
+      "$ref": "systems/thama_32"
     }
   ],
   "ship_class": "interceptor",
@@ -61,22 +40,6 @@
       "shield_health": 60530
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/inari_31"
-    },
-    {
-      "$ref": "systems/tau_ceti_34"
-    },
-    {
-      "$ref": "systems/thama_32"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -139,6 +102,43 @@
         "shield_pierce": 6012
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 462,
+      "min_value": 462,
+      "value": 462
+    },
+    {
+      "type": "dilithium",
+      "max_value": 107,
+      "min_value": 107,
+      "value": 107
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 182,
+      "min_value": 182,
+      "value": 182
+    },
+    {
+      "type": "klingon points",
+      "max_value": 91,
+      "min_value": 91,
+      "value": 91
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

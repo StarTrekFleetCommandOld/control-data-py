@@ -1,38 +1,38 @@
 {
+  "research_name": "Prime Resources",
   "description": "Increased base production speed for all resources.",
-  "img_url": "./assets/prime_resources_station_2_3.png",
+  "location": {
+    "column": 3,
+    "row": 2,
+    "tree": "station"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 1.0
-      },
-      "increased_power": 1600,
       "level": 1,
-      "required_by": [],
+      "research_time": 6000,
+      "increased_power": 1600,
       "requirements": [
         {
           "name": "Parsteel Fusion",
           "level": 1
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 15000
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "research_time": 6000
+      "bonus": {
+        "percentage": true,
+        "value": 1.0
+      }
     }
   ],
-  "location": {
-    "column": 3,
-    "row": 2,
-    "tree": "station"
-  },
-  "research_name": "Prime Resources"
+  "img_url": "./assets/prime_resources_station_2_3.png"
 }

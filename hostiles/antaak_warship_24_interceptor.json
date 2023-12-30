@@ -1,20 +1,17 @@
 {
+  "hostile_name": "Antaak Warship",
   "description": "",
   "group": "neutral",
+  "level": 24,
+  "rarity": "common",
   "head_stats": {
     "attack": 20334,
     "defense": 22570,
     "health": 7180
   },
-  "hostile_name": "Antaak Warship",
-  "level": 24,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 939,
-      "min_value": 939,
-      "value": 939
+      "$ref": "systems/ajilon_25"
     }
   ],
   "ship_class": "interceptor",
@@ -37,16 +34,6 @@
       "shield_health": 7180
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ajilon_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -109,6 +96,19 @@
         "shield_pierce": 604
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 939,
+      "min_value": 939,
+      "value": 939
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

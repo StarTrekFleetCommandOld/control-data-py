@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Veteran Reman Bounty Hunter",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1773922,
     "defense": 1645975,
     "health": 549780
   },
-  "hostile_name": "Veteran Reman Bounty Hunter",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 3255,
-      "min_value": 3255,
-      "value": 3255
+      "$ref": "systems/fafniri_39"
+    },
+    {
+      "$ref": "systems/yodsutlj_naq_39"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 549780
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/fafniri_39"
-    },
-    {
-      "$ref": "systems/yodsutlj_naq_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 54866
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 3255,
+      "min_value": 3255,
+      "value": 3255
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

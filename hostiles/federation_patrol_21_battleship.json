@@ -1,44 +1,23 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 21,
+  "rarity": "common",
   "head_stats": {
     "attack": 10877,
     "defense": 11780,
     "health": 4620
   },
-  "hostile_name": "Federation Patrol",
-  "level": 21,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 242,
-      "min_value": 242,
-      "value": 242
+      "$ref": "systems/zadiaoo_22"
     },
     {
-      "type": "dilithium",
-      "max_value": 69,
-      "min_value": 69,
-      "value": 69
+      "$ref": "systems/gowok_23"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "romulan points",
-      "max_value": 5,
-      "min_value": 5,
-      "value": 5
-    },
-    {
-      "type": "klingon points",
-      "max_value": 3,
-      "min_value": 3,
-      "value": 3
+      "$ref": "systems/voss_20"
     }
   ],
   "ship_class": "battleship",
@@ -61,22 +40,6 @@
       "shield_health": 4680
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/zadiaoo_22"
-    },
-    {
-      "$ref": "systems/gowok_23"
-    },
-    {
-      "$ref": "systems/voss_20"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -139,6 +102,43 @@
         "shield_pierce": 2340
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 242,
+      "min_value": 242,
+      "value": 242
+    },
+    {
+      "type": "dilithium",
+      "max_value": 69,
+      "min_value": 69,
+      "value": 69
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 5,
+      "min_value": 5,
+      "value": 5
+    },
+    {
+      "type": "klingon points",
+      "max_value": 3,
+      "min_value": 3,
+      "value": 3
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

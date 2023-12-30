@@ -1,14 +1,93 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 27,
+  "rarity": "common",
   "head_stats": {
     "attack": 35847,
     "defense": 39250,
     "health": 17555
   },
-  "hostile_name": "Federation Patrol",
-  "level": 27,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/spira_27"
+    },
+    {
+      "$ref": "systems/mapic_25"
+    },
+    {
+      "$ref": "systems/angosia_25"
+    },
+    {
+      "$ref": "systems/gemet_25"
+    },
+    {
+      "$ref": "systems/p_jem_29"
+    },
+    {
+      "$ref": "systems/durchman_26"
+    },
+    {
+      "$ref": "systems/lainey_27"
+    },
+    {
+      "$ref": "systems/jen_rik_29"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 8400,
+      "armor_pierce": 1050,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 19872,
+      "shield_pierce": 1200
+    },
+    "defense": {
+      "armor": 1200,
+      "dodge": 1050,
+      "shield_deflect": 5600
+    },
+    "health": {
+      "hull_health": 14360,
+      "shield_health": 20750
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 8400,
+        "armor_pierce": 1050,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 6624,
+        "max_damage": 6336,
+        "min_damage": 5184,
+        "shield_pierce": 1200
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,88 +120,9 @@
       "value": 16
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 8400,
-      "armor_pierce": 1050,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 19872,
-      "shield_pierce": 1200
-    },
-    "defense": {
-      "armor": 1200,
-      "dodge": 1050,
-      "shield_deflect": 5600
-    },
-    "health": {
-      "hull_health": 14360,
-      "shield_health": 20750
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/spira_27"
-    },
-    {
-      "$ref": "systems/mapic_25"
-    },
-    {
-      "$ref": "systems/angosia_25"
-    },
-    {
-      "$ref": "systems/gemet_25"
-    },
-    {
-      "$ref": "systems/p_jem_29"
-    },
-    {
-      "$ref": "systems/durchman_26"
-    },
-    {
-      "$ref": "systems/lainey_27"
-    },
-    {
-      "$ref": "systems/jen_rik_29"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 20
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 8400,
-        "armor_pierce": 1050,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 6624,
-        "max_damage": 6336,
-        "min_damage": 5184,
-        "shield_pierce": 1200
-      },
-      "weapon_type": "energy"
     }
   ]
 }

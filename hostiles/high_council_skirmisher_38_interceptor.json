@@ -1,26 +1,23 @@
 {
+  "hostile_name": "High Council Skirmisher",
   "description": "",
   "group": "klingon",
+  "level": 38,
+  "rarity": "common",
   "head_stats": {
     "attack": 509608,
     "defense": 499030,
     "health": 141650
   },
-  "hostile_name": "High Council Skirmisher",
-  "level": 38,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 2342,
-      "min_value": 2342,
-      "value": 2342
+      "$ref": "systems/lilanei_36"
     },
     {
-      "type": "tritanium",
-      "max_value": 161,
-      "min_value": 161,
-      "value": 161
+      "$ref": "systems/ormilek_40"
+    },
+    {
+      "$ref": "systems/elaisik_38"
     }
   ],
   "ship_class": "interceptor",
@@ -43,22 +40,6 @@
       "shield_health": 141650
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/lilanei_36"
-    },
-    {
-      "$ref": "systems/ormilek_40"
-    },
-    {
-      "$ref": "systems/elaisik_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +102,25 @@
         "shield_pierce": 13350
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 2342,
+      "min_value": 2342,
+      "value": 2342
+    },
+    {
+      "type": "tritanium",
+      "max_value": 161,
+      "min_value": 161,
+      "value": 161
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

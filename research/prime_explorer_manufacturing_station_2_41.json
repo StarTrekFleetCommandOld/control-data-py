@@ -1,35 +1,40 @@
 {
+  "research_name": "Prime Explorer Manufacturing",
   "description": "+1 Refine when refining Grade 4 Explorer Parts",
-  "img_url": "./assets/prime_explorer_manufacturing_station_2_41.png",
+  "location": {
+    "column": 41,
+    "row": 2,
+    "tree": "station"
+  },
   "levels": [
     {
-      "increased_power": 230000,
       "level": 1,
-      "required_by": [],
+      "research_time": 73347000,
+      "increased_power": 230000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 43
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [
-          {
-            "type": "gas",
-            "grade": 5,
-            "rarity": "uncommon",
-            "value": 1000
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 1630000000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "gas",
+            "value": 1000,
+            "grade": 5,
+            "rarity": "uncommon"
+          }
+        ],
+        "others": []
       },
-      "research_time": 73347000,
       "rewards": [
         {
           "type": "Mission Token",
@@ -38,10 +43,5 @@
       ]
     }
   ],
-  "location": {
-    "column": 41,
-    "row": 2,
-    "tree": "station"
-  },
-  "research_name": "Prime Explorer Manufacturing"
+  "img_url": "./assets/prime_explorer_manufacturing_station_2_41.png"
 }

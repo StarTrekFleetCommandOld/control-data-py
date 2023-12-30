@@ -1,38 +1,32 @@
 {
+  "hostile_name": "Baelosian Cruiser",
   "description": "",
   "group": "federation",
+  "level": 52,
+  "rarity": "common",
   "head_stats": {
     "attack": 11840611,
     "defense": 4711225,
     "health": 15739963
   },
-  "hostile_name": "Baelosian Cruiser",
-  "level": 52,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken explorer parts",
-      "max_value": 207,
-      "min_value": 207,
-      "value": 207
+      "$ref": "systems/baelos_50"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/agataylor_52"
     },
     {
-      "type": "romulan points",
-      "max_value": 17840,
-      "min_value": 17840,
-      "value": 17840
+      "$ref": "systems/ver_saaj_52"
     },
     {
-      "type": "klingon points",
-      "max_value": 8920,
-      "min_value": 8920,
-      "value": 8920
+      "$ref": "systems/sementi_52"
+    },
+    {
+      "$ref": "systems/bilge_54"
+    },
+    {
+      "$ref": "systems/bairbre_54"
     }
   ],
   "ship_class": "explorer",
@@ -55,31 +49,6 @@
       "shield_health": 18363296
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/baelos_50"
-    },
-    {
-      "$ref": "systems/agataylor_52"
-    },
-    {
-      "$ref": "systems/ver_saaj_52"
-    },
-    {
-      "$ref": "systems/sementi_52"
-    },
-    {
-      "$ref": "systems/bilge_54"
-    },
-    {
-      "$ref": "systems/bairbre_54"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -142,6 +111,37 @@
         "shield_pierce": 304655
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken explorer parts",
+      "max_value": 207,
+      "min_value": 207,
+      "value": 207
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 17840,
+      "min_value": 17840,
+      "value": 17840
+    },
+    {
+      "type": "klingon points",
+      "max_value": 8920,
+      "min_value": 8920,
+      "value": 8920
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

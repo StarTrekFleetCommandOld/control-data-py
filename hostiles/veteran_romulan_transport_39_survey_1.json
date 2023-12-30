@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Veteran Romulan Transport",
   "description": "",
   "group": "romulan",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 742886,
     "defense": 1699800,
     "health": 867220
   },
-  "hostile_name": "Veteran Romulan Transport",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/boraka_39"
+    },
+    {
+      "$ref": "systems/iota_pavonis_39"
+    }
+  ],
   "ship_class": "survey",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 867220
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/boraka_39"
-    },
-    {
-      "$ref": "systems/iota_pavonis_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 9
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -74,6 +68,12 @@
         "shield_pierce": 90656
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 9
     }
   ]
 }

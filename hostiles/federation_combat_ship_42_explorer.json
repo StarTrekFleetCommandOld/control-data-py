@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Federation Combat Ship",
   "description": "",
   "group": "federation",
+  "level": 42,
+  "rarity": "common",
   "head_stats": {
     "attack": 3021313,
     "defense": 1331770,
     "health": 4470522
   },
-  "hostile_name": "Federation Combat Ship",
-  "level": 42,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/groombridge_34_40"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 5215610
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/groombridge_34_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -71,6 +65,12 @@
         "shield_pierce": 115821
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

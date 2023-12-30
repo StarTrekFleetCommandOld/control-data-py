@@ -1,20 +1,17 @@
 {
+  "hostile_name": "Freebooter Battleship",
   "description": "",
   "group": "ex-borg",
+  "level": 51,
+  "rarity": "common",
   "head_stats": {
     "attack": 3324971,
     "defense": 2108735,
     "health": 75410572
   },
-  "hostile_name": "Freebooter Battleship",
-  "level": 51,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken battleship parts",
-      "max_value": 136,
-      "min_value": 136,
-      "value": 136
+      "$ref": "systems/zhessir_50"
     }
   ],
   "ship_class": "battleship",
@@ -37,16 +34,6 @@
       "shield_health": 8871832
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/zhessir_50"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -109,6 +96,19 @@
         "shield_pierce": 98104
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken battleship parts",
+      "max_value": 136,
+      "min_value": 136,
+      "value": 136
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

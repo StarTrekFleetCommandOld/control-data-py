@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Nausicaan Outlaw",
   "description": "",
   "group": "neutral",
+  "level": 16,
+  "rarity": "common",
   "head_stats": {
     "attack": 4034,
     "defense": 3835,
     "health": 1580
   },
-  "hostile_name": "Nausicaan Outlaw",
-  "level": 16,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/lycia_14"
+    },
+    {
+      "$ref": "systems/dhi_ban_14"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 1580
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/lycia_14"
-    },
-    {
-      "$ref": "systems/dhi_ban_14"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +99,12 @@
         "shield_pierce": 128
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

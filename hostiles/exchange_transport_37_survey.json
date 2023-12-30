@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Exchange Transport",
   "description": "",
   "group": "eclipse",
+  "level": 37,
+  "rarity": "common",
   "head_stats": {
     "attack": 871588,
     "defense": 2100000,
     "health": 6278972
   },
-  "hostile_name": "Exchange Transport",
-  "level": 37,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "eclipse security codes",
-      "max_value": 757,
-      "min_value": 757,
-      "value": 757
+      "$ref": "systems/mige_38"
+    },
+    {
+      "$ref": "systems/karppinen_36"
     }
   ],
   "ship_class": "survey",
@@ -37,19 +37,6 @@
       "shield_health": 4722939
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/mige_38"
-    },
-    {
-      "$ref": "systems/karppinen_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 18
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 260000
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "eclipse security codes",
+      "max_value": 757,
+      "min_value": 757,
+      "value": 757
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 18
     }
   ]
 }

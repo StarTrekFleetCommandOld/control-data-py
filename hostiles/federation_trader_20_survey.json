@@ -1,14 +1,87 @@
 {
+  "hostile_name": "Federation Trader",
   "description": "",
   "group": "federation",
+  "level": 20,
+  "rarity": "common",
   "head_stats": {
     "attack": 3816,
     "defense": 9750,
     "health": 5760
   },
-  "hostile_name": "Federation Trader",
-  "level": 20,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/aruna_21"
+    },
+    {
+      "$ref": "systems/zadiaoo_22"
+    },
+    {
+      "$ref": "systems/voss_20"
+    },
+    {
+      "$ref": "systems/le_onor_21"
+    },
+    {
+      "$ref": "systems/lo_uren_co_21"
+    },
+    {
+      "$ref": "systems/iocau_22"
+    }
+  ],
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 520,
+      "armor_pierce": 520,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 3036,
+      "shield_pierce": 520
+    },
+    "defense": {
+      "armor": 650,
+      "dodge": 650,
+      "shield_deflect": 650
+    },
+    "health": {
+      "hull_health": 5760,
+      "shield_health": 5760
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 520,
+        "armor_pierce": 520,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 3036,
+        "max_damage": 2904,
+        "min_damage": 2376,
+        "shield_pierce": 520
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,82 +114,9 @@
       "value": 4
     }
   ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 520,
-      "armor_pierce": 520,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 3036,
-      "shield_pierce": 520
-    },
-    "defense": {
-      "armor": 650,
-      "dodge": 650,
-      "shield_deflect": 650
-    },
-    "health": {
-      "hull_health": 5760,
-      "shield_health": 5760
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/aruna_21"
-    },
-    {
-      "$ref": "systems/zadiaoo_22"
-    },
-    {
-      "$ref": "systems/voss_20"
-    },
-    {
-      "$ref": "systems/le_onor_21"
-    },
-    {
-      "$ref": "systems/lo_uren_co_21"
-    },
-    {
-      "$ref": "systems/iocau_22"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 10
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 520,
-        "armor_pierce": 520,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 3036,
-        "max_damage": 2904,
-        "min_damage": 2376,
-        "shield_pierce": 520
-      },
-      "weapon_type": "energy"
     }
   ]
 }

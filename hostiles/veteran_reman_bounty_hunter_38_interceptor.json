@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Veteran Reman Bounty Hunter",
   "description": "",
   "group": "neutral",
+  "level": 38,
+  "rarity": "common",
   "head_stats": {
     "attack": 770102,
     "defense": 709740,
     "health": 233770
   },
-  "hostile_name": "Veteran Reman Bounty Hunter",
-  "level": 38,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/devoras_39"
+    },
+    {
+      "$ref": "systems/dessica_39"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 233770
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/devoras_39"
-    },
-    {
-      "$ref": "systems/dessica_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +99,12 @@
         "shield_pierce": 23658
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

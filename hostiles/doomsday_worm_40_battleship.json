@@ -1,15 +1,31 @@
 {
+  "hostile_name": "Doomsday Worm",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1794203,
     "defense": 710965,
     "health": 3446602
   },
-  "hostile_name": "Doomsday Worm",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/enzocas_42"
+    },
+    {
+      "$ref": "systems/doka_40"
+    },
+    {
+      "$ref": "systems/kordindr_42"
+    },
+    {
+      "$ref": "systems/napiar_42"
+    },
+    {
+      "$ref": "systems/mal_tahn_38"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,28 +46,6 @@
       "shield_health": 2954230
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/enzocas_42"
-    },
-    {
-      "$ref": "systems/doka_40"
-    },
-    {
-      "$ref": "systems/kordindr_42"
-    },
-    {
-      "$ref": "systems/napiar_42"
-    },
-    {
-      "$ref": "systems/mal_tahn_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -114,6 +108,12 @@
         "shield_pierce": 128043
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

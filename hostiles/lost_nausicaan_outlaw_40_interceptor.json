@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Lost Nausicaan Outlaw",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 720805,
     "defense": 582015,
     "health": 1840950
   },
-  "hostile_name": "Lost Nausicaan Outlaw",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 125,
-      "min_value": 125,
-      "value": 125
+      "$ref": "systems/korzans_40"
+    },
+    {
+      "$ref": "systems/sadell_40"
+    },
+    {
+      "$ref": "systems/vaskan_kyrian_40"
+    },
+    {
+      "$ref": "systems/kraylor_40"
     }
   ],
   "ship_class": "interceptor",
@@ -37,25 +43,6 @@
       "shield_health": 1840950
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/korzans_40"
-    },
-    {
-      "$ref": "systems/sadell_40"
-    },
-    {
-      "$ref": "systems/vaskan_kyrian_40"
-    },
-    {
-      "$ref": "systems/kraylor_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -118,6 +105,19 @@
         "shield_pierce": 17614
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 125,
+      "min_value": 125,
+      "value": 125
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

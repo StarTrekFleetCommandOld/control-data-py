@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Veteran Arkonian Captain",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 928835,
     "defense": 857730,
     "health": 283690
   },
-  "hostile_name": "Veteran Arkonian Captain",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 2734,
-      "min_value": 2734,
-      "value": 2734
+      "$ref": "systems/olorun_39"
+    },
+    {
+      "$ref": "systems/yoruba_39"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 283690
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/olorun_39"
-    },
-    {
-      "$ref": "systems/yoruba_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 28591
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 2734,
+      "min_value": 2734,
+      "value": 2734
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

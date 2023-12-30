@@ -1,15 +1,31 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 28,
+  "rarity": "common",
   "head_stats": {
     "attack": 48683,
     "defense": 53970,
     "health": 24150
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 28,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/jaq_30"
+    },
+    {
+      "$ref": "systems/argandu_29"
+    },
+    {
+      "$ref": "systems/rator_29"
+    },
+    {
+      "$ref": "systems/biruin_27"
+    },
+    {
+      "$ref": "systems/gradientes_30"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,28 +46,6 @@
       "shield_health": 17100
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/jaq_30"
-    },
-    {
-      "$ref": "systems/argandu_29"
-    },
-    {
-      "$ref": "systems/rator_29"
-    },
-    {
-      "$ref": "systems/biruin_27"
-    },
-    {
-      "$ref": "systems/gradientes_30"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -114,6 +108,12 @@
         "shield_pierce": 11550
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

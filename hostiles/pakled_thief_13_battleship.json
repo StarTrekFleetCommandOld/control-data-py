@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Pakled Thief",
   "description": "",
   "group": "neutral",
+  "level": 13,
+  "rarity": "common",
   "head_stats": {
     "attack": 1450,
     "defense": 1645,
     "health": 630
   },
-  "hostile_name": "Pakled Thief",
-  "level": 13,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 40,
-      "min_value": 40,
-      "value": 40
+      "$ref": "systems/dhi_ban_14"
+    },
+    {
+      "$ref": "systems/bellas_12"
+    },
+    {
+      "$ref": "systems/vindemiatrix_15"
+    },
+    {
+      "$ref": "systems/elona_13"
     }
   ],
   "ship_class": "battleship",
@@ -37,25 +43,6 @@
       "shield_health": 540
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/dhi_ban_14"
-    },
-    {
-      "$ref": "systems/bellas_12"
-    },
-    {
-      "$ref": "systems/vindemiatrix_15"
-    },
-    {
-      "$ref": "systems/elona_13"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -87,6 +74,19 @@
         "shield_pierce": 328
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 40,
+      "min_value": 40,
+      "value": 40
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

@@ -1,41 +1,53 @@
 {
+  "ship_name": "MANTIS",
   "description": "How do you fight back against a terrifying enemy that feeds on your fear? You create a weapon that the enemy itself fears. The Mantis is a specially devised Battleship, created for the purpose of taking down the Actian Chrysalis and Actian Apex enemies through brute force. Designed by several of the galaxy\u2019s greatest engineers, the Mantis has one objective: stop the looming threat of the Actian Brood.",
+  "ship_class": "battleship",
+  "grade": 4,
+  "faction": "neutral",
+  "rarity": "rare",
   "blueprints": {
     "cost": 0,
     "quantity": 100
-  },
-  "faction": "neutral",
-  "grade": 4,
-  "img_url": "./assets/mantis.png",
-  "rarity": "rare",
-  "requirements": [
-    {
-      "name": "Shipyard",
-      "level": 33
-    }
-  ],
-  "scrap_info": {
-    "scrappable": false
   },
   "ship_ability": {
     "title": "Actian Corrupter",
     "description": "Mantis Damage is increased by +{value} against Actian hostiles. \n\nPassive Ability",
     "percentage": true
   },
-  "ship_class": "battleship",
-  "ship_name": "MANTIS",
+  "scrap_info": {
+    "scrappable": false
+  },
+  "requirements": [
+    {
+      "name": "Shipyard",
+      "level": 33
+    }
+  ],
   "tiers": [
     {
+      "tier": 1,
       "build_time": 2980800,
+      "repair_time": 84000,
       "components": [
         {
           "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1012,
               "armor_pierce": 778,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 20615,
+              "min_damage": 17180,
+              "shield_pierce": 7782,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 0,
@@ -46,30 +58,30 @@
                 0,
                 0,
                 2
-              ],
-              "max_damage": 20615,
-              "min_damage": 17180,
-              "shield_pierce": 7782,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1012,
               "armor_pierce": 778,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 4123,
+              "min_damage": 3436,
+              "shield_pierce": 7782,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 0,
@@ -80,30 +92,30 @@
                 1,
                 0,
                 0
-              ],
-              "max_damage": 4123,
-              "min_damage": 3436,
-              "shield_pierce": 7782,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1012,
               "armor_pierce": 778,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 4123,
+              "min_damage": 3436,
+              "shield_pierce": 7782,
+              "weapon_type": "energy",
               "firing_pattern": [
                 0,
                 1,
@@ -114,24 +126,20 @@
                 0,
                 1,
                 0
-              ],
-              "max_damage": 4123,
-              "min_damage": 3436,
-              "shield_pierce": 7782,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 11000,
@@ -140,95 +148,61 @@
               "ship_increased_protected_cargo": 0
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
+          "img_url": "./assets/component_warp_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 85,
               "warp_distance": 48,
-              "warp_speed": 4.1
+              "warp_speed": 4.1,
+              "impulse_speed": 85
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "armor_info": {
               "armor": 3470,
               "hull_health": 53815
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Shield",
+          "img_url": "./assets/component_shield.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "shield_info": {
               "shield_deflection": 451,
               "shield_health": 46272
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1165
-          },
-          {
-            "type": "ore",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1820
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 13381000
-          },
-          {
-            "type": "dilithium",
-            "value": 75000
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 620.0,
@@ -261,50 +235,65 @@
           "ship_xp": 29000
         }
       ],
-      "repair_time": 84000,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 13381000
+          },
+          {
+            "type": "dilithium",
+            "value": 75000
+          }
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 1165,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "ore",
+            "value": 1820,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 600000,
+      "repair_time": 119400,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1213,
-              "armor_pierce": 934,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 24730,
-              "min_damage": 20610,
-              "shield_pierce": 9336,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 9845000
+              },
+              {
+                "type": "dilithium",
+                "value": 330000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 295,
                 "grade": 3,
-                "rarity": "common",
-                "value": 295
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 770,
                 "grade": 3,
-                "rarity": "common",
-                "value": 770
+                "rarity": "common"
               }
             ],
             "others": [
@@ -316,20 +305,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 100
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 9845000
-              },
-              {
-                "type": "dilithium",
-                "value": 330000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -339,46 +316,58 @@
               "type": "dilithium",
               "value": 4520
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1213,
               "armor_pierce": 934,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "max_damage": 4946,
-              "min_damage": 4122,
+              "max_damage": 24730,
+              "min_damage": 20610,
               "shield_pierce": 9336,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5907000
+              },
+              {
+                "type": "dilithium",
+                "value": 198000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 175,
                 "grade": 3,
-                "rarity": "common",
-                "value": 175
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 460,
                 "grade": 3,
-                "rarity": "common",
-                "value": 460
+                "rarity": "common"
               }
             ],
             "others": [
@@ -390,20 +379,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 60
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5907000
-              },
-              {
-                "type": "dilithium",
-                "value": 198000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -413,46 +390,58 @@
               "type": "dilithium",
               "value": 2712
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1213,
               "armor_pierce": 934,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0
-              ],
               "max_damage": 4946,
               "min_damage": 4122,
               "shield_pierce": 9336,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 4923000
+              },
+              {
+                "type": "dilithium",
+                "value": 165000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 145,
                 "grade": 3,
-                "rarity": "common",
-                "value": 145
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 385,
                 "grade": 3,
-                "rarity": "common",
-                "value": 385
+                "rarity": "common"
               }
             ],
             "others": [
@@ -464,20 +453,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 50
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 4923000
-              },
-              {
-                "type": "dilithium",
-                "value": 165000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -487,31 +464,58 @@
               "type": "dilithium",
               "value": 2260
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1213,
+              "armor_pierce": 934,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 4946,
+              "min_damage": 4122,
+              "shield_pierce": 9336,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 600,
-              "increased_protected_cargo": 40,
-              "ship_increased_cargo": 300,
-              "ship_increased_protected_cargo": 220
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2461000
+              },
+              {
+                "type": "dilithium",
+                "value": 83000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 75,
                 "grade": 3,
-                "rarity": "common",
-                "value": 75
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 190,
                 "grade": 3,
-                "rarity": "common",
-                "value": 190
+                "rarity": "common"
               }
             ],
             "others": [
@@ -523,20 +527,8 @@
                 "type": "Majalan Power Core Tier 2",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2461000
-              },
-              {
-                "type": "dilithium",
-                "value": 83000
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -546,30 +538,43 @@
               "type": "dilithium",
               "value": 1130
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 600,
+              "increased_protected_cargo": 40,
+              "ship_increased_cargo": 300,
+              "ship_increased_protected_cargo": 220
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 52,
-              "warp_speed": 4.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2461000
+              },
+              {
+                "type": "dilithium",
+                "value": 83000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 75,
                 "grade": 3,
-                "rarity": "common",
-                "value": 75
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 190,
                 "grade": 3,
-                "rarity": "common",
-                "value": 190
+                "rarity": "common"
               }
             ],
             "others": [
@@ -581,20 +586,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 35
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2461000
-              },
-              {
-                "type": "dilithium",
-                "value": 83000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -604,29 +597,42 @@
               "type": "dilithium",
               "value": 1130
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 52,
+              "warp_speed": 4.2,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 4162,
-              "hull_health": 64560
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 10830000
+              },
+              {
+                "type": "dilithium",
+                "value": 363000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 325,
                 "grade": 3,
-                "rarity": "common",
-                "value": 325
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 845,
                 "grade": 3,
-                "rarity": "common",
-                "value": 845
+                "rarity": "common"
               }
             ],
             "others": [
@@ -638,20 +644,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 80
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 10830000
-              },
-              {
-                "type": "dilithium",
-                "value": 363000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -661,29 +655,41 @@
               "type": "dilithium",
               "value": 4972
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 4162,
+              "hull_health": 64560
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 541,
-              "shield_health": 55511
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 12799000
+              },
+              {
+                "type": "dilithium",
+                "value": 429000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 380,
                 "grade": 3,
-                "rarity": "common",
-                "value": 380
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 295,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 295
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -695,20 +701,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 90
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 12799000
-              },
-              {
-                "type": "dilithium",
-                "value": 429000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -718,7 +712,14 @@
               "type": "dilithium",
               "value": 5876
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 541,
+              "shield_health": 55511
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -752,51 +753,39 @@
           "level": 10,
           "ship_xp": 130000
         }
-      ],
-      "repair_time": 119400,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 1200000,
+      "repair_time": 124800,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1451,
-              "armor_pierce": 1117,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 29585,
-              "min_damage": 24655,
-              "shield_pierce": 11168,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 16048000
+              },
+              {
+                "type": "dilithium",
+                "value": 538000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 515,
                 "grade": 3,
-                "rarity": "common",
-                "value": 515
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 1425,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1425
+                "rarity": "common"
               }
             ],
             "others": [
@@ -808,20 +797,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 420
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 16048000
-              },
-              {
-                "type": "dilithium",
-                "value": 538000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -831,46 +808,58 @@
               "type": "dilithium",
               "value": 17360
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1451,
               "armor_pierce": 1117,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "max_damage": 5917,
-              "min_damage": 4931,
+              "max_damage": 29585,
+              "min_damage": 24655,
               "shield_pierce": 11168,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 9629000
+              },
+              {
+                "type": "dilithium",
+                "value": 323000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 310,
                 "grade": 3,
-                "rarity": "common",
-                "value": 310
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 855,
                 "grade": 3,
-                "rarity": "common",
-                "value": 855
+                "rarity": "common"
               }
             ],
             "others": [
@@ -882,20 +871,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 250
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 9629000
-              },
-              {
-                "type": "dilithium",
-                "value": 323000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -905,46 +882,58 @@
               "type": "dilithium",
               "value": 10416
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1451,
               "armor_pierce": 1117,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0
-              ],
               "max_damage": 5917,
               "min_damage": 4931,
               "shield_pierce": 11168,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8024000
+              },
+              {
+                "type": "dilithium",
+                "value": 269000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 260,
                 "grade": 3,
-                "rarity": "common",
-                "value": 260
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 715,
                 "grade": 3,
-                "rarity": "common",
-                "value": 715
+                "rarity": "common"
               }
             ],
             "others": [
@@ -956,20 +945,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 210
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8024000
-              },
-              {
-                "type": "dilithium",
-                "value": 269000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -979,31 +956,58 @@
               "type": "dilithium",
               "value": 8680
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1451,
+              "armor_pierce": 1117,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 5917,
+              "min_damage": 4931,
+              "shield_pierce": 11168,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 600,
-              "increased_protected_cargo": 120,
-              "ship_increased_cargo": 300,
-              "ship_increased_protected_cargo": 220
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 4012000
+              },
+              {
+                "type": "dilithium",
+                "value": 135000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 130,
                 "grade": 3,
-                "rarity": "common",
-                "value": 130
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 355,
                 "grade": 3,
-                "rarity": "common",
-                "value": 355
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1015,20 +1019,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 105
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 4012000
-              },
-              {
-                "type": "dilithium",
-                "value": 135000
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1038,30 +1030,43 @@
               "type": "dilithium",
               "value": 4340
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 600,
+              "increased_protected_cargo": 120,
+              "ship_increased_cargo": 300,
+              "ship_increased_protected_cargo": 220
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 56,
-              "warp_speed": 4.3
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 4012000
+              },
+              {
+                "type": "dilithium",
+                "value": 135000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 130,
                 "grade": 3,
-                "rarity": "common",
-                "value": 130
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 355,
                 "grade": 3,
-                "rarity": "common",
-                "value": 355
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1073,20 +1078,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 105
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 4012000
-              },
-              {
-                "type": "dilithium",
-                "value": 135000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1096,29 +1089,42 @@
               "type": "dilithium",
               "value": 4340
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 56,
+              "warp_speed": 4.3,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 4980,
-              "hull_health": 77233
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 17653000
+              },
+              {
+                "type": "dilithium",
+                "value": 592000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 570,
                 "grade": 3,
-                "rarity": "common",
-                "value": 570
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 175,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 175
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1130,20 +1136,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 460
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 17653000
-              },
-              {
-                "type": "dilithium",
-                "value": 592000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1153,29 +1147,41 @@
               "type": "dilithium",
               "value": 19096
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 4980,
+              "hull_health": 77233
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 648,
-              "shield_health": 66408
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 20863000
+              },
+              {
+                "type": "dilithium",
+                "value": 700000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 195,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 195
+                "rarity": "uncommon"
               },
               {
                 "type": "ore",
+                "value": 205,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 205
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1187,20 +1193,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 545
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 20863000
-              },
-              {
-                "type": "dilithium",
-                "value": 700000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1210,7 +1204,14 @@
               "type": "dilithium",
               "value": 22568
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 648,
+              "shield_health": 66408
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1244,51 +1245,39 @@
           "level": 15,
           "ship_xp": 318000
         }
-      ],
-      "repair_time": 124800,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 2000000,
+      "repair_time": 130200,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1700,
-              "armor_pierce": 1307,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 34640,
-              "min_damage": 28865,
-              "shield_pierce": 13076,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 25362000
+              },
+              {
+                "type": "dilithium",
+                "value": 864000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 115,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 115
+                "rarity": "uncommon"
               },
               {
                 "type": "ore",
+                "value": 150,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 150
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1300,20 +1289,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 2400
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 25362000
-              },
-              {
-                "type": "dilithium",
-                "value": 864000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1323,46 +1300,58 @@
               "type": "dilithium",
               "value": 36000
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1700,
               "armor_pierce": 1307,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "max_damage": 6928,
-              "min_damage": 5773,
+              "max_damage": 34640,
+              "min_damage": 28865,
               "shield_pierce": 13076,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 15217000
+              },
+              {
+                "type": "dilithium",
+                "value": 518000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 905,
                 "grade": 3,
-                "rarity": "common",
-                "value": 905
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 90,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 90
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1374,20 +1363,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 1440
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 15217000
-              },
-              {
-                "type": "dilithium",
-                "value": 518000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1397,46 +1374,58 @@
               "type": "dilithium",
               "value": 21600
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1700,
               "armor_pierce": 1307,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0
-              ],
               "max_damage": 6928,
               "min_damage": 5773,
               "shield_pierce": 13076,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 12681000
+              },
+              {
+                "type": "dilithium",
+                "value": 432000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 755,
                 "grade": 3,
-                "rarity": "common",
-                "value": 755
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 75,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 75
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1448,20 +1437,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 1200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 12681000
-              },
-              {
-                "type": "dilithium",
-                "value": 432000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1471,31 +1448,58 @@
               "type": "dilithium",
               "value": 18000
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1700,
+              "armor_pierce": 1307,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 6928,
+              "min_damage": 5773,
+              "shield_pierce": 13076,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 600,
-              "increased_protected_cargo": 60,
-              "ship_increased_cargo": 300,
-              "ship_increased_protected_cargo": 220
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6340000
+              },
+              {
+                "type": "dilithium",
+                "value": 216000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 375,
                 "grade": 3,
-                "rarity": "common",
-                "value": 375
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 2340,
                 "grade": 3,
-                "rarity": "common",
-                "value": 2340
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1507,20 +1511,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 600
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 6340000
-              },
-              {
-                "type": "dilithium",
-                "value": 216000
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1530,30 +1522,43 @@
               "type": "dilithium",
               "value": 9000
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 600,
+              "increased_protected_cargo": 60,
+              "ship_increased_cargo": 300,
+              "ship_increased_protected_cargo": 220
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 60,
-              "warp_speed": 4.4
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6340000
+              },
+              {
+                "type": "dilithium",
+                "value": 216000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 375,
                 "grade": 3,
-                "rarity": "common",
-                "value": 375
+                "rarity": "common"
               },
               {
                 "type": "ore",
+                "value": 2340,
                 "grade": 3,
-                "rarity": "common",
-                "value": 2340
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1565,20 +1570,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 600
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 6340000
-              },
-              {
-                "type": "dilithium",
-                "value": 216000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1588,29 +1581,42 @@
               "type": "dilithium",
               "value": 9000
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 60,
+              "warp_speed": 4.4,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 5830,
-              "hull_health": 90420
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 27898000
+              },
+              {
+                "type": "dilithium",
+                "value": 950000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 125,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 125
+                "rarity": "uncommon"
               },
               {
                 "type": "ore",
+                "value": 165,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 165
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1622,20 +1628,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 2640
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 27898000
-              },
-              {
-                "type": "dilithium",
-                "value": 950000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1645,29 +1639,41 @@
               "type": "dilithium",
               "value": 39600
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 5830,
+              "hull_health": 90420
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 758,
-              "shield_health": 77747
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 32970000
+              },
+              {
+                "type": "dilithium",
+                "value": 1123000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 25,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 25
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 45,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 45
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -1679,20 +1685,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 3120
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 32970000
-              },
-              {
-                "type": "dilithium",
-                "value": 1123000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1702,7 +1696,14 @@
               "type": "dilithium",
               "value": 46800
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 758,
+              "shield_health": 77747
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1736,51 +1737,39 @@
           "level": 20,
           "ship_xp": 628000
         }
-      ],
-      "repair_time": 130200,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 3000000,
+      "repair_time": 139200,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1967,
-              "armor_pierce": 1513,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 40070,
-              "min_damage": 33390,
-              "shield_pierce": 15128,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 40391000
+              },
+              {
+                "type": "dilithium",
+                "value": 1862000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 115,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 115
+                "rarity": "uncommon"
               },
               {
                 "type": "ore",
+                "value": 280,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 280
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1792,20 +1781,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 9600
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 40391000
-              },
-              {
-                "type": "dilithium",
-                "value": 1862000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1815,46 +1792,58 @@
               "type": "dilithium",
               "value": 72360
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1967,
               "armor_pierce": 1513,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "max_damage": 8014,
-              "min_damage": 6678,
+              "max_damage": 40070,
+              "min_damage": 33390,
               "shield_pierce": 15128,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 24234000
+              },
+              {
+                "type": "dilithium",
+                "value": 1117000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 70,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 70
+                "rarity": "uncommon"
               },
               {
                 "type": "ore",
+                "value": 170,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 170
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1866,20 +1855,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 5760
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 24234000
-              },
-              {
-                "type": "dilithium",
-                "value": 1117000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1889,46 +1866,58 @@
               "type": "dilithium",
               "value": 43416
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1967,
               "armor_pierce": 1513,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0
-              ],
               "max_damage": 8014,
               "min_damage": 6678,
               "shield_pierce": 15128,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 20195000
+              },
+              {
+                "type": "dilithium",
+                "value": 931000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 55,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 55
+                "rarity": "uncommon"
               },
               {
                 "type": "ore",
+                "value": 140,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 140
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1940,20 +1929,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 4800
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 20195000
-              },
-              {
-                "type": "dilithium",
-                "value": 931000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1963,31 +1940,58 @@
               "type": "dilithium",
               "value": 36180
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1967,
+              "armor_pierce": 1513,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 8014,
+              "min_damage": 6678,
+              "shield_pierce": 15128,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 1200,
-              "increased_protected_cargo": 280,
-              "ship_increased_cargo": 300,
-              "ship_increased_protected_cargo": 220
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 10098000
+              },
+              {
+                "type": "dilithium",
+                "value": 466000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2950,
                 "grade": 3,
-                "rarity": "common",
-                "value": 2950
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 30,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 30
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1999,20 +2003,8 @@
                 "type": "Majalan Power Core Tier 5",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 10098000
-              },
-              {
-                "type": "dilithium",
-                "value": 466000
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2022,30 +2014,43 @@
               "type": "dilithium",
               "value": 18090
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 1200,
+              "increased_protected_cargo": 280,
+              "ship_increased_cargo": 300,
+              "ship_increased_protected_cargo": 220
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 70,
-              "warp_speed": 4.5
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 10098000
+              },
+              {
+                "type": "dilithium",
+                "value": 466000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2950,
                 "grade": 3,
-                "rarity": "common",
-                "value": 2950
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 30,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 30
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2057,20 +2062,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 2400
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 10098000
-              },
-              {
-                "type": "dilithium",
-                "value": 466000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2080,29 +2073,42 @@
               "type": "dilithium",
               "value": 18090
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 70,
+              "warp_speed": 4.5,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 6744,
-              "hull_health": 104607
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 44430000
+              },
+              {
+                "type": "dilithium",
+                "value": 2048000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 35,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 35
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 70,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 70
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2114,20 +2120,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 10560
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 44430000
-              },
-              {
-                "type": "dilithium",
-                "value": 2048000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2137,29 +2131,41 @@
               "type": "dilithium",
               "value": 79596
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 6744,
+              "hull_health": 104607
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 876,
-              "shield_health": 89945
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 52508000
+              },
+              {
+                "type": "dilithium",
+                "value": 2421000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 40,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 40
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 80,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 80
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2171,20 +2177,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 12480
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 52508000
-              },
-              {
-                "type": "dilithium",
-                "value": 2421000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2194,7 +2188,14 @@
               "type": "dilithium",
               "value": 94068
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 876,
+              "shield_health": 89945
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2228,51 +2229,39 @@
           "level": 25,
           "ship_xp": 1083000
         }
-      ],
-      "repair_time": 139200,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 4000000,
+      "repair_time": 146400,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 2273,
-              "armor_pierce": 1749,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 46330,
-              "min_damage": 38610,
-              "shield_pierce": 17491,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 54865000
+              },
+              {
+                "type": "dilithium",
+                "value": 2277000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 155,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 155
+                "rarity": "uncommon"
               },
               {
                 "type": "ore",
+                "value": 90,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 90
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2284,20 +2273,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 52800
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 54865000
-              },
-              {
-                "type": "dilithium",
-                "value": 2277000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2307,46 +2284,58 @@
               "type": "dilithium",
               "value": 87860
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2273,
               "armor_pierce": 1749,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "max_damage": 9266,
-              "min_damage": 7722,
+              "max_damage": 46330,
+              "min_damage": 38610,
               "shield_pierce": 17491,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 32919000
+              },
+              {
+                "type": "dilithium",
+                "value": 1366000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 90,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 90
+                "rarity": "uncommon"
               },
               {
                 "type": "ore",
+                "value": 55,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 55
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2358,20 +2347,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 31680
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 32919000
-              },
-              {
-                "type": "dilithium",
-                "value": 1366000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2381,46 +2358,58 @@
               "type": "dilithium",
               "value": 52716
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2273,
               "armor_pierce": 1749,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0
-              ],
               "max_damage": 9266,
               "min_damage": 7722,
               "shield_pierce": 17491,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 27432000
+              },
+              {
+                "type": "dilithium",
+                "value": 1138000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 75,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 75
+                "rarity": "uncommon"
               },
               {
                 "type": "ore",
+                "value": 45,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 45
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2432,20 +2421,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 26400
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 27432000
-              },
-              {
-                "type": "dilithium",
-                "value": 1138000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2455,31 +2432,58 @@
               "type": "dilithium",
               "value": 43930
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 2273,
+              "armor_pierce": 1749,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 9266,
+              "min_damage": 7722,
+              "shield_pierce": 17491,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 3000,
-              "increased_protected_cargo": 270,
-              "ship_increased_cargo": 300,
-              "ship_increased_protected_cargo": 220
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 13716000
+              },
+              {
+                "type": "dilithium",
+                "value": 569000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 3945,
                 "grade": 3,
-                "rarity": "common",
-                "value": 3945
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 40,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 40
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2491,20 +2495,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 13200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 13716000
-              },
-              {
-                "type": "dilithium",
-                "value": 569000
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2514,30 +2506,43 @@
               "type": "dilithium",
               "value": 21965
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 3000,
+              "increased_protected_cargo": 270,
+              "ship_increased_cargo": 300,
+              "ship_increased_protected_cargo": 220
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 85,
-              "warp_speed": 4.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 13716000
+              },
+              {
+                "type": "dilithium",
+                "value": 569000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 3945,
                 "grade": 3,
-                "rarity": "common",
-                "value": 3945
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 40,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 40
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2549,20 +2554,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 13200
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 13716000
-              },
-              {
-                "type": "dilithium",
-                "value": 569000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2572,29 +2565,42 @@
               "type": "dilithium",
               "value": 21965
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 85,
+              "warp_speed": 4.6,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 7799,
-              "hull_health": 120953
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 60351000
+              },
+              {
+                "type": "dilithium",
+                "value": 2504000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 95,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 95
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 95,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 95
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2606,20 +2612,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 58080
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 60351000
-              },
-              {
-                "type": "dilithium",
-                "value": 2504000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2629,29 +2623,41 @@
               "type": "dilithium",
               "value": 96646
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 7799,
+              "hull_health": 120953
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1014,
-              "shield_health": 104000
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 71324000
+              },
+              {
+                "type": "dilithium",
+                "value": 2960000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 110,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 110
+                "rarity": "rare"
               },
               {
                 "type": "ore",
+                "value": 115,
                 "grade": 3,
-                "rarity": "rare",
-                "value": 115
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2663,20 +2669,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 68640
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 71324000
-              },
-              {
-                "type": "dilithium",
-                "value": 2960000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2686,7 +2680,14 @@
               "type": "dilithium",
               "value": 114218
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1014,
+              "shield_health": 104000
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2720,51 +2721,39 @@
           "level": 30,
           "ship_xp": 1640000
         }
-      ],
-      "repair_time": 146400,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 5000000,
+      "repair_time": 153600,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 2609,
-              "armor_pierce": 2008,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 53160,
-              "min_damage": 44300,
-              "shield_pierce": 20069,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 73586000
+              },
+              {
+                "type": "dilithium",
+                "value": 4676000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2315,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2315
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 650,
                 "grade": 4,
-                "rarity": "common",
-                "value": 650
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2776,20 +2765,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 520
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 73586000
-              },
-              {
-                "type": "dilithium",
-                "value": 4676000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2799,46 +2776,58 @@
               "type": "dilithium",
               "value": 455960
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2609,
               "armor_pierce": 2008,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "max_damage": 10632,
-              "min_damage": 8860,
+              "max_damage": 53160,
+              "min_damage": 44300,
               "shield_pierce": 20069,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 44152000
+              },
+              {
+                "type": "dilithium",
+                "value": 2805000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1390,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1390
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 390,
                 "grade": 4,
-                "rarity": "common",
-                "value": 390
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2850,20 +2839,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 315
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 44152000
-              },
-              {
-                "type": "dilithium",
-                "value": 2805000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2873,46 +2850,58 @@
               "type": "dilithium",
               "value": 273576
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2609,
               "armor_pierce": 2008,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0
-              ],
               "max_damage": 10632,
               "min_damage": 8860,
               "shield_pierce": 20069,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 36793000
+              },
+              {
+                "type": "dilithium",
+                "value": 2338000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1155,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1155
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 325,
                 "grade": 4,
-                "rarity": "common",
-                "value": 325
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2924,20 +2913,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 260
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 36793000
-              },
-              {
-                "type": "dilithium",
-                "value": 2338000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2947,31 +2924,58 @@
               "type": "dilithium",
               "value": 227980
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 2609,
+              "armor_pierce": 2008,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 10632,
+              "min_damage": 8860,
+              "shield_pierce": 20069,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 5500,
-              "increased_protected_cargo": 430,
-              "ship_increased_cargo": 300,
-              "ship_increased_protected_cargo": 220
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 18396000
+              },
+              {
+                "type": "dilithium",
+                "value": 1169000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 580,
                 "grade": 4,
-                "rarity": "common",
-                "value": 580
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 165,
                 "grade": 4,
-                "rarity": "common",
-                "value": 165
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2983,20 +2987,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 22950
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 18396000
-              },
-              {
-                "type": "dilithium",
-                "value": 1169000
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3006,30 +2998,43 @@
               "type": "dilithium",
               "value": 113990
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 5500,
+              "increased_protected_cargo": 430,
+              "ship_increased_cargo": 300,
+              "ship_increased_protected_cargo": 220
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 100,
-              "warp_speed": 4.7
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 18396000
+              },
+              {
+                "type": "dilithium",
+                "value": 1169000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 580,
                 "grade": 4,
-                "rarity": "common",
-                "value": 580
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 165,
                 "grade": 4,
-                "rarity": "common",
-                "value": 165
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3041,20 +3046,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 130
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 18396000
-              },
-              {
-                "type": "dilithium",
-                "value": 1169000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3064,29 +3057,42 @@
               "type": "dilithium",
               "value": 113990
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 100,
+              "warp_speed": 4.7,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 8949,
-              "hull_health": 138788
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 80945000
+              },
+              {
+                "type": "dilithium",
+                "value": 5143000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2545,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2545
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 715,
                 "grade": 4,
-                "rarity": "common",
-                "value": 715
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3098,20 +3104,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 575
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 80945000
-              },
-              {
-                "type": "dilithium",
-                "value": 5143000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3121,29 +3115,41 @@
               "type": "dilithium",
               "value": 501556
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 8949,
+              "hull_health": 138788
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1163,
-              "shield_health": 119335
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 95662000
+              },
+              {
+                "type": "dilithium",
+                "value": 6078000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 3010,
                 "grade": 4,
-                "rarity": "common",
-                "value": 3010
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 845,
                 "grade": 4,
-                "rarity": "common",
-                "value": 845
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3155,20 +3161,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 119340
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 95662000
-              },
-              {
-                "type": "dilithium",
-                "value": 6078000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3178,7 +3172,14 @@
               "type": "dilithium",
               "value": 592748
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1163,
+              "shield_health": 119335
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3212,51 +3213,39 @@
           "level": 35,
           "ship_xp": 2433000
         }
-      ],
-      "repair_time": 153600,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 6500000,
+      "repair_time": 159600,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 2988,
-              "armor_pierce": 2299,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 60885,
-              "min_damage": 50740,
-              "shield_pierce": 22987,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 119915000
+              },
+              {
+                "type": "dilithium",
+                "value": 7621000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1165,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1165
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 800,
                 "grade": 4,
-                "rarity": "common",
-                "value": 800
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3268,20 +3257,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 1525
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 119915000
-              },
-              {
-                "type": "dilithium",
-                "value": 7621000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3291,46 +3268,58 @@
               "type": "dilithium",
               "value": 601080
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2988,
               "armor_pierce": 2299,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "max_damage": 12177,
-              "min_damage": 10148,
+              "max_damage": 60885,
+              "min_damage": 50740,
               "shield_pierce": 22987,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 71949000
+              },
+              {
+                "type": "dilithium",
+                "value": 4573000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 5335,
                 "grade": 4,
-                "rarity": "common",
-                "value": 5335
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 480,
                 "grade": 4,
-                "rarity": "common",
-                "value": 480
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3342,20 +3331,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 915
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 71949000
-              },
-              {
-                "type": "dilithium",
-                "value": 4573000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3365,46 +3342,58 @@
               "type": "dilithium",
               "value": 360648
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2988,
               "armor_pierce": 2299,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0
-              ],
               "max_damage": 12177,
               "min_damage": 10148,
               "shield_pierce": 22987,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 59958000
+              },
+              {
+                "type": "dilithium",
+                "value": 3811000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 4445,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4445
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 400,
                 "grade": 4,
-                "rarity": "common",
-                "value": 400
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3416,20 +3405,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 765
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 59958000
-              },
-              {
-                "type": "dilithium",
-                "value": 3811000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3439,31 +3416,58 @@
               "type": "dilithium",
               "value": 300540
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 2988,
+              "armor_pierce": 2299,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 12177,
+              "min_damage": 10148,
+              "shield_pierce": 22987,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 4500,
-              "increased_protected_cargo": 420,
-              "ship_increased_cargo": 300,
-              "ship_increased_protected_cargo": 220
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 29979000
+              },
+              {
+                "type": "dilithium",
+                "value": 1905000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2225,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2225
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 200,
                 "grade": 4,
-                "rarity": "common",
-                "value": 200
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3475,20 +3479,8 @@
                 "type": "Majalan Power Core Tier 8",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 29979000
-              },
-              {
-                "type": "dilithium",
-                "value": 1905000
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3498,30 +3490,43 @@
               "type": "dilithium",
               "value": 150270
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 4500,
+              "increased_protected_cargo": 420,
+              "ship_increased_cargo": 300,
+              "ship_increased_protected_cargo": 220
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 115,
-              "warp_speed": 4.8
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 29979000
+              },
+              {
+                "type": "dilithium",
+                "value": 1905000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2225,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2225
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 200,
                 "grade": 4,
-                "rarity": "common",
-                "value": 200
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3533,20 +3538,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 380
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 29979000
-              },
-              {
-                "type": "dilithium",
-                "value": 1905000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3556,29 +3549,42 @@
               "type": "dilithium",
               "value": 150270
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 115,
+              "warp_speed": 4.8,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 10249,
-              "hull_health": 158960
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 131907000
+              },
+              {
+                "type": "dilithium",
+                "value": 8384000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1280,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1280
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 880,
                 "grade": 4,
-                "rarity": "common",
-                "value": 880
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3590,20 +3596,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 150480
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 131907000
-              },
-              {
-                "type": "dilithium",
-                "value": 8384000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3613,29 +3607,41 @@
               "type": "dilithium",
               "value": 661188
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 10249,
+              "hull_health": 158960
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1332,
-              "shield_health": 136679
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 155890000
+              },
+              {
+                "type": "dilithium",
+                "value": 9908000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1515,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1515
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 1040,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1040
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3647,20 +3653,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 177840
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 155890000
-              },
-              {
-                "type": "dilithium",
-                "value": 9908000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3670,7 +3664,14 @@
               "type": "dilithium",
               "value": 781404
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1332,
+              "shield_health": 136679
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3704,51 +3705,39 @@
           "level": 40,
           "ship_xp": 3445000
         }
-      ],
-      "repair_time": 159600,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 8000000,
+      "repair_time": 168600,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 3415,
-              "armor_pierce": 2627,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 69570,
-              "min_damage": 57975,
-              "shield_pierce": 26265,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 209816000
+              },
+              {
+                "type": "dilithium",
+                "value": 18635000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1085,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1085
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 305,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 305
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3760,20 +3749,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 285600
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 209816000
-              },
-              {
-                "type": "dilithium",
-                "value": 18635000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3783,46 +3760,58 @@
               "type": "dilithium",
               "value": 1312400
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 3415,
               "armor_pierce": 2627,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "max_damage": 13914,
-              "min_damage": 11595,
+              "max_damage": 69570,
+              "min_damage": 57975,
               "shield_pierce": 26265,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 125889000
+              },
+              {
+                "type": "dilithium",
+                "value": 11181000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 650,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 650
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 185,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 185
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3834,20 +3823,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 2590
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 125889000
-              },
-              {
-                "type": "dilithium",
-                "value": 11181000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3857,46 +3834,58 @@
               "type": "dilithium",
               "value": 787440
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 3415,
               "armor_pierce": 2627,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0
-              ],
               "max_damage": 13914,
               "min_damage": 11595,
               "shield_pierce": 26265,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 104908000
+              },
+              {
+                "type": "dilithium",
+                "value": 9317000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 540,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 540
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 150,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 150
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3908,20 +3897,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 2155
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 104908000
-              },
-              {
-                "type": "dilithium",
-                "value": 9317000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3931,31 +3908,58 @@
               "type": "dilithium",
               "value": 656200
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 3415,
+              "armor_pierce": 2627,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 13914,
+              "min_damage": 11595,
+              "shield_pierce": 26265,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 9000,
-              "increased_protected_cargo": 820,
-              "ship_increased_cargo": 300,
-              "ship_increased_protected_cargo": 220
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 52454000
+              },
+              {
+                "type": "dilithium",
+                "value": 4659000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 8785,
                 "grade": 4,
-                "rarity": "common",
-                "value": 8785
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2470,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2470
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3967,20 +3971,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 71400
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 52454000
-              },
-              {
-                "type": "dilithium",
-                "value": 4659000
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3990,30 +3982,43 @@
               "type": "dilithium",
               "value": 328100
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 9000,
+              "increased_protected_cargo": 820,
+              "ship_increased_cargo": 300,
+              "ship_increased_protected_cargo": 220
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 130,
-              "warp_speed": 4.9
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 52454000
+              },
+              {
+                "type": "dilithium",
+                "value": 4659000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 8785,
                 "grade": 4,
-                "rarity": "common",
-                "value": 8785
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2470,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2470
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4025,20 +4030,8 @@
                 "type": "4\u2605 Common Battleship Parts",
                 "value": 1080
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 52454000
-              },
-              {
-                "type": "dilithium",
-                "value": 4659000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4048,29 +4041,42 @@
               "type": "dilithium",
               "value": 328100
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 130,
+              "warp_speed": 4.9,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 11711,
-              "hull_health": 181630
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 230797000
+              },
+              {
+                "type": "dilithium",
+                "value": 20498000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1195,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1195
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 335,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 335
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4082,20 +4088,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 314160
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 230797000
-              },
-              {
-                "type": "dilithium",
-                "value": 20498000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4105,29 +4099,41 @@
               "type": "dilithium",
               "value": 1443640
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 11711,
+              "hull_health": 181630
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1523,
-              "shield_health": 156171
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 272760000
+              },
+              {
+                "type": "dilithium",
+                "value": 24225000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1410,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1410
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 395,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 395
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4139,20 +4145,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 371280
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 272760000
-              },
-              {
-                "type": "dilithium",
-                "value": 24225000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4162,7 +4156,14 @@
               "type": "dilithium",
               "value": 1706120
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1523,
+              "shield_health": 156171
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4196,51 +4197,39 @@
           "level": 45,
           "ship_xp": 4543000
         }
-      ],
-      "repair_time": 168600,
-      "tier": 9
+      ]
     },
     {
+      "tier": 10,
       "build_time": 10000000,
+      "repair_time": 182400,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 3898,
-              "armor_pierce": 2998,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 79415,
-              "min_damage": 66180,
-              "shield_pierce": 29982,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 814027000
+              },
+              {
+                "type": "dilithium",
+                "value": 37020000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 585,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 585
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 395,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 395
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4252,20 +4241,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 480000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 814027000
-              },
-              {
-                "type": "dilithium",
-                "value": 37020000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4275,46 +4252,58 @@
               "type": "dilithium",
               "value": 2410260
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 3898,
               "armor_pierce": 2998,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "max_damage": 15883,
-              "min_damage": 13236,
+              "max_damage": 79415,
+              "min_damage": 66180,
               "shield_pierce": 29982,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 488416000
+              },
+              {
+                "type": "dilithium",
+                "value": 22212000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2630,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2630
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 235,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 235
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4326,20 +4315,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 288000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 488416000
-              },
-              {
-                "type": "dilithium",
-                "value": 22212000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4349,46 +4326,58 @@
               "type": "dilithium",
               "value": 1446156
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 3898,
               "armor_pierce": 2998,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0
-              ],
               "max_damage": 15883,
               "min_damage": 13236,
               "shield_pierce": 29982,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 407013000
+              },
+              {
+                "type": "dilithium",
+                "value": 18510000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 2190,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2190
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 195,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 195
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4400,20 +4389,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 240000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 407013000
-              },
-              {
-                "type": "dilithium",
-                "value": 18510000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4423,31 +4400,58 @@
               "type": "dilithium",
               "value": 1205130
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 3898,
+              "armor_pierce": 2998,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 15883,
+              "min_damage": 13236,
+              "shield_pierce": 29982,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 7000,
-              "increased_protected_cargo": 860,
-              "ship_increased_cargo": 300,
-              "ship_increased_protected_cargo": 220
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 203507000
+              },
+              {
+                "type": "dilithium",
+                "value": 9255000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1095,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1095
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 100,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 100
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4459,20 +4463,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 120000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 203507000
-              },
-              {
-                "type": "dilithium",
-                "value": 9255000
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4482,30 +4474,43 @@
               "type": "dilithium",
               "value": 602565
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 7000,
+              "increased_protected_cargo": 860,
+              "ship_increased_cargo": 300,
+              "ship_increased_protected_cargo": 220
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 140,
-              "warp_speed": 5.0
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 203507000
+              },
+              {
+                "type": "dilithium",
+                "value": 9255000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1095,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1095
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 100,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 100
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4517,20 +4522,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 120000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 203507000
-              },
-              {
-                "type": "dilithium",
-                "value": 9255000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4540,29 +4533,42 @@
               "type": "dilithium",
               "value": 602565
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 140,
+              "warp_speed": 5.0,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 13367,
-              "hull_health": 207326
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 895430000
+              },
+              {
+                "type": "dilithium",
+                "value": 40722000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 645,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 645
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 435,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 435
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4574,20 +4580,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 528000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 895430000
-              },
-              {
-                "type": "dilithium",
-                "value": 40722000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4597,29 +4591,41 @@
               "type": "dilithium",
               "value": 2651286
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 13367,
+              "hull_health": 207326
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1738,
-              "shield_health": 178266
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1058235000
+              },
+              {
+                "type": "dilithium",
+                "value": 48126000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 760,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 760
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 515,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 515
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4631,20 +4637,8 @@
                 "type": "4\u2605 Rare Battleship Parts",
                 "value": 685
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1058235000
-              },
-              {
-                "type": "dilithium",
-                "value": 48126000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4654,7 +4648,14 @@
               "type": "dilithium",
               "value": 3133338
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1738,
+              "shield_health": 178266
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4688,51 +4689,39 @@
           "level": 50,
           "ship_xp": 6040000
         }
-      ],
-      "repair_time": 182400,
-      "tier": 10
+      ]
     },
     {
+      "tier": 11,
       "build_time": 13000000,
+      "repair_time": 195000,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 4324,
-              "armor_pierce": 3326,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 88100,
-              "min_damage": 73420,
-              "shield_pierce": 33260,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1243644000
+              },
+              {
+                "type": "dilithium",
+                "value": 71367000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 585,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 585
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 220,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 220
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -4744,20 +4733,8 @@
                 "type": "4\u2605 Rare Battleship Parts",
                 "value": 335
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1243644000
-              },
-              {
-                "type": "dilithium",
-                "value": 71367000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4767,46 +4744,58 @@
               "type": "dilithium",
               "value": 3895940
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 4324,
               "armor_pierce": 3326,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "max_damage": 17620,
-              "min_damage": 14684,
+              "max_damage": 88100,
+              "min_damage": 73420,
               "shield_pierce": 33260,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 746187000
+              },
+              {
+                "type": "dilithium",
+                "value": 42820000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 350,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 350
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 685,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 685
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4818,20 +4807,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 528000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 746187000
-              },
-              {
-                "type": "dilithium",
-                "value": 42820000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4841,46 +4818,58 @@
               "type": "dilithium",
               "value": 2337564
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 4324,
               "armor_pierce": 3326,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0
-              ],
               "max_damage": 17620,
               "min_damage": 14684,
               "shield_pierce": 33260,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 621822000
+              },
+              {
+                "type": "dilithium",
+                "value": 35684000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 295,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 295
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 570,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 570
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4892,20 +4881,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 440000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 621822000
-              },
-              {
-                "type": "dilithium",
-                "value": 35684000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4915,31 +4892,58 @@
               "type": "dilithium",
               "value": 1947970
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 4324,
+              "armor_pierce": 3326,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 17620,
+              "min_damage": 14684,
+              "shield_pierce": 33260,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 19000,
-              "increased_protected_cargo": 1000,
-              "ship_increased_cargo": 300,
-              "ship_increased_protected_cargo": 220
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 310911000
+              },
+              {
+                "type": "dilithium",
+                "value": 17842000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 3240,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 3240
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 285,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 285
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4951,20 +4955,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 220000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 310911000
-              },
-              {
-                "type": "dilithium",
-                "value": 17842000
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4974,30 +4966,43 @@
               "type": "dilithium",
               "value": 973985
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 19000,
+              "increased_protected_cargo": 1000,
+              "ship_increased_cargo": 300,
+              "ship_increased_protected_cargo": 220
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 150,
-              "warp_speed": 5.1
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 310911000
+              },
+              {
+                "type": "dilithium",
+                "value": 17842000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 3240,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 3240
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 285,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 285
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5009,20 +5014,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 220000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 310911000
-              },
-              {
-                "type": "dilithium",
-                "value": 17842000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5032,29 +5025,42 @@
               "type": "dilithium",
               "value": 973985
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 150,
+              "warp_speed": 5.1,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 14830,
-              "hull_health": 230003
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1368009000
+              },
+              {
+                "type": "dilithium",
+                "value": 78504000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 645,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 645
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 240,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 240
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5066,20 +5072,8 @@
                 "type": "4\u2605 Rare Battleship Parts",
                 "value": 365
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1368009000
-              },
-              {
-                "type": "dilithium",
-                "value": 78504000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5089,29 +5083,41 @@
               "type": "dilithium",
               "value": 4285534
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 14830,
+              "hull_health": 230003
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1929,
-              "shield_health": 197765
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1616738000
+              },
+              {
+                "type": "dilithium",
+                "value": 92778000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 760,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 760
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 285,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 285
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5123,20 +5129,8 @@
                 "type": "4\u2605 Rare Battleship Parts",
                 "value": 435
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1616738000
-              },
-              {
-                "type": "dilithium",
-                "value": 92778000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5146,7 +5140,14 @@
               "type": "dilithium",
               "value": 5064722
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1929,
+              "shield_health": 197765
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -5180,51 +5181,39 @@
           "level": 55,
           "ship_xp": 7848000
         }
-      ],
-      "repair_time": 195000,
-      "tier": 11
+      ]
     },
     {
+      "tier": 12,
       "build_time": 18000000,
+      "repair_time": 211200,
       "components": [
         {
           "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 4669,
-              "armor_pierce": 3592,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                2,
-                0,
-                0,
-                2,
-                0,
-                0,
-                2
-              ],
-              "max_damage": 95135,
-              "min_damage": 79280,
-              "shield_pierce": 35917,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1976380000
+              },
+              {
+                "type": "dilithium",
+                "value": 123120000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 820,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 820
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 230,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 230
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5236,20 +5225,8 @@
                 "type": "4\u2605 Rare Battleship Parts",
                 "value": 515
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1976380000
-              },
-              {
-                "type": "dilithium",
-                "value": 123120000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5259,46 +5236,58 @@
               "type": "dilithium",
               "value": 6701380
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 4669,
               "armor_pierce": 3592,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "max_damage": 19027,
-              "min_damage": 15856,
+              "max_damage": 95135,
+              "min_damage": 79280,
               "shield_pierce": 35917,
-              "weapon_type": "energy"
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                2,
+                0,
+                0,
+                2
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1185828000
+              },
+              {
+                "type": "dilithium",
+                "value": 73872000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 495,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 495
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 140,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 140
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5310,20 +5299,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 969600
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1185828000
-              },
-              {
-                "type": "dilithium",
-                "value": 73872000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5333,46 +5310,58 @@
               "type": "dilithium",
               "value": 4020828
             }
-          ]
-        },
-        {
-          "name": "Phaser Turrets",
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 4669,
               "armor_pierce": 3592,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0
-              ],
               "max_damage": 19027,
               "min_damage": 15856,
               "shield_pierce": 35917,
-              "weapon_type": "energy"
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
             }
           },
+          "quantity": 1
+        },
+        {
+          "name": "Phaser Turrets",
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 988190000
+              },
+              {
+                "type": "dilithium",
+                "value": 61560000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 410,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 410
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 115,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 115
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5384,20 +5373,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 808000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 988190000
-              },
-              {
-                "type": "dilithium",
-                "value": 61560000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5407,31 +5384,58 @@
               "type": "dilithium",
               "value": 3350690
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 4669,
+              "armor_pierce": 3592,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 19027,
+              "min_damage": 15856,
+              "shield_pierce": 35917,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 26000,
-              "increased_protected_cargo": 1350,
-              "ship_increased_cargo": 300,
-              "ship_increased_protected_cargo": 220
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 494095000
+              },
+              {
+                "type": "dilithium",
+                "value": 30780000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 6455,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 6455
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 1815,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1815
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5443,20 +5447,8 @@
                 "type": "Majalan Power Core Tier 12",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 494095000
-              },
-              {
-                "type": "dilithium",
-                "value": 30780000
-              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5466,30 +5458,43 @@
               "type": "dilithium",
               "value": 1675345
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 26000,
+              "increased_protected_cargo": 1350,
+              "ship_increased_cargo": 300,
+              "ship_increased_protected_cargo": 220
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 160,
-              "warp_speed": 5.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 494095000
+              },
+              {
+                "type": "dilithium",
+                "value": 30780000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 6455,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 6455
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 1815,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1815
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5501,20 +5506,8 @@
                 "type": "Synthetic Nitrium",
                 "value": 404000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 494095000
-              },
-              {
-                "type": "dilithium",
-                "value": 30780000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5524,29 +5517,42 @@
               "type": "dilithium",
               "value": 1675345
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 160,
+              "warp_speed": 5.2,
+              "impulse_speed": 85
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 16014,
-              "hull_health": 248375
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2174018000
+              },
+              {
+                "type": "dilithium",
+                "value": 135432000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 905,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 905
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 255,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 255
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5558,20 +5564,8 @@
                 "type": "4\u2605 Rare Battleship Parts",
                 "value": 570
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2174018000
-              },
-              {
-                "type": "dilithium",
-                "value": 135432000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5581,29 +5575,41 @@
               "type": "dilithium",
               "value": 7371518
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 16014,
+              "hull_health": 248375
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 2082,
-              "shield_health": 213562
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2569294000
+              },
+              {
+                "type": "dilithium",
+                "value": 160056000
+              }
+            ],
             "materials": [
               {
                 "type": "ore",
+                "value": 1070,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1070
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 300,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 300
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5615,20 +5621,8 @@
                 "type": "4\u2605 Rare Battleship Parts",
                 "value": 670
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2569294000
-              },
-              {
-                "type": "dilithium",
-                "value": 160056000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5638,7 +5632,14 @@
               "type": "dilithium",
               "value": 8711794
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 2082,
+              "shield_health": 213562
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -5672,9 +5673,8 @@
           "level": 60,
           "ship_xp": 10000000
         }
-      ],
-      "repair_time": 211200,
-      "tier": 12
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/mantis.png"
 }

@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Lost Scouting Bandit",
   "description": "",
   "group": "neutral",
+  "level": 54,
+  "rarity": "common",
   "head_stats": {
     "attack": 30871515,
     "defense": 12283375,
     "health": 41038126
   },
-  "hostile_name": "Lost Scouting Bandit",
-  "level": 54,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 2560,
-      "min_value": 2560,
-      "value": 2560
+      "$ref": "systems/jettas_55"
+    },
+    {
+      "$ref": "systems/sakari_53"
+    },
+    {
+      "$ref": "systems/burdow_55"
+    },
+    {
+      "$ref": "systems/suvfa_53"
+    },
+    {
+      "$ref": "systems/leichter_53"
     }
   ],
   "ship_class": "explorer",
@@ -37,28 +46,6 @@
       "shield_health": 47877829
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/jettas_55"
-    },
-    {
-      "$ref": "systems/sakari_53"
-    },
-    {
-      "$ref": "systems/burdow_55"
-    },
-    {
-      "$ref": "systems/suvfa_53"
-    },
-    {
-      "$ref": "systems/leichter_53"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +108,19 @@
         "shield_pierce": 794315
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 2560,
+      "min_value": 2560,
+      "value": 2560
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

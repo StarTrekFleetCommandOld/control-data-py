@@ -1,20 +1,23 @@
 {
-  "description": "",
   "armada_name": "Formation Armada",
+  "description": "",
   "group": "neutral",
+  "level": 55,
+  "rarity": "uncommon",
   "head_stats": {
     "attack": 63990416,
     "defense": 38007255,
     "health": 1350693550
   },
-  "level": 55,
-  "rarity": "uncommon",
-  "rewards": [
+  "systems": [
     {
-      "type": "Artifact Token",
-      "max_value": 3000,
-      "min_value": 3000,
-      "value": 3000
+      "$ref": "systems/jettas_55"
+    },
+    {
+      "$ref": "systems/burdow_55"
+    },
+    {
+      "$ref": "systems/leichter_53"
     }
   ],
   "stats": {
@@ -36,17 +39,6 @@
       "shield_health": 805692154
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/jettas_55"
-    },
-    {
-      "$ref": "systems/burdow_55"
-    },
-    {
-      "$ref": "systems/leichter_53"
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -97,6 +89,14 @@
         "shield_pierce": 1800923
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "Artifact Token",
+      "max_value": 3000,
+      "min_value": 3000,
+      "value": 3000
     }
   ]
 }

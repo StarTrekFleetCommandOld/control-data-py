@@ -1,44 +1,32 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 31,
+  "rarity": "common",
   "head_stats": {
     "attack": 104192,
     "defense": 107940,
     "health": 38640
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 31,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1608,
-      "min_value": 1608,
-      "value": 1608
+      "$ref": "systems/h_atoria_30"
     },
     {
-      "type": "tritanium",
-      "max_value": 119,
-      "min_value": 119,
-      "value": 119
+      "$ref": "systems/ok_vak_32"
     },
     {
-      "type": "federation points",
-      "max_value": 109,
-      "min_value": 109,
-      "value": 109
+      "$ref": "systems/pekka_33"
     },
     {
-      "type": "romulan points",
-      "max_value": 54,
-      "min_value": 54,
-      "value": 54
+      "$ref": "systems/morska_29"
     },
     {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/emie_30"
+    },
+    {
+      "$ref": "systems/tullias_31"
     }
   ],
   "ship_class": "interceptor",
@@ -61,31 +49,6 @@
       "shield_health": 38640
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/h_atoria_30"
-    },
-    {
-      "$ref": "systems/ok_vak_32"
-    },
-    {
-      "$ref": "systems/pekka_33"
-    },
-    {
-      "$ref": "systems/morska_29"
-    },
-    {
-      "$ref": "systems/emie_30"
-    },
-    {
-      "$ref": "systems/tullias_31"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -148,6 +111,43 @@
         "shield_pierce": 2888
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1608,
+      "min_value": 1608,
+      "value": 1608
+    },
+    {
+      "type": "tritanium",
+      "max_value": 119,
+      "min_value": 119,
+      "value": 119
+    },
+    {
+      "type": "federation points",
+      "max_value": 109,
+      "min_value": 109,
+      "value": 109
+    },
+    {
+      "type": "romulan points",
+      "max_value": 54,
+      "min_value": 54,
+      "value": 54
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

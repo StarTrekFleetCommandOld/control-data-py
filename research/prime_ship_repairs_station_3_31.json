@@ -1,45 +1,45 @@
 {
+  "research_name": "Prime Ship Repairs",
   "description": "Increased base cost efficiency for repairing ships.",
-  "img_url": "./assets/prime_ship_repairs_station_3_31.png",
+  "location": {
+    "column": 31,
+    "row": 3,
+    "tree": "station"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 1.0
-      },
-      "increased_power": 46500,
       "level": 1,
-      "required_by": [],
+      "research_time": 978540,
+      "increased_power": 46500,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 35
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [
-          {
-            "type": "gas",
-            "grade": 5,
-            "rarity": "rare",
-            "value": 800
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 8990000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "gas",
+            "value": 800,
+            "grade": 5,
+            "rarity": "rare"
+          }
+        ],
+        "others": []
       },
-      "research_time": 978540
+      "bonus": {
+        "percentage": true,
+        "value": 1.0
+      }
     }
   ],
-  "location": {
-    "column": 31,
-    "row": 3,
-    "tree": "station"
-  },
-  "research_name": "Prime Ship Repairs"
+  "img_url": "./assets/prime_ship_repairs_station_3_31.png"
 }

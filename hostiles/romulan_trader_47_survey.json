@@ -1,38 +1,29 @@
 {
+  "hostile_name": "Romulan Trader",
   "description": "",
   "group": "romulan",
+  "level": 47,
+  "rarity": "common",
   "head_stats": {
     "attack": 2164393,
     "defense": 2387035,
     "health": 5441258
   },
-  "hostile_name": "Romulan Trader",
-  "level": 47,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken survey parts",
-      "max_value": 599,
-      "min_value": 599,
-      "value": 599
+      "$ref": "systems/nuva_45"
     },
     {
-      "type": "federation points",
-      "max_value": 3200,
-      "min_value": 3200,
-      "value": 3200
+      "$ref": "systems/ballion_46"
     },
     {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/urhaasi_47"
     },
     {
-      "type": "klingon points",
-      "max_value": 6400,
-      "min_value": 6400,
-      "value": 6400
+      "$ref": "systems/kiina_48"
+    },
+    {
+      "$ref": "systems/veisa_46"
     }
   ],
   "ship_class": "survey",
@@ -55,28 +46,6 @@
       "shield_health": 4991914
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/nuva_45"
-    },
-    {
-      "$ref": "systems/ballion_46"
-    },
-    {
-      "$ref": "systems/urhaasi_47"
-    },
-    {
-      "$ref": "systems/kiina_48"
-    },
-    {
-      "$ref": "systems/veisa_46"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +77,37 @@
         "shield_pierce": 67833
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken survey parts",
+      "max_value": 599,
+      "min_value": 599,
+      "value": 599
+    },
+    {
+      "type": "federation points",
+      "max_value": 3200,
+      "min_value": 3200,
+      "value": 3200
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 6400,
+      "min_value": 6400,
+      "value": 6400
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

@@ -1,7 +1,11 @@
 {
-  "description": "Even in the Academy, Kirk showed leadership and initiative in extreme abundance. High test scores and academic performance combined with easy camaraderie allowed him to excel, despite a few stunts that put him on the instructors' radars.",
+  "officer_name": "Cadet James T. Kirk",
+  "description": "",
+  "class": "command",
+  "group": "another time",
+  "faction": "federation",
+  "rarity": "common",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Motivational",
       "bonus": "Cadet Kirk increases the Attack, Defense and Health of all Officers on the Bridge by {value}.",
@@ -12,18 +16,20 @@
       "name": "Tactician",
       "bonus": "Kirk increases the Weapon damage of the ship by {value}.",
       "percentage": true
-    }
+    },
+    "below_decks_ability": null
   },
-  "class": "command",
-  "faction": "federation",
-  "group": "another time",
-  "img_url": "./assets/cadet_james_t_kirk.png",
-  "officer_name": "Cadet James T. Kirk",
+  "synergy": {
+    "command": 0.03,
+    "engineering": 0.06,
+    "science": 0.06
+  },
+  "traits": [],
   "ranks": [
     {
+      "rank_id": 1,
       "name": "ENSIGN I",
       "officer_ability_value": 0.05,
-      "rank_id": 1,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -33,9 +39,9 @@
       }
     },
     {
+      "rank_id": 2,
       "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.08,
-      "rank_id": 2,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -45,9 +51,9 @@
       }
     },
     {
+      "rank_id": 3,
       "name": "LIEUTENANT III",
       "officer_ability_value": 0.12,
-      "rank_id": 3,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -57,9 +63,9 @@
       }
     },
     {
+      "rank_id": 4,
       "name": "LT. COMMANDER IV",
       "officer_ability_value": 0.15,
-      "rank_id": 4,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -69,9 +75,9 @@
       }
     },
     {
+      "rank_id": 5,
       "name": "COMMANDER V",
       "officer_ability_value": 0.2,
-      "rank_id": 5,
       "requirements": {
         "badges": 0,
         "credits": 1050,
@@ -81,11 +87,5 @@
       }
     }
   ],
-  "rarity": "common",
-  "synergy": {
-    "command": 0.03,
-    "engineering": 0.06,
-    "science": 0.06
-  },
-  "traits": []
+  "img_url": "./assets/cadet_james_t_kirk.png"
 }

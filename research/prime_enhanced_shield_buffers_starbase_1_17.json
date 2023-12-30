@@ -1,15 +1,16 @@
 {
+  "research_name": "Prime Enhanced Shield Buffers",
   "description": "Increases Shield Health for all ships.",
-  "img_url": "./assets/prime_enhanced_shield_buffers_starbase_1_17.png",
+  "location": {
+    "column": 17,
+    "row": 1,
+    "tree": "starbase"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 3.5
-      },
-      "increased_power": 70000,
       "level": 1,
-      "required_by": [],
+      "research_time": 3900060,
+      "increased_power": 70000,
       "requirements": [
         {
           "name": "R&D Department",
@@ -20,28 +21,27 @@
           "level": 1
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 33400000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "prime medal",
             "value": 1000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 33400000
-          }
         ]
       },
-      "research_time": 3900060
+      "bonus": {
+        "percentage": true,
+        "value": 3.5
+      }
     }
   ],
-  "location": {
-    "column": 17,
-    "row": 1,
-    "tree": "starbase"
-  },
-  "research_name": "Prime Enhanced Shield Buffers"
+  "img_url": "./assets/prime_enhanced_shield_buffers_starbase_1_17.png"
 }

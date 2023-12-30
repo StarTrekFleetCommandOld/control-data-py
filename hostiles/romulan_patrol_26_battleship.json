@@ -1,44 +1,29 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 26,
+  "rarity": "common",
   "head_stats": {
     "attack": 26015,
     "defense": 29440,
     "health": 12075
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 26,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 261,
-      "min_value": 261,
-      "value": 261
+      "$ref": "systems/sufiday_25"
     },
     {
-      "type": "dilithium",
-      "max_value": 27,
-      "min_value": 27,
-      "value": 27
+      "$ref": "systems/mewudoh_25"
     },
     {
-      "type": "federation points",
-      "max_value": 12,
-      "min_value": 12,
-      "value": 12
+      "$ref": "systems/biruin_27"
     },
     {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/zova_rhen_25"
     },
     {
-      "type": "klingon points",
-      "max_value": 23,
-      "min_value": 23,
-      "value": 23
+      "$ref": "systems/nipaj_24"
     }
   ],
   "ship_class": "battleship",
@@ -61,28 +46,6 @@
       "shield_health": 8550
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/sufiday_25"
-    },
-    {
-      "$ref": "systems/mewudoh_25"
-    },
-    {
-      "$ref": "systems/biruin_27"
-    },
-    {
-      "$ref": "systems/zova_rhen_25"
-    },
-    {
-      "$ref": "systems/nipaj_24"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -145,6 +108,43 @@
         "shield_pierce": 6300
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 261,
+      "min_value": 261,
+      "value": 261
+    },
+    {
+      "type": "dilithium",
+      "max_value": 27,
+      "min_value": 27,
+      "value": 27
+    },
+    {
+      "type": "federation points",
+      "max_value": 12,
+      "min_value": 12,
+      "value": 12
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 23,
+      "min_value": 23,
+      "value": 23
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

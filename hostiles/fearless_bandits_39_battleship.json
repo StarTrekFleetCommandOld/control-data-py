@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Fearless Bandits",
   "description": "",
   "group": "neutral",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 448865,
     "defense": 367925,
     "health": 1783645
   },
-  "hostile_name": "Fearless Bandits",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken battleship parts",
-      "max_value": 102,
-      "min_value": 102,
-      "value": 102
+      "$ref": "systems/tovla_40"
+    },
+    {
+      "$ref": "systems/hsp_g_40"
     }
   ],
   "ship_class": "battleship",
@@ -37,19 +37,6 @@
       "shield_health": 1528839
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/tovla_40"
-    },
-    {
-      "$ref": "systems/hsp_g_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 66268
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken battleship parts",
+      "max_value": 102,
+      "min_value": 102,
+      "value": 102
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

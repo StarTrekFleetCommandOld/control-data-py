@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Jem'Hadar Fighter",
   "description": "",
   "group": "dominion",
+  "level": 49,
+  "rarity": "common",
   "head_stats": {
     "attack": 3235371,
     "defense": 2846660,
     "health": 3092717
   },
-  "hostile_name": "Jem'Hadar Fighter",
-  "level": 49,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "antimatter units",
-      "max_value": 592,
-      "min_value": 592,
-      "value": 592
+      "$ref": "systems/tulonra_50"
+    },
+    {
+      "$ref": "systems/hyra_49"
+    },
+    {
+      "$ref": "systems/tediden_48"
+    },
+    {
+      "$ref": "systems/evarin_51"
     }
   ],
   "ship_class": "interceptor",
@@ -37,25 +43,6 @@
       "shield_health": 3092717
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/tulonra_50"
-    },
-    {
-      "$ref": "systems/hyra_49"
-    },
-    {
-      "$ref": "systems/tediden_48"
-    },
-    {
-      "$ref": "systems/evarin_51"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -87,6 +74,19 @@
         "shield_pierce": 70694
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "antimatter units",
+      "max_value": 592,
+      "min_value": 592,
+      "value": 592
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

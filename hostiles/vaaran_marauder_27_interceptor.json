@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Vaaran Marauder",
   "description": "",
   "group": "neutral",
+  "level": 27,
+  "rarity": "common",
   "head_stats": {
     "attack": 30768,
     "defense": 30000,
     "health": 13440
   },
-  "hostile_name": "Vaaran Marauder",
-  "level": 27,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1241,
-      "min_value": 1241,
-      "value": 1241
+      "$ref": "systems/kor_na_ron_27"
+    },
+    {
+      "$ref": "systems/paradane_27"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 13440
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/kor_na_ron_27"
-    },
-    {
-      "$ref": "systems/paradane_27"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 1000
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1241,
+      "min_value": 1241,
+      "value": 1241
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

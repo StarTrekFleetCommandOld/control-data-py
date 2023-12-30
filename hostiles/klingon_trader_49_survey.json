@@ -1,38 +1,23 @@
 {
+  "hostile_name": "Klingon Trader",
   "description": "",
   "group": "klingon",
+  "level": 49,
+  "rarity": "common",
   "head_stats": {
     "attack": 2666154,
     "defense": 2888320,
     "health": 7263254
   },
-  "hostile_name": "Klingon Trader",
-  "level": 49,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken survey parts",
-      "max_value": 851,
-      "min_value": 851,
-      "value": 851
+      "$ref": "systems/wuk_vek_48"
     },
     {
-      "type": "federation points",
-      "max_value": 7040,
-      "min_value": 7040,
-      "value": 7040
+      "$ref": "systems/ch_kmulk_47"
     },
     {
-      "type": "romulan points",
-      "max_value": 3520,
-      "min_value": 3520,
-      "value": 3520
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/tej_lukk_50"
     }
   ],
   "ship_class": "survey",
@@ -55,22 +40,6 @@
       "shield_health": 7044709
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/wuk_vek_48"
-    },
-    {
-      "$ref": "systems/ch_kmulk_47"
-    },
-    {
-      "$ref": "systems/tej_lukk_50"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +71,37 @@
         "shield_pierce": 81038
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken survey parts",
+      "max_value": 851,
+      "min_value": 851,
+      "value": 851
+    },
+    {
+      "type": "federation points",
+      "max_value": 7040,
+      "min_value": 7040,
+      "value": 7040
+    },
+    {
+      "type": "romulan points",
+      "max_value": 3520,
+      "min_value": 3520,
+      "value": 3520
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

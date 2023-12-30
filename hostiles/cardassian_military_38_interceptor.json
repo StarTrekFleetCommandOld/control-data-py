@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Cardassian Military",
   "description": "",
   "group": "neutral",
+  "level": 38,
+  "rarity": "common",
   "head_stats": {
     "attack": 417734,
     "defense": 381420,
     "health": 123180
   },
-  "hostile_name": "Cardassian Military",
-  "level": 38,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 269,
-      "min_value": 269,
-      "value": 269
+      "$ref": "systems/kora_36"
+    },
+    {
+      "$ref": "systems/unefra_36"
+    },
+    {
+      "$ref": "systems/andrita_36"
+    },
+    {
+      "$ref": "systems/borias_cluster_39"
+    },
+    {
+      "$ref": "systems/manora_39"
+    },
+    {
+      "$ref": "systems/trelka_v_39"
     }
   ],
   "ship_class": "interceptor",
@@ -37,31 +49,6 @@
       "shield_health": 123180
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/kora_36"
-    },
-    {
-      "$ref": "systems/unefra_36"
-    },
-    {
-      "$ref": "systems/andrita_36"
-    },
-    {
-      "$ref": "systems/borias_cluster_39"
-    },
-    {
-      "$ref": "systems/manora_39"
-    },
-    {
-      "$ref": "systems/trelka_v_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 12714
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 269,
+      "min_value": 269,
+      "value": 269
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

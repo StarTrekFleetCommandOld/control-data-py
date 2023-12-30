@@ -1,20 +1,23 @@
 {
+  "hostile_name": "High Council Skirmisher",
   "description": "",
   "group": "klingon",
+  "level": 46,
+  "rarity": "common",
   "head_stats": {
     "attack": 2101703,
     "defense": 1506275,
     "health": 4946612
   },
-  "hostile_name": "High Council Skirmisher",
-  "level": 46,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 482,
-      "min_value": 482,
-      "value": 482
+      "$ref": "systems/saetel_46"
+    },
+    {
+      "$ref": "systems/tulris_48"
+    },
+    {
+      "$ref": "systems/bildari_44"
     }
   ],
   "ship_class": "interceptor",
@@ -37,22 +40,6 @@
       "shield_health": 4946612
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/saetel_46"
-    },
-    {
-      "$ref": "systems/tulris_48"
-    },
-    {
-      "$ref": "systems/bildari_44"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 47360
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 482,
+      "min_value": 482,
+      "value": 482
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Swarm Cluster",
   "description": "",
   "group": "swarm",
+  "level": 18,
+  "rarity": "common",
   "head_stats": {
     "attack": 5872,
     "defense": 13735,
     "health": 34885
   },
-  "hostile_name": "Swarm Cluster",
-  "level": 18,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/herias_18"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 0
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/herias_18"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 25
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 241
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 25
     }
   ]
 }

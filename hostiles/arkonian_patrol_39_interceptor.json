@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Arkonian Patrol",
   "description": "",
   "group": "klingon",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 888396,
     "defense": 717325,
     "health": 2268971
   },
-  "hostile_name": "Arkonian Patrol",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/burke_39"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 2268971
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/burke_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 21710
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

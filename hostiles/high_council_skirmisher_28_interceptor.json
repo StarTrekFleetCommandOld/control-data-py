@@ -1,26 +1,17 @@
 {
+  "hostile_name": "High Council Skirmisher",
   "description": "",
   "group": "klingon",
+  "level": 28,
+  "rarity": "common",
   "head_stats": {
     "attack": 51795,
     "defense": 53970,
     "health": 22080
   },
-  "hostile_name": "High Council Skirmisher",
-  "level": 28,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1224,
-      "min_value": 1224,
-      "value": 1224
-    },
-    {
-      "type": "tritanium",
-      "max_value": 100,
-      "min_value": 100,
-      "value": 100
+      "$ref": "systems/rekar_28"
     }
   ],
   "ship_class": "interceptor",
@@ -43,16 +34,6 @@
       "shield_health": 22080
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/rekar_28"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +96,25 @@
         "shield_pierce": 1444
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1224,
+      "min_value": 1224,
+      "value": 1224
+    },
+    {
+      "type": "tritanium",
+      "max_value": 100,
+      "min_value": 100,
+      "value": 100
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

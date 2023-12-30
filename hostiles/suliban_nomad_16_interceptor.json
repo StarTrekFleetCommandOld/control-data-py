@@ -1,41 +1,13 @@
 {
+  "hostile_name": "Suliban Nomad",
   "description": "",
   "group": "neutral",
+  "level": 16,
+  "rarity": "common",
   "head_stats": {
     "attack": 4034,
     "defense": 3835,
     "health": 1580
-  },
-  "hostile_name": "Suliban Nomad",
-  "level": 16,
-  "rarity": "common",
-  "rewards": [
-    {
-      "type": "parsteel",
-      "max_value": 554,
-      "min_value": 554,
-      "value": 554
-    }
-  ],
-  "ship_class": "interceptor",
-  "stats": {
-    "attack": {
-      "accuracy": 128,
-      "armor_pierce": 767,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 2500,
-      "shield_pierce": 128
-    },
-    "defense": {
-      "armor": 128,
-      "dodge": 511,
-      "shield_deflect": 128
-    },
-    "health": {
-      "hull_health": 1580,
-      "shield_health": 1580
-    }
   },
   "systems": [
     {
@@ -75,11 +47,26 @@
       "$ref": "systems/kaus_borealis_17"
     }
   ],
-  "utility": [
-    {
-      "impulse_speed": 16
+  "ship_class": "interceptor",
+  "stats": {
+    "attack": {
+      "accuracy": 128,
+      "armor_pierce": 767,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 2500,
+      "shield_pierce": 128
+    },
+    "defense": {
+      "armor": 128,
+      "dodge": 511,
+      "shield_deflect": 128
+    },
+    "health": {
+      "hull_health": 1580,
+      "shield_health": 1580
     }
-  ],
+  },
   "weapons": [
     {
       "firing_pattern": [
@@ -142,6 +129,19 @@
         "shield_pierce": 128
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 554,
+      "min_value": 554,
+      "value": 554
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

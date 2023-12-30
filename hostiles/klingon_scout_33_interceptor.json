@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Klingon Scout \u2605",
   "description": "",
   "group": "klingon",
+  "level": 33,
+  "rarity": "common",
   "head_stats": {
     "attack": 164723,
     "defense": 161905,
     "health": 47470
   },
-  "hostile_name": "Klingon Scout \u2605",
-  "level": 33,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/eeli_33"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 47470
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/eeli_33"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 80
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 4331
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 80
     }
   ]
 }

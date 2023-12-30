@@ -1,22 +1,30 @@
 {
+  "research_name": "Cybernetic Enhancements",
   "description": "Increases Critical Hit Damage while Supported by a Cerritos",
-  "img_url": "./assets/cybernetic_enhancements_starships_1_24.png",
+  "location": {
+    "column": 24,
+    "row": 1,
+    "tree": "starships"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": false,
-        "value": 1.0
-      },
-      "increased_power": 45000,
       "level": 1,
-      "required_by": [],
+      "research_time": 2799600,
+      "increased_power": 45000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 36
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 1660000
+          }
+        ],
         "materials": [],
         "others": [
           {
@@ -27,21 +35,13 @@
             "type": "rare culver particle",
             "value": 12000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 1660000
-          }
         ]
       },
-      "research_time": 2799600
+      "bonus": {
+        "percentage": false,
+        "value": 1.0
+      }
     }
   ],
-  "location": {
-    "column": 24,
-    "row": 1,
-    "tree": "starships"
-  },
-  "research_name": "Cybernetic Enhancements"
+  "img_url": "./assets/cybernetic_enhancements_starships_1_24.png"
 }

@@ -1,41 +1,13 @@
 {
+  "hostile_name": "Rigellian Destroyer",
   "description": "",
   "group": "neutral",
+  "level": 3,
+  "rarity": "common",
   "head_stats": {
     "attack": 105,
     "defense": 85,
     "health": 40
-  },
-  "hostile_name": "Rigellian Destroyer",
-  "level": 3,
-  "rarity": "common",
-  "rewards": [
-    {
-      "type": "parsteel",
-      "max_value": 104,
-      "min_value": 104,
-      "value": 104
-    }
-  ],
-  "ship_class": "interceptor",
-  "stats": {
-    "attack": {
-      "accuracy": 3,
-      "armor_pierce": 16,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 83,
-      "shield_pierce": 3
-    },
-    "defense": {
-      "armor": 3,
-      "dodge": 11,
-      "shield_deflect": 3
-    },
-    "health": {
-      "hull_health": 40,
-      "shield_health": 40
-    }
   },
   "systems": [
     {
@@ -387,11 +359,26 @@
       "$ref": "systems/entrunar_1"
     }
   ],
-  "utility": [
-    {
-      "impulse_speed": 17
+  "ship_class": "interceptor",
+  "stats": {
+    "attack": {
+      "accuracy": 3,
+      "armor_pierce": 16,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 83,
+      "shield_pierce": 3
+    },
+    "defense": {
+      "armor": 3,
+      "dodge": 11,
+      "shield_deflect": 3
+    },
+    "health": {
+      "hull_health": 40,
+      "shield_health": 40
     }
-  ],
+  },
   "weapons": [
     {
       "firing_pattern": [
@@ -423,6 +410,19 @@
         "shield_pierce": 3
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 104,
+      "min_value": 104,
+      "value": 104
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

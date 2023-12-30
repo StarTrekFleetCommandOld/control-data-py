@@ -1,37 +1,38 @@
 {
-  "description": "The central, main structure of the starbase, the Assembly Chambers house the main command center, communications relays and warp control for the station itself.",
-  "bonuses": {
-    "bonus1": {
-      "name": "Relocation Range",
-      "percentage": false
-    }
-  },
   "building_name": "Assembly Chambers",
+  "description": "The central, main structure of the starbase, the Assembly Chambers house the main command center, communications relays and warp control for the station itself.",
   "levels": [
     {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      "level": 1,
+      "build_time": 45900,
+      "increased_power": 0,
+      "requirements": [],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
             "type": "subspace superconductor",
             "value": 15625
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 45900,
-      "increased_power": 0,
-      "level": 1,
-      "requirements": []
-    },
-    {
       "bonuses": {
         "bonus1": 26.0
-      },
+      }
+    },
+    {
+      "level": 2,
+      "build_time": 94200,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Diplomatic Relations",
+          "level": 1
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -42,24 +43,24 @@
             "type": "subspace superconductor",
             "value": 31275
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 94200,
-      "increased_power": 0,
-      "level": 2,
-      "requirements": [
-        {
-          "name": "Diplomatic Relations",
-          "level": 1
-        }
-      ]
-    },
-    {
       "bonuses": {
         "bonus1": 26.0
-      },
+      }
+    },
+    {
+      "level": 3,
+      "build_time": 146100,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Plasma Processor",
+          "level": 2
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -70,24 +71,28 @@
             "type": "subspace superconductor",
             "value": 46900
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 146100,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 4,
+      "build_time": 187200,
       "increased_power": 0,
-      "level": 3,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 2
+          "level": 3
+        },
+        {
+          "name": "Diplomatic Relations",
+          "level": 3
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -98,28 +103,24 @@
             "type": "subspace superconductor",
             "value": 62550
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 187200,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 5,
+      "build_time": 240000,
       "increased_power": 0,
-      "level": 4,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 3
-        },
-        {
-          "name": "Diplomatic Relations",
-          "level": 3
+          "level": 4
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -130,24 +131,28 @@
             "type": "subspace superconductor",
             "value": 78175
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 240000,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 6,
+      "build_time": 285000,
       "increased_power": 0,
-      "level": 5,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 4
+          "level": 5
+        },
+        {
+          "name": "Diplomatic Relations",
+          "level": 5
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -162,28 +167,28 @@
             "type": "subspace superconductor",
             "value": 100075
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 285000,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 7,
+      "build_time": 375000,
       "increased_power": 0,
-      "level": 6,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 5
+          "level": 6
         },
         {
-          "name": "Diplomatic Relations",
+          "name": "Tactical Deck",
           "level": 5
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -198,28 +203,28 @@
             "type": "subspace superconductor",
             "value": 121950
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 375000,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 8,
+      "build_time": 437100,
       "increased_power": 0,
-      "level": 7,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 6
+          "level": 7
         },
         {
-          "name": "Tactical Deck",
-          "level": 5
+          "name": "Diplomatic Relations",
+          "level": 7
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -234,28 +239,28 @@
             "type": "subspace superconductor",
             "value": 143850
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 437100,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 9,
+      "build_time": 499200,
       "increased_power": 0,
-      "level": 8,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 7
+          "level": 8
         },
         {
-          "name": "Diplomatic Relations",
+          "name": "Tactical Deck",
           "level": 7
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -270,28 +275,28 @@
             "type": "subspace superconductor",
             "value": 165750
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 499200,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 10,
+      "build_time": 565500,
       "increased_power": 0,
-      "level": 9,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 8
+          "level": 9
         },
         {
-          "name": "Tactical Deck",
-          "level": 7
+          "name": "Diplomatic Relations",
+          "level": 9
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -306,28 +311,28 @@
             "type": "subspace superconductor",
             "value": 187625
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 565500,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 11,
+      "build_time": 650400,
       "increased_power": 0,
-      "level": 10,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 9
+          "level": 10
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 9
+          "name": "Tactical Deck",
+          "level": 10
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -342,28 +347,28 @@
             "type": "subspace superconductor",
             "value": 215775
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 650400,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 12,
+      "build_time": 732000,
       "increased_power": 0,
-      "level": 11,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 10
+          "level": 11
         },
         {
-          "name": "Tactical Deck",
-          "level": 10
+          "name": "Diplomatic Relations",
+          "level": 11
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -378,28 +383,28 @@
             "type": "subspace superconductor",
             "value": 243925
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 732000,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 13,
+      "build_time": 836400,
       "increased_power": 0,
-      "level": 12,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 11
+          "level": 12
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 11
+          "name": "Tactical Deck",
+          "level": 12
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -414,28 +419,28 @@
             "type": "subspace superconductor",
             "value": 272050
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 836400,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 14,
+      "build_time": 869700,
       "increased_power": 0,
-      "level": 13,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 12
+          "level": 13
         },
         {
-          "name": "Tactical Deck",
-          "level": 12
+          "name": "Diplomatic Relations",
+          "level": 13
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 26.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -450,28 +455,28 @@
             "type": "subspace superconductor",
             "value": 300200
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 869700,
+      "bonuses": {
+        "bonus1": 26.0
+      }
+    },
+    {
+      "level": 15,
+      "build_time": 1034700,
       "increased_power": 0,
-      "level": 14,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 13
+          "level": 14
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 13
+          "name": "Tactical Deck",
+          "level": 14
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -486,28 +491,32 @@
             "type": "subspace superconductor",
             "value": 328350
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1034700,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 16,
+      "build_time": 1080000,
       "increased_power": 0,
-      "level": 15,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 14
+          "level": 15
         },
         {
-          "name": "Tactical Deck",
-          "level": 14
+          "name": "Diplomatic Relations",
+          "level": 15
+        },
+        {
+          "name": "Salvage Yard",
+          "level": 5
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -522,32 +531,28 @@
             "type": "subspace superconductor",
             "value": 356500
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1080000,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 17,
+      "build_time": 1140000,
       "increased_power": 0,
-      "level": 16,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 15
+          "level": 16
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 15
-        },
-        {
-          "name": "Salvage Yard",
-          "level": 5
+          "name": "Tactical Deck",
+          "level": 16
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -562,28 +567,32 @@
             "type": "subspace superconductor",
             "value": 384650
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1140000,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 18,
+      "build_time": 1252200,
       "increased_power": 0,
-      "level": 17,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 16
+          "level": 17
         },
         {
-          "name": "Tactical Deck",
-          "level": 16
+          "name": "Diplomatic Relations",
+          "level": 17
+        },
+        {
+          "name": "Salvage Yard",
+          "level": 15
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -598,32 +607,28 @@
             "type": "subspace superconductor",
             "value": 419050
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1252200,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 19,
+      "build_time": 1367700,
       "increased_power": 0,
-      "level": 18,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 17
+          "level": 18
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 17
-        },
-        {
-          "name": "Salvage Yard",
-          "level": 15
+          "name": "Tactical Deck",
+          "level": 18
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -638,28 +643,32 @@
             "type": "subspace superconductor",
             "value": 453425
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1367700,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 20,
+      "build_time": 1469700,
       "increased_power": 0,
-      "level": 19,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 18
+          "level": 19
         },
         {
-          "name": "Tactical Deck",
-          "level": 18
+          "name": "Diplomatic Relations",
+          "level": 19
+        },
+        {
+          "name": "Salvage Yard",
+          "level": 19
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -674,32 +683,28 @@
             "type": "subspace superconductor",
             "value": 487825
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1469700,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 21,
+      "build_time": 1573500,
       "increased_power": 0,
-      "level": 20,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 19
+          "level": 20
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 19
-        },
-        {
-          "name": "Salvage Yard",
-          "level": 19
+          "name": "Tactical Deck",
+          "level": 20
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -714,28 +719,28 @@
             "type": "subspace superconductor",
             "value": 522225
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1573500,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 22,
+      "build_time": 1665000,
       "increased_power": 0,
-      "level": 21,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 20
+          "level": 21
         },
         {
-          "name": "Tactical Deck",
-          "level": 20
+          "name": "Diplomatic Relations",
+          "level": 21
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -750,28 +755,32 @@
             "type": "subspace superconductor",
             "value": 556625
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1665000,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 23,
+      "build_time": 1795200,
       "increased_power": 0,
-      "level": 22,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 21
+          "level": 22
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 21
+          "name": "Tactical Deck",
+          "level": 22
+        },
+        {
+          "name": "Salvage Yard",
+          "level": 22
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -786,32 +795,28 @@
             "type": "subspace superconductor",
             "value": 597275
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1795200,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 24,
+      "build_time": 1920300,
       "increased_power": 0,
-      "level": 23,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 22
+          "level": 23
         },
         {
-          "name": "Tactical Deck",
-          "level": 22
-        },
-        {
-          "name": "Salvage Yard",
-          "level": 22
+          "name": "Diplomatic Relations",
+          "level": 23
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -826,28 +831,28 @@
             "type": "subspace superconductor",
             "value": 637950
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1920300,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 25,
+      "build_time": 2040000,
       "increased_power": 0,
-      "level": 24,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 23
+          "level": 24
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 23
+          "name": "Tactical Deck",
+          "level": 24
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -862,28 +867,28 @@
             "type": "subspace superconductor",
             "value": 678600
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2040000,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 26,
+      "build_time": 2100000,
       "increased_power": 0,
-      "level": 25,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 24
+          "level": 25
         },
         {
-          "name": "Tactical Deck",
-          "level": 24
+          "name": "Diplomatic Relations",
+          "level": 25
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -898,28 +903,28 @@
             "type": "subspace superconductor",
             "value": 719250
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2100000,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 27,
+      "build_time": 2331000,
       "increased_power": 0,
-      "level": 26,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 25
+          "level": 26
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 25
+          "name": "Tactical Deck",
+          "level": 26
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -934,28 +939,28 @@
             "type": "subspace superconductor",
             "value": 759900
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2331000,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 28,
+      "build_time": 2400000,
       "increased_power": 0,
-      "level": 27,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 26
+          "level": 27
         },
         {
-          "name": "Tactical Deck",
-          "level": 26
+          "name": "Diplomatic Relations",
+          "level": 27
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -970,28 +975,28 @@
             "type": "subspace superconductor",
             "value": 800550
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2400000,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 29,
+      "build_time": 2559000,
       "increased_power": 0,
-      "level": 28,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 27
+          "level": 28
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 27
+          "name": "Tactical Deck",
+          "level": 28
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1006,28 +1011,28 @@
             "type": "subspace superconductor",
             "value": 847450
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2559000,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 30,
+      "build_time": 2670000,
       "increased_power": 0,
-      "level": 29,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 28
+          "level": 29
         },
         {
-          "name": "Tactical Deck",
-          "level": 28
+          "name": "Diplomatic Relations",
+          "level": 29
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1042,28 +1047,28 @@
             "type": "subspace superconductor",
             "value": 894375
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2670000,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 31,
+      "build_time": 2834700,
       "increased_power": 0,
-      "level": 30,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 29
+          "level": 30
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 29
+          "name": "Tactical Deck",
+          "level": 30
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1078,28 +1083,28 @@
             "type": "subspace superconductor",
             "value": 941275
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2834700,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 32,
+      "build_time": 2974200,
       "increased_power": 0,
-      "level": 31,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 30
+          "level": 31
         },
         {
-          "name": "Tactical Deck",
-          "level": 30
+          "name": "Diplomatic Relations",
+          "level": 31
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1114,28 +1119,28 @@
             "type": "subspace superconductor",
             "value": 988175
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2974200,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 33,
+      "build_time": 3115800,
       "increased_power": 0,
-      "level": 32,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 31
+          "level": 32
         },
         {
-          "name": "Diplomatic Relations",
-          "level": 31
+          "name": "Tactical Deck",
+          "level": 32
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1150,28 +1155,28 @@
             "type": "subspace superconductor",
             "value": 1035075
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 3115800,
+      "bonuses": {
+        "bonus1": 48.0
+      }
+    },
+    {
+      "level": 34,
+      "build_time": 3258000,
       "increased_power": 0,
-      "level": 33,
       "requirements": [
         {
           "name": "Plasma Processor",
-          "level": 32
+          "level": 33
         },
         {
-          "name": "Tactical Deck",
-          "level": 32
+          "name": "Diplomatic Relations",
+          "level": 33
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 48.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1186,22 +1191,17 @@
             "type": "subspace superconductor",
             "value": 1088250
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 3258000,
-      "increased_power": 0,
-      "level": 34,
-      "requirements": [
-        {
-          "name": "Plasma Processor",
-          "level": 33
-        },
-        {
-          "name": "Diplomatic Relations",
-          "level": 33
-        }
-      ]
+      "bonuses": {
+        "bonus1": 48.0
+      }
     }
-  ]
+  ],
+  "bonuses": {
+    "bonus1": {
+      "name": "Relocation Range",
+      "percentage": false
+    }
+  }
 }

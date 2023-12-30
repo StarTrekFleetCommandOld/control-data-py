@@ -1,44 +1,20 @@
 {
+  "hostile_name": "Veteran Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 38,
+  "rarity": "common",
   "head_stats": {
     "attack": 1440608,
     "defense": 1373425,
     "health": 453590
   },
-  "hostile_name": "Veteran Federation Patrol",
-  "level": 38,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 958,
-      "min_value": 958,
-      "value": 958
+      "$ref": "systems/lakeside_39"
     },
     {
-      "type": "dilithium",
-      "max_value": 188,
-      "min_value": 188,
-      "value": 188
-    },
-    {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "romulan points",
-      "max_value": 1528,
-      "min_value": 1528,
-      "value": 1528
-    },
-    {
-      "type": "klingon points",
-      "max_value": 764,
-      "min_value": 764,
-      "value": 764
+      "$ref": "systems/bolarus_39"
     }
   ],
   "ship_class": "interceptor",
@@ -61,19 +37,6 @@
       "shield_health": 524150
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/lakeside_39"
-    },
-    {
-      "$ref": "systems/bolarus_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +99,43 @@
         "shield_pierce": 48474
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 958,
+      "min_value": 958,
+      "value": 958
+    },
+    {
+      "type": "dilithium",
+      "max_value": 188,
+      "min_value": 188,
+      "value": 188
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 1528,
+      "min_value": 1528,
+      "value": 1528
+    },
+    {
+      "type": "klingon points",
+      "max_value": 764,
+      "min_value": 764,
+      "value": 764
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

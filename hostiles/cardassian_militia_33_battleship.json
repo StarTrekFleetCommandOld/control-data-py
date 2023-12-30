@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Cardassian Militia",
   "description": "",
   "group": "neutral",
+  "level": 33,
+  "rarity": "common",
   "head_stats": {
     "attack": 148440,
     "defense": 150300,
     "health": 50925
   },
-  "hostile_name": "Cardassian Militia",
-  "level": 33,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/amok_tal_32"
+    },
+    {
+      "$ref": "systems/sintek_31"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 43650
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/amok_tal_32"
-    },
-    {
-      "$ref": "systems/sintek_31"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +99,12 @@
         "shield_pierce": 30060
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

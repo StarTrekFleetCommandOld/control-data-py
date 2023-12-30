@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Corvallen Deceiver",
   "description": "",
   "group": "neutral",
+  "level": 25,
+  "rarity": "common",
   "head_stats": {
     "attack": 16699,
     "defense": 18750,
     "health": 8880
   },
-  "hostile_name": "Corvallen Deceiver",
-  "level": 25,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 289,
-      "min_value": 289,
-      "value": 289
+      "$ref": "systems/hann_26"
+    },
+    {
+      "$ref": "systems/huebr_24"
+    },
+    {
+      "$ref": "systems/etaoin_25"
     }
   ],
   "ship_class": "explorer",
@@ -37,22 +40,6 @@
       "shield_health": 9120
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/hann_26"
-    },
-    {
-      "$ref": "systems/huebr_24"
-    },
-    {
-      "$ref": "systems/etaoin_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -84,6 +71,19 @@
         "shield_pierce": 625
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 289,
+      "min_value": 289,
+      "value": 289
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

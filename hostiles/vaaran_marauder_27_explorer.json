@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Vaaran Marauder",
   "description": "",
   "group": "neutral",
+  "level": 27,
+  "rarity": "common",
   "head_stats": {
     "attack": 28560,
     "defense": 30000,
     "health": 15540
   },
-  "hostile_name": "Vaaran Marauder",
-  "level": 27,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 325,
-      "min_value": 325,
-      "value": 325
+      "$ref": "systems/kor_na_ron_27"
+    },
+    {
+      "$ref": "systems/gealan_26"
+    },
+    {
+      "$ref": "systems/duriana_28"
+    },
+    {
+      "$ref": "systems/paradane_27"
     }
   ],
   "ship_class": "explorer",
@@ -37,25 +43,6 @@
       "shield_health": 15960
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/kor_na_ron_27"
-    },
-    {
-      "$ref": "systems/gealan_26"
-    },
-    {
-      "$ref": "systems/duriana_28"
-    },
-    {
-      "$ref": "systems/paradane_27"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -87,6 +74,19 @@
         "shield_pierce": 1000
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 325,
+      "min_value": 325,
+      "value": 325
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

@@ -1,11 +1,16 @@
 {
+  "research_name": "Unlock Science Labs",
   "description": "Unlocks the Science Labs building.",
-  "img_url": "./assets/unlock_science_labs_station_2_18.png",
+  "location": {
+    "column": 18,
+    "row": 2,
+    "tree": "station"
+  },
   "levels": [
     {
-      "increased_power": 18500,
       "level": 1,
-      "required_by": [],
+      "research_time": 430860,
+      "increased_power": 18500,
       "requirements": [
         {
           "name": "Pure Tritanium",
@@ -20,16 +25,8 @@
           "level": 23
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [
-          {
-            "type": "gas",
-            "grade": 3,
-            "rarity": "common",
-            "value": 50
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -39,15 +36,18 @@
             "type": "dilithium",
             "value": 116000
           }
-        ]
-      },
-      "research_time": 430860
+        ],
+        "materials": [
+          {
+            "type": "gas",
+            "value": 50,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      }
     }
   ],
-  "location": {
-    "column": 18,
-    "row": 2,
-    "tree": "station"
-  },
-  "research_name": "Unlock Science Labs"
+  "img_url": "./assets/unlock_science_labs_station_2_18.png"
 }

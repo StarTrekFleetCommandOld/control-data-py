@@ -1,7 +1,11 @@
 {
-  "description": "When a bad divorce left Leonard McCoy with very little other than the clothes on his back and the bones in his body, he decided to join Starfleet and put his medical expertise to good use. He rapidly befriended James Kirk, and the two stuck together throughout their years at the Academy.",
+  "officer_name": "Cadet Leonard McCoy",
+  "description": "",
+  "class": "science",
+  "group": "another time",
+  "faction": "federation",
+  "rarity": "common",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Doctor",
       "bonus": "Cadet McCoy increases the Health of all Officers on the ship by {value}.",
@@ -12,18 +16,20 @@
       "name": "Psychologist",
       "bonus": "During combat, Cadet McCoy increases the effectiveness of the Captain Maneuver by {value}.",
       "percentage": true
-    }
+    },
+    "below_decks_ability": null
   },
-  "class": "science",
-  "faction": "federation",
-  "group": "another time",
-  "img_url": "./assets/cadet_leonard_mccoy.png",
-  "officer_name": "Cadet Leonard McCoy",
+  "synergy": {
+    "command": 0.1,
+    "engineering": 0.1,
+    "science": 0.05
+  },
+  "traits": [],
   "ranks": [
     {
+      "rank_id": 1,
       "name": "ENSIGN I",
       "officer_ability_value": 0.04,
-      "rank_id": 1,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -33,9 +39,9 @@
       }
     },
     {
+      "rank_id": 2,
       "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.06,
-      "rank_id": 2,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -45,9 +51,9 @@
       }
     },
     {
+      "rank_id": 3,
       "name": "LIEUTENANT III",
       "officer_ability_value": 0.08,
-      "rank_id": 3,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -57,9 +63,9 @@
       }
     },
     {
+      "rank_id": 4,
       "name": "LT. COMMANDER IV",
       "officer_ability_value": 0.1,
-      "rank_id": 4,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -69,9 +75,9 @@
       }
     },
     {
+      "rank_id": 5,
       "name": "COMMANDER V",
       "officer_ability_value": 0.12,
-      "rank_id": 5,
       "requirements": {
         "badges": 0,
         "credits": 1000,
@@ -81,11 +87,5 @@
       }
     }
   ],
-  "rarity": "common",
-  "synergy": {
-    "command": 0.1,
-    "engineering": 0.1,
-    "science": 0.05
-  },
-  "traits": []
+  "img_url": "./assets/cadet_leonard_mccoy.png"
 }

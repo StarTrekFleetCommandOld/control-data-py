@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Rigellian Hunter",
   "description": "",
   "group": "neutral",
+  "level": 20,
+  "rarity": "common",
   "head_stats": {
     "attack": 7917,
     "defense": 7120,
     "health": 3070
   },
-  "hostile_name": "Rigellian Hunter",
-  "level": 20,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/eronia_18"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 3070
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/eronia_18"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 237
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

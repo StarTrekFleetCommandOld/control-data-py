@@ -1,15 +1,28 @@
 {
+  "hostile_name": "Immortal Hammer Class",
   "description": "",
   "group": "romulan",
+  "level": 50,
+  "rarity": "common",
   "head_stats": {
     "attack": 6587916,
     "defense": 2145130,
     "health": 9786592
   },
-  "hostile_name": "Immortal Hammer Class",
-  "level": 50,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/adrisilver_50"
+    },
+    {
+      "$ref": "systems/magnus_52"
+    },
+    {
+      "$ref": "systems/lyklaset_52"
+    },
+    {
+      "$ref": "systems/omadi_52"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 7935043
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/adrisilver_50"
-    },
-    {
-      "$ref": "systems/magnus_52"
-    },
-    {
-      "$ref": "systems/lyklaset_52"
-    },
-    {
-      "$ref": "systems/omadi_52"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -111,6 +105,12 @@
         "shield_pierce": 294870
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

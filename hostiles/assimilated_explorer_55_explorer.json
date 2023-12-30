@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Assimilated Explorer",
   "description": "",
   "group": "assimilated",
+  "level": 55,
+  "rarity": "common",
   "head_stats": {
     "attack": 51065399,
     "defense": 15252240,
     "health": 49753672
   },
-  "hostile_name": "Assimilated Explorer",
-  "level": 55,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken explorer parts",
-      "max_value": 478,
-      "min_value": 478,
-      "value": 478
+      "$ref": "systems/tarna_55"
+    },
+    {
+      "$ref": "systems/ander_53"
+    },
+    {
+      "$ref": "systems/kyanta_57"
+    },
+    {
+      "$ref": "systems/xy_tos_56"
+    },
+    {
+      "$ref": "systems/vacuum_epicenter_53"
     }
   ],
   "ship_class": "explorer",
@@ -37,28 +46,6 @@
       "shield_health": 55724126
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/tarna_55"
-    },
-    {
-      "$ref": "systems/ander_53"
-    },
-    {
-      "$ref": "systems/kyanta_57"
-    },
-    {
-      "$ref": "systems/xy_tos_56"
-    },
-    {
-      "$ref": "systems/vacuum_epicenter_53"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +108,19 @@
         "shield_pierce": 1344367
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken explorer parts",
+      "max_value": 478,
+      "min_value": 478,
+      "value": 478
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Borg Tactical Probe",
   "description": "",
   "group": "borg",
+  "level": 25,
+  "rarity": "common",
   "head_stats": {
     "attack": 250567,
     "defense": 50250,
     "health": 1105860
   },
-  "hostile_name": "Borg Tactical Probe",
-  "level": 25,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "inert nanoprobe",
-      "max_value": 171,
-      "min_value": 171,
-      "value": 171
+      "$ref": "systems/metra_alpha_25"
+    },
+    {
+      "$ref": "systems/metra_beta_25"
+    },
+    {
+      "$ref": "systems/metra_gamma_25"
     }
   ],
   "ship_class": "battleship",
@@ -37,22 +40,6 @@
       "shield_health": 947880
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/metra_alpha_25"
-    },
-    {
-      "$ref": "systems/metra_beta_25"
-    },
-    {
-      "$ref": "systems/metra_gamma_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 48
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -177,6 +164,19 @@
         "shield_pierce": 7500
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "inert nanoprobe",
+      "max_value": 171,
+      "min_value": 171,
+      "value": 171
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 48
     }
   ]
 }

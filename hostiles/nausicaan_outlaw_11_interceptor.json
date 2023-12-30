@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Nausicaan Outlaw",
   "description": "",
   "group": "neutral",
+  "level": 11,
+  "rarity": "common",
   "head_stats": {
     "attack": 1043,
     "defense": 920,
     "health": 430
   },
-  "hostile_name": "Nausicaan Outlaw",
-  "level": 11,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 342,
-      "min_value": 342,
-      "value": 342
+      "$ref": "systems/eojur_11"
+    },
+    {
+      "$ref": "systems/clytomenes_12"
+    },
+    {
+      "$ref": "systems/zehoro_11"
+    },
+    {
+      "$ref": "systems/nelve_12"
+    },
+    {
+      "$ref": "systems/nausicaa_12"
+    },
+    {
+      "$ref": "systems/rigel_13"
     }
   ],
   "ship_class": "interceptor",
@@ -37,31 +49,6 @@
       "shield_health": 430
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/eojur_11"
-    },
-    {
-      "$ref": "systems/clytomenes_12"
-    },
-    {
-      "$ref": "systems/zehoro_11"
-    },
-    {
-      "$ref": "systems/nelve_12"
-    },
-    {
-      "$ref": "systems/nausicaa_12"
-    },
-    {
-      "$ref": "systems/rigel_13"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -93,6 +80,19 @@
         "shield_pierce": 31
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 342,
+      "min_value": 342,
+      "value": 342
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

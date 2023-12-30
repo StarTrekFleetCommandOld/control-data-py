@@ -1,15 +1,31 @@
 {
+  "hostile_name": "Independent Trader",
   "description": "",
   "group": "neutral",
+  "level": 50,
+  "rarity": "common",
   "head_stats": {
     "attack": 3999013,
     "defense": 3125070,
     "health": 7778165
   },
-  "hostile_name": "Independent Trader",
-  "level": 50,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/ganzin_48"
+    },
+    {
+      "$ref": "systems/neo_tek_48"
+    },
+    {
+      "$ref": "systems/ezla_48"
+    },
+    {
+      "$ref": "systems/petandria_48"
+    },
+    {
+      "$ref": "systems/toen_48"
+    }
+  ],
   "ship_class": "survey",
   "stats": {
     "attack": {
@@ -30,28 +46,6 @@
       "shield_health": 7778165
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ganzin_48"
-    },
-    {
-      "$ref": "systems/neo_tek_48"
-    },
-    {
-      "$ref": "systems/ezla_48"
-    },
-    {
-      "$ref": "systems/petandria_48"
-    },
-    {
-      "$ref": "systems/toen_48"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 9
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -83,6 +77,12 @@
         "shield_pierce": 86536
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 9
     }
   ]
 }

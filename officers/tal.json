@@ -1,7 +1,11 @@
 {
-  "description": "Tal is Charvanek's second in command. An orderly and efficient man, he has devoted his career to supporting his captain in all her endeavors, as through her efforts, he sees a glorious future for Romulus.",
+  "officer_name": "Tal",
+  "description": "",
+  "class": "engineering",
+  "group": "romulan patriots",
+  "faction": "romulan",
+  "rarity": "rare",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Loyal Officer",
       "bonus": "When fighting Battleships, Tal increases the Weapon damage of the ship by {value}",
@@ -10,78 +14,11 @@
     },
     "officer_ability": {
       "name": "Resistance",
-      "bonus": "As long as the opponent ship is Burning, Tal decreases its Hull Health by {value} each turn.",
+      "bonus": "Tal decreases the opponent ship's Hull Health by a cumulative {value} each round while it is Burning versus players, and Hostiles level 60 and under.",
       "percentage": true
-    }
+    },
+    "below_decks_ability": null
   },
-  "class": "engineering",
-  "faction": "romulan",
-  "group": "romulan patriots",
-  "img_url": "./assets/tal.png",
-  "officer_name": "Tal",
-  "ranks": [
-    {
-      "name": "ENSIGN I",
-      "officer_ability_value": 0.05,
-      "rank_id": 1,
-      "requirements": {
-        "badges": 0,
-        "credits": 0,
-        "others": [],
-        "shards": 34,
-        "xp": 0
-      }
-    },
-    {
-      "name": "LIEUTENANT JG II",
-      "officer_ability_value": 0.06,
-      "rank_id": 2,
-      "requirements": {
-        "badges": 0,
-        "credits": 0,
-        "others": [],
-        "shards": 51,
-        "xp": 10000
-      }
-    },
-    {
-      "name": "LIEUTENANT III",
-      "officer_ability_value": 0.07,
-      "rank_id": 3,
-      "requirements": {
-        "badges": 0,
-        "credits": 1100,
-        "others": [],
-        "shards": 102,
-        "xp": 100000
-      }
-    },
-    {
-      "name": "LT. COMMANDER IV",
-      "officer_ability_value": 0.08,
-      "rank_id": 4,
-      "requirements": {
-        "badges": 1,
-        "credits": 4400,
-        "others": [],
-        "shards": 136,
-        "xp": 250000
-      }
-    },
-    {
-      "name": "COMMANDER V",
-      "officer_ability_value": 0.1,
-      "rank_id": 5,
-      "requirements": {
-        "badges": 2,
-        "credits": 11000,
-        "others": [],
-        "shards": 204,
-        "xp": 500000
-      }
-    }
-  ],
-  "rarity": "rare",
   "synergy": {
     "command": 0.2,
     "engineering": 0.1,
@@ -128,5 +65,68 @@
       ],
       "tier": 2
     }
-  ]
+  ],
+  "ranks": [
+    {
+      "rank_id": 1,
+      "name": "ENSIGN I",
+      "officer_ability_value": 0.05,
+      "requirements": {
+        "badges": 0,
+        "credits": 0,
+        "others": [],
+        "shards": 34,
+        "xp": 0
+      }
+    },
+    {
+      "rank_id": 2,
+      "name": "LIEUTENANT JG II",
+      "officer_ability_value": 0.06,
+      "requirements": {
+        "badges": 0,
+        "credits": 0,
+        "others": [],
+        "shards": 51,
+        "xp": 10000
+      }
+    },
+    {
+      "rank_id": 3,
+      "name": "LIEUTENANT III",
+      "officer_ability_value": 0.07,
+      "requirements": {
+        "badges": 0,
+        "credits": 1100,
+        "others": [],
+        "shards": 102,
+        "xp": 100000
+      }
+    },
+    {
+      "rank_id": 4,
+      "name": "LT. COMMANDER IV",
+      "officer_ability_value": 0.08,
+      "requirements": {
+        "badges": 1,
+        "credits": 4400,
+        "others": [],
+        "shards": 136,
+        "xp": 250000
+      }
+    },
+    {
+      "rank_id": 5,
+      "name": "COMMANDER V",
+      "officer_ability_value": 0.1,
+      "requirements": {
+        "badges": 2,
+        "credits": 11000,
+        "others": [],
+        "shards": 204,
+        "xp": 500000
+      }
+    }
+  ],
+  "img_url": "./assets/tal.png"
 }

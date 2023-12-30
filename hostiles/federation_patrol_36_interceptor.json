@@ -1,44 +1,29 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 36,
+  "rarity": "common",
   "head_stats": {
     "attack": 331864,
     "defense": 309820,
     "health": 97830
   },
-  "hostile_name": "Federation Patrol",
-  "level": 36,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 586,
-      "min_value": 586,
-      "value": 586
+      "$ref": "systems/sirius_36"
     },
     {
-      "type": "dilithium",
-      "max_value": 113,
-      "min_value": 113,
-      "value": 113
+      "$ref": "systems/barnard_s_star_38"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/peliar_zel_38"
     },
     {
-      "type": "romulan points",
-      "max_value": 360,
-      "min_value": 360,
-      "value": 360
+      "$ref": "systems/tau_ceti_34"
     },
     {
-      "type": "klingon points",
-      "max_value": 180,
-      "min_value": 180,
-      "value": 180
+      "$ref": "systems/babel_38"
     }
   ],
   "ship_class": "interceptor",
@@ -61,28 +46,6 @@
       "shield_health": 113050
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/sirius_36"
-    },
-    {
-      "$ref": "systems/barnard_s_star_38"
-    },
-    {
-      "$ref": "systems/peliar_zel_38"
-    },
-    {
-      "$ref": "systems/tau_ceti_34"
-    },
-    {
-      "$ref": "systems/babel_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -145,6 +108,43 @@
         "shield_pierce": 10935
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 586,
+      "min_value": 586,
+      "value": 586
+    },
+    {
+      "type": "dilithium",
+      "max_value": 113,
+      "min_value": 113,
+      "value": 113
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 360,
+      "min_value": 360,
+      "value": 360
+    },
+    {
+      "type": "klingon points",
+      "max_value": 180,
+      "min_value": 180,
+      "value": 180
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

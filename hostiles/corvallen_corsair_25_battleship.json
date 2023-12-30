@@ -1,26 +1,17 @@
 {
+  "hostile_name": "Corvallen Corsair",
   "description": "",
   "group": "neutral",
+  "level": 25,
+  "rarity": "common",
   "head_stats": {
     "attack": 17313,
     "defense": 18750,
     "health": 8400
   },
-  "hostile_name": "Corvallen Corsair",
-  "level": 25,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 275,
-      "min_value": 275,
-      "value": 275
-    },
-    {
-      "type": "dilithium",
-      "max_value": 25,
-      "min_value": 25,
-      "value": 25
+      "$ref": "systems/narendra_25"
     }
   ],
   "ship_class": "battleship",
@@ -43,16 +34,6 @@
       "shield_health": 7200
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/narendra_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +96,25 @@
         "shield_pierce": 3750
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 275,
+      "min_value": 275,
+      "value": 275
+    },
+    {
+      "type": "dilithium",
+      "max_value": 25,
+      "min_value": 25,
+      "value": 25
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
-  "description": "I am the beginning, the end, the one who is many. I am the Borg.\nA menacing and enigmatic creature, the Borg Queen remains a mystery for the whole Universe. She is the leader of the Collective; an emotional individual among the impassive drones, a perfect synergy of organic and synthetic. \nThe Queen exists for one purpose - protect the Collective by bringing order to chaos and exploit emotions to get what she wants. If the drones always seek the opportunity to assimilate the desired species on sight, the Queen applies her empathy skills to make beneficial alliances and gain an advantageous position. But one must never forget, that even though the Queen may look and act like a friend, she is the Borg, and sooner or later you will be assimilated.",
+  "officer_name": "Borg Queen",
+  "description": "",
+  "class": "command",
+  "group": "unimatrix twelve",
+  "faction": "borg",
+  "rarity": "epic",
   "ability_info": {
-    "below_decks_ability": {
-      "name": "The One Who is Many",
-      "bonus": "While fighting a player ship with Assimilate, Borg Queen increases the ship's Armor Piercing, Shield Piercing and Accuracy by {value} each round (Cumulative).",
-      "percentage": true
-    },
     "captain_maneuver": {
       "name": "Not Perceived as a Threat",
       "bonus": "This Officer does not have a Captain's Maneuver. Equipping this Officer as the captain of a ship provides no benefit.",
@@ -16,111 +16,13 @@
       "name": "Chaos Into Order",
       "bonus": "While fighting against a Borg Solo Armada, upon receiving Hull Damage from an enemy shot, increase Critical Hit Chance by {value} (Cumulative).",
       "percentage": true
+    },
+    "below_decks_ability": {
+      "name": "The One Who is Many",
+      "bonus": "While fighting a player ship with Assimilate, Borg Queen increases the ship's Armor Piercing, Shield Piercing and Accuracy by {value} each round (Cumulative).",
+      "percentage": true
     }
   },
-  "class": "command",
-  "faction": "borg",
-  "group": "unimatrix twelve",
-  "img_url": "./assets/borg_queen.png",
-  "officer_name": "Borg Queen",
-  "ranks": [
-    {
-      "name": "ENSIGN I",
-      "below_deck_ability_value": [
-        1.5
-      ],
-      "officer_ability_value": 0.02,
-      "rank_id": 1,
-      "requirements": {
-        "badges": 0,
-        "credits": 0,
-        "others": [],
-        "shards": 120,
-        "xp": 0
-      }
-    },
-    {
-      "name": "LIEUTENANT JG II",
-      "below_deck_ability_value": [
-        2.0
-      ],
-      "officer_ability_value": 0.03,
-      "rank_id": 2,
-      "requirements": {
-        "badges": 0,
-        "credits": 1350,
-        "others": [
-          {
-            "name": "Active Nanoprobe",
-            "value": 6000
-          }
-        ],
-        "shards": 120,
-        "xp": 0
-      }
-    },
-    {
-      "name": "LIEUTENANT III",
-      "below_deck_ability_value": [
-        3.0
-      ],
-      "officer_ability_value": 0.04,
-      "rank_id": 3,
-      "requirements": {
-        "badges": 1,
-        "credits": 5250,
-        "others": [
-          {
-            "name": "Active Nanoprobe",
-            "value": 120000
-          }
-        ],
-        "shards": 240,
-        "xp": 0
-      }
-    },
-    {
-      "name": "LT. COMMANDER IV",
-      "below_deck_ability_value": [
-        4.0
-      ],
-      "officer_ability_value": 0.05,
-      "rank_id": 4,
-      "requirements": {
-        "badges": 2,
-        "credits": 13225,
-        "others": [
-          {
-            "name": "Active Nanoprobe",
-            "value": 500000
-          }
-        ],
-        "shards": 360,
-        "xp": 0
-      }
-    },
-    {
-      "name": "COMMANDER V",
-      "below_deck_ability_value": [
-        5.0
-      ],
-      "officer_ability_value": 0.07,
-      "rank_id": 5,
-      "requirements": {
-        "badges": 4,
-        "credits": 30000,
-        "others": [
-          {
-            "name": "Active Nanoprobe",
-            "value": 1150000
-          }
-        ],
-        "shards": 960,
-        "xp": 0
-      }
-    }
-  ],
-  "rarity": "epic",
   "synergy": {
     "command": 0.0,
     "engineering": 0.0,
@@ -209,5 +111,103 @@
       ],
       "tier": 3
     }
-  ]
+  ],
+  "ranks": [
+    {
+      "rank_id": 1,
+      "name": "ENSIGN I",
+      "officer_ability_value": 0.02,
+      "requirements": {
+        "badges": 0,
+        "credits": 0,
+        "others": [],
+        "shards": 120,
+        "xp": 0
+      },
+      "below_deck_ability_value": [
+        1.5
+      ]
+    },
+    {
+      "rank_id": 2,
+      "name": "LIEUTENANT JG II",
+      "officer_ability_value": 0.03,
+      "requirements": {
+        "badges": 0,
+        "credits": 1350,
+        "others": [
+          {
+            "name": "Active Nanoprobe",
+            "value": 6000
+          }
+        ],
+        "shards": 120,
+        "xp": 0
+      },
+      "below_deck_ability_value": [
+        2.0
+      ]
+    },
+    {
+      "rank_id": 3,
+      "name": "LIEUTENANT III",
+      "officer_ability_value": 0.04,
+      "requirements": {
+        "badges": 1,
+        "credits": 5250,
+        "others": [
+          {
+            "name": "Active Nanoprobe",
+            "value": 120000
+          }
+        ],
+        "shards": 240,
+        "xp": 0
+      },
+      "below_deck_ability_value": [
+        3.0
+      ]
+    },
+    {
+      "rank_id": 4,
+      "name": "LT. COMMANDER IV",
+      "officer_ability_value": 0.05,
+      "requirements": {
+        "badges": 2,
+        "credits": 13225,
+        "others": [
+          {
+            "name": "Active Nanoprobe",
+            "value": 500000
+          }
+        ],
+        "shards": 360,
+        "xp": 0
+      },
+      "below_deck_ability_value": [
+        4.0
+      ]
+    },
+    {
+      "rank_id": 5,
+      "name": "COMMANDER V",
+      "officer_ability_value": 0.07,
+      "requirements": {
+        "badges": 4,
+        "credits": 30000,
+        "others": [
+          {
+            "name": "Active Nanoprobe",
+            "value": 1150000
+          }
+        ],
+        "shards": 960,
+        "xp": 0
+      },
+      "below_deck_ability_value": [
+        5.0
+      ]
+    }
+  ],
+  "img_url": "./assets/borg_queen.png"
 }

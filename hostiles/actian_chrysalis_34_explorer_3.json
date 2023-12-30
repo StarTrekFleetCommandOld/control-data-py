@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Actian Chrysalis",
   "description": "",
   "group": "actian",
+  "level": 34,
+  "rarity": "common",
   "head_stats": {
     "attack": 124092,
     "defense": 872085,
     "health": 46085492
   },
-  "hostile_name": "Actian Chrysalis",
-  "level": 34,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/donscheel_33"
+    },
+    {
+      "$ref": "systems/norght_34"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 51615761
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/donscheel_33"
-    },
-    {
-      "$ref": "systems/norght_34"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -167,6 +161,12 @@
         "shield_pierce": 3267
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

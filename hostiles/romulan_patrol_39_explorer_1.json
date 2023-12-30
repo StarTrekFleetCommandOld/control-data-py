@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 522807,
     "defense": 492285,
     "health": 1703927
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/tolain_40"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 1827968
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/tolain_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 20
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -71,6 +65,12 @@
         "shield_pierce": 47067
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 20
     }
   ]
 }

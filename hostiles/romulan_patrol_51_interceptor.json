@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 51,
+  "rarity": "common",
   "head_stats": {
     "attack": 4179348,
     "defense": 2485905,
     "health": 8883978
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 51,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/loch_grman_49"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 8460931
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/loch_grman_49"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 89380
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

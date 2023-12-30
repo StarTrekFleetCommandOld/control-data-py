@@ -1,38 +1,20 @@
 {
+  "hostile_name": "Baelosian Guardian",
   "description": "",
   "group": "federation",
+  "level": 50,
+  "rarity": "common",
   "head_stats": {
     "attack": 6576384,
     "defense": 2056005,
     "health": 9654338
   },
-  "hostile_name": "Baelosian Guardian",
-  "level": 50,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken battleship parts",
-      "max_value": 143,
-      "min_value": 143,
-      "value": 143
+      "$ref": "systems/draumen_50"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "romulan points",
-      "max_value": 12000,
-      "min_value": 12000,
-      "value": 12000
-    },
-    {
-      "type": "klingon points",
-      "max_value": 6000,
-      "min_value": 6000,
-      "value": 6000
+      "$ref": "systems/sementi_52"
     }
   ],
   "ship_class": "battleship",
@@ -55,19 +37,6 @@
       "shield_health": 8728547
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/draumen_50"
-    },
-    {
-      "$ref": "systems/sementi_52"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -130,6 +99,37 @@
         "shield_pierce": 280829
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken battleship parts",
+      "max_value": 143,
+      "min_value": 143,
+      "value": 143
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 12000,
+      "min_value": 12000,
+      "value": 12000
+    },
+    {
+      "type": "klingon points",
+      "max_value": 6000,
+      "min_value": 6000,
+      "value": 6000
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

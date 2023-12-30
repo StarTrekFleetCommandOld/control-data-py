@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Bird of Prey Annihilator \u21d5",
   "description": "",
   "group": "neutral",
+  "level": 37,
+  "rarity": "common",
   "head_stats": {
     "attack": 2356402,
     "defense": 838145,
     "health": 4073700
   },
-  "hostile_name": "Bird of Prey Annihilator \u21d5",
-  "level": 37,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "mycelium spore",
-      "max_value": 299,
-      "min_value": 299,
-      "value": 299
+      "$ref": "systems/velata_36"
+    },
+    {
+      "$ref": "systems/kraatu_36"
+    },
+    {
+      "$ref": "systems/evans_38"
+    },
+    {
+      "$ref": "systems/orai_12_36"
+    },
+    {
+      "$ref": "systems/tauro_34_38"
+    },
+    {
+      "$ref": "systems/sentaros_38"
     }
   ],
   "ship_class": "battleship",
@@ -37,31 +49,6 @@
       "shield_health": 3302998
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/velata_36"
-    },
-    {
-      "$ref": "systems/kraatu_36"
-    },
-    {
-      "$ref": "systems/evans_38"
-    },
-    {
-      "$ref": "systems/orai_12_36"
-    },
-    {
-      "$ref": "systems/tauro_34_38"
-    },
-    {
-      "$ref": "systems/sentaros_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 121538
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "mycelium spore",
+      "max_value": 299,
+      "min_value": 299,
+      "value": 299
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

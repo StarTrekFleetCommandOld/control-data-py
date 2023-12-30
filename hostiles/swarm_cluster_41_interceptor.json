@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Swarm Cluster",
   "description": "",
   "group": "swarm",
+  "level": 41,
+  "rarity": "common",
   "head_stats": {
     "attack": 1690633,
     "defense": 2039610,
     "health": 10197168
   },
-  "hostile_name": "Swarm Cluster",
-  "level": 41,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/siieqa_41"
+    },
+    {
+      "$ref": "systems/huik_41"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 0
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/siieqa_41"
-    },
-    {
-      "$ref": "systems/huik_41"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +130,12 @@
         "shield_pierce": 58269
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

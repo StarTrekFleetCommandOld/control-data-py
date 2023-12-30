@@ -1,20 +1,23 @@
 {
-  "description": "",
   "armada_name": "Formation Armada",
+  "description": "",
   "group": "neutral",
+  "level": 45,
+  "rarity": "uncommon",
   "head_stats": {
     "attack": 13293824,
     "defense": 6892170,
     "health": 395252518
   },
-  "level": 45,
-  "rarity": "uncommon",
-  "rewards": [
+  "systems": [
     {
-      "type": "Artifact Token",
-      "max_value": 2600,
-      "min_value": 2600,
-      "value": 2600
+      "$ref": "systems/new_talax_45"
+    },
+    {
+      "$ref": "systems/dawise_43"
+    },
+    {
+      "$ref": "systems/valla_terna_45"
     }
   ],
   "stats": {
@@ -36,17 +39,6 @@
       "shield_health": 382925518
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/new_talax_45"
-    },
-    {
-      "$ref": "systems/dawise_43"
-    },
-    {
-      "$ref": "systems/valla_terna_45"
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -97,6 +89,14 @@
         "shield_pierce": 560014
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "Artifact Token",
+      "max_value": 2600,
+      "min_value": 2600,
+      "value": 2600
     }
   ]
 }

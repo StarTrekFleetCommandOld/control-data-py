@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Reckless Bandit",
   "description": "",
   "group": "neutral",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 514175,
     "defense": 471235,
     "health": 153400
   },
-  "hostile_name": "Reckless Bandit",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 2461,
-      "min_value": 2461,
-      "value": 2461
+      "$ref": "systems/nikola_41"
+    },
+    {
+      "$ref": "systems/pneuma_40"
+    },
+    {
+      "$ref": "systems/s_vona_41"
     }
   ],
   "ship_class": "interceptor",
@@ -37,22 +40,6 @@
       "shield_health": 153400
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/nikola_41"
-    },
-    {
-      "$ref": "systems/pneuma_40"
-    },
-    {
-      "$ref": "systems/s_vona_41"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 15708
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 2461,
+      "min_value": 2461,
+      "value": 2461
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

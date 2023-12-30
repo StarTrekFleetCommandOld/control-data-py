@@ -1,41 +1,53 @@
 {
+  "ship_name": "USS DEFIANT",
   "description": "The Defiant, first of its class, was designed in 2366 as a response to the Borg threat. Its purpose was to fight and win, but, overwhelmed with the weaponry, it didn't perform well enough at the time, and the prototype was placed into storage. However, its glory days were soon to come. When the Federation faced the Dominion, a small, powerful and resourceful ship became one of the most valuable resources available at Deep Space Nine. The Defiant was assigned to simple patrols, research expeditions, rescue operations and doing what it was created for \u2013 fighting against the Federation's enemies.",
+  "ship_class": "interceptor",
+  "grade": 4,
+  "faction": "neutral",
+  "rarity": "epic",
   "blueprints": {
     "cost": 0,
     "quantity": 100
-  },
-  "faction": "neutral",
-  "grade": 4,
-  "img_url": "./assets/uss_defiant.png",
-  "rarity": "epic",
-  "requirements": [
-    {
-      "name": "Shipyard",
-      "level": 35
-    }
-  ],
-  "scrap_info": {
-    "scrappable": false
   },
   "ship_ability": {
     "title": "Resourceful Approach",
     "description": "Greatly reinforces other ships vs Armadas based on their Defiant research\nResourceful Approach\nIncrease Edict rewards by {value} when using the Defiant\nDefiant Weaponry\nUnlock powerful buffs which grant significantly enhanced effectiveness vs Jem'Hadar Solo Armadas when in combat with the Defiant\nBajoran Currency\nIncreases Bajoran Badges and Credits received from the \"Defiant Amplified Claim\"",
     "percentage": true
   },
-  "ship_class": "interceptor",
-  "ship_name": "USS DEFIANT",
+  "scrap_info": {
+    "scrappable": false
+  },
+  "requirements": [
+    {
+      "name": "Shipyard",
+      "level": 35
+    }
+  ],
   "tiers": [
     {
+      "tier": 1,
       "build_time": 2980800,
+      "repair_time": 84000,
       "components": [
         {
           "name": "Phaser Cannons",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1075,
               "armor_pierce": 19643,
               "crit_chance": 0.05,
               "crit_damage": 1.25,
+              "max_damage": 18581,
+              "min_damage": 10909,
+              "shield_pierce": 3409,
+              "weapon_type": "energy",
               "firing_pattern": [
                 4,
                 0,
@@ -46,30 +58,30 @@
                 4,
                 0,
                 4
-              ],
-              "max_damage": 18581,
-              "min_damage": 10909,
-              "shield_pierce": 3409,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 2875,
               "armor_pierce": 3929,
               "crit_chance": 0.03,
               "crit_damage": 1.15,
+              "max_damage": 6968,
+              "min_damage": 5455,
+              "shield_pierce": 682,
+              "weapon_type": "energy",
               "firing_pattern": [
                 1,
                 1,
@@ -80,30 +92,30 @@
                 1,
                 1,
                 1
-              ],
-              "max_damage": 6968,
-              "min_damage": 5455,
-              "shield_pierce": 682,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 1597,
               "armor_pierce": 31429,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 56452,
+              "min_damage": 43636,
+              "shield_pierce": 3409,
+              "weapon_type": "kinetic",
               "firing_pattern": [
                 0,
                 0,
@@ -114,118 +126,80 @@
                 0,
                 1,
                 0
-              ],
-              "max_damage": 56452,
-              "min_damage": 43636,
-              "shield_pierce": 3409,
-              "weapon_type": "kinetic"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "armor_info": {
               "armor": 475,
               "hull_health": 55000
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
+          "img_url": "./assets/component_warp_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "warp_info": {
               "warp_distance": 50,
               "warp_speed": 4.3
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
+          "img_url": "./assets/component_shield.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "shield_info": {
               "shield_deflection": 360,
               "shield_health": 50000
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "impulse_info": {
               "dodge": 7500,
               "impulse_speed": 100
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [
-          {
-            "type": "crystal",
-            "grade": 3,
-            "rarity": "common",
-            "value": 3840
-          },
-          {
-            "type": "gas",
-            "grade": 3,
-            "rarity": "common",
-            "value": 1245
-          }
-        ],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 24150000
-          },
-          {
-            "type": "dilithium",
-            "value": 2025000
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 2.5,
@@ -258,50 +232,65 @@
           "ship_xp": 29000
         }
       ],
-      "repair_time": 84000,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 24150000
+          },
+          {
+            "type": "dilithium",
+            "value": 2025000
+          }
+        ],
+        "materials": [
+          {
+            "type": "crystal",
+            "value": 3840,
+            "grade": 3,
+            "rarity": "common"
+          },
+          {
+            "type": "gas",
+            "value": 1245,
+            "grade": 3,
+            "rarity": "common"
+          }
+        ],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 720000,
+      "repair_time": 96000,
       "components": [
         {
           "name": "Phaser Cannons",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1212,
-              "armor_pierce": 22141,
-              "crit_chance": 0.05,
-              "crit_damage": 1.25,
-              "firing_pattern": [
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4
-              ],
-              "max_damage": 20944,
-              "min_damage": 12297,
-              "shield_pierce": 3843,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 77589000
+              },
+              {
+                "type": "dilithium",
+                "value": 661000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 1175,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1175
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 280,
                 "grade": 3,
-                "rarity": "common",
-                "value": 280
+                "rarity": "common"
               }
             ],
             "others": [
@@ -313,20 +302,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 3120
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 77589000
-              },
-              {
-                "type": "dilithium",
-                "value": 661000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -336,46 +313,58 @@
               "type": "dilithium",
               "value": 11520
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1212,
+              "armor_pierce": 22141,
+              "crit_chance": 0.05,
+              "crit_damage": 1.25,
+              "max_damage": 20944,
+              "min_damage": 12297,
+              "shield_pierce": 3843,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 3241,
-              "armor_pierce": 4428,
-              "crit_chance": 0.03,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 7854,
-              "min_damage": 6148,
-              "shield_pierce": 769,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 51726000
+              },
+              {
+                "type": "dilithium",
+                "value": 440000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 785,
                 "grade": 3,
-                "rarity": "common",
-                "value": 785
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 185,
                 "grade": 3,
-                "rarity": "common",
-                "value": 185
+                "rarity": "common"
               }
             ],
             "others": [
@@ -387,20 +376,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 1560
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 51726000
-              },
-              {
-                "type": "dilithium",
-                "value": 440000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -410,46 +387,58 @@
               "type": "dilithium",
               "value": 7680
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 3241,
+              "armor_pierce": 4428,
+              "crit_chance": 0.03,
+              "crit_damage": 1.15,
+              "max_damage": 7854,
+              "min_damage": 6148,
+              "shield_pierce": 769,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1800,
-              "armor_pierce": 35426,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "max_damage": 63632,
-              "min_damage": 49187,
-              "shield_pierce": 3843,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 103452000
+              },
+              {
+                "type": "dilithium",
+                "value": 881000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 1570,
                 "grade": 3,
-                "rarity": "common",
-                "value": 1570
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 375,
                 "grade": 3,
-                "rarity": "common",
-                "value": 375
+                "rarity": "common"
               }
             ],
             "others": [
@@ -461,20 +450,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 2340
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 103452000
-              },
-              {
-                "type": "dilithium",
-                "value": 881000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -484,29 +461,58 @@
               "type": "dilithium",
               "value": 15360
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1800,
+              "armor_pierce": 35426,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 63632,
+              "min_damage": 49187,
+              "shield_pierce": 3843,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 535,
-              "hull_health": 61996
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 51726000
+              },
+              {
+                "type": "dilithium",
+                "value": 440000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 785,
                 "grade": 3,
-                "rarity": "common",
-                "value": 785
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 185,
                 "grade": 3,
-                "rarity": "common",
-                "value": 185
+                "rarity": "common"
               }
             ],
             "others": [
@@ -518,20 +524,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 1560
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 51726000
-              },
-              {
-                "type": "dilithium",
-                "value": 440000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -541,29 +535,41 @@
               "type": "dilithium",
               "value": 7680
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 535,
+              "hull_health": 61996
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 65,
-              "warp_speed": 4.4
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 47416000
+              },
+              {
+                "type": "dilithium",
+                "value": 404000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 720,
                 "grade": 3,
-                "rarity": "common",
-                "value": 720
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 170,
                 "grade": 3,
-                "rarity": "common",
-                "value": 170
+                "rarity": "common"
               }
             ],
             "others": [
@@ -575,20 +581,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 1430
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 47416000
-              },
-              {
-                "type": "dilithium",
-                "value": 404000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -598,29 +592,41 @@
               "type": "dilithium",
               "value": 7040
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 65,
+              "warp_speed": 4.4
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 406,
-              "shield_health": 56360
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 51726000
+              },
+              {
+                "type": "dilithium",
+                "value": 440000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 785,
                 "grade": 3,
-                "rarity": "common",
-                "value": 785
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 185,
                 "grade": 3,
-                "rarity": "common",
-                "value": 185
+                "rarity": "common"
               }
             ],
             "others": [
@@ -632,20 +638,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 1560
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 51726000
-              },
-              {
-                "type": "dilithium",
-                "value": 440000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -655,29 +649,41 @@
               "type": "dilithium",
               "value": 7680
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 406,
+              "shield_health": 56360
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 8454,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 47416000
+              },
+              {
+                "type": "dilithium",
+                "value": 404000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 720,
                 "grade": 3,
-                "rarity": "common",
-                "value": 720
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 170,
                 "grade": 3,
-                "rarity": "common",
-                "value": 170
+                "rarity": "common"
               }
             ],
             "others": [
@@ -689,20 +695,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 1430
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 47416000
-              },
-              {
-                "type": "dilithium",
-                "value": 404000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -712,7 +706,14 @@
               "type": "dilithium",
               "value": 7040
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 8454,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -746,51 +747,39 @@
           "level": 10,
           "ship_xp": 130000
         }
-      ],
-      "repair_time": 96000,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 1440000,
+      "repair_time": 108000,
       "components": [
         {
           "name": "Phaser Cannons",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1485,
-              "armor_pierce": 27138,
-              "crit_chance": 0.05,
-              "crit_damage": 1.25,
-              "firing_pattern": [
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4
-              ],
-              "max_damage": 25671,
-              "min_damage": 15072,
-              "shield_pierce": 4710,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 181849000
+              },
+              {
+                "type": "dilithium",
+                "value": 1886000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 375,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 375
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 130,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 130
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -802,20 +791,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 6528
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 181849000
-              },
-              {
-                "type": "dilithium",
-                "value": 1886000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -825,46 +802,58 @@
               "type": "dilithium",
               "value": 23292
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1485,
+              "armor_pierce": 27138,
+              "crit_chance": 0.05,
+              "crit_damage": 1.25,
+              "max_damage": 25671,
+              "min_damage": 15072,
+              "shield_pierce": 4710,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 3972,
-              "armor_pierce": 5428,
-              "crit_chance": 0.03,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 9626,
-              "min_damage": 7536,
-              "shield_pierce": 942,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 121233000
+              },
+              {
+                "type": "dilithium",
+                "value": 1258000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 250,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 250
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 85,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 85
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -876,20 +865,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 3264
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 121233000
-              },
-              {
-                "type": "dilithium",
-                "value": 1258000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -899,46 +876,58 @@
               "type": "dilithium",
               "value": 15528
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 3972,
+              "armor_pierce": 5428,
+              "crit_chance": 0.03,
+              "crit_damage": 1.15,
+              "max_damage": 9626,
+              "min_damage": 7536,
+              "shield_pierce": 942,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 2207,
-              "armor_pierce": 43421,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "max_damage": 77992,
-              "min_damage": 60287,
-              "shield_pierce": 4710,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 242465000
+              },
+              {
+                "type": "dilithium",
+                "value": 2515000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 500,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 500
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 170,
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 170
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -950,20 +939,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 4896
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 242465000
-              },
-              {
-                "type": "dilithium",
-                "value": 2515000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -973,29 +950,58 @@
               "type": "dilithium",
               "value": 31056
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 2207,
+              "armor_pierce": 43421,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 77992,
+              "min_damage": 60287,
+              "shield_pierce": 4710,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 656,
-              "hull_health": 75987
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 121233000
+              },
+              {
+                "type": "dilithium",
+                "value": 1258000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 2980,
                 "grade": 3,
-                "rarity": "common",
-                "value": 2980
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 705,
                 "grade": 3,
-                "rarity": "common",
-                "value": 705
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1007,20 +1013,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 3264
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 121233000
-              },
-              {
-                "type": "dilithium",
-                "value": 1258000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1030,29 +1024,41 @@
               "type": "dilithium",
               "value": 15528
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 656,
+              "hull_health": 75987
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 80,
-              "warp_speed": 4.5
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 111130000
+              },
+              {
+                "type": "dilithium",
+                "value": 1153000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 2730,
                 "grade": 3,
-                "rarity": "common",
-                "value": 2730
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 645,
                 "grade": 3,
-                "rarity": "common",
-                "value": 645
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1064,20 +1070,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 2992
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 111130000
-              },
-              {
-                "type": "dilithium",
-                "value": 1153000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1087,29 +1081,41 @@
               "type": "dilithium",
               "value": 14234
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 80,
+              "warp_speed": 4.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 497,
-              "shield_health": 69079
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 121233000
+              },
+              {
+                "type": "dilithium",
+                "value": 1258000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 2980,
                 "grade": 3,
-                "rarity": "common",
-                "value": 2980
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 705,
                 "grade": 3,
-                "rarity": "common",
-                "value": 705
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1121,20 +1127,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 3264
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 121233000
-              },
-              {
-                "type": "dilithium",
-                "value": 1258000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1144,29 +1138,41 @@
               "type": "dilithium",
               "value": 15528
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 497,
+              "shield_health": 69079
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 10362,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 111130000
+              },
+              {
+                "type": "dilithium",
+                "value": 1153000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 2730,
                 "grade": 3,
-                "rarity": "common",
-                "value": 2730
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 645,
                 "grade": 3,
-                "rarity": "common",
-                "value": 645
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1178,20 +1184,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 2992
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 111130000
-              },
-              {
-                "type": "dilithium",
-                "value": 1153000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1201,7 +1195,14 @@
               "type": "dilithium",
               "value": 14234
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 10362,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1235,51 +1236,39 @@
           "level": 15,
           "ship_xp": 318000
         }
-      ],
-      "repair_time": 108000,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 2400000,
+      "repair_time": 126000,
       "components": [
         {
           "name": "Phaser Cannons",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1759,
-              "armor_pierce": 32135,
-              "crit_chance": 0.05,
-              "crit_damage": 1.25,
-              "firing_pattern": [
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4
-              ],
-              "max_damage": 30397,
-              "min_damage": 17847,
-              "shield_pierce": 5577,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 391325000
+              },
+              {
+                "type": "dilithium",
+                "value": 3552000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 770,
                 "grade": 4,
-                "rarity": "common",
-                "value": 770
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2555,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2555
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1291,20 +1280,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 785
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 391325000
-              },
-              {
-                "type": "dilithium",
-                "value": 3552000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1314,46 +1291,58 @@
               "type": "dilithium",
               "value": 232218
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1759,
+              "armor_pierce": 32135,
+              "crit_chance": 0.05,
+              "crit_damage": 1.25,
+              "max_damage": 30397,
+              "min_damage": 17847,
+              "shield_pierce": 5577,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 4703,
-              "armor_pierce": 6427,
-              "crit_chance": 0.03,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 11399,
-              "min_damage": 8923,
-              "shield_pierce": 1115,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 260883000
+              },
+              {
+                "type": "dilithium",
+                "value": 2368000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 515,
                 "grade": 4,
-                "rarity": "common",
-                "value": 515
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 1705,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1705
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1365,20 +1354,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 520
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 260883000
-              },
-              {
-                "type": "dilithium",
-                "value": 2368000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1388,46 +1365,58 @@
               "type": "dilithium",
               "value": 154812
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 4703,
+              "armor_pierce": 6427,
+              "crit_chance": 0.03,
+              "crit_damage": 1.15,
+              "max_damage": 11399,
+              "min_damage": 8923,
+              "shield_pierce": 1115,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 2613,
-              "armor_pierce": 51416,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "max_damage": 92353,
-              "min_damage": 71387,
-              "shield_pierce": 5577,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 521767000
+              },
+              {
+                "type": "dilithium",
+                "value": 4736000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1030,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1030
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 3410,
                 "grade": 4,
-                "rarity": "common",
-                "value": 3410
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1439,20 +1428,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 1045
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 521767000
-              },
-              {
-                "type": "dilithium",
-                "value": 4736000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1462,29 +1439,58 @@
               "type": "dilithium",
               "value": 309624
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 2613,
+              "armor_pierce": 51416,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 92353,
+              "min_damage": 71387,
+              "shield_pierce": 5577,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 777,
-              "hull_health": 89978
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 260883000
+              },
+              {
+                "type": "dilithium",
+                "value": 2368000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 515,
                 "grade": 4,
-                "rarity": "common",
-                "value": 515
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 1705,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1705
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1496,20 +1502,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 520
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 260883000
-              },
-              {
-                "type": "dilithium",
-                "value": 2368000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1519,29 +1513,41 @@
               "type": "dilithium",
               "value": 154812
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 777,
+              "hull_health": 89978
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 100,
-              "warp_speed": 4.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 239143000
+              },
+              {
+                "type": "dilithium",
+                "value": 2171000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 470,
                 "grade": 4,
-                "rarity": "common",
-                "value": 470
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 1560,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1560
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1553,20 +1559,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 480
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 239143000
-              },
-              {
-                "type": "dilithium",
-                "value": 2171000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1576,29 +1570,41 @@
               "type": "dilithium",
               "value": 141911
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 100,
+              "warp_speed": 4.6
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 589,
-              "shield_health": 81798
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 260883000
+              },
+              {
+                "type": "dilithium",
+                "value": 2368000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 515,
                 "grade": 4,
-                "rarity": "common",
-                "value": 515
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 1705,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1705
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1610,20 +1616,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 520
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 260883000
-              },
-              {
-                "type": "dilithium",
-                "value": 2368000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1633,29 +1627,41 @@
               "type": "dilithium",
               "value": 154812
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 589,
+              "shield_health": 81798
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 12270,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 239143000
+              },
+              {
+                "type": "dilithium",
+                "value": 2171000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 470,
                 "grade": 4,
-                "rarity": "common",
-                "value": 470
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 1560,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1560
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1667,20 +1673,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 7005
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 239143000
-              },
-              {
-                "type": "dilithium",
-                "value": 2171000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1690,7 +1684,14 @@
               "type": "dilithium",
               "value": 141911
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 12270,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1724,51 +1725,39 @@
           "level": 20,
           "ship_xp": 628000
         }
-      ],
-      "repair_time": 126000,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 3600000,
+      "repair_time": 138000,
       "components": [
         {
           "name": "Phaser Cannons",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 2237,
-              "armor_pierce": 40874,
-              "crit_chance": 0.05,
-              "crit_damage": 1.25,
-              "firing_pattern": [
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4
-              ],
-              "max_damage": 38664,
-              "min_damage": 22700,
-              "shield_pierce": 7094,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 902422000
+              },
+              {
+                "type": "dilithium",
+                "value": 13523000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1295,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1295
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 4185,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4185
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1780,20 +1769,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 1555
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 902422000
-              },
-              {
-                "type": "dilithium",
-                "value": 13523000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1803,46 +1780,58 @@
               "type": "dilithium",
               "value": 442494
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 2237,
+              "armor_pierce": 40874,
+              "crit_chance": 0.05,
+              "crit_damage": 1.25,
+              "max_damage": 38664,
+              "min_damage": 22700,
+              "shield_pierce": 7094,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 5982,
-              "armor_pierce": 8175,
-              "crit_chance": 0.03,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 14499,
-              "min_damage": 11350,
-              "shield_pierce": 1419,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 601615000
+              },
+              {
+                "type": "dilithium",
+                "value": 9016000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 865,
                 "grade": 4,
-                "rarity": "common",
-                "value": 865
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2790,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2790
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1854,20 +1843,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 1035
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 601615000
-              },
-              {
-                "type": "dilithium",
-                "value": 9016000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1877,46 +1854,58 @@
               "type": "dilithium",
               "value": 294996
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 5982,
+              "armor_pierce": 8175,
+              "crit_chance": 0.03,
+              "crit_damage": 1.15,
+              "max_damage": 14499,
+              "min_damage": 11350,
+              "shield_pierce": 1419,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 3324,
-              "armor_pierce": 65398,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "max_damage": 117468,
-              "min_damage": 90801,
-              "shield_pierce": 7094,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1203229000
+              },
+              {
+                "type": "dilithium",
+                "value": 18031000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1730,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1730
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 5580,
                 "grade": 4,
-                "rarity": "common",
-                "value": 5580
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1928,20 +1917,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 2075
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1203229000
-              },
-              {
-                "type": "dilithium",
-                "value": 18031000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1951,29 +1928,58 @@
               "type": "dilithium",
               "value": 589992
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 3324,
+              "armor_pierce": 65398,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 117468,
+              "min_damage": 90801,
+              "shield_pierce": 7094,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 988,
-              "hull_health": 114447
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 601615000
+              },
+              {
+                "type": "dilithium",
+                "value": 9016000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 865,
                 "grade": 4,
-                "rarity": "common",
-                "value": 865
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2790,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2790
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1985,20 +1991,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 1035
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 601615000
-              },
-              {
-                "type": "dilithium",
-                "value": 9016000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2008,29 +2002,41 @@
               "type": "dilithium",
               "value": 294996
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 988,
+              "hull_health": 114447
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 110,
-              "warp_speed": 4.7
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 551480000
+              },
+              {
+                "type": "dilithium",
+                "value": 8264000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 790,
                 "grade": 4,
-                "rarity": "common",
-                "value": 790
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2555,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2555
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2042,20 +2048,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 950
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 551480000
-              },
-              {
-                "type": "dilithium",
-                "value": 8264000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2065,29 +2059,41 @@
               "type": "dilithium",
               "value": 270413
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 110,
+              "warp_speed": 4.7
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 749,
-              "shield_health": 104043
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 601615000
+              },
+              {
+                "type": "dilithium",
+                "value": 9016000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 865,
                 "grade": 4,
-                "rarity": "common",
-                "value": 865
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2790,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2790
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2099,20 +2105,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 1035
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 601615000
-              },
-              {
-                "type": "dilithium",
-                "value": 9016000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2122,29 +2116,41 @@
               "type": "dilithium",
               "value": 294996
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 749,
+              "shield_health": 104043
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 15606,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 551480000
+              },
+              {
+                "type": "dilithium",
+                "value": 8264000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 790,
                 "grade": 4,
-                "rarity": "common",
-                "value": 790
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2555,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2555
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2156,20 +2162,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 11550
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 551480000
-              },
-              {
-                "type": "dilithium",
-                "value": 8264000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2179,7 +2173,14 @@
               "type": "dilithium",
               "value": 270413
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 15606,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2213,51 +2214,39 @@
           "level": 25,
           "ship_xp": 1083000
         }
-      ],
-      "repair_time": 138000,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 4800000,
+      "repair_time": 156000,
       "components": [
         {
           "name": "Phaser Cannons",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 2920,
-              "armor_pierce": 53355,
-              "crit_chance": 0.05,
-              "crit_damage": 1.25,
-              "firing_pattern": [
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4
-              ],
-              "max_damage": 50470,
-              "min_damage": 29632,
-              "shield_pierce": 9260,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2282386000
+              },
+              {
+                "type": "dilithium",
+                "value": 38483000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2120,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2120
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 3585,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 3585
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2269,20 +2258,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 2710
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2282386000
-              },
-              {
-                "type": "dilithium",
-                "value": 38483000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2292,46 +2269,58 @@
               "type": "dilithium",
               "value": 779490
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 2920,
+              "armor_pierce": 53355,
+              "crit_chance": 0.05,
+              "crit_damage": 1.25,
+              "max_damage": 50470,
+              "min_damage": 29632,
+              "shield_pierce": 9260,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 7809,
-              "armor_pierce": 10671,
-              "crit_chance": 0.03,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 18926,
-              "min_damage": 14816,
-              "shield_pierce": 1852,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1521590000
+              },
+              {
+                "type": "dilithium",
+                "value": 25656000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1415,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1415
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2390,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2390
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2343,20 +2332,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 1805
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1521590000
-              },
-              {
-                "type": "dilithium",
-                "value": 25656000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2366,46 +2343,58 @@
               "type": "dilithium",
               "value": 519660
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 7809,
+              "armor_pierce": 10671,
+              "crit_chance": 0.03,
+              "crit_damage": 1.15,
+              "max_damage": 18926,
+              "min_damage": 14816,
+              "shield_pierce": 1852,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 4338,
-              "armor_pierce": 85368,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "max_damage": 153338,
-              "min_damage": 118528,
-              "shield_pierce": 9260,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3043181000
+              },
+              {
+                "type": "dilithium",
+                "value": 51311000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2830,
                 "grade": 4,
-                "rarity": "common",
-                "value": 2830
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 4780,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 4780
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2417,20 +2406,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 3610
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3043181000
-              },
-              {
-                "type": "dilithium",
-                "value": 51311000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2440,29 +2417,58 @@
               "type": "dilithium",
               "value": 1039320
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 4338,
+              "armor_pierce": 85368,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 153338,
+              "min_damage": 118528,
+              "shield_pierce": 9260,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1290,
-              "hull_health": 149395
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1521590000
+              },
+              {
+                "type": "dilithium",
+                "value": 25656000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1415,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1415
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 10120,
                 "grade": 4,
-                "rarity": "common",
-                "value": 10120
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2474,20 +2480,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 1805
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1521590000
-              },
-              {
-                "type": "dilithium",
-                "value": 25656000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2497,29 +2491,41 @@
               "type": "dilithium",
               "value": 519660
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1290,
+              "hull_health": 149395
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 120,
-              "warp_speed": 4.8
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1394791000
+              },
+              {
+                "type": "dilithium",
+                "value": 23518000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1295,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1295
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 9275,
                 "grade": 4,
-                "rarity": "common",
-                "value": 9275
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2531,20 +2537,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 1655
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1394791000
-              },
-              {
-                "type": "dilithium",
-                "value": 23518000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2554,29 +2548,41 @@
               "type": "dilithium",
               "value": 476355
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 120,
+              "warp_speed": 4.8
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 978,
-              "shield_health": 135813
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1521590000
+              },
+              {
+                "type": "dilithium",
+                "value": 25656000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1415,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1415
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 10120,
                 "grade": 4,
-                "rarity": "common",
-                "value": 10120
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2588,20 +2594,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 1805
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1521590000
-              },
-              {
-                "type": "dilithium",
-                "value": 25656000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2611,29 +2605,41 @@
               "type": "dilithium",
               "value": 519660
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 978,
+              "shield_health": 135813
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 20372,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1394791000
+              },
+              {
+                "type": "dilithium",
+                "value": 23518000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1295,
                 "grade": 4,
-                "rarity": "common",
-                "value": 1295
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 9275,
                 "grade": 4,
-                "rarity": "common",
-                "value": 9275
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2645,20 +2651,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 25262
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1394791000
-              },
-              {
-                "type": "dilithium",
-                "value": 23518000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2668,7 +2662,14 @@
               "type": "dilithium",
               "value": 476355
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 20372,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2702,51 +2703,39 @@
           "level": 30,
           "ship_xp": 1640000
         }
-      ],
-      "repair_time": 156000,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 6000000,
+      "repair_time": 174000,
       "components": [
         {
           "name": "Phaser Cannons",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 3710,
-              "armor_pierce": 67792,
-              "crit_chance": 0.05,
-              "crit_damage": 1.25,
-              "firing_pattern": [
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4
-              ],
-              "max_damage": 64126,
-              "min_damage": 37650,
-              "shield_pierce": 11766,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5314779000
+              },
+              {
+                "type": "dilithium",
+                "value": 86030000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1630,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1630
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 3755,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 3755
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2758,20 +2747,8 @@
                 "type": "Plasma Conduits",
                 "value": 31743
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5314779000
-              },
-              {
-                "type": "dilithium",
-                "value": 86030000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2781,46 +2758,58 @@
               "type": "dilithium",
               "value": 1568898
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 3710,
+              "armor_pierce": 67792,
+              "crit_chance": 0.05,
+              "crit_damage": 1.25,
+              "max_damage": 64126,
+              "min_damage": 37650,
+              "shield_pierce": 11766,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 9922,
-              "armor_pierce": 13558,
-              "crit_chance": 0.03,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 24047,
-              "min_damage": 18825,
-              "shield_pierce": 2353,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3543186000
+              },
+              {
+                "type": "dilithium",
+                "value": 57353000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1085,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1085
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 2505,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2505
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2832,20 +2821,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 43697
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3543186000
-              },
-              {
-                "type": "dilithium",
-                "value": 57353000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2855,46 +2832,58 @@
               "type": "dilithium",
               "value": 1045932
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 9922,
+              "armor_pierce": 13558,
+              "crit_chance": 0.03,
+              "crit_damage": 1.15,
+              "max_damage": 24047,
+              "min_damage": 18825,
+              "shield_pierce": 2353,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 5512,
-              "armor_pierce": 108467,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "max_damage": 194828,
-              "min_damage": 150599,
-              "shield_pierce": 11766,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7086372000
+              },
+              {
+                "type": "dilithium",
+                "value": 114707000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2175,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2175
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 5005,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 5005
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2906,20 +2895,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 8010
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 7086372000
-              },
-              {
-                "type": "dilithium",
-                "value": 114707000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2929,29 +2906,58 @@
               "type": "dilithium",
               "value": 2091864
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 5512,
+              "armor_pierce": 108467,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 194828,
+              "min_damage": 150599,
+              "shield_pierce": 11766,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1639,
-              "hull_health": 189818
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3543186000
+              },
+              {
+                "type": "dilithium",
+                "value": 57353000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4615,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4615
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2505,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2505
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2963,20 +2969,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 4005
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3543186000
-              },
-              {
-                "type": "dilithium",
-                "value": 57353000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2986,29 +2980,41 @@
               "type": "dilithium",
               "value": 1045932
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1639,
+              "hull_health": 189818
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 150,
-              "warp_speed": 4.9
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3247921000
+              },
+              {
+                "type": "dilithium",
+                "value": 52574000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4230,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4230
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 29415,
                 "grade": 4,
-                "rarity": "common",
-                "value": 29415
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3020,20 +3026,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 3670
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3247921000
-              },
-              {
-                "type": "dilithium",
-                "value": 52574000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3043,29 +3037,41 @@
               "type": "dilithium",
               "value": 958771
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 150,
+              "warp_speed": 4.9
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1242,
-              "shield_health": 172562
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3543186000
+              },
+              {
+                "type": "dilithium",
+                "value": 57353000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4615,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4615
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 2505,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2505
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3077,20 +3083,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 4005
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3543186000
-              },
-              {
-                "type": "dilithium",
-                "value": 57353000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3100,29 +3094,41 @@
               "type": "dilithium",
               "value": 1045932
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1242,
+              "shield_health": 172562
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 25884,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3247921000
+              },
+              {
+                "type": "dilithium",
+                "value": 52574000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4230,
                 "grade": 4,
-                "rarity": "common",
-                "value": 4230
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 29415,
                 "grade": 4,
-                "rarity": "common",
-                "value": 29415
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3134,20 +3140,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 40055
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3247921000
-              },
-              {
-                "type": "dilithium",
-                "value": 52574000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3157,7 +3151,14 @@
               "type": "dilithium",
               "value": 958771
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 25884,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3191,51 +3192,39 @@
           "level": 35,
           "ship_xp": 2433000
         }
-      ],
-      "repair_time": 174000,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 7800000,
+      "repair_time": 192000,
       "components": [
         {
           "name": "Phaser Cannons",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 4256,
-              "armor_pierce": 77763,
-              "crit_chance": 0.05,
-              "crit_damage": 1.25,
-              "firing_pattern": [
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4
-              ],
-              "max_damage": 73558,
-              "min_damage": 43188,
-              "shield_pierce": 13496,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 12790538000
+              },
+              {
+                "type": "dilithium",
+                "value": 251872000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1680,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1680
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 2295,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 2295
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3247,20 +3236,8 @@
                 "type": "Plasma Conduits",
                 "value": 75793
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 12790538000
-              },
-              {
-                "type": "dilithium",
-                "value": 251872000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3270,46 +3247,58 @@
               "type": "dilithium",
               "value": 2588238
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 4256,
+              "armor_pierce": 77763,
+              "crit_chance": 0.05,
+              "crit_damage": 1.25,
+              "max_damage": 73558,
+              "min_damage": 43188,
+              "shield_pierce": 13496,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 11382,
-              "armor_pierce": 15553,
-              "crit_chance": 0.03,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 27584,
-              "min_damage": 21594,
-              "shield_pierce": 2699,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8527026000
+              },
+              {
+                "type": "dilithium",
+                "value": 167915000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1120,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1120
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 1530,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1530
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3321,20 +3310,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 69828
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8527026000
-              },
-              {
-                "type": "dilithium",
-                "value": 167915000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3344,46 +3321,58 @@
               "type": "dilithium",
               "value": 1725492
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 11382,
+              "armor_pierce": 15553,
+              "crit_chance": 0.03,
+              "crit_damage": 1.15,
+              "max_damage": 27584,
+              "min_damage": 21594,
+              "shield_pierce": 2699,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 6323,
-              "armor_pierce": 124421,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "max_damage": 223484,
-              "min_damage": 172750,
-              "shield_pierce": 13496,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 17054051000
+              },
+              {
+                "type": "dilithium",
+                "value": 335830000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2240,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2240
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 3055,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 3055
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3395,20 +3384,8 @@
                 "type": "Plasma Conduits",
                 "value": 56845
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 17054051000
-              },
-              {
-                "type": "dilithium",
-                "value": 335830000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3418,29 +3395,58 @@
               "type": "dilithium",
               "value": 3450984
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 6323,
+              "armor_pierce": 124421,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 223484,
+              "min_damage": 172750,
+              "shield_pierce": 13496,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 1880,
-              "hull_health": 217737
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8527026000
+              },
+              {
+                "type": "dilithium",
+                "value": 167915000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1120,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1120
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 12040,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 12040
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3452,20 +3458,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 69828
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8527026000
-              },
-              {
-                "type": "dilithium",
-                "value": 167915000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3475,29 +3469,41 @@
               "type": "dilithium",
               "value": 1725492
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1880,
+              "hull_health": 217737
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 175,
-              "warp_speed": 5.0
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7816440000
+              },
+              {
+                "type": "dilithium",
+                "value": 153922000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 13205,
                 "grade": 4,
-                "rarity": "common",
-                "value": 13205
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 43660,
                 "grade": 4,
-                "rarity": "common",
-                "value": 43660
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3509,20 +3515,8 @@
                 "type": "4\u2605 Common Interceptor Parts",
                 "value": 17470
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 7816440000
-              },
-              {
-                "type": "dilithium",
-                "value": 153922000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3532,29 +3526,41 @@
               "type": "dilithium",
               "value": 1581701
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 175,
+              "warp_speed": 5.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1425,
-              "shield_health": 197943
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8527026000
+              },
+              {
+                "type": "dilithium",
+                "value": 167915000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1120,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1120
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 12040,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 12040
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3566,20 +3572,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 69828
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8527026000
-              },
-              {
-                "type": "dilithium",
-                "value": 167915000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3589,29 +3583,41 @@
               "type": "dilithium",
               "value": 1725492
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1425,
+              "shield_health": 197943
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 29691,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7816440000
+              },
+              {
+                "type": "dilithium",
+                "value": 153922000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 13205,
                 "grade": 4,
-                "rarity": "common",
-                "value": 13205
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 43660,
                 "grade": 4,
-                "rarity": "common",
-                "value": 43660
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3623,20 +3629,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 64009
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 7816440000
-              },
-              {
-                "type": "dilithium",
-                "value": 153922000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3646,7 +3640,14 @@
               "type": "dilithium",
               "value": 1581701
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 29691,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3680,51 +3681,39 @@
           "level": 40,
           "ship_xp": 3445000
         }
-      ],
-      "repair_time": 192000,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 9600000,
+      "repair_time": 210000,
       "components": [
         {
           "name": "Phaser Cannons",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 4917,
-              "armor_pierce": 89838,
-              "crit_chance": 0.05,
-              "crit_damage": 1.25,
-              "firing_pattern": [
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4
-              ],
-              "max_damage": 84980,
-              "min_damage": 49893,
-              "shield_pierce": 15592,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 30009927000
+              },
+              {
+                "type": "dilithium",
+                "value": 574961000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1065,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1065
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 2445,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 2445
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3736,20 +3725,8 @@
                 "type": "Plasma Conduits",
                 "value": 132222
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 30009927000
-              },
-              {
-                "type": "dilithium",
-                "value": 574961000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3759,46 +3736,58 @@
               "type": "dilithium",
               "value": 3304962
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 4917,
+              "armor_pierce": 89838,
+              "crit_chance": 0.05,
+              "crit_damage": 1.25,
+              "max_damage": 84980,
+              "min_damage": 49893,
+              "shield_pierce": 15592,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 13149,
-              "armor_pierce": 17968,
-              "crit_chance": 0.03,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 31867,
-              "min_damage": 24947,
-              "shield_pierce": 3118,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 20006618000
+              },
+              {
+                "type": "dilithium",
+                "value": 383307000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 710,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 710
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 1630,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1630
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3810,20 +3799,8 @@
                 "type": "Plasma Conduits",
                 "value": 66111
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 20006618000
-              },
-              {
-                "type": "dilithium",
-                "value": 383307000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3833,46 +3810,58 @@
               "type": "dilithium",
               "value": 2203308
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 13149,
+              "armor_pierce": 17968,
+              "crit_chance": 0.03,
+              "crit_damage": 1.15,
+              "max_damage": 31867,
+              "min_damage": 24947,
+              "shield_pierce": 3118,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 7305,
-              "armor_pierce": 143740,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "max_damage": 258184,
-              "min_damage": 199573,
-              "shield_pierce": 15592,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 40013235000
+              },
+              {
+                "type": "dilithium",
+                "value": 766614000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1420,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1420
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 3260,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 3260
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3884,20 +3873,8 @@
                 "type": "Plasma Conduits",
                 "value": 99167
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 40013235000
-              },
-              {
-                "type": "dilithium",
-                "value": 766614000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3907,29 +3884,58 @@
               "type": "dilithium",
               "value": 4406616
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 7305,
+              "armor_pierce": 143740,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 258184,
+              "min_damage": 199573,
+              "shield_pierce": 15592,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 2172,
-              "hull_health": 251545
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 20006618000
+              },
+              {
+                "type": "dilithium",
+                "value": 383307000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2900,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2900
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 1630,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1630
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3941,20 +3947,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 133533
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 20006618000
-              },
-              {
-                "type": "dilithium",
-                "value": 383307000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3964,29 +3958,41 @@
               "type": "dilithium",
               "value": 2203308
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 2172,
+              "hull_health": 251545
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 190,
-              "warp_speed": 5.1
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 18339400000
+              },
+              {
+                "type": "dilithium",
+                "value": 351365000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2655,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2655
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 18435,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 18435
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3998,20 +4004,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 122405
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 18339400000
-              },
-              {
-                "type": "dilithium",
-                "value": 351365000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4021,29 +4015,41 @@
               "type": "dilithium",
               "value": 2019699
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 190,
+              "warp_speed": 5.1
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1646,
-              "shield_health": 228678
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 20006618000
+              },
+              {
+                "type": "dilithium",
+                "value": 383307000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2900,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2900
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 1630,
                 "grade": 4,
-                "rarity": "rare",
-                "value": 1630
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -4055,20 +4061,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 133533
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 20006618000
-              },
-              {
-                "type": "dilithium",
-                "value": 383307000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4078,29 +4072,41 @@
               "type": "dilithium",
               "value": 2203308
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1646,
+              "shield_health": 228678
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 34302,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 18339400000
+              },
+              {
+                "type": "dilithium",
+                "value": 351365000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2655,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2655
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 18435,
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 18435
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4112,20 +4118,8 @@
                 "type": "Isolinear Optical Chip T9",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 18339400000
-              },
-              {
-                "type": "dilithium",
-                "value": 351365000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4135,7 +4129,14 @@
               "type": "dilithium",
               "value": 2019699
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 34302,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4169,51 +4170,39 @@
           "level": 45,
           "ship_xp": 4543000
         }
-      ],
-      "repair_time": 210000,
-      "tier": 9
+      ]
     },
     {
+      "tier": 10,
       "build_time": 12000000,
+      "repair_time": 228000,
       "components": [
         {
           "name": "Phaser Cannons",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 5850,
-              "armor_pierce": 106886,
-              "crit_chance": 0.05,
-              "crit_damage": 1.25,
-              "firing_pattern": [
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4
-              ],
-              "max_damage": 101106,
-              "min_damage": 59361,
-              "shield_pierce": 18550,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 81169430000
+              },
+              {
+                "type": "dilithium",
+                "value": 1580420000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3160,
                 "grade": 5,
-                "rarity": "common",
-                "value": 3160
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 10480,
                 "grade": 5,
-                "rarity": "common",
-                "value": 10480
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4225,20 +4214,8 @@
                 "type": "Plasma Conduits",
                 "value": 196444
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 81169430000
-              },
-              {
-                "type": "dilithium",
-                "value": 1580420000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4248,46 +4225,58 @@
               "type": "dilithium",
               "value": 11356128
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 5850,
+              "armor_pierce": 106886,
+              "crit_chance": 0.05,
+              "crit_damage": 1.25,
+              "max_damage": 101106,
+              "min_damage": 59361,
+              "shield_pierce": 18550,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 15644,
-              "armor_pierce": 21377,
-              "crit_chance": 0.03,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 37915,
-              "min_damage": 29681,
-              "shield_pierce": 3710,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 54112954000
+              },
+              {
+                "type": "dilithium",
+                "value": 1053613000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2105,
                 "grade": 5,
-                "rarity": "common",
-                "value": 2105
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 6985,
                 "grade": 5,
-                "rarity": "common",
-                "value": 6985
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4299,20 +4288,8 @@
                 "type": "Plasma Conduits",
                 "value": 98222
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 54112954000
-              },
-              {
-                "type": "dilithium",
-                "value": 1053613000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4322,46 +4299,58 @@
               "type": "dilithium",
               "value": 7570752
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 15644,
+              "armor_pierce": 21377,
+              "crit_chance": 0.03,
+              "crit_damage": 1.15,
+              "max_damage": 37915,
+              "min_damage": 29681,
+              "shield_pierce": 3710,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 8691,
-              "armor_pierce": 171017,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "max_damage": 307179,
-              "min_damage": 237446,
-              "shield_pierce": 18550,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 108225907000
+              },
+              {
+                "type": "dilithium",
+                "value": 2107227000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4210,
                 "grade": 5,
-                "rarity": "common",
-                "value": 4210
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 13975,
                 "grade": 5,
-                "rarity": "common",
-                "value": 13975
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4373,20 +4362,8 @@
                 "type": "Plasma Conduits",
                 "value": 147333
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 108225907000
-              },
-              {
-                "type": "dilithium",
-                "value": 2107227000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4396,29 +4373,58 @@
               "type": "dilithium",
               "value": 15141504
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 8691,
+              "armor_pierce": 171017,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 307179,
+              "min_damage": 237446,
+              "shield_pierce": 18550,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 2585,
-              "hull_health": 299280
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 54112954000
+              },
+              {
+                "type": "dilithium",
+                "value": 1053613000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2105,
                 "grade": 5,
-                "rarity": "common",
-                "value": 2105
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 6985,
                 "grade": 5,
-                "rarity": "common",
-                "value": 6985
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4430,20 +4436,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 198626
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 54112954000
-              },
-              {
-                "type": "dilithium",
-                "value": 1053613000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4453,29 +4447,41 @@
               "type": "dilithium",
               "value": 7570752
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 2585,
+              "hull_health": 299280
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 220,
-              "warp_speed": 5.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 49603541000
+              },
+              {
+                "type": "dilithium",
+                "value": 965812000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1930,
                 "grade": 5,
-                "rarity": "common",
-                "value": 1930
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 6405,
                 "grade": 5,
-                "rarity": "common",
-                "value": 6405
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4487,20 +4493,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 182074
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 49603541000
-              },
-              {
-                "type": "dilithium",
-                "value": 965812000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4510,29 +4504,41 @@
               "type": "dilithium",
               "value": 6939856
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 220,
+              "warp_speed": 5.2
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 1959,
-              "shield_health": 272073
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 54112954000
+              },
+              {
+                "type": "dilithium",
+                "value": 1053613000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 2105,
                 "grade": 5,
-                "rarity": "common",
-                "value": 2105
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 6985,
                 "grade": 5,
-                "rarity": "common",
-                "value": 6985
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4544,20 +4550,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 198626
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 54112954000
-              },
-              {
-                "type": "dilithium",
-                "value": 1053613000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4567,29 +4561,41 @@
               "type": "dilithium",
               "value": 7570752
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 1959,
+              "shield_health": 272073
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 40811,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 49603541000
+              },
+              {
+                "type": "dilithium",
+                "value": 965812000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1930,
                 "grade": 5,
-                "rarity": "common",
-                "value": 1930
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 6405,
                 "grade": 5,
-                "rarity": "common",
-                "value": 6405
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4601,20 +4607,8 @@
                 "type": "Isolinear Optical Chip T10",
                 "value": 1
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 49603541000
-              },
-              {
-                "type": "dilithium",
-                "value": 965812000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4624,7 +4618,14 @@
               "type": "dilithium",
               "value": 6939856
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 40811,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4658,51 +4659,39 @@
           "level": 50,
           "ship_xp": 6040000
         }
-      ],
-      "repair_time": 228000,
-      "tier": 10
+      ]
     },
     {
+      "tier": 11,
       "build_time": 15600000,
+      "repair_time": 246000,
       "components": [
         {
           "name": "Phaser Cannons",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 9841,
-              "armor_pierce": 179821,
-              "crit_chance": 0.05,
-              "crit_damage": 1.25,
-              "firing_pattern": [
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4
-              ],
-              "max_damage": 170097,
-              "min_damage": 99868,
-              "shield_pierce": 31209,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 155239056000
+              },
+              {
+                "type": "dilithium",
+                "value": 2899962000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 5905,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 5905
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 1560,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 1560
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4714,20 +4703,8 @@
                 "type": "Plasma Conduits",
                 "value": 318889
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 155239056000
-              },
-              {
-                "type": "dilithium",
-                "value": 2899962000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4737,46 +4714,58 @@
               "type": "dilithium",
               "value": 15820218
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 9841,
+              "armor_pierce": 179821,
+              "crit_chance": 0.05,
+              "crit_damage": 1.25,
+              "max_damage": 170097,
+              "min_damage": 99868,
+              "shield_pierce": 31209,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 26319,
-              "armor_pierce": 35964,
-              "crit_chance": 0.03,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 63786,
-              "min_damage": 49934,
-              "shield_pierce": 6242,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 103492704000
+              },
+              {
+                "type": "dilithium",
+                "value": 1933308000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 3940,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 3940
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 1040,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 1040
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4788,20 +4777,8 @@
                 "type": "Plasma Conduits",
                 "value": 159444
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 103492704000
-              },
-              {
-                "type": "dilithium",
-                "value": 1933308000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4811,46 +4788,58 @@
               "type": "dilithium",
               "value": 10546812
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 26319,
+              "armor_pierce": 35964,
+              "crit_chance": 0.03,
+              "crit_damage": 1.15,
+              "max_damage": 63786,
+              "min_damage": 49934,
+              "shield_pierce": 6242,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 14622,
-              "armor_pierce": 287714,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "max_damage": 516788,
-              "min_damage": 399470,
-              "shield_pierce": 31209,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 206985408000
+              },
+              {
+                "type": "dilithium",
+                "value": 3866616000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 7875,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 7875
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 2080,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 2080
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4862,20 +4851,8 @@
                 "type": "Plasma Conduits",
                 "value": 239167
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 206985408000
-              },
-              {
-                "type": "dilithium",
-                "value": 3866616000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4885,29 +4862,58 @@
               "type": "dilithium",
               "value": 21093624
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 14622,
+              "armor_pierce": 287714,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 516788,
+              "min_damage": 399470,
+              "shield_pierce": 31209,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 4348,
-              "hull_health": 503499
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 103492704000
+              },
+              {
+                "type": "dilithium",
+                "value": 1933308000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 3940,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 3940
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 1040,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 1040
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4919,20 +4925,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 286957
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 103492704000
-              },
-              {
-                "type": "dilithium",
-                "value": 1933308000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4942,29 +4936,41 @@
               "type": "dilithium",
               "value": 10546812
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 4348,
+              "hull_health": 503499
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 340,
-              "warp_speed": 5.3
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 94868312000
+              },
+              {
+                "type": "dilithium",
+                "value": 1772199000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 25190,
                 "grade": 5,
-                "rarity": "common",
-                "value": 25190
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 41800,
                 "grade": 5,
-                "rarity": "common",
-                "value": 41800
+                "rarity": "common"
               }
             ],
             "others": [
@@ -4976,20 +4982,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 263043
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 94868312000
-              },
-              {
-                "type": "dilithium",
-                "value": 1772199000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4999,29 +4993,41 @@
               "type": "dilithium",
               "value": 9667911
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 340,
+              "warp_speed": 5.3
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 3296,
-              "shield_health": 457726
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 103492704000
+              },
+              {
+                "type": "dilithium",
+                "value": 1933308000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 3940,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 3940
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 1040,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 1040
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5033,20 +5039,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 286957
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 103492704000
-              },
-              {
-                "type": "dilithium",
-                "value": 1933308000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5056,29 +5050,41 @@
               "type": "dilithium",
               "value": 10546812
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 3296,
+              "shield_health": 457726
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 68659,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 94868312000
+              },
+              {
+                "type": "dilithium",
+                "value": 1772199000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 41800,
                 "grade": 5,
-                "rarity": "common",
-                "value": 41800
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 955,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 955
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5090,20 +5096,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 263043
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 94868312000
-              },
-              {
-                "type": "dilithium",
-                "value": 1772199000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5113,7 +5107,14 @@
               "type": "dilithium",
               "value": 9667911
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 68659,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -5147,51 +5148,39 @@
           "level": 55,
           "ship_xp": 7848000
         }
-      ],
-      "repair_time": 246000,
-      "tier": 11
+      ]
     },
     {
+      "tier": 12,
       "build_time": 21600000,
+      "repair_time": 270000,
       "components": [
         {
           "name": "Phaser Cannons",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 12900,
-              "armor_pierce": 235708,
-              "crit_chance": 0.05,
-              "crit_damage": 1.25,
-              "firing_pattern": [
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4,
-                0,
-                4
-              ],
-              "max_damage": 222962,
-              "min_damage": 130906,
-              "shield_pierce": 40908,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 287893796000
+              },
+              {
+                "type": "dilithium",
+                "value": 5066258000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 615,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 615
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 2040,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 2040
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5203,20 +5192,8 @@
                 "type": "Plasma Conduits",
                 "value": 497333
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 287893796000
-              },
-              {
-                "type": "dilithium",
-                "value": 5066258000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5226,46 +5203,58 @@
               "type": "dilithium",
               "value": 23308308
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 12900,
+              "armor_pierce": 235708,
+              "crit_chance": 0.05,
+              "crit_damage": 1.25,
+              "max_damage": 222962,
+              "min_damage": 130906,
+              "shield_pierce": 40908,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4,
+                0,
+                4
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Phaser Beam Emitter",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 34499,
-              "armor_pierce": 47142,
-              "crit_chance": 0.03,
-              "crit_damage": 1.15,
-              "firing_pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 83611,
-              "min_damage": 65453,
-              "shield_pierce": 8182,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 191929198000
+              },
+              {
+                "type": "dilithium",
+                "value": 3377506000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 410,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 410
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 1360,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 1360
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5277,20 +5266,8 @@
                 "type": "Plasma Conduits",
                 "value": 248667
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 191929198000
-              },
-              {
-                "type": "dilithium",
-                "value": 3377506000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5300,46 +5277,58 @@
               "type": "dilithium",
               "value": 15538872
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 34499,
+              "armor_pierce": 47142,
+              "crit_chance": 0.03,
+              "crit_damage": 1.15,
+              "max_damage": 83611,
+              "min_damage": 65453,
+              "shield_pierce": 8182,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Torpedo Launcher",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 19166,
-              "armor_pierce": 377133,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "max_damage": 677401,
-              "min_damage": 523622,
-              "shield_pierce": 40908,
-              "weapon_type": "kinetic"
-            }
-          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 383858395000
+              },
+              {
+                "type": "dilithium",
+                "value": 6755011000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 820,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 820
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 2720,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 2720
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5351,20 +5340,8 @@
                 "type": "Plasma Conduits",
                 "value": 373000
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 383858395000
-              },
-              {
-                "type": "dilithium",
-                "value": 6755011000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5374,29 +5351,58 @@
               "type": "dilithium",
               "value": 31077744
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 19166,
+              "armor_pierce": 377133,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 677401,
+              "min_damage": 523622,
+              "shield_pierce": 40908,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Ablative Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 5700,
-              "hull_health": 659982
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 191929198000
+              },
+              {
+                "type": "dilithium",
+                "value": 3377506000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 410,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 410
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 1360,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 1360
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5408,20 +5414,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 391696
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 191929198000
-              },
-              {
-                "type": "dilithium",
-                "value": 3377506000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5431,29 +5425,41 @@
               "type": "dilithium",
               "value": 15538872
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 5700,
+              "hull_health": 659982
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Class-7 Warp Drive",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 460,
-              "warp_speed": 5.4
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 175935098000
+              },
+              {
+                "type": "dilithium",
+                "value": 3096047000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 17410,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 17410
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 5245,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 5245
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5465,20 +5471,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 359054
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 175935098000
-              },
-              {
-                "type": "dilithium",
-                "value": 3096047000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5488,29 +5482,41 @@
               "type": "dilithium",
               "value": 14243966
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 460,
+              "warp_speed": 5.4
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Deflector Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 4320,
-              "shield_health": 599984
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 191929198000
+              },
+              {
+                "type": "dilithium",
+                "value": 3377506000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 410,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 410
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 1360,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 1360
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -5522,20 +5528,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 391696
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 191929198000
-              },
-              {
-                "type": "dilithium",
-                "value": 3377506000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5545,29 +5539,41 @@
               "type": "dilithium",
               "value": 15538872
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 4320,
+              "shield_health": 599984
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 89998,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 175935098000
+              },
+              {
+                "type": "dilithium",
+                "value": 3096047000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 17410,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 17410
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 5245,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 5245
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -5579,20 +5585,8 @@
                 "type": "Ablative Armor Parts",
                 "value": 359054
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 175935098000
-              },
-              {
-                "type": "dilithium",
-                "value": 3096047000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5602,7 +5596,14 @@
               "type": "dilithium",
               "value": 14243966
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 89998,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -5636,9 +5637,8 @@
           "level": 60,
           "ship_xp": 10000000
         }
-      ],
-      "repair_time": 270000,
-      "tier": 12
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/uss_defiant.png"
 }

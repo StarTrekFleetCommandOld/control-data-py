@@ -1,26 +1,23 @@
 {
+  "hostile_name": "Assimilated Ferengi Trader \u21d4",
   "description": "",
   "group": "borg",
+  "level": 25,
+  "rarity": "common",
   "head_stats": {
     "attack": 250567,
     "defense": 50250,
     "health": 1105860
   },
-  "hostile_name": "Assimilated Ferengi Trader \u21d4",
-  "level": 25,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "latinum antique",
-      "max_value": 1,
-      "min_value": 1,
-      "value": 1
+      "$ref": "systems/metra_alpha_25"
     },
     {
-      "type": "inert nanoprobe",
-      "max_value": 446,
-      "min_value": 446,
-      "value": 446
+      "$ref": "systems/metra_beta_25"
+    },
+    {
+      "$ref": "systems/metra_gamma_25"
     }
   ],
   "ship_class": "survey",
@@ -43,22 +40,6 @@
       "shield_health": 947880
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/metra_alpha_25"
-    },
-    {
-      "$ref": "systems/metra_beta_25"
-    },
-    {
-      "$ref": "systems/metra_gamma_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 80
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -183,6 +164,25 @@
         "shield_pierce": 7500
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "latinum antique",
+      "max_value": 1,
+      "min_value": 1,
+      "value": 1
+    },
+    {
+      "type": "inert nanoprobe",
+      "max_value": 446,
+      "min_value": 446,
+      "value": 446
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 80
     }
   ]
 }

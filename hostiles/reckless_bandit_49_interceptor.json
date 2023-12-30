@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Reckless Bandit",
   "description": "",
   "group": "neutral",
+  "level": 49,
+  "rarity": "common",
   "head_stats": {
     "attack": 4527978,
     "defense": 1995850,
     "health": 6694194
   },
-  "hostile_name": "Reckless Bandit",
-  "level": 49,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 958,
-      "min_value": 958,
-      "value": 958
+      "$ref": "systems/farnham_48"
+    },
+    {
+      "$ref": "systems/petandria_48"
+    },
+    {
+      "$ref": "systems/unarri_48"
     }
   ],
   "ship_class": "interceptor",
@@ -37,22 +40,6 @@
       "shield_health": 6694194
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/farnham_48"
-    },
-    {
-      "$ref": "systems/petandria_48"
-    },
-    {
-      "$ref": "systems/unarri_48"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 67328
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 958,
+      "min_value": 958,
+      "value": 958
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

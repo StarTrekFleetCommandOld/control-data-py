@@ -1,41 +1,53 @@
 {
+  "ship_name": "NOVA",
   "description": "The Nova is a popular newcomer to the mining scene. This Independent survey ship features state of the art gas, ore and crystal mining lasers, and what it lacks in power it makes up for in versatility - a must have for any captain looking to expand their mining operations across the board.",
+  "ship_class": "survey",
+  "grade": 5,
+  "faction": "neutral",
+  "rarity": "uncommon",
   "blueprints": {
     "cost": 0,
     "quantity": 150
-  },
-  "faction": "neutral",
-  "grade": 5,
-  "img_url": "./assets/nova.png",
-  "rarity": "uncommon",
-  "requirements": [
-    {
-      "name": "Shipyard",
-      "level": 52
-    }
-  ],
-  "scrap_info": {
-    "scrappable": false
   },
   "ship_ability": {
     "title": "Universal Mining Laser",
     "description": "When mining 5* Crystal, Gas and Ore, The Nova's mining speed is increased by {value}",
     "percentage": true
   },
-  "ship_class": "survey",
-  "ship_name": "NOVA",
+  "scrap_info": {
+    "scrappable": false
+  },
+  "requirements": [
+    {
+      "name": "Shipyard",
+      "level": 52
+    }
+  ],
   "tiers": [
     {
+      "tier": 1,
       "build_time": 7344000,
+      "repair_time": 82920,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "weapons_info": {
               "accuracy": 23132,
               "armor_pierce": 23132,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 27261,
+              "min_damage": 22305,
+              "shield_pierce": 23132,
+              "weapon_type": "energy",
               "firing_pattern": [
                 2,
                 2,
@@ -46,40 +58,36 @@
                 2,
                 2,
                 2
-              ],
-              "max_damage": 27261,
-              "min_damage": 22305,
-              "shield_pierce": 23132,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
+          "img_url": "./assets/component_mining_laser.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "mining_laser_info": {
               "mining_bonus": 26.5
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
+          "img_url": "./assets/component_cargo_bay.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "cargo_info": {
               "increased_cargo": 3500000,
@@ -88,98 +96,77 @@
               "ship_increased_protected_cargo": 0
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
+          "img_url": "./assets/component_warp_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "warp_info": {
               "warp_distance": 245,
               "warp_speed": 4.0
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "armor_info": {
               "armor": 48868,
               "hull_health": 765763
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Shield",
+          "img_url": "./assets/component_shield.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "shield_info": {
               "shield_deflection": 48868,
               "shield_health": 605977
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
+          "img_url": "./assets/component_impulse_engines.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
           "additional_info": {
             "impulse_info": {
               "dodge": 26024,
               "impulse_speed": 100
             }
           },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          "quantity": 1
         }
       ],
-      "initial_build_cost": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 72125000000
-          },
-          {
-            "type": "dilithium",
-            "value": 1409375000
-          }
-        ]
-      },
       "levels": [
         {
           "ability_bonus": 1.5,
@@ -212,20 +199,81 @@
           "ship_xp": 260784
         }
       ],
-      "repair_time": 82920,
-      "tier": 1
+      "initial_build_cost": {
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 72125000000
+          },
+          {
+            "type": "dilithium",
+            "value": 1409375000
+          }
+        ],
+        "materials": [],
+        "others": []
+      }
     },
     {
+      "tier": 2,
       "build_time": 1125000,
+      "repair_time": 86700,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 120846880000
+              },
+              {
+                "type": "dilithium",
+                "value": 2213846250
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 24830,
+                "grade": 5,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 48154,
+                "grade": 5,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Survey Parts",
+                "value": 37584
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 119149967
+            },
+            {
+              "type": "dilithium",
+              "value": 2355290
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 28914,
               "armor_pierce": 28914,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 34078,
+              "min_damage": 27882,
+              "shield_pierce": 28914,
+              "weapon_type": "energy",
               "firing_pattern": [
                 2,
                 2,
@@ -236,86 +284,15 @@
                 2,
                 2,
                 2
-              ],
-              "max_damage": 34078,
-              "min_damage": 27882,
-              "shield_pierce": 28914,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 24830
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 48154
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Common Survey Parts",
-                "value": 37584
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 120846880000
-              },
-              {
-                "type": "dilithium",
-                "value": 2213846250
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 119149967
-            },
-            {
-              "type": "dilithium",
-              "value": 2355290
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 29.0
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 33858
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 56180
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Common Survey Parts",
-                "value": 40475
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -325,10 +302,28 @@
                 "type": "dilithium",
                 "value": 2361436000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 33858,
+                "grade": 5,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 56180,
+                "grade": 5,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Survey Parts",
+                "value": 40475
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -338,39 +333,18 @@
               "type": "dilithium",
               "value": 3925483
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 29.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 250000,
-              "increased_protected_cargo": 2000,
-              "ship_increased_cargo": 270000,
-              "ship_increased_protected_cargo": 5000
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 31601
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 60192
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Common Survey Parts",
-                "value": 34693
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -380,10 +354,28 @@
                 "type": "dilithium",
                 "value": 2509025750
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 31601,
+                "grade": 5,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 60192,
+                "grade": 5,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Survey Parts",
+                "value": 34693
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -393,29 +385,39 @@
               "type": "dilithium",
               "value": 3140387
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 250000,
+              "increased_protected_cargo": 2000,
+              "ship_increased_cargo": 270000,
+              "ship_increased_protected_cargo": 5000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 260,
-              "warp_speed": 4.2
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 2951795000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 38373,
                 "grade": 5,
-                "rarity": "common",
-                "value": 38373
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 68218,
                 "grade": 5,
-                "rarity": "common",
-                "value": 68218
+                "rarity": "common"
               }
             ],
             "others": [
@@ -423,16 +425,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 52039
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 2951795000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -442,37 +436,19 @@
               "type": "dilithium",
               "value": 1570193
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 260,
+              "warp_speed": 4.2
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 52043,
-              "hull_health": 815532
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 27087
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 52167
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Common Survey Parts",
-                "value": 43366
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -482,10 +458,28 @@
                 "type": "dilithium",
                 "value": 2656615500
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 27087,
+                "grade": 5,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 52167,
+                "grade": 5,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Survey Parts",
+                "value": 43366
+              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -495,29 +489,37 @@
               "type": "dilithium",
               "value": 1570193
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 52043,
+              "hull_health": 815532
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 52043,
-              "shield_health": 645360
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 142172800000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 40630,
                 "grade": 5,
-                "rarity": "common",
-                "value": 40630
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 72231,
                 "grade": 5,
-                "rarity": "common",
-                "value": 72231
+                "rarity": "common"
               }
             ],
             "others": [
@@ -525,16 +527,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 49148
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 142172800000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -544,37 +538,19 @@
               "type": "dilithium",
               "value": 1570193
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 52043,
+              "shield_health": 645360
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 32529,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 29344
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 44141
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Common Survey Parts",
-                "value": 31802
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -584,10 +560,28 @@
                 "type": "dilithium",
                 "value": 2066256500
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 29344,
+                "grade": 5,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 44141,
+                "grade": 5,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Survey Parts",
+                "value": 31802
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -597,7 +591,14 @@
               "type": "dilithium",
               "value": 785097
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 32529,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -631,51 +632,39 @@
           "level": 10,
           "ship_xp": 777617
         }
-      ],
-      "repair_time": 86700,
-      "tier": 2
+      ]
     },
     {
+      "tier": 3,
       "build_time": 2250000,
+      "repair_time": 90540,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 36143,
-              "armor_pierce": 36143,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
-              "max_damage": 42596,
-              "min_damage": 34851,
-              "shield_pierce": 36143,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 392985600000
+              },
+              {
+                "type": "dilithium",
+                "value": 9108855000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 21316,
                 "grade": 5,
-                "rarity": "common",
-                "value": 21316
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 28247,
                 "grade": 5,
-                "rarity": "common",
-                "value": 28247
+                "rarity": "common"
               }
             ],
             "others": [
@@ -687,20 +676,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 53097
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 392985600000
-              },
-              {
-                "type": "dilithium",
-                "value": 9108855000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -710,42 +687,36 @@
               "type": "dilithium",
               "value": 4817275
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 36143,
+              "armor_pierce": 36143,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 42596,
+              "min_damage": 34851,
+              "shield_pierce": 36143,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 31.5
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 36993
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 32955
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 17124
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 6912
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -755,10 +726,34 @@
                 "type": "dilithium",
                 "value": 9716112000
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 36993,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 32955,
+                "grade": 5,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 17124,
+                "grade": 5,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 6912
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -768,45 +763,18 @@
               "type": "dilithium",
               "value": 8028791
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 31.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 250000,
-              "increased_protected_cargo": 2000,
-              "ship_increased_cargo": 270000,
-              "ship_increased_protected_cargo": 5000
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 30267
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 35309
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 20930
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 7488
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -816,10 +784,34 @@
                 "type": "dilithium",
                 "value": 10323369000
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 30267,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 35309,
+                "grade": 5,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 20930,
+                "grade": 5,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 7488
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -829,29 +821,39 @@
               "type": "dilithium",
               "value": 6423033
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 250000,
+              "increased_protected_cargo": 2000,
+              "ship_increased_cargo": 270000,
+              "ship_increased_protected_cargo": 5000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 275,
-              "warp_speed": 4.3
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 12145140000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 29309,
                 "grade": 5,
-                "rarity": "common",
-                "value": 29309
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 40016,
                 "grade": 5,
-                "rarity": "common",
-                "value": 40016
+                "rarity": "common"
               }
             ],
             "others": [
@@ -859,16 +861,8 @@
                 "type": "5\u2605 Uncommon Survey Parts",
                 "value": 9792
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 12145140000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -878,29 +872,41 @@
               "type": "dilithium",
               "value": 3211516
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 275,
+              "warp_speed": 4.3
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 55946,
-              "hull_health": 876699
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 323635200000
+              },
+              {
+                "type": "dilithium",
+                "value": 10930626000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 27977,
                 "grade": 5,
-                "rarity": "common",
-                "value": 27977
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 30601,
                 "grade": 5,
-                "rarity": "common",
-                "value": 30601
+                "rarity": "common"
               }
             ],
             "others": [
@@ -912,20 +918,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 46970
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 323635200000
-              },
-              {
-                "type": "dilithium",
-                "value": 10930626000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -935,29 +929,37 @@
               "type": "dilithium",
               "value": 3211516
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 55946,
+              "hull_health": 876699
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 55946,
-              "shield_health": 693763
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 462336000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 30641,
                 "grade": 5,
-                "rarity": "common",
-                "value": 30641
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 42370,
                 "grade": 5,
-                "rarity": "common",
-                "value": 42370
+                "rarity": "common"
               }
             ],
             "others": [
@@ -969,16 +971,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 55139
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 462336000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -988,29 +982,41 @@
               "type": "dilithium",
               "value": 3211516
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 55946,
+              "shield_health": 693763
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 40661,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 416102400000
+              },
+              {
+                "type": "dilithium",
+                "value": 8501598000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 23980,
                 "grade": 5,
-                "rarity": "common",
-                "value": 23980
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 25893,
                 "grade": 5,
-                "rarity": "common",
-                "value": 25893
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1022,20 +1028,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 49012
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 416102400000
-              },
-              {
-                "type": "dilithium",
-                "value": 8501598000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1045,7 +1039,14 @@
               "type": "dilithium",
               "value": 1605758
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 40661,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1079,51 +1080,39 @@
           "level": 15,
           "ship_xp": 1486805
         }
-      ],
-      "repair_time": 90540,
-      "tier": 3
+      ]
     },
     {
+      "tier": 4,
       "build_time": 3750000,
+      "repair_time": 94680,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 45179,
-              "armor_pierce": 45179,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
-              "max_damage": 53246,
-              "min_damage": 43566,
-              "shield_pierce": 45179,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 425734400000
+              },
+              {
+                "type": "dilithium",
+                "value": 9867926250
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 18945,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 18945
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 9894,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 9894
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1135,20 +1124,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 57521
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 425734400000
-              },
-              {
-                "type": "dilithium",
-                "value": 9867926250
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1158,42 +1135,36 @@
               "type": "dilithium",
               "value": 7390787
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 45179,
+              "armor_pierce": 45179,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 53246,
+              "min_damage": 43566,
+              "shield_pierce": 45179,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 34.5
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 16759
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 40801
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 11131
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 7488
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1203,10 +1174,34 @@
                 "type": "dilithium",
                 "value": 10525788000
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 16759,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 40801,
+                "grade": 5,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 11131,
+                "grade": 5,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 7488
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1216,45 +1211,18 @@
               "type": "dilithium",
               "value": 12317979
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 34.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 250000,
-              "increased_protected_cargo": 2000,
-              "ship_increased_cargo": 270000,
-              "ship_increased_protected_cargo": 5000
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 19674
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 43351
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 9482
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 8112
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1264,10 +1232,34 @@
                 "type": "dilithium",
                 "value": 11183649750
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 19674,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 43351,
+                "grade": 5,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 9482,
+                "grade": 5,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 8112
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1277,35 +1269,45 @@
               "type": "dilithium",
               "value": 9854383
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 250000,
+              "increased_protected_cargo": 2000,
+              "ship_increased_cargo": 270000,
+              "ship_increased_protected_cargo": 5000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 290,
-              "warp_speed": 4.5
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 13157235000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 17488,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 17488
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 51001,
                 "grade": 5,
-                "rarity": "common",
-                "value": 51001
+                "rarity": "common"
               },
               {
                 "type": "gas",
+                "value": 10719,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 10719
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1313,16 +1315,8 @@
                 "type": "5\u2605 Uncommon Survey Parts",
                 "value": 10608
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 13157235000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1332,29 +1326,41 @@
               "type": "dilithium",
               "value": 4927192
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 290,
+              "warp_speed": 4.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 60701,
-              "hull_health": 951205
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 350604800000
+              },
+              {
+                "type": "dilithium",
+                "value": 11841511500
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 47627,
                 "grade": 5,
-                "rarity": "common",
-                "value": 47627
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 35701,
                 "grade": 5,
-                "rarity": "common",
-                "value": 35701
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1366,20 +1372,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 50884
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 350604800000
-              },
-              {
-                "type": "dilithium",
-                "value": 11841511500
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1389,29 +1383,37 @@
               "type": "dilithium",
               "value": 4927192
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 60701,
+              "hull_health": 951205
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 60701,
-              "shield_health": 752725
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 500864000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 53400,
                 "grade": 5,
-                "rarity": "common",
-                "value": 53400
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 53551,
                 "grade": 5,
-                "rarity": "common",
-                "value": 53551
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1423,16 +1425,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 59734
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 500864000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1442,29 +1436,41 @@
               "type": "dilithium",
               "value": 4927192
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 60701,
+              "shield_health": 752725
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 50826,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 450777600000
+              },
+              {
+                "type": "dilithium",
+                "value": 9210064500
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 43297,
                 "grade": 5,
-                "rarity": "common",
-                "value": 43297
+                "rarity": "common"
               },
               {
                 "type": "crystal",
+                "value": 30601,
                 "grade": 5,
-                "rarity": "common",
-                "value": 30601
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1476,20 +1482,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 53097
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 450777600000
-              },
-              {
-                "type": "dilithium",
-                "value": 9210064500
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1499,7 +1493,14 @@
               "type": "dilithium",
               "value": 2463596
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 50826,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1533,51 +1534,39 @@
           "level": 20,
           "ship_xp": 2416358
         }
-      ],
-      "repair_time": 94680,
-      "tier": 4
+      ]
     },
     {
+      "tier": 5,
       "build_time": 5625000,
+      "repair_time": 98880,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 56474,
-              "armor_pierce": 56474,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
-              "max_damage": 66558,
-              "min_damage": 54457,
-              "shield_pierce": 56474,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 661068800000
+              },
+              {
+                "type": "dilithium",
+                "value": 15000247500
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 16104,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 16104
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 7747,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 7747
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1589,20 +1578,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 63569
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 661068800000
-              },
-              {
-                "type": "dilithium",
-                "value": 15000247500
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1612,36 +1589,36 @@
               "type": "dilithium",
               "value": 21525245
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 56474,
+              "armor_pierce": 56474,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 66558,
+              "min_damage": 54457,
+              "shield_pierce": 56474,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 37.5
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 13689
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 6835
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 8276
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1651,10 +1628,28 @@
                 "type": "dilithium",
                 "value": 16000264000
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 13689,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 6835,
+                "grade": 5,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 8276
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1664,39 +1659,18 @@
               "type": "dilithium",
               "value": 35875408
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 37.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 250000,
-              "increased_protected_cargo": 3000,
-              "ship_increased_cargo": 270000,
-              "ship_increased_protected_cargo": 5000
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 12078
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 7291
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 8966
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -1706,10 +1680,28 @@
                 "type": "dilithium",
                 "value": 17000280500
               }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 12078,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 7291,
+                "grade": 5,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 8966
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1719,29 +1711,39 @@
               "type": "dilithium",
               "value": 28700326
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 250000,
+              "increased_protected_cargo": 3000,
+              "ship_increased_cargo": 270000,
+              "ship_increased_protected_cargo": 5000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 310,
-              "warp_speed": 4.7
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 20000330000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 18520,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 18520
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 11392,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 11392
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1749,16 +1751,8 @@
                 "type": "5\u2605 Uncommon Survey Parts",
                 "value": 11724
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 20000330000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1768,23 +1762,35 @@
               "type": "dilithium",
               "value": 14350163
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 310,
+              "warp_speed": 4.7
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 66468,
-              "hull_health": 1041557
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 544409600000
+              },
+              {
+                "type": "dilithium",
+                "value": 18000297000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 71773,
                 "grade": 5,
-                "rarity": "common",
-                "value": 71773
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1796,20 +1802,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 56235
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 544409600000
-              },
-              {
-                "type": "dilithium",
-                "value": 18000297000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1819,29 +1813,37 @@
               "type": "dilithium",
               "value": 14350163
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 66468,
+              "hull_health": 1041557
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 66468,
-              "shield_health": 824223
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 777728000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 20130,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 20130
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 12303,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 12303
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -1853,16 +1855,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 66014
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 777728000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1872,23 +1866,35 @@
               "type": "dilithium",
               "value": 14350163
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 66468,
+              "shield_health": 824223
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 63533,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 699955200000
+              },
+              {
+                "type": "dilithium",
+                "value": 14000231000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 87722,
                 "grade": 5,
-                "rarity": "common",
-                "value": 87722
+                "rarity": "common"
               }
             ],
             "others": [
@@ -1900,20 +1906,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 58680
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 699955200000
-              },
-              {
-                "type": "dilithium",
-                "value": 14000231000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -1923,7 +1917,14 @@
               "type": "dilithium",
               "value": 7175082
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 63533,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -1957,51 +1958,39 @@
           "level": 25,
           "ship_xp": 3568462
         }
-      ],
-      "repair_time": 98880,
-      "tier": 5
+      ]
     },
     {
+      "tier": 6,
       "build_time": 7500000,
+      "repair_time": 103440,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 59217,
-              "armor_pierce": 59217,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
-              "max_damage": 69791,
-              "min_damage": 57102,
-              "shield_pierce": 59217,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 708288000000
+              },
+              {
+                "type": "dilithium",
+                "value": 16071693750
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 13804,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 13804
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 11717,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 11717
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2013,20 +2002,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 68110
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 708288000000
-              },
-              {
-                "type": "dilithium",
-                "value": 16071693750
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2036,42 +2013,36 @@
               "type": "dilithium",
               "value": 24855628
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 59217,
+              "armor_pierce": 59217,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 69791,
+              "min_damage": 57102,
+              "shield_pierce": 59217,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 40.5
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 6028
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 12941
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 10645
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 8867
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2081,10 +2052,34 @@
                 "type": "dilithium",
                 "value": 17143140000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 6028,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 12941,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 10645,
+                "grade": 5,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 8867
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2094,45 +2089,18 @@
               "type": "dilithium",
               "value": 41426047
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 40.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 250000,
-              "increased_protected_cargo": 3000,
-              "ship_increased_cargo": 270000,
-              "ship_increased_protected_cargo": 5000
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 7368
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 12078
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 13011
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 9606
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2142,10 +2110,34 @@
                 "type": "dilithium",
                 "value": 18214586250
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 7368,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 12078,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 13011,
+                "grade": 5,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 9606
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2155,29 +2147,39 @@
               "type": "dilithium",
               "value": 33140838
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 250000,
+              "increased_protected_cargo": 3000,
+              "ship_increased_cargo": 270000,
+              "ship_increased_protected_cargo": 5000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 330,
-              "warp_speed": 4.8
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 21428925000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 17254,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 17254
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 13182,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 13182
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2185,16 +2187,8 @@
                 "type": "5\u2605 Uncommon Survey Parts",
                 "value": 12562
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 21428925000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2204,23 +2198,35 @@
               "type": "dilithium",
               "value": 16570419
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 330,
+              "warp_speed": 4.8
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 73446,
-              "hull_health": 1150921
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 583296000000
+              },
+              {
+                "type": "dilithium",
+                "value": 19286032500
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 170886,
                 "grade": 5,
-                "rarity": "common",
-                "value": 170886
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2232,20 +2238,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 60251
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 583296000000
-              },
-              {
-                "type": "dilithium",
-                "value": 19286032500
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2255,29 +2249,37 @@
               "type": "dilithium",
               "value": 16570419
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 73446,
+              "hull_health": 1150921
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 73446,
-              "shield_health": 910767
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 833280000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 18980,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 18980
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 12694,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 12694
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2289,16 +2291,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 70730
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 833280000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2308,29 +2302,41 @@
               "type": "dilithium",
               "value": 16570419
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 73446,
+              "shield_health": 910767
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 66618,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 749952000000
+              },
+              {
+                "type": "dilithium",
+                "value": 15000247500
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 11216,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 11216
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 11229,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 11229
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2342,20 +2348,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 62871
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 749952000000
-              },
-              {
-                "type": "dilithium",
-                "value": 15000247500
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2365,7 +2359,14 @@
               "type": "dilithium",
               "value": 8285209
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 66618,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2399,51 +2400,39 @@
           "level": 30,
           "ship_xp": 4778346
         }
-      ],
-      "repair_time": 103440,
-      "tier": 6
+      ]
     },
     {
+      "tier": 7,
       "build_time": 9375000,
+      "repair_time": 108000,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 66051,
-              "armor_pierce": 66051,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
-              "max_damage": 77846,
-              "min_damage": 63692,
-              "shield_pierce": 66051,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1090611200000
+              },
+              {
+                "type": "dilithium",
+                "value": 24997140000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3810,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 3810
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 6727,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 6727
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2455,20 +2444,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 74552
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1090611200000
-              },
-              {
-                "type": "dilithium",
-                "value": 24997140000
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2478,42 +2455,36 @@
               "type": "dilithium",
               "value": 28336878
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 66051,
+              "armor_pierce": 66051,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 77846,
+              "min_damage": 63692,
+              "shield_pierce": 66051,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 44.0
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 3517
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 16052
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 6209
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 9706
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2523,10 +2494,34 @@
                 "type": "dilithium",
                 "value": 26663616000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 3517,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 16052,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 6209,
+                "grade": 5,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 9706
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2536,45 +2531,18 @@
               "type": "dilithium",
               "value": 47228131
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 44.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 250000,
-              "increased_protected_cargo": 3000,
-              "ship_increased_cargo": 270000,
-              "ship_increased_protected_cargo": 5000
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 3371
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 14164
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 5951
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 10515
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2584,10 +2552,34 @@
                 "type": "dilithium",
                 "value": 28330092000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 3371,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 14164,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 5951,
+                "grade": 5,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 10515
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2597,35 +2589,45 @@
               "type": "dilithium",
               "value": 37782505
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 250000,
+              "increased_protected_cargo": 3000,
+              "ship_increased_cargo": 270000,
+              "ship_increased_protected_cargo": 5000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 350,
-              "warp_speed": 5.0
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 33329520000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 3957,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 3957
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 6986,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 6986
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 330509,
                 "grade": 5,
-                "rarity": "common",
-                "value": 330509
+                "rarity": "common"
               }
             ],
             "others": [
@@ -2633,16 +2635,8 @@
                 "type": "5\u2605 Uncommon Survey Parts",
                 "value": 13750
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 33329520000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2652,29 +2646,41 @@
               "type": "dilithium",
               "value": 18891252
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 350,
+              "warp_speed": 5.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 81525,
-              "hull_health": 1277515
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 898150400000
+              },
+              {
+                "type": "dilithium",
+                "value": 29996568000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 18885,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 18885
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 17637,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 17637
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2686,20 +2692,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 65950
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 898150400000
-              },
-              {
-                "type": "dilithium",
-                "value": 29996568000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2709,29 +2703,37 @@
               "type": "dilithium",
               "value": 18891252
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 81525,
+              "hull_health": 1277515
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 81525,
-              "shield_health": 1010945
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1283072000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 23606,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 23606
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 19774,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 19774
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2743,16 +2745,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 77419
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1283072000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2762,29 +2756,41 @@
               "type": "dilithium",
               "value": 18891252
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 81525,
+              "shield_health": 1010945
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 74307,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1154764800000
+              },
+              {
+                "type": "dilithium",
+                "value": 23330664000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 21718,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 21718
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 16033,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 16033
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -2796,20 +2802,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 68817
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1154764800000
-              },
-              {
-                "type": "dilithium",
-                "value": 23330664000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2819,7 +2813,14 @@
               "type": "dilithium",
               "value": 9445626
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 74307,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -2853,51 +2854,39 @@
           "level": 35,
           "ship_xp": 6355177
         }
-      ],
-      "repair_time": 108000,
-      "tier": 7
+      ]
     },
     {
+      "tier": 8,
       "build_time": 12187500,
+      "repair_time": 112920,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 72885,
-              "armor_pierce": 72885,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
-              "max_damage": 85901,
-              "min_damage": 70282,
-              "shield_pierce": 72885,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1158774400000
+              },
+              {
+                "type": "dilithium",
+                "value": 26559461250
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4048,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 4048
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 7147,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 7147
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -2909,20 +2898,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 79211
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1158774400000
-              },
-              {
-                "type": "dilithium",
-                "value": 26559461250
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2932,42 +2909,36 @@
               "type": "dilithium",
               "value": 31975829
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 72885,
+              "armor_pierce": 72885,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 85901,
+              "min_damage": 70282,
+              "shield_pierce": 72885,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 47.5
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 3737
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 17056
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 6597
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 10313
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -2977,10 +2948,34 @@
                 "type": "dilithium",
                 "value": 28330092000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 3737,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 17056,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 6597,
+                "grade": 5,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 10313
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -2990,45 +2985,18 @@
               "type": "dilithium",
               "value": 53293048
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 47.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 250000,
-              "increased_protected_cargo": 4000,
-              "ship_increased_cargo": 270000,
-              "ship_increased_protected_cargo": 5000
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 3581
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 15049
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 6323
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 11172
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3038,10 +3006,34 @@
                 "type": "dilithium",
                 "value": 30100722750
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 3581,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 15049,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 6323,
+                "grade": 5,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 11172
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3051,35 +3043,45 @@
               "type": "dilithium",
               "value": 42634439
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 250000,
+              "increased_protected_cargo": 4000,
+              "ship_increased_cargo": 270000,
+              "ship_increased_protected_cargo": 5000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 370,
-              "warp_speed": 5.1
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 35412615000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 4204,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 4204
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 7422,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 7422
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 351166,
                 "grade": 5,
-                "rarity": "common",
-                "value": 351166
+                "rarity": "common"
               }
             ],
             "others": [
@@ -3087,16 +3089,8 @@
                 "type": "5\u2605 Uncommon Survey Parts",
                 "value": 14609
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 35412615000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3106,29 +3100,41 @@
               "type": "dilithium",
               "value": 21317219
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 370,
+              "warp_speed": 5.1
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 90085,
-              "hull_health": 1411644
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 954284800000
+              },
+              {
+                "type": "dilithium",
+                "value": 31871353500
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 20065,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 20065
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 18739,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 18739
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3140,20 +3146,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 70072
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 954284800000
-              },
-              {
-                "type": "dilithium",
-                "value": 31871353500
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3163,29 +3157,37 @@
               "type": "dilithium",
               "value": 21317219
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 90085,
+              "hull_health": 1411644
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 90085,
-              "shield_health": 1117085
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1363264000000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 25081,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 25081
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 21010,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 21010
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3197,16 +3199,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 82258
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1363264000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3216,29 +3210,41 @@
               "type": "dilithium",
               "value": 21317219
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 90085,
+              "shield_health": 1117085
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 81996,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1226937600000
+              },
+              {
+                "type": "dilithium",
+                "value": 24788830500
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 23075,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 23075
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 17036,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 17036
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3250,20 +3256,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 73118
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1226937600000
-              },
-              {
-                "type": "dilithium",
-                "value": 24788830500
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3273,7 +3267,14 @@
               "type": "dilithium",
               "value": 10658610
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 81996,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3307,51 +3308,39 @@
           "level": 40,
           "ship_xp": 8123076
         }
-      ],
-      "repair_time": 112920,
-      "tier": 8
+      ]
     },
     {
+      "tier": 9,
       "build_time": 15000000,
+      "repair_time": 117900,
       "components": [
         {
           "name": "Pulsed Phaser",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 79721,
-              "armor_pierce": 79721,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
-              "max_damage": 93957,
-              "min_damage": 76872,
-              "shield_pierce": 79721,
-              "weapon_type": "energy"
-            }
-          },
+          "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1768435200000
+              },
+              {
+                "type": "dilithium",
+                "value": 40170532500
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 5069,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 5069
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 5680,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 5680
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3363,20 +3352,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 86066
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1768435200000
-              },
-              {
-                "type": "dilithium",
-                "value": 40170532500
-              }
             ]
           },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3386,42 +3363,36 @@
               "type": "dilithium",
               "value": 54036363
             }
-          ]
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 79721,
+              "armor_pierce": 79721,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 93957,
+              "min_damage": 76872,
+              "shield_pierce": 79721,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 51.0
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1847
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 5082
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 4007
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 11204
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3431,10 +3402,34 @@
                 "type": "dilithium",
                 "value": 42848568000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1847,
+                "grade": 5,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 5082,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 4007,
+                "grade": 5,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 11204
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3444,45 +3439,18 @@
               "type": "dilithium",
               "value": 90060605
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 51.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 250000,
-              "increased_protected_cargo": 4000,
-              "ship_increased_cargo": 270000,
-              "ship_increased_protected_cargo": 5000
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2258
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 4783
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 3279
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Uncommon Survey Parts",
-                "value": 12138
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3492,10 +3460,34 @@
                 "type": "dilithium",
                 "value": 45526603500
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 2258,
+                "grade": 5,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 4783,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 3279,
+                "grade": 5,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Survey Parts",
+                "value": 12138
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3505,35 +3497,45 @@
               "type": "dilithium",
               "value": 72048484
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 250000,
+              "increased_protected_cargo": 4000,
+              "ship_increased_cargo": 270000,
+              "ship_increased_protected_cargo": 5000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 400,
-              "warp_speed": 5.3
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 53560710000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 5576,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 5576
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 38161,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 38161
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 6875,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 6875
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3541,16 +3543,8 @@
                 "type": "5\u2605 Uncommon Survey Parts",
                 "value": 15873
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 53560710000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3560,29 +3554,41 @@
               "type": "dilithium",
               "value": 36024242
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 400,
+              "warp_speed": 5.3
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 98192,
-              "hull_health": 1538689
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1456358400000
+              },
+              {
+                "type": "dilithium",
+                "value": 48204639000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 34890,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 34890
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 27764,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 27764
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3594,20 +3600,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 76135
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1456358400000
-              },
-              {
-                "type": "dilithium",
-                "value": 48204639000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3617,29 +3611,37 @@
               "type": "dilithium",
               "value": 36024242
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 98192,
+              "hull_health": 1538689
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 98192,
-              "shield_health": 1217622
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2080512000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 6252,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 6252
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 7473,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 7473
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3651,16 +3653,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 89376
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2080512000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3670,29 +3664,41 @@
               "type": "dilithium",
               "value": 36024242
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 98192,
+              "shield_health": 1217622
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 89685,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1872460800000
+              },
+              {
+                "type": "dilithium",
+                "value": 37492497000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 35980,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 35980
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 33934,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 33934
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -3704,20 +3710,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 79445
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1872460800000
-              },
-              {
-                "type": "dilithium",
-                "value": 37492497000
-              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3727,7 +3721,14 @@
               "type": "dilithium",
               "value": 18012121
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 89685,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -3761,21 +3762,74 @@
           "level": 45,
           "ship_xp": 9908666
         }
-      ],
-      "repair_time": 117900,
-      "tier": 9
+      ]
     },
     {
+      "tier": 10,
       "build_time": 18750000,
+      "repair_time": 123300,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2161420800000
+              },
+              {
+                "type": "dilithium",
+                "value": 49097317500
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1806,
+                "grade": 5,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 6211,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 2672,
+                "grade": 5,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 1056
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3096111891
+            },
+            {
+              "type": "dilithium",
+              "value": 58839500
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 86555,
               "armor_pierce": 86555,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 102010,
+              "min_damage": 83463,
+              "shield_pierce": 86555,
+              "weapon_type": "energy",
               "firing_pattern": [
                 2,
                 2,
@@ -3786,98 +3840,15 @@
                 2,
                 2,
                 2
-              ],
-              "max_damage": 102010,
-              "min_damage": 83463,
-              "shield_pierce": 86555,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1806
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 6211
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2672
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 1056
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2161420800000
-              },
-              {
-                "type": "dilithium",
-                "value": 49097317500
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 3096111891
-            },
-            {
-              "type": "dilithium",
-              "value": 58839500
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 55.0
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1505
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 7307
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 3295
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 845
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3887,10 +3858,34 @@
                 "type": "dilithium",
                 "value": 52370472000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1505,
+                "grade": 5,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 7307,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 3295,
+                "grade": 5,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 845
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3900,45 +3895,18 @@
               "type": "dilithium",
               "value": 98065834
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 55.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 250000,
-              "increased_protected_cargo": 4000,
-              "ship_increased_cargo": 270000,
-              "ship_increased_protected_cargo": 5000
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1706
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 5846
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2939
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 916
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -3948,10 +3916,34 @@
                 "type": "dilithium",
                 "value": 55643626500
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1706,
+                "grade": 5,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 5846,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 2939,
+                "grade": 5,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 916
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -3961,35 +3953,45 @@
               "type": "dilithium",
               "value": 78452667
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 250000,
+              "increased_protected_cargo": 4000,
+              "ship_increased_cargo": 270000,
+              "ship_increased_protected_cargo": 5000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 430,
-              "warp_speed": 5.5
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 65463090000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 7021,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 7021
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 46641,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 46641
+                "rarity": "uncommon"
               },
               {
                 "type": "crystal",
+                "value": 6576,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 6576
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -3997,16 +3999,8 @@
                 "type": "5\u2605 Rare Survey Parts",
                 "value": 1197
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 65463090000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4016,29 +4010,41 @@
               "type": "dilithium",
               "value": 39226333
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 430,
+              "warp_speed": 5.5
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 105556,
-              "hull_health": 1654098
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1779993600000
+              },
+              {
+                "type": "dilithium",
+                "value": 58916781000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 42643,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 42643
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 75408,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 75408
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4050,20 +4056,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 182061
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1779993600000
-              },
-              {
-                "type": "dilithium",
-                "value": 58916781000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4073,29 +4067,37 @@
               "type": "dilithium",
               "value": 39226333
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 105556,
+              "hull_health": 1654098
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 105556,
-              "shield_health": 1308949
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2542848000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 7228,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 7228
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 6942,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 6942
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -4107,16 +4109,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 222519
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2542848000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4126,43 +4120,19 @@
               "type": "dilithium",
               "value": 39226333
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 105556,
+              "shield_health": 1308949
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 97374,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 6402
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 43976
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 3654
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 775
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -4172,10 +4142,34 @@
                 "type": "dilithium",
                 "value": 45824163000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 6402,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 43976,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 3654,
+                "grade": 5,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 775
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4185,7 +4179,14 @@
               "type": "dilithium",
               "value": 19613167
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 97374,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4219,21 +4220,74 @@
           "level": 50,
           "ship_xp": 12003899
         }
-      ],
-      "repair_time": 123300,
-      "tier": 10
+      ]
     },
     {
+      "tier": 11,
       "build_time": 24375000,
+      "repair_time": 128880,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3683097600000
+              },
+              {
+                "type": "dilithium",
+                "value": 83549602500
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1042,
+                "grade": 5,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 11965,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 2370,
+                "grade": 5,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 1280
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3355515727
+            },
+            {
+              "type": "dilithium",
+              "value": 63860220
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 93390,
               "armor_pierce": 93390,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 110065,
+              "min_damage": 90054,
+              "shield_pierce": 93390,
+              "weapon_type": "energy",
               "firing_pattern": [
                 2,
                 2,
@@ -4244,98 +4298,15 @@
                 2,
                 2,
                 2
-              ],
-              "max_damage": 110065,
-              "min_damage": 90054,
-              "shield_pierce": 93390,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1042
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 11965
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2370
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 1280
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3683097600000
-              },
-              {
-                "type": "dilithium",
-                "value": 83549602500
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 3355515727
-            },
-            {
-              "type": "dilithium",
-              "value": 63860220
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 59.0
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1409
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 10635
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2154
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 1024
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -4345,10 +4316,34 @@
                 "type": "dilithium",
                 "value": 89119576000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1409,
+                "grade": 5,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 10635,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 2154,
+                "grade": 5,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 1024
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4358,45 +4353,18 @@
               "type": "dilithium",
               "value": 106433699
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 59.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 250000,
-              "increased_protected_cargo": 5000,
-              "ship_increased_cargo": 270000,
-              "ship_increased_protected_cargo": 5000
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1103
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 10192
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2047
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 1109
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -4406,10 +4374,34 @@
                 "type": "dilithium",
                 "value": 94689549500
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1103,
+                "grade": 5,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 10192,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 2047,
+                "grade": 5,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 1109
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4419,35 +4411,45 @@
               "type": "dilithium",
               "value": 85146959
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 250000,
+              "increased_protected_cargo": 5000,
+              "ship_increased_cargo": 270000,
+              "ship_increased_protected_cargo": 5000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 470,
-              "warp_speed": 5.6
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 111399470000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 58172,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 58172
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 1348,
                 "grade": 5,
-                "rarity": "epic",
-                "value": 1348
+                "rarity": "epic"
               },
               {
                 "type": "crystal",
+                "value": 1939,
                 "grade": 5,
-                "rarity": "epic",
-                "value": 1939
+                "rarity": "epic"
               }
             ],
             "others": [
@@ -4455,16 +4457,8 @@
                 "type": "5\u2605 Rare Survey Parts",
                 "value": 1450
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 111399470000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4474,29 +4468,41 @@
               "type": "dilithium",
               "value": 42573480
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 470,
+              "warp_speed": 5.6
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 111889,
-              "hull_health": 1753343
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3033139200000
+              },
+              {
+                "type": "dilithium",
+                "value": 100259523000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 48477,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 48477
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 91440,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 91440
+                "rarity": "uncommon"
               }
             ],
             "others": [
@@ -4508,20 +4514,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 220791
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3033139200000
-              },
-              {
-                "type": "dilithium",
-                "value": 100259523000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4531,29 +4525,37 @@
               "type": "dilithium",
               "value": 42573480
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 111889,
+              "hull_health": 1753343
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 111889,
-              "shield_health": 1387485
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 4333056000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1226,
                 "grade": 5,
-                "rarity": "epic",
-                "value": 1226
+                "rarity": "epic"
               },
               {
                 "type": "crystal",
+                "value": 2262,
                 "grade": 5,
-                "rarity": "epic",
-                "value": 2262
+                "rarity": "epic"
               }
             ],
             "others": [
@@ -4565,16 +4567,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 269856
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 4333056000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4584,43 +4578,19 @@
               "type": "dilithium",
               "value": 42573480
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 111889,
+              "shield_health": 1387485
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 105063,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 25046
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 54940
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 11522
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 939
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -4630,10 +4600,34 @@
                 "type": "dilithium",
                 "value": 77979629000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 25046,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 54940,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 11522,
+                "grade": 5,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 939
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4643,7 +4637,14 @@
               "type": "dilithium",
               "value": 21286740
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 105063,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -4677,21 +4678,74 @@
           "level": 55,
           "ship_xp": 14445783
         }
-      ],
-      "repair_time": 128880,
-      "tier": 11
+      ]
     },
     {
+      "tier": 12,
       "build_time": 33750000,
+      "repair_time": 134640,
       "components": [
         {
           "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 4249728000000
+              },
+              {
+                "type": "dilithium",
+                "value": 96403387500
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1202,
+                "grade": 5,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 9204,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 2734,
+                "grade": 5,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 1476
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3626670557
+            },
+            {
+              "type": "dilithium",
+              "value": 69108378
+            }
+          ],
           "additional_info": {
             "weapons_info": {
               "accuracy": 100224,
               "armor_pierce": 100224,
               "crit_chance": 0.1,
               "crit_damage": 1.5,
+              "max_damage": 118120,
+              "min_damage": 96644,
+              "shield_pierce": 100224,
+              "weapon_type": "energy",
               "firing_pattern": [
                 2,
                 2,
@@ -4702,98 +4756,15 @@
                 2,
                 2,
                 2
-              ],
-              "max_damage": 118120,
-              "min_damage": 96644,
-              "shield_pierce": 100224,
-              "weapon_type": "energy"
+              ]
             }
           },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1202
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 9204
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2734
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 1476
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 4249728000000
-              },
-              {
-                "type": "dilithium",
-                "value": 96403387500
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 3626670557
-            },
-            {
-              "type": "dilithium",
-              "value": 69108378
-            }
-          ]
+          "quantity": 1
         },
         {
           "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 63.0
-            }
-          },
+          "img_url": "./assets/component_mining_laser.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1626
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 11760
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2486
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 1181
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -4803,10 +4774,34 @@
                 "type": "dilithium",
                 "value": 102830280000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1626,
+                "grade": 5,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 11760,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 2486,
+                "grade": 5,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 1181
+              }
             ]
           },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4816,45 +4811,18 @@
               "type": "dilithium",
               "value": 115180629
             }
-          ]
+          ],
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 63.0
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 250000,
-              "increased_protected_cargo": 5000,
-              "ship_increased_cargo": 270000,
-              "ship_increased_protected_cargo": 5000
-            }
-          },
+          "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1273
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 11249
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2361
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 1280
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -4864,10 +4832,34 @@
                 "type": "dilithium",
                 "value": 109257172500
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1273,
+                "grade": 5,
+                "rarity": "epic"
+              },
+              {
+                "type": "crystal",
+                "value": 11249,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 2361,
+                "grade": 5,
+                "rarity": "epic"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 1280
+              }
             ]
           },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4877,35 +4869,45 @@
               "type": "dilithium",
               "value": 92144503
             }
-          ]
+          ],
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 250000,
+              "increased_protected_cargo": 5000,
+              "ship_increased_cargo": 270000,
+              "ship_increased_protected_cargo": 5000
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 495,
-              "warp_speed": 5.8
-            }
-          },
+          "img_url": "./assets/component_warp_engines.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 128537850000
+              }
+            ],
             "materials": [
               {
                 "type": "crystal",
+                "value": 102546,
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 102546
+                "rarity": "uncommon"
               },
               {
                 "type": "gas",
+                "value": 1555,
                 "grade": 5,
-                "rarity": "epic",
-                "value": 1555
+                "rarity": "epic"
               },
               {
                 "type": "crystal",
+                "value": 2237,
                 "grade": 5,
-                "rarity": "epic",
-                "value": 2237
+                "rarity": "epic"
               }
             ],
             "others": [
@@ -4913,16 +4915,8 @@
                 "type": "5\u2605 Rare Survey Parts",
                 "value": 1673
               }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 128537850000
-              }
             ]
           },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4932,29 +4926,41 @@
               "type": "dilithium",
               "value": 46072252
             }
-          ]
+          ],
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 495,
+              "warp_speed": 5.8
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 118042,
-              "hull_health": 1849767
-            }
-          },
+          "img_url": "./assets/component_armor.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3499776000000
+              },
+              {
+                "type": "dilithium",
+                "value": 115684065000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 15895,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 15895
+                "rarity": "rare"
               },
               {
                 "type": "crystal",
+                "value": 8692,
                 "grade": 5,
-                "rarity": "rare",
-                "value": 8692
+                "rarity": "rare"
               }
             ],
             "others": [
@@ -4966,20 +4972,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 254759
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3499776000000
-              },
-              {
-                "type": "dilithium",
-                "value": 115684065000
-              }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -4989,29 +4983,37 @@
               "type": "dilithium",
               "value": 46072252
             }
-          ]
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 118042,
+              "hull_health": 1849767
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 118042,
-              "shield_health": 1463789
-            }
-          },
+          "img_url": "./assets/component_shield.png",
           "build_cost": {
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 4999680000000
+              }
+            ],
             "materials": [
               {
                 "type": "gas",
+                "value": 1414,
                 "grade": 5,
-                "rarity": "epic",
-                "value": 1414
+                "rarity": "epic"
               },
               {
                 "type": "crystal",
+                "value": 2610,
                 "grade": 5,
-                "rarity": "epic",
-                "value": 2610
+                "rarity": "epic"
               }
             ],
             "others": [
@@ -5023,16 +5025,8 @@
                 "type": "5\u2605 Common Survey Parts",
                 "value": 311372
               }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 4999680000000
-              }
             ]
           },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5042,43 +5036,19 @@
               "type": "dilithium",
               "value": 46072252
             }
-          ]
+          ],
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 118042,
+              "shield_health": 1463789
+            }
+          },
+          "quantity": 1
         },
         {
           "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 112752,
-              "impulse_speed": 100
-            }
-          },
+          "img_url": "./assets/component_impulse_engines.png",
           "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 13005
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 83902
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 10226
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 Rare Survey Parts",
-                "value": 1083
-              }
-            ],
             "resources": [
               {
                 "type": "tritanium",
@@ -5088,10 +5058,34 @@
                 "type": "dilithium",
                 "value": 89976495000
               }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 13005,
+                "grade": 5,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 83902,
+                "grade": 5,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 10226,
+                "grade": 5,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Survey Parts",
+                "value": 1083
+              }
             ]
           },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -5101,7 +5095,14 @@
               "type": "dilithium",
               "value": 23036126
             }
-          ]
+          ],
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 112752,
+              "impulse_speed": 100
+            }
+          },
+          "quantity": 1
         }
       ],
       "levels": [
@@ -5135,9 +5136,8 @@
           "level": 60,
           "ship_xp": 17269168
         }
-      ],
-      "repair_time": 134640,
-      "tier": 12
+      ]
     }
-  ]
+  ],
+  "img_url": "./assets/nova.png"
 }

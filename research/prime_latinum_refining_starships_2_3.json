@@ -1,35 +1,40 @@
 {
+  "research_name": "Prime Latinum Refining",
   "description": "25% lower costs and 50% higher yields for the Raw Latinum Refinery",
-  "img_url": "./assets/prime_latinum_refining_starships_2_3.png",
+  "location": {
+    "column": 3,
+    "row": 2,
+    "tree": "starships"
+  },
   "levels": [
     {
-      "increased_power": 38000,
       "level": 1,
-      "required_by": [],
+      "research_time": 1444440,
+      "increased_power": 38000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 28
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [
-          {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "epic",
-            "value": 200
-          }
-        ],
-        "others": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 18000000
           }
-        ]
+        ],
+        "materials": [
+          {
+            "type": "ore",
+            "value": 200,
+            "grade": 4,
+            "rarity": "epic"
+          }
+        ],
+        "others": []
       },
-      "research_time": 1444440,
       "rewards": [
         {
           "type": "Relocation Token",
@@ -38,10 +43,5 @@
       ]
     }
   ],
-  "location": {
-    "column": 3,
-    "row": 2,
-    "tree": "starships"
-  },
-  "research_name": "Prime Latinum Refining"
+  "img_url": "./assets/prime_latinum_refining_starships_2_3.png"
 }

@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Cardassian Military",
   "description": "",
   "group": "neutral",
+  "level": 22,
+  "rarity": "common",
   "head_stats": {
     "attack": 12550,
     "defense": 13130,
     "health": 4800
   },
-  "hostile_name": "Cardassian Military",
-  "level": 22,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/bajor_20"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 4800
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/bajor_20"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -102,6 +96,12 @@
         "shield_pierce": 438
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

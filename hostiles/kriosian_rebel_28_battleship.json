@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Kriosian Rebel",
   "description": "",
   "group": "neutral",
+  "level": 28,
+  "rarity": "common",
   "head_stats": {
     "attack": 40788,
     "defense": 41250,
     "health": 21000
   },
-  "hostile_name": "Kriosian Rebel",
-  "level": 28,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 93,
-      "min_value": 93,
-      "value": 93
+      "$ref": "systems/niawillen_28"
+    },
+    {
+      "$ref": "systems/willenia_28"
+    },
+    {
+      "$ref": "systems/phelan_28"
+    },
+    {
+      "$ref": "systems/lainey_27"
+    },
+    {
+      "$ref": "systems/neethia_30"
     }
   ],
   "ship_class": "battleship",
@@ -37,28 +46,6 @@
       "shield_health": 18000
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/niawillen_28"
-    },
-    {
-      "$ref": "systems/willenia_28"
-    },
-    {
-      "$ref": "systems/phelan_28"
-    },
-    {
-      "$ref": "systems/lainey_27"
-    },
-    {
-      "$ref": "systems/neethia_30"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +108,19 @@
         "shield_pierce": 8250
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 93,
+      "min_value": 93,
+      "value": 93
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Scouting Bandit",
   "description": "",
   "group": "neutral",
+  "level": 27,
+  "rarity": "common",
   "head_stats": {
     "attack": 28560,
     "defense": 30000,
     "health": 15540
   },
-  "hostile_name": "Scouting Bandit",
-  "level": 27,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/alta_25"
+    },
+    {
+      "$ref": "systems/alhazar_26"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 15960
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/alta_25"
-    },
-    {
-      "$ref": "systems/alhazar_26"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -74,6 +68,12 @@
         "shield_pierce": 1000
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

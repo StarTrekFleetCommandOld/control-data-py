@@ -1,14 +1,78 @@
 {
+  "hostile_name": "Romulan Trader",
   "description": "",
   "group": "romulan",
+  "level": 31,
+  "rarity": "common",
   "head_stats": {
     "attack": 55164,
     "defense": 123750,
     "health": 61920
   },
-  "hostile_name": "Romulan Trader",
-  "level": 31,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/kaisu_33"
+    },
+    {
+      "$ref": "systems/galorndon_core_30"
+    },
+    {
+      "$ref": "systems/izanagi_32"
+    }
+  ],
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 6600,
+      "armor_pierce": 6600,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 45264,
+      "shield_pierce": 6600
+    },
+    "defense": {
+      "armor": 8250,
+      "dodge": 8250,
+      "shield_deflect": 8250
+    },
+    "health": {
+      "hull_health": 61920,
+      "shield_health": 61920
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 6600,
+        "armor_pierce": 6600,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 45264,
+        "max_damage": 43296,
+        "min_damage": 35424,
+        "shield_pierce": 6600
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "tritanium",
@@ -41,73 +105,9 @@
       "value": 218
     }
   ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 6600,
-      "armor_pierce": 6600,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 45264,
-      "shield_pierce": 6600
-    },
-    "defense": {
-      "armor": 8250,
-      "dodge": 8250,
-      "shield_deflect": 8250
-    },
-    "health": {
-      "hull_health": 61920,
-      "shield_health": 61920
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/kaisu_33"
-    },
-    {
-      "$ref": "systems/galorndon_core_30"
-    },
-    {
-      "$ref": "systems/izanagi_32"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 9
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 6600,
-        "armor_pierce": 6600,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 45264,
-        "max_damage": 43296,
-        "min_damage": 35424,
-        "shield_pierce": 6600
-      },
-      "weapon_type": "energy"
     }
   ]
 }

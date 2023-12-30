@@ -1,15 +1,28 @@
 {
+  "hostile_name": "Immortal Arrow Class",
   "description": "",
   "group": "romulan",
+  "level": 57,
+  "rarity": "common",
   "head_stats": {
     "attack": 54949347,
     "defense": 33347160,
     "health": 118148477
   },
-  "hostile_name": "Immortal Arrow Class",
-  "level": 57,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/solis_alpha_59"
+    },
+    {
+      "$ref": "systems/s_nruba_57"
+    },
+    {
+      "$ref": "systems/kiyratari_55"
+    },
+    {
+      "$ref": "systems/hajamieli_55"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 112522353
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/solis_alpha_59"
-    },
-    {
-      "$ref": "systems/s_nruba_57"
-    },
-    {
-      "$ref": "systems/kiyratari_55"
-    },
-    {
-      "$ref": "systems/hajamieli_55"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -111,6 +105,12 @@
         "shield_pierce": 891361
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

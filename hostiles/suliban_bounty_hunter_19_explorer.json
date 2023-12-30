@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Suliban Bounty Hunter",
   "description": "",
   "group": "neutral",
+  "level": 19,
+  "rarity": "common",
   "head_stats": {
     "attack": 6667,
     "defense": 6530,
     "health": 3185
   },
-  "hostile_name": "Suliban Bounty Hunter",
-  "level": 19,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/rainsford_20"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 3270
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/rainsford_20"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -71,6 +65,12 @@
         "shield_pierce": 218
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

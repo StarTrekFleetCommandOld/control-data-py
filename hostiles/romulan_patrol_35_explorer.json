@@ -1,14 +1,72 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 35,
+  "rarity": "common",
   "head_stats": {
     "attack": 246866,
     "defense": 255000,
     "health": 93265
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 35,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/alpha_onias_36"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 47250,
+      "armor_pierce": 9000,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 146741,
+      "shield_pierce": 10500
+    },
+    "defense": {
+      "armor": 10500,
+      "dodge": 9000,
+      "shield_deflect": 31500
+    },
+    "health": {
+      "hull_health": 105300,
+      "shield_health": 81230
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 47250,
+        "armor_pierce": 9000,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 48913,
+        "max_damage": 46787,
+        "min_damage": 38280,
+        "shield_pierce": 10500
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "tritanium",
@@ -41,67 +99,9 @@
       "value": 290
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 47250,
-      "armor_pierce": 9000,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 146741,
-      "shield_pierce": 10500
-    },
-    "defense": {
-      "armor": 10500,
-      "dodge": 9000,
-      "shield_deflect": 31500
-    },
-    "health": {
-      "hull_health": 105300,
-      "shield_health": 81230
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/alpha_onias_36"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 20
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 47250,
-        "armor_pierce": 9000,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 48913,
-        "max_damage": 46787,
-        "min_damage": 38280,
-        "shield_pierce": 10500
-      },
-      "weapon_type": "energy"
     }
   ]
 }

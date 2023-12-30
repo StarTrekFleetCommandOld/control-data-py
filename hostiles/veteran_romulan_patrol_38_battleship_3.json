@@ -1,44 +1,23 @@
 {
+  "hostile_name": "Veteran Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 38,
+  "rarity": "common",
   "head_stats": {
     "attack": 1063159,
     "defense": 1122200,
     "health": 356825
   },
-  "hostile_name": "Veteran Romulan Patrol",
-  "level": 38,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 626,
-      "min_value": 626,
-      "value": 626
+      "$ref": "systems/khazara_39"
     },
     {
-      "type": "dilithium",
-      "max_value": 51,
-      "min_value": 51,
-      "value": 51
+      "$ref": "systems/cheron_39"
     },
     {
-      "type": "federation points",
-      "max_value": 554,
-      "min_value": 554,
-      "value": 554
-    },
-    {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "klingon points",
-      "max_value": 1109,
-      "min_value": 1109,
-      "value": 1109
+      "$ref": "systems/glintara_39"
     }
   ],
   "ship_class": "battleship",
@@ -61,22 +40,6 @@
       "shield_health": 252660
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/khazara_39"
-    },
-    {
-      "$ref": "systems/cheron_39"
-    },
-    {
-      "$ref": "systems/glintara_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -139,6 +102,43 @@
         "shield_pierce": 240165
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 626,
+      "min_value": 626,
+      "value": 626
+    },
+    {
+      "type": "dilithium",
+      "max_value": 51,
+      "min_value": 51,
+      "value": 51
+    },
+    {
+      "type": "federation points",
+      "max_value": 554,
+      "min_value": 554,
+      "value": 554
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 1109,
+      "min_value": 1109,
+      "value": 1109
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

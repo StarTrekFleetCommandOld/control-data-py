@@ -1,14 +1,78 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 22,
+  "rarity": "common",
   "head_stats": {
     "attack": 14181,
     "defense": 18075,
     "health": 12595
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 22,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/wauoxic_24"
+    },
+    {
+      "$ref": "systems/llorrac_21"
+    },
+    {
+      "$ref": "systems/v_varia_21"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 3349,
+      "armor_pierce": 638,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 7085,
+      "shield_pierce": 744
+    },
+    "defense": {
+      "armor": 744,
+      "dodge": 638,
+      "shield_deflect": 2233
+    },
+    "health": {
+      "hull_health": 14220,
+      "shield_health": 10970
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 3349,
+        "armor_pierce": 638,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 2361,
+        "max_damage": 2259,
+        "min_damage": 1848,
+        "shield_pierce": 744
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "tritanium",
@@ -41,73 +105,9 @@
       "value": 7
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 3349,
-      "armor_pierce": 638,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 7085,
-      "shield_pierce": 744
-    },
-    "defense": {
-      "armor": 744,
-      "dodge": 638,
-      "shield_deflect": 2233
-    },
-    "health": {
-      "hull_health": 14220,
-      "shield_health": 10970
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/wauoxic_24"
-    },
-    {
-      "$ref": "systems/llorrac_21"
-    },
-    {
-      "$ref": "systems/v_varia_21"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 20
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 3349,
-        "armor_pierce": 638,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 2361,
-        "max_damage": 2259,
-        "min_damage": 1848,
-        "shield_pierce": 744
-      },
-      "weapon_type": "energy"
     }
   ]
 }

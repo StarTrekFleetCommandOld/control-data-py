@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Lost Gorn Warship",
   "description": "",
   "group": "neutral",
+  "level": 54,
+  "rarity": "common",
   "head_stats": {
     "attack": 22579924,
     "defense": 14185230,
     "health": 48241633
   },
-  "hostile_name": "Lost Gorn Warship",
-  "level": 54,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 2704,
-      "min_value": 2704,
-      "value": 2704
+      "$ref": "systems/jettas_55"
+    },
+    {
+      "$ref": "systems/sakari_53"
+    },
+    {
+      "$ref": "systems/burdow_55"
+    },
+    {
+      "$ref": "systems/suvfa_53"
+    },
+    {
+      "$ref": "systems/leichter_53"
     }
   ],
   "ship_class": "interceptor",
@@ -37,28 +46,6 @@
       "shield_health": 48241633
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/jettas_55"
-    },
-    {
-      "$ref": "systems/sakari_53"
-    },
-    {
-      "$ref": "systems/burdow_55"
-    },
-    {
-      "$ref": "systems/suvfa_53"
-    },
-    {
-      "$ref": "systems/leichter_53"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +108,19 @@
         "shield_pierce": 346626
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 2704,
+      "min_value": 2704,
+      "value": 2704
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Vaaran Marauder",
   "description": "",
   "group": "neutral",
+  "level": 32,
+  "rarity": "common",
   "head_stats": {
     "attack": 129969,
     "defense": 123750,
     "health": 45150
   },
-  "hostile_name": "Vaaran Marauder",
-  "level": 32,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 124,
-      "min_value": 124,
-      "value": 124
+      "$ref": "systems/olassa_33"
+    },
+    {
+      "$ref": "systems/vellamo_30"
     }
   ],
   "ship_class": "battleship",
@@ -37,19 +37,6 @@
       "shield_health": 38700
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/olassa_33"
-    },
-    {
-      "$ref": "systems/vellamo_30"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 24750
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 124,
+      "min_value": 124,
+      "value": 124
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

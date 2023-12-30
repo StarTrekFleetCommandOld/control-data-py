@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Dead Star Eviscerator",
   "description": "",
   "group": "neutral",
+  "level": 59,
+  "rarity": "common",
   "head_stats": {
     "attack": 134828806,
     "defense": 32531175,
     "health": 132675160
   },
-  "hostile_name": "Dead Star Eviscerator",
-  "level": 59,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken battleship parts",
-      "max_value": 1497,
-      "min_value": 1497,
-      "value": 1497
+      "$ref": "systems/tera_nora_59"
+    },
+    {
+      "$ref": "systems/st_19184_58"
+    },
+    {
+      "$ref": "systems/isa_day_57"
     }
   ],
   "ship_class": "battleship",
@@ -37,22 +40,6 @@
       "shield_health": 113720544
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/tera_nora_59"
-    },
-    {
-      "$ref": "systems/st_19184_58"
-    },
-    {
-      "$ref": "systems/isa_day_57"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 6031509
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken battleship parts",
+      "max_value": 1497,
+      "min_value": 1497,
+      "value": 1497
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

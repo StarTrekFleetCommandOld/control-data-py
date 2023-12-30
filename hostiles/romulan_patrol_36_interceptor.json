@@ -1,15 +1,28 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 36,
+  "rarity": "common",
   "head_stats": {
     "attack": 343245,
     "defense": 330320,
     "health": 97830
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 36,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/argentomea_35"
+    },
+    {
+      "$ref": "systems/vendor_34"
+    },
+    {
+      "$ref": "systems/eden_38"
+    },
+    {
+      "$ref": "systems/terix_38"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 82610
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/argentomea_35"
-    },
-    {
-      "$ref": "systems/vendor_34"
-    },
-    {
-      "$ref": "systems/eden_38"
-    },
-    {
-      "$ref": "systems/terix_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -111,6 +105,12 @@
         "shield_pierce": 12757
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Suliban Assailant",
   "description": "",
   "group": "neutral",
+  "level": 44,
+  "rarity": "common",
   "head_stats": {
     "attack": 2232608,
     "defense": 1163435,
     "health": 3727337
   },
-  "hostile_name": "Suliban Assailant",
-  "level": 44,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 302,
-      "min_value": 302,
-      "value": 302
+      "$ref": "systems/ash_tor_43"
+    },
+    {
+      "$ref": "systems/ril_korvas_44"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 3727337
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ash_tor_43"
-    },
-    {
-      "$ref": "systems/ril_korvas_44"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 37459
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 302,
+      "min_value": 302,
+      "value": 302
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

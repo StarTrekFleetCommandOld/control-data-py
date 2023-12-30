@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Lost Pakled Thief",
   "description": "",
   "group": "neutral",
+  "level": 28,
+  "rarity": "common",
   "head_stats": {
     "attack": 48683,
     "defense": 53970,
     "health": 24150
   },
-  "hostile_name": "Lost Pakled Thief",
-  "level": 28,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 5140,
-      "min_value": 5140,
-      "value": 5140
+      "$ref": "systems/eviloy_29"
+    },
+    {
+      "$ref": "systems/uxal_26"
+    },
+    {
+      "$ref": "systems/kalak_30"
     }
   ],
   "ship_class": "battleship",
@@ -37,22 +40,6 @@
       "shield_health": 17100
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/eviloy_29"
-    },
-    {
-      "$ref": "systems/uxal_26"
-    },
-    {
-      "$ref": "systems/kalak_30"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 11550
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 5140,
+      "min_value": 5140,
+      "value": 5140
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

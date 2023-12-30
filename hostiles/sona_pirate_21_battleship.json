@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Sona Pirate",
   "description": "",
   "group": "neutral",
+  "level": 21,
+  "rarity": "common",
   "head_stats": {
     "attack": 9297,
     "defense": 9750,
     "health": 4200
   },
-  "hostile_name": "Sona Pirate",
-  "level": 21,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/midnight_19"
+    },
+    {
+      "$ref": "systems/amador_19"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 3600
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/midnight_19"
-    },
-    {
-      "$ref": "systems/amador_19"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +99,12 @@
         "shield_pierce": 1950
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

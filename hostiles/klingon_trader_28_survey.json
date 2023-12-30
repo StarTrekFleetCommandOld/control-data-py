@@ -1,14 +1,81 @@
 {
+  "hostile_name": "Klingon Trader",
   "description": "",
   "group": "klingon",
+  "level": 28,
+  "rarity": "common",
   "head_stats": {
     "attack": 20760,
     "defense": 52500,
     "health": 39600
   },
-  "hostile_name": "Klingon Trader",
-  "level": 28,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/izth_26"
+    },
+    {
+      "$ref": "systems/h_atoria_30"
+    },
+    {
+      "$ref": "systems/ias_26"
+    },
+    {
+      "$ref": "systems/enthra_27"
+    }
+  ],
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 2800,
+      "armor_pierce": 2800,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 16560,
+      "shield_pierce": 2800
+    },
+    "defense": {
+      "armor": 3500,
+      "dodge": 3500,
+      "shield_deflect": 3500
+    },
+    "health": {
+      "hull_health": 39600,
+      "shield_health": 39600
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 2800,
+        "armor_pierce": 2800,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 16560,
+        "max_damage": 15840,
+        "min_damage": 12960,
+        "shield_pierce": 2800
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,76 +108,9 @@
       "value": 0
     }
   ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 2800,
-      "armor_pierce": 2800,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 16560,
-      "shield_pierce": 2800
-    },
-    "defense": {
-      "armor": 3500,
-      "dodge": 3500,
-      "shield_deflect": 3500
-    },
-    "health": {
-      "hull_health": 39600,
-      "shield_health": 39600
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/izth_26"
-    },
-    {
-      "$ref": "systems/h_atoria_30"
-    },
-    {
-      "$ref": "systems/ias_26"
-    },
-    {
-      "$ref": "systems/enthra_27"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 10
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 2800,
-        "armor_pierce": 2800,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 16560,
-        "max_damage": 15840,
-        "min_damage": 12960,
-        "shield_pierce": 2800
-      },
-      "weapon_type": "energy"
     }
   ]
 }

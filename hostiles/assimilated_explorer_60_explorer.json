@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Assimilated Explorer",
   "description": "",
   "group": "assimilated",
+  "level": 60,
+  "rarity": "common",
   "head_stats": {
     "attack": 168598498,
     "defense": 50357080,
     "health": 164267670
   },
-  "hostile_name": "Assimilated Explorer",
-  "level": 60,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/inisfal_58"
+    },
+    {
+      "$ref": "systems/ma_vak_59"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 183979831
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/inisfal_58"
-    },
-    {
-      "$ref": "systems/ma_vak_59"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +99,12 @@
         "shield_pierce": 4438589
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

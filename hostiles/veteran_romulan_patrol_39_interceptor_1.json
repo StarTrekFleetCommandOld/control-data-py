@@ -1,44 +1,20 @@
 {
+  "hostile_name": "Veteran Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 1058172,
     "defense": 1036425,
     "health": 319145
   },
-  "hostile_name": "Veteran Romulan Patrol",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 643,
-      "min_value": 643,
-      "value": 643
+      "$ref": "systems/chaltok_39"
     },
     {
-      "type": "dilithium",
-      "max_value": 46,
-      "min_value": 46,
-      "value": 46
-    },
-    {
-      "type": "federation points",
-      "max_value": 554,
-      "min_value": 554,
-      "value": 554
-    },
-    {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "klingon points",
-      "max_value": 1109,
-      "min_value": 1109,
-      "value": 1109
+      "$ref": "systems/dessica_39"
     }
   ],
   "ship_class": "interceptor",
@@ -61,19 +37,6 @@
       "shield_health": 269500
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/chaltok_39"
-    },
-    {
-      "$ref": "systems/dessica_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +99,43 @@
         "shield_pierce": 40027
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 643,
+      "min_value": 643,
+      "value": 643
+    },
+    {
+      "type": "dilithium",
+      "max_value": 46,
+      "min_value": 46,
+      "value": 46
+    },
+    {
+      "type": "federation points",
+      "max_value": 554,
+      "min_value": 554,
+      "value": 554
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 1109,
+      "min_value": 1109,
+      "value": 1109
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

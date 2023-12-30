@@ -1,44 +1,17 @@
 {
+  "hostile_name": "Veteran Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 37,
+  "rarity": "common",
   "head_stats": {
     "attack": 627380,
     "defense": 616525,
     "health": 176410
   },
-  "hostile_name": "Veteran Klingon Patrol",
-  "level": 37,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 2273,
-      "min_value": 2273,
-      "value": 2273
-    },
-    {
-      "type": "tritanium",
-      "max_value": 173,
-      "min_value": 173,
-      "value": 173
-    },
-    {
-      "type": "federation points",
-      "max_value": 654,
-      "min_value": 654,
-      "value": 654
-    },
-    {
-      "type": "romulan points",
-      "max_value": 327,
-      "min_value": 327,
-      "value": 327
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/wlb_puq_38"
     }
   ],
   "ship_class": "interceptor",
@@ -61,16 +34,6 @@
       "shield_health": 176410
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/wlb_puq_38"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -133,6 +96,43 @@
         "shield_pierce": 16493
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 2273,
+      "min_value": 2273,
+      "value": 2273
+    },
+    {
+      "type": "tritanium",
+      "max_value": 173,
+      "min_value": 173,
+      "value": 173
+    },
+    {
+      "type": "federation points",
+      "max_value": 654,
+      "min_value": 654,
+      "value": 654
+    },
+    {
+      "type": "romulan points",
+      "max_value": 327,
+      "min_value": 327,
+      "value": 327
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Reckless Bandit",
   "description": "",
   "group": "neutral",
+  "level": 50,
+  "rarity": "common",
   "head_stats": {
     "attack": 5218914,
     "defense": 2224385,
     "health": 7525896
   },
-  "hostile_name": "Reckless Bandit",
-  "level": 50,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/farnham_48"
+    },
+    {
+      "$ref": "systems/petandria_48"
+    },
+    {
+      "$ref": "systems/unarri_48"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 7525896
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/farnham_48"
-    },
-    {
-      "$ref": "systems/petandria_48"
-    },
-    {
-      "$ref": "systems/unarri_48"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +102,12 @@
         "shield_pierce": 75705
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

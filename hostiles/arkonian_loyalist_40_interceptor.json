@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Arkonian Loyalist",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1001818,
     "defense": 558065,
     "health": 1753286
   },
-  "hostile_name": "Arkonian Loyalist",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 127,
-      "min_value": 127,
-      "value": 127
+      "$ref": "systems/klopp_42"
+    },
+    {
+      "$ref": "systems/b_oh_42"
+    },
+    {
+      "$ref": "systems/kurchee_41"
+    },
+    {
+      "$ref": "systems/ra_taj_41"
+    },
+    {
+      "$ref": "systems/hurgh_maq_41"
     }
   ],
   "ship_class": "interceptor",
@@ -37,28 +46,6 @@
       "shield_health": 1753286
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/klopp_42"
-    },
-    {
-      "$ref": "systems/b_oh_42"
-    },
-    {
-      "$ref": "systems/kurchee_41"
-    },
-    {
-      "$ref": "systems/ra_taj_41"
-    },
-    {
-      "$ref": "systems/hurgh_maq_41"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +108,19 @@
         "shield_pierce": 17614
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 127,
+      "min_value": 127,
+      "value": 127
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

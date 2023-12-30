@@ -1,28 +1,19 @@
 {
-  "description": "The Command Control module of the starbase is used to coordinate assaults and defensive maneuvers amongst members of the Alliance. As a beating heart of the operational structure of the Alliance's plans, the Command Control is a key hub of activity on board the starbase.",
-  "bonuses": {
-    "bonus1": {
-      "name": "Hull Health Upgrade",
-      "percentage": false
-    },
-    "bonus2": {
-      "name": "Adv. Hull Health Upgrade",
-      "percentage": true
-    },
-    "bonus3": {
-      "name": "Assault Size",
-      "percentage": false
-    }
-  },
   "building_name": "Command Control",
+  "description": "The Command Control module of the starbase is used to coordinate assaults and defensive maneuvers amongst members of the Alliance. As a beating heart of the operational structure of the Alliance's plans, the Command Control is a key hub of activity on board the starbase.",
   "levels": [
     {
-      "bonuses": {
-        "bonus1": 1000000.0,
-        "bonus2": 0.0,
-        "bonus3": 3.0
-      },
+      "level": 1,
+      "build_time": 41310,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Assembly Chambers",
+          "level": 1
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -33,42 +24,18 @@
             "type": "subspace superconductor",
             "value": 14075
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 41310,
-      "increased_power": 0,
-      "level": 1,
-      "requirements": [
-        {
-          "name": "Assembly Chambers",
-          "level": 1
-        }
-      ]
-    },
-    {
       "bonuses": {
         "bonus1": 1000000.0,
-        "bonus2": 0.05,
+        "bonus2": 0.0,
         "bonus3": 3.0
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [
-          {
-            "type": "collisional plasma",
-            "value": 26000
-          },
-          {
-            "type": "subspace superconductor",
-            "value": 28150
-          }
-        ],
-        "resources": []
-      },
+      }
+    },
+    {
+      "level": 2,
       "build_time": 84780,
       "increased_power": 0,
-      "level": 2,
       "requirements": [
         {
           "name": "Assembly Chambers",
@@ -79,18 +46,46 @@
           "level": 1
         },
         {
-          "name": "Exothermic Targeting Array A",
+          "name": "Exographic Targeting Array A",
           "level": 1
         }
-      ]
-    },
-    {
+      ],
+      "build_costs": {
+        "resources": [],
+        "materials": [],
+        "others": [
+          {
+            "type": "collisional plasma",
+            "value": 26000
+          },
+          {
+            "type": "subspace superconductor",
+            "value": 28150
+          }
+        ]
+      },
       "bonuses": {
         "bonus1": 1000000.0,
-        "bonus2": 0.1,
-        "bonus3": 4.0
-      },
+        "bonus2": 0.05,
+        "bonus3": 3.0
+      }
+    },
+    {
+      "level": 3,
+      "build_time": 131490,
+      "increased_power": 0,
+      "requirements": [
+        {
+          "name": "Assembly Chambers",
+          "level": 3
+        },
+        {
+          "name": "Shield Modulator",
+          "level": 2
+        }
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -101,30 +96,30 @@
             "type": "subspace superconductor",
             "value": 42225
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 131490,
+      "bonuses": {
+        "bonus1": 1000000.0,
+        "bonus2": 0.1,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 4,
+      "build_time": 168480,
       "increased_power": 0,
-      "level": 3,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 3
+          "level": 4
         },
         {
           "name": "Shield Modulator",
-          "level": 2
+          "level": 3
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 1000000.0,
-        "bonus2": 0.15,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -135,30 +130,30 @@
             "type": "subspace superconductor",
             "value": 56300
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 168480,
+      "bonuses": {
+        "bonus1": 1000000.0,
+        "bonus2": 0.15,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 5,
+      "build_time": 216000,
       "increased_power": 0,
-      "level": 4,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 4
+          "level": 5
         },
         {
           "name": "Shield Modulator",
-          "level": 3
+          "level": 4
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2000000.0,
-        "bonus2": 0.15,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -173,30 +168,30 @@
             "type": "subspace superconductor",
             "value": 70350
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 216000,
+      "bonuses": {
+        "bonus1": 2000000.0,
+        "bonus2": 0.15,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 6,
+      "build_time": 256500,
       "increased_power": 0,
-      "level": 5,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 5
+          "level": 6
         },
         {
           "name": "Shield Modulator",
-          "level": 4
+          "level": 5
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2000000.0,
-        "bonus2": 0.25,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -211,30 +206,30 @@
             "type": "subspace superconductor",
             "value": 90050
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 256500,
+      "bonuses": {
+        "bonus1": 2000000.0,
+        "bonus2": 0.25,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 7,
+      "build_time": 337500,
       "increased_power": 0,
-      "level": 6,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 6
+          "level": 7
         },
         {
           "name": "Shield Modulator",
-          "level": 5
+          "level": 6
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2000000.0,
-        "bonus2": 0.35,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -249,30 +244,30 @@
             "type": "subspace superconductor",
             "value": 109775
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 337500,
+      "bonuses": {
+        "bonus1": 2000000.0,
+        "bonus2": 0.35,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 8,
+      "build_time": 393390,
       "increased_power": 0,
-      "level": 7,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 7
+          "level": 8
         },
         {
           "name": "Shield Modulator",
-          "level": 6
+          "level": 7
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2000000.0,
-        "bonus2": 0.45,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -287,30 +282,30 @@
             "type": "subspace superconductor",
             "value": 129475
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 393390,
+      "bonuses": {
+        "bonus1": 2000000.0,
+        "bonus2": 0.45,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 9,
+      "build_time": 449280,
       "increased_power": 0,
-      "level": 8,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 8
+          "level": 9
         },
         {
           "name": "Shield Modulator",
-          "level": 7
+          "level": 8
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 2000000.0,
-        "bonus2": 0.55,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -325,30 +320,30 @@
             "type": "subspace superconductor",
             "value": 149175
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 449280,
+      "bonuses": {
+        "bonus1": 2000000.0,
+        "bonus2": 0.55,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 10,
+      "build_time": 508950,
       "increased_power": 0,
-      "level": 9,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 9
+          "level": 10
         },
         {
           "name": "Shield Modulator",
-          "level": 8
+          "level": 9
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 3000000.0,
-        "bonus2": 0.55,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -363,30 +358,30 @@
             "type": "subspace superconductor",
             "value": 168875
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 508950,
+      "bonuses": {
+        "bonus1": 3000000.0,
+        "bonus2": 0.55,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 11,
+      "build_time": 585360,
       "increased_power": 0,
-      "level": 10,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 10
+          "level": 11
         },
         {
           "name": "Shield Modulator",
-          "level": 9
+          "level": 10
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 3000000.0,
-        "bonus2": 0.65,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -401,30 +396,30 @@
             "type": "subspace superconductor",
             "value": 194200
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 585360,
+      "bonuses": {
+        "bonus1": 3000000.0,
+        "bonus2": 0.65,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 12,
+      "build_time": 658800,
       "increased_power": 0,
-      "level": 11,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 11
+          "level": 12
         },
         {
           "name": "Shield Modulator",
-          "level": 10
+          "level": 11
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 3000000.0,
-        "bonus2": 0.75,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -439,30 +434,30 @@
             "type": "subspace superconductor",
             "value": 219525
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 658800,
+      "bonuses": {
+        "bonus1": 3000000.0,
+        "bonus2": 0.75,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 13,
+      "build_time": 752760,
       "increased_power": 0,
-      "level": 12,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 12
+          "level": 13
         },
         {
           "name": "Shield Modulator",
-          "level": 11
+          "level": 12
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 3000000.0,
-        "bonus2": 0.9,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -477,30 +472,30 @@
             "type": "subspace superconductor",
             "value": 244850
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 752760,
+      "bonuses": {
+        "bonus1": 3000000.0,
+        "bonus2": 0.9,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 14,
+      "build_time": 782730,
       "increased_power": 0,
-      "level": 13,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 13
+          "level": 14
         },
         {
           "name": "Shield Modulator",
-          "level": 12
+          "level": 13
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 3000000.0,
-        "bonus2": 1.05,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -515,30 +510,30 @@
             "type": "subspace superconductor",
             "value": 270175
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 782730,
+      "bonuses": {
+        "bonus1": 3000000.0,
+        "bonus2": 1.05,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 15,
+      "build_time": 931230,
       "increased_power": 0,
-      "level": 14,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 14
+          "level": 15
         },
         {
           "name": "Shield Modulator",
-          "level": 13
+          "level": 14
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 4000000.0,
-        "bonus2": 1.05,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -553,30 +548,30 @@
             "type": "subspace superconductor",
             "value": 295525
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 931230,
+      "bonuses": {
+        "bonus1": 4000000.0,
+        "bonus2": 1.05,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 16,
+      "build_time": 972000,
       "increased_power": 0,
-      "level": 15,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 15
+          "level": 16
         },
         {
           "name": "Shield Modulator",
-          "level": 14
+          "level": 15
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 4000000.0,
-        "bonus2": 1.2,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -591,30 +586,30 @@
             "type": "subspace superconductor",
             "value": 320850
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 972000,
+      "bonuses": {
+        "bonus1": 4000000.0,
+        "bonus2": 1.2,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 17,
+      "build_time": 1026000,
       "increased_power": 0,
-      "level": 16,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 16
+          "level": 17
         },
         {
           "name": "Shield Modulator",
-          "level": 15
+          "level": 16
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 4000000.0,
-        "bonus2": 1.35,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -629,30 +624,30 @@
             "type": "subspace superconductor",
             "value": 346175
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1026000,
+      "bonuses": {
+        "bonus1": 4000000.0,
+        "bonus2": 1.35,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 18,
+      "build_time": 1126980,
       "increased_power": 0,
-      "level": 17,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 17
+          "level": 18
         },
         {
           "name": "Shield Modulator",
-          "level": 16
+          "level": 17
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 4000000.0,
-        "bonus2": 1.5,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -667,30 +662,30 @@
             "type": "subspace superconductor",
             "value": 377125
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1126980,
+      "bonuses": {
+        "bonus1": 4000000.0,
+        "bonus2": 1.5,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 19,
+      "build_time": 1230930,
       "increased_power": 0,
-      "level": 18,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 18
+          "level": 19
         },
         {
           "name": "Shield Modulator",
-          "level": 17
+          "level": 18
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 4000000.0,
-        "bonus2": 1.7,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -705,30 +700,30 @@
             "type": "subspace superconductor",
             "value": 408100
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1230930,
+      "bonuses": {
+        "bonus1": 4000000.0,
+        "bonus2": 1.7,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 20,
+      "build_time": 1322730,
       "increased_power": 0,
-      "level": 19,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 19
+          "level": 20
         },
         {
           "name": "Shield Modulator",
-          "level": 18
+          "level": 19
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 5000000.0,
-        "bonus2": 1.7,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -743,30 +738,30 @@
             "type": "subspace superconductor",
             "value": 439050
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1322730,
+      "bonuses": {
+        "bonus1": 5000000.0,
+        "bonus2": 1.7,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 21,
+      "build_time": 1416150,
       "increased_power": 0,
-      "level": 20,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 20
+          "level": 21
         },
         {
           "name": "Shield Modulator",
-          "level": 19
+          "level": 20
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 5000000.0,
-        "bonus2": 1.9,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -781,30 +776,30 @@
             "type": "subspace superconductor",
             "value": 470000
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1416150,
+      "bonuses": {
+        "bonus1": 5000000.0,
+        "bonus2": 1.9,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 22,
+      "build_time": 1498500,
       "increased_power": 0,
-      "level": 21,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 21
+          "level": 22
         },
         {
           "name": "Shield Modulator",
-          "level": 20
+          "level": 21
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 5000000.0,
-        "bonus2": 2.1,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -819,30 +814,30 @@
             "type": "subspace superconductor",
             "value": 500975
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1498500,
+      "bonuses": {
+        "bonus1": 5000000.0,
+        "bonus2": 2.1,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 23,
+      "build_time": 1615680,
       "increased_power": 0,
-      "level": 22,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 22
+          "level": 23
         },
         {
           "name": "Shield Modulator",
-          "level": 21
+          "level": 22
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 5000000.0,
-        "bonus2": 2.3,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -857,30 +852,30 @@
             "type": "subspace superconductor",
             "value": 537550
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1615680,
+      "bonuses": {
+        "bonus1": 5000000.0,
+        "bonus2": 2.3,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 24,
+      "build_time": 1728270,
       "increased_power": 0,
-      "level": 23,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 23
+          "level": 24
         },
         {
           "name": "Shield Modulator",
-          "level": 22
+          "level": 23
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 5000000.0,
-        "bonus2": 2.5,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -895,30 +890,30 @@
             "type": "subspace superconductor",
             "value": 574150
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1728270,
+      "bonuses": {
+        "bonus1": 5000000.0,
+        "bonus2": 2.5,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 25,
+      "build_time": 1836000,
       "increased_power": 0,
-      "level": 24,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 24
+          "level": 25
         },
         {
           "name": "Shield Modulator",
-          "level": 23
+          "level": 24
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 6000000.0,
-        "bonus2": 2.5,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -933,30 +928,30 @@
             "type": "subspace superconductor",
             "value": 610725
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1836000,
+      "bonuses": {
+        "bonus1": 6000000.0,
+        "bonus2": 2.5,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 26,
+      "build_time": 1890000,
       "increased_power": 0,
-      "level": 25,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 25
+          "level": 26
         },
         {
           "name": "Shield Modulator",
-          "level": 24
+          "level": 25
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 6000000.0,
-        "bonus2": 2.75,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -971,30 +966,30 @@
             "type": "subspace superconductor",
             "value": 647325
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 1890000,
+      "bonuses": {
+        "bonus1": 6000000.0,
+        "bonus2": 2.75,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 27,
+      "build_time": 2097900,
       "increased_power": 0,
-      "level": 26,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 26
+          "level": 27
         },
         {
           "name": "Shield Modulator",
-          "level": 25
+          "level": 26
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 6000000.0,
-        "bonus2": 3.0,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1009,30 +1004,30 @@
             "type": "subspace superconductor",
             "value": 683900
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2097900,
+      "bonuses": {
+        "bonus1": 6000000.0,
+        "bonus2": 3.0,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 28,
+      "build_time": 2160000,
       "increased_power": 0,
-      "level": 27,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 27
+          "level": 28
         },
         {
           "name": "Shield Modulator",
-          "level": 26
+          "level": 27
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 6000000.0,
-        "bonus2": 3.3,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1047,30 +1042,30 @@
             "type": "subspace superconductor",
             "value": 720500
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2160000,
+      "bonuses": {
+        "bonus1": 6000000.0,
+        "bonus2": 3.3,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 29,
+      "build_time": 2303100,
       "increased_power": 0,
-      "level": 28,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 28
+          "level": 29
         },
         {
           "name": "Shield Modulator",
-          "level": 27
+          "level": 28
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 6000000.0,
-        "bonus2": 3.65,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1085,30 +1080,30 @@
             "type": "subspace superconductor",
             "value": 762700
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2303100,
+      "bonuses": {
+        "bonus1": 6000000.0,
+        "bonus2": 3.65,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 30,
+      "build_time": 2403000,
       "increased_power": 0,
-      "level": 29,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 29
+          "level": 30
         },
         {
           "name": "Shield Modulator",
-          "level": 28
+          "level": 29
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 7000000.0,
-        "bonus2": 3.65,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1123,30 +1118,30 @@
             "type": "subspace superconductor",
             "value": 804925
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2403000,
+      "bonuses": {
+        "bonus1": 7000000.0,
+        "bonus2": 3.65,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 31,
+      "build_time": 2551230,
       "increased_power": 0,
-      "level": 30,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 30
+          "level": 31
         },
         {
           "name": "Shield Modulator",
-          "level": 29
+          "level": 30
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 7000000.0,
-        "bonus2": 4.0,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1161,30 +1156,30 @@
             "type": "subspace superconductor",
             "value": 847150
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2551230,
+      "bonuses": {
+        "bonus1": 7000000.0,
+        "bonus2": 4.0,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 32,
+      "build_time": 2676780,
       "increased_power": 0,
-      "level": 31,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 31
+          "level": 32
         },
         {
           "name": "Shield Modulator",
-          "level": 30
+          "level": 31
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 7000000.0,
-        "bonus2": 4.35,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1199,30 +1194,30 @@
             "type": "subspace superconductor",
             "value": 889350
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2676780,
+      "bonuses": {
+        "bonus1": 7000000.0,
+        "bonus2": 4.35,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 33,
+      "build_time": 2804220,
       "increased_power": 0,
-      "level": 32,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 32
+          "level": 33
         },
         {
           "name": "Shield Modulator",
-          "level": 31
+          "level": 32
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 7000000.0,
-        "bonus2": 4.7,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1237,30 +1232,30 @@
             "type": "subspace superconductor",
             "value": 931575
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2804220,
+      "bonuses": {
+        "bonus1": 7000000.0,
+        "bonus2": 4.7,
+        "bonus3": 4.0
+      }
+    },
+    {
+      "level": 34,
+      "build_time": 2932200,
       "increased_power": 0,
-      "level": 33,
       "requirements": [
         {
           "name": "Assembly Chambers",
-          "level": 33
+          "level": 34
         },
         {
           "name": "Shield Modulator",
-          "level": 32
+          "level": 33
         }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 7000000.0,
-        "bonus2": 5.1,
-        "bonus3": 4.0
-      },
+      ],
       "build_costs": {
+        "resources": [],
         "materials": [],
         "others": [
           {
@@ -1275,22 +1270,27 @@
             "type": "subspace superconductor",
             "value": 979425
           }
-        ],
-        "resources": []
+        ]
       },
-      "build_time": 2932200,
-      "increased_power": 0,
-      "level": 34,
-      "requirements": [
-        {
-          "name": "Assembly Chambers",
-          "level": 34
-        },
-        {
-          "name": "Shield Modulator",
-          "level": 33
-        }
-      ]
+      "bonuses": {
+        "bonus1": 7000000.0,
+        "bonus2": 5.1,
+        "bonus3": 4.0
+      }
     }
-  ]
+  ],
+  "bonuses": {
+    "bonus1": {
+      "name": "Hull Health Upgrade",
+      "percentage": false
+    },
+    "bonus2": {
+      "name": "Adv. Hull Health Upgrade",
+      "percentage": true
+    },
+    "bonus3": {
+      "name": "Assault Size",
+      "percentage": false
+    }
+  }
 }

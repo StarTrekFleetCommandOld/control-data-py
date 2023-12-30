@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Swarm Cluster",
   "description": "",
   "group": "swarm",
+  "level": 32,
+  "rarity": "common",
   "head_stats": {
     "attack": 179193,
     "defense": 299065,
     "health": 939120
   },
-  "hostile_name": "Swarm Cluster",
-  "level": 32,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "frequency modulators",
-      "max_value": 557,
-      "min_value": 557,
-      "value": 557
+      "$ref": "systems/adelphi_32"
+    },
+    {
+      "$ref": "systems/fyrsta_32"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 0
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/adelphi_32"
-    },
-    {
-      "$ref": "systems/fyrsta_32"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 5775
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "frequency modulators",
+      "max_value": 557,
+      "min_value": 557,
+      "value": 557
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

@@ -1,15 +1,31 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 29,
+  "rarity": "common",
   "head_stats": {
     "attack": 53722,
     "defense": 59500,
     "health": 34195
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 29,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/argandu_29"
+    },
+    {
+      "$ref": "systems/lempo_31"
+    },
+    {
+      "$ref": "systems/parka_30"
+    },
+    {
+      "$ref": "systems/rator_29"
+    },
+    {
+      "$ref": "systems/vendus_a_27"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,28 +46,6 @@
       "shield_health": 29780
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/argandu_29"
-    },
-    {
-      "$ref": "systems/lempo_31"
-    },
-    {
-      "$ref": "systems/parka_30"
-    },
-    {
-      "$ref": "systems/rator_29"
-    },
-    {
-      "$ref": "systems/vendus_a_27"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 20
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -83,6 +77,12 @@
         "shield_pierce": 2450
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 20
     }
   ]
 }

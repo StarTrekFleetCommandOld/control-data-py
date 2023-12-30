@@ -1,38 +1,20 @@
 {
+  "hostile_name": "Federation Scout \u2605",
   "description": "",
   "group": "federation",
+  "level": 45,
+  "rarity": "common",
   "head_stats": {
     "attack": 1585959,
     "defense": 316040,
     "health": 3913704
   },
-  "hostile_name": "Federation Scout \u2605",
-  "level": 45,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 391,
-      "min_value": 391,
-      "value": 391
+      "$ref": "systems/st_9417_45"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "romulan points",
-      "max_value": 8640,
-      "min_value": 8640,
-      "value": 8640
-    },
-    {
-      "type": "klingon points",
-      "max_value": 4320,
-      "min_value": 4320,
-      "value": 4320
+      "$ref": "systems/enten_45"
     }
   ],
   "ship_class": "interceptor",
@@ -55,19 +37,6 @@
       "shield_health": 4100071
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/st_9417_45"
-    },
-    {
-      "$ref": "systems/enten_45"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 80
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -130,6 +99,37 @@
         "shield_pierce": 37459
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 391,
+      "min_value": 391,
+      "value": 391
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 8640,
+      "min_value": 8640,
+      "value": 8640
+    },
+    {
+      "type": "klingon points",
+      "max_value": 4320,
+      "min_value": 4320,
+      "value": 4320
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 80
     }
   ]
 }

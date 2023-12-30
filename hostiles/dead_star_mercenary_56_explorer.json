@@ -1,15 +1,28 @@
 {
+  "hostile_name": "Dead Star Mercenary",
   "description": "",
   "group": "neutral",
+  "level": 56,
+  "rarity": "common",
   "head_stats": {
     "attack": 66777830,
     "defense": 19945235,
     "health": 65062494
   },
-  "hostile_name": "Dead Star Mercenary",
-  "level": 56,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/ishka_du_56"
+    },
+    {
+      "$ref": "systems/scanlon_54"
+    },
+    {
+      "$ref": "systems/isa_day_57"
+    },
+    {
+      "$ref": "systems/bell_eu_55"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 72870009
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ishka_du_56"
-    },
-    {
-      "$ref": "systems/scanlon_54"
-    },
-    {
-      "$ref": "systems/isa_day_57"
-    },
-    {
-      "$ref": "systems/bell_eu_55"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -111,6 +105,12 @@
         "shield_pierce": 1758019
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Jem'Hadar Battleship",
   "description": "",
   "group": "dominion",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 920650,
     "defense": 887490,
     "health": 344545
   },
-  "hostile_name": "Jem'Hadar Battleship",
-  "level": 39,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "antimatter units",
-      "max_value": 94,
-      "min_value": 94,
-      "value": 94
+      "$ref": "systems/alafoss_40"
+    },
+    {
+      "$ref": "systems/karemma_41"
+    },
+    {
+      "$ref": "systems/craelav_38"
+    },
+    {
+      "$ref": "systems/izra_39"
     }
   ],
   "ship_class": "battleship",
@@ -37,25 +43,6 @@
       "shield_health": 248070
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/alafoss_40"
-    },
-    {
-      "$ref": "systems/karemma_41"
-    },
-    {
-      "$ref": "systems/craelav_38"
-    },
-    {
-      "$ref": "systems/izra_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -118,6 +105,19 @@
         "shield_pierce": 89455
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "antimatter units",
+      "max_value": 94,
+      "min_value": 94,
+      "value": 94
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

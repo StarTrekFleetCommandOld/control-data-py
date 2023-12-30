@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Jem'Hadar Battleship",
   "description": "",
   "group": "dominion",
+  "level": 44,
+  "rarity": "common",
   "head_stats": {
     "attack": 1628417,
     "defense": 1045400,
     "health": 3131326
   },
-  "hostile_name": "Jem'Hadar Battleship",
-  "level": 44,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "antimatter units",
-      "max_value": 261,
-      "min_value": 261,
-      "value": 261
+      "$ref": "systems/parada_43"
+    },
+    {
+      "$ref": "systems/clohma_46"
+    },
+    {
+      "$ref": "systems/callinon_43"
+    },
+    {
+      "$ref": "systems/sagra_45"
+    },
+    {
+      "$ref": "systems/koteli_43"
+    },
+    {
+      "$ref": "systems/kurill_44"
     }
   ],
   "ship_class": "battleship",
@@ -37,31 +49,6 @@
       "shield_health": 3877588
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/parada_43"
-    },
-    {
-      "$ref": "systems/clohma_46"
-    },
-    {
-      "$ref": "systems/callinon_43"
-    },
-    {
-      "$ref": "systems/sagra_45"
-    },
-    {
-      "$ref": "systems/koteli_43"
-    },
-    {
-      "$ref": "systems/kurill_44"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 130799
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "antimatter units",
+      "max_value": 261,
+      "min_value": 261,
+      "value": 261
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

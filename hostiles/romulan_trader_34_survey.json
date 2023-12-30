@@ -1,14 +1,84 @@
 {
+  "hostile_name": "Romulan Trader",
   "description": "",
   "group": "romulan",
+  "level": 34,
+  "rarity": "common",
   "head_stats": {
     "attack": 98040,
     "defense": 225000,
     "health": 108000
   },
-  "hostile_name": "Romulan Trader",
-  "level": 34,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/aerimea_35"
+    },
+    {
+      "$ref": "systems/kaisu_33"
+    },
+    {
+      "$ref": "systems/argentomea_35"
+    },
+    {
+      "$ref": "systems/iapedes_36"
+    },
+    {
+      "$ref": "systems/izanagi_32"
+    }
+  ],
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 12000,
+      "armor_pierce": 12000,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 80040,
+      "shield_pierce": 12000
+    },
+    "defense": {
+      "armor": 15000,
+      "dodge": 15000,
+      "shield_deflect": 15000
+    },
+    "health": {
+      "hull_health": 108000,
+      "shield_health": 108000
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 12000,
+        "armor_pierce": 12000,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 80040,
+        "max_damage": 76560,
+        "min_damage": 62640,
+        "shield_pierce": 12000
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "tritanium",
@@ -41,79 +111,9 @@
       "value": 462
     }
   ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 12000,
-      "armor_pierce": 12000,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 80040,
-      "shield_pierce": 12000
-    },
-    "defense": {
-      "armor": 15000,
-      "dodge": 15000,
-      "shield_deflect": 15000
-    },
-    "health": {
-      "hull_health": 108000,
-      "shield_health": 108000
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/aerimea_35"
-    },
-    {
-      "$ref": "systems/kaisu_33"
-    },
-    {
-      "$ref": "systems/argentomea_35"
-    },
-    {
-      "$ref": "systems/iapedes_36"
-    },
-    {
-      "$ref": "systems/izanagi_32"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 9
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 12000,
-        "armor_pierce": 12000,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 80040,
-        "max_damage": 76560,
-        "min_damage": 62640,
-        "shield_pierce": 12000
-      },
-      "weapon_type": "energy"
     }
   ]
 }

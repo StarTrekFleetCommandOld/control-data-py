@@ -1,11 +1,16 @@
 {
+  "research_name": "Unlock Refinery",
   "description": "Unlocks the Refinery building, for Refining Materials.",
-  "img_url": "./assets/unlock_refinery_station_2_6.png",
+  "location": {
+    "column": 6,
+    "row": 2,
+    "tree": "station"
+  },
   "levels": [
     {
-      "increased_power": 1900,
       "level": 1,
-      "required_by": [],
+      "research_time": 21420,
+      "increased_power": 1900,
       "requirements": [
         {
           "name": "Unlock Astronautics",
@@ -16,9 +21,8 @@
           "level": 10
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -28,15 +32,11 @@
             "type": "dilithium",
             "value": 500
           }
-        ]
-      },
-      "research_time": 21420
+        ],
+        "materials": [],
+        "others": []
+      }
     }
   ],
-  "location": {
-    "column": 6,
-    "row": 2,
-    "tree": "station"
-  },
-  "research_name": "Unlock Refinery"
+  "img_url": "./assets/unlock_refinery_station_2_6.png"
 }

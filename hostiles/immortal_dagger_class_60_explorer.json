@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Immortal Dagger Class",
   "description": "",
   "group": "romulan",
+  "level": 60,
+  "rarity": "common",
   "head_stats": {
     "attack": 146793910,
     "defense": 56280095,
     "health": 193409628
   },
-  "hostile_name": "Immortal Dagger Class",
-  "level": 60,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/solis_alpha_59"
+    },
+    {
+      "$ref": "systems/dairuum_58"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 207489330
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/solis_alpha_59"
-    },
-    {
-      "$ref": "systems/dairuum_58"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +99,12 @@
         "shield_pierce": 3975903
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

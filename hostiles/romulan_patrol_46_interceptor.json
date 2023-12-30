@@ -1,38 +1,23 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 46,
+  "rarity": "common",
   "head_stats": {
     "attack": 2086486,
     "defense": 1447520,
     "health": 4946612
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 46,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 482,
-      "min_value": 482,
-      "value": 482
+      "$ref": "systems/naalur_44"
     },
     {
-      "type": "federation points",
-      "max_value": 1520,
-      "min_value": 1520,
-      "value": 1520
+      "$ref": "systems/ballion_46"
     },
     {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
-    },
-    {
-      "type": "klingon points",
-      "max_value": 3040,
-      "min_value": 3040,
-      "value": 3040
+      "$ref": "systems/elvros_47"
     }
   ],
   "ship_class": "interceptor",
@@ -55,22 +40,6 @@
       "shield_health": 4711059
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/naalur_44"
-    },
-    {
-      "$ref": "systems/ballion_46"
-    },
-    {
-      "$ref": "systems/elvros_47"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -133,6 +102,37 @@
         "shield_pierce": 49727
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 482,
+      "min_value": 482,
+      "value": 482
+    },
+    {
+      "type": "federation points",
+      "max_value": 1520,
+      "min_value": 1520,
+      "value": 1520
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 3040,
+      "min_value": 3040,
+      "value": 3040
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

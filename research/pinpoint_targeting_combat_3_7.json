@@ -1,15 +1,16 @@
 {
+  "research_name": "Pinpoint Targeting",
   "description": "Critical Hit Chance is increased for all ships.",
-  "img_url": "./assets/pinpoint_targeting_combat_3_7.png",
+  "location": {
+    "column": 7,
+    "row": 3,
+    "tree": "combat"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": false,
-        "value": 0.01
-      },
-      "increased_power": 1600,
       "level": 1,
-      "required_by": [],
+      "research_time": 18600,
+      "increased_power": 1600,
       "requirements": [
         {
           "name": "Unlock Phindra",
@@ -20,26 +21,26 @@
           "level": 11
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 630
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "research_time": 18600
-    },
-    {
       "bonus": {
         "percentage": false,
-        "value": 0.02
-      },
-      "increased_power": 6400,
+        "value": 0.01
+      }
+    },
+    {
       "level": 2,
-      "required_by": [],
+      "research_time": 213720,
+      "increased_power": 6400,
       "requirements": [
         {
           "name": "Exploit Weakpoints",
@@ -54,23 +55,22 @@
           "level": 4
         }
       ],
+      "required_by": [],
       "research_costs": {
-        "materials": [],
-        "others": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 19800
           }
-        ]
+        ],
+        "materials": [],
+        "others": []
       },
-      "research_time": 213720
+      "bonus": {
+        "percentage": false,
+        "value": 0.02
+      }
     }
   ],
-  "location": {
-    "column": 7,
-    "row": 3,
-    "tree": "combat"
-  },
-  "research_name": "Pinpoint Targeting"
+  "img_url": "./assets/pinpoint_targeting_combat_3_7.png"
 }

@@ -1,20 +1,23 @@
 {
-  "description": "",
   "armada_name": "Formation Armada",
+  "description": "",
   "group": "neutral",
+  "level": 30,
+  "rarity": "uncommon",
   "head_stats": {
     "attack": 549428,
     "defense": 421050,
     "health": 8824508
   },
-  "level": 30,
-  "rarity": "uncommon",
-  "rewards": [
+  "systems": [
     {
-      "type": "Artifact Token",
-      "max_value": 2000,
-      "min_value": 2000,
-      "value": 2000
+      "$ref": "systems/uxal_26"
+    },
+    {
+      "$ref": "systems/kalak_30"
+    },
+    {
+      "$ref": "systems/miranil_33"
     }
   ],
   "stats": {
@@ -36,17 +39,6 @@
       "shield_health": 8631416
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/uxal_26"
-    },
-    {
-      "$ref": "systems/kalak_30"
-    },
-    {
-      "$ref": "systems/miranil_33"
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -97,6 +89,14 @@
         "shield_pierce": 25368
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "Artifact Token",
+      "max_value": 2000,
+      "min_value": 2000,
+      "value": 2000
     }
   ]
 }

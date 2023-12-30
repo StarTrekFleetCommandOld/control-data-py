@@ -1,7 +1,11 @@
 {
-  "description": "Vel K'Bentayr is a Monchezkin medical cadet; his tendency to narrate his feelings and actions in literal terms makes many think him strange, but his efficiency in diagnosing illness and emergency medical procedures earns him a lot of social leeway.",
+  "officer_name": "Vel K'Bentayr",
+  "description": "",
+  "class": "science",
+  "group": "starfleet academy",
+  "faction": "federation",
+  "rarity": "common",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Dilithium Hunter",
       "bonus": "Vel increases the Dilithium rewards for defeating a Hostile by {value}.",
@@ -12,18 +16,20 @@
       "name": "Chirurgical Precision",
       "bonus": "If the opponent is a Hostile, Vel increases the damage made by the Kinetic Weapons of the ship by {value}.",
       "percentage": true
-    }
+    },
+    "below_decks_ability": null
   },
-  "class": "science",
-  "faction": "federation",
-  "group": "starfleet academy",
-  "img_url": "./assets/vel_k_bentayr.png",
-  "officer_name": "Vel K'Bentayr",
+  "synergy": {
+    "command": 0.1,
+    "engineering": 0.1,
+    "science": 0.05
+  },
+  "traits": [],
   "ranks": [
     {
+      "rank_id": 1,
       "name": "ENSIGN I",
       "officer_ability_value": 0.05,
-      "rank_id": 1,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -33,9 +39,9 @@
       }
     },
     {
+      "rank_id": 2,
       "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.07,
-      "rank_id": 2,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -45,9 +51,9 @@
       }
     },
     {
+      "rank_id": 3,
       "name": "LIEUTENANT III",
       "officer_ability_value": 0.1,
-      "rank_id": 3,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -57,9 +63,9 @@
       }
     },
     {
+      "rank_id": 4,
       "name": "LT. COMMANDER IV",
       "officer_ability_value": 0.15,
-      "rank_id": 4,
       "requirements": {
         "badges": 0,
         "credits": 0,
@@ -69,9 +75,9 @@
       }
     },
     {
+      "rank_id": 5,
       "name": "COMMANDER V",
       "officer_ability_value": 0.2,
-      "rank_id": 5,
       "requirements": {
         "badges": 0,
         "credits": 1100,
@@ -81,11 +87,5 @@
       }
     }
   ],
-  "rarity": "common",
-  "synergy": {
-    "command": 0.1,
-    "engineering": 0.1,
-    "science": 0.05
-  },
-  "traits": []
+  "img_url": "./assets/vel_k_bentayr.png"
 }

@@ -1,38 +1,29 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 45,
+  "rarity": "common",
   "head_stats": {
     "attack": 1817234,
     "defense": 1299765,
     "health": 4399952
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 45,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 459,
-      "min_value": 459,
-      "value": 459
+      "$ref": "systems/ami_bera_43"
     },
     {
-      "type": "federation points",
-      "max_value": 1440,
-      "min_value": 1440,
-      "value": 1440
+      "$ref": "systems/ballion_46"
     },
     {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/elvros_47"
     },
     {
-      "type": "klingon points",
-      "max_value": 2880,
-      "min_value": 2880,
-      "value": 2880
+      "$ref": "systems/naalur_44"
+    },
+    {
+      "$ref": "systems/talvath_43"
     }
   ],
   "ship_class": "interceptor",
@@ -55,28 +46,6 @@
       "shield_health": 4190430
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ami_bera_43"
-    },
-    {
-      "$ref": "systems/ballion_46"
-    },
-    {
-      "$ref": "systems/elvros_47"
-    },
-    {
-      "$ref": "systems/naalur_44"
-    },
-    {
-      "$ref": "systems/talvath_43"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -139,6 +108,37 @@
         "shield_pierce": 44225
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 459,
+      "min_value": 459,
+      "value": 459
+    },
+    {
+      "type": "federation points",
+      "max_value": 1440,
+      "min_value": 1440,
+      "value": 1440
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 2880,
+      "min_value": 2880,
+      "value": 2880
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

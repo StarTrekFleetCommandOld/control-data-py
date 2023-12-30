@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Nausicaan Warship",
   "description": "",
   "group": "neutral",
+  "level": 50,
+  "rarity": "common",
   "head_stats": {
     "attack": 7147120,
     "defense": 1924185,
     "health": 8219786
   },
-  "hostile_name": "Nausicaan Warship",
-  "level": 50,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken battleship parts",
-      "max_value": 149,
-      "min_value": 149,
-      "value": 149
+      "$ref": "systems/hulman_52"
+    },
+    {
+      "$ref": "systems/sosain_52"
+    },
+    {
+      "$ref": "systems/belmont_51"
+    },
+    {
+      "$ref": "systems/callicoat_51"
+    },
+    {
+      "$ref": "systems/farana_50"
     }
   ],
   "ship_class": "battleship",
@@ -37,28 +46,6 @@
       "shield_health": 7045484
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/hulman_52"
-    },
-    {
-      "$ref": "systems/sosain_52"
-    },
-    {
-      "$ref": "systems/belmont_51"
-    },
-    {
-      "$ref": "systems/callicoat_51"
-    },
-    {
-      "$ref": "systems/farana_50"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -121,6 +108,19 @@
         "shield_pierce": 354347
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken battleship parts",
+      "max_value": 149,
+      "min_value": 149,
+      "value": 149
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

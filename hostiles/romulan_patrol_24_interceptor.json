@@ -1,44 +1,29 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 24,
+  "rarity": "common",
   "head_stats": {
     "attack": 18933,
     "defense": 20845,
     "health": 7020
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 24,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 271,
-      "min_value": 271,
-      "value": 271
+      "$ref": "systems/rosec_22"
     },
     {
-      "type": "dilithium",
-      "max_value": 23,
-      "min_value": 23,
-      "value": 23
+      "$ref": "systems/jeuaiei_25"
     },
     {
-      "type": "federation points",
-      "max_value": 6,
-      "min_value": 6,
-      "value": 6
+      "$ref": "systems/zova_rhen_25"
     },
     {
-      "type": "romulan points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/rooth_26"
     },
     {
-      "type": "klingon points",
-      "max_value": 12,
-      "min_value": 12,
-      "value": 12
+      "$ref": "systems/tufem_23"
     }
   ],
   "ship_class": "interceptor",
@@ -61,28 +46,6 @@
       "shield_health": 5930
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/rosec_22"
-    },
-    {
-      "$ref": "systems/jeuaiei_25"
-    },
-    {
-      "$ref": "systems/zova_rhen_25"
-    },
-    {
-      "$ref": "systems/rooth_26"
-    },
-    {
-      "$ref": "systems/tufem_23"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -145,6 +108,43 @@
         "shield_pierce": 805
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 271,
+      "min_value": 271,
+      "value": 271
+    },
+    {
+      "type": "dilithium",
+      "max_value": 23,
+      "min_value": 23,
+      "value": 23
+    },
+    {
+      "type": "federation points",
+      "max_value": 6,
+      "min_value": 6,
+      "value": 6
+    },
+    {
+      "type": "romulan points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "klingon points",
+      "max_value": 12,
+      "min_value": 12,
+      "value": 12
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

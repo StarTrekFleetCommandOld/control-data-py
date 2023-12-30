@@ -1,38 +1,20 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 49,
+  "rarity": "common",
   "head_stats": {
     "attack": 5263148,
     "defense": 2060445,
     "health": 7127750
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 49,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 853,
-      "min_value": 853,
-      "value": 853
+      "$ref": "systems/muhg_48"
     },
     {
-      "type": "federation points",
-      "max_value": 3520,
-      "min_value": 3520,
-      "value": 3520
-    },
-    {
-      "type": "romulan points",
-      "max_value": 1760,
-      "min_value": 1760,
-      "value": 1760
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/tej_lukk_50"
     }
   ],
   "ship_class": "explorer",
@@ -55,19 +37,6 @@
       "shield_health": 7983082
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/muhg_48"
-    },
-    {
-      "$ref": "systems/tej_lukk_50"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -99,6 +68,37 @@
         "shield_pierce": 185143
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 853,
+      "min_value": 853,
+      "value": 853
+    },
+    {
+      "type": "federation points",
+      "max_value": 3520,
+      "min_value": 3520,
+      "value": 3520
+    },
+    {
+      "type": "romulan points",
+      "max_value": 1760,
+      "min_value": 1760,
+      "value": 1760
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

@@ -1,15 +1,28 @@
 {
+  "hostile_name": "Jem'Hadar Cruiser",
   "description": "",
   "group": "dominion",
+  "level": 48,
+  "rarity": "common",
   "head_stats": {
     "attack": 5076245,
     "defense": 2212580,
     "health": 4830811
   },
-  "hostile_name": "Jem'Hadar Cruiser",
-  "level": 48,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/tulonra_50"
+    },
+    {
+      "$ref": "systems/clohma_46"
+    },
+    {
+      "$ref": "systems/tediden_48"
+    },
+    {
+      "$ref": "systems/hyra_49"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 7432018
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/tulonra_50"
-    },
-    {
-      "$ref": "systems/clohma_46"
-    },
-    {
-      "$ref": "systems/tediden_48"
-    },
-    {
-      "$ref": "systems/hyra_49"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -80,6 +74,12 @@
         "shield_pierce": 164656
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

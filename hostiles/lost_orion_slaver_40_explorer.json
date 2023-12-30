@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Lost Orion Slaver",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1509644,
     "defense": 588150,
     "health": 1982039
   },
-  "hostile_name": "Lost Orion Slaver",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 139,
-      "min_value": 139,
-      "value": 139
+      "$ref": "systems/korzans_40"
+    },
+    {
+      "$ref": "systems/sadell_40"
+    },
+    {
+      "$ref": "systems/vaskan_kyrian_40"
+    },
+    {
+      "$ref": "systems/kraylor_40"
     }
   ],
   "ship_class": "explorer",
@@ -37,25 +43,6 @@
       "shield_health": 2312379
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/korzans_40"
-    },
-    {
-      "$ref": "systems/sadell_40"
-    },
-    {
-      "$ref": "systems/vaskan_kyrian_40"
-    },
-    {
-      "$ref": "systems/kraylor_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -87,6 +74,19 @@
         "shield_pierce": 64437
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 139,
+      "min_value": 139,
+      "value": 139
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

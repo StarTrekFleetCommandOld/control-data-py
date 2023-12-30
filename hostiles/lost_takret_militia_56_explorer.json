@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Lost Takret Militia",
   "description": "",
   "group": "neutral",
+  "level": 56,
+  "rarity": "common",
   "head_stats": {
     "attack": 58289536,
     "defense": 23192655,
     "health": 77485450
   },
-  "hostile_name": "Lost Takret Militia",
-  "level": 56,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 3720,
-      "min_value": 3720,
-      "value": 3720
+      "$ref": "systems/jettas_55"
+    },
+    {
+      "$ref": "systems/burdow_55"
+    },
+    {
+      "$ref": "systems/tak_tak_58"
     }
   ],
   "ship_class": "explorer",
@@ -37,22 +40,6 @@
       "shield_health": 90399721
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/jettas_55"
-    },
-    {
-      "$ref": "systems/burdow_55"
-    },
-    {
-      "$ref": "systems/tak_tak_58"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 1499773
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 3720,
+      "min_value": 3720,
+      "value": 3720
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

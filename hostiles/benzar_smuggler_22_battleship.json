@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Benzar Smuggler",
   "description": "",
   "group": "neutral",
+  "level": 22,
+  "rarity": "common",
   "head_stats": {
     "attack": 12120,
     "defense": 13130,
     "health": 5250
   },
-  "hostile_name": "Benzar Smuggler",
-  "level": 22,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/nabok_22"
+    },
+    {
+      "$ref": "systems/k_amia_24"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 4500
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/nabok_22"
-    },
-    {
-      "$ref": "systems/k_amia_24"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +99,12 @@
         "shield_pierce": 2625
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

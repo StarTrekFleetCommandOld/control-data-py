@@ -1,20 +1,17 @@
 {
+  "hostile_name": "Freebooter Interceptor",
   "description": "",
   "group": "ex-borg",
+  "level": 50,
+  "rarity": "common",
   "head_stats": {
     "attack": 3178023,
     "defense": 2230385,
     "health": 67447866
   },
-  "hostile_name": "Freebooter Interceptor",
-  "level": 50,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken interceptor parts",
-      "max_value": 148,
-      "min_value": 148,
-      "value": 148
+      "$ref": "systems/zhessir_50"
     }
   ],
   "ship_class": "interceptor",
@@ -37,16 +34,6 @@
       "shield_health": 7935043
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/zhessir_50"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -109,6 +96,19 @@
         "shield_pierce": 75705
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken interceptor parts",
+      "max_value": 148,
+      "min_value": 148,
+      "value": 148
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

@@ -1,20 +1,23 @@
 {
+  "hostile_name": "Blacklight Pirate",
   "description": "",
   "group": "neutral",
+  "level": 58,
+  "rarity": "common",
   "head_stats": {
     "attack": 99523671,
     "defense": 27704370,
     "health": 102247885
   },
-  "hostile_name": "Blacklight Pirate",
-  "level": 58,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken interceptor parts",
-      "max_value": 1063,
-      "min_value": 1063,
-      "value": 1063
+      "$ref": "systems/rydania_59"
+    },
+    {
+      "$ref": "systems/st_19184_58"
+    },
+    {
+      "$ref": "systems/isa_day_57"
     }
   ],
   "ship_class": "interceptor",
@@ -37,22 +40,6 @@
       "shield_health": 102247885
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/rydania_59"
-    },
-    {
-      "$ref": "systems/st_19184_58"
-    },
-    {
-      "$ref": "systems/isa_day_57"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -115,6 +102,19 @@
         "shield_pierce": 1030317
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken interceptor parts",
+      "max_value": 1063,
+      "min_value": 1063,
+      "value": 1063
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

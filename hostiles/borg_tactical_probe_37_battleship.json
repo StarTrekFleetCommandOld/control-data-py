@@ -1,20 +1,17 @@
 {
+  "hostile_name": "Borg Tactical Probe",
   "description": "",
   "group": "borg",
+  "level": 37,
+  "rarity": "common",
   "head_stats": {
     "attack": 9194567,
     "defense": 4154150,
     "health": 31997550
   },
-  "hostile_name": "Borg Tactical Probe",
-  "level": 37,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "inert nanoprobe",
-      "max_value": 11151,
-      "min_value": 11151,
-      "value": 11151
+      "$ref": "systems/kallidin_37"
     }
   ],
   "ship_class": "battleship",
@@ -37,16 +34,6 @@
       "shield_health": 39985500
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/kallidin_37"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 48
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -171,6 +158,19 @@
         "shield_pierce": 334305
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "inert nanoprobe",
+      "max_value": 11151,
+      "min_value": 11151,
+      "value": 11151
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 48
     }
   ]
 }

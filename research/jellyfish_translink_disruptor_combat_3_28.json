@@ -1,43 +1,43 @@
 {
+  "research_name": "Jellyfish Translink Disruptor",
   "description": "Bring down the Borg Sphere's communications to increase the damage dealt to it by +35000% with the ISS Jellyfish.",
-  "img_url": "./assets/jellyfish_translink_disruptor_combat_3_28.png",
+  "location": {
+    "column": 28,
+    "row": 3,
+    "tree": "combat"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 350.0
-      },
-      "increased_power": 31000,
       "level": 1,
-      "required_by": [],
+      "research_time": 120,
+      "increased_power": 31000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 39
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 400000
+          }
+        ],
         "materials": [],
         "others": [
           {
             "type": "charged nanoprobe",
             "value": 5000
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 400000
-          }
         ]
       },
-      "research_time": 120
+      "bonus": {
+        "percentage": true,
+        "value": 350.0
+      }
     }
   ],
-  "location": {
-    "column": 28,
-    "row": 3,
-    "tree": "combat"
-  },
-  "research_name": "Jellyfish Translink Disruptor"
+  "img_url": "./assets/jellyfish_translink_disruptor_combat_3_28.png"
 }

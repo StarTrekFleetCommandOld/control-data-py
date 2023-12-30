@@ -1,38 +1,32 @@
 {
+  "hostile_name": "KSG Fighter",
   "description": "",
   "group": "klingon",
+  "level": 52,
+  "rarity": "common",
   "head_stats": {
     "attack": 8660415,
     "defense": 5440670,
     "health": 18502831
   },
-  "hostile_name": "KSG Fighter",
-  "level": 52,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken interceptor parts",
-      "max_value": 205,
-      "min_value": 205,
-      "value": 205
+      "$ref": "systems/ghuh_50"
     },
     {
-      "type": "federation points",
-      "max_value": 17840,
-      "min_value": 17840,
-      "value": 17840
+      "$ref": "systems/magnamia_54"
     },
     {
-      "type": "romulan points",
-      "max_value": 8920,
-      "min_value": 8920,
-      "value": 8920
+      "$ref": "systems/ariadexa_52"
     },
     {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/tugh_li_wov_52"
+    },
+    {
+      "$ref": "systems/lycrus_52"
+    },
+    {
+      "$ref": "systems/santesso_54"
     }
   ],
   "ship_class": "interceptor",
@@ -55,31 +49,6 @@
       "shield_health": 18502831
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ghuh_50"
-    },
-    {
-      "$ref": "systems/magnamia_54"
-    },
-    {
-      "$ref": "systems/ariadexa_52"
-    },
-    {
-      "$ref": "systems/tugh_li_wov_52"
-    },
-    {
-      "$ref": "systems/lycrus_52"
-    },
-    {
-      "$ref": "systems/santesso_54"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -142,6 +111,37 @@
         "shield_pierce": 132947
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken interceptor parts",
+      "max_value": 205,
+      "min_value": 205,
+      "value": 205
+    },
+    {
+      "type": "federation points",
+      "max_value": 17840,
+      "min_value": 17840,
+      "value": 17840
+    },
+    {
+      "type": "romulan points",
+      "max_value": 8920,
+      "min_value": 8920,
+      "value": 8920
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

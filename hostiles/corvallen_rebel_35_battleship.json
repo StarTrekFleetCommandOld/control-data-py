@@ -1,15 +1,28 @@
 {
+  "hostile_name": "Corvallen Rebel",
   "description": "",
   "group": "neutral",
+  "level": 35,
+  "rarity": "common",
   "head_stats": {
     "attack": 232293,
     "defense": 225000,
     "health": 78750
   },
-  "hostile_name": "Corvallen Rebel",
-  "level": 35,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/yutuq_37"
+    },
+    {
+      "$ref": "systems/piuioab_37"
+    },
+    {
+      "$ref": "systems/zizeyab_37"
+    },
+    {
+      "$ref": "systems/lanaj_37"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,25 +43,6 @@
       "shield_health": 67500
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/yutuq_37"
-    },
-    {
-      "$ref": "systems/piuioab_37"
-    },
-    {
-      "$ref": "systems/zizeyab_37"
-    },
-    {
-      "$ref": "systems/lanaj_37"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -111,6 +105,12 @@
         "shield_pierce": 45000
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

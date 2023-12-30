@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 33,
+  "rarity": "common",
   "head_stats": {
     "attack": 173536,
     "defense": 181615,
     "health": 56020
   },
-  "hostile_name": "Federation Patrol",
-  "level": 33,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/tau_ceti_34"
+    },
+    {
+      "$ref": "systems/barklay_31"
+    },
+    {
+      "$ref": "systems/thama_32"
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 56750
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/tau_ceti_34"
-    },
-    {
-      "$ref": "systems/barklay_31"
-    },
-    {
-      "$ref": "systems/thama_32"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +102,12 @@
         "shield_pierce": 36072
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

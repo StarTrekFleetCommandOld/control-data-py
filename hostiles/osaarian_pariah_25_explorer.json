@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Osaarian Pariah",
   "description": "",
   "group": "neutral",
+  "level": 25,
+  "rarity": "common",
   "head_stats": {
     "attack": 16699,
     "defense": 18750,
     "health": 8880
   },
-  "hostile_name": "Osaarian Pariah",
-  "level": 25,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 248,
-      "min_value": 248,
-      "value": 248
+      "$ref": "systems/panak_27"
+    },
+    {
+      "$ref": "systems/narendra_25"
     }
   ],
   "ship_class": "explorer",
@@ -37,19 +37,6 @@
       "shield_health": 9120
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/panak_27"
-    },
-    {
-      "$ref": "systems/narendra_25"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -81,6 +68,19 @@
         "shield_pierce": 625
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 248,
+      "min_value": 248,
+      "value": 248
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

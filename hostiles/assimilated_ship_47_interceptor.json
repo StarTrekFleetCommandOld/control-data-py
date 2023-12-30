@@ -1,15 +1,25 @@
 {
+  "hostile_name": "Assimilated Ship",
   "description": "",
   "group": "assimilated",
+  "level": 47,
+  "rarity": "common",
   "head_stats": {
     "attack": 3410387,
     "defense": 1607540,
     "health": 5296372
   },
-  "hostile_name": "Assimilated Ship",
-  "level": 47,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/weima_49"
+    },
+    {
+      "$ref": "systems/rek_sgar_49"
+    },
+    {
+      "$ref": "systems/corsen_49"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,22 +40,6 @@
       "shield_health": 5296372
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/weima_49"
-    },
-    {
-      "$ref": "systems/rek_sgar_49"
-    },
-    {
-      "$ref": "systems/corsen_49"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -108,6 +102,12 @@
         "shield_pierce": 53252
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

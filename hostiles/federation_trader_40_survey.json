@@ -1,38 +1,26 @@
 {
+  "hostile_name": "Federation Trader",
   "description": "",
   "group": "federation",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1043435,
     "defense": 1224925,
     "health": 1960742
   },
-  "hostile_name": "Federation Trader",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken survey parts",
-      "max_value": 128,
-      "min_value": 128,
-      "value": 128
+      "$ref": "systems/kurchee_41"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/zosam_40"
     },
     {
-      "type": "romulan points",
-      "max_value": 4480,
-      "min_value": 4480,
-      "value": 4480
+      "$ref": "systems/hyland_42"
     },
     {
-      "type": "klingon points",
-      "max_value": 2240,
-      "min_value": 2240,
-      "value": 2240
+      "$ref": "systems/dashai_40"
     }
   ],
   "ship_class": "survey",
@@ -55,25 +43,6 @@
       "shield_health": 1950906
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/kurchee_41"
-    },
-    {
-      "$ref": "systems/zosam_40"
-    },
-    {
-      "$ref": "systems/hyland_42"
-    },
-    {
-      "$ref": "systems/dashai_40"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +74,37 @@
         "shield_pierce": 29222
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken survey parts",
+      "max_value": 128,
+      "min_value": 128,
+      "value": 128
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 4480,
+      "min_value": 4480,
+      "value": 4480
+    },
+    {
+      "type": "klingon points",
+      "max_value": 2240,
+      "min_value": 2240,
+      "value": 2240
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

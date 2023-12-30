@@ -1,14 +1,78 @@
 {
+  "hostile_name": "Federation Trader",
   "description": "",
   "group": "federation",
+  "level": 35,
+  "rarity": "common",
   "head_stats": {
     "attack": 123587,
     "defense": 273375,
     "health": 130440
   },
-  "hostile_name": "Federation Trader",
-  "level": 35,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/siiolux_35"
+    },
+    {
+      "$ref": "systems/axanar_36"
+    },
+    {
+      "$ref": "systems/andoria_34"
+    }
+  ],
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 14580,
+      "armor_pierce": 14580,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 101717,
+      "shield_pierce": 14580
+    },
+    "defense": {
+      "armor": 18225,
+      "dodge": 18225,
+      "shield_deflect": 18225
+    },
+    "health": {
+      "hull_health": 130440,
+      "shield_health": 130440
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 14580,
+        "armor_pierce": 14580,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 101717,
+        "max_damage": 97295,
+        "min_damage": 79605,
+        "shield_pierce": 14580
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,73 +105,9 @@
       "value": 290
     }
   ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 14580,
-      "armor_pierce": 14580,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 101717,
-      "shield_pierce": 14580
-    },
-    "defense": {
-      "armor": 18225,
-      "dodge": 18225,
-      "shield_deflect": 18225
-    },
-    "health": {
-      "hull_health": 130440,
-      "shield_health": 130440
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/siiolux_35"
-    },
-    {
-      "$ref": "systems/axanar_36"
-    },
-    {
-      "$ref": "systems/andoria_34"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 9
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 14580,
-        "armor_pierce": 14580,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 101717,
-        "max_damage": 97295,
-        "min_damage": 79605,
-        "shield_pierce": 14580
-      },
-      "weapon_type": "energy"
     }
   ]
 }

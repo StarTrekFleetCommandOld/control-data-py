@@ -1,28 +1,36 @@
 {
+  "research_name": "Prime Agile Scrapping",
   "description": "Increases base scrapping speed.",
-  "img_url": "./assets/prime_agile_scrapping_galaxy_2_54.png",
+  "location": {
+    "column": 54,
+    "row": 2,
+    "tree": "galaxy"
+  },
   "levels": [
     {
-      "bonus": {
-        "percentage": true,
-        "value": 1.0
-      },
-      "increased_power": 400000,
       "level": 1,
-      "required_by": [],
+      "research_time": 488477160,
+      "increased_power": 400000,
       "requirements": [
         {
           "name": "R&D Department",
           "level": 51
         }
       ],
+      "required_by": [],
       "research_costs": {
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 88595000000
+          }
+        ],
         "materials": [
           {
             "type": "ore",
+            "value": 1000,
             "grade": 6,
-            "rarity": "rare",
-            "value": 1000
+            "rarity": "rare"
           }
         ],
         "others": [
@@ -30,21 +38,13 @@
             "type": "rodinium particle",
             "value": 325
           }
-        ],
-        "resources": [
-          {
-            "type": "dilithium",
-            "value": 88595000000
-          }
         ]
       },
-      "research_time": 488477160
+      "bonus": {
+        "percentage": true,
+        "value": 1.0
+      }
     }
   ],
-  "location": {
-    "column": 54,
-    "row": 2,
-    "tree": "galaxy"
-  },
-  "research_name": "Prime Agile Scrapping"
+  "img_url": "./assets/prime_agile_scrapping_galaxy_2_54.png"
 }

@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Veteran Belakan Tyrant",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 894380,
     "defense": 857730,
     "health": 310285
   },
-  "hostile_name": "Veteran Belakan Tyrant",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "dilithium",
-      "max_value": 179,
-      "min_value": 179,
-      "value": 179
+      "$ref": "systems/olorun_39"
+    },
+    {
+      "$ref": "systems/yoruba_39"
     }
   ],
   "ship_class": "battleship",
@@ -37,19 +37,6 @@
       "shield_health": 265960
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/olorun_39"
-    },
-    {
-      "$ref": "systems/yoruba_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 10
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 171546
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 179,
+      "min_value": 179,
+      "value": 179
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 10
     }
   ]
 }

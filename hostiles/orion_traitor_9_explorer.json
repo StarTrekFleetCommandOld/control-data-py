@@ -1,41 +1,13 @@
 {
+  "hostile_name": "Orion Traitor",
   "description": "",
   "group": "neutral",
+  "level": 9,
+  "rarity": "common",
   "head_stats": {
     "attack": 482,
     "defense": 600,
     "health": 310
-  },
-  "hostile_name": "Orion Traitor",
-  "level": 9,
-  "rarity": "common",
-  "rewards": [
-    {
-      "type": "tritanium",
-      "max_value": 99,
-      "min_value": 99,
-      "value": 99
-    }
-  ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 120,
-      "armor_pierce": 20,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 322,
-      "shield_pierce": 20
-    },
-    "defense": {
-      "armor": 20,
-      "dodge": 20,
-      "shield_deflect": 80
-    },
-    "health": {
-      "hull_health": 300,
-      "shield_health": 320
-    }
   },
   "systems": [
     {
@@ -195,11 +167,26 @@
       "$ref": "systems/veias_9"
     }
   ],
-  "utility": [
-    {
-      "impulse_speed": 14
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 120,
+      "armor_pierce": 20,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 322,
+      "shield_pierce": 20
+    },
+    "defense": {
+      "armor": 20,
+      "dodge": 20,
+      "shield_deflect": 80
+    },
+    "health": {
+      "hull_health": 300,
+      "shield_health": 320
     }
-  ],
+  },
   "weapons": [
     {
       "firing_pattern": [
@@ -231,6 +218,19 @@
         "shield_pierce": 20
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 99,
+      "min_value": 99,
+      "value": 99
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

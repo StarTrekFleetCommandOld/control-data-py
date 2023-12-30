@@ -1,20 +1,32 @@
 {
+  "hostile_name": "Jem'Hadar Fighter",
   "description": "",
   "group": "dominion",
+  "level": 52,
+  "rarity": "common",
   "head_stats": {
     "attack": 9326298,
     "defense": 5332590,
     "health": 19057918
   },
-  "hostile_name": "Jem'Hadar Fighter",
-  "level": 52,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "antimatter units",
-      "max_value": 1371,
-      "min_value": 1371,
-      "value": 1371
+      "$ref": "systems/had_met_54"
+    },
+    {
+      "$ref": "systems/yerra_52"
+    },
+    {
+      "$ref": "systems/meygonn_53"
+    },
+    {
+      "$ref": "systems/tulonra_50"
+    },
+    {
+      "$ref": "systems/res_reddan_54"
+    },
+    {
+      "$ref": "systems/evarin_51"
     }
   ],
   "ship_class": "interceptor",
@@ -37,31 +49,6 @@
       "shield_health": 18150397
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/had_met_54"
-    },
-    {
-      "$ref": "systems/yerra_52"
-    },
-    {
-      "$ref": "systems/meygonn_53"
-    },
-    {
-      "$ref": "systems/tulonra_50"
-    },
-    {
-      "$ref": "systems/res_reddan_54"
-    },
-    {
-      "$ref": "systems/evarin_51"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 19
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -124,6 +111,19 @@
         "shield_pierce": 142385
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "antimatter units",
+      "max_value": 1371,
+      "min_value": 1371,
+      "value": 1371
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 19
     }
   ]
 }

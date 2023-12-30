@@ -1,14 +1,93 @@
 {
+  "hostile_name": "Romulan Trader",
   "description": "",
   "group": "romulan",
+  "level": 26,
+  "rarity": "common",
   "head_stats": {
     "attack": 12336,
     "defense": 30000,
     "health": 20160
   },
-  "hostile_name": "Romulan Trader",
-  "level": 26,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/wauoxic_24"
+    },
+    {
+      "$ref": "systems/jeuaiei_25"
+    },
+    {
+      "$ref": "systems/sufiday_25"
+    },
+    {
+      "$ref": "systems/strezhi_26"
+    },
+    {
+      "$ref": "systems/mewudoh_25"
+    },
+    {
+      "$ref": "systems/vendus_a_27"
+    },
+    {
+      "$ref": "systems/nipaj_24"
+    },
+    {
+      "$ref": "systems/rooth_26"
+    }
+  ],
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 1600,
+      "armor_pierce": 1600,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 9936,
+      "shield_pierce": 1600
+    },
+    "defense": {
+      "armor": 2000,
+      "dodge": 2000,
+      "shield_deflect": 2000
+    },
+    "health": {
+      "hull_health": 20160,
+      "shield_health": 20160
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 1600,
+        "armor_pierce": 1600,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 9936,
+        "max_damage": 9504,
+        "min_damage": 7776,
+        "shield_pierce": 1600
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "tritanium",
@@ -41,88 +120,9 @@
       "value": 46
     }
   ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 1600,
-      "armor_pierce": 1600,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 9936,
-      "shield_pierce": 1600
-    },
-    "defense": {
-      "armor": 2000,
-      "dodge": 2000,
-      "shield_deflect": 2000
-    },
-    "health": {
-      "hull_health": 20160,
-      "shield_health": 20160
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/wauoxic_24"
-    },
-    {
-      "$ref": "systems/jeuaiei_25"
-    },
-    {
-      "$ref": "systems/sufiday_25"
-    },
-    {
-      "$ref": "systems/strezhi_26"
-    },
-    {
-      "$ref": "systems/mewudoh_25"
-    },
-    {
-      "$ref": "systems/vendus_a_27"
-    },
-    {
-      "$ref": "systems/nipaj_24"
-    },
-    {
-      "$ref": "systems/rooth_26"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 10
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 1600,
-        "armor_pierce": 1600,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 9936,
-        "max_damage": 9504,
-        "min_damage": 7776,
-        "shield_pierce": 1600
-      },
-      "weapon_type": "energy"
     }
   ]
 }

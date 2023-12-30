@@ -1,44 +1,20 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 35,
+  "rarity": "common",
   "head_stats": {
     "attack": 257537,
     "defense": 255000,
     "health": 90565
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 35,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1983,
-      "min_value": 1983,
-      "value": 1983
+      "$ref": "systems/carraya_33"
     },
     {
-      "type": "tritanium",
-      "max_value": 135,
-      "min_value": 135,
-      "value": 135
-    },
-    {
-      "type": "federation points",
-      "max_value": 290,
-      "min_value": 290,
-      "value": 290
-    },
-    {
-      "type": "romulan points",
-      "max_value": 145,
-      "min_value": 145,
-      "value": 145
-    },
-    {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/quv_lw_36"
     }
   ],
   "ship_class": "battleship",
@@ -61,19 +37,6 @@
       "shield_health": 77630
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/carraya_33"
-    },
-    {
-      "$ref": "systems/quv_lw_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +99,43 @@
         "shield_pierce": 47250
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1983,
+      "min_value": 1983,
+      "value": 1983
+    },
+    {
+      "type": "tritanium",
+      "max_value": 135,
+      "min_value": 135,
+      "value": 135
+    },
+    {
+      "type": "federation points",
+      "max_value": 290,
+      "min_value": 290,
+      "value": 290
+    },
+    {
+      "type": "romulan points",
+      "max_value": 145,
+      "min_value": 145,
+      "value": 145
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

@@ -1,38 +1,26 @@
 {
+  "hostile_name": "Baelosian Cruiser",
   "description": "",
   "group": "federation",
+  "level": 50,
+  "rarity": "common",
   "head_stats": {
     "attack": 6675095,
     "defense": 2655925,
     "health": 8873336
   },
-  "hostile_name": "Baelosian Cruiser",
-  "level": 50,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "5\u2605 broken explorer parts",
-      "max_value": 145,
-      "min_value": 145,
-      "value": 145
+      "$ref": "systems/baelos_50"
     },
     {
-      "type": "federation points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/agataylor_52"
     },
     {
-      "type": "romulan points",
-      "max_value": 12000,
-      "min_value": 12000,
-      "value": 12000
+      "$ref": "systems/ver_saaj_52"
     },
     {
-      "type": "klingon points",
-      "max_value": 6000,
-      "min_value": 6000,
-      "value": 6000
+      "$ref": "systems/sementi_52"
     }
   ],
   "ship_class": "explorer",
@@ -55,25 +43,6 @@
       "shield_health": 10352229
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/baelos_50"
-    },
-    {
-      "$ref": "systems/agataylor_52"
-    },
-    {
-      "$ref": "systems/ver_saaj_52"
-    },
-    {
-      "$ref": "systems/sementi_52"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -136,6 +105,37 @@
         "shield_pierce": 171748
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "5\u2605 broken explorer parts",
+      "max_value": 145,
+      "min_value": 145,
+      "value": 145
+    },
+    {
+      "type": "federation points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    },
+    {
+      "type": "romulan points",
+      "max_value": 12000,
+      "min_value": 12000,
+      "value": 12000
+    },
+    {
+      "type": "klingon points",
+      "max_value": 6000,
+      "min_value": 6000,
+      "value": 6000
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

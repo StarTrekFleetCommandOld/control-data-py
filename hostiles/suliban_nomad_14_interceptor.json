@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Suliban Nomad",
   "description": "",
   "group": "neutral",
+  "level": 14,
+  "rarity": "common",
   "head_stats": {
     "attack": 2013,
     "defense": 2480,
     "health": 770
   },
-  "hostile_name": "Suliban Nomad",
-  "level": 14,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 357,
-      "min_value": 357,
-      "value": 357
+      "$ref": "systems/cita_laga_15"
+    },
+    {
+      "$ref": "systems/ocus_16"
+    },
+    {
+      "$ref": "systems/atreig_16"
+    },
+    {
+      "$ref": "systems/ora_leraa_16"
+    },
+    {
+      "$ref": "systems/bharani_16"
     }
   ],
   "ship_class": "interceptor",
@@ -37,28 +46,6 @@
       "shield_health": 770
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/cita_laga_15"
-    },
-    {
-      "$ref": "systems/ocus_16"
-    },
-    {
-      "$ref": "systems/atreig_16"
-    },
-    {
-      "$ref": "systems/ora_leraa_16"
-    },
-    {
-      "$ref": "systems/bharani_16"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -90,6 +77,19 @@
         "shield_pierce": 83
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 357,
+      "min_value": 357,
+      "value": 357
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Reman Bounty Hunter",
   "description": "",
   "group": "neutral",
+  "level": 36,
+  "rarity": "common",
   "head_stats": {
     "attack": 301480,
     "defense": 273365,
     "health": 86960
   },
-  "hostile_name": "Reman Bounty Hunter",
-  "level": 36,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 1861,
-      "min_value": 1861,
-      "value": 1861
+      "$ref": "systems/forseti_36"
+    },
+    {
+      "$ref": "systems/vanir_36"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 86960
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/forseti_36"
-    },
-    {
-      "$ref": "systems/vanir_36"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 9112
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1861,
+      "min_value": 1861,
+      "value": 1861
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

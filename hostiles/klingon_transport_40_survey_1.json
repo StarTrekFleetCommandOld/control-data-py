@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Klingon Transport",
   "description": "",
   "group": "klingon",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1043435,
     "defense": 1224925,
     "health": 1965668
   },
-  "hostile_name": "Klingon Transport",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/fafniri_39"
+    }
+  ],
   "ship_class": "survey",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 1862229
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/fafniri_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -71,6 +65,12 @@
         "shield_pierce": 29222
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

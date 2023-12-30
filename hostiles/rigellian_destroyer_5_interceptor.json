@@ -1,41 +1,13 @@
 {
+  "hostile_name": "Rigellian Destroyer",
   "description": "",
   "group": "neutral",
+  "level": 5,
+  "rarity": "common",
   "head_stats": {
     "attack": 153,
     "defense": 140,
     "health": 70
-  },
-  "hostile_name": "Rigellian Destroyer",
-  "level": 5,
-  "rarity": "common",
-  "rewards": [
-    {
-      "type": "parsteel",
-      "max_value": 156,
-      "min_value": 156,
-      "value": 156
-    }
-  ],
-  "ship_class": "interceptor",
-  "stats": {
-    "attack": {
-      "accuracy": 5,
-      "armor_pierce": 27,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 116,
-      "shield_pierce": 5
-    },
-    "defense": {
-      "armor": 5,
-      "dodge": 18,
-      "shield_deflect": 5
-    },
-    "health": {
-      "hull_health": 70,
-      "shield_health": 70
-    }
   },
   "systems": [
     {
@@ -99,11 +71,26 @@
       "$ref": "systems/zukerat_4"
     }
   ],
-  "utility": [
-    {
-      "impulse_speed": 17
+  "ship_class": "interceptor",
+  "stats": {
+    "attack": {
+      "accuracy": 5,
+      "armor_pierce": 27,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 116,
+      "shield_pierce": 5
+    },
+    "defense": {
+      "armor": 5,
+      "dodge": 18,
+      "shield_deflect": 5
+    },
+    "health": {
+      "hull_health": 70,
+      "shield_health": 70
     }
-  ],
+  },
   "weapons": [
     {
       "firing_pattern": [
@@ -135,6 +122,19 @@
         "shield_pierce": 5
       },
       "weapon_type": "kinetic"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 156,
+      "min_value": 156,
+      "value": 156
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

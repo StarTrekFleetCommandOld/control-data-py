@@ -1,14 +1,81 @@
 {
+  "hostile_name": "Federation Patrol",
   "description": "",
   "group": "federation",
+  "level": 34,
+  "rarity": "common",
   "head_stats": {
     "attack": 223574,
     "defense": 230595,
     "health": 72110
   },
-  "hostile_name": "Federation Patrol",
-  "level": 34,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/archer_36"
+    },
+    {
+      "$ref": "systems/siiolux_35"
+    },
+    {
+      "$ref": "systems/aiti_33"
+    },
+    {
+      "$ref": "systems/andoria_34"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 49350,
+      "armor_pierce": 6169,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 129720,
+      "shield_pierce": 7050
+    },
+    "defense": {
+      "armor": 7050,
+      "dodge": 6169,
+      "shield_deflect": 32900
+    },
+    "health": {
+      "hull_health": 59000,
+      "shield_health": 85220
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 49350,
+        "armor_pierce": 6169,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 43240,
+        "max_damage": 41360,
+        "min_damage": 33840,
+        "shield_pierce": 7050
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,76 +108,9 @@
       "value": 116
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 49350,
-      "armor_pierce": 6169,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 129720,
-      "shield_pierce": 7050
-    },
-    "defense": {
-      "armor": 7050,
-      "dodge": 6169,
-      "shield_deflect": 32900
-    },
-    "health": {
-      "hull_health": 59000,
-      "shield_health": 85220
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/archer_36"
-    },
-    {
-      "$ref": "systems/siiolux_35"
-    },
-    {
-      "$ref": "systems/aiti_33"
-    },
-    {
-      "$ref": "systems/andoria_34"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 17
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 49350,
-        "armor_pierce": 6169,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 43240,
-        "max_damage": 41360,
-        "min_damage": 33840,
-        "shield_pierce": 7050
-      },
-      "weapon_type": "energy"
     }
   ]
 }

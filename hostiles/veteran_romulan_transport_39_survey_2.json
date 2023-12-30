@@ -1,14 +1,81 @@
 {
+  "hostile_name": "Veteran Romulan Transport",
   "description": "",
   "group": "romulan",
+  "level": 39,
+  "rarity": "common",
   "head_stats": {
     "attack": 623214,
     "defense": 1418670,
     "health": 709530
   },
-  "hostile_name": "Veteran Romulan Transport",
-  "level": 39,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/yadalla_39"
+    },
+    {
+      "$ref": "systems/chaltok_39"
+    },
+    {
+      "$ref": "systems/calder_39"
+    },
+    {
+      "$ref": "systems/devrom_39"
+    }
+  ],
+  "ship_class": "survey",
+  "stats": {
+    "attack": {
+      "accuracy": 75663,
+      "armor_pierce": 75663,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 509719,
+      "shield_pierce": 75663
+    },
+    "defense": {
+      "armor": 94578,
+      "dodge": 94578,
+      "shield_deflect": 94578
+    },
+    "health": {
+      "hull_health": 709530,
+      "shield_health": 709530
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 75663,
+        "armor_pierce": 75663,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 509719,
+        "max_damage": 487557,
+        "min_damage": 398911,
+        "shield_pierce": 75663
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "tritanium",
@@ -41,76 +108,9 @@
       "value": 2218
     }
   ],
-  "ship_class": "survey",
-  "stats": {
-    "attack": {
-      "accuracy": 75663,
-      "armor_pierce": 75663,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 509719,
-      "shield_pierce": 75663
-    },
-    "defense": {
-      "armor": 94578,
-      "dodge": 94578,
-      "shield_deflect": 94578
-    },
-    "health": {
-      "hull_health": 709530,
-      "shield_health": 709530
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/yadalla_39"
-    },
-    {
-      "$ref": "systems/chaltok_39"
-    },
-    {
-      "$ref": "systems/calder_39"
-    },
-    {
-      "$ref": "systems/devrom_39"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 9
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 75663,
-        "armor_pierce": 75663,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 509719,
-        "max_damage": 487557,
-        "min_damage": 398911,
-        "shield_pierce": 75663
-      },
-      "weapon_type": "energy"
     }
   ]
 }

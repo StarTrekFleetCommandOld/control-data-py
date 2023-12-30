@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Romulan Patrol",
   "description": "",
   "group": "romulan",
+  "level": 20,
+  "rarity": "common",
   "head_stats": {
     "attack": 9011,
     "defense": 8605,
     "health": 3455
   },
-  "hostile_name": "Romulan Patrol",
-  "level": 20,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/rosec_22"
+    },
+    {
+      "$ref": "systems/davidul_20"
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 2920
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/rosec_22"
-    },
-    {
-      "$ref": "systems/davidul_20"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 23
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +99,12 @@
         "shield_pierce": 332
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 23
     }
   ]
 }

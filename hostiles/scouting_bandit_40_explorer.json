@@ -1,20 +1,29 @@
 {
+  "hostile_name": "Scouting Bandit",
   "description": "",
   "group": "neutral",
+  "level": 40,
+  "rarity": "common",
   "head_stats": {
     "attack": 1157573,
     "defense": 564065,
     "health": 1876931
   },
-  "hostile_name": "Scouting Bandit",
-  "level": 40,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 128,
-      "min_value": 128,
-      "value": 128
+      "$ref": "systems/umxheli_41"
+    },
+    {
+      "$ref": "systems/sotavi_41"
+    },
+    {
+      "$ref": "systems/livi_40"
+    },
+    {
+      "$ref": "systems/sileo_40"
+    },
+    {
+      "$ref": "systems/new_berlin_42"
     }
   ],
   "ship_class": "explorer",
@@ -37,28 +46,6 @@
       "shield_health": 2102163
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/umxheli_41"
-    },
-    {
-      "$ref": "systems/sotavi_41"
-    },
-    {
-      "$ref": "systems/livi_40"
-    },
-    {
-      "$ref": "systems/sileo_40"
-    },
-    {
-      "$ref": "systems/new_berlin_42"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -90,6 +77,19 @@
         "shield_pierce": 51550
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 128,
+      "min_value": 128,
+      "value": 128
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

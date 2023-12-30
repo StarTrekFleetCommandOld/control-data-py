@@ -1,15 +1,22 @@
 {
+  "hostile_name": "Lethean Marauder",
   "description": "",
   "group": "neutral",
+  "level": 41,
+  "rarity": "common",
   "head_stats": {
     "attack": 1412386,
     "defense": 683390,
     "health": 2244112
   },
-  "hostile_name": "Lethean Marauder",
-  "level": 41,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/fafniri_39"
+    },
+    {
+      "$ref": "systems/yodsutlj_naq_39"
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -30,19 +37,6 @@
       "shield_health": 2513406
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/fafniri_39"
-    },
-    {
-      "$ref": "systems/yodsutlj_naq_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -74,6 +68,12 @@
         "shield_pierce": 61587
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Cardassian Military",
   "description": "",
   "group": "neutral",
+  "level": 46,
+  "rarity": "common",
   "head_stats": {
     "attack": 2960628,
     "defense": 1443055,
     "health": 4711059
   },
-  "hostile_name": "Cardassian Military",
-  "level": 46,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken interceptor parts",
-      "max_value": 486,
-      "min_value": 486,
-      "value": 486
+      "$ref": "systems/arawath_45"
+    },
+    {
+      "$ref": "systems/vanden_45"
     }
   ],
   "ship_class": "interceptor",
@@ -37,19 +37,6 @@
       "shield_health": 4711059
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/arawath_45"
-    },
-    {
-      "$ref": "systems/vanden_45"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 14
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -112,6 +99,19 @@
         "shield_pierce": 47360
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 486,
+      "min_value": 486,
+      "value": 486
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 14
     }
   ]
 }

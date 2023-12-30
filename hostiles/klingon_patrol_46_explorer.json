@@ -1,38 +1,26 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 46,
+  "rarity": "common",
   "head_stats": {
     "attack": 3462978,
     "defense": 1442480,
     "health": 5002082
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 46,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "4\u2605 broken explorer parts",
-      "max_value": 497,
-      "min_value": 497,
-      "value": 497
+      "$ref": "systems/ko_stok_44"
     },
     {
-      "type": "federation points",
-      "max_value": 3040,
-      "min_value": 3040,
-      "value": 3040
+      "$ref": "systems/rixos_45"
     },
     {
-      "type": "romulan points",
-      "max_value": 1520,
-      "min_value": 1520,
-      "value": 1520
+      "$ref": "systems/dohrmas_46"
     },
     {
-      "type": "klingon points",
-      "max_value": 0,
-      "min_value": 0,
-      "value": 0
+      "$ref": "systems/muhg_48"
     }
   ],
   "ship_class": "explorer",
@@ -55,25 +43,6 @@
       "shield_health": 5602334
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/ko_stok_44"
-    },
-    {
-      "$ref": "systems/rixos_45"
-    },
-    {
-      "$ref": "systems/dohrmas_46"
-    },
-    {
-      "$ref": "systems/muhg_48"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 17
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -105,6 +74,37 @@
         "shield_pierce": 130232
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "4\u2605 broken explorer parts",
+      "max_value": 497,
+      "min_value": 497,
+      "value": 497
+    },
+    {
+      "type": "federation points",
+      "max_value": 3040,
+      "min_value": 3040,
+      "value": 3040
+    },
+    {
+      "type": "romulan points",
+      "max_value": 1520,
+      "min_value": 1520,
+      "value": 1520
+    },
+    {
+      "type": "klingon points",
+      "max_value": 0,
+      "min_value": 0,
+      "value": 0
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 17
     }
   ]
 }

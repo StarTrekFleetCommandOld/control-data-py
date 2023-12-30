@@ -1,20 +1,26 @@
 {
+  "hostile_name": "Suliban Cabal",
   "description": "",
   "group": "neutral",
+  "level": 23,
+  "rarity": "common",
   "head_stats": {
     "attack": 15314,
     "defense": 16130,
     "health": 5760
   },
-  "hostile_name": "Suliban Cabal",
-  "level": 23,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "parsteel",
-      "max_value": 952,
-      "min_value": 952,
-      "value": 952
+      "$ref": "systems/qualor_25"
+    },
+    {
+      "$ref": "systems/earorfilad_24"
+    },
+    {
+      "$ref": "systems/cillers_25"
+    },
+    {
+      "$ref": "systems/maclyyn_22"
     }
   ],
   "ship_class": "interceptor",
@@ -37,25 +43,6 @@
       "shield_health": 5760
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/qualor_25"
-    },
-    {
-      "$ref": "systems/earorfilad_24"
-    },
-    {
-      "$ref": "systems/cillers_25"
-    },
-    {
-      "$ref": "systems/maclyyn_22"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 16
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -118,6 +105,19 @@
         "shield_pierce": 538
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 952,
+      "min_value": 952,
+      "value": 952
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 16
     }
   ]
 }

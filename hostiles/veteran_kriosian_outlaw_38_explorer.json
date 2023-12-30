@@ -1,20 +1,20 @@
 {
+  "hostile_name": "Veteran Kriosian Outlaw",
   "description": "",
   "group": "neutral",
+  "level": 38,
+  "rarity": "common",
   "head_stats": {
     "attack": 1026066,
     "defense": 1025000,
     "health": 393270
   },
-  "hostile_name": "Veteran Kriosian Outlaw",
-  "level": 38,
-  "rarity": "common",
-  "rewards": [
+  "systems": [
     {
-      "type": "tritanium",
-      "max_value": 677,
-      "min_value": 677,
-      "value": 677
+      "$ref": "systems/benzar_39"
+    },
+    {
+      "$ref": "systems/ophiuchi_39"
     }
   ],
   "ship_class": "explorer",
@@ -37,19 +37,6 @@
       "shield_health": 403900
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/benzar_39"
-    },
-    {
-      "$ref": "systems/ophiuchi_39"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 12
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -81,6 +68,19 @@
         "shield_pierce": 34167
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 677,
+      "min_value": 677,
+      "value": 677
+    }
+  ],
+  "utility": [
+    {
+      "impulse_speed": 12
     }
   ]
 }

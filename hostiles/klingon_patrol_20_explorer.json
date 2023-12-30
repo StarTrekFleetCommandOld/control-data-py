@@ -1,14 +1,75 @@
 {
+  "hostile_name": "Klingon Patrol",
   "description": "",
   "group": "klingon",
+  "level": 20,
+  "rarity": "common",
   "head_stats": {
     "attack": 8132,
     "defense": 8605,
     "health": 4080
   },
-  "hostile_name": "Klingon Patrol",
-  "level": 20,
-  "rarity": "common",
+  "systems": [
+    {
+      "$ref": "systems/francihk_20"
+    },
+    {
+      "$ref": "systems/woxoxit_22"
+    }
+  ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 1710,
+      "armor_pierce": 332,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 4695,
+      "shield_pierce": 249
+    },
+    "defense": {
+      "armor": 249,
+      "dodge": 332,
+      "shield_deflect": 1140
+    },
+    "health": {
+      "hull_health": 3970,
+      "shield_health": 4190
+    }
+  },
+  "weapons": [
+    {
+      "firing_pattern": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 3,
+      "weapon_stats": {
+        "accuracy": 1710,
+        "armor_pierce": 332,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 1565,
+        "max_damage": 1497,
+        "min_damage": 1225,
+        "shield_pierce": 249
+      },
+      "weapon_type": "energy"
+    }
+  ],
   "rewards": [
     {
       "type": "parsteel",
@@ -41,70 +102,9 @@
       "value": 0
     }
   ],
-  "ship_class": "explorer",
-  "stats": {
-    "attack": {
-      "accuracy": 1710,
-      "armor_pierce": 332,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 4695,
-      "shield_pierce": 249
-    },
-    "defense": {
-      "armor": 249,
-      "dodge": 332,
-      "shield_deflect": 1140
-    },
-    "health": {
-      "hull_health": 3970,
-      "shield_health": 4190
-    }
-  },
-  "systems": [
-    {
-      "$ref": "systems/francihk_20"
-    },
-    {
-      "$ref": "systems/woxoxit_22"
-    }
-  ],
   "utility": [
     {
       "impulse_speed": 20
-    }
-  ],
-  "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 3,
-      "weapon_stats": {
-        "accuracy": 1710,
-        "armor_pierce": 332,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 1565,
-        "max_damage": 1497,
-        "min_damage": 1225,
-        "shield_pierce": 249
-      },
-      "weapon_type": "energy"
     }
   ]
 }

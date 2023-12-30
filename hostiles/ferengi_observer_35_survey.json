@@ -1,15 +1,19 @@
 {
+  "hostile_name": "Ferengi Observer",
   "description": "",
   "group": "neutral",
+  "level": 35,
+  "rarity": "common",
   "head_stats": {
     "attack": 170895,
     "defense": 381420,
     "health": 184770
   },
-  "hostile_name": "Ferengi Observer",
-  "level": 35,
-  "rarity": "common",
-  "rewards": [],
+  "systems": [
+    {
+      "$ref": "systems/beta_paldorios_35"
+    }
+  ],
   "ship_class": "survey",
   "stats": {
     "attack": {
@@ -30,16 +34,6 @@
       "shield_health": 184770
     }
   },
-  "systems": [
-    {
-      "$ref": "systems/beta_paldorios_35"
-    }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 80
-    }
-  ],
   "weapons": [
     {
       "firing_pattern": [
@@ -71,6 +65,12 @@
         "shield_pierce": 20342
       },
       "weapon_type": "energy"
+    }
+  ],
+  "rewards": [],
+  "utility": [
+    {
+      "impulse_speed": 80
     }
   ]
 }
