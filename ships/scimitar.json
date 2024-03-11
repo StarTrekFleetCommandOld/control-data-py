@@ -98,6 +98,23 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1512956,
+              "hull_health": 40457168
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -132,23 +149,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [],
-            "materials": [],
-            "others": []
-          },
-          "repair_cost": [],
-          "additional_info": {
-            "armor_info": {
-              "armor": 1512956,
-              "hull_health": 40457168
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -163,40 +163,6 @@
               "increased_protected_cargo": 2250,
               "ship_increased_cargo": 0,
               "ship_increased_protected_cargo": 0
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [],
-            "materials": [],
-            "others": []
-          },
-          "repair_cost": [],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 321573,
-              "armor_pierce": 321573,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 2817004,
-              "min_damage": 2304823,
-              "shield_pierce": 3601085,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -229,6 +195,40 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 321573,
+              "armor_pierce": 321573,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 2817004,
+              "min_damage": 2304823,
+              "shield_pierce": 3601085,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -493,6 +493,59 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 29800
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 3883500
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 20300,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 92800,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 192200
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 11
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 804
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1633992,
+              "hull_health": 43236549
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -563,59 +616,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 29800
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 3883500
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 20300,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 92800,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 192200
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 11
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 804
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 1633992,
-              "hull_health": 43236549
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -666,76 +666,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 36200
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 4715700
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 22300,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 101300,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 213500
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 13
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 965
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 347299,
-              "armor_pierce": 347299,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 3014181,
-              "min_damage": 2466159,
-              "shield_pierce": 3889172,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -804,6 +734,76 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 36200
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 4715700
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 22300,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 101300,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 213500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 13
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 965
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 347299,
+              "armor_pierce": 347299,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 3014181,
+              "min_damage": 2466159,
+              "shield_pierce": 3889172,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -1161,6 +1161,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 42500
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 5547800
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 50900,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 132600,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 106300
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 505800
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 22
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 1632
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1764711,
+              "hull_health": 46644980
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -1237,63 +1294,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 42500
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 5547800
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 50900,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 132600,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 106300
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 505800
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 22
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 1632
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 1764711,
-              "hull_health": 46644980
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -1344,80 +1344,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 51600
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 6736700
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 56000,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 144700,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 118100
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 562000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 26
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 1958
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 375083,
-              "armor_pierce": 375083,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 3225208,
-              "min_damage": 2638795,
-              "shield_pierce": 4200305,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -1492,6 +1418,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 51600
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 6736700
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 56000,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 144700,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 118100
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 562000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 26
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 1958
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 375083,
+              "armor_pierce": 375083,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 3225208,
+              "min_damage": 2638795,
+              "shield_pierce": 4200305,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -1845,6 +1845,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 57400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 7489600
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 7500,
+                "grade": 6,
+                "rarity": "rare"
+              },
+              {
+                "type": "ore",
+                "value": 17500,
+                "grade": 6,
+                "rarity": "rare"
+              },
+              {
+                "type": "ore",
+                "value": 64200,
+                "grade": 6,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 128400
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 33
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 2484
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 1905888,
+              "hull_health": 50349756
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -1919,65 +1978,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 57400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 7489600
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 7500,
-                "grade": 6,
-                "rarity": "rare"
-              },
-              {
-                "type": "ore",
-                "value": 17500,
-                "grade": 6,
-                "rarity": "rare"
-              },
-              {
-                "type": "ore",
-                "value": 64200,
-                "grade": 6,
-                "rarity": "uncommon"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 128400
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 33
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 2484
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 1905888,
-              "hull_health": 50349756
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -2034,80 +2034,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 69700
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 9094500
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 19100,
-                "grade": 6,
-                "rarity": "rare"
-              },
-              {
-                "type": "ore",
-                "value": 70600,
-                "grade": 6,
-                "rarity": "uncommon"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 9700
-              },
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 142700
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 40
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 2980
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 405090,
-              "armor_pierce": 405090,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 3450948,
-              "min_damage": 2823507,
-              "shield_pierce": 4536329,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -2180,6 +2106,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 69700
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 9094500
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 19100,
+                "grade": 6,
+                "rarity": "rare"
+              },
+              {
+                "type": "ore",
+                "value": 70600,
+                "grade": 6,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 9700
+              },
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 142700
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 40
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 2980
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 405090,
+              "armor_pierce": 405090,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 3450948,
+              "min_damage": 2823507,
+              "shield_pierce": 4536329,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -2553,6 +2553,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 74400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 9708700
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 28500,
+                "grade": 6,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 179900,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 249700
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 1528800
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 45
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 3360
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 2077419,
+              "hull_health": 54382997
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -2629,63 +2686,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 74400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 9708700
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 28500,
-                "grade": 6,
-                "rarity": "rare"
-              },
-              {
-                "type": "crystal",
-                "value": 179900,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 249700
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 1528800
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 45
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 3360
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 2077419,
-              "hull_health": 54382997
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -2740,80 +2740,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 90400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 11789200
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 109500,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 644400,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 14000
-              },
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 277400
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 54
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 4032
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 441548,
-              "armor_pierce": 441548,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 3727064,
-              "min_damage": 3049429,
-              "shield_pierce": 4944599,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -2888,6 +2814,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 90400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 11789200
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 109500,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 644400,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 14000
+              },
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 277400
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 54
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 4032
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 441548,
+              "armor_pierce": 441548,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 3727064,
+              "min_damage": 3049429,
+              "shield_pierce": 4944599,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -3259,6 +3259,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 95700
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 12482700
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 36700,
+                "grade": 6,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 231300,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 338800
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 1544400
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 57
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 4262
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 2264387,
+              "hull_health": 58791823
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -3335,63 +3392,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 95700
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 12482700
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 36700,
-                "grade": 6,
-                "rarity": "rare"
-              },
-              {
-                "type": "crystal",
-                "value": 231300,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 338800
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 1544400
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 57
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 4262
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 2264387,
-              "hull_health": 58791823
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -3448,80 +3448,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 116200
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 15157500
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 70100,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 145100,
-                "grade": 6,
-                "rarity": "uncommon"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 18000
-              },
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 376500
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 69
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 5115
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 481287,
-              "armor_pierce": 481287,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 4025283,
-              "min_damage": 3293419,
-              "shield_pierce": 5389613,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -3596,6 +3522,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 116200
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 15157500
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 70100,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 145100,
+                "grade": 6,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 18000
+              },
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 376500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 69
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 5115
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 481287,
+              "armor_pierce": 481287,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 4025283,
+              "min_damage": 3293419,
+              "shield_pierce": 5389613,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -3961,6 +3961,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 120500
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 15718900
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 246500,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 986300,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 404200
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 1328100
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 70
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 5191
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 2468181,
+              "hull_health": 63626500
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -4035,63 +4092,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 120500
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 15718900
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 246500,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 986300,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 404200
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 1328100
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 70
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 5191
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 2468181,
-              "hull_health": 63626500
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -4148,80 +4148,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 146300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 19087200
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 45600,
-                "grade": 6,
-                "rarity": "rare"
-              },
-              {
-                "type": "ore",
-                "value": 184500,
-                "grade": 6,
-                "rarity": "uncommon"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 22700
-              },
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 449100
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 84
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 6229
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 524603,
-              "armor_pierce": 524603,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 4347386,
-              "min_damage": 3556955,
-              "shield_pierce": 5874677,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -4294,6 +4220,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 146300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 19087200
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 45600,
+                "grade": 6,
+                "rarity": "rare"
+              },
+              {
+                "type": "ore",
+                "value": 184500,
+                "grade": 6,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 22700
+              },
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 449100
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 84
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 6229
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 524603,
+              "armor_pierce": 524603,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 4347386,
+              "min_damage": 3556955,
+              "shield_pierce": 5874677,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -4665,6 +4665,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 156000
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 20342100
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 116800,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 296200,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 1276400,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 523100
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 82
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 6146
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 2690318,
+              "hull_health": 69618650
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -4739,65 +4798,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 156000
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 20342100
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 116800,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 296200,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 1276400,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 523100
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 82
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 6146
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 2690318,
-              "hull_health": 69618650
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -4852,80 +4852,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 189400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 24701100
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 59000,
-                "grade": 6,
-                "rarity": "rare"
-              },
-              {
-                "type": "crystal",
-                "value": 325800,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 29300
-              },
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 581200
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 99
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 7375
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 571817,
-              "armor_pierce": 571817,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 4695254,
-              "min_damage": 3841582,
-              "shield_pierce": 6403398,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -4998,6 +4924,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 189400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 24701100
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 59000,
+                "grade": 6,
+                "rarity": "rare"
+              },
+              {
+                "type": "crystal",
+                "value": 325800,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 29300
+              },
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 581200
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 99
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 7375
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 571817,
+              "armor_pierce": 571817,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 4695254,
+              "min_damage": 3841582,
+              "shield_pierce": 6403398,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -5369,6 +5369,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 212700
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 27739200
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 403900,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 1265800,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 713300
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 2343800
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 96
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 7129
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 2959349,
+              "hull_health": 77731701
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -5443,63 +5500,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 212700
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 27739200
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 403900,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 1265800,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 713300
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 2343800
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 96
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 7129
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 2959349,
-              "hull_health": 77731701
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -5556,6 +5556,80 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 182300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 23776500
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 87100,
+                "grade": 6,
+                "rarity": "rare"
+              },
+              {
+                "type": "ore",
+                "value": 290100,
+                "grade": 6,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 42000
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 2083400
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 115
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 8555
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 628998,
+              "armor_pierce": 628998,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 5159344,
+              "min_damage": 4221291,
+              "shield_pierce": 7043738,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ]
             }
           },
           "quantity": 1
@@ -5630,80 +5704,6 @@
                 1,
                 1,
                 1,
-                1
-              ]
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "Pulsed Phaser",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 182300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 23776500
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 87100,
-                "grade": 6,
-                "rarity": "rare"
-              },
-              {
-                "type": "ore",
-                "value": 290100,
-                "grade": 6,
-                "rarity": "uncommon"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 42000
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 2083400
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 115
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 8555
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 628998,
-              "armor_pierce": 628998,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 5159344,
-              "min_damage": 4221291,
-              "shield_pierce": 7043738,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
                 1
               ]
             }
@@ -6075,6 +6075,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 283500
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 36985600
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 538500,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 1687800,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 951000
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 3125000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 109
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 8141
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 3255284,
+              "hull_health": 86918568
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -6149,63 +6206,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 283500
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 36985600
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 538500,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 1687800,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 951000
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 3125000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 109
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 8141
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 3255284,
-              "hull_health": 86918568
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -6262,6 +6262,80 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 243000
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 31702000
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 116200,
+                "grade": 6,
+                "rarity": "rare"
+              },
+              {
+                "type": "ore",
+                "value": 386800,
+                "grade": 6,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 56000
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 2777800
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 131
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 9769
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 691898,
+              "armor_pierce": 691898,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 5675221,
+              "min_damage": 4643362,
+              "shield_pierce": 7748111,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ]
             }
           },
           "quantity": 1
@@ -6336,80 +6410,6 @@
                 1,
                 1,
                 1,
-                1
-              ]
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "Pulsed Phaser",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 243000
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 31702000
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 116200,
-                "grade": 6,
-                "rarity": "rare"
-              },
-              {
-                "type": "ore",
-                "value": 386800,
-                "grade": 6,
-                "rarity": "uncommon"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 56000
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 2777800
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 131
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 9769
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 691898,
-              "armor_pierce": 691898,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 5675221,
-              "min_damage": 4643362,
-              "shield_pierce": 7748111,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
                 1
               ]
             }
@@ -6781,6 +6781,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 374300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 48821000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 710800,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 2227900,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Battleship Parts",
+                "value": 1255400
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 4125100
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 123
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 9182
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 3613365,
+              "hull_health": 98291962
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -6855,63 +6912,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 374300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 48821000
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 710800,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 2227900,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Battleship Parts",
-                "value": 1255400
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 4125100
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 123
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 9182
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 3613365,
-              "hull_health": 98291962
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -6968,6 +6968,80 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Pulsed Phaser",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 320800
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 41846600
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 153300,
+                "grade": 6,
+                "rarity": "rare"
+              },
+              {
+                "type": "ore",
+                "value": 510600,
+                "grade": 6,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 73900
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 3666700
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 148
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 11018
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 768007,
+              "armor_pierce": 768007,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 6242695,
+              "min_damage": 5107657,
+              "shield_pierce": 8600403,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ]
             }
           },
           "quantity": 1
@@ -7042,80 +7116,6 @@
                 1,
                 1,
                 1,
-                1
-              ]
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "Pulsed Phaser",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 320800
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 41846600
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 153300,
-                "grade": 6,
-                "rarity": "rare"
-              },
-              {
-                "type": "ore",
-                "value": 510600,
-                "grade": 6,
-                "rarity": "uncommon"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 73900
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 3666700
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 148
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 11018
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 768007,
-              "armor_pierce": 768007,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 6242695,
-              "min_damage": 5107657,
-              "shield_pierce": 8600403,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
                 1
               ]
             }
@@ -7487,6 +7487,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 474900
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 61950900
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 841900,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 604000,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 3647800,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 5647700
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 138
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 10253
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 4010834,
+              "hull_health": 111246208
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -7561,65 +7620,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 474900
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 61950900
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 841900,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 604000,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 3647800,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 5647700
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 138
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 10253
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 4010834,
-              "hull_health": 111246208
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -7676,80 +7676,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 576700
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 75226100
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 1028900,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 658900,
-                "grade": 6,
-                "rarity": "uncommon"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 89400
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 6275200
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 165
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 12304
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 852488,
-              "armor_pierce": 852488,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 6811787,
-              "min_damage": 5573281,
-              "shield_pierce": 9546447,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -7822,6 +7748,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 576700
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 75226100
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 1028900,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 658900,
+                "grade": 6,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 89400
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 6275200
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 165
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 12304
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 852488,
+              "armor_pierce": 852488,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 6811787,
+              "min_damage": 5573281,
+              "shield_pierce": 9546447,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -8191,6 +8191,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 579200
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 75543200
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 1026600,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 736500,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 4448200,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 6886800
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 152
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 11356
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 4492134,
+              "hull_health": 127229677
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -8265,65 +8324,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 579200
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 75543200
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 1026600,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 736500,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 4448200,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 6886800
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 152
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 11356
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 4492134,
-              "hull_health": 127229677
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -8380,80 +8380,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 703300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 91731000
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 1254700,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 803500,
-                "grade": 6,
-                "rarity": "uncommon"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 109000
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 7652000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 183
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 13627
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 954786,
-              "armor_pierce": 954786,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 7493078,
-              "min_damage": 6130709,
-              "shield_pierce": 10692021,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -8526,6 +8452,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 703300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 91731000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 1254700,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 803500,
+                "grade": 6,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 109000
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 7652000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 183
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 13627
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 954786,
+              "armor_pierce": 954786,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 7493078,
+              "min_damage": 6130709,
+              "shield_pierce": 10692021,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -8895,6 +8895,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 685500
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 89412800
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 2050400,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 871800,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 3885900,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 8151200
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 168
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 12491
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 5031191,
+              "hull_health": 145566343
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -8969,65 +9028,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 685500
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 89412800
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 2050400,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 871800,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 3885900,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 8151200
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 168
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 12491
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 5031191,
-              "hull_health": 145566343
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -9084,80 +9084,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 832400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 108572600
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 951000,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 4274500,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 129000
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 9056900
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 201
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 14989
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1069360,
-              "armor_pierce": 1069360,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 8317147,
-              "min_damage": 6804929,
-              "shield_pierce": 11975064,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -9230,6 +9156,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 832400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 108572600
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 951000,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 4274500,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 129000
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 9056900
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 201
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 14989
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1069360,
+              "armor_pierce": 1069360,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 8317147,
+              "min_damage": 6804929,
+              "shield_pierce": 11975064,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -9599,6 +9599,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 793900
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 103559800
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 2374800,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 1009700,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 4500800,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 9440900
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 183
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 13658
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 5634933,
+              "hull_health": 166608170
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -9673,65 +9732,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 793900
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 103559800
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 2374800,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 1009700,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 4500800,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 9440900
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 183
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 13658
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 5634933,
-              "hull_health": 166608170
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -9788,80 +9788,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 964100
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 125751200
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 1101500,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 4950900,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 149400
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 10489900
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 220
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 16390
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1197684,
-              "armor_pierce": 1197684,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 9314918,
-              "min_damage": 7621285,
-              "shield_pierce": 13412072,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -9934,6 +9860,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 964100
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 125751200
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 1101500,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 4950900,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 149400
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 10489900
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 220
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 16390
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1197684,
+              "armor_pierce": 1197684,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 9314918,
+              "min_damage": 7621285,
+              "shield_pierce": 13412072,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -10303,6 +10303,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 907400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 118354000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 2714100,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 1153900,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 5143800,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 10789600
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 199
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 14860
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 6238676,
+              "hull_health": 187698429
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -10377,65 +10436,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 907400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 118354000
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 2714100,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 1153900,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 5143800,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 10789600
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 199
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 14860
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 6238676,
-              "hull_health": 187698429
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -10492,80 +10492,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 1101800
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 143715600
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 1258800,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 5658100,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 170700
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 11988500
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 239
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 17832
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1326007,
-              "armor_pierce": 1326007,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 10313156,
-              "min_damage": 8438046,
-              "shield_pierce": 14849079,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -10638,6 +10564,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 1101800
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 143715600
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 1258800,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 5658100,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 170700
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 11988500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 239
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 17832
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1326007,
+              "armor_pierce": 1326007,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 10313156,
+              "min_damage": 8438046,
+              "shield_pierce": 14849079,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -11007,6 +11007,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 1031400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 134535200
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 1828200,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 1311700,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 7921700,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 12264800
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 216
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 16097
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 6842418,
+              "hull_health": 208861335
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -11081,65 +11140,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 1031400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 134535200
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 1828200,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 1311700,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 7921700,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 12264800
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 216
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 16097
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 6842418,
-              "hull_health": 208861335
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -11196,80 +11196,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 1252400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 163364200
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 2234500,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 1430900,
-                "grade": 6,
-                "rarity": "uncommon"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 194100
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 13627500
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 259
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 19316
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1454330,
-              "armor_pierce": 1454330,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 11311051,
-              "min_damage": 9254501,
-              "shield_pierce": 16286087,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -11342,6 +11268,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 1252400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 163364200
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 2234500,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 1430900,
+                "grade": 6,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 194100
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 13627500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 259
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 19316
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1454330,
+              "armor_pierce": 1454330,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 11311051,
+              "min_damage": 9254501,
+              "shield_pierce": 16286087,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -11711,6 +11711,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 1169600
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 152565700
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 3498600,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "ore",
+                "value": 1487500,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 6630600,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 13908500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 233
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 17369
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 7446162,
+              "hull_health": 230048456
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Pulsed Phaser",
           "img_url": "./assets/component_weapon_energy.png",
           "build_cost": {
@@ -11785,65 +11844,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 1169600
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 152565700
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 3498600,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "ore",
-                "value": 1487500,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 6630600,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 13908500
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 233
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 17369
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 7446162,
-              "hull_health": 230048456
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -11900,80 +11900,6 @@
               "increased_protected_cargo": 70,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Incinerator</color>",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 1420300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 185258400
-              }
-            ],
-            "materials": [
-              {
-                "type": "ore",
-                "value": 1622700,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "ore",
-                "value": 7293700,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Rare Battleship Parts",
-                "value": 220100
-              },
-              {
-                "type": "6\u2605 Common Battleship Parts",
-                "value": 15453900
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 280
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 20843
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1582653,
-              "armor_pierce": 1582653,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 12309050,
-              "min_damage": 10071036,
-              "shield_pierce": 17723094,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -12046,6 +11972,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Incinerator</color>",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 1420300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 185258400
+              }
+            ],
+            "materials": [
+              {
+                "type": "ore",
+                "value": 1622700,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "ore",
+                "value": 7293700,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Rare Battleship Parts",
+                "value": 220100
+              },
+              {
+                "type": "6\u2605 Common Battleship Parts",
+                "value": 15453900
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 280
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 20843
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1582653,
+              "armor_pierce": 1582653,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 12309050,
+              "min_damage": 10071036,
+              "shield_pierce": 17723094,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }

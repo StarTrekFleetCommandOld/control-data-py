@@ -98,6 +98,23 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
+          "additional_info": {
+            "armor_info": {
+              "armor": 123088,
+              "hull_health": 31607162
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -132,23 +149,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [],
-            "materials": [],
-            "others": []
-          },
-          "repair_cost": [],
-          "additional_info": {
-            "armor_info": {
-              "armor": 123088,
-              "hull_health": 31607162
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -163,40 +163,6 @@
               "increased_protected_cargo": 2250,
               "ship_increased_cargo": 0,
               "ship_increased_protected_cargo": 0
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [],
-            "materials": [],
-            "others": []
-          },
-          "repair_cost": [],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 321573,
-              "armor_pierce": 3601085,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 2429094,
-              "min_damage": 1987445,
-              "shield_pierce": 321573,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -229,6 +195,40 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [],
+            "materials": [],
+            "others": []
+          },
+          "repair_cost": [],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 321573,
+              "armor_pierce": 3601085,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 2429094,
+              "min_damage": 1987445,
+              "shield_pierce": 321573,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -493,6 +493,59 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 14900
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 1941700
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 14200,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 59100,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 128100
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 6
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 442
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 132935,
+              "hull_health": 33778554
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -563,59 +616,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 14900
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 1941700
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 14200,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 59100,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 128100
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 6
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 442
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 132935,
-              "hull_health": 33778554
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -666,76 +666,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 36200
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 4715700
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 22300,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 101300,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 213500
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 13
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 965
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 347299,
-              "armor_pierce": 3889172,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 2599118,
-              "min_damage": 2126562,
-              "shield_pierce": 347299,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -804,6 +734,76 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 36200
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 4715700
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 22300,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 101300,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 213500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 13
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 965
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 347299,
+              "armor_pierce": 3889172,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 2599118,
+              "min_damage": 2126562,
+              "shield_pierce": 347299,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -1161,6 +1161,59 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 21300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 2773900
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 75400,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 84400,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 337200
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 12
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 898
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 143570,
+              "hull_health": 36441390
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -1237,59 +1290,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 21300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 2773900
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 75400,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 84400,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 337200
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 12
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 898
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 143570,
-              "hull_health": 36441390
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -1340,80 +1340,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 51600
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 6736700
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 56000,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 144700,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 118100
-              },
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 562000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 26
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 1958
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 375083,
-              "armor_pierce": 4200305,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 2781089,
-              "min_damage": 2275425,
-              "shield_pierce": 375083,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -1488,6 +1414,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 51600
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 6736700
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 56000,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 144700,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 118100
+              },
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 562000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 26
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 1958
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 375083,
+              "armor_pierce": 4200305,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 2781089,
+              "min_damage": 2275425,
+              "shield_pierce": 375083,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -1845,6 +1845,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 28700
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 3744800
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 38200,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 455700,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 5000,
+                "grade": 6,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 1330500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 18
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 1366
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 155056,
+              "hull_health": 39335747
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -1919,65 +1978,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 28700
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 3744800
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 38200,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 455700,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "gas",
-                "value": 5000,
-                "grade": 6,
-                "rarity": "rare"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 1330500
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 18
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 1366
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 155056,
-              "hull_health": 39335747
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -2034,80 +2034,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 69700
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 9094500
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 70600,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 19100,
-                "grade": 6,
-                "rarity": "rare"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 142700
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 9700
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 40
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 2980
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 405090,
-              "armor_pierce": 4536329,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 2975745,
-              "min_damage": 2434701,
-              "shield_pierce": 405090,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -2180,6 +2106,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 69700
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 9094500
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 70600,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 19100,
+                "grade": 6,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 142700
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 9700
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 40
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 2980
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 405090,
+              "armor_pierce": 4536329,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 2975745,
+              "min_damage": 2434701,
+              "shield_pierce": 405090,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -2553,6 +2553,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 37200
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 4854400
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 46300,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 375900,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 166400
+              },
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 1019200
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 25
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 1848
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 169011,
+              "hull_health": 42486717
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -2629,63 +2686,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 37200
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 4854400
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 46300,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 375900,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 166400
-              },
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 1019200
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 25
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 1848
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 169011,
-              "hull_health": 42486717
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -2740,80 +2740,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 90400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 11789200
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 109500,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 644400,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 277400
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 14000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 54
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 4032
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 441548,
-              "armor_pierce": 4944599,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 3213833,
-              "min_damage": 2629515,
-              "shield_pierce": 441548,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -2888,6 +2814,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 90400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 11789200
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 109500,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 644400,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 277400
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 14000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 54
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 4032
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 441548,
+              "armor_pierce": 4944599,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 3213833,
+              "min_damage": 2629515,
+              "shield_pierce": 441548,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -3259,6 +3259,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 47800
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 6241300
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 161900,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 759500,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 225900
+              },
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 1029600
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 31
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 2344
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 184222,
+              "hull_health": 45931112
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -3335,63 +3392,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 47800
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 6241300
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 161900,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 759500,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 225900
-              },
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 1029600
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 31
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 2344
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 184222,
-              "hull_health": 45931112
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -3448,80 +3448,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 116200
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 15157500
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 70100,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 145100,
-                "grade": 6,
-                "rarity": "uncommon"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 376500
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 18000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 69
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 5115
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 481287,
-              "armor_pierce": 5389613,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 3470991,
-              "min_damage": 2839905,
-              "shield_pierce": 481287,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -3596,6 +3522,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 116200
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 15157500
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 70100,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 145100,
+                "grade": 6,
+                "rarity": "uncommon"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 376500
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 18000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 69
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 5115
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 481287,
+              "armor_pierce": 5389613,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 3470991,
+              "min_damage": 2839905,
+              "shield_pierce": 481287,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -3961,6 +3961,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 60300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 7859400
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 87500,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 172500,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 627600,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 269500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 38
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 2855
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 200802,
+              "hull_health": 49708203
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -4035,65 +4094,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 60300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 7859400
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 87500,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "gas",
-                "value": 172500,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 627600,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 269500
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 38
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 2855
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 200802,
-              "hull_health": 49708203
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -4150,80 +4150,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 146300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 19087200
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 184500,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 45600,
-                "grade": 6,
-                "rarity": "rare"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 449100
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 22700
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 84
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 6229
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 524603,
-              "armor_pierce": 5874677,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 3748739,
-              "min_damage": 3067152,
-              "shield_pierce": 524603,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -4296,6 +4222,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 146300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 19087200
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 184500,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 45600,
+                "grade": 6,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 449100
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 22700
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 84
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 6229
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 524603,
+              "armor_pierce": 5874677,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 3748739,
+              "min_damage": 3067152,
+              "shield_pierce": 524603,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -4665,6 +4665,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 78000
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 10171000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 207300,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 812300,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 16700,
+                "grade": 6,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 348700
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 45
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 3380
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 218874,
+              "hull_health": 54389571
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -4739,65 +4798,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 78000
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 10171000
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 207300,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 812300,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "gas",
-                "value": 16700,
-                "grade": 6,
-                "rarity": "rare"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 348700
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 45
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 3380
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 218874,
-              "hull_health": 54389571
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -4852,80 +4852,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 189400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 24701100
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 59000,
-                "grade": 6,
-                "rarity": "rare"
-              },
-              {
-                "type": "gas",
-                "value": 325800,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 581200
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 29300
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 99
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 7375
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 571817,
-              "armor_pierce": 6403398,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 4048703,
-              "min_damage": 3312585,
-              "shield_pierce": 571817,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -4998,6 +4924,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 189400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 24701100
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 59000,
+                "grade": 6,
+                "rarity": "rare"
+              },
+              {
+                "type": "gas",
+                "value": 325800,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 581200
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 29300
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 99
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 7375
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 571817,
+              "armor_pierce": 6403398,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 4048703,
+              "min_damage": 3312585,
+              "shield_pierce": 571817,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -5369,6 +5369,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 106300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 13869600
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 80900,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 282700,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 805500,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 475500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 53
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 3921
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 240761,
+              "hull_health": 60727892
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -5443,65 +5502,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 106300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 13869600
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 80900,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "gas",
-                "value": 282700,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 805500,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 475500
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 53
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 3921
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 240761,
-              "hull_health": 60727892
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -5558,6 +5558,80 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 182300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 23776500
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 290100,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 87100,
+                "grade": 6,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 2083400
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 42000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 115
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 8555
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 628998,
+              "armor_pierce": 7043738,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 3914919,
+              "min_damage": 3203129,
+              "shield_pierce": 628998,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ]
             }
           },
           "quantity": 1
@@ -5632,80 +5706,6 @@
                 1,
                 1,
                 1,
-                1
-              ]
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "Photonic Torpedoes",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 182300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 23776500
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 290100,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 87100,
-                "grade": 6,
-                "rarity": "rare"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 2083400
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 42000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 115
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 8555
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 628998,
-              "armor_pierce": 7043738,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 3914919,
-              "min_damage": 3203129,
-              "shield_pierce": 628998,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
                 1
               ]
             }
@@ -6075,6 +6075,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 141800
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 18492800
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 107900,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 377000,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 1074100,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 634000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 60
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 4477
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 264837,
+              "hull_health": 67905134
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -6149,65 +6208,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 141800
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 18492800
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 107900,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "gas",
-                "value": 377000,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 1074100,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 634000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 60
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 4477
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 264837,
-              "hull_health": 67905134
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -6264,6 +6264,80 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 243000
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 31702000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 386800,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 116200,
+                "grade": 6,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 2777800
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 56000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 131
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 9769
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 691898,
+              "armor_pierce": 7748111,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 4306362,
+              "min_damage": 3523394,
+              "shield_pierce": 691898,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ]
             }
           },
           "quantity": 1
@@ -6338,80 +6412,6 @@
                 1,
                 1,
                 1,
-                1
-              ]
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "Photonic Torpedoes",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 243000
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 31702000
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 386800,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 116200,
-                "grade": 6,
-                "rarity": "rare"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 2777800
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 56000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 131
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 9769
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 691898,
-              "armor_pierce": 7748111,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 4306362,
-              "min_damage": 3523394,
-              "shield_pierce": 691898,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
                 1
               ]
             }
@@ -6781,6 +6781,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 187100
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 24410500
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 142400,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 497600,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 1417700,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 836900
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 68
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 5050
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 293969,
+              "hull_health": 76790597
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -6855,65 +6914,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 187100
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 24410500
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 142400,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "gas",
-                "value": 497600,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 1417700,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 836900
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 68
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 5050
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 293969,
-              "hull_health": 76790597
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -6970,6 +6970,80 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 320800
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 41846600
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 510600,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 153300,
+                "grade": 6,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 3666700
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 73900
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 148
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 11018
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 768007,
+              "armor_pierce": 8600403,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 4736963,
+              "min_damage": 3875709,
+              "shield_pierce": 768007,
+              "weapon_type": "kinetic",
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ]
             }
           },
           "quantity": 1
@@ -7044,80 +7118,6 @@
                 1,
                 1,
                 1,
-                1
-              ]
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "Photonic Torpedoes",
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 320800
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 41846600
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 510600,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 153300,
-                "grade": 6,
-                "rarity": "rare"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 3666700
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 73900
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 148
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 11018
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 768007,
-              "armor_pierce": 8600403,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 4736963,
-              "min_damage": 3875709,
-              "shield_pierce": 768007,
-              "weapon_type": "kinetic",
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
                 1
               ]
             }
@@ -7487,6 +7487,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 237500
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 30975500
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 654800,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 2553500,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 1062000
+              },
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 3765100
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 76
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 5639
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 326306,
+              "hull_health": 86911100
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -7561,63 +7618,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 237500
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 30975500
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 654800,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 2553500,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 1062000
-              },
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 3765100
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 76
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 5639
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 326306,
-              "hull_health": 86911100
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -7674,80 +7674,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 576700
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 75226100
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 658900,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "gas",
-                "value": 1028900,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 6275200
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 89400
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 165
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 12304
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 852488,
-              "armor_pierce": 9546447,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 5873783,
-              "min_damage": 4805825,
-              "shield_pierce": 852488,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -7820,6 +7746,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 576700
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 75226100
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 658900,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 1028900,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 6275200
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 89400
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 165
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 12304
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 852488,
+              "armor_pierce": 9546447,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 5873783,
+              "min_damage": 4805825,
+              "shield_pierce": 852488,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -8191,6 +8191,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 289600
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 37771600
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 356000,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 3113700,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 102600,
+                "grade": 6,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 4591200
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 84
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 6246
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 365462,
+              "hull_health": 99398187
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -8265,65 +8324,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 289600
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 37771600
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 356000,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 3113700,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "gas",
-                "value": 102600,
-                "grade": 6,
-                "rarity": "rare"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 4591200
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 84
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 6246
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 365462,
-              "hull_health": 99398187
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -8380,80 +8380,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 703300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 91731000
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 803500,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "gas",
-                "value": 1254700,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 7652000
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 109000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 183
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 13627
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 954786,
-              "armor_pierce": 10692021,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 6461256,
-              "min_damage": 5286492,
-              "shield_pierce": 954786,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -8526,6 +8452,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 703300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 91731000
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 803500,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 1254700,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 7652000
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 109000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 183
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 13627
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 954786,
+              "armor_pierce": 10692021,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 6461256,
+              "min_damage": 5286492,
+              "shield_pierce": 954786,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -8895,6 +8895,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 342700
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 44706400
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 1594800,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 2720200,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 1532800
+              },
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 5434200
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 92
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 6870
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 409318,
+              "hull_health": 113723705
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -8969,63 +9026,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 342700
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 44706400
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 1594800,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 2720200,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 1532800
-              },
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 5434200
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 92
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 6870
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 409318,
-              "hull_health": 113723705
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -9082,80 +9082,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 832400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 108572600
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 951000,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 4274500,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 9056900
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 129000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 201
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 14989
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1069360,
-              "armor_pierce": 11975064,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 7171848,
-              "min_damage": 5867870,
-              "shield_pierce": 1069360,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -9228,6 +9154,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 832400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 108572600
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 951000,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 4274500,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 9056900
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 129000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 201
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 14989
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1069360,
+              "armor_pierce": 11975064,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 7171848,
+              "min_damage": 5867870,
+              "shield_pierce": 1069360,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -9599,6 +9599,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 397000
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 51779900
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 488000,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 3150600,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 140700,
+                "grade": 6,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 6294000
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 101
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 7512
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 458436,
+              "hull_health": 130162634
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -9673,65 +9732,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 397000
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 51779900
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 488000,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 3150600,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "gas",
-                "value": 140700,
-                "grade": 6,
-                "rarity": "rare"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 6294000
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 101
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 7512
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 458436,
-              "hull_health": 130162634
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -9788,80 +9788,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 964100
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 125751200
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 1101500,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 4950900,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 10489900
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 149400
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 220
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 16390
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1197684,
-              "armor_pierce": 13412072,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 8032224,
-              "min_damage": 6571811,
-              "shield_pierce": 1197684,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -9934,6 +9860,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 964100
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 125751200
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 1101500,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 4950900,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 10489900
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 149400
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 220
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 16390
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1197684,
+              "armor_pierce": 13412072,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 8032224,
+              "min_damage": 6571811,
+              "shield_pierce": 1197684,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -10303,6 +10303,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 453700
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 59177000
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 2110900,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 3600600,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 2028900
+              },
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 7193100
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 110
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 8173
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 507554,
+              "hull_health": 146639399
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -10377,63 +10434,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 453700
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 59177000
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 2110900,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 3600600,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 2028900
-              },
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 7193100
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 110
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 8173
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 507554,
-              "hull_health": 146639399
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -10490,80 +10490,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 1101800
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 143715600
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 1258800,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 5658100,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 11988500
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 170700
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 239
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 17832
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1326007,
-              "armor_pierce": 14849079,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 8893002,
-              "min_damage": 7276101,
-              "shield_pierce": 1326007,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -10636,6 +10562,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 1101800
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 143715600
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 1258800,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 5658100,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 11988500
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 170700
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 239
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 17832
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1326007,
+              "armor_pierce": 14849079,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 8893002,
+              "min_damage": 7276101,
+              "shield_pierce": 1326007,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -11007,6 +11007,65 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 515700
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 67267600
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 633900,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 5545200,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "gas",
+                "value": 182800,
+                "grade": 6,
+                "rarity": "rare"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 8176500
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 119
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 8853
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 556672,
+              "hull_health": 163172918
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -11081,65 +11140,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 515700
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 67267600
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 633900,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 5545200,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "gas",
-                "value": 182800,
-                "grade": 6,
-                "rarity": "rare"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 8176500
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 119
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 8853
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 556672,
-              "hull_health": 163172918
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -11196,80 +11196,6 @@
               "increased_protected_cargo": 20,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 1252400
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 163364200
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 1430900,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "gas",
-                "value": 2234500,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 13627500
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 194100
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 259
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 19316
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1454330,
-              "armor_pierce": 16286087,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 9753485,
-              "min_damage": 7980129,
-              "shield_pierce": 1454330,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -11342,6 +11268,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 1252400
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 163364200
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 1430900,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "gas",
+                "value": 2234500,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 13627500
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 194100
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 259
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 19316
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1454330,
+              "armor_pierce": 16286087,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 9753485,
+              "min_damage": 7980129,
+              "shield_pierce": 1454330,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
@@ -11711,6 +11711,63 @@
           "quantity": 1
         },
         {
+          "name": "Tritanium Armor",
+          "img_url": "./assets/component_armor.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 584800
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 76282900
+              }
+            ],
+            "materials": [
+              {
+                "type": "gas",
+                "value": 2721100,
+                "grade": 6,
+                "rarity": "common"
+              },
+              {
+                "type": "crystal",
+                "value": 4641400,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Uncommon Interceptor Parts",
+                "value": 2615400
+              },
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 9272300
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 128
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 9553
+            }
+          ],
+          "additional_info": {
+            "armor_info": {
+              "armor": 605790,
+              "hull_health": 179725356
+            }
+          },
+          "quantity": 1
+        },
+        {
           "name": "Photonic Torpedoes",
           "img_url": "./assets/component_weapon_kinetic.png",
           "build_cost": {
@@ -11785,63 +11842,6 @@
           "quantity": 1
         },
         {
-          "name": "Tritanium Armor",
-          "img_url": "./assets/component_armor.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 584800
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 76282900
-              }
-            ],
-            "materials": [
-              {
-                "type": "gas",
-                "value": 2721100,
-                "grade": 6,
-                "rarity": "common"
-              },
-              {
-                "type": "crystal",
-                "value": 4641400,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Uncommon Interceptor Parts",
-                "value": 2615400
-              },
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 9272300
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 128
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 9553
-            }
-          ],
-          "additional_info": {
-            "armor_info": {
-              "armor": 605790,
-              "hull_health": 179725356
-            }
-          },
-          "quantity": 1
-        },
-        {
           "name": "Cargo Bay",
           "img_url": "./assets/component_cargo_bay.png",
           "build_cost": {
@@ -11898,80 +11898,6 @@
               "increased_protected_cargo": 70,
               "ship_increased_cargo": 1200,
               "ship_increased_protected_cargo": 80
-            }
-          },
-          "quantity": 1
-        },
-        {
-          "name": "<color=#c50166>Disintegrator</color>",
-          "img_url": "./assets/component_weapon_energy.png",
-          "build_cost": {
-            "resources": [
-              {
-                "type": "\u03c3-dilithium",
-                "value": 1420300
-              },
-              {
-                "type": "\u03c3-tritanium",
-                "value": 185258400
-              }
-            ],
-            "materials": [
-              {
-                "type": "crystal",
-                "value": 1622700,
-                "grade": 6,
-                "rarity": "uncommon"
-              },
-              {
-                "type": "crystal",
-                "value": 7293700,
-                "grade": 6,
-                "rarity": "common"
-              }
-            ],
-            "others": [
-              {
-                "type": "6\u2605 Common Interceptor Parts",
-                "value": 15453900
-              },
-              {
-                "type": "6\u2605 Rare Interceptor Parts",
-                "value": 220100
-              }
-            ]
-          },
-          "repair_cost": [
-            {
-              "type": "\u03c3-dilithium",
-              "value": 280
-            },
-            {
-              "type": "\u03c3-tritanium",
-              "value": 20843
-            }
-          ],
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1582653,
-              "armor_pierce": 17723094,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "max_damage": 10614054,
-              "min_damage": 8684223,
-              "shield_pierce": 1582653,
-              "weapon_type": "energy",
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ]
             }
           },
           "quantity": 1
@@ -12044,6 +11970,80 @@
                 0,
                 1,
                 0,
+                1
+              ]
+            }
+          },
+          "quantity": 1
+        },
+        {
+          "name": "<color=#c50166>Disintegrator</color>",
+          "img_url": "./assets/component_weapon_energy.png",
+          "build_cost": {
+            "resources": [
+              {
+                "type": "\u03c3-dilithium",
+                "value": 1420300
+              },
+              {
+                "type": "\u03c3-tritanium",
+                "value": 185258400
+              }
+            ],
+            "materials": [
+              {
+                "type": "crystal",
+                "value": 1622700,
+                "grade": 6,
+                "rarity": "uncommon"
+              },
+              {
+                "type": "crystal",
+                "value": 7293700,
+                "grade": 6,
+                "rarity": "common"
+              }
+            ],
+            "others": [
+              {
+                "type": "6\u2605 Common Interceptor Parts",
+                "value": 15453900
+              },
+              {
+                "type": "6\u2605 Rare Interceptor Parts",
+                "value": 220100
+              }
+            ]
+          },
+          "repair_cost": [
+            {
+              "type": "\u03c3-dilithium",
+              "value": 280
+            },
+            {
+              "type": "\u03c3-tritanium",
+              "value": 20843
+            }
+          ],
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1582653,
+              "armor_pierce": 17723094,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 10614054,
+              "min_damage": 8684223,
+              "shield_pierce": 1582653,
+              "weapon_type": "energy",
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
               ]
             }
