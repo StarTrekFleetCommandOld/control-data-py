@@ -1,0 +1,147 @@
+{
+  "officer_name": "Mirror Troi",
+  "description": "",
+  "class": "science",
+  "group": "mirror universe",
+  "faction": "federation",
+  "rarity": "rare",
+  "ability_info": {
+    "captain_maneuver": {
+      "name": "Psionic Tactics",
+      "bonus": "On combat start while against an Explorer player: Mirror Troi increases your Apex Barrier by {value} for the duration of combat.\n\nThis ability does not trigger when Tal is assigned to the bridge of your ship.\n\nApex Barrier provides <b>true damage mitigation</b> from all sources after all other bonuses. Every 100 Apex Barrier increases the damage you can take by 1%.",
+      "percentage": false,
+      "value": 7500
+    },
+    "officer_ability": {
+      "name": "Inquisitor's Wrath",
+      "bonus": "On round start against players with Assimilate, Mirror Troi increases your Energy Weapon damage by {value} ({1:#,#%} at rank {2:#,#}) for 1 round.",
+      "percentage": true
+    },
+    "below_decks_ability": null
+  },
+  "synergy": {
+    "command": 18750,
+    "engineering": 18750,
+    "science": 3500
+  },
+  "traits": [
+    {
+      "name": "Diplomat",
+      "levels": [
+        {
+          "level": 1,
+          "trait_xp": 1500
+        },
+        {
+          "level": 2,
+          "trait_xp": 2700
+        },
+        {
+          "level": 3,
+          "trait_xp": 3800
+        }
+      ],
+      "tier": 1
+    },
+    {
+      "name": "Manipulative",
+      "levels": [
+        {
+          "level": 1,
+          "trait_xp": 7650
+        },
+        {
+          "level": 2,
+          "trait_xp": 6000
+        },
+        {
+          "level": 3,
+          "trait_xp": 7000
+        },
+        {
+          "level": 4,
+          "trait_xp": 8850
+        }
+      ],
+      "tier": 2
+    }
+  ],
+  "ranks": [
+    {
+      "rank_id": 1,
+      "name": "ENSIGN I",
+      "officer_ability_value": 4.5,
+      "requirements": {
+        "badges": 0,
+        "credits": 0,
+        "others": [],
+        "shards": 38,
+        "xp": 0
+      }
+    },
+    {
+      "rank_id": 2,
+      "name": "LIEUTENANT JG II",
+      "officer_ability_value": 8.5,
+      "requirements": {
+        "badges": 0,
+        "credits": 0,
+        "others": [],
+        "shards": 55,
+        "xp": 10000
+      }
+    },
+    {
+      "rank_id": 3,
+      "name": "LIEUTENANT III",
+      "officer_ability_value": 15,
+      "requirements": {
+        "badges": 0,
+        "credits": 0,
+        "others": [
+          {
+            "name": "Liquid Trellium-D",
+            "value": 5200
+          }
+        ],
+        "shards": 115,
+        "xp": 100000
+      }
+    },
+    {
+      "rank_id": 4,
+      "name": "LT. COMMANDER IV",
+      "officer_ability_value": 23,
+      "requirements": {
+        "badges": 1,
+        "credits": 0,
+        "others": [
+          {
+            "name": "Liquid Trellium-D",
+            "value": 21400
+          }
+        ],
+        "shards": 155,
+        "xp": 250000
+      }
+    },
+    {
+      "rank_id": 5,
+      "name": "COMMANDER V",
+      "officer_ability_value": 35,
+      "requirements": {
+        "badges": 2,
+        "credits": 0,
+        "others": [
+          {
+            "name": "Liquid Trellium-D",
+            "value": 54600
+          }
+        ],
+        "shards": 225,
+        "xp": 500000
+      }
+    }
+  ],
+  "img_url": "./assets/mirror_troi.png"
+}

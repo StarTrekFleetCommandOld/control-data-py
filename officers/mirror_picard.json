@@ -1,0 +1,194 @@
+{
+  "officer_name": "Mirror Picard",
+  "description": "",
+  "class": "command",
+  "group": "mirror universe",
+  "faction": "federation",
+  "rarity": "epic",
+  "ability_info": {
+    "captain_maneuver": {
+      "name": "Take the Shot",
+      "bonus": "On round start against players, Mirror Picard increases your Isolytic Cascade damage by {value} for 2 rounds.\n\nIsolytic Cascade multiplies your total damage, including Isolytic Damage, and all research and other bonuses.",
+      "percentage": true,
+      "value": 0.5
+    },
+    "officer_ability": {
+      "name": "Anticollective",
+      "bonus": "On round start against players with Assimilate, Mirror Picard increases your Apex Barrier by {value} ({1:#,#%} at rank {2:#,#}) for 1 round.\n\nThis ability does not trigger when Tal is assigned to the bridge of your ship.\n\nApex Barrier provides <b>true damage mitigation</b> from all sources after all other bonuses. Every 100 Apex Barrier increases the damage you can take by 1%.",
+      "percentage": false
+    },
+    "below_decks_ability": null
+  },
+  "synergy": {
+    "command": 0.25,
+    "engineering": 0.5,
+    "science": 0.5
+  },
+  "traits": [
+    {
+      "name": "Warrior",
+      "levels": [
+        {
+          "level": 1,
+          "trait_xp": 1500
+        },
+        {
+          "level": 2,
+          "trait_xp": 2700
+        },
+        {
+          "level": 3,
+          "trait_xp": 3800
+        }
+      ],
+      "tier": 1
+    },
+    {
+      "name": "Charismatic",
+      "levels": [
+        {
+          "level": 1,
+          "trait_xp": 7650
+        },
+        {
+          "level": 2,
+          "trait_xp": 6000
+        },
+        {
+          "level": 3,
+          "trait_xp": 7000
+        },
+        {
+          "level": 4,
+          "trait_xp": 8850
+        }
+      ],
+      "tier": 2
+    },
+    {
+      "name": "Specialist",
+      "levels": [
+        {
+          "level": 1,
+          "trait_xp": 10000
+        },
+        {
+          "level": 2,
+          "trait_xp": 4000
+        },
+        {
+          "level": 3,
+          "trait_xp": 7000
+        },
+        {
+          "level": 4,
+          "trait_xp": 10000
+        },
+        {
+          "level": 5,
+          "trait_xp": 15000
+        },
+        {
+          "level": 6,
+          "trait_xp": 23000
+        },
+        {
+          "level": 7,
+          "trait_xp": 42000
+        },
+        {
+          "level": 8,
+          "trait_xp": 68000
+        },
+        {
+          "level": 9,
+          "trait_xp": 107000
+        }
+      ],
+      "tier": 3
+    }
+  ],
+  "ranks": [
+    {
+      "rank_id": 1,
+      "name": "ENSIGN I",
+      "officer_ability_value": 10000,
+      "requirements": {
+        "badges": 0,
+        "credits": 0,
+        "others": [],
+        "shards": 100,
+        "xp": 0
+      }
+    },
+    {
+      "rank_id": 2,
+      "name": "LIEUTENANT JG II",
+      "officer_ability_value": 13000,
+      "requirements": {
+        "badges": 0,
+        "credits": 0,
+        "others": [
+          {
+            "name": "Liquid Trellium-D",
+            "value": 4400
+          }
+        ],
+        "shards": 100,
+        "xp": 50000
+      }
+    },
+    {
+      "rank_id": 3,
+      "name": "LIEUTENANT III",
+      "officer_ability_value": 17000,
+      "requirements": {
+        "badges": 1,
+        "credits": 0,
+        "others": [
+          {
+            "name": "Liquid Trellium-D",
+            "value": 17100
+          }
+        ],
+        "shards": 200,
+        "xp": 500000
+      }
+    },
+    {
+      "rank_id": 4,
+      "name": "LT. COMMANDER IV",
+      "officer_ability_value": 22000,
+      "requirements": {
+        "badges": 2,
+        "credits": 0,
+        "others": [
+          {
+            "name": "Liquid Trellium-D",
+            "value": 43100
+          }
+        ],
+        "shards": 300,
+        "xp": 1250000
+      }
+    },
+    {
+      "rank_id": 5,
+      "name": "COMMANDER V",
+      "officer_ability_value": 30000,
+      "requirements": {
+        "badges": 4,
+        "credits": 0,
+        "others": [
+          {
+            "name": "Liquid Trellium-D",
+            "value": 97800
+          }
+        ],
+        "shards": 800,
+        "xp": 2500000
+      }
+    }
+  ],
+  "img_url": "./assets/mirror_picard.png"
+}
